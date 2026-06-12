@@ -1,0 +1,15 @@
+# Local scratch and build leftovers
+*.tmp
+*.log
+*.bak
+*.pdb
+*.obj
+*.ilk
+*.exp
+*.lib
+dist/
+build/
+out/
+
+# Keep public setup EXEs trackable in this repository.
+!*.exe
