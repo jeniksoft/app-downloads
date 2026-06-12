@@ -1,0 +1,8 @@
+{
+  "app_id": "windows-update-restart-guard",
+  "name": "Windows Update Restart Guard",
+  "version": "1.0.3",
+  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.3",
+  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.3/WindowsUpdateRestartGuardSetup.exe",
+  "sha256": "C231C224C24446ED623FD2297969EA159F7F8CFED4C021A7C6021CB8DC9F361F"
+}
