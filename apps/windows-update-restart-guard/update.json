@@ -1,8 +1,8 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.17",
-  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.17",
-  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.17/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "FEB698A42EE8122ABCF89ED3E81AD627D34DD3625592B8C571215609A41AEB4E"
+  "version": "1.0.18",
+  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.18",
+  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.18/WindowsUpdateRestartGuardSetup.exe",
+  "sha256": "70E384CE175FFD870779BFEC901454CE2EC1653A1D635D1965101A648DB1652F"
 }
