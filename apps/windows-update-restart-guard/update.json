@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.26",
-  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.26",
-  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.26/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "EDE8802EF8C2A9E539C399E3B1906AFFA10814A85CA5DC7891182C85BEDE9DAD",
-  "changes_cs": "- Setup byl přebuildovaný proti aktuální WDUi knihovně.\n- Do instalačního payloadu je znovu přibalený aktuální defaultní WDUi JSON katalog skinů, takže po aktualizaci jsou dostupné i nově přidané skiny.",
-  "changes_en": "- The setup was rebuilt against the current WDUi library.\n- The install payload now includes the refreshed default WDUi JSON skin catalog, so newly added skins are available after update.",
+  "version": "1.0.27",
+  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.27",
+  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.27/WindowsUpdateRestartGuardSetup.exe",
+  "sha256": "06848C3B01F4627C89F8B7DA2C81FAED87FF9328C90599F40FB16B775521B866",
+  "changes_cs": "- Skin Starlance v přibaleném WDUi katalogu má scrollbar sladěný podle aktuálního SNC vzhledu.\n- Scrollbar používá Starlance kyanové a jantarové stavy a užší proporce 12/8 px pro běžné i combo výběry.",
+  "changes_en": "- The bundled WDUi Starlance skin now has a scrollbar aligned with the current SNC look.\n- The scrollbar uses Starlance cyan and amber states and narrower 12/8 px proportions for normal and combo selection scrollbars.",
   "history": [
+    {
+      "version": "1.0.27",
+      "changes_cs": "- Skin Starlance v přibaleném WDUi katalogu má scrollbar sladěný podle aktuálního SNC vzhledu.\n- Scrollbar používá Starlance kyanové a jantarové stavy a užší proporce 12/8 px pro běžné i combo výběry.",
+      "changes_en": "- The bundled WDUi Starlance skin now has a scrollbar aligned with the current SNC look.\n- The scrollbar uses Starlance cyan and amber states and narrower 12/8 px proportions for normal and combo selection scrollbars."
+    },
     {
       "version": "1.0.26",
       "changes_cs": "- Setup byl přebuildovaný proti aktuální WDUi knihovně.\n- Do instalačního payloadu je znovu přibalený aktuální defaultní WDUi JSON katalog skinů, takže po aktualizaci jsou dostupné i nově přidané skiny.",
