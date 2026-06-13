@@ -1,10 +1,10 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.20",
-  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.20",
-  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.20/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "CFAC8097D053F14A6ECEE22373D6B56112468F809024617DB6304C5204258CDF",
-  "changes_cs": "- Okno nastavení má funkční maximalizaci a obnovení.\n- Minimalizace, maximalizace, obnovení a zavření používají vlastní transparentní bitmapové glyphy Restart Guardu.\n- WDUi chrome má jako výchozí chování skinnované caption buttony s bitmapovými glyphy odvozenými z aktuálního skinu.",
-  "changes_en": "- The settings window now has working maximize and restore behavior.\n- Minimize, maximize, restore, and close use custom transparent Restart Guard bitmap glyphs.\n- WDUi chrome now defaults to skinned caption buttons with bitmap glyphs derived from the active skin."
+  "version": "1.0.21",
+  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.21",
+  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.21/WindowsUpdateRestartGuardSetup.exe",
+  "sha256": "A91163241CA7942574ACB2AB0EF198242B1B6461956180C96031311F505B89B6",
+  "changes_cs": "- Tlačítko Uložit v nastavení má tooltip, který vysvětluje, co přesně ukládá.\n- Tooltip se aktualizuje i při změně jazyka za běhu aplikace.",
+  "changes_en": "- The Save button in settings now has a tooltip explaining exactly what it saves.\n- The tooltip also updates when the app language is changed at runtime."
 }
