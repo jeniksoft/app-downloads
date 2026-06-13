@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.24",
-  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.24",
-  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.24/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "133145BEF0F434708EFFAA50F61302F8417391C2723D1BDA5263E75A6F0A4397",
-  "changes_cs": "- Stavová tečka v nastavení se přebarví okamžitě při změně ochrany, bez zavření a nového otevření okna.\n- Text statusu a vizuální barva tečky teď používají stejný runtime refresh.",
-  "changes_en": "- The settings status dot now recolors immediately when protection changes, without closing and reopening the window.\n- The status text and visual dot color now use the same runtime refresh.",
+  "version": "1.0.25",
+  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.25",
+  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.25/WindowsUpdateRestartGuardSetup.exe",
+  "sha256": "332545050B7292EC2051194CE126AD53D96FC0DB1F76C749F9BCD580D4510E8F",
+  "changes_cs": "- Tray popup má v horním stavovém řádku zelenou nebo červenou tečku podle toho, jestli se ochrana právě uplatňuje.\n- Stavový řádek v tray popupu používá stejný WDUi status chip styl jako nastavení.",
+  "changes_en": "- The tray popup now shows a green or red dot in the top status row depending on whether protection is currently applied.\n- The tray popup status row now uses the same WDUi status chip styling as Settings.",
   "history": [
+    {
+      "version": "1.0.25",
+      "changes_cs": "- Tray popup má v horním stavovém řádku zelenou nebo červenou tečku podle toho, jestli se ochrana právě uplatňuje.\n- Stavový řádek v tray popupu používá stejný WDUi status chip styl jako nastavení.",
+      "changes_en": "- The tray popup now shows a green or red dot in the top status row depending on whether protection is currently applied.\n- The tray popup status row now uses the same WDUi status chip styling as Settings."
+    },
     {
       "version": "1.0.24",
       "changes_cs": "- Stavová tečka v nastavení se přebarví okamžitě při změně ochrany, bez zavření a nového otevření okna.\n- Text statusu a vizuální barva tečky teď používají stejný runtime refresh.",
