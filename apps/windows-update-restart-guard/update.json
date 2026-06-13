@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.23",
-  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.23",
-  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.23/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "B607E2564B70B5500E5F7213131D468F542BD99E22AA4F9651BADCEE5057D087",
-  "changes_cs": "- Stavová tečka v nastavení je barevná podle aktuální ochrany: zelená při blokování, červená když se ochrana právě neuplatňuje.\n- Význam stavu je čitelnější i bez čtení celého textu.",
-  "changes_en": "- The settings status dot is now colored by current protection state: green while blocking, red when protection is not currently applied.\n- The state is easier to understand without reading the full text.",
+  "version": "1.0.24",
+  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.24",
+  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.24/WindowsUpdateRestartGuardSetup.exe",
+  "sha256": "133145BEF0F434708EFFAA50F61302F8417391C2723D1BDA5263E75A6F0A4397",
+  "changes_cs": "- Stavová tečka v nastavení se přebarví okamžitě při změně ochrany, bez zavření a nového otevření okna.\n- Text statusu a vizuální barva tečky teď používají stejný runtime refresh.",
+  "changes_en": "- The settings status dot now recolors immediately when protection changes, without closing and reopening the window.\n- The status text and visual dot color now use the same runtime refresh.",
   "history": [
+    {
+      "version": "1.0.24",
+      "changes_cs": "- Stavová tečka v nastavení se přebarví okamžitě při změně ochrany, bez zavření a nového otevření okna.\n- Text statusu a vizuální barva tečky teď používají stejný runtime refresh.",
+      "changes_en": "- The settings status dot now recolors immediately when protection changes, without closing and reopening the window.\n- The status text and visual dot color now use the same runtime refresh."
+    },
     {
       "version": "1.0.23",
       "changes_cs": "- Stavová tečka v nastavení je barevná podle aktuální ochrany: zelená při blokování, červená když se ochrana právě neuplatňuje.\n- Význam stavu je čitelnější i bez čtení celého textu.",
