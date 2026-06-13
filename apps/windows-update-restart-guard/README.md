@@ -4,9 +4,9 @@ Windows Update Restart Guard je malá Windows utilita, která pomáhá zabránit
 
 ## Stažení
 
-* Verze: `1.0.12`
+* Verze: `1.0.13`
 * Setup: [WindowsUpdateRestartGuardSetup.exe](WindowsUpdateRestartGuardSetup.exe)
-* SHA-256: `CC7D54DF89CC3092634D6852865BDB15070467F36CD68D46F615729ACB0C8BD3`
+* SHA-256: `090C88DBD8B1674911CC5E42C386E7C534C36DE0480212A5F59771FBC300ACB0`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
