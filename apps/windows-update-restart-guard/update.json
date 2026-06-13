@@ -1,8 +1,10 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.18",
-  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.18",
-  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.18/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "70E384CE175FFD870779BFEC901454CE2EC1653A1D635D1965101A648DB1652F"
+  "version": "1.0.19",
+  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.19",
+  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.19/WindowsUpdateRestartGuardSetup.exe",
+  "sha256": "847D17227C5B959A49D4C0411225AC4DFDCE3763B9DF26E7626CA7A9BC0A0FEF",
+  "changes_cs": "- Update tooltip a dialog nově zobrazují, co se v dostupné verzi změnilo.\n- Aplikace čte poznámky k verzi přímo z veřejného update manifestu.\n- Manifest v AP repu má nový kontrakt pro strojově čitelné změny verze.",
+  "changes_en": "- The update tooltip and dialog now show what changed in the available version.\n- The app reads release notes directly from the public update manifest.\n- The AP repository manifest now has a contract for machine-readable version changes."
 }

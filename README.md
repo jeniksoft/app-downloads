@@ -8,7 +8,24 @@ Toto repo je určené pro hotové instalační balíčky, popis aplikací, uživ
 
 | Aplikace | Verze | Setup | Dokumentace | SHA-256 |
 | --- | --- | --- | --- | --- |
-| Windows Update Restart Guard | 1.0.18 | [WindowsUpdateRestartGuardSetup.exe](apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe) | [Popis a návod](apps/windows-update-restart-guard/README.md) | `70E384CE175FFD870779BFEC901454CE2EC1653A1D635D1965101A648DB1652F` |
+| Windows Update Restart Guard | 1.0.19 | [WindowsUpdateRestartGuardSetup.exe](apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe) | [Popis a návod](apps/windows-update-restart-guard/README.md) | `847D17227C5B959A49D4C0411225AC4DFDCE3763B9DF26E7626CA7A9BC0A0FEF` |
+
+## Update Manifest
+
+Každá aplikace, která umí kontrolu aktualizací přímo v aplikaci, musí mít ve své složce `update.json`. Manifest je veřejný kontrakt pro aplikaci i uživatele a musí popisovat přesně poslední publikovaný setup.
+
+Povinná pole:
+
+* `app_id` - stabilní identifikátor aplikace
+* `name` - uživatelský název aplikace
+* `version` - publikovaná verze setupu
+* `release_url` - GitHub release nebo stránka verze
+* `setup_url` - přímý odkaz na `*Setup.exe`
+* `sha256` - SHA-256 publikovaného setupu
+* `changes_cs` - stručně, co se v této verzi změnilo, česky
+* `changes_en` - stručně, co se v této verzi změnilo, anglicky
+
+Volitelné pole `changes` může obsahovat obecný fallback text. Změny mají být krátké, uživatelské a vhodné pro zobrazení v tooltipu nebo update dialogu přímo v aplikaci.
 
 ## Instalace
 
@@ -45,6 +62,7 @@ Do repa nepatří:
 apps/
   <app-id>/
     README.md
+    update.json
     <AppName>Setup.exe
 checksums/
   SHA256SUMS.txt
