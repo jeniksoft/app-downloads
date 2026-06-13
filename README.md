@@ -8,7 +8,7 @@ Toto repo je určené pro hotové instalační balíčky, popis aplikací, uživ
 
 | Aplikace | Verze | Setup | Dokumentace | SHA-256 |
 | --- | --- | --- | --- | --- |
-| Windows Update Restart Guard | 1.0.22 | [WindowsUpdateRestartGuardSetup.exe](apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe) | [Popis a návod](apps/windows-update-restart-guard/README.md) | `DF3D668D8558009BC75A4F3ED08A9B735A7CFC3DB80BED774C4D03CEF7A873EC` |
+| Windows Update Restart Guard | 1.0.23 | [WindowsUpdateRestartGuardSetup.exe](apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe) | [Popis a návod](apps/windows-update-restart-guard/README.md) | `B607E2564B70B5500E5F7213131D468F542BD99E22AA4F9651BADCEE5057D087` |
 
 ## Update Manifest
 

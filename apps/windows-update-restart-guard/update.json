@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.22",
-  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.22",
-  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.22/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "DF3D668D8558009BC75A4F3ED08A9B735A7CFC3DB80BED774C4D03CEF7A873EC",
-  "changes_cs": "- Kontrola aktualizací zobrazuje kumulativní změny pro všechny verze novější než nainstalovaná, takže uživatel vidí i přeskočené verze.\n- Update dialog má rolovatelný seznam změn, aby se delší historie vešla do okna.\n- WDUi tooltipy umí rolovat dlouhý obsah kolečkem myši a nechávají akční prvky přístupné pod textem.",
-  "changes_en": "- Update checks now show cumulative changes for every version newer than the installed one, so skipped versions are visible.\n- The update dialog has a scrollable change list so longer history fits in the window.\n- WDUi tooltips can scroll long content with the mouse wheel while keeping action controls available below the text.",
+  "version": "1.0.23",
+  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.23",
+  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.23/WindowsUpdateRestartGuardSetup.exe",
+  "sha256": "B607E2564B70B5500E5F7213131D468F542BD99E22AA4F9651BADCEE5057D087",
+  "changes_cs": "- Stavová tečka v nastavení je barevná podle aktuální ochrany: zelená při blokování, červená když se ochrana právě neuplatňuje.\n- Význam stavu je čitelnější i bez čtení celého textu.",
+  "changes_en": "- The settings status dot is now colored by current protection state: green while blocking, red when protection is not currently applied.\n- The state is easier to understand without reading the full text.",
   "history": [
+    {
+      "version": "1.0.23",
+      "changes_cs": "- Stavová tečka v nastavení je barevná podle aktuální ochrany: zelená při blokování, červená když se ochrana právě neuplatňuje.\n- Význam stavu je čitelnější i bez čtení celého textu.",
+      "changes_en": "- The settings status dot is now colored by current protection state: green while blocking, red when protection is not currently applied.\n- The state is easier to understand without reading the full text."
+    },
     {
       "version": "1.0.22",
       "changes_cs": "- Kontrola aktualizací zobrazuje kumulativní změny pro všechny verze novější než nainstalovaná, takže uživatel vidí i přeskočené verze.\n- Update dialog má rolovatelný seznam změn, aby se delší historie vešla do okna.\n- WDUi tooltipy umí rolovat dlouhý obsah kolečkem myši a nechávají akční prvky přístupné pod textem.",
