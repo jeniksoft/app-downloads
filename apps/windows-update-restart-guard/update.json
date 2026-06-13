@@ -1,10 +1,32 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.21",
-  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.21",
-  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.21/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "A91163241CA7942574ACB2AB0EF198242B1B6461956180C96031311F505B89B6",
-  "changes_cs": "- Tlačítko Uložit v nastavení má tooltip, který vysvětluje, co přesně ukládá.\n- Tooltip se aktualizuje i při změně jazyka za běhu aplikace.",
-  "changes_en": "- The Save button in settings now has a tooltip explaining exactly what it saves.\n- The tooltip also updates when the app language is changed at runtime."
+  "version": "1.0.22",
+  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.22",
+  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.22/WindowsUpdateRestartGuardSetup.exe",
+  "sha256": "DF3D668D8558009BC75A4F3ED08A9B735A7CFC3DB80BED774C4D03CEF7A873EC",
+  "changes_cs": "- Kontrola aktualizací zobrazuje kumulativní změny pro všechny verze novější než nainstalovaná, takže uživatel vidí i přeskočené verze.\n- Update dialog má rolovatelný seznam změn, aby se delší historie vešla do okna.\n- WDUi tooltipy umí rolovat dlouhý obsah kolečkem myši a nechávají akční prvky přístupné pod textem.",
+  "changes_en": "- Update checks now show cumulative changes for every version newer than the installed one, so skipped versions are visible.\n- The update dialog has a scrollable change list so longer history fits in the window.\n- WDUi tooltips can scroll long content with the mouse wheel while keeping action controls available below the text.",
+  "history": [
+    {
+      "version": "1.0.22",
+      "changes_cs": "- Kontrola aktualizací zobrazuje kumulativní změny pro všechny verze novější než nainstalovaná, takže uživatel vidí i přeskočené verze.\n- Update dialog má rolovatelný seznam změn, aby se delší historie vešla do okna.\n- WDUi tooltipy umí rolovat dlouhý obsah kolečkem myši a nechávají akční prvky přístupné pod textem.",
+      "changes_en": "- Update checks now show cumulative changes for every version newer than the installed one, so skipped versions are visible.\n- The update dialog has a scrollable change list so longer history fits in the window.\n- WDUi tooltips can scroll long content with the mouse wheel while keeping action controls available below the text."
+    },
+    {
+      "version": "1.0.21",
+      "changes_cs": "- Tlačítko Uložit v nastavení má tooltip, který vysvětluje, co přesně ukládá.\n- Tooltip se aktualizuje i při změně jazyka za běhu aplikace.",
+      "changes_en": "- The Save button in settings now has a tooltip explaining exactly what it saves.\n- The tooltip also updates when the app language is changed at runtime."
+    },
+    {
+      "version": "1.0.20",
+      "changes_cs": "- Okno nastavení má funkční maximalizaci a obnovení.\n- Minimalizace, maximalizace, obnovení a zavření používají vlastní transparentní bitmapové glyphy Restart Guardu.\n- WDUi chrome má jako výchozí chování skinnované caption buttony s bitmapovými glyphy odvozenými z aktuálního skinu.",
+      "changes_en": "- The settings window now has working maximize and restore behavior.\n- Minimize, maximize, restore, and close use custom transparent Restart Guard bitmap glyphs.\n- WDUi chrome now defaults to skinned caption buttons with bitmap glyphs derived from the active skin."
+    },
+    {
+      "version": "1.0.19",
+      "changes_cs": "- Update tooltip a dialog nově zobrazují, co se v dostupné verzi změnilo.\n- Aplikace čte poznámky k verzi přímo z veřejného update manifestu.\n- Manifest v AP repu má nový kontrakt pro strojově čitelné změny verze.",
+      "changes_en": "- The update tooltip and dialog now show what changed in the available version.\n- The app reads release notes directly from the public update manifest.\n- The AP repository manifest now has a contract for machine-readable version changes."
+    }
+  ]
 }

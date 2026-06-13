@@ -8,7 +8,7 @@ Toto repo je určené pro hotové instalační balíčky, popis aplikací, uživ
 
 | Aplikace | Verze | Setup | Dokumentace | SHA-256 |
 | --- | --- | --- | --- | --- |
-| Windows Update Restart Guard | 1.0.21 | [WindowsUpdateRestartGuardSetup.exe](apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe) | [Popis a návod](apps/windows-update-restart-guard/README.md) | `A91163241CA7942574ACB2AB0EF198242B1B6461956180C96031311F505B89B6` |
+| Windows Update Restart Guard | 1.0.22 | [WindowsUpdateRestartGuardSetup.exe](apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe) | [Popis a návod](apps/windows-update-restart-guard/README.md) | `DF3D668D8558009BC75A4F3ED08A9B735A7CFC3DB80BED774C4D03CEF7A873EC` |
 
 ## Update Manifest
 
@@ -24,8 +24,9 @@ Povinná pole:
 * `sha256` - SHA-256 publikovaného setupu
 * `changes_cs` - stručně, co se v této verzi změnilo, česky
 * `changes_en` - stručně, co se v této verzi změnilo, anglicky
+* `history` - seznam verzí se změnami, aby aplikace při přeskočení verzí ukázala všechny relevantní změny od nainstalované verze
 
-Volitelné pole `changes` může obsahovat obecný fallback text. Změny mají být krátké, uživatelské a vhodné pro zobrazení v tooltipu nebo update dialogu přímo v aplikaci.
+Volitelné pole `changes` může obsahovat obecný fallback text. Pole `history` používá objekty s `version`, `changes_cs`, `changes_en` a volitelným `changes`. Změny mají být krátké, uživatelské a vhodné pro zobrazení v tooltipu nebo update dialogu přímo v aplikaci; pokud uživatel přeskočí více verzí, aplikace má zobrazit kumulativní poznámky pro všechny novější verze.
 
 ## Instalace
 
