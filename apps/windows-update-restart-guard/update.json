@@ -1,10 +1,10 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.19",
-  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.19",
-  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.19/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "847D17227C5B959A49D4C0411225AC4DFDCE3763B9DF26E7626CA7A9BC0A0FEF",
-  "changes_cs": "- Update tooltip a dialog nově zobrazují, co se v dostupné verzi změnilo.\n- Aplikace čte poznámky k verzi přímo z veřejného update manifestu.\n- Manifest v AP repu má nový kontrakt pro strojově čitelné změny verze.",
-  "changes_en": "- The update tooltip and dialog now show what changed in the available version.\n- The app reads release notes directly from the public update manifest.\n- The AP repository manifest now has a contract for machine-readable version changes."
+  "version": "1.0.20",
+  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.20",
+  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.20/WindowsUpdateRestartGuardSetup.exe",
+  "sha256": "CFAC8097D053F14A6ECEE22373D6B56112468F809024617DB6304C5204258CDF",
+  "changes_cs": "- Okno nastavení má funkční maximalizaci a obnovení.\n- Minimalizace, maximalizace, obnovení a zavření používají vlastní transparentní bitmapové glyphy Restart Guardu.\n- WDUi chrome má jako výchozí chování skinnované caption buttony s bitmapovými glyphy odvozenými z aktuálního skinu.",
+  "changes_en": "- The settings window now has working maximize and restore behavior.\n- Minimize, maximize, restore, and close use custom transparent Restart Guard bitmap glyphs.\n- WDUi chrome now defaults to skinned caption buttons with bitmap glyphs derived from the active skin."
 }
