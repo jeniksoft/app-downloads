@@ -4,9 +4,9 @@ Windows Update Restart Guard je malá Windows utilita, která pomáhá zabránit
 
 ## Stažení
 
-* Verze: `1.0.38`
+* Verze: `1.0.39`
 * Setup: [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe)
-* SHA-256: `BAFA2E4C74E5DCBB736A97D8123CC0512E39D71E07B7ED26EC881D1F97DC7F95`
+* SHA-256: `52D7E845DE7A731ED5A59151AF158D52B1E9B587E480729A7DE3A8F292ECB10D`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -34,6 +34,8 @@ Po instalaci se aplikace otevře do nastavení a zároveň se zaregistruje ve Wi
 Od verze `1.0.32` si setup nechává instalační práci dělat standardním Windows Installer backendem. WDUi okno zůstává stejné, ale za scénou se rozbalí vestavěný MSI balíček, spustí se `msiexec`, zapisují se verbose MSI logy a případná chyba ukáže konkrétní fázi, MSI kód a cestu k logu. MSI také používá standardní WiX zavírání běžící aplikace, takže odinstalace přes Windows Nastavení nezůstane jen na zamčeném EXE. Start Menu, Startup a Desktop zástupci jsou přímé neadvertised odkazy na nainstalovaný EXE. Od verze `1.0.35` používá MSI pro Start Menu standardní `ProgramMenuFolder` a vytváří záznam `Jeniksoft\Windows Update Restart Guard`, takže běžná jedna appka sedí pod vydavatelem a nevytváří zbytečnou vlastní app podsložku.
 
 Od verze `1.0.38` je přibalený novější WDUi katalog skinů. Skin `Starlance` používá obdélníkové scrollbary místo kapslových a ostatní výchozí skiny mají výrazněji odlišené tvarové profily podle svého účelu.
+
+Od verze `1.0.39` WDUi automaticky zobrazuje tooltip s plným textem u textových prvků, kde se viditelný obsah nevejde do dostupného místa. Platí to pro tlačítka, popisky, stavové prvky, checkboxy, comboboxy včetně dropdown položek, datumová pole, taby, menu root položky a tabulkové hlavičky/buňky.
 
 ## Ovládání
 

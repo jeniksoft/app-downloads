@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.38",
+  "version": "1.0.39",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "BAFA2E4C74E5DCBB736A97D8123CC0512E39D71E07B7ED26EC881D1F97DC7F95",
-  "changes_cs": "- Skin Starlance v přibaleném WDUi katalogu má obdélníkové scrollbary místo kapslových, včetně běžných scrollbarů a combo výběrů.\n- WDUi přidává nové tvary pro skinování: beveled, octagon, hexagon, slant-right a slant-left.\n- Výchozí WDUi skiny kromě Starlance dostaly osobitější tvarové profily podle svého významu, aby nepůsobily jen jako přebarvené varianty stejného UI.",
-  "changes_en": "- The bundled WDUi Starlance skin now uses rectangular scrollbars instead of capsule scrollbars, including normal scrollbars and combo dropdowns.\n- WDUi adds new skinnable shapes: beveled, octagon, hexagon, slant-right, and slant-left.\n- The default WDUi skins except Starlance now have more distinct shape profiles based on their purpose, so they no longer feel like recolored copies of one UI.",
+  "sha256": "52D7E845DE7A731ED5A59151AF158D52B1E9B587E480729A7DE3A8F292ECB10D",
+  "changes_cs": "- WDUi má obecný automatický tooltip pro textové prvky, kde se viditelný obsah nevejde do dostupného místa.\n- Plný text se ukáže u tlačítek, popup akcí, popisků, status chipů, checkboxů, comboboxů, dropdown položek, datumových polí, tabů, menu root položek a tabulkových hlaviček/buněk.\n- Ručně nastavený tooltip se zachová; WDUi jen přidá plný skrytý text nahoru, aby uživatel vždy viděl přesný název nebo hodnotu.",
+  "changes_en": "- WDUi now has a general automatic tooltip for text-bearing controls when visible content does not fit into the available space.\n- Full text is shown for buttons, popup actions, labels, status chips, checkboxes, select boxes, dropdown items, date fields, tabs, menu root items, and table headers/cells.\n- Existing rich manual tooltips are preserved; WDUi adds the full hidden text at the top so the user can always recover the exact label or value.",
   "history": [
+    {
+      "version": "1.0.39",
+      "changes_cs": "- WDUi má obecný automatický tooltip pro textové prvky, kde se viditelný obsah nevejde do dostupného místa.\n- Plný text se ukáže u tlačítek, popup akcí, popisků, status chipů, checkboxů, comboboxů, dropdown položek, datumových polí, tabů, menu root položek a tabulkových hlaviček/buněk.\n- Ručně nastavený tooltip se zachová; WDUi jen přidá plný skrytý text nahoru, aby uživatel vždy viděl přesný název nebo hodnotu.",
+      "changes_en": "- WDUi now has a general automatic tooltip for text-bearing controls when visible content does not fit into the available space.\n- Full text is shown for buttons, popup actions, labels, status chips, checkboxes, select boxes, dropdown items, date fields, tabs, menu root items, and table headers/cells.\n- Existing rich manual tooltips are preserved; WDUi adds the full hidden text at the top so the user can always recover the exact label or value."
+    },
     {
       "version": "1.0.38",
       "changes_cs": "- Skin Starlance v přibaleném WDUi katalogu má obdélníkové scrollbary místo kapslových, včetně běžných scrollbarů a combo výběrů.\n- WDUi přidává nové tvary pro skinování: beveled, octagon, hexagon, slant-right a slant-left.\n- Výchozí WDUi skiny kromě Starlance dostaly osobitější tvarové profily podle svého významu, aby nepůsobily jen jako přebarvené varianty stejného UI.",
