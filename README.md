@@ -8,9 +8,11 @@ Toto repo je určené pro hotové instalační balíčky, popis aplikací, uživ
 
 | Aplikace | Verze | Setup | Dokumentace | SHA-256 |
 | --- | --- | --- | --- | --- |
-| Windows Update Restart Guard | 1.0.28 | [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe) | [Popis a návod](apps/windows-update-restart-guard/README.md) | `4061B82E0C0248DFBB4A462935AD66E6B52FB5AB0CD491910350F4C7AF40FC2A` |
+| Windows Update Restart Guard | 1.0.28 | [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe) | [Popis a návod](apps/windows-update-restart-guard/README.md) | [`4061B82E...F40FC2A`](checksums/SHA256SUMS.txt) |
 
 Setup odkazy v tabulce vedou přímo na GitHub raw download endpoint, aby kliknutí stáhlo instalační EXE místo otevření stránky binárního souboru.
+
+Tabulky zkracují SHA-256 kvůli čitelnosti. Plný hash je vždy v `update.json` a [checksums/SHA256SUMS.txt](checksums/SHA256SUMS.txt).
 
 ## Update Manifest
 
