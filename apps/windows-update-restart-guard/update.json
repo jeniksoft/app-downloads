@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.32",
+  "version": "1.0.34",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "D22C87FE99C57DC5958C36C740773F1B881F633518D1C8C626B99933A3E59B28",
-  "changes_cs": "- Setup je normalizovaný na WDUi frontend + standardní WiX/MSI backend, takže instalaci, opravu, rollback a odinstalaci dělá Windows Installer místo ručního kopírování payloadu.\n- Před instalací se korektně odstraňují související MSI product codes podle UpgradeCode, což řeší same-version reinstall a částečně rozbité instalace.\n- Chybové dialogy setupu teď ukazují selhanou fázi, MSI kód, srozumitelnou příčinu a cesty k app/MSI logům; fresh install má explicitní volbu Spouštět s Windows.\n- MSI používá WiX CloseApplication, takže i odinstalace přes Windows Nastavení umí zavřít běžící Restart Guard místo tichého selhání na zamčeném EXE; zástupci jsou přímé neadvertised odkazy.",
-  "changes_en": "- Setup is normalized to a WDUi frontend plus a standard WiX/MSI backend, so install, repair, rollback, and uninstall are handled by Windows Installer instead of direct payload copying.\n- Related MSI product codes are removed by UpgradeCode before install, fixing same-version reinstall and partially broken installs.\n- Setup error dialogs now show the failed step, MSI code, readable cause, and app/MSI log paths; fresh install has an explicit Start with Windows choice.\n- The MSI uses WiX CloseApplication, so uninstall through Windows Settings can close a running Restart Guard instead of silently failing on a locked EXE; shortcuts are direct non-advertised links.",
+  "sha256": "3DD59569CFEA52B851F4B9342E5BD407BBEB15487240ECD0DE9C968FE0AD722E",
+  "changes_cs": "- Opravený MSI zápis do nabídky Windows: setup vytváří podsložku Windows Update Restart Guard přes standardní ProgramMenuFolder místo chybné kořenové cesty.\n- Start Menu komponenta má správný uživatelský HKCU key path, takže Windows Installer podsložku a zástupce uvnitř opravdu vytvoří a umí je korektně odebrat.\n- Setup byl znovu přegenerovaný a exportovaný s opraveným WiX adresářem pro nabídku aplikací.",
+  "changes_en": "- Fixed MSI registration in the Windows menu: setup creates a Windows Update Restart Guard subfolder through the standard ProgramMenuFolder instead of an incorrect root path.\n- The Start Menu component now uses the correct per-user HKCU key path, so Windows Installer really creates and removes the subfolder and shortcut inside it.\n- The setup was rebuilt and exported with the corrected WiX directory for the applications menu.",
   "history": [
+    {
+      "version": "1.0.34",
+      "changes_cs": "- Opravený MSI zápis do nabídky Windows: setup vytváří podsložku Windows Update Restart Guard přes standardní ProgramMenuFolder místo chybné kořenové cesty.\n- Start Menu komponenta má správný uživatelský HKCU key path, takže Windows Installer podsložku a zástupce uvnitř opravdu vytvoří a umí je korektně odebrat.\n- Setup byl znovu přegenerovaný a exportovaný s opraveným WiX adresářem pro nabídku aplikací.",
+      "changes_en": "- Fixed MSI registration in the Windows menu: setup creates a Windows Update Restart Guard subfolder through the standard ProgramMenuFolder instead of an incorrect root path.\n- The Start Menu component now uses the correct per-user HKCU key path, so Windows Installer really creates and removes the subfolder and shortcut inside it.\n- The setup was rebuilt and exported with the corrected WiX directory for the applications menu."
+    },
     {
       "version": "1.0.32",
       "changes_cs": "- Setup je normalizovaný na WDUi frontend + standardní WiX/MSI backend, takže instalaci, opravu, rollback a odinstalaci dělá Windows Installer místo ručního kopírování payloadu.\n- Před instalací se korektně odstraňují související MSI product codes podle UpgradeCode, což řeší same-version reinstall a částečně rozbité instalace.\n- Chybové dialogy setupu teď ukazují selhanou fázi, MSI kód, srozumitelnou příčinu a cesty k app/MSI logům; fresh install má explicitní volbu Spouštět s Windows.\n- MSI používá WiX CloseApplication, takže i odinstalace přes Windows Nastavení umí zavřít běžící Restart Guard místo tichého selhání na zamčeném EXE; zástupci jsou přímé neadvertised odkazy.",

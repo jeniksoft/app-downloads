@@ -4,9 +4,9 @@ Windows Update Restart Guard je malá Windows utilita, která pomáhá zabránit
 
 ## Stažení
 
-* Verze: `1.0.32`
+* Verze: `1.0.34`
 * Setup: [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe)
-* SHA-256: `D22C87FE99C57DC5958C36C740773F1B881F633518D1C8C626B99933A3E59B28`
+* SHA-256: `3DD59569CFEA52B851F4B9342E5BD407BBEB15487240ECD0DE9C968FE0AD722E`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -31,7 +31,7 @@ Nezakazuje Windows Update. Neblokuje kritické vypnutí systému, výpadek napá
 
 Po instalaci se aplikace otevře do nastavení a zároveň se zaregistruje ve Windows jako běžná aplikace.
 
-Od verze `1.0.32` si setup nechává instalační práci dělat standardním Windows Installer backendem. WDUi okno zůstává stejné, ale za scénou se rozbalí vestavěný MSI balíček, spustí se `msiexec`, zapisují se verbose MSI logy a případná chyba ukáže konkrétní fázi, MSI kód a cestu k logu. MSI také používá standardní WiX zavírání běžící aplikace, takže odinstalace přes Windows Nastavení nezůstane jen na zamčeném EXE. Start Menu, Startup a Desktop zástupci jsou přímé neadvertised odkazy na nainstalovaný EXE.
+Od verze `1.0.32` si setup nechává instalační práci dělat standardním Windows Installer backendem. WDUi okno zůstává stejné, ale za scénou se rozbalí vestavěný MSI balíček, spustí se `msiexec`, zapisují se verbose MSI logy a případná chyba ukáže konkrétní fázi, MSI kód a cestu k logu. MSI také používá standardní WiX zavírání běžící aplikace, takže odinstalace přes Windows Nastavení nezůstane jen na zamčeném EXE. Start Menu, Startup a Desktop zástupci jsou přímé neadvertised odkazy na nainstalovaný EXE. Od verze `1.0.34` používá MSI pro Start Menu standardní `ProgramMenuFolder` a vytváří podsložku `Windows Update Restart Guard` s linkem uvnitř, takže záznam vzniká ve skutečné Windows nabídce aplikací místo chybné kořenové cesty.
 
 ## Ovládání
 
@@ -55,4 +55,4 @@ Použij Windows Nastavení > Aplikace > Nainstalované aplikace > Windows Update
 
 ## Poznámka K Antiviru
 
-Setup je běžný Windows EXE soubor. Verze `1.0.29` až `1.0.32` vznikly jako reakce na false-positive behavior-shield test: aplikace byla čistá, ale starší instalační tok mohl bezpečnostním nástrojům připomínat dropper/persistence vzor. Setup proto nepoužívá skrytý shell cleanup ani shell handoff pro update setup a od verze `1.0.32` používá pro instalaci standardní WiX/MSI backend. Pokud EXE ještě nemá dostatečnou reputaci nebo podpis, některé bezpečnostní nástroje ho můžou kontrolovat déle.
+Setup je běžný Windows EXE soubor. Verze `1.0.29` až `1.0.34` vznikly jako reakce na false-positive behavior-shield test a následné dotažení MSI instalace: aplikace byla čistá, ale starší instalační tok mohl bezpečnostním nástrojům připomínat dropper/persistence vzor. Setup proto nepoužívá skrytý shell cleanup ani shell handoff pro update setup a od verze `1.0.32` používá pro instalaci standardní WiX/MSI backend. Pokud EXE ještě nemá dostatečnou reputaci nebo podpis, některé bezpečnostní nástroje ho můžou kontrolovat déle.
