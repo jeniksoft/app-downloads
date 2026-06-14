@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.34",
+  "version": "1.0.35",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "3DD59569CFEA52B851F4B9342E5BD407BBEB15487240ECD0DE9C968FE0AD722E",
-  "changes_cs": "- Opravený MSI zápis do nabídky Windows: setup vytváří podsložku Windows Update Restart Guard přes standardní ProgramMenuFolder místo chybné kořenové cesty.\n- Start Menu komponenta má správný uživatelský HKCU key path, takže Windows Installer podsložku a zástupce uvnitř opravdu vytvoří a umí je korektně odebrat.\n- Setup byl znovu přegenerovaný a exportovaný s opraveným WiX adresářem pro nabídku aplikací.",
-  "changes_en": "- Fixed MSI registration in the Windows menu: setup creates a Windows Update Restart Guard subfolder through the standard ProgramMenuFolder instead of an incorrect root path.\n- The Start Menu component now uses the correct per-user HKCU key path, so Windows Installer really creates and removes the subfolder and shortcut inside it.\n- The setup was rebuilt and exported with the corrected WiX directory for the applications menu.",
+  "sha256": "423E51E30F3547898193546B66CC7E750C4666D0AF98E3736DF2CC5B9C17871D",
+  "changes_cs": "- Restart Guard byl znovu ověřen proti aktuální durable C++/WDUi šabloně před rebuildem.\n- Start Menu záznam nově používá aktuální tvar Jeniksoft\\Windows Update Restart Guard.lnk; appka se tak řadí pod vydavatele a nevytváří zbytečnou vlastní podsložku pro jediný link.\n- Installer zároveň uklízí starší Start Menu varianty, včetně kořenového linku, staré app podsložky a legacy Codex složky.",
+  "changes_en": "- Restart Guard was rechecked against the current durable C++/WDUi template before rebuild.\n- The Start Menu entry now uses the current Jeniksoft\\Windows Update Restart Guard.lnk shape, grouping the app under the publisher without creating an unnecessary app subfolder for a single link.\n- The installer also cleans up older Start Menu variants, including the root link, old app subfolder, and legacy Codex folder.",
   "history": [
+    {
+      "version": "1.0.35",
+      "changes_cs": "- Restart Guard byl znovu ověřen proti aktuální durable C++/WDUi šabloně před rebuildem.\n- Start Menu záznam nově používá aktuální tvar Jeniksoft\\Windows Update Restart Guard.lnk; appka se tak řadí pod vydavatele a nevytváří zbytečnou vlastní podsložku pro jediný link.\n- Installer zároveň uklízí starší Start Menu varianty, včetně kořenového linku, staré app podsložky a legacy Codex složky.",
+      "changes_en": "- Restart Guard was rechecked against the current durable C++/WDUi template before rebuild.\n- The Start Menu entry now uses the current Jeniksoft\\Windows Update Restart Guard.lnk shape, grouping the app under the publisher without creating an unnecessary app subfolder for a single link.\n- The installer also cleans up older Start Menu variants, including the root link, old app subfolder, and legacy Codex folder."
+    },
     {
       "version": "1.0.34",
       "changes_cs": "- Opravený MSI zápis do nabídky Windows: setup vytváří podsložku Windows Update Restart Guard přes standardní ProgramMenuFolder místo chybné kořenové cesty.\n- Start Menu komponenta má správný uživatelský HKCU key path, takže Windows Installer podsložku a zástupce uvnitř opravdu vytvoří a umí je korektně odebrat.\n- Setup byl znovu přegenerovaný a exportovaný s opraveným WiX adresářem pro nabídku aplikací.",
