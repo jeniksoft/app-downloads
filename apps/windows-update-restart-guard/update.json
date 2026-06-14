@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.27",
-  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.27",
-  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.27/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "06848C3B01F4627C89F8B7DA2C81FAED87FF9328C90599F40FB16B775521B866",
-  "changes_cs": "- Skin Starlance v přibaleném WDUi katalogu má scrollbar sladěný podle aktuálního SNC vzhledu.\n- Scrollbar používá Starlance kyanové a jantarové stavy a užší proporce 12/8 px pro běžné i combo výběry.",
-  "changes_en": "- The bundled WDUi Starlance skin now has a scrollbar aligned with the current SNC look.\n- The scrollbar uses Starlance cyan and amber states and narrower 12/8 px proportions for normal and combo selection scrollbars.",
+  "version": "1.0.28",
+  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.28",
+  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.28/WindowsUpdateRestartGuardSetup.exe",
+  "sha256": "4061B82E0C0248DFBB4A462935AD66E6B52FB5AB0CD491910350F4C7AF40FC2A",
+  "changes_cs": "- Opravena runtime verze aplikace používaná kontrolou aktualizací, aby po úspěšném update nezůstávala hlášená stará verze 1.0.25.\n- Build nově generuje runtime verzi ze stejného zdroje jako manifest a VERSIONINFO, takže se aktualizace po instalaci přestanou nabízet dokola.",
+  "changes_en": "- Fixed the runtime app version used by update checks so a successful update no longer keeps reporting the old 1.0.25 version.\n- The build now generates the runtime version from the same source as the manifest and VERSIONINFO, so updates stop being offered repeatedly after installation.",
   "history": [
+    {
+      "version": "1.0.28",
+      "changes_cs": "- Opravena runtime verze aplikace používaná kontrolou aktualizací, aby po úspěšném update nezůstávala hlášená stará verze 1.0.25.\n- Build nově generuje runtime verzi ze stejného zdroje jako manifest a VERSIONINFO, takže se aktualizace po instalaci přestanou nabízet dokola.",
+      "changes_en": "- Fixed the runtime app version used by update checks so a successful update no longer keeps reporting the old 1.0.25 version.\n- The build now generates the runtime version from the same source as the manifest and VERSIONINFO, so updates stop being offered repeatedly after installation."
+    },
     {
       "version": "1.0.27",
       "changes_cs": "- Skin Starlance v přibaleném WDUi katalogu má scrollbar sladěný podle aktuálního SNC vzhledu.\n- Scrollbar používá Starlance kyanové a jantarové stavy a užší proporce 12/8 px pro běžné i combo výběry.",
