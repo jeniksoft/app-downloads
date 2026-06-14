@@ -53,4 +53,4 @@ Použij Windows Nastavení > Aplikace > Nainstalované aplikace > Windows Update
 
 ## Poznámka K Antiviru
 
-Setup je běžný Windows EXE soubor. Od verze `1.0.29` nepoužívá skrytý shell cleanup ani shell handoff pro update setup; cleanup běžícího setupu řeší nativní Win32 odložení po restartu. Pokud EXE ještě nemá dostatečnou reputaci nebo podpis, některé bezpečnostní nástroje ho můžou kontrolovat déle.
+Setup je běžný Windows EXE soubor. Verze `1.0.29` vznikla jako reakce na false-positive behavior-shield test: aplikace byla čistá, ale starší instalační tok mohl bezpečnostním nástrojům připomínat dropper/persistence vzor. Setup proto nepoužívá skrytý shell cleanup ani shell handoff pro update setup; cleanup běžícího setupu řeší nativní Win32 odložení po restartu. Pokud EXE ještě nemá dostatečnou reputaci nebo podpis, některé bezpečnostní nástroje ho můžou kontrolovat déle.
