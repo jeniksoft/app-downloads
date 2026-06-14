@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.28",
-  "release_url": "https://github.com/jeniksoft/app-downloads/releases/tag/windows-update-restart-guard-v1.0.28",
-  "setup_url": "https://github.com/jeniksoft/app-downloads/releases/download/windows-update-restart-guard-v1.0.28/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "4061B82E0C0248DFBB4A462935AD66E6B52FB5AB0CD491910350F4C7AF40FC2A",
-  "changes_cs": "- Opravena runtime verze aplikace používaná kontrolou aktualizací, aby po úspěšném update nezůstávala hlášená stará verze 1.0.25.\n- Build nově generuje runtime verzi ze stejného zdroje jako manifest a VERSIONINFO, takže se aktualizace po instalaci přestanou nabízet dokola.",
-  "changes_en": "- Fixed the runtime app version used by update checks so a successful update no longer keeps reporting the old 1.0.25 version.\n- The build now generates the runtime version from the same source as the manifest and VERSIONINFO, so updates stop being offered repeatedly after installation.",
+  "version": "1.0.29",
+  "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
+  "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
+  "sha256": "C78319B4B9C92AF2CC0BFCCE336A7772FFCA452608C09A16937211A83CA9CB2B",
+  "changes_cs": "- Instalátor a updater jsou upravené na AV-friendly tok: ověřený setup se spouští přímo, ne přes skrytý shell, a cleanup běžícího setupu používá Win32 odložení po restartu.\n- Odinstalace nejdřív zavírá vlastní proces běžnou cestou a force-terminate používá až jako logovaný fallback.",
+  "changes_en": "- The installer and updater now use an AV-friendly flow: the verified setup is launched directly instead of through a hidden shell, and running-setup cleanup uses Win32 delete-on-reboot handoff.\n- Uninstall first asks the owned process to close normally and uses force termination only as a logged fallback.",
   "history": [
+    {
+      "version": "1.0.29",
+      "changes_cs": "- Instalátor a updater jsou upravené na AV-friendly tok: ověřený setup se spouští přímo, ne přes skrytý shell, a cleanup běžícího setupu používá Win32 odložení po restartu.\n- Odinstalace nejdřív zavírá vlastní proces běžnou cestou a force-terminate používá až jako logovaný fallback.",
+      "changes_en": "- The installer and updater now use an AV-friendly flow: the verified setup is launched directly instead of through a hidden shell, and running-setup cleanup uses Win32 delete-on-reboot handoff.\n- Uninstall first asks the owned process to close normally and uses force termination only as a logged fallback."
+    },
     {
       "version": "1.0.28",
       "changes_cs": "- Opravena runtime verze aplikace používaná kontrolou aktualizací, aby po úspěšném update nezůstávala hlášená stará verze 1.0.25.\n- Build nově generuje runtime verzi ze stejného zdroje jako manifest a VERSIONINFO, takže se aktualizace po instalaci přestanou nabízet dokola.",
