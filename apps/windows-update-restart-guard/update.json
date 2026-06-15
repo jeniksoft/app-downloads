@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.65",
+  "version": "1.0.66",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "AE28F7EDDD8F5C27130A07A3649496CC8E6797B8BF0D6CA19496608DC4B3E59E",
-  "changes_cs": "- Opravený compact embedded dropdown scrollbar: track/rám je zase širší než thumb, takže jezdec čitelně sedí uvnitř railu místo toho, aby rám vypadal smrštěně.\n- WDUi segmentované surface se teď kreslí jako jeden souvislý materiál oříznutý contour regionem, takže gradienty, bitmapy, obrysy a noise nevznikají jako rozbité 1px proužky.\n- Contour layout je systémová vlastnost základního Controlu (`setContourLayoutRects`, `layoutRects`, `scanlineLayoutRects`) a ScrollBar ji používá pro layout, hit-test, drag i paint.",
-  "changes_en": "- Fixed the compact embedded dropdown scrollbar: the track/frame is wider than the thumb again, so the handle reads inside the rail instead of making the frame look collapsed.\n- WDUi segmented surfaces now paint one coherent material clipped to the contour region, preserving gradients, bitmaps, borders, and noise instead of breaking them into isolated 1px strips.\n- Contour layout is now a base Control feature (`setContourLayoutRects`, `layoutRects`, `scanlineLayoutRects`), and ScrollBar uses it for layout, hit testing, dragging, and painting.",
+  "sha256": "67C0CA470DE7B57D77B0C8CE6793106A542BDFA4DDD4AE68AB085EEE46DD1834",
+  "changes_cs": "- WDUi segmentované surface se teď nedeformují přes region clipping: control se nejdřív vykreslí normálně do offscreen bitmapy a pak se 1px řádky/sloupce posunou do contour lanes podobně jako bitmap shift.\n- Dropdown scrollbary tak drží stejný margin od šikmé/cut hrany bez grafických zlomů, smrštěných rámů nebo rozbitých borderů.\n- Pravidla WDUi a nativních appek zapisují offscreen straight render + scanline remap jako systémový postup pro současné i budoucí contour prvky.",
+  "changes_en": "- WDUi segmented surfaces no longer deform through region clipping: the control is first rendered normally into an offscreen bitmap, then 1px rows/columns are shifted into contour lanes like a bitmap shift.\n- Dropdown scrollbars now keep the same margin from slanted/cut edges without visual breaks, collapsed frames, or broken borders.\n- WDUi and native-app rules now document offscreen straight render + scanline remap as the systemic path for current and future contour controls.",
   "history": [
+    {
+      "version": "1.0.66",
+      "changes_cs": "- WDUi segmentované surface se teď nedeformují přes region clipping: control se nejdřív vykreslí normálně do offscreen bitmapy a pak se 1px řádky/sloupce posunou do contour lanes podobně jako bitmap shift.\n- Dropdown scrollbary tak drží stejný margin od šikmé/cut hrany bez grafických zlomů, smrštěných rámů nebo rozbitých borderů.\n- Pravidla WDUi a nativních appek zapisují offscreen straight render + scanline remap jako systémový postup pro současné i budoucí contour prvky.",
+      "changes_en": "- WDUi segmented surfaces no longer deform through region clipping: the control is first rendered normally into an offscreen bitmap, then 1px rows/columns are shifted into contour lanes like a bitmap shift.\n- Dropdown scrollbars now keep the same margin from slanted/cut edges without visual breaks, collapsed frames, or broken borders.\n- WDUi and native-app rules now document offscreen straight render + scanline remap as the systemic path for current and future contour controls."
+    },
     {
       "version": "1.0.65",
       "changes_cs": "- Opravený compact embedded dropdown scrollbar: track/rám je zase širší než thumb, takže jezdec čitelně sedí uvnitř railu místo toho, aby rám vypadal smrštěně.\n- WDUi segmentované surface se teď kreslí jako jeden souvislý materiál oříznutý contour regionem, takže gradienty, bitmapy, obrysy a noise nevznikají jako rozbité 1px proužky.\n- Contour layout je systémová vlastnost základního Controlu (`setContourLayoutRects`, `layoutRects`, `scanlineLayoutRects`) a ScrollBar ji používá pro layout, hit-test, drag i paint.",

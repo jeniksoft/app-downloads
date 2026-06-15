@@ -4,9 +4,9 @@ Windows Update Restart Guard je malá Windows utilita, která pomáhá zabránit
 
 ## Stažení
 
-* Verze: `1.0.65`
+* Verze: `1.0.66`
 * Setup: [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe)
-* SHA-256: `AE28F7EDDD8F5C27130A07A3649496CC8E6797B8BF0D6CA19496608DC4B3E59E`
+* SHA-256: `67C0CA470DE7B57D77B0C8CE6793106A542BDFA4DDD4AE68AB085EEE46DD1834`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -78,6 +78,8 @@ Od verze `1.0.63` má WDUi obecné edge-safe layout lanes pro prvky ukotvené k 
 Od verze `1.0.64` používá WDUi pro edge-follow prvky vynucený 1px scanline layout. Dropdown scrollbar v Restart Guardu se kreslí, hit-testuje i táhne podle segmentů pravé hrany aktivního dropdown surface, takže se u výrazných šikmých nebo cut skinů drží stejného marginu od hrany místo jednoho hrubého obdélníku.
 
 Od verze `1.0.65` je opravený kompaktní scrollbar v dropdownu: thumb zůstává úzký, ale track/rám je znovu širší a čitelně ho ohraničuje. WDUi navíc kreslí segmentované surfaces jako jeden souvislý materiál oříznutý contour regionem, takže se gradienty, bitmapy, obrysy a noise nerozbijí na izolované 1px proužky. Contour layout je nově společná vlastnost základního `Controlu`, kterou mohou používat i další současné a budoucí prvky.
+
+Od verze `1.0.66` používá WDUi pro segmentované contour prvky nový bitmap-shift postup: control se nejdřív vykreslí rovně do offscreen bitmapy bez deformace a potom se 1px řádky nebo sloupce posunou do contour lanes. Dropdown scrollbary tak drží stejný margin od šikmé nebo cut hrany bez grafických zlomů, smrštěných rámů a rozbitých borderů.
 
 ## Ovládání
 
