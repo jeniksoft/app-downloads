@@ -4,9 +4,9 @@ Windows Update Restart Guard je malá Windows utilita, která pomáhá zabránit
 
 ## Stažení
 
-* Verze: `1.0.62`
+* Verze: `1.0.63`
 * Setup: [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe)
-* SHA-256: `7018A2A86EF43F46CB720C0BD87C26EDBA2A97ED4FB29A257FAC6F77927396DD`
+* SHA-256: `E5EF29BCE1DC01115261E11D17369C8EC8D8A102D30B8AE05B8A337E28158DF0`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -73,6 +73,7 @@ Od verze `1.0.61` počítá WDUi progress bar track i procentní text z bezpečn
 
 Od verze `1.0.62` používají další stávající WDUi controly stejný shape-safe princip jako dropdowny a tabulky. Datumová pole, kalendáře, menu, taby, rich/selectable text bloky, popup texty a tooltip akční tlačítka počítají text a vnitřní obsah z bezpečné oblasti aktivního surface, takže ani výrazně zkosené skiny neposílají text do odříznutých rohů. Restart Guard je proti této WDUi vrstvě znovu přebuildovaný, včetně update dialogů.
 
+Od verze `1.0.63` má WDUi obecné edge-safe layout lanes pro prvky ukotvené k okraji. Dropdown scrollbar v Restart Guardu se tak bere z pravého bezpečného pruhu aktivního dropdown surface a neleze přes šikmé nebo odříznuté okraje. Stejný princip je zapsaný jako pravidlo pro scrollbary, badge, update glyphy, toolbary, overlay tlačítka, splittery, resize gripy a budoucí edge controly.
 ## Ovládání
 
 Po spuštění najdeš aplikaci v oznamovací oblasti Windows. Tray popup nabízí:

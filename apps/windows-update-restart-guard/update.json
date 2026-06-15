@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.62",
+  "version": "1.0.63",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "7018A2A86EF43F46CB720C0BD87C26EDBA2A97ED4FB29A257FAC6F77927396DD",
-  "changes_cs": "- WDUi rozšiřuje shape-safe kreslení na další stávající controly: datumové pole a kalendář, menu root i popup položky, taby, rich/selectable text bloky, popup texty a tooltip akční tlačítka.\n- Vestavěné texty, hodnoty a pomocné akce se teď počítají z bezpečné content oblasti aktivního surface, takže se nedostávají do cut/slanted okrajů ani u výrazných skinů.\n- Restart Guard je přebuildovaný proti nové WDUi vrstvě, aby update dialogy i nastavení držely text, progress a řádkový obsah uvnitř viditelného tvaru.",
-  "changes_en": "- WDUi extends shape-safe rendering to more existing controls: date inputs and calendars, menu root and popup items, tabs, rich/selectable text blocks, popup text, and tooltip action buttons.\n- Built-in text, values, and helper actions are now laid out from the active surface content-safe area, so they do not spill into cut/slanted edges in expressive skins.\n- Restart Guard is rebuilt against the updated WDUi layer so update dialogs and settings keep text, progress, and row content inside the visible shape.",
+  "sha256": "E5EF29BCE1DC01115261E11D17369C8EC8D8A102D30B8AE05B8A337E28158DF0",
+  "changes_cs": "- WDUi přidává obecné edge-safe layout lanes pro prvky ukotvené k okraji: Control::edgeLayoutRect(...), \u001bdgeLayoutRects(...) a range varianty.\n- Scrollbar v combo/dropdown popupu se teď ukládá do pravého bezpečného pruhu aktivního dropdown surface, takže neleze přes cut/slanted okraje výrazných skinů.\n- Pravidla a WDUi dokumentace doplňují, že scrollbary, badge, update glyphy, toolbary, overlay tlačítka, splittery, resize gripy a budoucí edge controly nesmí používat raw okrajové souřadnice.",
+  "changes_en": "- WDUi adds generic edge-safe layout lanes for edge-mounted elements: Control::edgeLayoutRect(...), \u001bdgeLayoutRects(...), and range variants.\n- Combo/dropdown popup scrollbars now sit in the right safe lane of the active dropdown surface, so they no longer cross cut/slanted edges in expressive skins.\n- The rules and WDUi documentation now state that scrollbars, badges, update glyphs, toolbars, overlay buttons, splitters, resize grips, and future edge controls must not use raw edge coordinates.",
   "history": [
+    {
+      "version": "1.0.63",
+      "changes_cs": "- WDUi přidává obecné edge-safe layout lanes pro prvky ukotvené k okraji: Control::edgeLayoutRect(...), \u001bdgeLayoutRects(...) a range varianty.\n- Scrollbar v combo/dropdown popupu se teď ukládá do pravého bezpečného pruhu aktivního dropdown surface, takže neleze přes cut/slanted okraje výrazných skinů.\n- Pravidla a WDUi dokumentace doplňují, že scrollbary, badge, update glyphy, toolbary, overlay tlačítka, splittery, resize gripy a budoucí edge controly nesmí používat raw okrajové souřadnice.",
+      "changes_en": "- WDUi adds generic edge-safe layout lanes for edge-mounted elements: Control::edgeLayoutRect(...), \u001bdgeLayoutRects(...), and range variants.\n- Combo/dropdown popup scrollbars now sit in the right safe lane of the active dropdown surface, so they no longer cross cut/slanted edges in expressive skins.\n- The rules and WDUi documentation now state that scrollbars, badges, update glyphs, toolbars, overlay buttons, splitters, resize grips, and future edge controls must not use raw edge coordinates."
+    },
     {
       "version": "1.0.62",
       "changes_cs": "- WDUi rozšiřuje shape-safe kreslení na další stávající controly: datumové pole a kalendář, menu root i popup položky, taby, rich/selectable text bloky, popup texty a tooltip akční tlačítka.\n- Vestavěné texty, hodnoty a pomocné akce se teď počítají z bezpečné content oblasti aktivního surface, takže se nedostávají do cut/slanted okrajů ani u výrazných skinů.\n- Restart Guard je přebuildovaný proti nové WDUi vrstvě, aby update dialogy i nastavení držely text, progress a řádkový obsah uvnitř viditelného tvaru.",
