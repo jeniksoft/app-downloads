@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.54",
+  "version": "1.0.55",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "5CEF4DED887D5FFADE598E85E262A40AFF545391F966F4DC6FA9075F93D5FF8C",
-  "changes_cs": "- WDUi okna nově zachytí samotnou klávesu PrintScreen jako systémový screen snipping fallback přes `ms-screenclip:`, takže funguje i nad custom WDUi okny.\n- Modifier varianty jako Alt+PrintScreen zůstávají ponechané Windows nebo appce.\n- Doplněná pravidla říkají, že WDUi appky nesmí pohltit běžné Windows screenshot klávesy.",
-  "changes_en": "- WDUi windows now handle the plain PrintScreen key as a system screen-snipping fallback through `ms-screenclip:`, so it works over custom WDUi windows.\n- Modifier variants such as Alt+PrintScreen are left to Windows or app-specific behavior.\n- The rules now state that WDUi apps must not swallow normal Windows screenshot keys.",
+  "sha256": "73EB9121F66ED0B3FC10D2FF16F7214CABA6BC33CEE0CD069B2E94E8722673AB",
+  "changes_cs": "- WDUi opravuje kreslení surface obrysů na pravé a spodní hraně okna.\n- Výplň zůstává přes celou plochu, ale obrys se kreslí dovnitř bounds, takže pravý okraj u zkosených/custom skinů už nemizí oříznutím na hraně framebufferu.\n- Oprava je systémová pro okna, panely, karty, tlačítka a další vector-surface prvky.",
+  "changes_en": "- WDUi fixes surface outline rendering on the right and bottom window edges.\n- Fill still covers the full surface, but the outline is drawn inside the bounds, so the right edge in slanted/custom skins no longer disappears due to framebuffer clipping.\n- The fix is systemic for windows, panels, cards, buttons, and other vector-surface controls.",
   "history": [
+    {
+      "version": "1.0.55",
+      "changes_cs": "- WDUi opravuje kreslení surface obrysů na pravé a spodní hraně okna.\n- Výplň zůstává přes celou plochu, ale obrys se kreslí dovnitř bounds, takže pravý okraj u zkosených/custom skinů už nemizí oříznutím na hraně framebufferu.\n- Oprava je systémová pro okna, panely, karty, tlačítka a další vector-surface prvky.",
+      "changes_en": "- WDUi fixes surface outline rendering on the right and bottom window edges.\n- Fill still covers the full surface, but the outline is drawn inside the bounds, so the right edge in slanted/custom skins no longer disappears due to framebuffer clipping.\n- The fix is systemic for windows, panels, cards, buttons, and other vector-surface controls."
+    },
     {
       "version": "1.0.54",
       "changes_cs": "- WDUi okna nově zachytí samotnou klávesu PrintScreen jako systémový screen snipping fallback přes `ms-screenclip:`, takže funguje i nad custom WDUi okny.\n- Modifier varianty jako Alt+PrintScreen zůstávají ponechané Windows nebo appce.\n- Doplněná pravidla říkají, že WDUi appky nesmí pohltit běžné Windows screenshot klávesy.",

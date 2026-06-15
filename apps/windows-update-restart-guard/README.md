@@ -4,9 +4,9 @@ Windows Update Restart Guard je malá Windows utilita, která pomáhá zabránit
 
 ## Stažení
 
-* Verze: `1.0.54`
+* Verze: `1.0.55`
 * Setup: [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe)
-* SHA-256: `5CEF4DED887D5FFADE598E85E262A40AFF545391F966F4DC6FA9075F93D5FF8C`
+* SHA-256: `73EB9121F66ED0B3FC10D2FF16F7214CABA6BC33CEE0CD069B2E94E8722673AB`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -60,6 +60,8 @@ Od verze `1.0.50` WDUi opravuje resize/restore tok custom oken: minimalizace už
 Od verze `1.0.53` je Restart Guard srovnaný s aktuální durable C++/WDUi šablonou pro paměť stavu UI. Nastavení si ukládá poslední normální nebo maximalizovanou polohu okna a stav seznamu restartovacích oken včetně scrollu. Uložený stav je záměrně očištěný: neobnovuje minimalizaci ani přechodné hidden/disabled stavy, aby se okno po startu nevrátilo do nepoužitelného stavu.
 
 Od verze `1.0.54` WDUi okna zachytí samotnou klávesu PrintScreen jako fallback pro Windows screen snipping přes `ms-screenclip:`. To odpovídá toku `Win+Shift+S` a řeší stav, kdy screenshot klávesa nad custom WDUi oknem nepůsobila. Kombinace jako `Alt+PrintScreen` zůstávají ponechané Windows nebo appce.
+
+Od verze `1.0.55` WDUi kreslí obrysy vector surfaces dovnitř bounds místo na exkluzivní pravý/spodní okraj GDI kreslení. Výplň zůstává přes celou plochu, ale pravá a spodní linka se už u custom nebo zkosených skinů neztratí oříznutím na hraně okna.
 
 ## Ovládání
 
