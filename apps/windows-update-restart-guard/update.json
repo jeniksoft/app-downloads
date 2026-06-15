@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.43",
+  "version": "1.0.44",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "86225BB4C285D80AB0FAE7F908801DEA728ADADB2BF2227394B0B37E15AFED75",
-  "changes_cs": "- WDUi přidává shape-safe layout bands: neobdélníkové surfaces vrací stabilní vodorovné bezpečné pásy přes `contentLayoutRects()`.\n- Restart Guard používá průnik pásů pro celé skupiny controlů v nastavení, takže tabulka, editor a profilová část lépe sledují zkosené hrany bez zbytečné ztráty prostoru.\n- Pravidla pro nativní appky doplňují, kdy použít jeden safe rect a kdy pásy pro tabulky, rich text, multiline help a skupiny formulářových prvků.",
-  "changes_en": "- WDUi adds shape-safe layout bands: non-rectangular surfaces now expose stable horizontal safe bands through `contentLayoutRects()`.\n- Restart Guard uses vertical band intersections for whole settings control groups, so the table, editor, and profile section follow slanted edges with less wasted space.\n- Native app rules now describe when to use one safe rect and when to use bands for tables, rich text, multiline help, and grouped form controls.",
+  "sha256": "1B810ADBE392C67DA906B6D2F8B7F2C0792034D219A40121E8FE376DA60A4A6D",
+  "changes_cs": "- WDUi custom chrome teď používá shape-safe title-row span pro ikonu aplikace, text titulku i minimize/maximize/close tlačítka.\n- U šikmých/cut titlebar skinů, například Ultraviolet Rift, se ikona titulku posune dovnitř viditelného chrome místo do zkoseného okraje.\n- WDUi dokumentace a pravidla nativních appek doplňují, že custom titlebar je součást shape-aware layout pravidel.",
+  "changes_en": "- WDUi custom chrome now uses a shape-safe title-row span for the app icon, window title, and minimize/maximize/close buttons.\n- With slanted/cut titlebar skins such as Ultraviolet Rift, the title icon is moved into the visible chrome instead of sitting in the angled edge.\n- WDUi docs and native app rules now state that custom titlebars are part of the shape-aware layout contract.",
   "history": [
+    {
+      "version": "1.0.44",
+      "changes_cs": "- WDUi custom chrome teď používá shape-safe title-row span pro ikonu aplikace, text titulku i minimize/maximize/close tlačítka.\n- U šikmých/cut titlebar skinů, například Ultraviolet Rift, se ikona titulku posune dovnitř viditelného chrome místo do zkoseného okraje.\n- WDUi dokumentace a pravidla nativních appek doplňují, že custom titlebar je součást shape-aware layout pravidel.",
+      "changes_en": "- WDUi custom chrome now uses a shape-safe title-row span for the app icon, window title, and minimize/maximize/close buttons.\n- With slanted/cut titlebar skins such as Ultraviolet Rift, the title icon is moved into the visible chrome instead of sitting in the angled edge.\n- WDUi docs and native app rules now state that custom titlebars are part of the shape-aware layout contract."
+    },
     {
       "version": "1.0.43",
       "changes_cs": "- WDUi přidává shape-safe layout bands: neobdélníkové surfaces vrací stabilní vodorovné bezpečné pásy přes `contentLayoutRects()`.\n- Restart Guard používá průnik pásů pro celé skupiny controlů v nastavení, takže tabulka, editor a profilová část lépe sledují zkosené hrany bez zbytečné ztráty prostoru.\n- Pravidla pro nativní appky doplňují, kdy použít jeden safe rect a kdy pásy pro tabulky, rich text, multiline help a skupiny formulářových prvků.",
