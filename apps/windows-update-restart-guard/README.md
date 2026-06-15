@@ -4,9 +4,9 @@ Windows Update Restart Guard je malá Windows utilita, která pomáhá zabránit
 
 ## Stažení
 
-* Verze: `1.0.45`
+* Verze: `1.0.47`
 * Setup: [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe)
-* SHA-256: `01401B4A4EF65397AB43785B309629DDB1C31B1B2FB6F69922DAB3A8EC94ECFB`
+* SHA-256: `68CFA188411DC5046BC5D8D71F2E84672CA4137F5E8C88FDD0FB7E9F7ECCCB4B`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -48,6 +48,8 @@ Od verze `1.0.43` WDUi přidává shape-safe layout bands: neobdélníkové surf
 Od verze `1.0.44` používá WDUi stejný shape-safe princip i pro custom chrome. Ikona aplikace, text titulku a ovládací tlačítka titulku se počítají z bezpečného řádku aktivního titlebar tvaru, takže šikmé skiny jako Ultraviolet Rift nestrkají ikonu do zkoseného okraje.
 
 Od verze `1.0.45` používají shape-safe řádek i vestavěné texty karet. Tím se opravuje explanatory text u panelu Restartovací okna ve skinu Ultraviolet Rift, který předtím mohl ležet v odříznuté části šikmé karty.
+
+Od verze `1.0.47` jsou restartovací okna v nastavení skutečné děti panelu `Restartovací okna`, ne overlay položený přes kartu. WDUi přidává body layout API pro karty, takže tabulka, editor dne a časové vstupy respektují bezpečné tělo panelu i u výrazně zkosených skinů.
 
 ## Ovládání
 

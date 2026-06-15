@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.45",
+  "version": "1.0.47",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "01401B4A4EF65397AB43785B309629DDB1C31B1B2FB6F69922DAB3A8EC94ECFB",
-  "changes_cs": "- WDUi sjednocuje výpočet bezpečného vodorovného pásu pro konkrétní Y rozsah surface.\n- `Card` title/subtitle řádky teď používají safe span aktivního header/body tvaru, takže explanatory text u šikmých karet neleží v odříznutém prostoru.\n- Restart Guard tím opravuje text u panelu Restartovací okna ve skinu Ultraviolet Rift.",
-  "changes_en": "- WDUi centralizes safe horizontal span calculation for a specific Y range of a surface.\n- `Card` title/subtitle rows now use the safe span of the active header/body shape, so explanatory text in slanted cards no longer floats in cut-away space.\n- Restart Guard uses this to fix the Restart windows panel text in the Ultraviolet Rift skin.",
+  "sha256": "68CFA188411DC5046BC5D8D71F2E84672CA4137F5E8C88FDD0FB7E9F7ECCCB4B",
+  "changes_cs": "- Restartovací okna v nastavení Restart Guardu jsou teď skutečné děti panelu `Restartovací okna`, ne root-level overlay položený přes kartu.\n- WDUi přidává `Card::bodyLayoutRect()` a `Card::bodyLayoutRects()`, takže obsah karty se layoutuje podle bezpečného těla pod titulkem a popisem.\n- Skiny s výrazným zkosením, hlavně Ultraviolet Rift, teď drží tabulku, editor dne a časové vstupy uvnitř použitelné plochy panelu.",
+  "changes_en": "- Restart Guard settings restart-window controls are now real children of the `Restart windows` panel instead of root-level overlays drawn over the card.\n- WDUi adds `Card::bodyLayoutRect()` and `Card::bodyLayoutRects()`, so card content lays out from the safe body below the title and description.\n- Strongly slanted skins, especially Ultraviolet Rift, now keep the table, day editor, and time inputs inside the usable panel body.",
   "history": [
+    {
+      "version": "1.0.47",
+      "changes_cs": "- Restartovací okna v nastavení Restart Guardu jsou teď skutečné děti panelu `Restartovací okna`, ne root-level overlay položený přes kartu.\n- WDUi přidává `Card::bodyLayoutRect()` a `Card::bodyLayoutRects()`, takže obsah karty se layoutuje podle bezpečného těla pod titulkem a popisem.\n- Skiny s výrazným zkosením, hlavně Ultraviolet Rift, teď drží tabulku, editor dne a časové vstupy uvnitř použitelné plochy panelu.",
+      "changes_en": "- Restart Guard settings restart-window controls are now real children of the `Restart windows` panel instead of root-level overlays drawn over the card.\n- WDUi adds `Card::bodyLayoutRect()` and `Card::bodyLayoutRects()`, so card content lays out from the safe body below the title and description.\n- Strongly slanted skins, especially Ultraviolet Rift, now keep the table, day editor, and time inputs inside the usable panel body."
+    },
     {
       "version": "1.0.45",
       "changes_cs": "- WDUi sjednocuje výpočet bezpečného vodorovného pásu pro konkrétní Y rozsah surface.\n- `Card` title/subtitle řádky teď používají safe span aktivního header/body tvaru, takže explanatory text u šikmých karet neleží v odříznutém prostoru.\n- Restart Guard tím opravuje text u panelu Restartovací okna ve skinu Ultraviolet Rift.",

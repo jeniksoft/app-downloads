@@ -12,6 +12,6 @@ Složka aplikace obsahuje veřejný setup, popis, návod k použití a případn
 
 | Aplikace | Verze | Setup | Dokumentace | SHA-256 |
 | --- | --- | --- | --- | --- |
-| Windows Update Restart Guard | 1.0.45 | [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe) | [Popis a návod](windows-update-restart-guard/README.md) | [`01401B4A...EC94ECFB`](../checksums/SHA256SUMS.txt) |
+| Windows Update Restart Guard | 1.0.47 | [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe) | [Popis a návod](windows-update-restart-guard/README.md) | [`68CFA188...7ECCCB4B`](../checksums/SHA256SUMS.txt) |
 
 Tabulky zkracují SHA-256 kvůli čitelnosti. Plný hash je v app `update.json` a `checksums/SHA256SUMS.txt`.
