@@ -1,1 +1,1 @@
-22319C45E88BEE9D74013151971F2E1A9A7FEEEAE92D24D9707D44D8BF077FB1  apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe
+8EF7F215C3066D16DAAB210838BB336435C4B87A73C04FB07DEE5DAC16A96BF3  apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe
