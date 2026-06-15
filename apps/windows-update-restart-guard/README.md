@@ -4,9 +4,9 @@ Windows Update Restart Guard je malá Windows utilita, která pomáhá zabránit
 
 ## Stažení
 
-* Verze: `1.0.50`
+* Verze: `1.0.53`
 * Setup: [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe)
-* SHA-256: `8EF7F215C3066D16DAAB210838BB336435C4B87A73C04FB07DEE5DAC16A96BF3`
+* SHA-256: `97D82CDECA6DC189C0DD5B3BC696E6B255F9EE09921414A063BB38B176B8C546`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -56,6 +56,8 @@ Od verze `1.0.48` používají WDUi popup akční tlačítka a popup close tlač
 Od verze `1.0.49` má WDUi obecnou surface geometry vrstvu oddělenou od kreslení. Skin může použít fallback tvar, alpha kanál bitmapy nebo samostatnou masku pro hit-test a layout pásy, a současně nastavit bezpečné insety zvlášť pro text, child layout, header, akční řádek, scrollbar a klikací oblast.
 
 Od verze `1.0.50` WDUi opravuje resize/restore tok custom oken: minimalizace už nepřepočítává root layout na nulovou plochu, app-level relayout po `WM_SIZE` běží až nad aktuální velikostí klienta a ručně přepočítané ovládací prvky v Restart Guardu používají runtime bounds bez přepisování návrhové anchor reference. Tím se opravuje stav, kdy šlo okno zvětšovat, ale po zvětšení už nešlo zmenšit, a po minimalizaci/restore mizely spodní prvky nastavení.
+
+Od verze `1.0.53` je Restart Guard srovnaný s aktuální durable C++/WDUi šablonou pro paměť stavu UI. Nastavení si ukládá poslední normální nebo maximalizovanou polohu okna a stav seznamu restartovacích oken včetně scrollu. Uložený stav je záměrně očištěný: neobnovuje minimalizaci ani přechodné hidden/disabled stavy, aby se okno po startu nevrátilo do nepoužitelného stavu.
 
 ## Ovládání
 

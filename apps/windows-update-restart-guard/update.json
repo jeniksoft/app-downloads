@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.50",
+  "version": "1.0.53",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "8EF7F215C3066D16DAAB210838BB336435C4B87A73C04FB07DEE5DAC16A96BF3",
-  "changes_cs": "- WDUi opravuje resize/restore tok custom oken: minimalizace už nepřepočítává root layout na nulovou plochu a app-level WM_SIZE relayout běží až nad aktuální velikostí klienta.\n- Přidán `Control::setRuntimeBounds(...)` pro ruční relayout, který nemění návrhovou anchor referenci a neudělá ze zvětšeného okna nové minimum.\n- Restart Guard používá runtime bounds pro ručně přepočítané nastavení, takže okno má jít po zvětšení znovu zmenšit a po minimalizaci/restore nemají mizet spodní comboboxy ani tlačítko Uložit.",
-  "changes_en": "- WDUi fixes the custom-window resize/restore flow: minimization no longer lays out the root against a zero client area, and app-level WM_SIZE relayout now runs after the current client size is applied.\n- Added `Control::setRuntimeBounds(...)` for manual relayout that does not replace the design-time anchor reference or teach a grown window to become the new minimum.\n- Restart Guard now uses runtime bounds for manually laid out settings controls, so the window should shrink again after growing and bottom combo boxes plus Save should survive minimize/restore.",
+  "sha256": "97D82CDECA6DC189C0DD5B3BC696E6B255F9EE09921414A063BB38B176B8C546",
+  "changes_cs": "- Restart Guard je normalizovaný podle aktuální durable C++/WDUi šablony pro paměť stavu UI.\n- Nastavení si ukládá poslední normální/maximalizovanou polohu okna a stav seznamu restartovacích oken včetně scrollu.\n- Uložený stav se sanitizuje: neobnovuje minimalizaci ani přechodné hidden/disabled stavy, aby okno po startu nezůstalo mimo použitelný stav.",
+  "changes_en": "- Restart Guard is normalized against the current durable C++/WDUi template for UI-state persistence.\n- Settings now remember the last normal/maximized window placement and the restart-window list state including scroll position.\n- Saved state is sanitized: minimized placement and transient hidden/disabled states are not restored, so the window does not reopen in an unusable state.",
   "history": [
+    {
+      "version": "1.0.53",
+      "changes_cs": "- Restart Guard je normalizovaný podle aktuální durable C++/WDUi šablony pro paměť stavu UI.\n- Nastavení si ukládá poslední normální/maximalizovanou polohu okna a stav seznamu restartovacích oken včetně scrollu.\n- Uložený stav se sanitizuje: neobnovuje minimalizaci ani přechodné hidden/disabled stavy, aby okno po startu nezůstalo mimo použitelný stav.",
+      "changes_en": "- Restart Guard is normalized against the current durable C++/WDUi template for UI-state persistence.\n- Settings now remember the last normal/maximized window placement and the restart-window list state including scroll position.\n- Saved state is sanitized: minimized placement and transient hidden/disabled states are not restored, so the window does not reopen in an unusable state."
+    },
     {
       "version": "1.0.50",
       "changes_cs": "- WDUi opravuje resize/restore tok custom oken: minimalizace už nepřepočítává root layout na nulovou plochu a app-level WM_SIZE relayout běží až nad aktuální velikostí klienta.\n- Přidán `Control::setRuntimeBounds(...)` pro ruční relayout, který nemění návrhovou anchor referenci a neudělá ze zvětšeného okna nové minimum.\n- Restart Guard používá runtime bounds pro ručně přepočítané nastavení, takže okno má jít po zvětšení znovu zmenšit a po minimalizaci/restore nemají mizet spodní comboboxy ani tlačítko Uložit.",
