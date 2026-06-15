@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.47",
+  "version": "1.0.48",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "68CFA188411DC5046BC5D8D71F2E84672CA4137F5E8C88FDD0FB7E9F7ECCCB4B",
-  "changes_cs": "- Restartovací okna v nastavení Restart Guardu jsou teď skutečné děti panelu `Restartovací okna`, ne root-level overlay položený přes kartu.\n- WDUi přidává `Card::bodyLayoutRect()` a `Card::bodyLayoutRects()`, takže obsah karty se layoutuje podle bezpečného těla pod titulkem a popisem.\n- Skiny s výrazným zkosením, hlavně Ultraviolet Rift, teď drží tabulku, editor dne a časové vstupy uvnitř použitelné plochy panelu.",
-  "changes_en": "- Restart Guard settings restart-window controls are now real children of the `Restart windows` panel instead of root-level overlays drawn over the card.\n- WDUi adds `Card::bodyLayoutRect()` and `Card::bodyLayoutRects()`, so card content lays out from the safe body below the title and description.\n- Strongly slanted skins, especially Ultraviolet Rift, now keep the table, day editor, and time inputs inside the usable panel body.",
+  "sha256": "418F4791B44B7FDE92D2EEC2D70E65E02122AAFC189AAD0891A2176CC83B56C5",
+  "changes_cs": "- WDUi popup akční tlačítka se teď pozicují podle bezpečného spodního pásu aktivního surface, ne podle raw pravého dolního rohu dialogu.\n- Close tlačítko popupu v headeru používá bezpečný header pás, takže se u cut/slanted skinů neposouvá do useknuté části.\n- Dialog kontroly aktualizací v Restart Guardu tak drží tlačítko Zavřít uvnitř viditelného těla i u agresivních skinů.",
+  "changes_en": "- WDUi popup action buttons are now positioned from the safe bottom span of the active surface instead of the raw bottom-right dialog corner.\n- The popup header close button now uses the safe header span, so cut/slanted skins do not push it into the clipped area.\n- Restart Guard update-check dialogs now keep the Close action inside the visible body even with aggressive skins.",
   "history": [
+    {
+      "version": "1.0.48",
+      "changes_cs": "- WDUi popup akční tlačítka se teď pozicují podle bezpečného spodního pásu aktivního surface, ne podle raw pravého dolního rohu dialogu.\n- Close tlačítko popupu v headeru používá bezpečný header pás, takže se u cut/slanted skinů neposouvá do useknuté části.\n- Dialog kontroly aktualizací v Restart Guardu tak drží tlačítko Zavřít uvnitř viditelného těla i u agresivních skinů.",
+      "changes_en": "- WDUi popup action buttons are now positioned from the safe bottom span of the active surface instead of the raw bottom-right dialog corner.\n- The popup header close button now uses the safe header span, so cut/slanted skins do not push it into the clipped area.\n- Restart Guard update-check dialogs now keep the Close action inside the visible body even with aggressive skins."
+    },
     {
       "version": "1.0.47",
       "changes_cs": "- Restartovací okna v nastavení Restart Guardu jsou teď skutečné děti panelu `Restartovací okna`, ne root-level overlay položený přes kartu.\n- WDUi přidává `Card::bodyLayoutRect()` a `Card::bodyLayoutRects()`, takže obsah karty se layoutuje podle bezpečného těla pod titulkem a popisem.\n- Skiny s výrazným zkosením, hlavně Ultraviolet Rift, teď drží tabulku, editor dne a časové vstupy uvnitř použitelné plochy panelu.",
