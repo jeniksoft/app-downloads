@@ -4,9 +4,9 @@ Windows Update Restart Guard je malá Windows utilita, která pomáhá zabránit
 
 ## Stažení
 
-* Verze: `1.0.48`
+* Verze: `1.0.49`
 * Setup: [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe)
-* SHA-256: `418F4791B44B7FDE92D2EEC2D70E65E02122AAFC189AAD0891A2176CC83B56C5`
+* SHA-256: `22319C45E88BEE9D74013151971F2E1A9A7FEEEAE92D24D9707D44D8BF077FB1`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -52,6 +52,8 @@ Od verze `1.0.45` používají shape-safe řádek i vestavěné texty karet. Tí
 Od verze `1.0.47` jsou restartovací okna v nastavení skutečné děti panelu `Restartovací okna`, ne overlay položený přes kartu. WDUi přidává body layout API pro karty, takže tabulka, editor dne a časové vstupy respektují bezpečné tělo panelu i u výrazně zkosených skinů.
 
 Od verze `1.0.48` používají WDUi popup akční tlačítka a popup close tlačítko bezpečné row spany aktivního surface. Tlačítka v malých dialozích, například `Zavřít` v dialogu kontroly aktualizací, se tak neposouvají do useknutých rohů u cut/slanted skinů.
+
+Od verze `1.0.49` má WDUi obecnou surface geometry vrstvu oddělenou od kreslení. Skin může použít fallback tvar, alpha kanál bitmapy nebo samostatnou masku pro hit-test a layout pásy, a současně nastavit bezpečné insety zvlášť pro text, child layout, header, akční řádek, scrollbar a klikací oblast.
 
 ## Ovládání
 

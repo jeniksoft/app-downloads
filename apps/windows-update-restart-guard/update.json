@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.48",
+  "version": "1.0.49",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "418F4791B44B7FDE92D2EEC2D70E65E02122AAFC189AAD0891A2176CC83B56C5",
-  "changes_cs": "- WDUi popup akční tlačítka se teď pozicují podle bezpečného spodního pásu aktivního surface, ne podle raw pravého dolního rohu dialogu.\n- Close tlačítko popupu v headeru používá bezpečný header pás, takže se u cut/slanted skinů neposouvá do useknuté části.\n- Dialog kontroly aktualizací v Restart Guardu tak drží tlačítko Zavřít uvnitř viditelného těla i u agresivních skinů.",
-  "changes_en": "- WDUi popup action buttons are now positioned from the safe bottom span of the active surface instead of the raw bottom-right dialog corner.\n- The popup header close button now uses the safe header span, so cut/slanted skins do not push it into the clipped area.\n- Restart Guard update-check dialogs now keep the Close action inside the visible body even with aggressive skins.",
+  "sha256": "22319C45E88BEE9D74013151971F2E1A9A7FEEEAE92D24D9707D44D8BF077FB1",
+  "changes_cs": "- WDUi přidává obecnou surface geometry vrstvu oddělenou od kreslení: fallback tvar, alpha z bitmapy nebo samostatná maska teď mohou určovat hit-test i layout pásy.\n- Surface geometry je role-aware: text, child layout, header, action row, scroll track a hit oblast mohou mít vlastní safe insety nastavené v JSON skinu.\n- Restart Guard je přebuildovaný proti nové WDUi vrstvě a skin guide popisuje bitmap/mask geometrii pro vlastní skiny.",
+  "changes_en": "- WDUi adds a general surface geometry layer separate from painting: fallback shape, bitmap alpha, or a separate mask can now define hit testing and layout bands.\n- Surface geometry is role-aware: text, child layout, header, action row, scroll track, and hit regions can each have skin-defined safe insets in JSON.\n- Restart Guard is rebuilt against the new WDUi layer, and the skin guide now documents bitmap/mask geometry for custom skins.",
   "history": [
+    {
+      "version": "1.0.49",
+      "changes_cs": "- WDUi přidává obecnou surface geometry vrstvu oddělenou od kreslení: fallback tvar, alpha z bitmapy nebo samostatná maska teď mohou určovat hit-test i layout pásy.\n- Surface geometry je role-aware: text, child layout, header, action row, scroll track a hit oblast mohou mít vlastní safe insety nastavené v JSON skinu.\n- Restart Guard je přebuildovaný proti nové WDUi vrstvě a skin guide popisuje bitmap/mask geometrii pro vlastní skiny.",
+      "changes_en": "- WDUi adds a general surface geometry layer separate from painting: fallback shape, bitmap alpha, or a separate mask can now define hit testing and layout bands.\n- Surface geometry is role-aware: text, child layout, header, action row, scroll track, and hit regions can each have skin-defined safe insets in JSON.\n- Restart Guard is rebuilt against the new WDUi layer, and the skin guide now documents bitmap/mask geometry for custom skins."
+    },
     {
       "version": "1.0.48",
       "changes_cs": "- WDUi popup akční tlačítka se teď pozicují podle bezpečného spodního pásu aktivního surface, ne podle raw pravého dolního rohu dialogu.\n- Close tlačítko popupu v headeru používá bezpečný header pás, takže se u cut/slanted skinů neposouvá do useknuté části.\n- Dialog kontroly aktualizací v Restart Guardu tak drží tlačítko Zavřít uvnitř viditelného těla i u agresivních skinů.",
