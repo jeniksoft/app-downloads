@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.56",
+  "version": "1.0.58",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "42537A155DA20C0F0AE04F5526721E1AA1C3A2507EF47490826553DB04FF2145",
-  "changes_cs": "- WDUi ukládá běžnou pozici top-level okna podle skutečného screen rectangle místo historického `WINDOWPLACEMENT.rcNormalPosition`.\n- Durable šablona i Restart Guard ukládají placement také po dokončení přesunu nebo resize (`WM_EXITSIZEMOVE`), takže okno otevřené z tray se po zavření a znovuotevření vrací na místo, kam ho uživatel přesunul.\n- Uložený stav dál neobnovuje minimalizaci a zůstává monitor-aware clampnutý na dostupnou plochu.",
-  "changes_en": "- WDUi now stores normal top-level window placement from the actual screen rectangle instead of the historical `WINDOWPLACEMENT.rcNormalPosition`.\n- The durable template and Restart Guard also save placement after move/resize completion (`WM_EXITSIZEMOVE`), so a tray-opened window reopens where the user moved it.\n- Saved state still does not restore minimized launch state and remains monitor-aware clamped to the available work area.",
+  "sha256": "D1D5CFD7FA6E39D6551290F21887E6DB8C61D087C177095AAEA627EAA5401491",
+  "changes_cs": "- WDUi tabulky, combo/dropdown popupy a menu popupy používají bezpečný vodorovný pás pro každý řádek, takže texty, řádkové výplně, separátory a scrollbary zůstávají uvnitř zkosených/cut/alpha-safe skinů.\n- `TableList` nově lépe kombinuje automatické přizpůsobení sloupců obsahu a bezpečné šířce s ručním tažením hranic sloupců.\n- Restart Guard zapíná auto-size a ruční resize sloupců u tabulky restartovacích oken a uloží změněné šířky do UI stavu.",
+  "changes_en": "- WDUi tables, combo/dropdown popups, and menu popups now use a safe horizontal span for each row, keeping text, row fills, separators, and scrollbars inside slanted/cut/alpha-safe skins.\n- `TableList` now combines content/safe-width auto sizing with manual header-separator column resizing more reliably.\n- Restart Guard enables auto-size and manual column resizing for the restart-window table and persists changed widths in UI state.",
   "history": [
+    {
+      "version": "1.0.58",
+      "changes_cs": "- WDUi tabulky, combo/dropdown popupy a menu popupy používají bezpečný vodorovný pás pro každý řádek, takže texty, řádkové výplně, separátory a scrollbary zůstávají uvnitř zkosených/cut/alpha-safe skinů.\n- `TableList` nově lépe kombinuje automatické přizpůsobení sloupců obsahu a bezpečné šířce s ručním tažením hranic sloupců.\n- Restart Guard zapíná auto-size a ruční resize sloupců u tabulky restartovacích oken a uloží změněné šířky do UI stavu.",
+      "changes_en": "- WDUi tables, combo/dropdown popups, and menu popups now use a safe horizontal span for each row, keeping text, row fills, separators, and scrollbars inside slanted/cut/alpha-safe skins.\n- `TableList` now combines content/safe-width auto sizing with manual header-separator column resizing more reliably.\n- Restart Guard enables auto-size and manual column resizing for the restart-window table and persists changed widths in UI state."
+    },
     {
       "version": "1.0.56",
       "changes_cs": "- WDUi ukládá běžnou pozici top-level okna podle skutečného screen rectangle místo historického `WINDOWPLACEMENT.rcNormalPosition`.\n- Durable šablona i Restart Guard ukládají placement také po dokončení přesunu nebo resize (`WM_EXITSIZEMOVE`), takže okno otevřené z tray se po zavření a znovuotevření vrací na místo, kam ho uživatel přesunul.\n- Uložený stav dál neobnovuje minimalizaci a zůstává monitor-aware clampnutý na dostupnou plochu.",

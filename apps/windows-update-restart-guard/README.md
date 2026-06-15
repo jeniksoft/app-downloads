@@ -4,9 +4,9 @@ Windows Update Restart Guard je malá Windows utilita, která pomáhá zabránit
 
 ## Stažení
 
-* Verze: `1.0.56`
+* Verze: `1.0.58`
 * Setup: [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe)
-* SHA-256: `42537A155DA20C0F0AE04F5526721E1AA1C3A2507EF47490826553DB04FF2145`
+* SHA-256: `D1D5CFD7FA6E39D6551290F21887E6DB8C61D087C177095AAEA627EAA5401491`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -64,6 +64,8 @@ Od verze `1.0.54` WDUi okna zachytí samotnou klávesu PrintScreen jako fallback
 Od verze `1.0.55` WDUi kreslí obrysy vector surfaces dovnitř bounds místo na exkluzivní pravý/spodní okraj GDI kreslení. Výplň zůstává přes celou plochu, ale pravá a spodní linka se už u custom nebo zkosených skinů neztratí oříznutím na hraně okna.
 
 Od verze `1.0.56` WDUi ukládá normální pozici top-level okna podle skutečné screen pozice. Restart Guard zároveň ukládá placement po dokončení přesunu nebo změny velikosti okna, takže nastavení otevřené z tray se po zavření a znovuotevření vrací na místo, kam ho uživatel přesunul.
+
+Od verze `1.0.58` používají WDUi tabulky, combo/dropdown popupy a menu popupy bezpečný vodorovný pás pro každý řádek. Texty, řádkové výplně, separátory a scrollbary tak zůstávají uvnitř zkosených nebo cut skinů. Tabulka restartovacích oken v Restart Guardu zároveň automaticky přizpůsobuje sloupce obsahu, dovoluje ruční resize hranic sloupců v hlavičce a změněné šířky ukládá do UI stavu.
 
 ## Ovládání
 
