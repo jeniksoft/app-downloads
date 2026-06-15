@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.53",
+  "version": "1.0.54",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "97D82CDECA6DC189C0DD5B3BC696E6B255F9EE09921414A063BB38B176B8C546",
-  "changes_cs": "- Restart Guard je normalizovaný podle aktuální durable C++/WDUi šablony pro paměť stavu UI.\n- Nastavení si ukládá poslední normální/maximalizovanou polohu okna a stav seznamu restartovacích oken včetně scrollu.\n- Uložený stav se sanitizuje: neobnovuje minimalizaci ani přechodné hidden/disabled stavy, aby okno po startu nezůstalo mimo použitelný stav.",
-  "changes_en": "- Restart Guard is normalized against the current durable C++/WDUi template for UI-state persistence.\n- Settings now remember the last normal/maximized window placement and the restart-window list state including scroll position.\n- Saved state is sanitized: minimized placement and transient hidden/disabled states are not restored, so the window does not reopen in an unusable state.",
+  "sha256": "5CEF4DED887D5FFADE598E85E262A40AFF545391F966F4DC6FA9075F93D5FF8C",
+  "changes_cs": "- WDUi okna nově zachytí samotnou klávesu PrintScreen jako systémový screen snipping fallback přes `ms-screenclip:`, takže funguje i nad custom WDUi okny.\n- Modifier varianty jako Alt+PrintScreen zůstávají ponechané Windows nebo appce.\n- Doplněná pravidla říkají, že WDUi appky nesmí pohltit běžné Windows screenshot klávesy.",
+  "changes_en": "- WDUi windows now handle the plain PrintScreen key as a system screen-snipping fallback through `ms-screenclip:`, so it works over custom WDUi windows.\n- Modifier variants such as Alt+PrintScreen are left to Windows or app-specific behavior.\n- The rules now state that WDUi apps must not swallow normal Windows screenshot keys.",
   "history": [
+    {
+      "version": "1.0.54",
+      "changes_cs": "- WDUi okna nově zachytí samotnou klávesu PrintScreen jako systémový screen snipping fallback přes `ms-screenclip:`, takže funguje i nad custom WDUi okny.\n- Modifier varianty jako Alt+PrintScreen zůstávají ponechané Windows nebo appce.\n- Doplněná pravidla říkají, že WDUi appky nesmí pohltit běžné Windows screenshot klávesy.",
+      "changes_en": "- WDUi windows now handle the plain PrintScreen key as a system screen-snipping fallback through `ms-screenclip:`, so it works over custom WDUi windows.\n- Modifier variants such as Alt+PrintScreen are left to Windows or app-specific behavior.\n- The rules now state that WDUi apps must not swallow normal Windows screenshot keys."
+    },
     {
       "version": "1.0.53",
       "changes_cs": "- Restart Guard je normalizovaný podle aktuální durable C++/WDUi šablony pro paměť stavu UI.\n- Nastavení si ukládá poslední normální/maximalizovanou polohu okna a stav seznamu restartovacích oken včetně scrollu.\n- Uložený stav se sanitizuje: neobnovuje minimalizaci ani přechodné hidden/disabled stavy, aby okno po startu nezůstalo mimo použitelný stav.",
