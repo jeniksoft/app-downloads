@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.42",
+  "version": "1.0.43",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "8258354A25DCDC4FC534B160ED901089BAC35A507A0200E16AD84DB2DBFAC5E2",
-  "changes_cs": "- WDUi přidává shape-aware layout viewport: panely a karty umí vracet bezpečnou oblast pro skutečné bounds vnitřních controlů, nejen pro kreslení.\n- Anchor layout respektuje přirozené minimum controlů, takže kompaktní časové vstupy drží čitelné HH/MM podle aktivního fontu a skinu.\n- Nastavení Restart Guardu se přepočítává podle bezpečných oblastí karet, takže formulářové prvky u výrazných zkosených skinů neleží v odříznutých hranách.",
-  "changes_en": "- WDUi adds a shape-aware layout viewport: panels and cards can return a safe area for real child-control bounds, not only for painting.\n- Anchor layout now respects natural control minimums, so compact time inputs keep readable HH/MM fields for the active font and skin.\n- Restart Guard settings are laid out from card safe areas, so form controls in strongly slanted skins no longer sit in clipped edges.",
+  "sha256": "86225BB4C285D80AB0FAE7F908801DEA728ADADB2BF2227394B0B37E15AFED75",
+  "changes_cs": "- WDUi přidává shape-safe layout bands: neobdélníkové surfaces vrací stabilní vodorovné bezpečné pásy přes `contentLayoutRects()`.\n- Restart Guard používá průnik pásů pro celé skupiny controlů v nastavení, takže tabulka, editor a profilová část lépe sledují zkosené hrany bez zbytečné ztráty prostoru.\n- Pravidla pro nativní appky doplňují, kdy použít jeden safe rect a kdy pásy pro tabulky, rich text, multiline help a skupiny formulářových prvků.",
+  "changes_en": "- WDUi adds shape-safe layout bands: non-rectangular surfaces now expose stable horizontal safe bands through `contentLayoutRects()`.\n- Restart Guard uses vertical band intersections for whole settings control groups, so the table, editor, and profile section follow slanted edges with less wasted space.\n- Native app rules now describe when to use one safe rect and when to use bands for tables, rich text, multiline help, and grouped form controls.",
   "history": [
+    {
+      "version": "1.0.43",
+      "changes_cs": "- WDUi přidává shape-safe layout bands: neobdélníkové surfaces vrací stabilní vodorovné bezpečné pásy přes `contentLayoutRects()`.\n- Restart Guard používá průnik pásů pro celé skupiny controlů v nastavení, takže tabulka, editor a profilová část lépe sledují zkosené hrany bez zbytečné ztráty prostoru.\n- Pravidla pro nativní appky doplňují, kdy použít jeden safe rect a kdy pásy pro tabulky, rich text, multiline help a skupiny formulářových prvků.",
+      "changes_en": "- WDUi adds shape-safe layout bands: non-rectangular surfaces now expose stable horizontal safe bands through `contentLayoutRects()`.\n- Restart Guard uses vertical band intersections for whole settings control groups, so the table, editor, and profile section follow slanted edges with less wasted space.\n- Native app rules now describe when to use one safe rect and when to use bands for tables, rich text, multiline help, and grouped form controls."
+    },
     {
       "version": "1.0.42",
       "changes_cs": "- WDUi přidává shape-aware layout viewport: panely a karty umí vracet bezpečnou oblast pro skutečné bounds vnitřních controlů, nejen pro kreslení.\n- Anchor layout respektuje přirozené minimum controlů, takže kompaktní časové vstupy drží čitelné HH/MM podle aktivního fontu a skinu.\n- Nastavení Restart Guardu se přepočítává podle bezpečných oblastí karet, takže formulářové prvky u výrazných zkosených skinů neleží v odříznutých hranách.",
