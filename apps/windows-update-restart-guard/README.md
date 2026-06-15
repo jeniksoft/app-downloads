@@ -4,9 +4,9 @@ Windows Update Restart Guard je malá Windows utilita, která pomáhá zabránit
 
 ## Stažení
 
-* Verze: `1.0.55`
+* Verze: `1.0.56`
 * Setup: [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe)
-* SHA-256: `73EB9121F66ED0B3FC10D2FF16F7214CABA6BC33CEE0CD069B2E94E8722673AB`
+* SHA-256: `42537A155DA20C0F0AE04F5526721E1AA1C3A2507EF47490826553DB04FF2145`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -62,6 +62,8 @@ Od verze `1.0.53` je Restart Guard srovnaný s aktuální durable C++/WDUi šabl
 Od verze `1.0.54` WDUi okna zachytí samotnou klávesu PrintScreen jako fallback pro Windows screen snipping přes `ms-screenclip:`. To odpovídá toku `Win+Shift+S` a řeší stav, kdy screenshot klávesa nad custom WDUi oknem nepůsobila. Kombinace jako `Alt+PrintScreen` zůstávají ponechané Windows nebo appce.
 
 Od verze `1.0.55` WDUi kreslí obrysy vector surfaces dovnitř bounds místo na exkluzivní pravý/spodní okraj GDI kreslení. Výplň zůstává přes celou plochu, ale pravá a spodní linka se už u custom nebo zkosených skinů neztratí oříznutím na hraně okna.
+
+Od verze `1.0.56` WDUi ukládá normální pozici top-level okna podle skutečné screen pozice. Restart Guard zároveň ukládá placement po dokončení přesunu nebo změny velikosti okna, takže nastavení otevřené z tray se po zavření a znovuotevření vrací na místo, kam ho uživatel přesunul.
 
 ## Ovládání
 
