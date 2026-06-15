@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.59",
+  "version": "1.0.62",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "08AC4A1DC40A340FC1EC8D0FBD7C1C8736D22E30E18244407E8377F6EB0546C3",
-  "changes_cs": "- WDUi comboboxy a další dropdowny používají kompaktní vložený scroll rail místo plného výrazného scrollbaru, takže scrollbar nepřebíjí položky v herních a zkosených skinech.\n- Defaultní JSON skiny mají nové metriky `dropdown_scroll_bar_width`, `dropdown_scroll_rail_gap` a `dropdown_embedded_scroll_rail`; velké tabulky a logy si dál mohou držet výraznější scrollbar.\n- Restart Guard je přebuildovaný proti nové WDUi vrstvě a přibalenému katalogu skinů, takže výběr skinu zůstává čitelný, ale vizuálně klidnější.",
-  "changes_en": "- WDUi combo boxes and other dropdowns now use a compact embedded scroll rail instead of a full prominent scrollbar, so the rail no longer dominates items in game-like and slanted skins.\n- The default JSON skins now include `dropdown_scroll_bar_width`, `dropdown_scroll_rail_gap`, and `dropdown_embedded_scroll_rail` metrics; large tables and logs can still keep stronger full scrollbars.\n- Restart Guard is rebuilt against the new WDUi layer and bundled skin catalog, keeping the skin selector readable but visually calmer.",
+  "sha256": "7018A2A86EF43F46CB720C0BD87C26EDBA2A97ED4FB29A257FAC6F77927396DD",
+  "changes_cs": "- WDUi rozšiřuje shape-safe kreslení na další stávající controly: datumové pole a kalendář, menu root i popup položky, taby, rich/selectable text bloky, popup texty a tooltip akční tlačítka.\n- Vestavěné texty, hodnoty a pomocné akce se teď počítají z bezpečné content oblasti aktivního surface, takže se nedostávají do cut/slanted okrajů ani u výrazných skinů.\n- Restart Guard je přebuildovaný proti nové WDUi vrstvě, aby update dialogy i nastavení držely text, progress a řádkový obsah uvnitř viditelného tvaru.",
+  "changes_en": "- WDUi extends shape-safe rendering to more existing controls: date inputs and calendars, menu root and popup items, tabs, rich/selectable text blocks, popup text, and tooltip action buttons.\n- Built-in text, values, and helper actions are now laid out from the active surface content-safe area, so they do not spill into cut/slanted edges in expressive skins.\n- Restart Guard is rebuilt against the updated WDUi layer so update dialogs and settings keep text, progress, and row content inside the visible shape.",
   "history": [
+    {
+      "version": "1.0.62",
+      "changes_cs": "- WDUi rozšiřuje shape-safe kreslení na další stávající controly: datumové pole a kalendář, menu root i popup položky, taby, rich/selectable text bloky, popup texty a tooltip akční tlačítka.\n- Vestavěné texty, hodnoty a pomocné akce se teď počítají z bezpečné content oblasti aktivního surface, takže se nedostávají do cut/slanted okrajů ani u výrazných skinů.\n- Restart Guard je přebuildovaný proti nové WDUi vrstvě, aby update dialogy i nastavení držely text, progress a řádkový obsah uvnitř viditelného tvaru.",
+      "changes_en": "- WDUi extends shape-safe rendering to more existing controls: date inputs and calendars, menu root and popup items, tabs, rich/selectable text blocks, popup text, and tooltip action buttons.\n- Built-in text, values, and helper actions are now laid out from the active surface content-safe area, so they do not spill into cut/slanted edges in expressive skins.\n- Restart Guard is rebuilt against the updated WDUi layer so update dialogs and settings keep text, progress, and row content inside the visible shape."
+    },
     {
       "version": "1.0.59",
       "changes_cs": "- WDUi comboboxy a další dropdowny používají kompaktní vložený scroll rail místo plného výrazného scrollbaru, takže scrollbar nepřebíjí položky v herních a zkosených skinech.\n- Defaultní JSON skiny mají nové metriky `dropdown_scroll_bar_width`, `dropdown_scroll_rail_gap` a `dropdown_embedded_scroll_rail`; velké tabulky a logy si dál mohou držet výraznější scrollbar.\n- Restart Guard je přebuildovaný proti nové WDUi vrstvě a přibalenému katalogu skinů, takže výběr skinu zůstává čitelný, ale vizuálně klidnější.",

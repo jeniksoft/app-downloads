@@ -4,9 +4,9 @@ Windows Update Restart Guard je malá Windows utilita, která pomáhá zabránit
 
 ## Stažení
 
-* Verze: `1.0.59`
+* Verze: `1.0.62`
 * Setup: [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe)
-* SHA-256: `08AC4A1DC40A340FC1EC8D0FBD7C1C8736D22E30E18244407E8377F6EB0546C3`
+* SHA-256: `7018A2A86EF43F46CB720C0BD87C26EDBA2A97ED4FB29A257FAC6F77927396DD`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -68,6 +68,10 @@ Od verze `1.0.56` WDUi ukládá normální pozici top-level okna podle skutečn�
 Od verze `1.0.58` používají WDUi tabulky, combo/dropdown popupy a menu popupy bezpečný vodorovný pás pro každý řádek. Texty, řádkové výplně, separátory a scrollbary tak zůstávají uvnitř zkosených nebo cut skinů. Tabulka restartovacích oken v Restart Guardu zároveň automaticky přizpůsobuje sloupce obsahu, dovoluje ruční resize hranic sloupců v hlavičce a změněné šířky ukládá do UI stavu.
 
 Od verze `1.0.59` používají WDUi comboboxy a další dropdowny kompaktní vložený scroll rail místo plného výrazného scrollbaru. Výběr skinů a podobné seznamy tak zůstávají čitelné i u herních nebo zkosených skinů, ale scrollbar vizuálně nepřebíjí samotné položky.
+
+Od verze `1.0.61` počítá WDUi progress bar track i procentní text z bezpečné oblasti aktivního tvaru. Update dialogy tak nedávají procenta do odříznuté části controlu u výrazně zkosených skinů. Stejný princip je doplněný i pro tab strip položky a popup action/close tlačítka.
+
+Od verze `1.0.62` používají další stávající WDUi controly stejný shape-safe princip jako dropdowny a tabulky. Datumová pole, kalendáře, menu, taby, rich/selectable text bloky, popup texty a tooltip akční tlačítka počítají text a vnitřní obsah z bezpečné oblasti aktivního surface, takže ani výrazně zkosené skiny neposílají text do odříznutých rohů. Restart Guard je proti této WDUi vrstvě znovu přebuildovaný, včetně update dialogů.
 
 ## Ovládání
 
