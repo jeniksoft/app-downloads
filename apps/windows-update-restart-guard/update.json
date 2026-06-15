@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.64",
+  "version": "1.0.65",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "8F4446997346E8C684AD2CCCC4BC01A11EDAF23AD020BDB8D66744E8081891FE",
-  "changes_cs": "- WDUi edge-safe lanes umí vynucený 1px scanline režim pro prvky přitisknuté k hraně neobdélníkového surface.\n- Scrollbar v combo/dropdown popupu teď používá segmentované lane recty pro kreslení, hit-test i drag, takže se drží šikmé/cut hrany místo jednoho konzervativního obdélníku.\n- Pravidla WDUi a nativních appek výslovně říkají, že edge-follow prvky nesmí vycházet z textových nebo položkových řádků, ale z pixelových scanline pruhů.",
-  "changes_en": "- WDUi edge-safe lanes can now force a 1px scanline mode for elements pressed against non-rectangular surface edges.\n- Combo/dropdown popup scrollbars now use segmented lane rects for painting, hit testing, and dragging, so they follow slanted/cut edges instead of one conservative rectangle.\n- The WDUi and native-app rules now state that edge-follow elements must come from pixel scanline bands, not text rows or list item rows.",
+  "sha256": "AE28F7EDDD8F5C27130A07A3649496CC8E6797B8BF0D6CA19496608DC4B3E59E",
+  "changes_cs": "- Opravený compact embedded dropdown scrollbar: track/rám je zase širší než thumb, takže jezdec čitelně sedí uvnitř railu místo toho, aby rám vypadal smrštěně.\n- WDUi segmentované surface se teď kreslí jako jeden souvislý materiál oříznutý contour regionem, takže gradienty, bitmapy, obrysy a noise nevznikají jako rozbité 1px proužky.\n- Contour layout je systémová vlastnost základního Controlu (`setContourLayoutRects`, `layoutRects`, `scanlineLayoutRects`) a ScrollBar ji používá pro layout, hit-test, drag i paint.",
+  "changes_en": "- Fixed the compact embedded dropdown scrollbar: the track/frame is wider than the thumb again, so the handle reads inside the rail instead of making the frame look collapsed.\n- WDUi segmented surfaces now paint one coherent material clipped to the contour region, preserving gradients, bitmaps, borders, and noise instead of breaking them into isolated 1px strips.\n- Contour layout is now a base Control feature (`setContourLayoutRects`, `layoutRects`, `scanlineLayoutRects`), and ScrollBar uses it for layout, hit testing, dragging, and painting.",
   "history": [
+    {
+      "version": "1.0.65",
+      "changes_cs": "- Opravený compact embedded dropdown scrollbar: track/rám je zase širší než thumb, takže jezdec čitelně sedí uvnitř railu místo toho, aby rám vypadal smrštěně.\n- WDUi segmentované surface se teď kreslí jako jeden souvislý materiál oříznutý contour regionem, takže gradienty, bitmapy, obrysy a noise nevznikají jako rozbité 1px proužky.\n- Contour layout je systémová vlastnost základního Controlu (`setContourLayoutRects`, `layoutRects`, `scanlineLayoutRects`) a ScrollBar ji používá pro layout, hit-test, drag i paint.",
+      "changes_en": "- Fixed the compact embedded dropdown scrollbar: the track/frame is wider than the thumb again, so the handle reads inside the rail instead of making the frame look collapsed.\n- WDUi segmented surfaces now paint one coherent material clipped to the contour region, preserving gradients, bitmaps, borders, and noise instead of breaking them into isolated 1px strips.\n- Contour layout is now a base Control feature (`setContourLayoutRects`, `layoutRects`, `scanlineLayoutRects`), and ScrollBar uses it for layout, hit testing, dragging, and painting."
+    },
     {
       "version": "1.0.64",
       "changes_cs": "- WDUi edge-safe lanes umí vynucený 1px scanline režim pro prvky přitisknuté k hraně neobdélníkového surface.\n- Scrollbar v combo/dropdown popupu teď používá segmentované lane recty pro kreslení, hit-test i drag, takže se drží šikmé/cut hrany místo jednoho konzervativního obdélníku.\n- Pravidla WDUi a nativních appek výslovně říkají, že edge-follow prvky nesmí vycházet z textových nebo položkových řádků, ale z pixelových scanline pruhů.",
