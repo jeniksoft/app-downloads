@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.40",
+  "version": "1.0.41",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "D1FB2FEB24846CA329905D80D72AD825CE20A054089D3CE08A5F7338D6CCD584",
-  "changes_cs": "- Opraveno kliknutí na update ikonu: před stažením setupu se vždy znovu načte čerstvý manifest, takže appka nenainstaluje zastaralý hash nebo URL.\n- Pokud během čekání vyjde novější verze, updater použije novější setup a SHA-256.\n- Pokud čerstvý manifest říká, že update už není potřeba, dialog skončí stavem aktuální místo selhání na starém manifestu.",
-  "changes_en": "- Fixed the update icon install flow: before downloading setup, the app now always refreshes the manifest, so it does not install from a stale hash or URL.\n- If a newer release appears while the detected update is waiting, the updater uses the newer setup and SHA-256.\n- If the fresh manifest says no update is needed anymore, the dialog finishes as current instead of failing on the stale manifest.",
+  "sha256": "439B9BB51EF7E8F5AB50B5A3F455F752F718247B36049CF01BEC2A93F4702DA2",
+  "changes_cs": "- WDUi teď odvozuje bezpečný vnitřní prostor z aktuálního tvaru surface a teprve do něj aplikuje padding controlu.\n- Texty a obsah tlačítek, status chipů, comboboxů, dropdown položek, tabulek, karet a textových polí se drží uvnitř zkosených, hexagonálních, kapslových a dalších tvarů.\n- Pravidla pro WDUi a nativní appky doplňují kaskádový postup pro vnořené safe oblasti.",
+  "changes_en": "- WDUi now derives a safe inner content area from the current surface shape before applying control padding.\n- Text and content in buttons, status chips, select boxes, dropdown items, tables, cards, and text inputs stay inside slanted, hexagonal, capsule, and other shaped surfaces.\n- WDUi and native app rules now document the cascading safe-area approach for nested surfaces.",
   "history": [
+    {
+      "version": "1.0.41",
+      "changes_cs": "- WDUi teď odvozuje bezpečný vnitřní prostor z aktuálního tvaru surface a teprve do něj aplikuje padding controlu.\n- Texty a obsah tlačítek, status chipů, comboboxů, dropdown položek, tabulek, karet a textových polí se drží uvnitř zkosených, hexagonálních, kapslových a dalších tvarů.\n- Pravidla pro WDUi a nativní appky doplňují kaskádový postup pro vnořené safe oblasti.",
+      "changes_en": "- WDUi now derives a safe inner content area from the current surface shape before applying control padding.\n- Text and content in buttons, status chips, select boxes, dropdown items, tables, cards, and text inputs stay inside slanted, hexagonal, capsule, and other shaped surfaces.\n- WDUi and native app rules now document the cascading safe-area approach for nested surfaces."
+    },
     {
       "version": "1.0.40",
       "changes_cs": "- Opraveno kliknutí na update ikonu: před stažením setupu se vždy znovu načte čerstvý manifest, takže appka nenainstaluje zastaralý hash nebo URL.\n- Pokud během čekání vyjde novější verze, updater použije novější setup a SHA-256.\n- Pokud čerstvý manifest říká, že update už není potřeba, dialog skončí stavem aktuální místo selhání na starém manifestu.",

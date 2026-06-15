@@ -4,9 +4,9 @@ Windows Update Restart Guard je malá Windows utilita, která pomáhá zabránit
 
 ## Stažení
 
-* Verze: `1.0.40`
+* Verze: `1.0.41`
 * Setup: [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe)
-* SHA-256: `D1FB2FEB24846CA329905D80D72AD825CE20A054089D3CE08A5F7338D6CCD584`
+* SHA-256: `439B9BB51EF7E8F5AB50B5A3F455F752F718247B36049CF01BEC2A93F4702DA2`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -38,6 +38,8 @@ Od verze `1.0.38` je přibalený novější WDUi katalog skinů. Skin `Starlance
 Od verze `1.0.39` WDUi automaticky zobrazuje tooltip s plným textem u textových prvků, kde se viditelný obsah nevejde do dostupného místa. Platí to pro tlačítka, popisky, stavové prvky, checkboxy, comboboxy včetně dropdown položek, datumová pole, taby, menu root položky a tabulkové hlavičky/buňky.
 
 Od verze `1.0.40` updater před samotným stažením setupu znovu načítá čerstvý update manifest. Když během čekání vyjde novější verze, nainstaluje novější setup a SHA-256; když manifest mezitím update zruší, dialog skončí jako aktuální místo selhání na starém manifestu.
+
+Od verze `1.0.41` WDUi drží text a interaktivní obsah uvnitř bezpečné vnitřní oblasti aktivního tvaru surface. Pomáhá to hlavně u skinů se zkosenými, hexagonálními, kapslovými a dalšími výraznými tvary, kde už obsah neleze do šikmých nebo odříznutých rohů.
 
 ## Ovládání
 
