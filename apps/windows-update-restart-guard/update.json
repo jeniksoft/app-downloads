@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.39",
+  "version": "1.0.40",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "52D7E845DE7A731ED5A59151AF158D52B1E9B587E480729A7DE3A8F292ECB10D",
-  "changes_cs": "- WDUi má obecný automatický tooltip pro textové prvky, kde se viditelný obsah nevejde do dostupného místa.\n- Plný text se ukáže u tlačítek, popup akcí, popisků, status chipů, checkboxů, comboboxů, dropdown položek, datumových polí, tabů, menu root položek a tabulkových hlaviček/buněk.\n- Ručně nastavený tooltip se zachová; WDUi jen přidá plný skrytý text nahoru, aby uživatel vždy viděl přesný název nebo hodnotu.",
-  "changes_en": "- WDUi now has a general automatic tooltip for text-bearing controls when visible content does not fit into the available space.\n- Full text is shown for buttons, popup actions, labels, status chips, checkboxes, select boxes, dropdown items, date fields, tabs, menu root items, and table headers/cells.\n- Existing rich manual tooltips are preserved; WDUi adds the full hidden text at the top so the user can always recover the exact label or value.",
+  "sha256": "D1FB2FEB24846CA329905D80D72AD825CE20A054089D3CE08A5F7338D6CCD584",
+  "changes_cs": "- Opraveno kliknutí na update ikonu: před stažením setupu se vždy znovu načte čerstvý manifest, takže appka nenainstaluje zastaralý hash nebo URL.\n- Pokud během čekání vyjde novější verze, updater použije novější setup a SHA-256.\n- Pokud čerstvý manifest říká, že update už není potřeba, dialog skončí stavem aktuální místo selhání na starém manifestu.",
+  "changes_en": "- Fixed the update icon install flow: before downloading setup, the app now always refreshes the manifest, so it does not install from a stale hash or URL.\n- If a newer release appears while the detected update is waiting, the updater uses the newer setup and SHA-256.\n- If the fresh manifest says no update is needed anymore, the dialog finishes as current instead of failing on the stale manifest.",
   "history": [
+    {
+      "version": "1.0.40",
+      "changes_cs": "- Opraveno kliknutí na update ikonu: před stažením setupu se vždy znovu načte čerstvý manifest, takže appka nenainstaluje zastaralý hash nebo URL.\n- Pokud během čekání vyjde novější verze, updater použije novější setup a SHA-256.\n- Pokud čerstvý manifest říká, že update už není potřeba, dialog skončí stavem aktuální místo selhání na starém manifestu.",
+      "changes_en": "- Fixed the update icon install flow: before downloading setup, the app now always refreshes the manifest, so it does not install from a stale hash or URL.\n- If a newer release appears while the detected update is waiting, the updater uses the newer setup and SHA-256.\n- If the fresh manifest says no update is needed anymore, the dialog finishes as current instead of failing on the stale manifest."
+    },
     {
       "version": "1.0.39",
       "changes_cs": "- WDUi má obecný automatický tooltip pro textové prvky, kde se viditelný obsah nevejde do dostupného místa.\n- Plný text se ukáže u tlačítek, popup akcí, popisků, status chipů, checkboxů, comboboxů, dropdown položek, datumových polí, tabů, menu root položek a tabulkových hlaviček/buněk.\n- Ručně nastavený tooltip se zachová; WDUi jen přidá plný skrytý text nahoru, aby uživatel vždy viděl přesný název nebo hodnotu.",
