@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.58",
+  "version": "1.0.59",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "D1D5CFD7FA6E39D6551290F21887E6DB8C61D087C177095AAEA627EAA5401491",
-  "changes_cs": "- WDUi tabulky, combo/dropdown popupy a menu popupy používají bezpečný vodorovný pás pro každý řádek, takže texty, řádkové výplně, separátory a scrollbary zůstávají uvnitř zkosených/cut/alpha-safe skinů.\n- `TableList` nově lépe kombinuje automatické přizpůsobení sloupců obsahu a bezpečné šířce s ručním tažením hranic sloupců.\n- Restart Guard zapíná auto-size a ruční resize sloupců u tabulky restartovacích oken a uloží změněné šířky do UI stavu.",
-  "changes_en": "- WDUi tables, combo/dropdown popups, and menu popups now use a safe horizontal span for each row, keeping text, row fills, separators, and scrollbars inside slanted/cut/alpha-safe skins.\n- `TableList` now combines content/safe-width auto sizing with manual header-separator column resizing more reliably.\n- Restart Guard enables auto-size and manual column resizing for the restart-window table and persists changed widths in UI state.",
+  "sha256": "08AC4A1DC40A340FC1EC8D0FBD7C1C8736D22E30E18244407E8377F6EB0546C3",
+  "changes_cs": "- WDUi comboboxy a další dropdowny používají kompaktní vložený scroll rail místo plného výrazného scrollbaru, takže scrollbar nepřebíjí položky v herních a zkosených skinech.\n- Defaultní JSON skiny mají nové metriky `dropdown_scroll_bar_width`, `dropdown_scroll_rail_gap` a `dropdown_embedded_scroll_rail`; velké tabulky a logy si dál mohou držet výraznější scrollbar.\n- Restart Guard je přebuildovaný proti nové WDUi vrstvě a přibalenému katalogu skinů, takže výběr skinu zůstává čitelný, ale vizuálně klidnější.",
+  "changes_en": "- WDUi combo boxes and other dropdowns now use a compact embedded scroll rail instead of a full prominent scrollbar, so the rail no longer dominates items in game-like and slanted skins.\n- The default JSON skins now include `dropdown_scroll_bar_width`, `dropdown_scroll_rail_gap`, and `dropdown_embedded_scroll_rail` metrics; large tables and logs can still keep stronger full scrollbars.\n- Restart Guard is rebuilt against the new WDUi layer and bundled skin catalog, keeping the skin selector readable but visually calmer.",
   "history": [
+    {
+      "version": "1.0.59",
+      "changes_cs": "- WDUi comboboxy a další dropdowny používají kompaktní vložený scroll rail místo plného výrazného scrollbaru, takže scrollbar nepřebíjí položky v herních a zkosených skinech.\n- Defaultní JSON skiny mají nové metriky `dropdown_scroll_bar_width`, `dropdown_scroll_rail_gap` a `dropdown_embedded_scroll_rail`; velké tabulky a logy si dál mohou držet výraznější scrollbar.\n- Restart Guard je přebuildovaný proti nové WDUi vrstvě a přibalenému katalogu skinů, takže výběr skinu zůstává čitelný, ale vizuálně klidnější.",
+      "changes_en": "- WDUi combo boxes and other dropdowns now use a compact embedded scroll rail instead of a full prominent scrollbar, so the rail no longer dominates items in game-like and slanted skins.\n- The default JSON skins now include `dropdown_scroll_bar_width`, `dropdown_scroll_rail_gap`, and `dropdown_embedded_scroll_rail` metrics; large tables and logs can still keep stronger full scrollbars.\n- Restart Guard is rebuilt against the new WDUi layer and bundled skin catalog, keeping the skin selector readable but visually calmer."
+    },
     {
       "version": "1.0.58",
       "changes_cs": "- WDUi tabulky, combo/dropdown popupy a menu popupy používají bezpečný vodorovný pás pro každý řádek, takže texty, řádkové výplně, separátory a scrollbary zůstávají uvnitř zkosených/cut/alpha-safe skinů.\n- `TableList` nově lépe kombinuje automatické přizpůsobení sloupců obsahu a bezpečné šířce s ručním tažením hranic sloupců.\n- Restart Guard zapíná auto-size a ruční resize sloupců u tabulky restartovacích oken a uloží změněné šířky do UI stavu.",
