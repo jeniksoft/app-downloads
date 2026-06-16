@@ -4,9 +4,9 @@ Windows Update Restart Guard je malá Windows utilita, která pomáhá zabránit
 
 ## Stažení
 
-* Verze: `1.0.75`
+* Verze: `1.0.76`
 * Setup: [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe)
-* SHA-256: `2449327EDCD59B28024699A87EDBF9DE7F6E843BCA490606860823CB76885580`
+* SHA-256: `8F635840A6C5301E3B265E066E305357CB7C87757B89FCBED78EDEFFC5F1CB56`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -30,6 +30,8 @@ Nezakazuje Windows Update. Neblokuje kritické vypnutí systému, výpadek napá
 4. Dokonči instalaci.
 
 Po instalaci se aplikace otevře do nastavení a zároveň se zaregistruje ve Windows jako běžná aplikace.
+
+Od verze `1.0.76` je veřejný setup znovu přegenerovaný a publikovaný z aktuální CPM/WDUi baseline. Release záměrně nemění viditelné chování appky; srovnává veřejný setup export, checksum a manifest s aktuálním referenčním buildem po další normalizační vlně durable skeletonu.
 
 Od verze `1.0.75` má appka i společný durable WDUi headless probe `WindowsUpdateRestartGuard.exe --ensure-config` a reusable `smoke_test.ps1`. Neinteraktivní smoke vrstva tak ověřuje build výstup, export setupu a normalizovaný zápis configu bez otevření nastavení; vedle toho zůstává dostupný i starší lifecycle probe `--exit-after-ms`.
 

@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.75",
+  "version": "1.0.76",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "2449327EDCD59B28024699A87EDBF9DE7F6E843BCA490606860823CB76885580",
-  "changes_cs": "Restart Guard nově podporuje společný durable WDUi headless probe přes --ensure-config a má reusable smoke_test.ps1 wrapper. Smoke vrstva ověřuje build výstup, export setupu a normalizovaný zápis configu bez otevření nastavení; vedle toho zůstává i starší --exit-after-ms lifecycle probe.",
-  "changes_en": "Restart Guard now supports the shared durable WDUi headless probe through --ensure-config and adds a reusable smoke_test.ps1 wrapper. The smoke layer verifies build output, setup export, and normalized config write-back without opening Settings; the older --exit-after-ms lifecycle probe still remains available.",
+  "sha256": "8F635840A6C5301E3B265E066E305357CB7C87757B89FCBED78EDEFFC5F1CB56",
+  "changes_cs": "Restart Guard je znovu postavený a znovu publikovaný jako veřejný build 1.0.76 z aktuální CPM/WDUi baseline. Viditelné chování appky se záměrně nemění; release srovnává veřejný setup export, manifest, checksum a runtime/setup verzi s aktuálním referenčním buildem po pokračující normalizační vlně durable app skeletonu.",
+  "changes_en": "Restart Guard has been rebuilt and republished as the public 1.0.76 build from the current CPM/WDUi baseline. The visible app behavior is intentionally unchanged; this release realigns the public setup export, manifest, checksum, and runtime/setup version with the current reference build after the ongoing durable-app skeleton normalization wave.",
   "history": [
+    {
+      "version": "1.0.76",
+      "changes_cs": "Restart Guard je znovu postavený a znovu publikovaný jako veřejný build 1.0.76 z aktuální CPM/WDUi baseline. Viditelné chování appky se záměrně nemění; release srovnává veřejný setup export, manifest, checksum a runtime/setup verzi s aktuálním referenčním buildem po pokračující normalizační vlně durable app skeletonu.",
+      "changes_en": "Restart Guard has been rebuilt and republished as the public 1.0.76 build from the current CPM/WDUi baseline. The visible app behavior is intentionally unchanged; this release realigns the public setup export, manifest, checksum, and runtime/setup version with the current reference build after the ongoing durable-app skeleton normalization wave."
+    },
     {
       "version": "1.0.75",
       "changes_cs": "Restart Guard nově podporuje společný durable WDUi headless probe přes --ensure-config a má reusable smoke_test.ps1 wrapper. Smoke vrstva ověřuje build výstup, export setupu a normalizovaný zápis configu bez otevření nastavení; vedle toho zůstává i starší --exit-after-ms lifecycle probe.",
