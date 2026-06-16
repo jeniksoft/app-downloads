@@ -1,13 +1,19 @@
 {
   "app_id": "veracrypt-startup-mount",
   "name": "Codex VeraCrypt Startup Mount",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/veracrypt-startup-mount",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe",
-  "sha256": "D2DE05B15C6491000E43C6D03BB30C35984676E6CF1DFAB5BA03EBAECA006C5C",
-  "changes_cs": "Manager nově přebírá durable baseline pro živou lokalizaci a perzistenci UI stavu. Přepnutí jazyka mění viditelné texty hned bez znovuotevření okna, poloha a velikost okna se vrací po close/reopen a build si nově generuje lokalizační header a bumpuje verzi až po úspěšném exportu setupu.",
-  "changes_en": "The manager now adopts the durable baseline for live localization and persisted UI state. Switching language updates visible texts immediately without reopening the window, window placement is restored after close/reopen, and the build now generates the localization header and bumps the version only after a successful setup export.",
+  "sha256": "8AF842FDB716E1EE4B2D648B3680A1064077AACC3EE54502C355185D7B201C82",
+  "changes_cs": "Dialog historie změn v O aplikaci je teď rolovatelný a používá vlastní scrollbar, takže delší changelog nepřetéká mimo okno a zůstává čitelný celý.",
+  "changes_en": "The change-history dialog in About is now scrollable and uses its own scrollbar, so longer changelogs no longer overflow the window and stay fully readable.",
   "history": [
+    {
+      "date": "2026-06-16",
+      "version": "1.0.7",
+      "changes_cs": "Dialog historie změn v O aplikaci je teď rolovatelný a používá vlastní scrollbar, takže delší changelog nepřetéká mimo okno a zůstává čitelný celý.",
+      "changes_en": "The change-history dialog in About is now scrollable and uses its own scrollbar, so longer changelogs no longer overflow the window and stay fully readable."
+    },
     {
       "date": "2026-06-16",
       "version": "1.0.6",

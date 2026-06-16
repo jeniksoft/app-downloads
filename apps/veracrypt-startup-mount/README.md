@@ -4,9 +4,9 @@ Malá Windows utilita pro lokální mount VeraCrypt svazku po přihlášení už
 
 ## Stažení
 
-* Verze: `1.0.6`
+* Verze: `1.0.7`
 * Setup: [VeraCryptStartupMountSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe)
-* SHA-256: `D2DE05B15C6491000E43C6D03BB30C35984676E6CF1DFAB5BA03EBAECA006C5C`
+* SHA-256: `8AF842FDB716E1EE4B2D648B3680A1064077AACC3EE54502C355185D7B201C82`
 * Update manifest: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -35,6 +35,8 @@ Po instalaci se vytvoří Start Menu záznam pod `Jeniksoft` a aplikace se zareg
 Heslo není součástí setupu, gitu ani veřejného manifestu. Ukládá se až lokálně v manageru do DPAPI CurrentUser úložiště na konkrétním PC.
 
 ## Historie Změn
+
+Od verze `1.0.7` se historie změn z `O aplikaci` otevírá v rolovatelném dialogu s vlastním scrollbarem. Delší changelog tak zůstává celý čitelný a nepřetéká mimo okno.
 
 Od verze `1.0.6` VeraCrypt Startup Mount přebírá current durable baseline: jazyk se přepíná živě bez nového otevření okna, poloha a velikost manageru se ukládají a vracejí při dalším otevření a build si generuje lokalizační header podle CPM Windows language rules. Build pipeline také nově bumpuje `VERSION` až po úspěšném exportu setupu místo hned na začátku běhu.
 
