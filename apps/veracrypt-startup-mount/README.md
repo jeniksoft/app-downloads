@@ -4,9 +4,9 @@ Malá Windows utilita pro lokální mount VeraCrypt svazku po přihlášení už
 
 ## Stažení
 
-* Verze: `1.0.2`
+* Verze: `1.0.4`
 * Setup: [VeraCryptStartupMountSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe)
-* SHA-256: `6C170C905CA95788900E71B1DE88AB7E69636FA07DB100E206812740A61909C8`
+* SHA-256: `29F3C7F1E678356D0345B8AD69AFD99B39FC57A75CDC2859280C88D891630CB6`
 * Update manifest: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -35,6 +35,8 @@ Po instalaci se vytvoří Start Menu záznam pod `Jeniksoft` a aplikace se zareg
 Heslo není součástí setupu, gitu ani veřejného manifestu. Ukládá se až lokálně v manageru do DPAPI CurrentUser úložiště na konkrétním PC.
 
 ## Historie Změn
+
+Od verze `1.0.4` má manager přímo v UI kontrolu aktualizací: bitmapovou stavovou ikonu, tooltip akce pro ruční kontrolu a instalaci a tichý update tok se znovu-načtením manifestu, ověřením `SHA-256` a automatickým znovuotevřením appky po setupu. Setup zároveň nově instaluje i update assety a před přeinstalací bezpečně ukončí běžící manager.
 
 Od verze `1.0.2` má appka i společný durable WDUi headless probe `VeraCryptStartupMount.exe --ensure-config` a reusable `smoke_test.ps1`. Neinteraktivní smoke kontrola tak ověřuje export setupu, zapsání normalizovaného configu i stávající self-test appky a setupu bez instalace.
 

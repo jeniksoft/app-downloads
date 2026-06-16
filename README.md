@@ -8,7 +8,7 @@ Toto repo je určené pro hotové instalační balíčky, popis aplikací, uživ
 
 | Aplikace | Verze | Setup | Dokumentace | SHA-256 |
 | --- | --- | --- | --- | --- |
-| Codex VeraCrypt Startup Mount | 1.0.2 | [VeraCryptStartupMountSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe) | [Popis a návod](apps/veracrypt-startup-mount/README.md) | [`6C170C90...A61909C8`](checksums/SHA256SUMS.txt) |
+| Codex VeraCrypt Startup Mount | 1.0.4 | [VeraCryptStartupMountSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe) | [Popis a návod](apps/veracrypt-startup-mount/README.md) | [`29F3C7F1...91630CB6`](checksums/SHA256SUMS.txt) |
 | Windows Update Restart Guard | 1.0.75 | [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe) | [Popis a návod](apps/windows-update-restart-guard/README.md) | [`2449327E...76885580`](checksums/SHA256SUMS.txt) |
 
 Setup odkazy v tabulce vedou přímo na GitHub raw download endpoint, aby kliknutí stáhlo instalační EXE místo otevření stránky binárního souboru.

@@ -1,13 +1,19 @@
 {
   "app_id": "veracrypt-startup-mount",
   "name": "Codex VeraCrypt Startup Mount",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/veracrypt-startup-mount",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe",
-  "sha256": "6C170C905CA95788900E71B1DE88AB7E69636FA07DB100E206812740A61909C8",
-  "changes_cs": "VeraCrypt Startup Mount nově podporuje společný durable WDUi headless probe přes --ensure-config a má reusable smoke_test.ps1 wrapper. Smoke kontrola ověřuje export setupu, zápis configu i stávající self-test appky a setupu bez interaktivní instalace.",
-  "changes_en": "VeraCrypt Startup Mount now supports the shared durable WDUi headless probe through --ensure-config and adds a reusable smoke_test.ps1 wrapper. The smoke check verifies setup export, config write-back, and the existing app/setup self-tests without interactive installation.",
+  "sha256": "29F3C7F1E678356D0345B8AD69AFD99B39FC57A75CDC2859280C88D891630CB6",
+  "changes_cs": "Manager teď má přímo v UI kontrolu aktualizací, stavovou bitmapovou ikonu a tooltip s akcemi pro ruční kontrolu i instalaci novější verze. Automatický update si před stažením znovu načte manifest, ověří SHA-256, spustí tichý setup a po dokončení aplikaci znovu otevře. Setup navíc nově instaluje i update assety a při přeinstalaci bezpečně ukončí běžící manager.",
+  "changes_en": "The manager now includes in-app update checking, a bitmap status indicator, and tooltip actions for manual checks and installing a newer version. Automatic update refreshes the manifest before download, verifies SHA-256, runs the setup silently, and reopens the app after completion. Setup now installs the update assets too and safely stops a running manager before reinstalling.",
   "history": [
+    {
+      "date": "2026-06-16",
+      "version": "1.0.4",
+      "changes_cs": "Manager teď má přímo v UI kontrolu aktualizací, stavovou bitmapovou ikonu a tooltip s akcemi pro ruční kontrolu i instalaci novější verze. Automatický update si před stažením znovu načte manifest, ověří SHA-256, spustí tichý setup a po dokončení aplikaci znovu otevře. Setup navíc nově instaluje i update assety a při přeinstalaci bezpečně ukončí běžící manager.",
+      "changes_en": "The manager now includes in-app update checking, a bitmap status indicator, and tooltip actions for manual checks and installing a newer version. Automatic update refreshes the manifest before download, verifies SHA-256, runs the setup silently, and reopens the app after completion. Setup now installs the update assets too and safely stops a running manager before reinstalling."
+    },
     {
       "date": "2026-06-16",
       "version": "1.0.2",
