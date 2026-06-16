@@ -1,13 +1,19 @@
 {
   "app_id": "veracrypt-startup-mount",
   "name": "Codex VeraCrypt Startup Mount",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/veracrypt-startup-mount",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe",
-  "sha256": "29F3C7F1E678356D0345B8AD69AFD99B39FC57A75CDC2859280C88D891630CB6",
-  "changes_cs": "Manager teď má přímo v UI kontrolu aktualizací, stavovou bitmapovou ikonu a tooltip s akcemi pro ruční kontrolu i instalaci novější verze. Automatický update si před stažením znovu načte manifest, ověří SHA-256, spustí tichý setup a po dokončení aplikaci znovu otevře. Setup navíc nově instaluje i update assety a při přeinstalaci bezpečně ukončí běžící manager.",
-  "changes_en": "The manager now includes in-app update checking, a bitmap status indicator, and tooltip actions for manual checks and installing a newer version. Automatic update refreshes the manifest before download, verifies SHA-256, runs the setup silently, and reopens the app after completion. Setup now installs the update assets too and safely stops a running manager before reinstalling.",
+  "sha256": "D2DE05B15C6491000E43C6D03BB30C35984676E6CF1DFAB5BA03EBAECA006C5C",
+  "changes_cs": "Manager nově přebírá durable baseline pro živou lokalizaci a perzistenci UI stavu. Přepnutí jazyka mění viditelné texty hned bez znovuotevření okna, poloha a velikost okna se vrací po close/reopen a build si nově generuje lokalizační header a bumpuje verzi až po úspěšném exportu setupu.",
+  "changes_en": "The manager now adopts the durable baseline for live localization and persisted UI state. Switching language updates visible texts immediately without reopening the window, window placement is restored after close/reopen, and the build now generates the localization header and bumps the version only after a successful setup export.",
   "history": [
+    {
+      "date": "2026-06-16",
+      "version": "1.0.6",
+      "changes_cs": "Manager nově přebírá durable baseline pro živou lokalizaci a perzistenci UI stavu. Přepnutí jazyka mění viditelné texty hned bez znovuotevření okna, poloha a velikost okna se vrací po close/reopen a build si nově generuje lokalizační header a bumpuje verzi až po úspěšném exportu setupu.",
+      "changes_en": "The manager now adopts the durable baseline for live localization and persisted UI state. Switching language updates visible texts immediately without reopening the window, window placement is restored after close/reopen, and the build now generates the localization header and bumps the version only after a successful setup export."
+    },
     {
       "date": "2026-06-16",
       "version": "1.0.4",
