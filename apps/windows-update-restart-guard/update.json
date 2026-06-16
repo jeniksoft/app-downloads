@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.69",
+  "version": "1.0.70",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "5AFDFA302DF1EE2C0DE114A2BBBA178829CDEC0B555A5DE00D529CD00CF728B9",
-  "changes_cs": "- WDUi bitmap-shift remap teď pro každý 1px pás porovná levý/pravý nebo horní/spodní aktuální margin a použije stranu s menším marginem.\n- Pokud je pás stejně daleko od obou stran, zůstává zdroj centrovaný, takže symetrické tvary se dál chovají symetricky.\n- Dropdown scrollbary u šikmých a cut skinů tak drží odstup od bližší hrany bez špatného přilepení na jednu pevnou stranu.",
-  "changes_en": "- WDUi bitmap-shift remapping now compares the live left/right or top/bottom margin for each 1px band and uses the side with the smaller margin.\n- If a band is equally far from both sides, the source stays centered, so symmetric shapes remain symmetric.\n- Dropdown scrollbars in slanted and cut skins now keep their distance from the nearest edge without being forced to one fixed side.",
+  "sha256": "0D8B96FCCB80CEE4606F7E9B878205F59E4C54E344E85C2AC6787FA363F8D61D",
+  "changes_cs": "- Zavření nastavení z custom chrome X i z menu pro zavření do tray teď nejdřív uloží aktuální UI state.\n- Nastavení otevřené z tray se po přesunutí a zavření znovu otevře na novém místě.\n- Durable C++/WDUi šablona má stejný request-close pattern, aby persistentní okna neobcházela ukládání přes přímý closeWithResult nebo destroy.",
+  "changes_en": "- Closing Settings from the custom chrome X or the close-to-tray menu now saves the current UI state first.\n- A tray-opened Settings window now reopens at the position it was moved to before closing.\n- The durable C++/WDUi template now uses the same request-close pattern so persistent windows do not bypass persistence through direct closeWithResult or destroy paths.",
   "history": [
+    {
+      "version": "1.0.70",
+      "changes_cs": "- Zavření nastavení z custom chrome X i z menu pro zavření do tray teď nejdřív uloží aktuální UI state.\n- Nastavení otevřené z tray se po přesunutí a zavření znovu otevře na novém místě.\n- Durable C++/WDUi šablona má stejný request-close pattern, aby persistentní okna neobcházela ukládání přes přímý closeWithResult nebo destroy.",
+      "changes_en": "- Closing Settings from the custom chrome X or the close-to-tray menu now saves the current UI state first.\n- A tray-opened Settings window now reopens at the position it was moved to before closing.\n- The durable C++/WDUi template now uses the same request-close pattern so persistent windows do not bypass persistence through direct closeWithResult or destroy paths."
+    },
     {
       "version": "1.0.69",
       "changes_cs": "- WDUi bitmap-shift remap teď pro každý 1px pás porovná levý/pravý nebo horní/spodní aktuální margin a použije stranu s menším marginem.\n- Pokud je pás stejně daleko od obou stran, zůstává zdroj centrovaný, takže symetrické tvary se dál chovají symetricky.\n- Dropdown scrollbary u šikmých a cut skinů tak drží odstup od bližší hrany bez špatného přilepení na jednu pevnou stranu.",

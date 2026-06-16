@@ -4,9 +4,9 @@ Windows Update Restart Guard je malá Windows utilita, která pomáhá zabránit
 
 ## Stažení
 
-* Verze: `1.0.69`
+* Verze: `1.0.70`
 * Setup: [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe)
-* SHA-256: `5AFDFA302DF1EE2C0DE114A2BBBA178829CDEC0B555A5DE00D529CD00CF728B9`
+* SHA-256: `0D8B96FCCB80CEE4606F7E9B878205F59E4C54E344E85C2AC6787FA363F8D61D`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -84,6 +84,8 @@ Od verze `1.0.66` používá WDUi pro segmentované contour prvky nový bitmap-s
 Od verze `1.0.68` se stejný bitmap-shift postup používá pro celý složený control najednou. WDUi nejdřív vykreslí kompletní prvek včetně okrajů, výplně, thumbu/handle, glyphů a overlayů do rovné offscreen bitmapy a teprve hotový obraz posune po 1px řádcích nebo sloupcích do contour lanes. Edge prvky zároveň berou zdroj z odpovídající strany rovné bitmapy, ne ze středu, takže dropdown scrollbar už nedeformuje rail a thumb odděleně a rám zůstává širší než thumb i u šikmých a cut skinů.
 
 Od verze `1.0.69` volí WDUi při bitmap-shift remapu zdrojovou stranu pro každý 1px pás podle menšího aktuálního marginu. Pokud je řádek blíž levé hraně, použije levou část rovné bitmapy; pokud je blíž pravé hraně, použije pravou část; při shodě zůstává střed. U šikmých a cut skinů tak dropdown scrollbar lépe drží stejný vizuální odstup od bližší hrany.
+
+Od verze `1.0.70` se při zavření nastavení z custom chrome X nebo z menu pro zavření do tray nejdřív uloží aktuální UI state a až potom se okno zavře. Nastavení otevřené z tray se tak po přesunutí a zavření vrací na nové místo. Stejný request-close pattern je doplněný i do durable C++/WDUi šablony.
 
 ## Ovládání
 
