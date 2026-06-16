@@ -4,9 +4,9 @@ Windows Update Restart Guard je malá Windows utilita, která pomáhá zabránit
 
 ## Stažení
 
-* Verze: `1.0.70`
+* Verze: `1.0.71`
 * Setup: [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe)
-* SHA-256: `0D8B96FCCB80CEE4606F7E9B878205F59E4C54E344E85C2AC6787FA363F8D61D`
+* SHA-256: `4EC1368A0E807ACBE6F9F1DCC296A6529E482DD050EDD0B185C3DCB57130039A`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -86,6 +86,8 @@ Od verze `1.0.68` se stejný bitmap-shift postup používá pro celý složený 
 Od verze `1.0.69` volí WDUi při bitmap-shift remapu zdrojovou stranu pro každý 1px pás podle menšího aktuálního marginu. Pokud je řádek blíž levé hraně, použije levou část rovné bitmapy; pokud je blíž pravé hraně, použije pravou část; při shodě zůstává střed. U šikmých a cut skinů tak dropdown scrollbar lépe drží stejný vizuální odstup od bližší hrany.
 
 Od verze `1.0.70` se při zavření nastavení z custom chrome X nebo z menu pro zavření do tray nejdřív uloží aktuální UI state a až potom se okno zavře. Nastavení otevřené z tray se tak po přesunutí a zavření vrací na nové místo. Stejný request-close pattern je doplněný i do durable C++/WDUi šablony.
+
+Od verze `1.0.71` se uložený UI state po úspěšném zápisu do `config.ini` propíše i do běžící runtime konfigurace tray procesu. To opravuje stav, kdy se pozice sice uložila na disk, ale další otevření nastavení ve stejném běžícím procesu použilo starou kopii `g_config`.
 
 ## Ovládání
 

@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.70",
+  "version": "1.0.71",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "0D8B96FCCB80CEE4606F7E9B878205F59E4C54E344E85C2AC6787FA363F8D61D",
-  "changes_cs": "- Zavření nastavení z custom chrome X i z menu pro zavření do tray teď nejdřív uloží aktuální UI state.\n- Nastavení otevřené z tray se po přesunutí a zavření znovu otevře na novém místě.\n- Durable C++/WDUi šablona má stejný request-close pattern, aby persistentní okna neobcházela ukládání přes přímý closeWithResult nebo destroy.",
-  "changes_en": "- Closing Settings from the custom chrome X or the close-to-tray menu now saves the current UI state first.\n- A tray-opened Settings window now reopens at the position it was moved to before closing.\n- The durable C++/WDUi template now uses the same request-close pattern so persistent windows do not bypass persistence through direct closeWithResult or destroy paths.",
+  "sha256": "4EC1368A0E807ACBE6F9F1DCC296A6529E482DD050EDD0B185C3DCB57130039A",
+  "changes_cs": "- Uložený UI state nastavení se po úspěšném zápisu na disk propíše i do živé runtime konfigurace tray procesu.\n- Další otevření nastavení ve stejném běžícím procesu tak použije čerstvou polohu okna místo staré kopie g_config.\n- Pravidla pro durable C++/WDUi appky doplňují write-through požadavek pro tray/background aplikace s globální runtime konfigurací.",
+  "changes_en": "- Saved Settings UI state is now written through to the live runtime config of the tray process after a successful disk save.\n- Reopening Settings in the same running process now uses the fresh window placement instead of an old g_config copy.\n- The durable C++/WDUi rules now document the write-through requirement for tray/background apps with global runtime config.",
   "history": [
+    {
+      "version": "1.0.71",
+      "changes_cs": "- Uložený UI state nastavení se po úspěšném zápisu na disk propíše i do živé runtime konfigurace tray procesu.\n- Další otevření nastavení ve stejném běžícím procesu tak použije čerstvou polohu okna místo staré kopie g_config.\n- Pravidla pro durable C++/WDUi appky doplňují write-through požadavek pro tray/background aplikace s globální runtime konfigurací.",
+      "changes_en": "- Saved Settings UI state is now written through to the live runtime config of the tray process after a successful disk save.\n- Reopening Settings in the same running process now uses the fresh window placement instead of an old g_config copy.\n- The durable C++/WDUi rules now document the write-through requirement for tray/background apps with global runtime config."
+    },
     {
       "version": "1.0.70",
       "changes_cs": "- Zavření nastavení z custom chrome X i z menu pro zavření do tray teď nejdřív uloží aktuální UI state.\n- Nastavení otevřené z tray se po přesunutí a zavření znovu otevře na novém místě.\n- Durable C++/WDUi šablona má stejný request-close pattern, aby persistentní okna neobcházela ukládání přes přímý closeWithResult nebo destroy.",
