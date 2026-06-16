@@ -1,0 +1,17 @@
+{
+  "app_id": "veracrypt-startup-mount",
+  "name": "Codex VeraCrypt Startup Mount",
+  "version": "1.0.1",
+  "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/veracrypt-startup-mount",
+  "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe",
+  "sha256": "920161538946DB7501D3B29DCE43DDCDA44117CC7BB5028EDDF92D9CC92E8255",
+  "changes_cs": "- VeraCrypt Startup Mount je nově publikovaný přes veřejný ADPU kanál se samostatným update manifestem.\n- Build používá jednu runtime verzi z VERSION pro appku, setup i Windows version metadata.\n- Start Menu zápis se uklízí pod Jeniksoft a menu O aplikaci umí zobrazit historii změn z veřejného manifestu.",
+  "changes_en": "- VeraCrypt Startup Mount is now published through the public ADPU channel with its own update manifest.\n- The build now uses one runtime version from VERSION for the app, setup, and Windows version metadata.\n- The Start Menu entry is cleaned up under Jeniksoft, and the About menu can show change history from the public manifest.",
+  "history": [
+    {
+      "version": "1.0.1",
+      "changes_cs": "- VeraCrypt Startup Mount je nově publikovaný přes veřejný ADPU kanál se samostatným update manifestem.\n- Build používá jednu runtime verzi z VERSION pro appku, setup i Windows version metadata.\n- Start Menu zápis se uklízí pod Jeniksoft a menu O aplikaci umí zobrazit historii změn z veřejného manifestu.",
+      "changes_en": "- VeraCrypt Startup Mount is now published through the public ADPU channel with its own update manifest.\n- The build now uses one runtime version from VERSION for the app, setup, and Windows version metadata.\n- The Start Menu entry is cleaned up under Jeniksoft, and the About menu can show change history from the public manifest."
+    }
+  ]
+}
