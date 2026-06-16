@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.71",
+  "version": "1.0.74",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "4EC1368A0E807ACBE6F9F1DCC296A6529E482DD050EDD0B185C3DCB57130039A",
-  "changes_cs": "- Uložený UI state nastavení se po úspěšném zápisu na disk propíše i do živé runtime konfigurace tray procesu.\n- Další otevření nastavení ve stejném běžícím procesu tak použije čerstvou polohu okna místo staré kopie g_config.\n- Pravidla pro durable C++/WDUi appky doplňují write-through požadavek pro tray/background aplikace s globální runtime konfigurací.",
-  "changes_en": "- Saved Settings UI state is now written through to the live runtime config of the tray process after a successful disk save.\n- Reopening Settings in the same running process now uses the fresh window placement instead of an old g_config copy.\n- The durable C++/WDUi rules now document the write-through requirement for tray/background apps with global runtime config.",
+  "sha256": "7FB4A24AC2C37D652858B1C77BB1A6B9B9B3B4A7B45C7C40926D3934142DA1F4",
+  "changes_cs": "O aplikaci teď umí otevřít plnou historii změn z veřejného update.json manifestu. Když manifest ještě není v paměti, aplikace si ho pro tento dialog zkusí čerstvě načíst sama a pak zobrazí kompletní changelog nebo srozumitelnou chybu. Aktualizační kontrakt je tím sjednocený s CPM šablonou.",
+  "changes_en": "About can now open the full change history from the public update.json manifest. If the manifest is not cached yet, the app tries to fetch it fresh for that dialog and then shows the complete changelog or a readable error. This aligns the update contract with the CPM template.",
   "history": [
+    {
+      "version": "1.0.74",
+      "changes_en": "About can now open the full change history from the public update.json manifest. If the manifest is not cached yet, the app tries to fetch it fresh for that dialog and then shows the complete changelog or a readable error. This aligns the update contract with the CPM template.",
+      "changes_cs": "O aplikaci teď umí otevřít plnou historii změn z veřejného update.json manifestu. Když manifest ještě není v paměti, aplikace si ho pro tento dialog zkusí čerstvě načíst sama a pak zobrazí kompletní changelog nebo srozumitelnou chybu. Aktualizační kontrakt je tím sjednocený s CPM šablonou."
+    },
     {
       "version": "1.0.71",
       "changes_cs": "- Uložený UI state nastavení se po úspěšném zápisu na disk propíše i do živé runtime konfigurace tray procesu.\n- Další otevření nastavení ve stejném běžícím procesu tak použije čerstvou polohu okna místo staré kopie g_config.\n- Pravidla pro durable C++/WDUi appky doplňují write-through požadavek pro tray/background aplikace s globální runtime konfigurací.",

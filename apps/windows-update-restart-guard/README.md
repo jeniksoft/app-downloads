@@ -4,9 +4,9 @@ Windows Update Restart Guard je malá Windows utilita, která pomáhá zabránit
 
 ## Stažení
 
-* Verze: `1.0.71`
+* Verze: `1.0.74`
 * Setup: [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe)
-* SHA-256: `4EC1368A0E807ACBE6F9F1DCC296A6529E482DD050EDD0B185C3DCB57130039A`
+* SHA-256: `7FB4A24AC2C37D652858B1C77BB1A6B9B9B3B4A7B45C7C40926D3934142DA1F4`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -89,6 +89,8 @@ Od verze `1.0.70` se při zavření nastavení z custom chrome X nebo z menu pro
 
 Od verze `1.0.71` se uložený UI state po úspěšném zápisu do `config.ini` propíše i do běžící runtime konfigurace tray procesu. To opravuje stav, kdy se pozice sice uložila na disk, ale další otevření nastavení ve stejném běžícím procesu použilo starou kopii `g_config`.
 
+Od verze `1.0.74` jde z `O aplikaci` otevřít plná historie změn z veřejného `update.json` manifestu. Když manifest ještě není v paměti, appka si ho pro tuto akci zkusí čerstvě načíst sama a pak zobrazí kompletní changelog nebo srozumitelnou chybu.
+
 ## Ovládání
 
 Po spuštění najdeš aplikaci v oznamovací oblasti Windows. Tray popup nabízí:
@@ -103,7 +105,7 @@ V nastavení můžeš upravit profily chování a restartovací okna. Napříkla
 
 ## Aktualizace
 
-Aplikace umí zkontrolovat veřejný [update.json](update.json) manifest. Kontroluje tiše po startu a potom zhruba každou hodinu. V nastavení je stavová bitmapová akce: běžně spustí ruční kontrolu aktualizací, a když je dostupná novější verze, změní se na instalační update ikonu; po kliknutí stáhne setup, ověří SHA-256, spustí tichou instalaci a znovu otevře aplikaci. Manifest zároveň obsahuje historii změn, takže aplikace v update tooltipu a dialogu ukáže i změny z verzí, které uživatel přeskočil.
+Aplikace umí zkontrolovat veřejný [update.json](update.json) manifest. Kontroluje tiše po startu a potom zhruba každou hodinu. V nastavení je stavová bitmapová akce: běžně spustí ruční kontrolu aktualizací, a když je dostupná novější verze, změní se na instalační update ikonu; po kliknutí stáhne setup, ověří SHA-256, spustí tichou instalaci a znovu otevře aplikaci. Manifest zároveň obsahuje historii změn, takže aplikace v update tooltipu a dialogu ukáže i změny z verzí, které uživatel přeskočil, a stejné release notes jsou dostupné i ručně přes `O aplikaci`.
 
 ## Odinstalace
 
