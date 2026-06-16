@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.68",
+  "version": "1.0.69",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "8FCA5D59646B31C21D369262BED0F93CA6264ABCA4C06BCEC5F52DD1183B61D8",
-  "changes_cs": "- WDUi contour remap teď deformuje celý hotový control najednou, ne jeho jednotlivé subčásti.\n- Scrollbar v dropdownu se nejdřív vykreslí rovně jako kompletní rail + thumb + případné glyphy a teprve hotová bitmapa se posune po 1px řádcích/sloupcích do contour lanes.\n- Edge prvky berou zdroj z odpovídající strany rovné bitmapy, ne ze středu, takže margin k panelu zůstává stabilní a rám railu zůstává širší než thumb.",
-  "changes_en": "- WDUi contour remapping now deforms the whole finished control at once, not its individual sub-parts.\n- Dropdown scrollbars are first rendered straight as a complete rail + thumb + optional glyphs, then the finished bitmap is shifted by 1px rows/columns into contour lanes.\n- Edge controls sample from the matching side of the straight bitmap instead of the center, keeping panel margins stable and the rail frame wider than the thumb.",
+  "sha256": "5AFDFA302DF1EE2C0DE114A2BBBA178829CDEC0B555A5DE00D529CD00CF728B9",
+  "changes_cs": "- WDUi bitmap-shift remap teď pro každý 1px pás porovná levý/pravý nebo horní/spodní aktuální margin a použije stranu s menším marginem.\n- Pokud je pás stejně daleko od obou stran, zůstává zdroj centrovaný, takže symetrické tvary se dál chovají symetricky.\n- Dropdown scrollbary u šikmých a cut skinů tak drží odstup od bližší hrany bez špatného přilepení na jednu pevnou stranu.",
+  "changes_en": "- WDUi bitmap-shift remapping now compares the live left/right or top/bottom margin for each 1px band and uses the side with the smaller margin.\n- If a band is equally far from both sides, the source stays centered, so symmetric shapes remain symmetric.\n- Dropdown scrollbars in slanted and cut skins now keep their distance from the nearest edge without being forced to one fixed side.",
   "history": [
+    {
+      "version": "1.0.69",
+      "changes_cs": "- WDUi bitmap-shift remap teď pro každý 1px pás porovná levý/pravý nebo horní/spodní aktuální margin a použije stranu s menším marginem.\n- Pokud je pás stejně daleko od obou stran, zůstává zdroj centrovaný, takže symetrické tvary se dál chovají symetricky.\n- Dropdown scrollbary u šikmých a cut skinů tak drží odstup od bližší hrany bez špatného přilepení na jednu pevnou stranu.",
+      "changes_en": "- WDUi bitmap-shift remapping now compares the live left/right or top/bottom margin for each 1px band and uses the side with the smaller margin.\n- If a band is equally far from both sides, the source stays centered, so symmetric shapes remain symmetric.\n- Dropdown scrollbars in slanted and cut skins now keep their distance from the nearest edge without being forced to one fixed side."
+    },
     {
       "version": "1.0.68",
       "changes_cs": "- WDUi contour remap teď deformuje celý hotový control najednou, ne jeho jednotlivé subčásti.\n- Scrollbar v dropdownu se nejdřív vykreslí rovně jako kompletní rail + thumb + případné glyphy a teprve hotová bitmapa se posune po 1px řádcích/sloupcích do contour lanes.\n- Edge prvky berou zdroj z odpovídající strany rovné bitmapy, ne ze středu, takže margin k panelu zůstává stabilní a rám railu zůstává širší než thumb.",
