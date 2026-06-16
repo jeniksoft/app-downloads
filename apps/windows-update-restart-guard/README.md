@@ -4,9 +4,9 @@ Windows Update Restart Guard je malá Windows utilita, která pomáhá zabránit
 
 ## Stažení
 
-* Verze: `1.0.74`
+* Verze: `1.0.75`
 * Setup: [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe)
-* SHA-256: `7FB4A24AC2C37D652858B1C77BB1A6B9B9B3B4A7B45C7C40926D3934142DA1F4`
+* SHA-256: `2449327EDCD59B28024699A87EDBF9DE7F6E843BCA490606860823CB76885580`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -30,6 +30,8 @@ Nezakazuje Windows Update. Neblokuje kritické vypnutí systému, výpadek napá
 4. Dokonči instalaci.
 
 Po instalaci se aplikace otevře do nastavení a zároveň se zaregistruje ve Windows jako běžná aplikace.
+
+Od verze `1.0.75` má appka i společný durable WDUi headless probe `WindowsUpdateRestartGuard.exe --ensure-config` a reusable `smoke_test.ps1`. Neinteraktivní smoke vrstva tak ověřuje build výstup, export setupu a normalizovaný zápis configu bez otevření nastavení; vedle toho zůstává dostupný i starší lifecycle probe `--exit-after-ms`.
 
 Od verze `1.0.32` si setup nechává instalační práci dělat standardním Windows Installer backendem. WDUi okno zůstává stejné, ale za scénou se rozbalí vestavěný MSI balíček, spustí se `msiexec`, zapisují se verbose MSI logy a případná chyba ukáže konkrétní fázi, MSI kód a cestu k logu. MSI také používá standardní WiX zavírání běžící aplikace, takže odinstalace přes Windows Nastavení nezůstane jen na zamčeném EXE. Start Menu, Startup a Desktop zástupci jsou přímé neadvertised odkazy na nainstalovaný EXE. Od verze `1.0.35` používá MSI pro Start Menu standardní `ProgramMenuFolder` a vytváří záznam `Jeniksoft\Windows Update Restart Guard`, takže běžná jedna appka sedí pod vydavatelem a nevytváří zbytečnou vlastní app podsložku.
 

@@ -4,9 +4,9 @@ Malá Windows utilita pro lokální mount VeraCrypt svazku po přihlášení už
 
 ## Stažení
 
-* Verze: `1.0.1`
+* Verze: `1.0.2`
 * Setup: [VeraCryptStartupMountSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe)
-* SHA-256: `920161538946DB7501D3B29DCE43DDCDA44117CC7BB5028EDDF92D9CC92E8255`
+* SHA-256: `6C170C905CA95788900E71B1DE88AB7E69636FA07DB100E206812740A61909C8`
 * Update manifest: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -35,5 +35,7 @@ Po instalaci se vytvoří Start Menu záznam pod `Jeniksoft` a aplikace se zareg
 Heslo není součástí setupu, gitu ani veřejného manifestu. Ukládá se až lokálně v manageru do DPAPI CurrentUser úložiště na konkrétním PC.
 
 ## Historie Změn
+
+Od verze `1.0.2` má appka i společný durable WDUi headless probe `VeraCryptStartupMount.exe --ensure-config` a reusable `smoke_test.ps1`. Neinteraktivní smoke kontrola tak ověřuje export setupu, zapsání normalizovaného configu i stávající self-test appky a setupu bez instalace.
 
 Od verze `1.0.1` má appka srovnaný veřejný ADPU manifestový základ: build používá jednu runtime verzi z `VERSION`, setup se publikuje do ADPU, Start Menu se uklízí pod `Jeniksoft` a v menu `O aplikaci` lze otevřít historii změn z veřejného `update.json`.
