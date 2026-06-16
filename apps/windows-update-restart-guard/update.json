@@ -1,13 +1,18 @@
 {
   "app_id": "windows-update-restart-guard",
   "name": "Windows Update Restart Guard",
-  "version": "1.0.66",
+  "version": "1.0.68",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-  "sha256": "67C0CA470DE7B57D77B0C8CE6793106A542BDFA4DDD4AE68AB085EEE46DD1834",
-  "changes_cs": "- WDUi segmentované surface se teď nedeformují přes region clipping: control se nejdřív vykreslí normálně do offscreen bitmapy a pak se 1px řádky/sloupce posunou do contour lanes podobně jako bitmap shift.\n- Dropdown scrollbary tak drží stejný margin od šikmé/cut hrany bez grafických zlomů, smrštěných rámů nebo rozbitých borderů.\n- Pravidla WDUi a nativních appek zapisují offscreen straight render + scanline remap jako systémový postup pro současné i budoucí contour prvky.",
-  "changes_en": "- WDUi segmented surfaces no longer deform through region clipping: the control is first rendered normally into an offscreen bitmap, then 1px rows/columns are shifted into contour lanes like a bitmap shift.\n- Dropdown scrollbars now keep the same margin from slanted/cut edges without visual breaks, collapsed frames, or broken borders.\n- WDUi and native-app rules now document offscreen straight render + scanline remap as the systemic path for current and future contour controls.",
+  "sha256": "8FCA5D59646B31C21D369262BED0F93CA6264ABCA4C06BCEC5F52DD1183B61D8",
+  "changes_cs": "- WDUi contour remap teď deformuje celý hotový control najednou, ne jeho jednotlivé subčásti.\n- Scrollbar v dropdownu se nejdřív vykreslí rovně jako kompletní rail + thumb + případné glyphy a teprve hotová bitmapa se posune po 1px řádcích/sloupcích do contour lanes.\n- Edge prvky berou zdroj z odpovídající strany rovné bitmapy, ne ze středu, takže margin k panelu zůstává stabilní a rám railu zůstává širší než thumb.",
+  "changes_en": "- WDUi contour remapping now deforms the whole finished control at once, not its individual sub-parts.\n- Dropdown scrollbars are first rendered straight as a complete rail + thumb + optional glyphs, then the finished bitmap is shifted by 1px rows/columns into contour lanes.\n- Edge controls sample from the matching side of the straight bitmap instead of the center, keeping panel margins stable and the rail frame wider than the thumb.",
   "history": [
+    {
+      "version": "1.0.68",
+      "changes_cs": "- WDUi contour remap teď deformuje celý hotový control najednou, ne jeho jednotlivé subčásti.\n- Scrollbar v dropdownu se nejdřív vykreslí rovně jako kompletní rail + thumb + případné glyphy a teprve hotová bitmapa se posune po 1px řádcích/sloupcích do contour lanes.\n- Edge prvky berou zdroj z odpovídající strany rovné bitmapy, ne ze středu, takže margin k panelu zůstává stabilní a rám railu zůstává širší než thumb.",
+      "changes_en": "- WDUi contour remapping now deforms the whole finished control at once, not its individual sub-parts.\n- Dropdown scrollbars are first rendered straight as a complete rail + thumb + optional glyphs, then the finished bitmap is shifted by 1px rows/columns into contour lanes.\n- Edge controls sample from the matching side of the straight bitmap instead of the center, keeping panel margins stable and the rail frame wider than the thumb."
+    },
     {
       "version": "1.0.66",
       "changes_cs": "- WDUi segmentované surface se teď nedeformují přes region clipping: control se nejdřív vykreslí normálně do offscreen bitmapy a pak se 1px řádky/sloupce posunou do contour lanes podobně jako bitmap shift.\n- Dropdown scrollbary tak drží stejný margin od šikmé/cut hrany bez grafických zlomů, smrštěných rámů nebo rozbitých borderů.\n- Pravidla WDUi a nativních appek zapisují offscreen straight render + scanline remap jako systémový postup pro současné i budoucí contour prvky.",
