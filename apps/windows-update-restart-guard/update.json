@@ -1,13 +1,31 @@
 {
     "app_id":  "windows-update-restart-guard",
     "name":  "Windows Update Restart Guard",
-    "version":  "1.0.88",
+    "version":  "1.0.91",
     "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
     "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-    "sha256":  "96EC27F057E5A8FF17DCCDB731A85A7396829008876B17B2334B939BC4E1B5EF",
+    "sha256":  "68A217E293B3876B516018F2390B822B2B182163A1CF4C524991A57C43A8CCFF",
     "changes_cs":  "Pregenerovany setup a znovu srovnane download metadata (setup, manifest a checksum) s aktualnim CPM build/export tokem.",
     "changes_en":  "Rebuilt setup and realigned download metadata (setup, manifest, and checksum) with the current CPM build/export flow.",
     "history":  [
+                    {
+                        "version":  "1.0.91",
+                        "date":  "2026-06-17",
+                        "changes_cs":  "Pregenerovany setup a znovu srovnane download metadata (setup, manifest a checksum) s aktualnim CPM build/export tokem.",
+                        "changes_en":  "Rebuilt setup and realigned download metadata (setup, manifest, and checksum) with the current CPM build/export flow."
+                    },
+                    {
+                        "version":  "1.0.90",
+                        "date":  "2026-06-17",
+                        "changes_cs":  "Pregenerovany setup a znovu srovnane download metadata (setup, manifest a checksum) s aktualnim CPM build/export tokem.",
+                        "changes_en":  "Rebuilt setup and realigned download metadata (setup, manifest, and checksum) with the current CPM build/export flow."
+                    },
+                    {
+                        "version":  "1.0.89",
+                        "date":  "2026-06-17",
+                        "changes_cs":  "Pregenerovany setup a znovu srovnane download metadata (setup, manifest a checksum) s aktualnim CPM build/export tokem.",
+                        "changes_en":  "Rebuilt setup and realigned download metadata (setup, manifest, and checksum) with the current CPM build/export flow."
+                    },
                     {
                         "version":  "1.0.88",
                         "date":  "2026-06-17",
