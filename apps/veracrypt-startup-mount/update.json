@@ -1,41 +1,53 @@
 {
-  "app_id": "veracrypt-startup-mount",
-  "name": "Codex VeraCrypt Startup Mount",
-  "version": "1.0.7",
-  "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/veracrypt-startup-mount",
-  "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe",
-  "sha256": "8AF842FDB716E1EE4B2D648B3680A1064077AACC3EE54502C355185D7B201C82",
-  "changes_cs": "Dialog historie změn v O aplikaci je teď rolovatelný a používá vlastní scrollbar, takže delší changelog nepřetéká mimo okno a zůstává čitelný celý.",
-  "changes_en": "The change-history dialog in About is now scrollable and uses its own scrollbar, so longer changelogs no longer overflow the window and stay fully readable.",
-  "history": [
-    {
-      "date": "2026-06-16",
-      "version": "1.0.7",
-      "changes_cs": "Dialog historie změn v O aplikaci je teď rolovatelný a používá vlastní scrollbar, takže delší changelog nepřetéká mimo okno a zůstává čitelný celý.",
-      "changes_en": "The change-history dialog in About is now scrollable and uses its own scrollbar, so longer changelogs no longer overflow the window and stay fully readable."
-    },
-    {
-      "date": "2026-06-16",
-      "version": "1.0.6",
-      "changes_cs": "Manager nově přebírá durable baseline pro živou lokalizaci a perzistenci UI stavu. Přepnutí jazyka mění viditelné texty hned bez znovuotevření okna, poloha a velikost okna se vrací po close/reopen a build si nově generuje lokalizační header a bumpuje verzi až po úspěšném exportu setupu.",
-      "changes_en": "The manager now adopts the durable baseline for live localization and persisted UI state. Switching language updates visible texts immediately without reopening the window, window placement is restored after close/reopen, and the build now generates the localization header and bumps the version only after a successful setup export."
-    },
-    {
-      "date": "2026-06-16",
-      "version": "1.0.4",
-      "changes_cs": "Manager teď má přímo v UI kontrolu aktualizací, stavovou bitmapovou ikonu a tooltip s akcemi pro ruční kontrolu i instalaci novější verze. Automatický update si před stažením znovu načte manifest, ověří SHA-256, spustí tichý setup a po dokončení aplikaci znovu otevře. Setup navíc nově instaluje i update assety a při přeinstalaci bezpečně ukončí běžící manager.",
-      "changes_en": "The manager now includes in-app update checking, a bitmap status indicator, and tooltip actions for manual checks and installing a newer version. Automatic update refreshes the manifest before download, verifies SHA-256, runs the setup silently, and reopens the app after completion. Setup now installs the update assets too and safely stops a running manager before reinstalling."
-    },
-    {
-      "date": "2026-06-16",
-      "version": "1.0.2",
-      "changes_cs": "VeraCrypt Startup Mount nově podporuje společný durable WDUi headless probe přes --ensure-config a má reusable smoke_test.ps1 wrapper. Smoke kontrola ověřuje export setupu, zápis configu i stávající self-test appky a setupu bez interaktivní instalace.",
-      "changes_en": "VeraCrypt Startup Mount now supports the shared durable WDUi headless probe through --ensure-config and adds a reusable smoke_test.ps1 wrapper. The smoke check verifies setup export, config write-back, and the existing app/setup self-tests without interactive installation."
-    },
-    {
-      "version": "1.0.1",
-      "changes_cs": "- VeraCrypt Startup Mount je nově publikovaný přes veřejný ADPU kanál se samostatným update manifestem.\n- Build používá jednu runtime verzi z VERSION pro appku, setup i Windows version metadata.\n- Start Menu zápis se uklízí pod Jeniksoft a menu O aplikaci umí zobrazit historii změn z veřejného manifestu.",
-      "changes_en": "- VeraCrypt Startup Mount is now published through the public ADPU channel with its own update manifest.\n- The build now uses one runtime version from VERSION for the app, setup, and Windows version metadata.\n- The Start Menu entry is cleaned up under Jeniksoft, and the About menu can show change history from the public manifest."
-    }
-  ]
+    "app_id":  "veracrypt-startup-mount",
+    "name":  "Codex VeraCrypt Startup Mount",
+    "version":  "1.0.9",
+    "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/veracrypt-startup-mount",
+    "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe",
+    "sha256":  "6AFD19061C34F76FD33E86EDA710E367715AAC97446CDEB24E2095C4A0DB5CA8",
+    "changes_cs":  "Pregenerovany setup a znovu srovnane download metadata (setup, manifest a checksum) s aktualnim CPM build/export tokem.",
+    "changes_en":  "Rebuilt setup and realigned download metadata (setup, manifest, and checksum) with the current CPM build/export flow.",
+    "history":  [
+                    {
+                        "version":  "1.0.9",
+                        "date":  "2026-06-17",
+                        "changes_cs":  "Pregenerovany setup a znovu srovnane download metadata (setup, manifest a checksum) s aktualnim CPM build/export tokem.",
+                        "changes_en":  "Rebuilt setup and realigned download metadata (setup, manifest, and checksum) with the current CPM build/export flow."
+                    },
+                    {
+                        "version":  "1.0.8",
+                        "date":  "2026-06-17",
+                        "changes_cs":  "Pregenerovany setup a znovu srovnane download metadata (setup, manifest a checksum) s aktualnim CPM build/export tokem.",
+                        "changes_en":  "Rebuilt setup and realigned download metadata (setup, manifest, and checksum) with the current CPM build/export flow."
+                    },
+                    {
+                        "date":  "2026-06-16",
+                        "version":  "1.0.7",
+                        "changes_cs":  "Dialog historie změn v O aplikaci je teď rolovatelný a používá vlastní scrollbar, takže delší changelog nepřetéká mimo okno a zůstává čitelný celý.",
+                        "changes_en":  "The change-history dialog in About is now scrollable and uses its own scrollbar, so longer changelogs no longer overflow the window and stay fully readable."
+                    },
+                    {
+                        "date":  "2026-06-16",
+                        "version":  "1.0.6",
+                        "changes_cs":  "Manager nově přebírá durable baseline pro živou lokalizaci a perzistenci UI stavu. Přepnutí jazyka mění viditelné texty hned bez znovuotevření okna, poloha a velikost okna se vrací po close/reopen a build si nově generuje lokalizační header a bumpuje verzi až po úspěšném exportu setupu.",
+                        "changes_en":  "The manager now adopts the durable baseline for live localization and persisted UI state. Switching language updates visible texts immediately without reopening the window, window placement is restored after close/reopen, and the build now generates the localization header and bumps the version only after a successful setup export."
+                    },
+                    {
+                        "date":  "2026-06-16",
+                        "version":  "1.0.4",
+                        "changes_cs":  "Manager teď má přímo v UI kontrolu aktualizací, stavovou bitmapovou ikonu a tooltip s akcemi pro ruční kontrolu i instalaci novější verze. Automatický update si před stažením znovu načte manifest, ověří SHA-256, spustí tichý setup a po dokončení aplikaci znovu otevře. Setup navíc nově instaluje i update assety a při přeinstalaci bezpečně ukončí běžící manager.",
+                        "changes_en":  "The manager now includes in-app update checking, a bitmap status indicator, and tooltip actions for manual checks and installing a newer version. Automatic update refreshes the manifest before download, verifies SHA-256, runs the setup silently, and reopens the app after completion. Setup now installs the update assets too and safely stops a running manager before reinstalling."
+                    },
+                    {
+                        "date":  "2026-06-16",
+                        "version":  "1.0.2",
+                        "changes_cs":  "VeraCrypt Startup Mount nově podporuje společný durable WDUi headless probe přes --ensure-config a má reusable smoke_test.ps1 wrapper. Smoke kontrola ověřuje export setupu, zápis configu i stávající self-test appky a setupu bez interaktivní instalace.",
+                        "changes_en":  "VeraCrypt Startup Mount now supports the shared durable WDUi headless probe through --ensure-config and adds a reusable smoke_test.ps1 wrapper. The smoke check verifies setup export, config write-back, and the existing app/setup self-tests without interactive installation."
+                    },
+                    {
+                        "version":  "1.0.1",
+                        "changes_cs":  "- VeraCrypt Startup Mount je nově publikovaný přes veřejný ADPU kanál se samostatným update manifestem.\n- Build používá jednu runtime verzi z VERSION pro appku, setup i Windows version metadata.\n- Start Menu zápis se uklízí pod Jeniksoft a menu O aplikaci umí zobrazit historii změn z veřejného manifestu.",
+                        "changes_en":  "- VeraCrypt Startup Mount is now published through the public ADPU channel with its own update manifest.\n- The build now uses one runtime version from VERSION for the app, setup, and Windows version metadata.\n- The Start Menu entry is cleaned up under Jeniksoft, and the About menu can show change history from the public manifest."
+                    }
+                ]
 }

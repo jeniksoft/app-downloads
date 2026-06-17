@@ -4,9 +4,9 @@ Malá Windows utilita pro lokální mount VeraCrypt svazku po přihlášení už
 
 ## Stažení
 
-* Verze: `1.0.7`
+* Verze: `1.0.9`
 * Setup: [VeraCryptStartupMountSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe)
-* SHA-256: `8AF842FDB716E1EE4B2D648B3680A1064077AACC3EE54502C355185D7B201C82`
+* SHA-256: `6AFD19061C34F76FD33E86EDA710E367715AAC97446CDEB24E2095C4A0DB5CA8`
 * Update manifest: [update.json](update.json)
 
 ## Co Aplikace Dělá

@@ -1,13 +1,31 @@
 {
     "app_id":  "windows-update-restart-guard",
     "name":  "Windows Update Restart Guard",
-    "version":  "1.0.84",
+    "version":  "1.0.88",
     "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
     "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-    "sha256":  "677C842B821DD9EC204A47075E5EF61054C12D85A4C0F23202B9610AE2E49636",
-    "changes_cs":  "Build pipeline teď po exportu setupu automaticky synchronizuje ADPU payload, manifest, root README a checksum, takže veřejný download rep už nezaostává za aktuálním CPM buildem.",
-    "changes_en":  "The build pipeline now syncs the ADPU payload, manifest, root README, and checksum automatically after setup export, so the public download repo no longer lags behind the current CPM build.",
+    "sha256":  "96EC27F057E5A8FF17DCCDB731A85A7396829008876B17B2334B939BC4E1B5EF",
+    "changes_cs":  "Pregenerovany setup a znovu srovnane download metadata (setup, manifest a checksum) s aktualnim CPM build/export tokem.",
+    "changes_en":  "Rebuilt setup and realigned download metadata (setup, manifest, and checksum) with the current CPM build/export flow.",
     "history":  [
+                    {
+                        "version":  "1.0.88",
+                        "date":  "2026-06-17",
+                        "changes_cs":  "Pregenerovany setup a znovu srovnane download metadata (setup, manifest a checksum) s aktualnim CPM build/export tokem.",
+                        "changes_en":  "Rebuilt setup and realigned download metadata (setup, manifest, and checksum) with the current CPM build/export flow."
+                    },
+                    {
+                        "version":  "1.0.87",
+                        "date":  "2026-06-17",
+                        "changes_cs":  "Pregenerovany setup a znovu srovnane download metadata (setup, manifest a checksum) s aktualnim CPM build/export tokem.",
+                        "changes_en":  "Rebuilt setup and realigned download metadata (setup, manifest, and checksum) with the current CPM build/export flow."
+                    },
+                    {
+                        "version":  "1.0.86",
+                        "date":  "2026-06-17",
+                        "changes_cs":  "Update ikonka je presunuta do WDUi titlebaru jako normalni child control; build je znovu zlinkovany proti aktualnimu WDUi baseline.",
+                        "changes_en":  "The update icon is hosted in the WDUi titlebar as a normal child control; the build is relinked against the current WDUi baseline."
+                    },
                     {
                         "version":  "1.0.84",
                         "date":  "2026-06-17",
