@@ -1,13 +1,19 @@
 {
     "app_id":  "veracrypt-startup-mount",
     "name":  "Codex VeraCrypt Startup Mount",
-    "version":  "1.0.16",
+    "version":  "1.0.17",
     "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/veracrypt-startup-mount",
     "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe",
-    "sha256":  "AA298DDE527D08D7BCC461EF6A95A2E1351E26CC914B5165C976E1913D8E7257",
-    "changes_cs":  "Opraven horní panel manageru: odstraněn dlouhý technický subtitle, který se u některých skinů překrýval se stavovým prvkem.",
-    "changes_en":  "Fixed the manager header: removed the long technical subtitle that overlapped the status control with some skins.",
+    "sha256":  "D3456379B2DAFD16F57A4A2639B1F6E27FD3855157A30FC28A4129F66F9DAB74",
+    "changes_cs":  "VeraCrypt Startup Mount nově hlídá duplicitní aktivní písmena disků. Více záznamů se stejným písmenem může zůstat v nastavení jako neaktivní alternativa, ale aktivně mountovat se smí jen jeden; tabulka teď duplicity ukáže jako konflikt.",
+    "changes_en":  "VeraCrypt Startup Mount now guards duplicate active drive letters. Multiple mappings can keep the same drive letter as inactive alternatives, but only one active mapping may mount it; the table now shows duplicates as conflicts.",
     "history":  [
+                    {
+                        "version":  "1.0.17",
+                        "date":  "2026-06-18",
+                        "changes_cs":  "VeraCrypt Startup Mount nově hlídá duplicitní aktivní písmena disků. Více záznamů se stejným písmenem může zůstat v nastavení jako neaktivní alternativa, ale aktivně mountovat se smí jen jeden; tabulka teď duplicity ukáže jako konflikt.",
+                        "changes_en":  "VeraCrypt Startup Mount now guards duplicate active drive letters. Multiple mappings can keep the same drive letter as inactive alternatives, but only one active mapping may mount it; the table now shows duplicates as conflicts."
+                    },
                     {
                         "version":  "1.0.16",
                         "date":  "2026-06-18",
