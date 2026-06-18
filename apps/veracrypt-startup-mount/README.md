@@ -4,9 +4,9 @@ Malá Windows tray utilita pro lokální mount jednoho nebo více VeraCrypt svaz
 
 ## Stažení
 
-* Verze: `1.0.17`
+* Verze: `1.0.18`
 * Setup: [VeraCryptStartupMountSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe)
-* SHA-256: `D3456379B2DAFD16F57A4A2639B1F6E27FD3855157A30FC28A4129F66F9DAB74`
+* SHA-256: `987430978FD5DFD85D07778C277A08763BAEA3FF1F8578DD89141C50C9F44748`
 * Update manifest: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -39,6 +39,8 @@ Po instalaci se vytvoří Start Menu záznam pod `Jeniksoft` a aplikace se zareg
 Heslo není součástí setupu, gitu ani veřejného manifestu. Ukládá se až lokálně v manageru do DPAPI CurrentUser úložiště na konkrétním PC.
 
 ## Historie Změn
+
+Od verze `1.0.18` editor mapování používá pro písmeno disku combobox `A:` až `Z:` místo ručního textového pole. Konfigurace dál ukládá čisté písmeno, takže zůstává kompatibilní se staršími configy i VeraCrypt příkazem.
 
 Od verze `1.0.17` appka hlídá duplicitní aktivní písmena disků. Více mapování může sdílet stejné písmeno jen jako neaktivní alternativa; aktivně mountovat se smí jen jeden záznam a tabulka duplicity ukazuje jako konflikt.
 

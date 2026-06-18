@@ -1,13 +1,19 @@
 {
     "app_id":  "veracrypt-startup-mount",
     "name":  "Codex VeraCrypt Startup Mount",
-    "version":  "1.0.17",
+    "version":  "1.0.18",
     "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/veracrypt-startup-mount",
     "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe",
-    "sha256":  "D3456379B2DAFD16F57A4A2639B1F6E27FD3855157A30FC28A4129F66F9DAB74",
-    "changes_cs":  "VeraCrypt Startup Mount nově hlídá duplicitní aktivní písmena disků. Více záznamů se stejným písmenem může zůstat v nastavení jako neaktivní alternativa, ale aktivně mountovat se smí jen jeden; tabulka teď duplicity ukáže jako konflikt.",
-    "changes_en":  "VeraCrypt Startup Mount now guards duplicate active drive letters. Multiple mappings can keep the same drive letter as inactive alternatives, but only one active mapping may mount it; the table now shows duplicates as conflicts.",
+    "sha256":  "987430978FD5DFD85D07778C277A08763BAEA3FF1F8578DD89141C50C9F44748",
+    "changes_cs":  "Editor mapování ve VeraCrypt Startup Mount už nepoužívá ruční textové pole pro písmeno disku. Písmeno se vybírá z comboboxu A: až Z:, přičemž konfigurace dál ukládá čisté písmeno kvůli kompatibilitě s VeraCrypt příkazem a staršími configy.",
+    "changes_en":  "The VeraCrypt Startup Mount mapping editor no longer uses a free-text drive-letter field. The drive is selected from an A: to Z: combo box while the config still stores the clean letter for compatibility with the VeraCrypt command and older configs.",
     "history":  [
+                    {
+                        "version":  "1.0.18",
+                        "date":  "2026-06-18",
+                        "changes_cs":  "Editor mapování ve VeraCrypt Startup Mount už nepoužívá ruční textové pole pro písmeno disku. Písmeno se vybírá z comboboxu A: až Z:, přičemž konfigurace dál ukládá čisté písmeno kvůli kompatibilitě s VeraCrypt příkazem a staršími configy.",
+                        "changes_en":  "The VeraCrypt Startup Mount mapping editor no longer uses a free-text drive-letter field. The drive is selected from an A: to Z: combo box while the config still stores the clean letter for compatibility with the VeraCrypt command and older configs."
+                    },
                     {
                         "version":  "1.0.17",
                         "date":  "2026-06-18",
