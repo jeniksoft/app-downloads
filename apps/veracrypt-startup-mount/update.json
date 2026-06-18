@@ -1,13 +1,19 @@
 {
     "app_id":  "veracrypt-startup-mount",
     "name":  "Codex VeraCrypt Startup Mount",
-    "version":  "1.0.19",
+    "version":  "1.0.20",
     "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/veracrypt-startup-mount",
     "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe",
-    "sha256":  "24E7033DFCD9ECE7DB4099CFCFE9B9F1FDC09AF228236DD3EBC6865EA5A1732A",
-    "changes_cs":  "Tabulka mapovani ve VC oddeluje aktivitu mapovani od skutecneho mount stavu. Novy sloupec Mapovani ukazuje Aktivni/Neaktivni pro mount po prihlaseni a tooltip vysvetluje chovani; sloupec Stav ukazuje jen Mountnuto/Nemountnuto.",
-    "changes_en":  "The VC mapping table now separates mapping activation from the actual mount state. The new Mapping column shows Active/Inactive for sign-in mounting and the tooltip explains the behavior; Status now only shows Mounted/Not mounted.",
+    "sha256":  "55BF50F504F3E41BEA0FE1FF6A66B5D218FC68EF8ED4957388CF5ACD70A53944",
+    "changes_cs":  "VeraCrypt Startup Mount ma nove tlacitko Unmount vybrane a tooltips pro Mount/Unmount vybrane. Rucni mount vybrane polozky je oddeleny od startup aktivity mapovani.",
+    "changes_en":  "VeraCrypt Startup Mount now has an Unmount selected button plus tooltips for Mount/Unmount selected. Manual mount of the selected item is separated from the mapping\u0027s startup activation flag.",
     "history":  [
+                    {
+                        "version":  "1.0.20",
+                        "date":  "2026-06-18",
+                        "changes_cs":  "VeraCrypt Startup Mount ma nove tlacitko Unmount vybrane a tooltips pro Mount/Unmount vybrane. Rucni mount vybrane polozky je oddeleny od startup aktivity mapovani.",
+                        "changes_en":  "VeraCrypt Startup Mount now has an Unmount selected button plus tooltips for Mount/Unmount selected. Manual mount of the selected item is separated from the mapping\u0027s startup activation flag."
+                    },
                     {
                         "version":  "1.0.19",
                         "date":  "2026-06-18",
