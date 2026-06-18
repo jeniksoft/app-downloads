@@ -1,13 +1,19 @@
 {
     "app_id":  "veracrypt-startup-mount",
     "name":  "Codex VeraCrypt Startup Mount",
-    "version":  "1.0.27",
+    "version":  "1.0.29",
     "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/veracrypt-startup-mount",
     "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe",
-    "sha256":  "825F558AAC6D3CAD8761703A9CDBA0689823264CD3ABDB866CBD4CAD832E8D8B",
-    "changes_cs":  "Výběr skinu ve VeraCrypt Startup Mount teď zobrazuje jen hlavní název skinu. Kategorie, harmonie, tagy a popis jsou dostupné v tooltipu položky, takže panel Jazyk/Skin zůstává kompaktní.",
-    "changes_en":  "The VeraCrypt Startup Mount skin picker now shows only the main skin name. Category, harmony, tags, and description are available in the item tooltip, keeping the Language/Skin panel compact.",
+    "sha256":  "7427C7A3C6B1226FF4C5439BC23ACA39C38846B5F963E068B442B0DBFC6DE72A",
+    "changes_cs":  "Výběr jazyka ve VeraCrypt Startup Mount teď v comboboxu ukazuje jen krátký hlavní název jazyka a automatická volba je zkrácená na Auto. Plný nativní název, anglický název a locale kód jsou v tooltipu položky, aby panel Jazyk/Skin zůstal čitelný.",
+    "changes_en":  "The VeraCrypt Startup Mount language picker now shows only the short main language name in the combo box and shortens the automatic option to Auto. The full native name, English name, and locale code are available in the item tooltip so the Language/Skin panel stays readable.",
     "history":  [
+                    {
+                        "version":  "1.0.29",
+                        "date":  "2026-06-18",
+                        "changes_cs":  "Výběr jazyka ve VeraCrypt Startup Mount teď v comboboxu ukazuje jen krátký hlavní název jazyka a automatická volba je zkrácená na Auto. Plný nativní název, anglický název a locale kód jsou v tooltipu položky, aby panel Jazyk/Skin zůstal čitelný.",
+                        "changes_en":  "The VeraCrypt Startup Mount language picker now shows only the short main language name in the combo box and shortens the automatic option to Auto. The full native name, English name, and locale code are available in the item tooltip so the Language/Skin panel stays readable."
+                    },
                     {
                         "version":  "1.0.27",
                         "date":  "2026-06-18",
