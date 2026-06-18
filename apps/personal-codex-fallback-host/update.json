@@ -1,13 +1,19 @@
 {
     "app_id":  "personal-codex-fallback-host",
     "name":  "Jarvis",
-    "version":  "0.1.28",
+    "version":  "0.1.29",
     "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/personal-codex-fallback-host",
     "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/personal-codex-fallback-host/JarvisSetup.exe",
-    "sha256":  "1F7D26DCFEE14778E28C548F1F0589B8C9D663C4C0B3730228BFF6B61A737640",
-    "changes_cs":  "Pridana prvni bezpecna extension registry vrstva pro lokalni pluginy, skills, MCP a app connectory. Jarvis umi extension najit, zobrazit manifest a explicitne povolit nebo zakazat, zatim bez spousteni extension.",
-    "changes_en":  "Added the first safe extension registry layer for local plugins, skills, MCP servers, and app connectors. Jarvis can discover extensions, show manifests, and explicitly enable or disable them, without executing extensions yet.",
+    "sha256":  "E49B5EA8F458A713148881AC13DA39801BCAB2FB19122BC9F20AA0F5F42CA808",
+    "changes_cs":  "Pridan read-only skill loading: enabled Markdown skill lze prikazem /skill-attach pripojit jako instrukcni kontext do dalsich model promptu. Jarvis stale nespousti pluginy, MCP ani app connectory; nova vrstva je jen bezpecne nacitani lokalnich instrukci.",
+    "changes_en":  "Added read-only skill loading: an enabled Markdown skill can be attached with /skill-attach as instruction context for later model prompts. Jarvis still does not execute plugins, MCP servers, or app connectors; this layer only safely loads local instructions.",
     "history":  [
+                    {
+                        "version":  "0.1.29",
+                        "date":  "2026-06-18",
+                        "changes_cs":  "Pridan read-only skill loading: enabled Markdown skill lze prikazem /skill-attach pripojit jako instrukcni kontext do dalsich model promptu. Jarvis stale nespousti pluginy, MCP ani app connectory; nova vrstva je jen bezpecne nacitani lokalnich instrukci.",
+                        "changes_en":  "Added read-only skill loading: an enabled Markdown skill can be attached with /skill-attach as instruction context for later model prompts. Jarvis still does not execute plugins, MCP servers, or app connectors; this layer only safely loads local instructions."
+                    },
                     {
                         "version":  "0.1.28",
                         "date":  "2026-06-18",
