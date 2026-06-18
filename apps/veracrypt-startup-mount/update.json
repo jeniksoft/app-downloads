@@ -1,13 +1,19 @@
 {
     "app_id":  "veracrypt-startup-mount",
     "name":  "Codex VeraCrypt Startup Mount",
-    "version":  "1.0.12",
+    "version":  "1.0.14",
     "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/veracrypt-startup-mount",
     "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe",
-    "sha256":  "A6FDF00897FFD31A1F0BF4943BA75DE43EC6E6A2D50B4413A1C39146550FBB17",
-    "changes_cs":  "Normalizovany manager jako tray appka: zavreni schova okno do tray, levy klik ho vrati, pravy klik otevre WDUi akce. Pridana podpora vice VeraCrypt mapovani s nazvem, cestou, pismenem disku, aktivnim stavem a prehledem mountnuto/neni mountnuto.",
-    "changes_en":  "Normalized the manager as a tray app: closing hides the window to tray, left click restores it, right click opens WDUi actions. Added multiple VeraCrypt mappings with name, path, drive letter, enabled state, and mounted/not-mounted overview.",
+    "sha256":  "CB19C498076C681B80A0CF3E8D61DDB37F3B476B346B63A8998841FC97FADE0D",
+    "changes_cs":  "Sjednocen spodní panel nastavení manageru: výběr jazyka, skinu a tlačítko Uložit jsou teď ve společném WDUi preferences panelu podle šablony durable appek. Setup byl přegenerován a metadata stažení znovu srovnána s aktuálním buildem.",
+    "changes_en":  "Unified the manager's lower settings area: language, skin, and Save now live together in one WDUi preferences panel according to the durable app template. The setup was rebuilt and download metadata realigned with the current build.",
     "history":  [
+                    {
+                        "version":  "1.0.14",
+                        "date":  "2026-06-18",
+                        "changes_cs":  "Sjednocen spodní panel nastavení manageru: výběr jazyka, skinu a tlačítko Uložit jsou teď ve společném WDUi preferences panelu podle šablony durable appek. Setup byl přegenerován a metadata stažení znovu srovnána s aktuálním buildem.",
+                        "changes_en":  "Unified the manager's lower settings area: language, skin, and Save now live together in one WDUi preferences panel according to the durable app template. The setup was rebuilt and download metadata realigned with the current build."
+                    },
                     {
                         "version":  "1.0.12",
                         "date":  "2026-06-18",
