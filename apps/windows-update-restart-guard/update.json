@@ -1,13 +1,19 @@
 {
     "app_id":  "windows-update-restart-guard",
     "name":  "Windows Update Restart Guard",
-    "version":  "1.0.91",
+    "version":  "1.0.92",
     "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/windows-update-restart-guard",
     "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe",
-    "sha256":  "68A217E293B3876B516018F2390B822B2B182163A1CF4C524991A57C43A8CCFF",
-    "changes_cs":  "Pregenerovany setup a znovu srovnane download metadata (setup, manifest a checksum) s aktualnim CPM build/export tokem.",
-    "changes_en":  "Rebuilt setup and realigned download metadata (setup, manifest, and checksum) with the current CPM build/export flow.",
+    "sha256":  "ADA62B291318CBE21C963675CD03B42B485921A1C1DD0ECD22CAD321515778A6",
+    "changes_cs":  "Normalizace Restart Guardu: build zachovava publish parametry pri prepnuti do Developer Shellu, smoke test nepublikuje a update ikona v zahlavi ma cistsi odstup od okenich tlacitek.",
+    "changes_en":  "Restart Guard normalization: build preserves publish parameters through Developer Shell, smoke tests no longer publish, and the titlebar update icon has cleaner spacing from window buttons.",
     "history":  [
+                    {
+                        "version":  "1.0.92",
+                        "date":  "2026-06-18",
+                        "changes_cs":  "Normalizace Restart Guardu: build zachovava publish parametry pri prepnuti do Developer Shellu, smoke test nepublikuje a update ikona v zahlavi ma cistsi odstup od okenich tlacitek.",
+                        "changes_en":  "Restart Guard normalization: build preserves publish parameters through Developer Shell, smoke tests no longer publish, and the titlebar update icon has cleaner spacing from window buttons."
+                    },
                     {
                         "version":  "1.0.91",
                         "date":  "2026-06-17",
