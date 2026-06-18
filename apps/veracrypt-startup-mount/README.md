@@ -4,9 +4,9 @@ Malá Windows tray utilita pro lokální mount jednoho nebo více VeraCrypt svaz
 
 ## Stažení
 
-* Verze: `1.0.14`
+* Verze: `1.0.15`
 * Setup: [VeraCryptStartupMountSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe)
-* SHA-256: `CB19C498076C681B80A0CF3E8D61DDB37F3B476B346B63A8998841FC97FADE0D`
+* SHA-256: `F30D150F9EC3D6D0D1F5D69FE3341065A06990C13E7A71A477D5CF53D688FFFC`
 * Update manifest: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -39,6 +39,8 @@ Po instalaci se vytvoří Start Menu záznam pod `Jeniksoft` a aplikace se zareg
 Heslo není součástí setupu, gitu ani veřejného manifestu. Ukládá se až lokálně v manageru do DPAPI CurrentUser úložiště na konkrétním PC.
 
 ## Historie Změn
+
+Od verze `1.0.15` čistá instalace nezačíná žádným předvyplněným mapováním. Appka už si sama nevytváří projektové výchozí mapování, nápověda je obecná, autostart názvy jsou generické a prázdný seznam mapování zůstává prázdný.
 
 Od verze `1.0.12` je manager normalizovaný jako tray appka. Zavření okna ho schová do oznamovací oblasti, levý klik ho vrátí, pravý klik otevře WDUi akce a manager nově podporuje více VeraCrypt mapování s živým přehledem mountnuto / není mountnuto.
 
