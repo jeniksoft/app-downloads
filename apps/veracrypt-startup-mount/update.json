@@ -1,13 +1,19 @@
 {
     "app_id":  "veracrypt-startup-mount",
     "name":  "Codex VeraCrypt Startup Mount",
-    "version":  "1.0.22",
+    "version":  "1.0.23",
     "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/veracrypt-startup-mount",
     "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe",
-    "sha256":  "F4EDA83B70CBEF13C8BBD5E3A1B1F717EB896F665693270030BC71FD8EDA0899",
-    "changes_cs":  "VeraCrypt Startup Mount uz v tooltipove napovede nezobrazuje technicke #help kotvy. Napoveda zustava klikaci pres akci Napoveda v tooltipu.",
-    "changes_en":  "VeraCrypt Startup Mount no longer shows technical #help anchors in help tooltips. Help remains clickable through the Help action in the tooltip.",
+    "sha256":  "FF96023843C86115CF3D466C65BF756E8F7332899326EC614D6F02E8647BF419",
+    "changes_cs":  "VeraCrypt Startup Mount ma podrobnejsi napovedu a detailni tooltipy pro hlavni ovladaci prvky, vcetne vysvetleni svazku, mapovani, hesla, autostartu, mountu a logu.",
+    "changes_en":  "VeraCrypt Startup Mount now has more detailed help and detailed tooltips for the main controls, including explanations of volumes, mappings, password storage, autostart, mount, and logs.",
     "history":  [
+                    {
+                        "version":  "1.0.23",
+                        "date":  "2026-06-18",
+                        "changes_cs":  "VeraCrypt Startup Mount ma podrobnejsi napovedu a detailni tooltipy pro hlavni ovladaci prvky, vcetne vysvetleni svazku, mapovani, hesla, autostartu, mountu a logu.",
+                        "changes_en":  "VeraCrypt Startup Mount now has more detailed help and detailed tooltips for the main controls, including explanations of volumes, mappings, password storage, autostart, mount, and logs."
+                    },
                     {
                         "version":  "1.0.22",
                         "date":  "2026-06-18",
