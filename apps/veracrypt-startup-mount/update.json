@@ -1,13 +1,25 @@
 {
     "app_id":  "veracrypt-startup-mount",
     "name":  "Codex VeraCrypt Startup Mount",
-    "version":  "1.0.23",
+    "version":  "1.0.25",
     "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/veracrypt-startup-mount",
     "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe",
-    "sha256":  "FF96023843C86115CF3D466C65BF756E8F7332899326EC614D6F02E8647BF419",
-    "changes_cs":  "VeraCrypt Startup Mount ma podrobnejsi napovedu a detailni tooltipy pro hlavni ovladaci prvky, vcetne vysvetleni svazku, mapovani, hesla, autostartu, mountu a logu.",
-    "changes_en":  "VeraCrypt Startup Mount now has more detailed help and detailed tooltips for the main controls, including explanations of volumes, mappings, password storage, autostart, mount, and logs.",
+    "sha256":  "0FC1803A1E3A7F8E2504AC1A2E34AC9ED63E1E7944AD0715A1D0BC38F0BFF4FB",
+    "changes_cs":  "Odebrana volba Po ulozeni hned mountovat. Ulozit ted jen uklada konfiguraci, heslo, autostart, jazyk a skin; pripojeni se dela explicitne pres Mount vybrane nad aktualnim radkem.",
+    "changes_en":  "Removed the Mount immediately after saving option. Save now only stores configuration, password, autostart, language, and skin; mounting is explicit through Mount selected on the current row.",
     "history":  [
+                    {
+                        "version":  "1.0.25",
+                        "date":  "2026-06-18",
+                        "changes_cs":  "Odebrana volba Po ulozeni hned mountovat. Ulozit ted jen uklada konfiguraci, heslo, autostart, jazyk a skin; pripojeni se dela explicitne pres Mount vybrane nad aktualnim radkem.",
+                        "changes_en":  "Removed the Mount immediately after saving option. Save now only stores configuration, password, autostart, language, and skin; mounting is explicit through Mount selected on the current row."
+                    },
+                    {
+                        "version":  "1.0.24",
+                        "date":  "2026-06-18",
+                        "changes_cs":  "Mezibuild stejne upravy: ulozeni konfigurace uz nemountuje automaticky a mount zustava explicitni akce nad vybranym mapovanim.",
+                        "changes_en":  "Intermediate build of the same change: saving configuration no longer mounts automatically, and mounting remains an explicit action on the selected mapping."
+                    },
                     {
                         "version":  "1.0.23",
                         "date":  "2026-06-18",
