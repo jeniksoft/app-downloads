@@ -1,144 +1,150 @@
 {
-    "app_id":  "personal-codex-fallback-host",
-    "name":  "Jarvis",
-    "version":  "0.1.24",
-    "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/personal-codex-fallback-host",
-    "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/personal-codex-fallback-host/JarvisSetup.exe",
-    "sha256":  "AA337C6A17CA247455112395AE73A24E6FD133565999585DA329C64E67B86A48",
-    "changes_cs":  "Doplněno jasné upozornění, že Jarvis nedistribuuje, nestahuje ani neinstaluje LLM modely; používá jen uživatelem nastavené providery a endpointy.",
-    "changes_en":  "Clarified that Jarvis does not distribute, download, or install LLM model weights; it only uses user-configured providers and endpoints.",
-    "history":  [
-                    {
-                        "version":  "0.1.24",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Doplněno jasné upozornění, že Jarvis nedistribuuje, nestahuje ani neinstaluje LLM modely; používá jen uživatelem nastavené providery a endpointy.",
-                        "changes_en":  "Clarified that Jarvis does not distribute, download, or install LLM model weights; it only uses user-configured providers and endpoints."
-                    },
-                    {
-                        "version":  "0.1.23",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Jarvis byl přesunut na veřejný ADPU update kanál. Setup, manifest a self-update teď používají jeniksoft/app-downloads přes veřejné HTTPS místo privátního ADPR a GitHub CLI.",
-                        "changes_en":  "Jarvis was moved to the public ADPU update channel. Setup, manifest, and self-update now use jeniksoft/app-downloads over public HTTPS instead of private ADPR and GitHub CLI."
-                    },
-                    {
-                        "version":  "0.1.22",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Přidány příkazy /queue-pause a /queue-resume pro rychlé pozastavení a obnovení worker fronty bez rušení běžící práce.",
-                        "changes_en":  "Added /queue-pause and /queue-resume commands for quickly pausing and resuming the worker queue without cancelling running work."
-                    },
-                    {
-                        "version":  "0.1.21",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Přidán /queue-promote \u003cjob-id\u003e pro přesun čekajícího worker jobu na začátek fronty bez rušení běžící práce.",
-                        "changes_en":  "Added /queue-promote \u003cjob-id\u003e to move a waiting worker job to the front of the queue without cancelling running work."
-                    },
-                    {
-                        "version":  "0.1.20",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Přidán /source-panel: lokální přehled připojených Source N zdrojů, posledních uložených zdrojů, metadat původu a příkazů pro připojení/detail.",
-                        "changes_en":  "Added /source-panel: a local view of attached Source N mapping, recent saved sources, origin metadata, and attach/detail commands."
-                    },
-                    {
-                        "version":  "0.1.19",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Přidán /source-answer pro odpovědi jen z připojených Source N zdrojů s povinnými citacemi a přiznáním chybějících důkazů.",
-                        "changes_en":  "Added /source-answer for answers based only on attached Source N files with required citations and explicit missing-evidence handling."
-                    },
-                    {
-                        "version":  "0.1.18",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Přidán /github-private-file pro potvrzené čtení jednoho soukromého GitHub textového souboru přes gh.exe a OS keyring do připojitelného Jarvis zdroje.",
-                        "changes_en":  "Added /github-private-file for confirmed reading of one private GitHub text file through gh.exe and the OS keyring into an attachable Jarvis source."
-                    },
-                    {
-                        "version":  "0.1.17",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Přidán /import-artifact pro bezpečný import lokálních textových, logovacích a konfiguračních artefaktů do připojitelných Jarvis zdrojů.",
-                        "changes_en":  "Added /import-artifact for safe import of local text, log, and config artifacts into attachable Jarvis sources."
-                    },
-                    {
-                        "version":  "0.1.16",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Pridan /context-compress pro explicitni kompresi pripojeneho kontextu do ulozeneho context pack zdroje, ktery lze pozdeji znovu pripojit pres /attach-web.",
-                        "changes_en":  "Added /context-compress to explicitly compress attached context into a saved context-pack source that can later be reattached with /attach-web."
-                    },
-                    {
-                        "version":  "0.1.15",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Pridan prehled worker jobu: /jobs zobrazi posledni joby se stavem a progress, /job \u003cid\u003e ukaze detail provideru, modelu, casu, promptu a posledni zpravy workeru.",
-                        "changes_en":  "Added worker job history: /jobs shows recent jobs with state and progress, and /job \u003cid\u003e shows provider, model, timestamps, prompt summary, and the latest worker message."
-                    },
-                    {
-                        "version":  "0.1.14",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Fronta workeru jde ted ovladat jemneji: /queue ukazuje cekajici joby s ID, /cancel rusi jen aktualni job, /queue-cancel zrusi jeden cekajici job a /queue-clear vymaze cekajici frontu bez sestrelovani bezici prace.",
-                        "changes_en":  "Worker queue control is now more precise: /queue lists waiting jobs with IDs, /cancel cancels only the current job, /queue-cancel removes one waiting job, and /queue-clear clears waiting work without killing the running job."
-                    },
-                    {
-                        "version":  "0.1.13",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Pridan prikaz /context-budget pro odhad velikosti pripojeneho kontextu, aproximaci tokenu a varovani pred truncation pred volanim modelu.",
-                        "changes_en":  "Added /context-budget to estimate attached context size, approximate tokens, and truncation risk before model calls."
-                    },
-                    {
-                        "version":  "0.1.12",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Pridan prikaz /suggest-context, ktery read-only navrhne relevantni soubory k pripojeni jako kontext bez automatickeho sdileni s modelem.",
-                        "changes_en":  "Added /suggest-context, a read-only command that suggests relevant files to attach as context without automatically sharing them with the model."
-                    },
-                    {
-                        "version":  "0.1.11",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Pridany prikazy /explain a /review-file pro bezpecne single-file vysvetleni a code review ve worker threadu.",
-                        "changes_en":  "Added /explain and /review-file commands for safe single-file explanation and code review in the worker thread."
-                    },
-                    {
-                        "version":  "0.1.10",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Jarvis umi pouzit nakonfigurovany maly lokalni model jako bezpecny JSON router pred hlavnim modelem a pri chybe spadne zpet na pravidlovy router.",
-                        "changes_en":  "Jarvis can use the configured small local model as a safe JSON router before the main model and falls back to the deterministic router on failure."
-                    },
-                    {
-                        "version":  "0.1.9",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Jarvis streamuje odpovedi lokalnich modelu z Ollama a LM Studio zive do UI misto cekani na celou odpoved.",
-                        "changes_en":  "Jarvis streams local model answers from Ollama and LM Studio live into the UI instead of waiting for the full response."
-                    },
-                    {
-                        "version":  "0.1.8",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Jarvis umi zkontrolovat lokalni LLM provider, vypsat modely z Ollama/LM Studio a oznacit nastavene profily jako nalezene nebo chybejici.",
-                        "changes_en":  "Jarvis can check the local LLM provider, list models from Ollama/LM Studio, and mark configured profiles as found or missing."
-                    },
-                    {
-                        "version":  "0.1.7",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Jarvis ma v zahlavi WDUi update badge: zkontroluje ADPR update, po nalezeni prejde na instalaci a stav se meni podle vysledku kontroly.",
-                        "changes_en":  "Jarvis now has a WDUi titlebar update badge: it checks ADPR updates, switches to install behavior after an update is detected, and changes state according to the check result."
-                    },
-                    {
-                        "version":  "0.1.6",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Jarvis umi instalovat vlastni update z ADPR: pred instalaci vzdy nacte cerstvy manifest, stahne setup pres GitHub CLI/keyring, overi SHA-256, spusti tichy setup a zavre starou instanci az po zapsani vysledku.",
-                        "changes_en":  "Jarvis can install its own ADPR update: it always refetches the current manifest before installing, downloads the setup through GitHub CLI/keyring, verifies SHA-256, launches silent setup, and closes the old instance only after writing the result."
-                    },
-                    {
-                        "version":  "0.1.5",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Jarvis umi z aplikace zkontrolovat soukromy ADPR update manifest pres GitHub CLI/keyring, porovnat verzi, zobrazit SHA-256 a ulozit manifest jako zdroj.",
-                        "changes_en":  "Jarvis can now check the private ADPR update manifest from the app through GitHub CLI/keyring, compare versions, show SHA-256, and save the manifest as a source."
-                    },
-                    {
-                        "version":  "0.1.4",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Jarvis build skript ted po uspesnem setup/export kroku publikuje soukromy setup do ADPR vcetne update manifestu a SHA-256.",
-                        "changes_en":  "Jarvis build script now publishes the private setup to ADPR after a successful setup/export step, including update manifest and SHA-256."
-                    },
-                    {
-                        "version":  "0.1.3",
-                        "date":  "2026-06-18",
-                        "changes_cs":  "Prvni soukromy publikovany setup Jarvise. Setup ma WDUi frontend, vlozeny MSI backend a exportuje se jako jediny instalacni soubor.",
-                        "changes_en":  "First private published Jarvis setup. The setup has a WDUi frontend, an embedded MSI backend, and is exported as a single installer file."
-                    }
-                ]
+  "app_id": "personal-codex-fallback-host",
+  "name": "Jarvis",
+  "version": "0.1.26",
+  "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/personal-codex-fallback-host",
+  "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/personal-codex-fallback-host/JarvisSetup.exe",
+  "sha256": "FAA98FC99ACC4EB20AF354095AAA0A107F98A7DDA2A694CF8B3C7ADDC16DE51D",
+  "changes_cs": "Přidán read-only hardware probe a model-fit katalog: Jarvis umí zobrazit RAM, CPU vlákna, GPU/VRAM a doporučit, které lokálně instalované modelové třídy dávají na daném PC smysl. Fit výpočet používá přesnější paměťové prahy bez zaokrouhlení dolů.",
+  "changes_en": "Added a read-only hardware probe and model-fit catalog: Jarvis can show RAM, CPU threads, GPU/VRAM, and estimate which locally installed model classes make sense on this PC. Fit calculation now uses precise memory thresholds instead of rounding down.",
+  "history": [
+    {
+      "version": "0.1.26",
+      "date": "2026-06-18",
+      "changes_cs": "Přidán read-only hardware probe a model-fit katalog: Jarvis umí zobrazit RAM, CPU vlákna, GPU/VRAM a doporučit, které lokálně instalované modelové třídy dávají na daném PC smysl. Fit výpočet používá přesnější paměťové prahy bez zaokrouhlení dolů.",
+      "changes_en": "Added a read-only hardware probe and model-fit catalog: Jarvis can show RAM, CPU threads, GPU/VRAM, and estimate which locally installed model classes make sense on this PC. Fit calculation now uses precise memory thresholds instead of rounding down."
+    },
+    {
+      "version": "0.1.24",
+      "date": "2026-06-18",
+      "changes_cs": "Doplněno jasné upozornění, že Jarvis nedistribuuje, nestahuje ani neinstaluje LLM modely; používá jen uživatelem nastavené providery a endpointy.",
+      "changes_en": "Clarified that Jarvis does not distribute, download, or install LLM model weights; it only uses user-configured providers and endpoints."
+    },
+    {
+      "version": "0.1.23",
+      "date": "2026-06-18",
+      "changes_cs": "Jarvis byl přesunut na veřejný ADPU update kanál. Setup, manifest a self-update teď používají jeniksoft/app-downloads přes veřejné HTTPS místo privátního ADPR a GitHub CLI.",
+      "changes_en": "Jarvis was moved to the public ADPU update channel. Setup, manifest, and self-update now use jeniksoft/app-downloads over public HTTPS instead of private ADPR and GitHub CLI."
+    },
+    {
+      "version": "0.1.22",
+      "date": "2026-06-18",
+      "changes_cs": "Přidány příkazy /queue-pause a /queue-resume pro rychlé pozastavení a obnovení worker fronty bez rušení běžící práce.",
+      "changes_en": "Added /queue-pause and /queue-resume commands for quickly pausing and resuming the worker queue without cancelling running work."
+    },
+    {
+      "version": "0.1.21",
+      "date": "2026-06-18",
+      "changes_cs": "Přidán /queue-promote <job-id> pro přesun čekajícího worker jobu na začátek fronty bez rušení běžící práce.",
+      "changes_en": "Added /queue-promote <job-id> to move a waiting worker job to the front of the queue without cancelling running work."
+    },
+    {
+      "version": "0.1.20",
+      "date": "2026-06-18",
+      "changes_cs": "Přidán /source-panel: lokální přehled připojených Source N zdrojů, posledních uložených zdrojů, metadat původu a příkazů pro připojení/detail.",
+      "changes_en": "Added /source-panel: a local view of attached Source N mapping, recent saved sources, origin metadata, and attach/detail commands."
+    },
+    {
+      "version": "0.1.19",
+      "date": "2026-06-18",
+      "changes_cs": "Přidán /source-answer pro odpovědi jen z připojených Source N zdrojů s povinnými citacemi a přiznáním chybějících důkazů.",
+      "changes_en": "Added /source-answer for answers based only on attached Source N files with required citations and explicit missing-evidence handling."
+    },
+    {
+      "version": "0.1.18",
+      "date": "2026-06-18",
+      "changes_cs": "Přidán /github-private-file pro potvrzené čtení jednoho soukromého GitHub textového souboru přes gh.exe a OS keyring do připojitelného Jarvis zdroje.",
+      "changes_en": "Added /github-private-file for confirmed reading of one private GitHub text file through gh.exe and the OS keyring into an attachable Jarvis source."
+    },
+    {
+      "version": "0.1.17",
+      "date": "2026-06-18",
+      "changes_cs": "Přidán /import-artifact pro bezpečný import lokálních textových, logovacích a konfiguračních artefaktů do připojitelných Jarvis zdrojů.",
+      "changes_en": "Added /import-artifact for safe import of local text, log, and config artifacts into attachable Jarvis sources."
+    },
+    {
+      "version": "0.1.16",
+      "date": "2026-06-18",
+      "changes_cs": "Pridan /context-compress pro explicitni kompresi pripojeneho kontextu do ulozeneho context pack zdroje, ktery lze pozdeji znovu pripojit pres /attach-web.",
+      "changes_en": "Added /context-compress to explicitly compress attached context into a saved context-pack source that can later be reattached with /attach-web."
+    },
+    {
+      "version": "0.1.15",
+      "date": "2026-06-18",
+      "changes_cs": "Pridan prehled worker jobu: /jobs zobrazi posledni joby se stavem a progress, /job <id> ukaze detail provideru, modelu, casu, promptu a posledni zpravy workeru.",
+      "changes_en": "Added worker job history: /jobs shows recent jobs with state and progress, and /job <id> shows provider, model, timestamps, prompt summary, and the latest worker message."
+    },
+    {
+      "version": "0.1.14",
+      "date": "2026-06-18",
+      "changes_cs": "Fronta workeru jde ted ovladat jemneji: /queue ukazuje cekajici joby s ID, /cancel rusi jen aktualni job, /queue-cancel zrusi jeden cekajici job a /queue-clear vymaze cekajici frontu bez sestrelovani bezici prace.",
+      "changes_en": "Worker queue control is now more precise: /queue lists waiting jobs with IDs, /cancel cancels only the current job, /queue-cancel removes one waiting job, and /queue-clear clears waiting work without killing the running job."
+    },
+    {
+      "version": "0.1.13",
+      "date": "2026-06-18",
+      "changes_cs": "Pridan prikaz /context-budget pro odhad velikosti pripojeneho kontextu, aproximaci tokenu a varovani pred truncation pred volanim modelu.",
+      "changes_en": "Added /context-budget to estimate attached context size, approximate tokens, and truncation risk before model calls."
+    },
+    {
+      "version": "0.1.12",
+      "date": "2026-06-18",
+      "changes_cs": "Pridan prikaz /suggest-context, ktery read-only navrhne relevantni soubory k pripojeni jako kontext bez automatickeho sdileni s modelem.",
+      "changes_en": "Added /suggest-context, a read-only command that suggests relevant files to attach as context without automatically sharing them with the model."
+    },
+    {
+      "version": "0.1.11",
+      "date": "2026-06-18",
+      "changes_cs": "Pridany prikazy /explain a /review-file pro bezpecne single-file vysvetleni a code review ve worker threadu.",
+      "changes_en": "Added /explain and /review-file commands for safe single-file explanation and code review in the worker thread."
+    },
+    {
+      "version": "0.1.10",
+      "date": "2026-06-18",
+      "changes_cs": "Jarvis umi pouzit nakonfigurovany maly lokalni model jako bezpecny JSON router pred hlavnim modelem a pri chybe spadne zpet na pravidlovy router.",
+      "changes_en": "Jarvis can use the configured small local model as a safe JSON router before the main model and falls back to the deterministic router on failure."
+    },
+    {
+      "version": "0.1.9",
+      "date": "2026-06-18",
+      "changes_cs": "Jarvis streamuje odpovedi lokalnich modelu z Ollama a LM Studio zive do UI misto cekani na celou odpoved.",
+      "changes_en": "Jarvis streams local model answers from Ollama and LM Studio live into the UI instead of waiting for the full response."
+    },
+    {
+      "version": "0.1.8",
+      "date": "2026-06-18",
+      "changes_cs": "Jarvis umi zkontrolovat lokalni LLM provider, vypsat modely z Ollama/LM Studio a oznacit nastavene profily jako nalezene nebo chybejici.",
+      "changes_en": "Jarvis can check the local LLM provider, list models from Ollama/LM Studio, and mark configured profiles as found or missing."
+    },
+    {
+      "version": "0.1.7",
+      "date": "2026-06-18",
+      "changes_cs": "Jarvis ma v zahlavi WDUi update badge: zkontroluje ADPR update, po nalezeni prejde na instalaci a stav se meni podle vysledku kontroly.",
+      "changes_en": "Jarvis now has a WDUi titlebar update badge: it checks ADPR updates, switches to install behavior after an update is detected, and changes state according to the check result."
+    },
+    {
+      "version": "0.1.6",
+      "date": "2026-06-18",
+      "changes_cs": "Jarvis umi instalovat vlastni update z ADPR: pred instalaci vzdy nacte cerstvy manifest, stahne setup pres GitHub CLI/keyring, overi SHA-256, spusti tichy setup a zavre starou instanci az po zapsani vysledku.",
+      "changes_en": "Jarvis can install its own ADPR update: it always refetches the current manifest before installing, downloads the setup through GitHub CLI/keyring, verifies SHA-256, launches silent setup, and closes the old instance only after writing the result."
+    },
+    {
+      "version": "0.1.5",
+      "date": "2026-06-18",
+      "changes_cs": "Jarvis umi z aplikace zkontrolovat soukromy ADPR update manifest pres GitHub CLI/keyring, porovnat verzi, zobrazit SHA-256 a ulozit manifest jako zdroj.",
+      "changes_en": "Jarvis can now check the private ADPR update manifest from the app through GitHub CLI/keyring, compare versions, show SHA-256, and save the manifest as a source."
+    },
+    {
+      "version": "0.1.4",
+      "date": "2026-06-18",
+      "changes_cs": "Jarvis build skript ted po uspesnem setup/export kroku publikuje soukromy setup do ADPR vcetne update manifestu a SHA-256.",
+      "changes_en": "Jarvis build script now publishes the private setup to ADPR after a successful setup/export step, including update manifest and SHA-256."
+    },
+    {
+      "version": "0.1.3",
+      "date": "2026-06-18",
+      "changes_cs": "Prvni soukromy publikovany setup Jarvise. Setup ma WDUi frontend, vlozeny MSI backend a exportuje se jako jediny instalacni soubor.",
+      "changes_en": "First private published Jarvis setup. The setup has a WDUi frontend, an embedded MSI backend, and is exported as a single installer file."
+    }
+  ]
 }
