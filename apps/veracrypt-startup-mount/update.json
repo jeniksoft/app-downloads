@@ -1,13 +1,19 @@
 {
     "app_id":  "veracrypt-startup-mount",
     "name":  "Codex VeraCrypt Startup Mount",
-    "version":  "1.0.21",
+    "version":  "1.0.22",
     "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/veracrypt-startup-mount",
     "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe",
-    "sha256":  "04DE9BB6EB0F868BF9BF92032AD425C3B19573F61D74F450B12891975FDAA46A",
-    "changes_cs":  "VeraCrypt Startup Mount odstranil redundantni tlacitko Mount ted z hlavniho okna. Mount/Unmount vybrane mapovani zustava u tabulky mapovani a hromadny mount zustava v tray akci.",
-    "changes_en":  "VeraCrypt Startup Mount removed the redundant Mount now button from the main window. Mount/Unmount selected mapping stays next to the mapping table, and bulk mount remains available from the tray action.",
+    "sha256":  "F4EDA83B70CBEF13C8BBD5E3A1B1F717EB896F665693270030BC71FD8EDA0899",
+    "changes_cs":  "VeraCrypt Startup Mount uz v tooltipove napovede nezobrazuje technicke #help kotvy. Napoveda zustava klikaci pres akci Napoveda v tooltipu.",
+    "changes_en":  "VeraCrypt Startup Mount no longer shows technical #help anchors in help tooltips. Help remains clickable through the Help action in the tooltip.",
     "history":  [
+                    {
+                        "version":  "1.0.22",
+                        "date":  "2026-06-18",
+                        "changes_cs":  "VeraCrypt Startup Mount uz v tooltipove napovede nezobrazuje technicke #help kotvy. Napoveda zustava klikaci pres akci Napoveda v tooltipu.",
+                        "changes_en":  "VeraCrypt Startup Mount no longer shows technical #help anchors in help tooltips. Help remains clickable through the Help action in the tooltip."
+                    },
                     {
                         "version":  "1.0.21",
                         "date":  "2026-06-18",
