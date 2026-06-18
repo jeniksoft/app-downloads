@@ -1,13 +1,19 @@
 {
     "app_id":  "personal-codex-fallback-host",
     "name":  "Jarvis",
-    "version":  "0.1.23",
+    "version":  "0.1.24",
     "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/personal-codex-fallback-host",
     "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/personal-codex-fallback-host/JarvisSetup.exe",
-    "sha256":  "70F0E8B3D67B712D5069ADCE11CC5C24972589E0DBD52C81E5B6AF4A67AB383F",
-    "changes_cs":  "Jarvis byl přesunut na veřejný ADPU update kanál. Setup, manifest a self-update teď používají jeniksoft/app-downloads přes veřejné HTTPS místo privátního ADPR a GitHub CLI.",
-    "changes_en":  "Jarvis was moved to the public ADPU update channel. Setup, manifest, and self-update now use jeniksoft/app-downloads over public HTTPS instead of private ADPR and GitHub CLI.",
+    "sha256":  "AA337C6A17CA247455112395AE73A24E6FD133565999585DA329C64E67B86A48",
+    "changes_cs":  "Doplněno jasné upozornění, že Jarvis nedistribuuje, nestahuje ani neinstaluje LLM modely; používá jen uživatelem nastavené providery a endpointy.",
+    "changes_en":  "Clarified that Jarvis does not distribute, download, or install LLM model weights; it only uses user-configured providers and endpoints.",
     "history":  [
+                    {
+                        "version":  "0.1.24",
+                        "date":  "2026-06-18",
+                        "changes_cs":  "Doplněno jasné upozornění, že Jarvis nedistribuuje, nestahuje ani neinstaluje LLM modely; používá jen uživatelem nastavené providery a endpointy.",
+                        "changes_en":  "Clarified that Jarvis does not distribute, download, or install LLM model weights; it only uses user-configured providers and endpoints."
+                    },
                     {
                         "version":  "0.1.23",
                         "date":  "2026-06-18",

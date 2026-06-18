@@ -1,12 +1,12 @@
 # Jarvis
 
-Jarvis je lokální fallback host pro práci s lokálními LLM modely, soubory ve workspace a bezpečně potvrzovanými nástroji. Program vzniká jako nouzová náhrada za cloudový Codex/Jarvis styl práce, když není dostupný internet, dojdou limity, nebo je vhodnější lokální model.
+Jarvis je lokální fallback host pro práci s uživatelem nastavenými LLM providery, soubory ve workspace a bezpečně potvrzovanými nástroji. Program vzniká jako nouzová náhrada za cloudový Codex/Jarvis styl práce, když není dostupný internet, dojdou limity, nebo je vhodnější lokální model.
 
 ## Stažení
 
-* Verze: `0.1.23`
+* Verze: `0.1.24`
 * Setup: [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/personal-codex-fallback-host/JarvisSetup.exe)
-* SHA-256: `70F0E8B3D67B712D5069ADCE11CC5C24972589E0DBD52C81E5B6AF4A67AB383F`
+* SHA-256: `AA337C6A17CA247455112395AE73A24E6FD133565999585DA329C64E67B86A48`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -24,6 +24,8 @@ Jarvis je lokální fallback host pro práci s lokálními LLM modely, soubory v
 ## Co Aplikace Nedělá
 
 Jarvis není oficiální OpenAI ani Codex produkt. Neobsahuje cloudovou analytiku, nesmí bez potvrzení posílat soukromé workspace soubory na internet a nemá obecný neomezený shell. Síťové akce jsou vypnuté, dokud je uživatel výslovně nezapne přes internet režim, a konkrétní síťové příkazy i potom vyžadují `--confirm`.
+
+Jarvis nedistribuuje, nebalí, nestahuje ani neinstaluje LLM/model weights. Modely si uživatel instaluje, licencuje, aktualizuje a maže samostatně v Ollama, LM Studio nebo jiném OpenAI-compatible provideru. Jarvis pouze ukládá názvy providerů/profilů a posílá požadavky na uživatelem nastavený endpoint.
 
 ## Instalace
 
