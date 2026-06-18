@@ -4,9 +4,9 @@ Jarvis je lokální fallback host pro práci s uživatelem nastavenými LLM prov
 
 ## Stažení
 
-* Verze: `0.1.26`
+* Verze: `0.1.27`
 * Setup: [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/personal-codex-fallback-host/JarvisSetup.exe)
-* SHA-256: `FAA98FC99ACC4EB20AF354095AAA0A107F98A7DDA2A694CF8B3C7ADDC16DE51D`
+* SHA-256: `C0499A2B8186D8A09E9DBAE30DFC4858D611D90DF6D0FAACE6556C31D7C0D284`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -20,6 +20,7 @@ Jarvis je lokální fallback host pro práci s uživatelem nastavenými LLM prov
 * umí potvrzené webové hledání, URL fetch, download se SHA-256, veřejné GitHub čtení a package metadata
 * umí potvrzené čtení jednoho soukromého GitHub textového souboru přes uživatelovo `gh.exe` přihlášení
 * umí read-only hardware probe a model-fit katalog: RAM, CPU vlákna, GPU/VRAM a odhad, které lokálně instalované modelové třídy dávají na daném PC smysl
+* má první model manager: přes lokální Ollama provider umí po potvrzení stáhnout/smazat model a nastavovat aktivní profily `default`, `small`, `coder`, `reasoning`
 * má update badge v titulku okna a veřejný ADPU update kanál
 
 ## Co Aplikace Nedělá
@@ -29,6 +30,8 @@ Jarvis není oficiální OpenAI ani Codex produkt. Neobsahuje cloudovou analytik
 Jarvis nedistribuuje, nebalí, nestahuje ani neinstaluje LLM/model weights. Modely si uživatel instaluje, licencuje, aktualizuje a maže samostatně v Ollama, LM Studio nebo jiném OpenAI-compatible provideru. Jarvis pouze ukládá názvy providerů/profilů a posílá požadavky na uživatelem nastavený endpoint.
 
 Model-fit katalog je poradní vrstva, ne obchod s modely. Nároky se liší podle kvantizace, délky kontextu, backendu a GPU offloadu.
+
+Automatické stahování/mazání modelů je provider-backed: Jarvis sám modely nehostuje ani nedistribuuje, jen po potvrzení požádá lokální Ollama endpoint o `pull` nebo `delete`. U LM Studio zatím modely vybírá a používá, ale instalace a mazání zůstává v LM Studio GUI, dokud nebude stabilní API.
 
 ## Instalace
 
