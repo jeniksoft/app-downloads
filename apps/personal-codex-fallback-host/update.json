@@ -1,13 +1,19 @@
 {
     "app_id":  "personal-codex-fallback-host",
     "name":  "Jarvis",
-    "version":  "0.1.27",
+    "version":  "0.1.28",
     "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/personal-codex-fallback-host",
     "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/personal-codex-fallback-host/JarvisSetup.exe",
-    "sha256":  "C0499A2B8186D8A09E9DBAE30DFC4858D611D90DF6D0FAACE6556C31D7C0D284",
-    "changes_cs":  "Přidán první model manager: Jarvis umí přes lokální Ollama provider po potvrzení stahovat a mazat modely, živě vypisovat průběh stahování a aktivovat/deaktivovat modely v profilech default/small/coder/reasoning.",
-    "changes_en":  "Added the first model manager: Jarvis can ask the local Ollama provider to pull and delete models after confirmation, stream pull progress, and activate/deactivate models in the default/small/coder/reasoning profiles.",
+    "sha256":  "1F7D26DCFEE14778E28C548F1F0589B8C9D663C4C0B3730228BFF6B61A737640",
+    "changes_cs":  "Pridana prvni bezpecna extension registry vrstva pro lokalni pluginy, skills, MCP a app connectory. Jarvis umi extension najit, zobrazit manifest a explicitne povolit nebo zakazat, zatim bez spousteni extension.",
+    "changes_en":  "Added the first safe extension registry layer for local plugins, skills, MCP servers, and app connectors. Jarvis can discover extensions, show manifests, and explicitly enable or disable them, without executing extensions yet.",
     "history":  [
+                    {
+                        "version":  "0.1.28",
+                        "date":  "2026-06-18",
+                        "changes_cs":  "Pridana prvni bezpecna extension registry vrstva pro lokalni pluginy, skills, MCP a app connectory. Jarvis umi extension najit, zobrazit manifest a explicitne povolit nebo zakazat, zatim bez spousteni extension.",
+                        "changes_en":  "Added the first safe extension registry layer for local plugins, skills, MCP servers, and app connectors. Jarvis can discover extensions, show manifests, and explicitly enable or disable them, without executing extensions yet."
+                    },
                     {
                         "version":  "0.1.27",
                         "date":  "2026-06-18",
