@@ -1,13 +1,19 @@
 {
     "app_id":  "personal-codex-fallback-host",
     "name":  "Jarvis",
-    "version":  "0.1.29",
+    "version":  "0.1.30",
     "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/personal-codex-fallback-host",
     "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/personal-codex-fallback-host/JarvisSetup.exe",
-    "sha256":  "E49B5EA8F458A713148881AC13DA39801BCAB2FB19122BC9F20AA0F5F42CA808",
-    "changes_cs":  "Pridan read-only skill loading: enabled Markdown skill lze prikazem /skill-attach pripojit jako instrukcni kontext do dalsich model promptu. Jarvis stale nespousti pluginy, MCP ani app connectory; nova vrstva je jen bezpecne nacitani lokalnich instrukci.",
-    "changes_en":  "Added read-only skill loading: an enabled Markdown skill can be attached with /skill-attach as instruction context for later model prompts. Jarvis still does not execute plugins, MCP servers, or app connectors; this layer only safely loads local instructions.",
+    "sha256":  "A7E99B0D87D455FBFB0C92C936334EDEA39A45A773943159498A5A0770D6864D",
+    "changes_cs":  "Jarvis pridal read-only extension policy preflight: /extension-check overuje manifest, entrypointy a deklarovane policy pred budoucim spoustenim extension.",
+    "changes_en":  "Jarvis added a read-only extension policy preflight: /extension-check validates manifests, entrypoints, and declared policies before future extension execution.",
     "history":  [
+                    {
+                        "version":  "0.1.30",
+                        "date":  "2026-06-18",
+                        "changes_cs":  "Jarvis pridal read-only extension policy preflight: /extension-check overuje manifest, entrypointy a deklarovane policy pred budoucim spoustenim extension.",
+                        "changes_en":  "Jarvis added a read-only extension policy preflight: /extension-check validates manifests, entrypoints, and declared policies before future extension execution."
+                    },
                     {
                         "version":  "0.1.29",
                         "date":  "2026-06-18",
