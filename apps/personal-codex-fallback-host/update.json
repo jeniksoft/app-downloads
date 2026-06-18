@@ -1,13 +1,19 @@
 {
     "app_id":  "personal-codex-fallback-host",
     "name":  "Jarvis",
-    "version":  "0.1.30",
+    "version":  "0.1.31",
     "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/personal-codex-fallback-host",
     "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/personal-codex-fallback-host/JarvisSetup.exe",
-    "sha256":  "A7E99B0D87D455FBFB0C92C936334EDEA39A45A773943159498A5A0770D6864D",
-    "changes_cs":  "Jarvis pridal read-only extension policy preflight: /extension-check overuje manifest, entrypointy a deklarovane policy pred budoucim spoustenim extension.",
-    "changes_en":  "Jarvis added a read-only extension policy preflight: /extension-check validates manifests, entrypoints, and declared policies before future extension execution.",
+    "sha256":  "1752FA466F8B486C9C23DA8A03B20071D27FAD549539540443100DF2A814FC17",
+    "changes_cs":  "Jarvis pridal read-only extension handshake diagnostiku: /extension-handshake po potvrzeni overi enabled extension a umi bez spousteni ciziho kodu zkontrolovat lokalni endpoint.",
+    "changes_en":  "Jarvis added read-only extension handshake diagnostics: /extension-handshake checks an enabled extension after confirmation and can verify a local endpoint without launching foreign code.",
     "history":  [
+                    {
+                        "version":  "0.1.31",
+                        "date":  "2026-06-18",
+                        "changes_cs":  "Jarvis pridal read-only extension handshake diagnostiku: /extension-handshake po potvrzeni overi enabled extension a umi bez spousteni ciziho kodu zkontrolovat lokalni endpoint.",
+                        "changes_en":  "Jarvis added read-only extension handshake diagnostics: /extension-handshake checks an enabled extension after confirmation and can verify a local endpoint without launching foreign code."
+                    },
                     {
                         "version":  "0.1.30",
                         "date":  "2026-06-18",
