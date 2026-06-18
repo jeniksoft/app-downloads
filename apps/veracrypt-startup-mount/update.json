@@ -1,13 +1,19 @@
 {
     "app_id":  "veracrypt-startup-mount",
     "name":  "Codex VeraCrypt Startup Mount",
-    "version":  "1.0.15",
+    "version":  "1.0.16",
     "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/veracrypt-startup-mount",
     "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe",
-    "sha256":  "F30D150F9EC3D6D0D1F5D69FE3341065A06990C13E7A71A477D5CF53D688FFFC",
-    "changes_cs":  "Opraveny vychozi hodnoty VeraCrypt Startup Mount: cista instalace uz nevytvari zadne projektove mapovani, napoveda je obecna, autostart nazvy jsou genericke a prazdny seznam mapovani zustava prazdny.",
-    "changes_en":  "Fixed VeraCrypt Startup Mount defaults: clean installs no longer create any project-specific mapping, help text is generic, autostart names are generic, and an empty mappings list remains empty.",
+    "sha256":  "AA298DDE527D08D7BCC461EF6A95A2E1351E26CC914B5165C976E1913D8E7257",
+    "changes_cs":  "Opraven horní panel manageru: odstraněn dlouhý technický subtitle, který se u některých skinů překrýval se stavovým prvkem.",
+    "changes_en":  "Fixed the manager header: removed the long technical subtitle that overlapped the status control with some skins.",
     "history":  [
+                    {
+                        "version":  "1.0.16",
+                        "date":  "2026-06-18",
+                        "changes_cs":  "Opraven horní panel manageru: odstraněn dlouhý technický subtitle, který se u některých skinů překrýval se stavovým prvkem.",
+                        "changes_en":  "Fixed the manager header: removed the long technical subtitle that overlapped the status control with some skins."
+                    },
                     {
                         "version":  "1.0.15",
                         "date":  "2026-06-18",
