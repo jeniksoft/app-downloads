@@ -1,17 +1,21 @@
 # Codex VeraCrypt Startup Mount
 
-Malá Windows utilita pro lokální mount VeraCrypt svazku po přihlášení uživatele.
+Malá Windows tray utilita pro lokální mount jednoho nebo více VeraCrypt svazků po přihlášení uživatele.
 
 ## Stažení
 
-* Verze: `1.0.9`
+* Verze: `1.0.12`
 * Setup: [VeraCryptStartupMountSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe)
-* SHA-256: `6AFD19061C34F76FD33E86EDA710E367715AAC97446CDEB24E2095C4A0DB5CA8`
+* SHA-256: `A6FDF00897FFD31A1F0BF4943BA75DE43EC6E6A2D50B4413A1C39146550FBB17`
 * Update manifest: [update.json](update.json)
 
 ## Co Aplikace Dělá
 
 * spouští nativní C++/Win32 + WDUi manager
+* běží jako tray appka: zavření okna schová manager do oznamovací oblasti
+* levý klik na tray ikonu otevře manager, pravý klik ukáže WDUi akce
+* umí více mapování VeraCrypt svazků na písmena disků
+* v manageru ukazuje, co je na co namapované a zda je písmeno disku aktuálně mountnuté
 * ukládá heslo jen lokálně přes Windows DPAPI pro aktuálního uživatele
 * umí zapnout mount po přihlášení
 * umí volitelný zástupce na ploše
@@ -19,14 +23,14 @@ Malá Windows utilita pro lokální mount VeraCrypt svazku po přihlášení už
 
 ## Co Aplikace Nedělá
 
-Není to správce VeraCrypt kontejnerů obecně. Je to jednoduchá pomocná utilita pro jeden lokální startup mount workflow.
+Není to plný správce VeraCrypt kontejnerů obecně. Je to pomocná utilita pro lokální startup mount workflow s více předem nastavenými mapováními.
 
 ## Instalace
 
 1. Stáhni [VeraCryptStartupMountSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe).
 2. Spusť setup.
 3. Vyber instalační složku, pokud nechceš výchozí Program Files cestu.
-4. Dokonči instalaci a v manageru nastav svazek, písmeno disku, VeraCrypt cestu a heslo.
+4. Dokonči instalaci a v manageru nastav mapování svazků, písmena disků, VeraCrypt cestu a heslo.
 
 Po instalaci se vytvoří Start Menu záznam pod `Jeniksoft` a aplikace se zaregistruje jako běžná Windows aplikace.
 
@@ -35,6 +39,8 @@ Po instalaci se vytvoří Start Menu záznam pod `Jeniksoft` a aplikace se zareg
 Heslo není součástí setupu, gitu ani veřejného manifestu. Ukládá se až lokálně v manageru do DPAPI CurrentUser úložiště na konkrétním PC.
 
 ## Historie Změn
+
+Od verze `1.0.12` je manager normalizovaný jako tray appka. Zavření okna ho schová do oznamovací oblasti, levý klik ho vrátí, pravý klik otevře WDUi akce a manager nově podporuje více VeraCrypt mapování s živým přehledem mountnuto / není mountnuto.
 
 Od verze `1.0.7` se historie změn z `O aplikaci` otevírá v rolovatelném dialogu s vlastním scrollbarem. Delší changelog tak zůstává celý čitelný a nepřetéká mimo okno.
 

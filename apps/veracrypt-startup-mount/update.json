@@ -1,13 +1,19 @@
 {
     "app_id":  "veracrypt-startup-mount",
     "name":  "Codex VeraCrypt Startup Mount",
-    "version":  "1.0.9",
+    "version":  "1.0.12",
     "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/veracrypt-startup-mount",
     "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe",
-    "sha256":  "6AFD19061C34F76FD33E86EDA710E367715AAC97446CDEB24E2095C4A0DB5CA8",
-    "changes_cs":  "Pregenerovany setup a znovu srovnane download metadata (setup, manifest a checksum) s aktualnim CPM build/export tokem.",
-    "changes_en":  "Rebuilt setup and realigned download metadata (setup, manifest, and checksum) with the current CPM build/export flow.",
+    "sha256":  "A6FDF00897FFD31A1F0BF4943BA75DE43EC6E6A2D50B4413A1C39146550FBB17",
+    "changes_cs":  "Normalizovany manager jako tray appka: zavreni schova okno do tray, levy klik ho vrati, pravy klik otevre WDUi akce. Pridana podpora vice VeraCrypt mapovani s nazvem, cestou, pismenem disku, aktivnim stavem a prehledem mountnuto/neni mountnuto.",
+    "changes_en":  "Normalized the manager as a tray app: closing hides the window to tray, left click restores it, right click opens WDUi actions. Added multiple VeraCrypt mappings with name, path, drive letter, enabled state, and mounted/not-mounted overview.",
     "history":  [
+                    {
+                        "version":  "1.0.12",
+                        "date":  "2026-06-18",
+                        "changes_cs":  "Normalizovany manager jako tray appka: zavreni schova okno do tray, levy klik ho vrati, pravy klik otevre WDUi akce. Pridana podpora vice VeraCrypt mapovani s nazvem, cestou, pismenem disku, aktivnim stavem a prehledem mountnuto/neni mountnuto.",
+                        "changes_en":  "Normalized the manager as a tray app: closing hides the window to tray, left click restores it, right click opens WDUi actions. Added multiple VeraCrypt mappings with name, path, drive letter, enabled state, and mounted/not-mounted overview."
+                    },
                     {
                         "version":  "1.0.9",
                         "date":  "2026-06-17",
