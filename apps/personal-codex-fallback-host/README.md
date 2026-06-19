@@ -4,9 +4,9 @@ Jarvis je lokální fallback host pro práci s uživatelem nastavenými LLM prov
 
 ## Stažení
 
-* Verze: `0.1.98`
+* Verze: `0.1.99`
 * Setup: [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/personal-codex-fallback-host/JarvisSetup.exe)
-* SHA-256: `9556EC2EC1956D27C9CF0B404E926BEB1D7A8B268449255A7A160D4CA88ABEDB`
+* SHA-256: `7B1A87B2CA7A9535FD12E103E03476B84BA22D839866522937588E4FB153EED5`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -16,7 +16,7 @@ Jarvis je lokální fallback host pro práci s uživatelem nastavenými LLM prov
 * posílá LLM, workspace, internetové a nástrojové úlohy do worker fronty
 * umí lokální historii konverzací
 * umí read-only scan, tree, search a čtení souborů ve zvoleném workspace
-* umí explicitně připojovat CPM/project memory a webové nebo lokální textové zdroje
+* umí explicitně připojovat project memory a webové nebo lokální textové zdroje
 * umí potvrzené webové hledání, URL fetch, download se SHA-256, veřejné GitHub čtení a package metadata
 * umí potvrzené čtení jednoho soukromého GitHub textového souboru přes uživatelovo `gh.exe` přihlášení
 * umí read-only hardware probe a model-fit katalog: RAM, CPU vlákna, GPU/VRAM a odhad, které lokálně instalované modelové třídy dávají na daném PC smysl
