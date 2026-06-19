@@ -8,7 +8,7 @@ Toto repo je určené pro hotové instalační balíčky, popis aplikací, uživ
 
 | Aplikace | Verze | Setup | Dokumentace | SHA-256 |
 | --- | --- | --- | --- | --- |
-| Jarvis | 0.1.41 | [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/personal-codex-fallback-host/JarvisSetup.exe) | [Popis a návod](apps/personal-codex-fallback-host/README.md) | [`D2C770E5...B9B9BA54`](checksums/SHA256SUMS.txt) |
+| Jarvis | 0.1.42 | [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/personal-codex-fallback-host/JarvisSetup.exe) | [Popis a návod](apps/personal-codex-fallback-host/README.md) | [`3F7715A7...F2A44A27`](checksums/SHA256SUMS.txt) |
 | Codex VeraCrypt Startup Mount | 1.0.33 | [VeraCryptStartupMountSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe) | [Popis a návod](apps/veracrypt-startup-mount/README.md) | [`8CEBE0DD...1EAEBC19`](checksums/SHA256SUMS.txt) |
 | Windows Update Restart Guard | 1.0.96 | [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe) | [Popis a návod](apps/windows-update-restart-guard/README.md) | [`A9D626A7...4E920F5F`](checksums/SHA256SUMS.txt) |
 
