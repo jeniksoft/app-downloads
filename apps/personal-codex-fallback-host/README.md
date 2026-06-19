@@ -4,9 +4,9 @@ Jarvis je lokální fallback host pro práci s uživatelem nastavenými LLM prov
 
 ## Stažení
 
-* Verze: `0.1.89`
+* Verze: `0.1.90`
 * Setup: [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/personal-codex-fallback-host/JarvisSetup.exe)
-* SHA-256: `8FB932E0DE6BF10163A24F553E644A58D7FD9B4CDF12E88D566916FB7E387FD0`
+* SHA-256: `0EDBB65A7A74DC1C912DB94D8C81DA997D075D2CBE73B4410FB00A64FA55EA09`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
