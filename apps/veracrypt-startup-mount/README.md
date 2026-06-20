@@ -4,9 +4,9 @@ Malá Windows tray utilita pro lokální mount jednoho nebo více VeraCrypt svaz
 
 ## Stažení
 
-* Verze: `1.0.91`
+* Verze: `1.0.92`
 * Setup: [VeraCryptStartupMountSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe)
-* SHA-256: `1833292527C2C58231C174D7F214B4A2C3B29414FC0F11026EC8AC7CB3BFE626`
+* SHA-256: `0C6815C222F925F47687C0FCDD6C1DE543F9C5CF77A21AFB01BB340AC5684FF5`
 * Update manifest: [update.json](update.json)
 
 ## Co Aplikace Dělá
