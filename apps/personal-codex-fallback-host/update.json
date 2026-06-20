@@ -4,7 +4,7 @@
     "version":  "0.1.109",
     "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/personal-codex-fallback-host",
     "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/personal-codex-fallback-host/JarvisSetup.exe",
-    "sha256":  "34BAB7E8B0718B94D95A5F6DAE18AE8F0117E5B85C915E3859618ACE3741F8F5",
+    "sha256":  "3E1C7CB3AD2842CD088940A155548656D2AED335691CE01AB933A25F8D4C139A",
     "changes_cs":  "Pridan executor result-capture checkpoint: Jarvis po runtime-journal open/write znovu overi fingerprint a zapise planned stdout/stderr/exit-code/terminal-result capture model, ale nespusti proces, neotevre pipes, nezachyti skutecny vystup ani exit code, neotevre ani nezapise runtime journal a neposle workspace/local memory/konverzacni zdroje.",
     "changes_en":  "Added an executor result-capture checkpoint: after runtime-journal open/write Jarvis revalidates the fingerprint and records the planned stdout/stderr/exit-code/terminal-result capture model, but it spawns no process, opens no pipes, captures no real output or exit code, opens or writes no runtime journal, and transfers no workspace/local memory/conversation sources.",
     "history":  [
