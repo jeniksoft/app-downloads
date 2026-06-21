@@ -1,21 +1,30 @@
 {
     "app_id":  "personal-codex-fallback-host",
     "name":  "Jarvis",
-    "version":  "0.1.179",
+    "version":  "0.1.180",
     "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/personal-codex-fallback-host",
     "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/personal-codex-fallback-host/JarvisSetup.exe",
-    "sha256":  "9346DEEBD9BD501D67FE8EC203609B9774FAAED4AF7CD031373C2F86E405B24C",
-    "changes_cs":  "Jarvis pocita model-fit s dedikovanou VRAM i konzervativnim kreditem ze sdilene GPU/system pameti. /hardware ukazuje dedicated, shared a effective GPU memory, aby iGPU/UMA stroje nebyly podhodnocene.",
-    "changes_en":  "Jarvis now estimates model fit with dedicated VRAM plus a conservative credit from shared GPU/system memory. /hardware shows dedicated, shared, and effective GPU memory so iGPU/UMA machines are not undercounted.",
+    "sha256":  "259BFBF3112141DC1B95A59047F03EEE09C40C8BB08B768818ECD290C1761C10",
+    "changes_cs":  "Jarvis pouziva stejnou update ikonku jako ostatni WDUi aplikace. Update badge v titulku ted nacita zabalene PNG assety pro kontrolu i dostupnou aktualizaci a setup je instaluje spolu s aplikaci.",
+    "changes_en":  "Jarvis now uses the same update icon style as the other WDUi apps. The title-bar update badge loads packaged PNG assets for check and update-available states, and setup installs them with the app.",
     "history":  [
                     {
+                        "version":  "0.1.180",
+                        "date":  "2026-06-21",
+                        "changes_cs":  "Jarvis pouziva stejnou update ikonku jako ostatni WDUi aplikace. Update badge v titulku ted nacita zabalene PNG assety pro kontrolu i dostupnou aktualizaci a setup je instaluje spolu s aplikaci.",
+                        "changes_en":  "Jarvis now uses the same update icon style as the other WDUi apps. The title-bar update badge loads packaged PNG assets for check and update-available states, and setup installs them with the app.",
+                        "changes_i18n":  {
+                                             "cs-CZ":  "Jarvis pouziva stejnou update ikonku jako ostatni WDUi aplikace. Update badge v titulku ted nacita zabalene PNG assety pro kontrolu i dostupnou aktualizaci a setup je instaluje spolu s aplikaci.",
+                                             "en-US":  "Jarvis now uses the same update icon style as the other WDUi apps. The title-bar update badge loads packaged PNG assets for check and update-available states, and setup installs them with the app."
+                                         }
+                    },                    {
                         "version":  "0.1.179",
                         "date":  "2026-06-21",
                         "changes_cs":  "Jarvis pocita model-fit s dedikovanou VRAM i konzervativnim kreditem ze sdilene GPU/system pameti. /hardware ukazuje dedicated, shared a effective GPU memory, aby iGPU/UMA stroje nebyly podhodnocene.",
                         "changes_en":  "Jarvis now estimates model fit with dedicated VRAM plus a conservative credit from shared GPU/system memory. /hardware shows dedicated, shared, and effective GPU memory so iGPU/UMA machines are not undercounted.",
                         "changes_i18n":  {
-                                             "cs-CZ":  "Jarvis pocita model-fit s dedikovanou VRAM i konzervativnim kreditem ze sdilene GPU/system pameti. /hardware ukazuje dedicated, shared a effective GPU memory, aby iGPU/UMA stroje nebyly podhodnocene.",
-                                             "en-US":  "Jarvis now estimates model fit with dedicated VRAM plus a conservative credit from shared GPU/system memory. /hardware shows dedicated, shared, and effective GPU memory so iGPU/UMA machines are not undercounted."
+                                             "cs-CZ":  "Jarvis pouziva stejnou update ikonku jako ostatni WDUi aplikace. Update badge v titulku ted nacita zabalene PNG assety pro kontrolu i dostupnou aktualizaci a setup je instaluje spolu s aplikaci.",
+                                             "en-US":  "Jarvis now uses the same update icon style as the other WDUi apps. The title-bar update badge loads packaged PNG assets for check and update-available states, and setup installs them with the app."
                                          }
                     },
                     {
