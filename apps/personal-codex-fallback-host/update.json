@@ -4,7 +4,7 @@
   "version": "0.1.173",
   "release_url": "https://github.com/jeniksoft/app-downloads/tree/main/apps/personal-codex-fallback-host",
   "setup_url": "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/personal-codex-fallback-host/JarvisSetup.exe",
-  "sha256": "BC7406BCE56651A13D5F6231C6937812DD4203A99EFC90B7C222C49FD2AFA216",
+  "sha256": "76E9288C1589EC49EA127CC58979501A03B535888BF9D3DFD04B007A18F6AF13",
   "changes_cs": "Jarvis 0.1.173 pridava potvrzeny no-launch result-observation runtime execution result runtime execution result runtime-consent checkpoint, manager tlacitko Obs r-cns a self-test coverage; runtime, proces, tool invocation, output capture, replay, resume a context transfer zustavaji blokovane.",
   "changes_en": "Jarvis 0.1.173 adds the confirmed no-launch result-observation runtime execution result runtime execution result runtime-consent checkpoint, the Obs r-cns manager button, and self-test coverage; runtime, process, tool invocation, output capture, replay, resume, and context transfer remain blocked.",
   "history": [
