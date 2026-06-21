@@ -4,9 +4,9 @@ Jarvis je lokální fallback host pro práci s uživatelem nastavenými LLM prov
 
 ## Stažení
 
-* Verze: `0.1.177`
+* Verze: `0.1.178`
 * Setup: [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/personal-codex-fallback-host/JarvisSetup.exe)
-* SHA-256: `861EDD8F6CF5674D672868EAA944A151FF9B7E0D0E65C08D2CFB7D8462B4DC29`
+* SHA-256: `CE09E1866E9464033D00D3E2DA31D80DF61BC8E2D2AD91559C92AC75224B58DC`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -25,7 +25,7 @@ Jarvis je lokální fallback host pro práci s uživatelem nastavenými LLM prov
 
 ## Co Aplikace Nedělá
 
-Jarvis není oficiální OpenAI ani Codex produkt. Neobsahuje cloudovou analytiku, nesmí bez potvrzení posílat soukromé workspace soubory na internet a nemá obecný neomezený shell. Síťové akce jsou vypnuté, dokud je uživatel výslovně nezapne přes internet režim, a konkrétní síťové příkazy i potom vyžadují `--confirm`.
+Jarvis není oficiální OpenAI ani Codex produkt. Neobsahuje cloudovou analytiku, nesmí bez potvrzení posílat soukromé workspace soubory na internet a nemá obecný neomezený shell. Veřejný internet je ve výchozím profilu Standard povolený, aby šlo hledat, číst veřejné URL a kontrolovat aktualizace bez skrytého nastavování. Uživatel ho může vypnout nebo přepnout do přísnějšího profilu v Nastavení; konkrétní síťové akce, které sahají na lokální/soukromý obsah, dál vyžadují potvrzení.
 
 Jarvis nedistribuuje, nebalí, nestahuje ani neinstaluje LLM/model weights. Modely si uživatel instaluje, licencuje, aktualizuje a maže samostatně v Ollama, LM Studio nebo jiném OpenAI-compatible provideru. Jarvis pouze ukládá názvy providerů/profilů a posílá požadavky na uživatelem nastavený endpoint.
 
@@ -44,7 +44,7 @@ Po instalaci se aplikace zaregistruje ve Windows jako běžná aplikace, přidá
 
 ## Aktualizace
 
-Jarvis umí zkontrolovat veřejný [update.json](update.json) manifest. Po zapnutí internet režimu může příkaz `/update-check --confirm` porovnat lokální verzi s ADPU a `/update-install --confirm` stáhne setup z veřejného `setup_url`, ověří SHA-256 a spustí tichou instalaci.
+Jarvis umí zkontrolovat veřejný [update.json](update.json) manifest. Kontrola a instalace aktualizace jsou dostupné v okně přes Nastavení nebo update badge v titulku; příkazy `/update-check --confirm` a `/update-install --confirm` zůstávají jen pokročilá kompatibilní cesta. Instalace stáhne setup z veřejného `setup_url`, ověří SHA-256 a spustí tichou instalaci.
 
 ## Poznámka K Antiviru
 
