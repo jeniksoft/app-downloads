@@ -1,13 +1,23 @@
 {
     "app_id":  "personal-codex-fallback-host",
     "name":  "Jarvis",
-    "version":  "0.1.178",
+    "version":  "0.1.179",
     "release_url":  "https://github.com/jeniksoft/app-downloads/tree/main/apps/personal-codex-fallback-host",
     "setup_url":  "https://raw.githubusercontent.com/jeniksoft/app-downloads/main/apps/personal-codex-fallback-host/JarvisSetup.exe",
-    "sha256":  "CE09E1866E9464033D00D3E2DA31D80DF61BC8E2D2AD91559C92AC75224B58DC",
-    "changes_cs":  "Jarvis ma verejny internet ve vychozim Standard profilu, Nastaveni popup pro povoleni/vypnuti internetu a bezpecnostni profil, a update jde spustit z Nastaveni nebo update badge bez hledani prikazu.",
-    "changes_en":  "Jarvis now enables public internet by default in the Standard profile, adds a Settings popup for internet/security profile control, and lets users check or install updates from Settings or the update badge without discovering commands.",
+    "sha256":  "9346DEEBD9BD501D67FE8EC203609B9774FAAED4AF7CD031373C2F86E405B24C",
+    "changes_cs":  "Jarvis pocita model-fit s dedikovanou VRAM i konzervativnim kreditem ze sdilene GPU/system pameti. /hardware ukazuje dedicated, shared a effective GPU memory, aby iGPU/UMA stroje nebyly podhodnocene.",
+    "changes_en":  "Jarvis now estimates model fit with dedicated VRAM plus a conservative credit from shared GPU/system memory. /hardware shows dedicated, shared, and effective GPU memory so iGPU/UMA machines are not undercounted.",
     "history":  [
+                    {
+                        "version":  "0.1.179",
+                        "date":  "2026-06-21",
+                        "changes_cs":  "Jarvis pocita model-fit s dedikovanou VRAM i konzervativnim kreditem ze sdilene GPU/system pameti. /hardware ukazuje dedicated, shared a effective GPU memory, aby iGPU/UMA stroje nebyly podhodnocene.",
+                        "changes_en":  "Jarvis now estimates model fit with dedicated VRAM plus a conservative credit from shared GPU/system memory. /hardware shows dedicated, shared, and effective GPU memory so iGPU/UMA machines are not undercounted.",
+                        "changes_i18n":  {
+                                             "cs-CZ":  "Jarvis pocita model-fit s dedikovanou VRAM i konzervativnim kreditem ze sdilene GPU/system pameti. /hardware ukazuje dedicated, shared a effective GPU memory, aby iGPU/UMA stroje nebyly podhodnocene.",
+                                             "en-US":  "Jarvis now estimates model fit with dedicated VRAM plus a conservative credit from shared GPU/system memory. /hardware shows dedicated, shared, and effective GPU memory so iGPU/UMA machines are not undercounted."
+                                         }
+                    },
                     {
                         "version":  "0.1.178",
                         "date":  "2026-06-21",
@@ -16532,7 +16542,7 @@
                     }
                 ],
     "changes_i18n":  {
-                         "cs-CZ":  "Jarvis ma verejny internet ve vychozim Standard profilu, Nastaveni popup pro povoleni/vypnuti internetu a bezpecnostni profil, a update jde spustit z Nastaveni nebo update badge bez hledani prikazu.",
-                         "en-US":  "Jarvis now enables public internet by default in the Standard profile, adds a Settings popup for internet/security profile control, and lets users check or install updates from Settings or the update badge without discovering commands."
+                         "cs-CZ":  "Jarvis pocita model-fit s dedikovanou VRAM i konzervativnim kreditem ze sdilene GPU/system pameti. /hardware ukazuje dedicated, shared a effective GPU memory, aby iGPU/UMA stroje nebyly podhodnocene.",
+                         "en-US":  "Jarvis now estimates model fit with dedicated VRAM plus a conservative credit from shared GPU/system memory. /hardware shows dedicated, shared, and effective GPU memory so iGPU/UMA machines are not undercounted."
                      }
 }
