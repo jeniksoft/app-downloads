@@ -13,7 +13,7 @@ Složka aplikace obsahuje veřejný setup, popis, návod k použití a případn
 | Aplikace | Verze | Setup | Dokumentace | SHA-256 |
 | --- | --- | --- | --- | --- |
 | Codex VeraCrypt Startup Mount | 1.0.130 | [VeraCryptStartupMountSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe) | [Popis a návod](veracrypt-startup-mount/README.md) | [`BDAC846F...2E15F75E`](../checksums/SHA256SUMS.txt) |
-| Jarvis | 0.1.158 | [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/personal-codex-fallback-host/JarvisSetup.exe) | [Popis a návod](personal-codex-fallback-host/README.md) | [`A00D52CB...8B676ACD`](../checksums/SHA256SUMS.txt) |
+| Jarvis | 0.1.159 | [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/personal-codex-fallback-host/JarvisSetup.exe) | [Popis a návod](personal-codex-fallback-host/README.md) | [`6E5AD785...AE632BD1`](../checksums/SHA256SUMS.txt) |
 | Windows Update Restart Guard | 1.0.98 | [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe) | [Popis a návod](windows-update-restart-guard/README.md) | [`20F29F02...09FC36C6`](../checksums/SHA256SUMS.txt) |
 
 Tabulky zkracují SHA-256 kvůli čitelnosti. Plný hash je v app `update.json` a `checksums/SHA256SUMS.txt`.
