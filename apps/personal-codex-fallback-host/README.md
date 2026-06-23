@@ -18,14 +18,15 @@ Jarvis je lokální fallback host pro práci s uživatelem nastavenými LLM prov
 * umí read-only scan, tree, search a čtení souborů ve zvoleném workspace
 * umí explicitně připojovat project memory a webové nebo lokální textové zdroje
 * umí potvrzené webové hledání, URL fetch, download se SHA-256, veřejné GitHub čtení a package metadata
-* umí potvrzené čtení jednoho soukromého GitHub textového souboru přes uživatelovo `gh.exe` přihlášení
+* umí potvrzené čtení jednoho soukromého GitHub textového souboru přes uživatelovo gh.exe přihlášení
+* v režimu Plný přístup umí po potvrzení spouštět PowerShell, Command Prompt, Git Bash a WSL v aktivním workspace a ukládat výstup jako zdroj pro další práci
 * umí read-only hardware probe a model-fit katalog: RAM, CPU vlákna, GPU/VRAM a odhad, které lokálně instalované modelové třídy dávají na daném PC smysl
 * má první model manager: přes lokální Ollama provider umí po potvrzení stáhnout/smazat model a nastavovat aktivní profily `default`, `small`, `coder`, `reasoning`
 * má update badge v titulku okna a veřejný ADPU update kanál
 
 ## Co Aplikace Nedělá
 
-Jarvis není oficiální OpenAI ani Codex produkt. Neobsahuje cloudovou analytiku, nesmí bez potvrzení posílat soukromé workspace soubory na internet a nemá obecný neomezený shell. Veřejný internet je ve výchozím profilu Standard povolený, aby šlo hledat, číst veřejné URL a kontrolovat aktualizace bez skrytého nastavování. Uživatel ho může vypnout nebo přepnout do přísnějšího profilu v Nastavení; konkrétní síťové akce, které sahají na lokální/soukromý obsah, dál vyžadují potvrzení.
+Jarvis není oficiální OpenAI ani Codex produkt. Neobsahuje cloudovou analytiku, nesmí bez potvrzení posílat soukromé workspace soubory na internet a nemá shell zapnutý ve výchozím profilu; PowerShell, Command Prompt, Git Bash a WSL jsou dostupné až v režimu `Plný přístup` po potvrzení konkrétního spuštění. Veřejný internet je ve výchozím profilu Standard povolený, aby šlo hledat, číst veřejné URL a kontrolovat aktualizace bez skrytého nastavování. Uživatel ho může vypnout nebo přepnout do přísnějšího profilu v Nastavení; konkrétní síťové akce, které sahají na lokální/soukromý obsah, dál vyžadují potvrzení.
 
 Jarvis nedistribuuje, nebalí, nestahuje ani neinstaluje LLM/model weights. Modely si uživatel instaluje, licencuje, aktualizuje a maže samostatně v Ollama, LM Studio nebo jiném OpenAI-compatible provideru. Jarvis pouze ukládá názvy providerů/profilů a posílá požadavky na uživatelem nastavený endpoint.
 
