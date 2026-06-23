@@ -1,12 +1,12 @@
 # Jarvis
 
-Jarvis je lokální fallback host pro práci s uživatelem nastavenými LLM providery, soubory ve workspace a bezpečně potvrzovanými nástroji. Program vzniká jako nouzová náhrada za cloudový Codex/Jarvis styl práce, když není dostupný internet, dojdou limity, nebo je vhodnější lokální model.
+Jarvis je osobní lokální agent pro chat, práci se soubory ve workspace, lokální LLM providery a bezpečně potvrzované nástroje. Je určený pro běžné používání na vlastním počítači: psaní, programování, výzkum, plánování, dokumenty, troubleshooting i další projektovou práci bez nutnosti cloudové služby.
 
 ## Stažení
 
-* Verze: `0.1.282`
-* Setup: [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/personal-codex-fallback-host/JarvisSetup.exe)
-* SHA-256: `68440A74FE87EE617EFBD0A2F846F7A801E467270A2BF5E69F163B9E694D6BA3`
+* Verze: `0.1.283`
+* Setup: [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/jarvis/JarvisSetup.exe)
+* SHA-256: `1C4A1643612F8900BEBADA8F6D88BB5B91F1B5DBFFB81151C10ED4704B4F0050`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -36,7 +36,7 @@ Automatické stahování/mazání modelů je provider-backed: Jarvis sám modely
 
 ## Instalace
 
-1. Stáhni [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/personal-codex-fallback-host/JarvisSetup.exe).
+1. Stáhni [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/jarvis/JarvisSetup.exe).
 2. Spusť setup.
 3. Vyber instalační složku, pokud nechceš výchozí `C:\Program Files\Jarvis`.
 4. Dokonči instalaci.
