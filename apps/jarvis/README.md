@@ -4,9 +4,9 @@ Jarvis je osobní lokální agent pro chat, práci se soubory ve workspace, lok�
 
 ## Stažení
 
-* Verze: `0.1.364`
+* Verze: `0.1.365`
 * Setup: [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/jarvis/JarvisSetup.exe)
-* SHA-256: `F715D47A325DF21B7581D225DB509266DC1DBD785B5DDFD6E9E7B2CE9A15DE2D`
+* SHA-256: `7D8D5BEAF580E35188C4BCD0C578606395865D75FA95DDF2C30B9C5DCDA48C47`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
