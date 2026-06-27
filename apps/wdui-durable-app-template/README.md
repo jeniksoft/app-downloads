@@ -4,9 +4,9 @@ WDUi Durable App Template je referenční instalační kanál pro nativní C++/W
 
 ## Stažení
 
-* Verze: `1.0.37`
+* Verze: `1.0.39`
 * Setup: [WduiDurableAppTemplateSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/wdui-durable-app-template/WduiDurableAppTemplateSetup.exe)
-* SHA-256: `183AA7F32DB2D0B5A24EA7803A2FF922C61C290984BC27531E66FCED4426FE66`
+* SHA-256: `6558181B3E0529C2F46E1CFC2EB91B958F18D3DEE2F8E4912E6E57434E4C7DE6`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá

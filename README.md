@@ -12,7 +12,7 @@ Toto repo je určené pro hotové instalační balíčky, popis aplikací, uživ
 | Jarvis | 0.1.429 | [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/jarvis/JarvisSetup.exe) | [Popis a návod](apps/jarvis/README.md) | [`F6E76127...1B9032C7`](checksums/SHA256SUMS.txt) |
 | Strategic Nexus Companion | 0.16.0 | [StrategicNexusCompanionSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/strategic-nexus-companion/StrategicNexusCompanionSetup.exe) | [Popis a návod](apps/strategic-nexus-companion/README.md) | [`5AC5E5AB...239C8EB0`](checksums/SHA256SUMS.txt) |
 | Windows Update Restart Guard | 1.0.103 | [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe) | [Popis a návod](apps/windows-update-restart-guard/README.md) | [`B050D2A7...A6C789B9`](checksums/SHA256SUMS.txt) |
-| WDUi Durable App Template | 1.0.37 | [WduiDurableAppTemplateSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/wdui-durable-app-template/WduiDurableAppTemplateSetup.exe) | [Popis a návod](apps/wdui-durable-app-template/README.md) | [`183AA7F3...4426FE66`](checksums/SHA256SUMS.txt) |
+| WDUi Durable App Template | 1.0.39 | [WduiDurableAppTemplateSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/wdui-durable-app-template/WduiDurableAppTemplateSetup.exe) | [Popis a návod](apps/wdui-durable-app-template/README.md) | [`6558181B...4E4C7DE6`](checksums/SHA256SUMS.txt) |
 
 Setup odkazy v tabulce vedou přímo na GitHub raw download endpoint, aby kliknutí stáhlo instalační EXE místo otevření stránky binárního souboru.
 
