@@ -4,10 +4,10 @@ WDUi je proprietární C++/Win32 UI framework od Jeniksoft pro skinovatelné nat
 
 ## Stažení
 
-* Verze: 0.1.1
-* Balík: [WduiFrameworkSdk-0.1.1.zip](WduiFrameworkSdk-0.1.1.zip)
-* SHA-256: ACDE4C0C4E6C11863287564685770F3BC195ACD15C11085D5EA7589CEF7EF978
-* Velikost: 23708517 bytes
+* Verze: 0.1.2
+* Balík: [WduiFrameworkSdk-0.1.2.zip](WduiFrameworkSdk-0.1.2.zip)
+* SHA-256: C4DD44D27286424C401D1D7C8BE11C0D8F6D08A6E6DC8049C4426ACA7E8E6ABC
+* Velikost: 23709483 bytes
 * Manifest: [update.json](update.json)
 
 ## Co balík obsahuje
