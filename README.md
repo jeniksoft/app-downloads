@@ -2,15 +2,16 @@
 
 Veřejné místo ke stažení vybraných Windows aplikací a utilit od Jeniksoft.
 
-Toto repo je určené pro hotové instalační balíčky, popis aplikací, uživatelskou dokumentaci a kontrolní součty. Neobsahuje zdrojové kódy ani LLM/model weights.
+Toto repo je určené pro hotové instalační balíčky, SDK balíky, popis aplikací, uživatelskou dokumentaci a kontrolní součty. Neobsahuje produktové zdrojové kódy ani LLM/model weights; výjimkou mohou být explicitně označené ukázkové zdroje uvnitř SDK balíku.
 
 ## Ke Stažení
 
-| Aplikace | Verze | Setup | Dokumentace | SHA-256 |
+| Aplikace | Verze | Setup / Balík | Dokumentace | SHA-256 |
 | --- | --- | --- | --- | --- |
 | VeraCrypt Startup Mount | 1.0.154 | [VeraCryptStartupMountSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe) | [Popis a návod](apps/veracrypt-startup-mount/README.md) | [`5E314DA7...CB8C3962`](checksums/SHA256SUMS.txt) |
 | Jarvis | 0.1.477 | [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/jarvis/JarvisSetup.exe) | [Popis a návod](apps/jarvis/README.md) | [`00846DC9...1DE35D3F`](checksums/SHA256SUMS.txt) |
 | Strategic Nexus Companion | 0.16.0 | [StrategicNexusCompanionSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/strategic-nexus-companion/StrategicNexusCompanionSetup.exe) | [Popis a návod](apps/strategic-nexus-companion/README.md) | [`5AC5E5AB...239C8EB0`](checksums/SHA256SUMS.txt) |
+| WDUi Framework SDK | 0.1.0 | [WduiFrameworkSdk-0.1.0.zip](https://github.com/jeniksoft/app-downloads/raw/main/apps/wdui-framework/WduiFrameworkSdk-0.1.0.zip) | [Popis a návod](apps/wdui-framework/README.md) | [`C7DDD1C7...AE20ABFA`](checksums/SHA256SUMS.txt) |
 | Windows Update Restart Guard | 1.0.104 | [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe) | [Popis a návod](apps/windows-update-restart-guard/README.md) | [`769E64AB...C38D4293`](checksums/SHA256SUMS.txt) |
 | WDUi Durable App Template | 1.0.39 | [WduiDurableAppTemplateSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/wdui-durable-app-template/WduiDurableAppTemplateSetup.exe) | [Popis a návod](apps/wdui-durable-app-template/README.md) | [`6558181B...4E4C7DE6`](checksums/SHA256SUMS.txt) |
 
@@ -59,7 +60,7 @@ Do repa patří:
 
 Do repa nepatří:
 
-* zdrojové kódy
+* produktové zdrojové kódy mimo výslovně označené ukázky ve SDK balících
 * LLM/model weights nebo jiné velké modelové balíky
 * privátní pracovní poznámky
 * lokální konfigurace
