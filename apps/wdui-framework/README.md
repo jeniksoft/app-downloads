@@ -4,10 +4,10 @@ WDUi je proprietární C++/Win32 UI framework od Jeniksoft pro skinovatelné nat
 
 ## Stažení
 
-* Verze: 0.1.8
-* Balík: [WduiFrameworkSdk-0.1.8.zip](WduiFrameworkSdk-0.1.8.zip)
-* SHA-256: B343A5A75EFEBAE96C189CE2194A32908DC6278AACA3E4B4C85AB7EA9CA51D15
-* Velikost: 23818976 bytes
+* Verze: 0.1.9
+* Balík: [WduiFrameworkSdk-0.1.9.zip](WduiFrameworkSdk-0.1.9.zip)
+* SHA-256: 2781AA94C6B37135A617F0B81003FCC53D930D7129B238E112579BFA316703A6
+* Velikost: 23828527 bytes
 * Manifest: [update.json](update.json)
 
 ## Co balík obsahuje
@@ -21,10 +21,10 @@ WDUi je proprietární C++/Win32 UI framework od Jeniksoft pro skinovatelné nat
 
 Balík záměrně neobsahuje zdrojové .cpp soubory WDUi knihovny.
 
-## Změny ve verzi 0.1.8
+## Změny ve verzi 0.1.9
 
-* Direct2D nativní DC kreslení používá lazy batchování, aby se v interaktivních oknech zbytečně nevolal `BeginDraw` / `EndDraw` po každém prvku.
-* Přibyla diagnostika `direct2DNativeBatchBeginCountForDiagnostics()` pro kontrolu, kolik batchů reálně vzniklo při paintu.
+* `SelectableTextBlock` zrychluje layout dlouhých word-wrap textů: prefix widths se měří jednou na odstavec, ne znovu pro každý vizuální řádek.
+* Přidaná diagnostika `textPrefixMeasureCount` hlídá, že se optimalizace nerozbije při dalších úpravách textových controlů.
 
 ## Licence
 
