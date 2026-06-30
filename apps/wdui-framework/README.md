@@ -4,10 +4,10 @@ WDUi je proprietární C++/Win32 UI framework od Jeniksoft pro skinovatelné nat
 
 ## Stažení
 
-* Verze: 0.1.9
-* Balík: [WduiFrameworkSdk-0.1.9.zip](WduiFrameworkSdk-0.1.9.zip)
-* SHA-256: 2781AA94C6B37135A617F0B81003FCC53D930D7129B238E112579BFA316703A6
-* Velikost: 23828527 bytes
+* Verze: 0.1.10
+* Balík: [WduiFrameworkSdk-0.1.10.zip](WduiFrameworkSdk-0.1.10.zip)
+* SHA-256: A77B28735E41AF5B7A4DC34A02C9B27425D0594D2435255D6B8D69434BC01D20
+* Velikost: 23841405 bytes
 * Manifest: [update.json](update.json)
 
 ## Co balík obsahuje
@@ -20,11 +20,6 @@ WDUi je proprietární C++/Win32 UI framework od Jeniksoft pro skinovatelné nat
 * návod k build/link/runtime assets
 
 Balík záměrně neobsahuje zdrojové .cpp soubory WDUi knihovny.
-
-## Změny ve verzi 0.1.9
-
-* `SelectableTextBlock` zrychluje layout dlouhých word-wrap textů: prefix widths se měří jednou na odstavec, ne znovu pro každý vizuální řádek.
-* Přidaná diagnostika `textPrefixMeasureCount` hlídá, že se optimalizace nerozbije při dalších úpravách textových controlů.
 
 ## Licence
 
