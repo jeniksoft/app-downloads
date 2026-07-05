@@ -13,7 +13,7 @@ Toto repo je určené pro hotové instalační balíčky, SDK balíky, popis apl
 | Strategic Nexus Companion | 0.16.0 | [StrategicNexusCompanionSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/strategic-nexus-companion/StrategicNexusCompanionSetup.exe) | [Popis a návod](apps/strategic-nexus-companion/README.md) | [`5AC5E5AB...239C8EB0`](checksums/SHA256SUMS.txt) |
 | WDUi Framework SDK | 0.1.14 | [WduiFrameworkSdk-0.1.14.zip](https://github.com/jeniksoft/app-downloads/raw/main/apps/wdui-framework/WduiFrameworkSdk-0.1.14.zip) | [Popis a návod](apps/wdui-framework/README.md) | [`74276D5B...BA1AA381`](checksums/SHA256SUMS.txt) |
 | Windows Update Restart Guard | 1.0.128 | [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe) | [Popis a návod](apps/windows-update-restart-guard/README.md) | [`D0D588F4...9DF20E28`](checksums/SHA256SUMS.txt) |
-| WDUi Durable App Template | 1.0.39 | [WduiDurableAppTemplateSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/wdui-durable-app-template/WduiDurableAppTemplateSetup.exe) | [Popis a návod](apps/wdui-durable-app-template/README.md) | [`6558181B...4E4C7DE6`](checksums/SHA256SUMS.txt) |
+| WDUi Durable App Template | 1.0.40 | [WduiDurableAppTemplateSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/wdui-durable-app-template/WduiDurableAppTemplateSetup.exe) | [Popis a návod](apps/wdui-durable-app-template/README.md) | [`A804E938...705B80DA`](checksums/SHA256SUMS.txt) |
 
 Setup odkazy v tabulce vedou přímo na GitHub raw download endpoint, aby kliknutí stáhlo instalační EXE místo otevření stránky binárního souboru.
 
