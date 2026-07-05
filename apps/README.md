@@ -12,7 +12,7 @@ Složka aplikace obsahuje veřejný setup nebo SDK balík, popis, návod k použ
 
 | Aplikace | Verze | Setup / Balík | Dokumentace | SHA-256 |
 | --- | --- | --- | --- | --- |
-| Codex VeraCrypt Startup Mount | 1.0.175 | [VeraCryptStartupMountSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe) | [Popis a návod](veracrypt-startup-mount/README.md) | [`9AB06D9D...ACD724B6`](../checksums/SHA256SUMS.txt) |
+| Codex VeraCrypt Startup Mount | 1.0.177 | [VeraCryptStartupMountSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe) | [Popis a návod](veracrypt-startup-mount/README.md) | [`A9578CCB...052E3B67`](../checksums/SHA256SUMS.txt) |
 | Jarvis | 0.1.492 | [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/jarvis/JarvisSetup.exe) | [Popis a návod](jarvis/README.md) | [`3338A548...FFF6E111`](../checksums/SHA256SUMS.txt) |
 | Strategic Nexus Companion | 0.16.0 | [StrategicNexusCompanionSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/strategic-nexus-companion/StrategicNexusCompanionSetup.exe) | [Popis a návod](strategic-nexus-companion/README.md) | [`5AC5E5AB...239C8EB0`](../checksums/SHA256SUMS.txt) |
 | Windows Update Restart Guard | 1.0.136 | [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe) | [Popis a návod](windows-update-restart-guard/README.md) | [`0B3BADB5...C2A5B5E6`](../checksums/SHA256SUMS.txt) |
