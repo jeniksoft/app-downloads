@@ -1,0 +1,7 @@
+# CPM publisher generated-file policy
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.exe binary
+*.msi binary
+*.zip binary

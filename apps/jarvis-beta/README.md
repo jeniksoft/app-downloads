@@ -25,3 +25,8 @@ Beta instalátor zatím není podepsán veřejným Authenticode certifikátem. S
 * UI/UX testovací vydání se souvislým TabView panelem pro soubory projektu, GitHub a náhled souboru.
 * Oprava překreslení náhledu souboru po otevření z panelu souborů.
 * Odolnější cache Project Intake a ověřený lokální vision scénář pro červený čtverec a modrý kruh.
+
+## ZmÄ›ny verze 0.9.21
+
+Nove: nativni tokenovy stream pod chatem a pripnutelny model-run inspector s kontextem, nativnim vystupem, chronologickou Accordion historii a zachovanim scrollu. Opraveno: Heimdal/Nanity continuation, monotonni eskalace, pravdive nested-workspace apply dukazy a modelovy repair handoff. Installer: nativni WiX 7 bez runtime conversion warningu.
+
