@@ -8,9 +8,9 @@ Beta instalátor zatím není podepsán veřejným Authenticode certifikátem. S
 
 ## Stažení
 
-* Verze: `0.9.18`
+* Verze: `0.9.21`
 * Setup: [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/jarvis-beta/JarvisSetup.exe)
-* SHA-256: `DE5DEEBDC4F1FCEF11F215A2BAE85FDCF4A5D39E1686425253D5D5227065B58B`
+* SHA-256: `F012D6A47E8A4BFE508BA1D085AE7AB35AB33A11B40C2F93E6616DB84FB0B2D9`
 * Beta update manifest: [update.json](update.json)
 
 ## Jak testovat
