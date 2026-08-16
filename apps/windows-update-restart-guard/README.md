@@ -4,9 +4,9 @@ Windows Update Restart Guard je malá Windows utilita, která pomáhá zabránit
 
 ## Stažení
 
-* Verze: `1.0.141`
+* Verze: `1.0.142`
 * Setup: [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe)
-* SHA-256: `957948D80A54953B4A57DCCE20C2314732ECA95B1223EEEF7E414DC7CB1096AB`
+* SHA-256: `31A4885A50C43C0AC5638A7B96ACE91F2044C47B2B9D79696C2117BC9274DF6B`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -121,7 +121,7 @@ Použij Windows Nastavení > Aplikace > Nainstalované aplikace > Windows Update
 
 Setup je běžný Windows EXE soubor. Verze `1.0.29` až `1.0.35` vznikly jako reakce na false-positive behavior-shield test a následné dotažení MSI instalace: aplikace byla čistá, ale starší instalační tok mohl bezpečnostním nástrojům připomínat dropper/persistence vzor. Setup proto nepoužívá skrytý shell cleanup ani shell handoff pro update setup a od verze `1.0.32` používá pro instalaci standardní WiX/MSI backend. Pokud EXE ještě nemá dostatečnou reputaci nebo podpis, některé bezpečnostní nástroje ho můžou kontrolovat déle.
 
-## ZmÄ›ny verze 1.0.141
+## ZmÄ›ny verze 1.0.142
 
-Přidán bounded 24hodinový režim pro skrytí restartovacích upozornění Windows Update přes UpdateNotificationLevel=2; tray nabízí aktivaci a obnovu, upozornění na externí změnu s dostupným auditním účtem/procesem, volitelný auto-repair a bezpečné vrácení původní policy po expiraci.
+Opraven 24h režim na persistentní denní ochranu 05:00–05:00 do vypnutí hlavní ochrany; RG drží UpdateNotificationLevel=2, rolling obnovuje obě podporované pause policy, zapisuje Active Hours jako best-effort registry hint a přidává drift, auditního původce, ruční obnovu a volitelnou automatickou opravu.
 
