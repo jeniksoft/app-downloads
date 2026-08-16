@@ -4,9 +4,9 @@ Windows Update Restart Guard je malá Windows utilita, která pomáhá zabránit
 
 ## Stažení
 
-* Verze: `1.0.142`
+* Verze: `1.0.143`
 * Setup: [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe)
-* SHA-256: `14CCB01490D480D4794A0873C02F0BB6BFBCE72DD3C47D9728B18DCD4937B319`
+* SHA-256: `21EB9734A1E53B59A1145736B4960BD057BBC4A1A786AA5F2955081A3C2DAF4C`
 * Update manifest pro aplikaci: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -121,7 +121,7 @@ Použij Windows Nastavení > Aplikace > Nainstalované aplikace > Windows Update
 
 Setup je běžný Windows EXE soubor. Verze `1.0.29` až `1.0.35` vznikly jako reakce na false-positive behavior-shield test a následné dotažení MSI instalace: aplikace byla čistá, ale starší instalační tok mohl bezpečnostním nástrojům připomínat dropper/persistence vzor. Setup proto nepoužívá skrytý shell cleanup ani shell handoff pro update setup a od verze `1.0.32` používá pro instalaci standardní WiX/MSI backend. Pokud EXE ještě nemá dostatečnou reputaci nebo podpis, některé bezpečnostní nástroje ho můžou kontrolovat déle.
 
-## ZmÄ›ny verze 1.0.142
+## ZmÄ›ny verze 1.0.143
 
-Opraven 24h režim na persistentní denní ochranu 05:00–05:00 do vypnutí hlavní ochrany; RG drží UpdateNotificationLevel=2, rolling obnovuje obě podporované pause policy, zapisuje Active Hours jako best-effort registry hint, přidává drift, auditního původce, ruční obnovu, volitelnou automatickou opravu a tři samostatné volby vrstev ochrany.
+Opraveno selhání kontinuální ochrany po MSI aktualizaci: instalace a oprava nyní ověří identitu setup wrapperu Jeniksoft a atomicky ho uloží vedle aplikace; přidán smoke test identity a staged kopie. Zachován persistentní režim 05:00–05:00 a tři volitelné vrstvy ochrany.
 
