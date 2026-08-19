@@ -1,52 +1,41 @@
-# Jarvis
+# Project codename: Jarvis
 
-Jarvis je osobní lokální agent pro chat, práci se soubory ve workspace, lokální LLM providery a bezpečně potvrzované nástroje. Je určený pro běžné používání na vlastním počítači: psaní, programování, výzkum, plánování, dokumenty, troubleshooting i další projektovou práci bez nutnosti cloudové služby.
+**Jarvis je interní codename projektu ve vývoji, nikoli finální produktový název.**
 
-## Stažení
+Cílem je bezplatná edice **Personal 1.0.0**. Až bude připravená k veřejnému vydání, bude zde zveřejněna pod jiným produktovým názvem.
 
-* Verze: `0.3.50`
-* Setup: [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/jarvis/JarvisSetup.exe)
-* SHA-256: `507379F2D6136021B421B00046F306B93A2DBC5F244EE113E098FBEE9219802D`
-* Update manifest pro aplikaci: [update.json](update.json)
+Aktuálně zde není žádný veřejný instalační balíček ke stažení. Dřívější vývojové a beta buildy byly z aktuálního download kanálu odstraněny, protože neodpovídají cílové kvalitě a rozsahu verze 1.0.0.
 
-## Co Aplikace Dělá
+## Personal 1.0.0 progress
 
-* běží jako WDUi Windows aplikace
-* drží UI ve vlastním hlavním vlákně, aby šlo psát a ovládat appku i při práci modelu
-* posílá LLM, workspace, internetové a nástrojové úlohy do worker fronty
-* umí lokální historii konverzací
-* umí read-only scan, tree, search a čtení souborů ve zvoleném workspace
-* umí explicitně připojovat project memory a webové nebo lokální textové zdroje
-* umí potvrzené webové hledání, URL fetch, download se SHA-256, veřejné GitHub čtení a package metadata
-* umí potvrzené čtení jednoho soukromého GitHub textového souboru přes uživatelovo gh.exe přihlášení
-* v režimu Plný přístup umí po potvrzení spouštět PowerShell, Command Prompt, Git Bash a WSL v aktivním workspace a ukládat výstup jako zdroj pro další práci
-* umí read-only hardware probe a model-fit katalog: RAM, CPU vlákna, GPU/VRAM a odhad, které lokálně instalované modelové třídy dávají na daném PC smysl
-* má první model manager: přes lokální Ollama provider umí po potvrzení stáhnout/smazat model a nastavovat aktivní profily `default`, `small`, `coder`, `reasoning`
-* má update badge v titulku okna a veřejný ADPU update kanál
+<!-- JARVIS_PROGRESS_BEGIN -->
+**Release readiness: 50 %**
 
-## Co Aplikace Nedělá
+Toto číslo neznamená „50 % řádků kódu“. Je to vážený ukazatel připravenosti k vydání podle aktuální Personal 1.0.0 roadmapy a ověřené evidence. Může se pohybovat oběma směry, pokud nové testy odhalí blocker nebo se zpřísní release kritéria.
 
-Jarvis není oficiální OpenAI ani Codex produkt. Neobsahuje cloudovou analytiku, nesmí bez potvrzení posílat soukromé workspace soubory na internet a nemá shell zapnutý ve výchozím profilu; PowerShell, Command Prompt, Git Bash a WSL jsou dostupné až v režimu `Plný přístup` po potvrzení konkrétního spuštění. Veřejný internet je ve výchozím profilu Standard povolený, aby šlo hledat, číst veřejné URL a kontrolovat aktualizace bez skrytého nastavování. Uživatel ho může vypnout nebo přepnout do přísnějšího profilu v Nastavení; konkrétní síťové akce, které sahají na lokální/soukromý obsah, dál vyžadují potvrzení.
+| Oblast | Stav | Readiness |
+| --- | --- | ---: |
+| Recovery a durable execution | partial | 50 % |
+| Model/provider spolehlivost | advanced | 75 % |
+| Intake, research a source quality | partial | 50 % |
+| Workspace a bezpečné akce | advanced | 75 % |
+| Memory a continuity | advanced | 75 % |
+| Secure Support Ticket | early | 25 % |
+| Supervised self-development | early | 25 % |
+| UX, installer, update a release QA | partial | 50 % |
+| Reálný hardware/configuration matrix | early | 25 % |
 
-Jarvis nedistribuuje, nebalí, nestahuje ani neinstaluje LLM/model weights. Modely si uživatel instaluje, licencuje, aktualizuje a maže samostatně v Ollama, LM Studio nebo jiném OpenAI-compatible provideru. Jarvis pouze ukládá názvy providerů/profilů a posílá požadavky na uživatelem nastavený endpoint.
+Stupnice: `early = 25 %`, `partial = 50 %`, `advanced = 75 %`, `verified = 100 %`. Váhy jednotlivých oblastí nejsou stejné; recovery a release QA mají vyšší váhu.
 
-Model-fit katalog je poradní vrstva, ne obchod s modely. Nároky se liší podle kvantizace, délky kontextu, backendu a GPU offloadu.
+Machine-readable veřejný snapshot: [progress.json](progress.json).
+<!-- JARVIS_PROGRESS_END -->
 
-Automatické stahování/mazání modelů je provider-backed: Jarvis sám modely nehostuje ani nedistribuuje, jen po potvrzení požádá lokální Ollama endpoint o `pull` nebo `delete`. U LM Studio zatím modely vybírá a používá, ale instalace a mazání zůstává v LM Studio GUI, dokud nebude stabilní API.
+## Co se připravuje
 
-## Instalace
+Personal 1.0.0 má být local-first osobní agent pro Windows, který může používat lokální modely, modely v LAN i uživatelem zvoleného providera a nemá vyžadovat povinný Jeniksoft inference cloud ani Jeniksoft tokenové platby.
 
-1. Stáhni [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/jarvis/JarvisSetup.exe).
-2. Spusť setup.
-3. Vyber instalační složku, pokud nechceš výchozí `C:\Program Files\Jarvis`.
-4. Dokonči instalaci.
+Vývoj se nyní soustředí především na spolehlivost, recovery, bezpečnost akcí, práci s evidencí a zdroji, memory, support/reprodukci chyb, supervised self-development, instalaci/rollback a ověření na různých skutečných počítačích.
 
-Po instalaci se aplikace zaregistruje ve Windows jako běžná aplikace, přidá Start Menu zástupce pod `Jeniksoft` a jde odinstalovat přes Windows Nastavení > Aplikace > Nainstalované aplikace.
+## Dostupnost
 
-## Aktualizace
-
-Jarvis umí zkontrolovat veřejný [update.json](update.json) manifest. Kontrola a instalace aktualizace jsou dostupné v okně přes Nastavení nebo update badge v titulku; příkazy `/update-check --confirm` a `/update-install --confirm` zůstávají jen pokročilá kompatibilní cesta. Instalace stáhne setup z veřejného `setup_url`, ověří SHA-256 a spustí tichou instalaci.
-
-## Poznámka K Antiviru
-
-Setup je běžný Windows EXE soubor s vloženým MSI backendem. Pokud ještě nemá dostatečnou reputaci nebo podpis, Windows SmartScreen nebo antivirus můžou zobrazit varování nebo ho testovat déle. Pro kontrolu integrity porovnej SHA-256 se souborem [checksums/SHA256SUMS.txt](../../checksums/SHA256SUMS.txt).
+Veřejné datum vydání zatím není stanoveno. Verze 1.0.0 bude zveřejněna až po splnění release gates; samotný počet implementovaných funkcí není důvodem označit build za hotový.
