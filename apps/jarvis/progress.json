@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "project_codename": "Jarvis",
+  "codename_is_not_final_product_name": true,
+  "target_edition": "Personal",
+  "target_version": "1.0.0",
+  "price": "free",
+  "measurement": "release_readiness",
+  "overall_percent": 50,
+  "updated_at": "2026-08-19",
+  "scale": {
+    "early": 25,
+    "partial": 50,
+    "advanced": 75,
+    "verified": 100
+  },
+  "areas": [
+    {"id":"recovery","name":"Recovery and durable execution","status":"partial","percent":50,"weight":15},
+    {"id":"models","name":"Model/provider reliability","status":"advanced","percent":75,"weight":10},
+    {"id":"intake","name":"Intake, research and source quality","status":"partial","percent":50,"weight":10},
+    {"id":"workspace","name":"Workspace and safe actions","status":"advanced","percent":75,"weight":10},
+    {"id":"memory","name":"Memory and continuity","status":"advanced","percent":75,"weight":10},
+    {"id":"ticket","name":"Secure Support Ticket","status":"early","percent":25,"weight":10},
+    {"id":"self-development","name":"Supervised self-development","status":"early","percent":25,"weight":10},
+    {"id":"release-qa","name":"UX, installer, update and release QA","status":"partial","percent":50,"weight":15},
+    {"id":"hardware-matrix","name":"Real hardware/configuration matrix","status":"early","percent":25,"weight":10}
+  ],
+  "disclaimer": "This is a roadmap-weighted release-readiness indicator, not a percentage of source code written. It may decrease when new evidence reveals a blocker or release criteria become stricter."
+}
