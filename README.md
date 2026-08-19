@@ -9,8 +9,6 @@ Toto repo je určené pro hotové instalační balíčky, SDK balíky, popis apl
 | Aplikace | Verze | Setup / Balík | Dokumentace | SHA-256 |
 | --- | --- | --- | --- | --- |
 | Codex VeraCrypt Startup Mount | 1.0.180 | [VeraCryptStartupMountSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe) | [Popis a návod](apps/veracrypt-startup-mount/README.md) | [`ED999FF5...C890621C`](checksums/SHA256SUMS.txt) |
-| Jarvis | 0.3.50 | [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/jarvis/JarvisSetup.exe) | [Popis a návod](apps/jarvis/README.md) | [`507379F2...9219802D`](checksums/SHA256SUMS.txt) |
-| Jarvis Beta | 0.9.21 | [JarvisSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/jarvis-beta/JarvisSetup.exe) | [Příprava beta vydání](apps/jarvis-beta/README.md) | [`F012D6A4...4FB0B2D9`](checksums/SHA256SUMS.txt) |
 | Strategic Nexus Companion | 0.16.0 | [StrategicNexusCompanionSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/strategic-nexus-companion/StrategicNexusCompanionSetup.exe) | [Popis a návod](apps/strategic-nexus-companion/README.md) | [`5AC5E5AB...239C8EB0`](checksums/SHA256SUMS.txt) |
 | Windows Update Restart Guard | 1.0.143 | [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe) | [Popis a návod](apps/windows-update-restart-guard/README.md) | [`21EB9734...3C2DAF4C`](checksums/SHA256SUMS.txt) |
 | WDUi Framework SDK | 0.1.15 | [WduiFrameworkSdk-0.1.15.zip](https://github.com/jeniksoft/app-downloads/raw/main/apps/wdui-framework/WduiFrameworkSdk-0.1.15.zip) | [Popis a návod](apps/wdui-framework/README.md) | [`E3B5F881...760AE888`](checksums/SHA256SUMS.txt) |
@@ -19,6 +17,12 @@ Toto repo je určené pro hotové instalační balíčky, SDK balíky, popis apl
 Setup odkazy v tabulce vedou přímo na GitHub raw download endpoint, aby kliknutí stáhlo instalační EXE místo otevření stránky binárního souboru.
 
 Tabulky zkracují SHA-256 kvůli čitelnosti. Plný hash je vždy v `update.json` a [checksums/SHA256SUMS.txt](checksums/SHA256SUMS.txt).
+
+## Ve Vývoji
+
+**Project codename: Jarvis** je interní označení připravovaného produktu. Codename není finální produktový název. Cílem je bezplatná edice **Personal 1.0.0**, která bude po dokončení zveřejněna pod jiným názvem.
+
+Dřívější veřejné vývojové a beta buildy byly z aktuálního download kanálu odstraněny. Aktuální veřejný progress report je na stránce [Project codename: Jarvis](apps/jarvis/README.md).
 
 ## Update Manifest
 
