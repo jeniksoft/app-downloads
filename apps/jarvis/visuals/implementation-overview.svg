@@ -55,6 +55,7 @@ svg { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
 .state-verified-runtime { fill: var(--series-3); }
 .state-verified-build { fill: var(--series-1); }
 .state-verified-contract { fill: var(--series-2); }
+.state-in-progress { fill: var(--series-4); }
 .state-implemented-unverified { fill: var(--series-4); }
 .state-partial { fill: var(--series-4); }
 .state-contract-only { fill: var(--series-5); }
