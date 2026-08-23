@@ -193,7 +193,7 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 | `177af37810f3` | 2026-08-23 | evidence-only | — |
 | `fc5d758aab2f` | 2026-08-23 | evidence-only | — |
 | `c75003eedbf8` | 2026-08-24 | worker-recovery, executor-runtime | 2: worker-recovery/queue-journal-persistence, executor-runtime/policy-audit-fail-closed |
-| `cbee9925c20b` | 2026-08-24 | worker-recovery, executor-runtime | 2: worker-recovery/queue-journal-persistence, executor-runtime/policy-audit-fail-closed |
+| `310c131cb2df` | 2026-08-24 | worker-recovery, executor-runtime | 2: worker-recovery/queue-journal-persistence, executor-runtime/policy-audit-fail-closed |
 
 Úplná machine-readable historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
