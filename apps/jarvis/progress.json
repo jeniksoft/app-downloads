@@ -3488,6 +3488,54 @@
         "qa-dogfood/hardware-configuration-matrix",
         "qa-dogfood/release-acceptance-pack"
       ]
+    },
+    {
+      "revision": "5f45d9918221",
+      "date": "2026-08-23",
+      "metrics": {
+        "primary_percent": 30.63,
+        "task_board_claim_percent": 81.56,
+        "implementation_percent": 43.75,
+        "verified_percent": 30.63,
+        "done_percent": 30.63,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "a6ae9a75975b",
+      "date": "2026-08-23",
+      "metrics": {
+        "primary_percent": 30.63,
+        "task_board_claim_percent": 81.56,
+        "implementation_percent": 43.75,
+        "verified_percent": 30.63,
+        "done_percent": 30.63,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
     }
   ],
   "history_contract": {

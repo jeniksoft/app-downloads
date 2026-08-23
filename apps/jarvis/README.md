@@ -190,20 +190,18 @@ Veřejná tabulka uvádí pouze agregovaný typ a počet důkazů. Detailní pri
 ```mermaid
 xychart-beta
     title "Tracked progress revisions"
-    x-axis ["191eaae5b504", "debaa423ec24", "b9b19e2da59b", "8a86508c3b31", "98f5afbfb254", "b6d00b21e1ba", "b29d28a09d53", "4690246bec7e", "3de0a5835c99", "030fa261550f", "f53dc898b708", "a17b86feab1e", "bbaf302ed395", "6cf1396eb9fd", "938c68511f2c", "9688beecfae4", "68934887ccb7", "a9a4671f1224"]
+    x-axis ["b9b19e2da59b", "8a86508c3b31", "98f5afbfb254", "b6d00b21e1ba", "b29d28a09d53", "4690246bec7e", "3de0a5835c99", "030fa261550f", "f53dc898b708", "a17b86feab1e", "bbaf302ed395", "6cf1396eb9fd", "938c68511f2c", "9688beecfae4", "68934887ccb7", "a9a4671f1224", "5f45d9918221", "a6ae9a75975b"]
     y-axis "percent" 0 --> 100
-    line [44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 30.63]
-    line [100.00, 100.00, 100.00, 100.00, 100.00, 100.00, 100.00, 100.00, 100.00, 100.00, 100.00, 82.00, 82.00, 82.00, 82.00, 82.00, 82.00, 81.56]
-    line [45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 43.75]
-    line [44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 30.63]
+    line [44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 30.63, 30.63, 30.63]
+    line [100.00, 100.00, 100.00, 100.00, 100.00, 100.00, 100.00, 100.00, 100.00, 82.00, 82.00, 82.00, 82.00, 82.00, 82.00, 81.56, 81.56, 81.56]
+    line [45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 45.00, 43.75, 43.75, 43.75]
+    line [44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 44.40, 30.63, 30.63, 30.63]
 ```
 
 Pořadí historického grafu je `primary`, `TB claim audit`, `implementace z evidence`, `ověření z evidence`. Každá revize je veřejně označena neprůhledným fingerprintem; raw private source commit, subject ani interní cesta se do veřejného repa nekopírují.
 
 | Veřejná revize | Datum | Δ primary | Δ TB claim | Δ implementace | Δ ověření | Δ hotovo | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `191eaae5b504` | 2026-08-10 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `debaa423ec24` | 2026-08-10 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `b9b19e2da59b` | 2026-08-10 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `8a86508c3b31` | 2026-08-10 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `98f5afbfb254` | 2026-08-10 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -220,8 +218,10 @@ Pořadí historického grafu je `primary`, `TB claim audit`, `implementace z evi
 | `9688beecfae4` | 2026-08-20 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `68934887ccb7` | 2026-08-22 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `a9a4671f1224` | 2026-08-23 | -13.77 | -0.44 | -1.25 | -13.77 | -13.77 | app-shell-release, worker-recovery, model-routing, workspace-actions, extensions-permissions, executor-runtime, owner-ux, qa-dogfood | 32: app-shell-release/wdui-shell-contract, app-shell-release/installer-update-contract, app-shell-release/adpu-public-channel, app-shell-release/clean-release-acceptance… |
+| `5f45d9918221` | 2026-08-23 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `a6ae9a75975b` | 2026-08-23 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
-Úplná machine-readable historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json). Evidovaných revizí: **94**.
+Úplná machine-readable historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json). Evidovaných revizí: **96**.
 
 ### Release readiness
 
