@@ -4642,9 +4642,13 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "worker-recovery",
+        "executor-runtime"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "worker-recovery/queue-journal-persistence",
+        "executor-runtime/policy-audit-fail-closed"
+      ]
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim."

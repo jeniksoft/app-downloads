@@ -32,7 +32,7 @@
     "manifest_present": true,
     "milestone_count": 32,
     "verified_milestone_count": 11,
-    "verified_evidence_count": 24,
+    "verified_evidence_count": 26,
     "state_counts": {
       "verified-build": 9,
       "partial": 11,
@@ -196,8 +196,8 @@
           "implementation_percent": 100.0,
           "verified_percent": 75.0,
           "done_percent": 75.0,
-          "evidence_count": 3,
-          "verified_evidence_count": 2,
+          "evidence_count": 4,
+          "verified_evidence_count": 3,
           "evidence_kinds": [
             "runtime",
             "self-test"
@@ -705,8 +705,8 @@
           "implementation_percent": 50.0,
           "verified_percent": 25.0,
           "done_percent": 25.0,
-          "evidence_count": 3,
-          "verified_evidence_count": 2,
+          "evidence_count": 4,
+          "verified_evidence_count": 3,
           "evidence_kinds": [
             "contract",
             "runtime",
@@ -5772,9 +5772,13 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "worker-recovery",
+        "executor-runtime"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "worker-recovery/queue-journal-persistence",
+        "executor-runtime/policy-audit-fail-closed"
+      ]
     }
   ],
   "history_contract": {
