@@ -176,7 +176,6 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 
 | Veřejná revize | Datum | Změněné kapitoly | Milestone evidence events |
 | --- | --- | --- | --- |
-| `030fa261550f` | 2026-08-11 | evidence-only | — |
 | `f53dc898b708` | 2026-08-15 | evidence-only | — |
 | `a17b86feab1e` | 2026-08-16 | evidence-only | — |
 | `bbaf302ed395` | 2026-08-16 | evidence-only | — |
@@ -193,7 +192,8 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 | `177af37810f3` | 2026-08-23 | evidence-only | — |
 | `fc5d758aab2f` | 2026-08-23 | evidence-only | — |
 | `c75003eedbf8` | 2026-08-24 | worker-recovery, executor-runtime | 2: worker-recovery/queue-journal-persistence, executor-runtime/policy-audit-fail-closed |
-| `310c131cb2df` | 2026-08-24 | worker-recovery, model-routing, executor-runtime | 3: worker-recovery/queue-journal-persistence, model-routing/typed-routing-fallback, executor-runtime/policy-audit-fail-closed |
+| `310c131cb2df` | 2026-08-24 | worker-recovery, executor-runtime | 2: worker-recovery/queue-journal-persistence, executor-runtime/policy-audit-fail-closed |
+| `f81c9bbb9dea` | 2026-08-24 | worker-recovery, model-routing | 2: worker-recovery/queue-journal-persistence, model-routing/typed-routing-fallback |
 
 Úplná machine-readable historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
