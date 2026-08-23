@@ -11,7 +11,7 @@ Aktuálně zde není žádný veřejný instalační balíček ke stažení. Dř
 
 **Synchronizovaný snapshot: 2026-08-23**
 
-Hlavní číslo je konzervativní index z explicitních milestone evidence. Surový Task Board claim zůstává oddělený jako auditní srovnání; vyšší claim se automaticky nepovažuje za skutečný stav implementace.
+Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
 
 ### Grafický dashboard
 
@@ -182,7 +182,7 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 | `3de0a5835c99` | 2026-08-10 | evidence-only | — |
 | `030fa261550f` | 2026-08-11 | evidence-only | — |
 | `f53dc898b708` | 2026-08-15 | evidence-only | — |
-| `a17b86feab1e` | 2026-08-16 | rollup-correction | — |
+| `a17b86feab1e` | 2026-08-16 | evidence-only | — |
 | `bbaf302ed395` | 2026-08-16 | evidence-only | — |
 | `6cf1396eb9fd` | 2026-08-19 | evidence-only | — |
 | `938c68511f2c` | 2026-08-19 | evidence-only | — |
@@ -193,7 +193,7 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 | `a6ae9a75975b` | 2026-08-23 | evidence-only | — |
 | `196fc38b8d64` | 2026-08-23 | model-routing | 1: model-routing/live-provider-reliability |
 | `13f566c02e0e` | 2026-08-23 | evidence-only | — |
-| `3ed738515d28` | 2026-08-23 | evidence-only | — |
+| `ca88d35661d5` | 2026-08-23 | evidence-only | — |
 
 Úplná machine-readable historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
@@ -217,7 +217,7 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 - `implementation`: explicitní milestone state s horními stropy; architektura, source-size ani plán číslo nezvyšují.
 - `verification`: explicitní evidence; kontrakt nebo build není totéž co live runtime nebo owner acceptance.
 - `done`: vážené minimum na každém milníku, potom vážený roll-up kapitol a jejich evidence cap.
-- `Task Board claim`: zůstává auditní hodnota pro synchronizaci, ale veřejný primary ji nepoužívá jako důkaz.
+- `Task Board`: slouží k mapování kapitol, vah a synchronizaci odvozené evidence; není samostatnou skórovanou osou.
 - Relevantní revize vzniká při změně nakonfigurovaných vstupů měření; commit bez změny evidence zůstává jako `evidence-only`.
 - Plánovaný stav, historická dokumentace, source-size ani samotný commit nemohou zvýšit primary bez evidence manifestu.
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_END -->
