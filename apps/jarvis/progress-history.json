@@ -4643,10 +4643,12 @@
       },
       "changed_chapters": [
         "worker-recovery",
+        "model-routing",
         "executor-runtime"
       ],
       "changed_milestones": [
         "worker-recovery/queue-journal-persistence",
+        "model-routing/typed-routing-fallback",
         "executor-runtime/policy-audit-fail-closed"
       ]
     }
