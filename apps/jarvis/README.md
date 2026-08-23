@@ -193,7 +193,7 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 | `ca88d35661d5` | 2026-08-23 | evidence-only | — |
 | `177af37810f3` | 2026-08-23 | evidence-only | — |
 | `fc5d758aab2f` | 2026-08-23 | evidence-only | — |
-| `339cf791da55` | 2026-08-23 | evidence-only | — |
+| `1af8a06a56fe` | 2026-08-23 | evidence-only | — |
 
 Úplná machine-readable historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
