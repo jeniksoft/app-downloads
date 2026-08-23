@@ -80,7 +80,7 @@ flowchart LR
 | Extensions | Read-only connector preview | `contract-only` | Read-only preview je součástí roadmapového směru, ne uzavřený universal connector proof.; mezera: Dodat konkrétní connector fixture, source identity, permission review a ověřený render.; typy: roadmap |
 | Extensions | Install/update/disable lifecycle rozšíření | `open` | Obecný lifecycle není v Personal evidence uzavřen.; mezera: Dodat safe install, update, disable, rollback, ownership a audit receipts.; typy: release-gate |
 | Executor | Typed executor scopes a stream lifecycle | `verified-contract` | Typed executor scope contract a bounded result lifecycle mají current contract evidence.; mezera: Univerzální runtime acceptance pro každý MCP/plugin/app typ není uzavřená.; typy: contract, runtime |
-| Executor | Policy, audit, resume a fail-closed executor | `partial` | Auditní a fail-closed principy jsou přítomné v kontraktech, ale cross-runtime proof je částečný.; mezera: Dodat jednotný audit/resume receipt a negative-path test pro všechny executor adapters.; typy: contract, runtime |
+| Executor | Policy, audit, resume a fail-closed executor | `partial` | Auditní a fail-closed principy jsou přítomné v kontraktech, ale cross-runtime proof je částečný.; mezera: Dodat jednotný audit/resume receipt a negative-path test pro všechny executor adapters.; typy: contract, runtime, self-test |
 | Executor | MCP/plugin/app result lifecycle | `contract-only` | Result lifecycle je v architektuře popsán, ale generic integration evidence chybí.; mezera: Dodat typed fixtures pro success, partial, failure, timeout, retry a owner review.; typy: documentation |
 | Executor | Live external integration a resume acceptance | `open` | Live MCP/plugin/app acceptance není doložena jako společný current receipt.; mezera: Dodat owner-approved, identity-bearing, reproducible live acceptance pack.; typy: release-gate |
 | UX/support | First-run, setup a diagnostics | `partial` | Diagnostické a setup směry existují, ale P8 owner-facing QA je partial.; mezera: Dodat čerstvý owner walkthrough v podporovaných DPI/multi-monitor konfiguracích.; typy: build, runtime |
@@ -193,7 +193,7 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 | `ca88d35661d5` | 2026-08-23 | evidence-only | — |
 | `177af37810f3` | 2026-08-23 | evidence-only | — |
 | `fc5d758aab2f` | 2026-08-23 | evidence-only | — |
-| `03de53cd6757` | 2026-08-23 | evidence-only | — |
+| `03de53cd6757` | 2026-08-23 | worker-recovery, executor-runtime | 2: worker-recovery/queue-journal-persistence, executor-runtime/policy-audit-fail-closed |
 
 Úplná machine-readable historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
