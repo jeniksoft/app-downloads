@@ -20,28 +20,28 @@
     "limitations": "A commit is visible as evidence history, but source size, a Task Board claim, a plan, or a contract-only document never increases the primary score without declared milestone evidence."
   },
   "updated_at": "2026-08-23",
-  "overall_percent": 30.63,
-  "primary_percent": 30.63,
+  "overall_percent": 31.25,
+  "primary_percent": 31.25,
   "task_board_percent": 81.56,
   "task_board_claim_percent": 81.56,
   "raw_implementation_complete_percent": 83.96,
   "raw_verified_percent": 76.72,
   "raw_done_percent": 75.36,
   "implementation_complete_percent": 43.75,
-  "verified_percent": 30.63,
-  "done_percent": 30.63,
-  "milestone_implementation_percent": 51.75,
-  "milestone_verified_percent": 30.63,
-  "milestone_done_percent": 30.63,
+  "verified_percent": 31.25,
+  "done_percent": 31.25,
+  "milestone_implementation_percent": 53.0,
+  "milestone_verified_percent": 31.25,
+  "milestone_done_percent": 31.25,
   "evidence_summary": {
     "manifest_present": true,
     "milestone_count": 32,
     "verified_milestone_count": 11,
-    "verified_evidence_count": 21,
+    "verified_evidence_count": 22,
     "state_counts": {
       "verified-build": 9,
-      "partial": 10,
-      "open": 8,
+      "partial": 11,
+      "open": 7,
       "verified-contract": 2,
       "contract-only": 3
     }
@@ -312,12 +312,12 @@
       "raw_implementation_percent": 80.0,
       "raw_verified_percent": 69.0,
       "raw_done_percent": 69.0,
-      "milestone_implementation_percent": 75.0,
-      "milestone_verified_percent": 56.25,
-      "milestone_done_percent": 56.25,
+      "milestone_implementation_percent": 87.5,
+      "milestone_verified_percent": 62.5,
+      "milestone_done_percent": 62.5,
       "implementation_percent": 75.0,
-      "verified_percent": 56.25,
-      "done_percent": 56.25,
+      "verified_percent": 62.5,
+      "done_percent": 62.5,
       "evidence_source": "milestone-evidence-manifest",
       "evidence_cap_percent": 75.0,
       "evidence_cap_basis": "Personal P2 model/provider reliability is advanced, but long provider replay and complete enumeration remain open.",
@@ -408,21 +408,25 @@
           "name_cs": "Živá provider reliability a hardware-aware recommendation",
           "name_en": "Live provider reliability and hardware-aware recommendation",
           "weight_percent": 25.0,
-          "state": "open",
-          "implementation_percent": 0.0,
-          "verified_percent": 0.0,
-          "done_percent": 0.0,
-          "evidence_count": 1,
-          "verified_evidence_count": 0,
+          "state": "partial",
+          "implementation_percent": 50.0,
+          "verified_percent": 25.0,
+          "done_percent": 25.0,
+          "evidence_count": 2,
+          "verified_evidence_count": 1,
           "evidence_kinds": [
-            "roadmap"
+            "roadmap",
+            "runtime"
           ],
-          "verified_evidence_kinds": [],
+          "verified_evidence_kinds": [
+            "runtime"
+          ],
           "evidence_statuses": [
-            "open"
+            "open",
+            "verified"
           ],
-          "evidence_summary_cs": "Roadmap target existuje, ale aktuální live evidence neumožňuje tvrdit dokončení.",
-          "open_gap_cs": "Dodat reproducible live replay, endpoint identity, hardware context a truthful downgrade/blocked receipt."
+          "evidence_summary_cs": "Jeden čerstvý localhost Ollama receipt prokazuje průchod konkrétního benchmarkového scénáře; širší provider a hardware matrix zůstává otevřená.",
+          "open_gap_cs": "Dodat opakované live replaye s exact-route, více endpointy/modely, truthful downgrade/blocked receipts a skutečnou hardware matrix."
         }
       ]
     },
@@ -3536,6 +3540,32 @@
         "evidence-only"
       ],
       "changed_milestones": []
+    },
+    {
+      "revision": "196fc38b8d64",
+      "date": "2026-08-23",
+      "metrics": {
+        "primary_percent": 31.25,
+        "task_board_claim_percent": 81.56,
+        "implementation_percent": 43.75,
+        "verified_percent": 31.25,
+        "done_percent": 31.25,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.62,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.62,
+        "done_percent": 0.62,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "model-routing"
+      ],
+      "changed_milestones": [
+        "model-routing/live-provider-reliability"
+      ]
     }
   ],
   "history_contract": {

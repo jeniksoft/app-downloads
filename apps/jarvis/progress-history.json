@@ -2367,6 +2367,32 @@
         "evidence-only"
       ],
       "changed_milestones": []
+    },
+    {
+      "revision": "196fc38b8d64",
+      "date": "2026-08-23",
+      "metrics": {
+        "primary_percent": 31.25,
+        "task_board_claim_percent": 81.56,
+        "implementation_percent": 43.75,
+        "verified_percent": 31.25,
+        "done_percent": 31.25,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.62,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.62,
+        "done_percent": 0.62,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "model-routing"
+      ],
+      "changed_milestones": [
+        "model-routing/live-provider-reliability"
+      ]
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board values are retained as audit claims and may be materially higher."
