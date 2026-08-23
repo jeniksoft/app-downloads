@@ -18,14 +18,14 @@
   },
   "entries": [
     {
-      "revision": "87f78b2ba7d2",
-      "date": "2026-07-20",
+      "revision": "9f2e1bb80f94",
+      "date": "2026-07-01",
       "metrics": {
-        "primary_percent": 44.4,
-        "task_board_claim_percent": 98.0,
+        "primary_percent": 44.3,
+        "task_board_claim_percent": 77.0,
         "implementation_percent": 45.0,
-        "verified_percent": 44.4,
-        "done_percent": 44.4,
+        "verified_percent": 44.3,
+        "done_percent": 44.3,
         "release_readiness_percent": null
       },
       "delta": {
@@ -45,6 +45,2534 @@
         "executor-runtime",
         "owner-ux",
         "qa-dogfood"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "148796c15ff2",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.3,
+        "task_board_claim_percent": 78.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.3,
+        "done_percent": 44.3,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 1.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "worker-recovery"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "e23afc64e238",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 79.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.1,
+        "task_board_claim_percent": 1.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.1,
+        "done_percent": 0.1,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "worker-recovery",
+        "model-routing",
+        "qa-dogfood"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "4482bb81dfac",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 80.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 1.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "bad0f4855a34",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 80.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "faf4517d150a",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 80.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "worker-recovery"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "a8b90b1fd7d4",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 80.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "59106616b036",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 80.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "7fc118612341",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 80.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "83a180e367aa",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 80.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "cb563cac894d",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 80.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "5c191325a7c3",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 80.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "f2d7016e6dbf",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 80.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "ead5a8681ee4",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 80.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "6b84e2887117",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 80.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "e86f7c080fef",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 80.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "077030bd01ee",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 80.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "1fc1cc08279c",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 80.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "4dd5c2109870",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 80.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "dacf941424ed",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 80.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "1816d27ce641",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 80.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "ee3e550fa954",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 80.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "fcb43896aabd",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 80.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "2ab96f71f42e",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 81.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 1.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "workspace-actions",
+        "executor-runtime"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "b7351481908b",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 82.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 1.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "workspace-actions",
+        "executor-runtime"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "2661f1357dd5",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 83.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 1.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "workspace-actions",
+        "executor-runtime"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "e12ef9ef6607",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 84.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 1.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "workspace-actions",
+        "executor-runtime"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "e6debecfef36",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 85.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 1.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "workspace-actions",
+        "executor-runtime"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "ab9a4e837423",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 86.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 1.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "workspace-actions",
+        "executor-runtime"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "26ee6302c20e",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 86.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "7fbd3622764a",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 87.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 1.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "0903e51eadcd",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 88.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 1.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "0affe89c3692",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 89.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 1.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "d195bb444c5f",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 90.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 1.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "a6c8b8e5a931",
+      "date": "2026-07-01",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 90.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "f851d2a21076",
+      "date": "2026-07-02",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 91.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 1.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "49b603925159",
+      "date": "2026-07-02",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 92.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 1.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "qa-dogfood"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "542fd9d4e305",
+      "date": "2026-07-02",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 92.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "8650c17131ee",
+      "date": "2026-07-02",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 93.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 1.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "qa-dogfood"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "b4ee0d98c6d7",
+      "date": "2026-07-02",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 93.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "73a33c343e5f",
+      "date": "2026-07-02",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 94.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 1.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "qa-dogfood"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "f0ea1c63714a",
+      "date": "2026-07-02",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 95.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 1.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "qa-dogfood"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "e3981ae1a4c4",
+      "date": "2026-07-02",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 95.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "4965271a2ba9",
+      "date": "2026-07-02",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 96.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 1.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "786eb39a9eda",
+      "date": "2026-07-02",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 96.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "qa-dogfood"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "f4a49b572e3b",
+      "date": "2026-07-02",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 96.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "4a70ebcfada5",
+      "date": "2026-07-02",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 96.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "1595a76e848c",
+      "date": "2026-07-02",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 96.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "8d01eb768a01",
+      "date": "2026-07-02",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 96.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "d15e1402b16c",
+      "date": "2026-07-02",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 96.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "a6566d185adc",
+      "date": "2026-07-02",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 96.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "dbbdeb8b17ae",
+      "date": "2026-07-02",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 96.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "e6a5e9b61182",
+      "date": "2026-07-02",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 96.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "57de63843ddb",
+      "date": "2026-07-02",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 96.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "983f518b7f6e",
+      "date": "2026-07-03",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 1.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "c2b0e562c0ae",
+      "date": "2026-07-03",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "f871e8f095c5",
+      "date": "2026-07-03",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "95e89048aa7f",
+      "date": "2026-07-03",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "d7fde5ecac2b",
+      "date": "2026-07-03",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "f11fbed07977",
+      "date": "2026-07-03",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "de4de8505ede",
+      "date": "2026-07-03",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "11fc3010b372",
+      "date": "2026-07-03",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "b28f68920433",
+      "date": "2026-07-03",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "3324116c7dc3",
+      "date": "2026-07-03",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "e79cd74611a9",
+      "date": "2026-07-03",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "46f39e40f21e",
+      "date": "2026-07-03",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "1977f9326b3b",
+      "date": "2026-07-03",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "2de4c9e4cc0c",
+      "date": "2026-07-03",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "d0ab19c2d8c1",
+      "date": "2026-07-03",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "e0e0297c05cd",
+      "date": "2026-07-04",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "3ebd63587dd5",
+      "date": "2026-07-04",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "aa133d80c20e",
+      "date": "2026-07-04",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "6c07483c087d",
+      "date": "2026-07-04",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "81e6e075ea5a",
+      "date": "2026-07-04",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "5edf6b35e0a6",
+      "date": "2026-07-04",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "5def15eb04bc",
+      "date": "2026-07-04",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "42f5a87c3be1",
+      "date": "2026-07-04",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "275e2d116704",
+      "date": "2026-07-04",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "6f09f21fbe0a",
+      "date": "2026-07-04",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "b11b2aff71c5",
+      "date": "2026-07-04",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "472662fc4954",
+      "date": "2026-07-04",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "13e50da1e7fa",
+      "date": "2026-07-04",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "1526ad4a91c6",
+      "date": "2026-07-04",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "64d125ffe33c",
+      "date": "2026-07-04",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "5097fc8d1904",
+      "date": "2026-07-04",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "1f144ba3b78e",
+      "date": "2026-07-04",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "6e0cf6ecd14b",
+      "date": "2026-07-05",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "f24ae3ac97b6",
+      "date": "2026-07-05",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "98c600e4419c",
+      "date": "2026-07-05",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "965c792724d8",
+      "date": "2026-07-05",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "7ee50d1974eb",
+      "date": "2026-07-05",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "a5e91b3a00d2",
+      "date": "2026-07-05",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "0ea067a18323",
+      "date": "2026-07-05",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "efd4d83510ad",
+      "date": "2026-07-05",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "5b780173c26f",
+      "date": "2026-07-05",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "45251dd4524a",
+      "date": "2026-07-05",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "8afb2ebcb2bf",
+      "date": "2026-07-05",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "782d5150d4e2",
+      "date": "2026-07-05",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 97.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "550269dbfbf5",
+      "date": "2026-07-05",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 98.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 1.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "dc9530201717",
+      "date": "2026-07-05",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 98.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "766fa07576a0",
+      "date": "2026-07-05",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 98.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "aae1fb111525",
+      "date": "2026-07-20",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 98.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "76758e969313",
+      "date": "2026-07-20",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 98.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "b6af7a7950e1",
+      "date": "2026-07-20",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 98.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "f9d92921fff7",
+      "date": "2026-07-20",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 98.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "ed84d830ab11",
+      "date": "2026-07-20",
+      "metrics": {
+        "primary_percent": 44.4,
+        "task_board_claim_percent": 98.0,
+        "implementation_percent": 45.0,
+        "verified_percent": 44.4,
+        "done_percent": 44.4,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "evidence-only"
       ],
       "changed_milestones": []
     },
@@ -2393,6 +4921,54 @@
       "changed_milestones": [
         "model-routing/live-provider-reliability"
       ]
+    },
+    {
+      "revision": "13f566c02e0e",
+      "date": "2026-08-23",
+      "metrics": {
+        "primary_percent": 31.25,
+        "task_board_claim_percent": 81.56,
+        "implementation_percent": 43.75,
+        "verified_percent": 31.25,
+        "done_percent": 31.25,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "04236a3b4abb",
+      "date": "2026-08-23",
+      "metrics": {
+        "primary_percent": 31.25,
+        "task_board_claim_percent": 81.56,
+        "implementation_percent": 43.75,
+        "verified_percent": 31.25,
+        "done_percent": 31.25,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "task_board_claim_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board values are retained as audit claims and may be materially higher."
