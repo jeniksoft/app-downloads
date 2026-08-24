@@ -5741,7 +5741,7 @@
       ]
     },
     {
-      "revision": "87df153d0098",
+      "revision": "9386e5930c44",
       "date": "2026-08-25",
       "metrics": {
         "primary_percent": 32.5,
@@ -5758,9 +5758,11 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "owner-ux"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "owner-ux/first-run-diagnostics"
+      ]
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim."

@@ -47,9 +47,9 @@
       {
         "language": "Markdown",
         "files": 630,
-        "physical_lines": 60786,
-        "bytes": 3021443,
-        "megabytes": 3.021443
+        "physical_lines": 60826,
+        "bytes": 3023630,
+        "megabytes": 3.02363
       },
       {
         "language": "Python",
@@ -131,9 +131,9 @@
     ],
     "source_text": {
       "files": 2088,
-      "physical_lines": 574914,
-      "bytes": 44904375,
-      "megabytes": 44.904375
+      "physical_lines": 574954,
+      "bytes": 44906562,
+      "megabytes": 44.906562
     },
     "binary_assets": {
       "files": 35,
@@ -142,18 +142,18 @@
     },
     "tracked_total": {
       "files": 2123,
-      "physical_lines": 574914,
-      "bytes": 59374875,
-      "megabytes": 59.374875
+      "physical_lines": 574954,
+      "bytes": 59377062,
+      "megabytes": 59.377062
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 4,
-        "physical_lines": 741,
-        "bytes": 31046,
-        "megabytes": 0.031046
+        "files": 0,
+        "physical_lines": 40,
+        "bytes": 2187,
+        "megabytes": 0.002187
       },
       "binary_assets": {
         "files": 0,
@@ -162,10 +162,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 4,
-        "physical_lines": 741,
-        "bytes": 31046,
-        "megabytes": 0.031046
+        "files": 0,
+        "physical_lines": 40,
+        "bytes": 2187,
+        "megabytes": 0.002187
       }
     }
   },
@@ -958,7 +958,7 @@
           "implementation_percent": 50.0,
           "verified_percent": 25.0,
           "done_percent": 25.0,
-          "evidence_count": 7,
+          "evidence_count": 8,
           "verified_evidence_count": 1,
           "evidence_kinds": [
             "build",
@@ -7037,7 +7037,7 @@
       ]
     },
     {
-      "revision": "87df153d0098",
+      "revision": "9386e5930c44",
       "date": "2026-08-25",
       "metrics": {
         "primary_percent": 32.5,
@@ -7054,9 +7054,11 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "owner-ux"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "owner-ux/first-run-diagnostics"
+      ]
     }
   ],
   "history_contract": {
