@@ -32,10 +32,10 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 914,
-        "physical_lines": 310864,
-        "bytes": 20978160,
-        "megabytes": 20.97816
+        "files": 916,
+        "physical_lines": 311348,
+        "bytes": 20997630,
+        "megabytes": 20.99763
       },
       {
         "language": "JSON",
@@ -46,17 +46,17 @@
       },
       {
         "language": "Markdown",
-        "files": 627,
-        "physical_lines": 60507,
-        "bytes": 3007325,
-        "megabytes": 3.007325
+        "files": 628,
+        "physical_lines": 60619,
+        "bytes": 3013064,
+        "megabytes": 3.013064
       },
       {
         "language": "Python",
-        "files": 109,
-        "physical_lines": 28407,
-        "bytes": 1178212,
-        "megabytes": 1.178212
+        "files": 110,
+        "physical_lines": 28516,
+        "bytes": 1182010,
+        "megabytes": 1.18201
       },
       {
         "language": "PowerShell",
@@ -130,10 +130,10 @@
       }
     ],
     "source_text": {
-      "files": 2076,
-      "physical_lines": 572690,
-      "bytes": 44808700,
-      "megabytes": 44.8087
+      "files": 2080,
+      "physical_lines": 573395,
+      "bytes": 44837707,
+      "megabytes": 44.837707
     },
     "binary_assets": {
       "files": 35,
@@ -141,19 +141,19 @@
       "megabytes": 14.4705
     },
     "tracked_total": {
-      "files": 2111,
-      "physical_lines": 572690,
-      "bytes": 59279200,
-      "megabytes": 59.2792
+      "files": 2115,
+      "physical_lines": 573395,
+      "bytes": 59308207,
+      "megabytes": 59.308207
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "files": 4,
+        "physical_lines": 705,
+        "bytes": 29007,
+        "megabytes": 0.029007
       },
       "binary_assets": {
         "files": 0,
@@ -162,10 +162,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "files": 4,
+        "physical_lines": 705,
+        "bytes": 29007,
+        "megabytes": 0.029007
       }
     }
   },
@@ -6987,6 +6987,28 @@
       "changed_milestones": [
         "owner-ux/first-run-diagnostics"
       ]
+    },
+    {
+      "revision": "2f65c7efe977",
+      "date": "2026-08-25",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
     }
   ],
   "history_contract": {
