@@ -47,23 +47,23 @@
       {
         "language": "Markdown",
         "files": 624,
-        "physical_lines": 59791,
-        "bytes": 2965970,
-        "megabytes": 2.96597
+        "physical_lines": 59853,
+        "bytes": 2969694,
+        "megabytes": 2.969694
       },
       {
         "language": "Python",
-        "files": 98,
-        "physical_lines": 27383,
-        "bytes": 1136536,
-        "megabytes": 1.136536
+        "files": 99,
+        "physical_lines": 27461,
+        "bytes": 1140080,
+        "megabytes": 1.14008
       },
       {
         "language": "PowerShell",
         "files": 49,
-        "physical_lines": 21671,
-        "bytes": 1127000,
-        "megabytes": 1.127
+        "physical_lines": 22213,
+        "bytes": 1157040,
+        "megabytes": 1.15704
       },
       {
         "language": "JSONL",
@@ -130,10 +130,10 @@
       }
     ],
     "source_text": {
-      "files": 2049,
-      "physical_lines": 564709,
-      "bytes": 44422058,
-      "megabytes": 44.422058
+      "files": 2050,
+      "physical_lines": 565391,
+      "bytes": 44459366,
+      "megabytes": 44.459366
     },
     "binary_assets": {
       "files": 35,
@@ -141,19 +141,19 @@
       "megabytes": 14.4705
     },
     "tracked_total": {
-      "files": 2084,
-      "physical_lines": 564709,
-      "bytes": 58892558,
-      "megabytes": 58.892558
+      "files": 2085,
+      "physical_lines": 565391,
+      "bytes": 58929866,
+      "megabytes": 58.929866
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 50,
-        "bytes": 2962,
-        "megabytes": 0.002962
+        "physical_lines": 62,
+        "bytes": 3724,
+        "megabytes": 0.003724
       },
       "binary_assets": {
         "files": 0,
@@ -163,9 +163,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 50,
-        "bytes": 2962,
-        "megabytes": 0.002962
+        "physical_lines": 62,
+        "bytes": 3724,
+        "megabytes": 0.003724
       }
     }
   },
@@ -1106,7 +1106,7 @@
           "implementation_percent": 50.0,
           "verified_percent": 25.0,
           "done_percent": 25.0,
-          "evidence_count": 9,
+          "evidence_count": 10,
           "verified_evidence_count": 5,
           "evidence_kinds": [
             "contract",
@@ -1122,8 +1122,8 @@
             "partial",
             "verified"
           ],
-          "evidence_summary_cs": "Contract a dogfood řídicí rovina včetně P7.1-P7.7 mají deterministické důkazy, ale potvrzené ticket-driven regression closure, skutečný mentor finding/P7.8 repair a produkční Nanity nejsou uzavřené.",
-          "open_gap_cs": "Doplnit skutečnou Jarvis-authored Nanity, end-to-end P7.6/live důkaz, reálný mentor finding s P7.8 opravou a úplnou potvrzenou bug-to-regression closure; ASM zůstává architecture-only a P7.3 používá přesný source-boundary fallback."
+          "evidence_summary_cs": "Contract a dogfood řídicí rovina včetně P7.1-P7.8 mají deterministické důkazy, ale potvrzené ticket-driven regression closure, skutečný mentor finding/live P7.8 repair execution a produkční Nanity nejsou uzavřené.",
+          "open_gap_cs": "Doplnit skutečnou Jarvis-authored Nanity, end-to-end P7.6/live důkaz, reálný mentor finding pro živé P7.8 provedení a úplnou potvrzenou bug-to-regression closure; ASM zůstává architecture-only a P7.3 používá přesný source-boundary fallback."
         },
         {
           "id": "hardware-configuration-matrix",
@@ -6865,6 +6865,30 @@
     },
     {
       "revision": "162274b40e77",
+      "date": "2026-08-24",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "qa-dogfood"
+      ],
+      "changed_milestones": [
+        "qa-dogfood/deterministic-dogfood"
+      ]
+    },
+    {
+      "revision": "6fa4cc7e4156",
       "date": "2026-08-24",
       "metrics": {
         "primary_percent": 32.5,
