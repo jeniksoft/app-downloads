@@ -47,9 +47,9 @@
       {
         "language": "Markdown",
         "files": 632,
-        "physical_lines": 61050,
-        "bytes": 3035659,
-        "megabytes": 3.035659
+        "physical_lines": 61101,
+        "bytes": 3038423,
+        "megabytes": 3.038423
       },
       {
         "language": "Python",
@@ -131,9 +131,9 @@
     ],
     "source_text": {
       "files": 2094,
-      "physical_lines": 576282,
-      "bytes": 44810226,
-      "megabytes": 44.810226
+      "physical_lines": 576333,
+      "bytes": 44812990,
+      "megabytes": 44.81299
     },
     "binary_assets": {
       "files": 35,
@@ -142,18 +142,18 @@
     },
     "tracked_total": {
       "files": 2129,
-      "physical_lines": 576282,
-      "bytes": 59280726,
-      "megabytes": 59.280726
+      "physical_lines": 576333,
+      "bytes": 59283490,
+      "megabytes": 59.28349
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 2,
-        "physical_lines": 376,
-        "bytes": -137841,
-        "megabytes": -0.137841
+        "files": 0,
+        "physical_lines": 51,
+        "bytes": 2764,
+        "megabytes": 0.002764
       },
       "binary_assets": {
         "files": 0,
@@ -162,10 +162,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 2,
-        "physical_lines": 376,
-        "bytes": -137841,
-        "megabytes": -0.137841
+        "files": 0,
+        "physical_lines": 51,
+        "bytes": 2764,
+        "megabytes": 0.002764
       }
     }
   },
@@ -1012,7 +1012,7 @@
           "implementation_percent": 50.0,
           "verified_percent": 25.0,
           "done_percent": 25.0,
-          "evidence_count": 2,
+          "evidence_count": 3,
           "verified_evidence_count": 1,
           "evidence_kinds": [
             "runtime",
@@ -1023,10 +1023,11 @@
           ],
           "evidence_statuses": [
             "open",
+            "partial",
             "verified"
           ],
-          "evidence_summary_cs": "Localization accounting existuje, ale fallback backlog je explicitně otevřený a není důkazem hotové kvality.",
-          "open_gap_cs": "Uzavřít překladový backlog a projít accessibility/DPI acceptance na reálném UI."
+          "evidence_summary_cs": "Localization accounting a P8.8 read-only release gate existují; fallback backlog je explicitně otevřený a gate jej správně odmítá jako release blocker.",
+          "open_gap_cs": "Uzavřít překladový backlog independently reviewed memory a projít accessibility/DPI acceptance na reálném UI."
         },
         {
           "id": "owner-facing-live-qa",
@@ -7085,7 +7086,7 @@
       ]
     },
     {
-      "revision": "a940e91f6ac5",
+      "revision": "54c1f3d34644",
       "date": "2026-08-25",
       "metrics": {
         "primary_percent": 32.5,
@@ -7102,9 +7103,11 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "owner-ux"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "owner-ux/language-accessibility-quality"
+      ]
     }
   ],
   "history_contract": {
