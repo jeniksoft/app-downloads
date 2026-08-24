@@ -150,10 +150,10 @@
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 4,
-        "physical_lines": 697,
-        "bytes": 31773,
-        "megabytes": 0.031773
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       },
       "binary_assets": {
         "files": 0,
@@ -162,10 +162,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 4,
-        "physical_lines": 697,
-        "bytes": 31773,
-        "megabytes": 0.031773
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       }
     }
   },
@@ -958,7 +958,7 @@
           "implementation_percent": 50.0,
           "verified_percent": 25.0,
           "done_percent": 25.0,
-          "evidence_count": 4,
+          "evidence_count": 5,
           "verified_evidence_count": 1,
           "evidence_kinds": [
             "build",
@@ -6965,7 +6965,7 @@
       "changed_milestones": []
     },
     {
-      "revision": "e4fa1ff1a98e",
+      "revision": "1338c2e61c1c",
       "date": "2026-08-24",
       "metrics": {
         "primary_percent": 32.5,
@@ -6982,9 +6982,11 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "owner-ux"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "owner-ux/first-run-diagnostics"
+      ]
     }
   ],
   "history_contract": {
