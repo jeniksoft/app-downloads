@@ -1,7 +1,7 @@
 {
   "schema_version": 4,
   "project_codename": "Jarvis",
-  "generated_at": "2026-08-23",
+  "generated_at": "2026-08-24",
   "measurement": {
     "mode": "milestone_evidence_rollup",
     "primary_metric": "primary_percent",
@@ -4747,7 +4747,7 @@
       "changed_milestones": []
     },
     {
-      "revision": "fb2744dc3306",
+      "revision": "ac6faed1eb13",
       "date": "2026-08-24",
       "metrics": {
         "primary_percent": 31.25,

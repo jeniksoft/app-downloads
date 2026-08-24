@@ -9,7 +9,7 @@ Aktuálně zde není žádný veřejný instalační balíček ke stažení. Dř
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_BEGIN -->
 ## Personal 1.0.0 implementation tracking
 
-**Synchronizovaný snapshot: 2026-08-23**
+**Synchronizovaný snapshot: 2026-08-24**
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
 
@@ -193,7 +193,7 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 | `85e1f042f99c` | 2026-08-24 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `0693f6322cdd` | 2026-08-24 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `a7a685cd0af9` | 2026-08-24 | evidence-only | — |
-| `fb2744dc3306` | 2026-08-24 | evidence-only | — |
+| `ac6faed1eb13` | 2026-08-24 | evidence-only | — |
 
 Úplná machine-readable historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 

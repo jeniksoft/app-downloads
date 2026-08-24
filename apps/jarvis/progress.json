@@ -19,7 +19,7 @@
     "commit_history": "Every tracked revision changes only when configured progress inputs change; public IDs are opaque fingerprints.",
     "limitations": "A commit is visible as evidence history, but source size, a plan, or a contract-only document never increases the primary score without declared milestone evidence. Task Board area estimates are structural inputs, not a scored axis."
   },
-  "updated_at": "2026-08-23",
+  "updated_at": "2026-08-24",
   "overall_percent": 31.25,
   "primary_percent": 31.25,
   "implementation_complete_percent": 43.75,
@@ -5879,7 +5879,7 @@
       "changed_milestones": []
     },
     {
-      "revision": "fb2744dc3306",
+      "revision": "ac6faed1eb13",
       "date": "2026-08-24",
       "metrics": {
         "primary_percent": 31.25,
