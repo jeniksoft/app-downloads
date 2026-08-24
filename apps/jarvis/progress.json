@@ -32,7 +32,7 @@
     "manifest_present": true,
     "milestone_count": 32,
     "verified_milestone_count": 11,
-    "verified_evidence_count": 44,
+    "verified_evidence_count": 45,
     "state_counts": {
       "verified-build": 9,
       "partial": 12,
@@ -833,8 +833,8 @@
           "implementation_percent": 50.0,
           "verified_percent": 25.0,
           "done_percent": 25.0,
-          "evidence_count": 4,
-          "verified_evidence_count": 3,
+          "evidence_count": 5,
+          "verified_evidence_count": 4,
           "evidence_kinds": [
             "contract",
             "release-gate",
@@ -848,8 +848,8 @@
             "open",
             "verified"
           ],
-          "evidence_summary_cs": "Failure/recovery a Secure Ticket kontrakty existují; P6.1 typovaný stavový automat a P6.2 read-only evidence candidate refs mají build/self-test důkaz, ale P6 runtime a P8 QA zůstávají partial.",
-          "open_gap_cs": "Dodat sdílený sanitizer, chráněný draft/store, owner selection/review, immutable manifest, lineage receipt a kompletní ticket UI path."
+          "evidence_summary_cs": "Failure/recovery a Secure Ticket kontrakty existují; P6.1 typovaný stavový automat, P6.2 read-only evidence candidate refs a P6.3 shared sensitive-data boundary mají build/self-test důkaz, ale P6 runtime a P8 QA zůstávají partial.",
+          "open_gap_cs": "Dodat chráněný draft/store, owner selection/review, immutable manifest, lineage receipt a kompletní ticket UI path."
         },
         {
           "id": "language-accessibility-quality",
@@ -6201,7 +6201,7 @@
       ]
     },
     {
-      "revision": "06c5c0a8a19e",
+      "revision": "0f4cbcfd7e0a",
       "date": "2026-08-24",
       "metrics": {
         "primary_percent": 32.5,
@@ -6218,9 +6218,11 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "owner-ux"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "owner-ux/failure-recovery-ticket-ui"
+      ]
     }
   ],
   "history_contract": {
