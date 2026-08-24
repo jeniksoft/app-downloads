@@ -32,7 +32,7 @@
     "manifest_present": true,
     "milestone_count": 32,
     "verified_milestone_count": 11,
-    "verified_evidence_count": 49,
+    "verified_evidence_count": 50,
     "state_counts": {
       "verified-build": 9,
       "partial": 12,
@@ -833,8 +833,8 @@
           "implementation_percent": 50.0,
           "verified_percent": 25.0,
           "done_percent": 25.0,
-          "evidence_count": 9,
-          "verified_evidence_count": 8,
+          "evidence_count": 10,
+          "verified_evidence_count": 9,
           "evidence_kinds": [
             "contract",
             "release-gate",
@@ -848,8 +848,8 @@
             "open",
             "verified"
           ],
-          "evidence_summary_cs": "Failure/recovery a Secure Ticket kontrakty existují; P6.1 typovaný stavový automat, P6.2 read-only evidence candidate refs, P6.3 shared sensitive-data boundary, P6.4 protected local draft store, P6.5 owner evidence selection review, P6.6 immutable prepared manifest digest a P6.7 bounded local export package mají build/self-test důkaz, ale P6 runtime, P6.8/P6.9 a P8 QA zůstávají partial.",
-          "open_gap_cs": "P6.7 local export je ověřený bez sítě; otevřené zůstávají P6.8 untrusted import/reproduction, P6.9 lineage receipt, kompletní ticket UI path, runtime a owner-facing V5 acceptance."
+          "evidence_summary_cs": "Failure/recovery a Secure Ticket kontrakty existují; P6.1 typovaný stavový automat, P6.2 read-only evidence candidate refs, P6.3 shared sensitive-data boundary, P6.4 protected local draft store, P6.5 owner evidence selection review, P6.6 immutable prepared manifest digest, P6.7 bounded local export package a P6.8 read-only untrusted reproduction intake mají build/self-test důkaz, ale P6 runtime, P6.9 a P8 QA zůstávají partial.",
+          "open_gap_cs": "P6.7 local export a P6.8 untrusted import/reproduction jsou ověřené bez sítě; otevřené zůstávají P6.9 lineage receipt, kompletní ticket UI path, runtime a owner-facing V5 acceptance."
         },
         {
           "id": "language-accessibility-quality",
@@ -6343,7 +6343,7 @@
       ]
     },
     {
-      "revision": "4e034a6d8806",
+      "revision": "68dd4dbe04e9",
       "date": "2026-08-24",
       "metrics": {
         "primary_percent": 32.5,
@@ -6360,9 +6360,11 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "owner-ux"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "owner-ux/failure-recovery-ticket-ui"
+      ]
     }
   ],
   "history_contract": {
