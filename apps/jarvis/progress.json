@@ -32,7 +32,7 @@
     "manifest_present": true,
     "milestone_count": 32,
     "verified_milestone_count": 11,
-    "verified_evidence_count": 37,
+    "verified_evidence_count": 39,
     "state_counts": {
       "verified-build": 9,
       "partial": 11,
@@ -246,21 +246,23 @@
           "implementation_percent": 50.0,
           "verified_percent": 25.0,
           "done_percent": 25.0,
-          "evidence_count": 2,
-          "verified_evidence_count": 1,
+          "evidence_count": 3,
+          "verified_evidence_count": 2,
           "evidence_kinds": [
             "contract",
-            "runtime"
+            "runtime",
+            "self-test"
           ],
           "verified_evidence_kinds": [
-            "contract"
+            "contract",
+            "self-test"
           ],
           "evidence_statuses": [
             "open",
             "verified"
           ],
-          "evidence_summary_cs": "Fail-closed hranice jsou součástí kontraktů a policy runtime, ale jejich úplná Personal acceptance není uzavřená.",
-          "open_gap_cs": "Chybí jednotný live receipt přes všechny privilegované a mutující replay cesty."
+          "evidence_summary_cs": "Fail-closed hranice a typed receipt continuity jsou deterministicky ověřené v existujícím policy/WorkerJournal toku, ale jejich úplná Personal acceptance není uzavřená.",
+          "open_gap_cs": "Zbývá live a skutečný workflow důkaz přes všechny privilegované a mutující replay cesty."
         },
         {
           "id": "crash-restart-dogfood",
@@ -709,8 +711,8 @@
           "implementation_percent": 50.0,
           "verified_percent": 25.0,
           "done_percent": 25.0,
-          "evidence_count": 4,
-          "verified_evidence_count": 3,
+          "evidence_count": 5,
+          "verified_evidence_count": 4,
           "evidence_kinds": [
             "contract",
             "runtime",
@@ -724,8 +726,8 @@
             "open",
             "verified"
           ],
-          "evidence_summary_cs": "Auditní a fail-closed principy jsou přítomné v kontraktech, ale cross-runtime proof je částečný.",
-          "open_gap_cs": "Dodat jednotný audit/resume receipt a negative-path test pro všechny executor adapters."
+          "evidence_summary_cs": "Auditní a fail-closed principy i deterministický policy-denied receipt jsou ověřené napříč přímými executor adaptery, ale cross-runtime proof je stále částečný.",
+          "open_gap_cs": "Zbývá live a skutečný workflow důkaz pro generické, privilegované a mutující adaptery."
         },
         {
           "id": "mcp-plugin-app-results",
@@ -6070,7 +6072,7 @@
       ]
     },
     {
-      "revision": "9eee831fe8cb",
+      "revision": "942f44d0d066",
       "date": "2026-08-24",
       "metrics": {
         "primary_percent": 31.25,
@@ -6087,9 +6089,13 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "worker-recovery",
+        "executor-runtime"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "worker-recovery/fail-closed-replay-review",
+        "executor-runtime/policy-audit-fail-closed"
+      ]
     }
   ],
   "history_contract": {
