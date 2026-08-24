@@ -193,7 +193,7 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 | `0693f6322cdd` | 2026-08-24 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `a7a685cd0af9` | 2026-08-24 | evidence-only | — |
 | `ac6faed1eb13` | 2026-08-24 | evidence-only | — |
-| `127fb45d7d72` | 2026-08-24 | evidence-only | — |
+| `f1cabc366a70` | 2026-08-24 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 
 Úplná machine-readable historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
