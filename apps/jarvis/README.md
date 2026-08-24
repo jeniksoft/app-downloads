@@ -176,7 +176,6 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 
 | Veřejná revize | Datum | Změněné kapitoly | Milestone evidence events |
 | --- | --- | --- | --- |
-| `c75003eedbf8` | 2026-08-24 | worker-recovery, executor-runtime | 2: worker-recovery/queue-journal-persistence, executor-runtime/policy-audit-fail-closed |
 | `310c131cb2df` | 2026-08-24 | worker-recovery, executor-runtime | 2: worker-recovery/queue-journal-persistence, executor-runtime/policy-audit-fail-closed |
 | `f81c9bbb9dea` | 2026-08-24 | worker-recovery, model-routing | 2: worker-recovery/queue-journal-persistence, model-routing/typed-routing-fallback |
 | `85e1f042f99c` | 2026-08-24 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
@@ -194,6 +193,7 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 | `3511ea478654` | 2026-08-24 | executor-runtime | 1: executor-runtime/mcp-plugin-app-results |
 | `7117eb235acc` | 2026-08-24 | executor-runtime | 1: executor-runtime/mcp-plugin-app-results |
 | `e4062106701f` | 2026-08-24 | executor-runtime, owner-ux | 2: executor-runtime/mcp-plugin-app-results, owner-ux/failure-recovery-ticket-ui |
+| `3dfe39d67f84` | 2026-08-24 | evidence-only | — |
 
 Úplná machine-readable historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
