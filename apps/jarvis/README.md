@@ -38,11 +38,11 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 906 | 307 565 | 20.83 |
-| JSON | 220 | 143 996 | 11.21 |
-| Markdown | 624 | 59 853 | 2.97 |
-| Python | 99 | 27 461 | 1.14 |
-| PowerShell | 49 | 22 213 | 1.16 |
+| C/C++ | 912 | 310 393 | 20.96 |
+| JSON | 225 | 144 486 | 11.23 |
+| Markdown | 626 | 60 394 | 3.00 |
+| Python | 108 | 28 294 | 1.17 |
+| PowerShell | 49 | 24 123 | 1.26 |
 | JSONL | 14 | 2 499 | 6.91 |
 | Plain text | 106 | 1 652 | 0.18 |
 | INI | 5 | 66 | 0.00 |
@@ -52,9 +52,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
 | Other text | 7 | 7 | 0.00 |
-| **Text/source celkem** | **2 050** | **565 391** | **44.46** |
+| **Text/source celkem** | **2 072** | **571 993** | **44.78** |
 | Binární assety (mimo řádky) | 35 | — | 14.47 |
-| **Trackovaný strom celkem** | **2 085** | **565 391** | **58.93** |
+| **Trackovaný strom celkem** | **2 107** | **571 993** | **59.25** |
 
 ### Přírůstek od předchozí revize
 
@@ -62,9 +62,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +0 | +62 | +0.00 |
+| Text/source celkem | +0 | +0 | +0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +0 | +62 | +0.00 |
+| Trackovaný strom celkem | +0 | +0 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -128,12 +128,12 @@ flowchart LR
 | Executor | Policy, audit, resume a fail-closed executor | `partial` | Auditní a fail-closed principy i deterministický policy-denied receipt jsou ověřené napříč přímými executor adaptery, ale cross-runtime proof je stále částečný.; mezera: Zbývá live a skutečný workflow důkaz pro generické, privilegované a mutující adaptery.; typy: contract, runtime, self-test |
 | Executor | MCP/plugin/app result lifecycle | `partial` | Existující read-only app connector nyní po skutečném PolicyExecutor runtime předá typed receipt do WorkerJournal před dispatch-done. P4.12 klasifikuje MCP/plugin/app entrypoint přes typovaný no-side-effect obal a P4.14 přidává jednu manifestem vázanou vratnou mutační extension třídu s explicitním rollbackem a Unknown gate; deterministické self-testy, source guardy a navazující lifecycle/receipt guardy prošly.; mezera: Dodat generic typed fixtures pro success, partial, failure, timeout, retry a owner review; skutečný MCP/plugin stdio/process runtime, další mutační extension třídy a owner-approved live acceptance nejsou uzavřené.; typy: documentation, self-test |
 | Executor | Live external integration a resume acceptance | `open` | Live MCP/plugin/app acceptance není doložena jako společný current receipt.; mezera: Dodat owner-approved, identity-bearing, reproducible live acceptance pack.; typy: release-gate |
-| UX/support | First-run, setup a diagnostics | `partial` | Diagnostické a setup směry existují, ale P8 owner-facing QA je partial.; mezera: Dodat čerstvý owner walkthrough v podporovaných DPI/multi-monitor konfiguracích.; typy: build, runtime |
+| UX/support | First-run, setup a diagnostics | `partial` | Provider-status vrstva má provider-free typed first-run readiness a chat/project composer má nyní společnou baseline pro trvalý chat, projekt a přílohy zprávy; P8 owner-facing QA je stále partial.; mezera: Dodat čerstvý owner walkthrough v podporovaných DPI/multi-monitor konfiguracích, V5 live setup acceptance a skutečné tray recovery pro chat/project/attachments.; typy: build, runtime, self-test |
 | UX/support | Failure/recovery a ticket UI | `partial` | Failure/recovery a Secure Ticket kontrakty existují; P6.1 typovaný stavový automat, P6.2 read-only evidence candidate refs, P6.3 shared sensitive-data boundary, P6.4 protected local draft store, P6.5 owner evidence selection review, P6.6 immutable prepared manifest digest, P6.7 bounded local export package, P6.8 read-only untrusted reproduction intake a P6.9 confirmed-bug regression lineage mají build/self-test důkaz, ale P6 runtime a P8 QA zůstávají partial.; mezera: P6.7 local export, P6.8 untrusted import/reproduction a P6.9 regression lineage jsou ověřené bez sítě; otevřené zůstávají kompletní ticket UI path, P6 runtime a owner-facing V5 acceptance.; typy: contract, release-gate, self-test |
 | UX/support | Jazyk, lokalizace a accessibility quality | `partial` | Localization accounting existuje, ale fallback backlog je explicitně otevřený a není důkazem hotové kvality.; mezera: Uzavřít překladový backlog a projít accessibility/DPI acceptance na reálném UI.; typy: runtime, self-test |
 | UX/support | Owner-facing live QA | `open` | Žádný aktuální univerzální live owner acceptance receipt není v manifestu.; mezera: Dodat vizuální a interakční QA pack včetně accessibility, DPI a recovery scénářů.; typy: roadmap |
-| QA/dogfood | Contract/self-test gates | `verified-build` | Current capability matrix uvádí warning-free build a více self-test gates.; mezera: Self-test nenahrazuje dlouhý dogfood ani reálnou konfiguraci ownera.; typy: build, runtime |
-| QA/dogfood | Deterministic dogfood a regression fixtures | `partial` | Contract a dogfood řídicí rovina včetně P7.1-P7.8 mají deterministické důkazy, ale potvrzené ticket-driven regression closure, skutečný mentor finding/live P7.8 repair execution a produkční Nanity nejsou uzavřené.; mezera: Doplnit skutečnou Jarvis-authored Nanity, end-to-end P7.6/live důkaz, reálný mentor finding pro živé P7.8 provedení a úplnou potvrzenou bug-to-regression closure; ASM zůstává architecture-only a P7.3 používá přesný source-boundary fallback.; typy: contract, release-gate, self-test |
+| QA/dogfood | Contract/self-test gates | `verified-build` | Current capability matrix uvádí warning-free build a více self-test gates.; mezera: Self-test nenahrazuje dlouhý dogfood ani reálnou konfiguraci ownera.; typy: build, runtime, self-test |
+| QA/dogfood | Deterministic dogfood a regression fixtures | `partial` | Contract a dogfood řídicí rovina včetně P7.1-P7.9 mají deterministické důkazy, ale potvrzené ticket-driven regression closure, skutečná production Nanity, mentor finding/live repair execution a plný sémantický ASM graf nejsou uzavřené.; mezera: Doplnit skutečnou Jarvis-authored Nanity, end-to-end P7.6/live důkaz, reálný mentor finding pro živé P7.8 provedení a úplnou bug-to-regression closure; P7.9 je pouze bounded source-backed refresh a plná semantic discovery zůstává otevřená.; typy: contract, release-gate, self-test |
 | QA/dogfood | Reálný hardware/configuration matrix | `open` | Owner-approved release source označuje hardware/configuration matrix jako early.; mezera: Dodat opakovatelná měření na skutečných konfiguracích s identity a environment receipts.; typy: release-gate |
 | QA/dogfood | Release acceptance pack a bezpečnostní audit | `open` | Release readiness je samostatně 50 %, ale neprokazuje dokončený safety/release acceptance pack.; mezera: Dodat current release candidate, signed artifacts, clean install/upgrade/rollback a safety audit receipts.; typy: release-gate |
 
@@ -221,7 +221,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `68dd4dbe04e9` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
 | `686bcbee4d60` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
 | `a89906fb2310` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
 | `723775300145` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -239,6 +238,7 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `2cfb2e984d3a` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
 | `162274b40e77` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
 | `6fa4cc7e4156` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
+| `a7b7b7c5f31f` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux, qa-dogfood | 3: owner-ux/first-run-diagnostics, qa-dogfood/contract-self-test-gates, qa-dogfood/deterministic-dogfood |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 

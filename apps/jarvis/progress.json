@@ -32,38 +32,38 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 906,
-        "physical_lines": 307565,
-        "bytes": 20830067,
-        "megabytes": 20.830067
+        "files": 912,
+        "physical_lines": 310393,
+        "bytes": 20956603,
+        "megabytes": 20.956603
       },
       {
         "language": "JSON",
-        "files": 220,
-        "physical_lines": 143996,
-        "bytes": 11211368,
-        "megabytes": 11.211368
+        "files": 225,
+        "physical_lines": 144486,
+        "bytes": 11228937,
+        "megabytes": 11.228937
       },
       {
         "language": "Markdown",
-        "files": 624,
-        "physical_lines": 59853,
-        "bytes": 2969694,
-        "megabytes": 2.969694
+        "files": 626,
+        "physical_lines": 60394,
+        "bytes": 3001469,
+        "megabytes": 3.001469
       },
       {
         "language": "Python",
-        "files": 99,
-        "physical_lines": 27461,
-        "bytes": 1140080,
-        "megabytes": 1.14008
+        "files": 108,
+        "physical_lines": 28294,
+        "bytes": 1173852,
+        "megabytes": 1.173852
       },
       {
         "language": "PowerShell",
         "files": 49,
-        "physical_lines": 22213,
-        "bytes": 1157040,
-        "megabytes": 1.15704
+        "physical_lines": 24123,
+        "bytes": 1264949,
+        "megabytes": 1.264949
       },
       {
         "language": "JSONL",
@@ -130,10 +130,10 @@
       }
     ],
     "source_text": {
-      "files": 2050,
-      "physical_lines": 565391,
-      "bytes": 44459366,
-      "megabytes": 44.459366
+      "files": 2072,
+      "physical_lines": 571993,
+      "bytes": 44776927,
+      "megabytes": 44.776927
     },
     "binary_assets": {
       "files": 35,
@@ -141,19 +141,19 @@
       "megabytes": 14.4705
     },
     "tracked_total": {
-      "files": 2085,
-      "physical_lines": 565391,
-      "bytes": 58929866,
-      "megabytes": 58.929866
+      "files": 2107,
+      "physical_lines": 571993,
+      "bytes": 59247427,
+      "megabytes": 59.247427
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 62,
-        "bytes": 3724,
-        "megabytes": 0.003724
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       },
       "binary_assets": {
         "files": 0,
@@ -163,9 +163,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 62,
-        "bytes": 3724,
-        "megabytes": 0.003724
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       }
     }
   },
@@ -182,7 +182,7 @@
     "manifest_present": true,
     "milestone_count": 32,
     "verified_milestone_count": 11,
-    "verified_evidence_count": 55,
+    "verified_evidence_count": 59,
     "state_counts": {
       "verified-build": 9,
       "partial": 12,
@@ -958,21 +958,23 @@
           "implementation_percent": 50.0,
           "verified_percent": 25.0,
           "done_percent": 25.0,
-          "evidence_count": 2,
+          "evidence_count": 4,
           "verified_evidence_count": 1,
           "evidence_kinds": [
             "build",
-            "runtime"
+            "runtime",
+            "self-test"
           ],
           "verified_evidence_kinds": [
             "build"
           ],
           "evidence_statuses": [
             "open",
+            "partial",
             "verified"
           ],
-          "evidence_summary_cs": "Diagnostické a setup směry existují, ale P8 owner-facing QA je partial.",
-          "open_gap_cs": "Dodat čerstvý owner walkthrough v podporovaných DPI/multi-monitor konfiguracích."
+          "evidence_summary_cs": "Provider-status vrstva má provider-free typed first-run readiness a chat/project composer má nyní společnou baseline pro trvalý chat, projekt a přílohy zprávy; P8 owner-facing QA je stále partial.",
+          "open_gap_cs": "Dodat čerstvý owner walkthrough v podporovaných DPI/multi-monitor konfiguracích, V5 live setup acceptance a skutečné tray recovery pro chat/project/attachments."
         },
         {
           "id": "failure-recovery-ticket-ui",
@@ -1081,14 +1083,16 @@
           "implementation_percent": 100.0,
           "verified_percent": 75.0,
           "done_percent": 75.0,
-          "evidence_count": 2,
-          "verified_evidence_count": 1,
+          "evidence_count": 6,
+          "verified_evidence_count": 5,
           "evidence_kinds": [
             "build",
-            "runtime"
+            "runtime",
+            "self-test"
           ],
           "verified_evidence_kinds": [
-            "build"
+            "build",
+            "self-test"
           ],
           "evidence_statuses": [
             "open",
@@ -1106,7 +1110,7 @@
           "implementation_percent": 50.0,
           "verified_percent": 25.0,
           "done_percent": 25.0,
-          "evidence_count": 10,
+          "evidence_count": 13,
           "verified_evidence_count": 5,
           "evidence_kinds": [
             "contract",
@@ -1122,8 +1126,8 @@
             "partial",
             "verified"
           ],
-          "evidence_summary_cs": "Contract a dogfood řídicí rovina včetně P7.1-P7.8 mají deterministické důkazy, ale potvrzené ticket-driven regression closure, skutečný mentor finding/live P7.8 repair execution a produkční Nanity nejsou uzavřené.",
-          "open_gap_cs": "Doplnit skutečnou Jarvis-authored Nanity, end-to-end P7.6/live důkaz, reálný mentor finding pro živé P7.8 provedení a úplnou potvrzenou bug-to-regression closure; ASM zůstává architecture-only a P7.3 používá přesný source-boundary fallback."
+          "evidence_summary_cs": "Contract a dogfood řídicí rovina včetně P7.1-P7.9 mají deterministické důkazy, ale potvrzené ticket-driven regression closure, skutečná production Nanity, mentor finding/live repair execution a plný sémantický ASM graf nejsou uzavřené.",
+          "open_gap_cs": "Doplnit skutečnou Jarvis-authored Nanity, end-to-end P7.6/live důkaz, reálný mentor finding pro živé P7.8 provedení a úplnou bug-to-regression closure; P7.9 je pouze bounded source-backed refresh a plná semantic discovery zůstává otevřená."
         },
         {
           "id": "hardware-configuration-matrix",
@@ -6908,6 +6912,33 @@
         "qa-dogfood"
       ],
       "changed_milestones": [
+        "qa-dogfood/deterministic-dogfood"
+      ]
+    },
+    {
+      "revision": "a7b7b7c5f31f",
+      "date": "2026-08-24",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "owner-ux",
+        "qa-dogfood"
+      ],
+      "changed_milestones": [
+        "owner-ux/first-run-diagnostics",
+        "qa-dogfood/contract-self-test-gates",
         "qa-dogfood/deterministic-dogfood"
       ]
     }
