@@ -95,7 +95,7 @@ flowchart LR
 | UX/support | Jazyk, lokalizace a accessibility quality | `partial` | Localization accounting existuje, ale fallback backlog je explicitně otevřený a není důkazem hotové kvality.; mezera: Uzavřít překladový backlog a projít accessibility/DPI acceptance na reálném UI.; typy: runtime, self-test |
 | UX/support | Owner-facing live QA | `open` | Žádný aktuální univerzální live owner acceptance receipt není v manifestu.; mezera: Dodat vizuální a interakční QA pack včetně accessibility, DPI a recovery scénářů.; typy: roadmap |
 | QA/dogfood | Contract/self-test gates | `verified-build` | Current capability matrix uvádí warning-free build a více self-test gates.; mezera: Self-test nenahrazuje dlouhý dogfood ani reálnou konfiguraci ownera.; typy: build, runtime |
-| QA/dogfood | Deterministic dogfood a regression fixtures | `partial` | Contract and dogfood scaffolding exist, ale potvrzené ticket-driven regression closure není úplné.; mezera: Navázat potvrzené chyby na immutable acceptance pack a regression fixture.; typy: contract, release-gate, self-test |
+| QA/dogfood | Deterministic dogfood a regression fixtures | `partial` | Contract and dogfood scaffolding exist, ale potvrzené ticket-driven regression closure není úplné.; mezera: Doplnit P7.3 current ASM/exact source boundary, P7.4 aktivní goal selection a úplnou potvrzenou bug-to-regression closure.; typy: contract, release-gate, self-test |
 | QA/dogfood | Reálný hardware/configuration matrix | `open` | Owner-approved release source označuje hardware/configuration matrix jako early.; mezera: Dodat opakovatelná měření na skutečných konfiguracích s identity a environment receipts.; typy: release-gate |
 | QA/dogfood | Release acceptance pack a bezpečnostní audit | `open` | Release readiness je samostatně 50 %, ale neprokazuje dokončený safety/release acceptance pack.; mezera: Dodat current release candidate, signed artifacts, clean install/upgrade/rollback a safety audit receipts.; typy: release-gate |
 
@@ -183,7 +183,6 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 
 | Veřejná revize | Datum | Změněné kapitoly | Milestone evidence events |
 | --- | --- | --- | --- |
-| `c9935a031992` | 2026-08-24 | evidence-only | — |
 | `5edf2d872f62` | 2026-08-24 | model-routing | 2: model-routing/typed-routing-fallback, model-routing/live-provider-reliability |
 | `e09adafe0c1d` | 2026-08-24 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `942f44d0d066` | 2026-08-24 | worker-recovery, executor-runtime | 2: worker-recovery/fail-closed-replay-review, executor-runtime/policy-audit-fail-closed |
@@ -201,6 +200,7 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 | `686bcbee4d60` | 2026-08-24 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
 | `a89906fb2310` | 2026-08-24 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
 | `723775300145` | 2026-08-24 | evidence-only | — |
+| `80a560f0d504` | 2026-08-24 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
 
 Úplná machine-readable historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 

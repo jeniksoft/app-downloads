@@ -32,7 +32,7 @@
     "manifest_present": true,
     "milestone_count": 32,
     "verified_milestone_count": 11,
-    "verified_evidence_count": 52,
+    "verified_evidence_count": 53,
     "state_counts": {
       "verified-build": 9,
       "partial": 12,
@@ -956,8 +956,8 @@
           "implementation_percent": 50.0,
           "verified_percent": 25.0,
           "done_percent": 25.0,
-          "evidence_count": 3,
-          "verified_evidence_count": 2,
+          "evidence_count": 4,
+          "verified_evidence_count": 3,
           "evidence_kinds": [
             "contract",
             "release-gate",
@@ -972,7 +972,7 @@
             "verified"
           ],
           "evidence_summary_cs": "Contract and dogfood scaffolding exist, ale potvrzené ticket-driven regression closure není úplné.",
-          "open_gap_cs": "Navázat potvrzené chyby na immutable acceptance pack a regression fixture."
+          "open_gap_cs": "Doplnit P7.3 current ASM/exact source boundary, P7.4 aktivní goal selection a úplnou potvrzenou bug-to-regression closure."
         },
         {
           "id": "hardware-configuration-matrix",
@@ -6437,6 +6437,30 @@
         "evidence-only"
       ],
       "changed_milestones": []
+    },
+    {
+      "revision": "80a560f0d504",
+      "date": "2026-08-24",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "qa-dogfood"
+      ],
+      "changed_milestones": [
+        "qa-dogfood/deterministic-dogfood"
+      ]
     }
   ],
   "history_contract": {
