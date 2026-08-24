@@ -32,7 +32,7 @@
     "manifest_present": true,
     "milestone_count": 32,
     "verified_milestone_count": 11,
-    "verified_evidence_count": 54,
+    "verified_evidence_count": 55,
     "state_counts": {
       "verified-build": 9,
       "partial": 12,
@@ -956,8 +956,8 @@
           "implementation_percent": 50.0,
           "verified_percent": 25.0,
           "done_percent": 25.0,
-          "evidence_count": 5,
-          "verified_evidence_count": 4,
+          "evidence_count": 6,
+          "verified_evidence_count": 5,
           "evidence_kinds": [
             "contract",
             "release-gate",
@@ -971,8 +971,8 @@
             "open",
             "verified"
           ],
-          "evidence_summary_cs": "Contract and dogfood scaffolding exist, ale potvrzené ticket-driven regression closure není úplné.",
-          "open_gap_cs": "Doplnit P7.4 aktivní goal selection a úplnou potvrzenou bug-to-regression closure; skutečný ASM zůstává architecture-only a P7.3 používá přesný source-boundary fallback."
+          "evidence_summary_cs": "Contract a dogfood řídicí rovina včetně P7.1-P7.4 existují a mají deterministické důkazy, ale potvrzené ticket-driven regression closure není úplné.",
+          "open_gap_cs": "Doplnit úplnou potvrzenou bug-to-regression closure; skutečný ASM zůstává architecture-only a P7.3 používá přesný source-boundary fallback."
         },
         {
           "id": "hardware-configuration-matrix",
@@ -6464,6 +6464,30 @@
     },
     {
       "revision": "65deab7abb2c",
+      "date": "2026-08-24",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "qa-dogfood"
+      ],
+      "changed_milestones": [
+        "qa-dogfood/deterministic-dogfood"
+      ]
+    },
+    {
+      "revision": "500b2da59519",
       "date": "2026-08-24",
       "metrics": {
         "primary_percent": 32.5,
