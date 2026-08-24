@@ -193,7 +193,7 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 | `942f44d0d066` | 2026-08-24 | worker-recovery, executor-runtime | 2: worker-recovery/fail-closed-replay-review, executor-runtime/policy-audit-fail-closed |
 | `3511ea478654` | 2026-08-24 | executor-runtime | 1: executor-runtime/mcp-plugin-app-results |
 | `7117eb235acc` | 2026-08-24 | executor-runtime | 1: executor-runtime/mcp-plugin-app-results |
-| `3d2a38797e48` | 2026-08-24 | executor-runtime, owner-ux | 2: executor-runtime/mcp-plugin-app-results, owner-ux/failure-recovery-ticket-ui |
+| `e4062106701f` | 2026-08-24 | executor-runtime, owner-ux | 2: executor-runtime/mcp-plugin-app-results, owner-ux/failure-recovery-ticket-ui |
 
 Úplná machine-readable historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
