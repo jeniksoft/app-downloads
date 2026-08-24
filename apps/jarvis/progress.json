@@ -32,7 +32,7 @@
     "manifest_present": true,
     "milestone_count": 32,
     "verified_milestone_count": 11,
-    "verified_evidence_count": 46,
+    "verified_evidence_count": 47,
     "state_counts": {
       "verified-build": 9,
       "partial": 12,
@@ -833,8 +833,8 @@
           "implementation_percent": 50.0,
           "verified_percent": 25.0,
           "done_percent": 25.0,
-          "evidence_count": 6,
-          "verified_evidence_count": 5,
+          "evidence_count": 7,
+          "verified_evidence_count": 6,
           "evidence_kinds": [
             "contract",
             "release-gate",
@@ -848,8 +848,8 @@
             "open",
             "verified"
           ],
-          "evidence_summary_cs": "Failure/recovery a Secure Ticket kontrakty existují; P6.1 typovaný stavový automat, P6.2 read-only evidence candidate refs, P6.3 shared sensitive-data boundary a P6.4 protected local draft store mají build/self-test důkaz, ale owner review, P6 runtime a P8 QA zůstávají partial.",
-          "open_gap_cs": "Dodat owner evidence selection/review, immutable manifest, lineage receipt a kompletní ticket UI path."
+          "evidence_summary_cs": "Failure/recovery a Secure Ticket kontrakty existují; P6.1 typovaný stavový automat, P6.2 read-only evidence candidate refs, P6.3 shared sensitive-data boundary, P6.4 protected local draft store a P6.5 owner evidence selection review mají build/self-test důkaz, ale immutable manifest, P6 runtime a P8 QA zůstávají partial.",
+          "open_gap_cs": "Dodat immutable prepared manifest, lineage receipt a kompletní ticket UI path; owner-facing V5 acceptance zůstává otevřená."
         },
         {
           "id": "language-accessibility-quality",
@@ -6249,7 +6249,7 @@
       ]
     },
     {
-      "revision": "4ea6225608f6",
+      "revision": "4229af949195",
       "date": "2026-08-24",
       "metrics": {
         "primary_percent": 32.5,
@@ -6266,9 +6266,11 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "owner-ux"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "owner-ux/failure-recovery-ticket-ui"
+      ]
     }
   ],
   "history_contract": {
