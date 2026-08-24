@@ -1,5 +1,5 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "project_codename": "Jarvis",
   "generated_at": "2026-08-24",
   "measurement": {
@@ -14,7 +14,7 @@
       "release_readiness": "optional roadmap-weighted release gate metric"
     },
     "commit_history": "Every tracked revision changes only when configured progress inputs change; public IDs are opaque fingerprints.",
-    "limitations": "A commit is visible as evidence history, but source size, a plan, or a contract-only document never increases the primary score without declared milestone evidence. Task Board area estimates are structural inputs, not a scored axis."
+    "limitations": "A commit is visible as evidence history, but source size, source lines, a plan, or a contract-only document never increases the primary score without declared milestone evidence. Task Board area estimates are structural inputs, not a scored axis."
   },
   "entries": [
     {
@@ -5369,6 +5369,28 @@
     },
     {
       "revision": "3d6a7d04bae6",
+      "date": "2026-08-24",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "f13f8a5162dd",
       "date": "2026-08-24",
       "metrics": {
         "primary_percent": 32.5,

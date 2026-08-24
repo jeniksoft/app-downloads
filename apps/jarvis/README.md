@@ -30,6 +30,32 @@ Nejde o instalační balíček ani o prohlášení, že je produkt hotový; rele
 
 Čísla jsou záměrně kreslená přímo na sloupcích, bodech, uzlech a milestone tiles. Tabulky níže drží jen stav, kontext a důkazní mezeru.
 
+### Zdrojový inventář Jarvise
+
+Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnují i prázdné a komentářové řádky. Velikost je uvedená v desítkových MB (1 MB = 1 000 000 bajtů).
+
+| Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
+| --- | ---: | ---: | ---: |
+| C/C++ | 906 | 307 565 | 20.83 |
+| JSON | 220 | 143 996 | 11.21 |
+| Markdown | 624 | 59 640 | 2.96 |
+| Python | 95 | 27 173 | 1.13 |
+| PowerShell | 49 | 20 325 | 1.05 |
+| JSONL | 14 | 2 499 | 6.91 |
+| Plain text | 106 | 1 652 | 0.18 |
+| INI | 5 | 66 | 0.00 |
+| CMake | 1 | 20 | 0.00 |
+| Shell | 1 | 17 | 0.00 |
+| YAML | 3 | 16 | 0.00 |
+| Encoded text | 13 | 13 | 0.06 |
+| Nanity pseudocode | 2 | 13 | 0.00 |
+| Other text | 7 | 7 | 0.00 |
+| **Text/source celkem** | **2 046** | **563 002** | **44.33** |
+| Binární assety (mimo řádky) | 35 | — | 14.47 |
+| **Trackovaný strom celkem** | **2 081** | **563 002** | **58.80** |
+
+Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
+
 ### Architektonické kapitoly
 
 | Architektonická kapitola | Stav | Scope |
@@ -183,7 +209,6 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 
 | Veřejná revize | Datum | Změněné kapitoly | Milestone evidence events |
 | --- | --- | --- | --- |
-| `3511ea478654` | 2026-08-24 | executor-runtime | 1: executor-runtime/mcp-plugin-app-results |
 | `7117eb235acc` | 2026-08-24 | executor-runtime | 1: executor-runtime/mcp-plugin-app-results |
 | `e4062106701f` | 2026-08-24 | executor-runtime, owner-ux | 2: executor-runtime/mcp-plugin-app-results, owner-ux/failure-recovery-ticket-ui |
 | `8d4845a91956` | 2026-08-24 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
@@ -201,6 +226,7 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 | `65deab7abb2c` | 2026-08-24 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
 | `500b2da59519` | 2026-08-24 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
 | `3d6a7d04bae6` | 2026-08-24 | evidence-only | — |
+| `f13f8a5162dd` | 2026-08-24 | evidence-only | — |
 
 Úplná machine-readable historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
@@ -226,7 +252,7 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 - `done`: vážené minimum na každém milníku, potom vážený roll-up kapitol a jejich evidence cap.
 - `Task Board`: slouží k mapování kapitol, vah a synchronizaci odvozené evidence; není samostatnou skórovanou osou.
 - Relevantní revize vzniká při změně nakonfigurovaných vstupů měření; commit bez změny evidence zůstává jako `evidence-only`.
-- Plánovaný stav, historická dokumentace, source-size ani samotný commit nemohou zvýšit primary bez evidence manifestu.
+- Plánovaný stav, historická dokumentace, source-size, počet řádků ani samotný commit nemohou zvýšit primary bez evidence manifestu; source inventory je pouze informativní.
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_END -->
 
 ## Co se připravuje
