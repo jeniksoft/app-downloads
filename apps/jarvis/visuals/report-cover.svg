@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="svg-title svg-desc" viewBox="0 0 1440 560" width="1440" height="560"><title id="svg-title">Jarvis Personal 1.0.0 evidence-bound public report cover</title><desc id="svg-desc">A graphical cover explaining that the public Jarvis Personal 1.0.0 page is an evidence-bound implementation report about purpose, sources, proof and open gaps, not an installer or a finished-product claim.</desc><style>
+:root {
+  --background: #ffffff;
+  --foreground: #1f2328;
+  --muted: #656d76;
+  --border: #d0d7de;
+  --grid: #e6ebf1;
+  --track: #f0f3f6;
+  --series-1: #0969da;
+  --series-2: #8250df;
+  --series-3: #1a7f37;
+  --series-4: #bc4c00;
+  --series-5: #cf222e;
+  --series-6: #6e7781;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0d1117;
+    --foreground: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --grid: #21262d;
+    --track: #161b22;
+    --series-1: #58a6ff;
+    --series-2: #d2a8ff;
+    --series-3: #56d364;
+    --series-4: #ffa657;
+    --series-5: #ff7b72;
+    --series-6: #8b949e;
+  }
+}
+svg { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.background { fill: var(--background); }
+.title { fill: var(--foreground); font-size: 26px; font-weight: 500; }
+.subtitle { fill: var(--muted); font-size: 15px; }
+.label { fill: var(--foreground); font-size: 15px; }
+.value { fill: var(--foreground); font-size: 16px; font-weight: 500; }
+.small { fill: var(--muted); font-size: 12px; }
+.axis-title { fill: var(--muted); font-size: 13px; }
+.axis { stroke: var(--border); stroke-width: 1; }
+.grid { stroke: var(--grid); stroke-width: 1; }
+.track { fill: var(--track); }
+.series-1 { fill: var(--series-1); stroke: var(--series-1); }
+.series-2 { fill: var(--series-2); stroke: var(--series-2); }
+.series-3 { fill: var(--series-3); stroke: var(--series-3); }
+.series-4 { fill: var(--series-4); stroke: var(--series-4); }
+.series-5 { fill: var(--series-5); stroke: var(--series-5); }
+.series-6 { fill: var(--series-6); stroke: var(--series-6); }
+.line-1 { fill: none; stroke: var(--series-1); stroke-width: 3; }
+.line-2 { fill: none; stroke: var(--series-2); stroke-width: 3; }
+.line-3 { fill: none; stroke: var(--series-3); stroke-width: 3; }
+.line-4 { fill: none; stroke: var(--series-4); stroke-width: 3; }
+.node { fill: var(--background); stroke: var(--border); stroke-width: 1.5; }
+.node-accent { fill: var(--series-1); opacity: .18; }
+.state-verified-runtime { fill: var(--series-3); }
+.state-verified-build { fill: var(--series-1); }
+.state-verified-contract { fill: var(--series-2); }
+.state-in-progress { fill: var(--series-4); }
+.state-implemented-unverified { fill: var(--series-4); }
+.state-partial { fill: var(--series-4); }
+.state-contract-only { fill: var(--series-5); }
+.state-research-only, .state-open { fill: var(--series-6); }
+.state-label { fill: var(--foreground); font-size: 13px; font-weight: 500; }
+.tile { stroke: var(--border); stroke-width: 1; }
+.status-stripe { opacity: .95; }
+.tile-stripe { opacity: .95; }
+.progress-track { fill: var(--track); stroke: var(--border); stroke-width: .5; }
+.progress-fill { fill: var(--series-1); opacity: .9; }
+.change { fill: var(--foreground); font-size: 12px; }
+.cover-panel { fill: #0b1220; }
+.cover-gradient { fill: url(#cover-accent); opacity: .78; }
+.cover-grid { fill: none; stroke: #203754; stroke-width: 1; opacity: .82; }
+.cover-kicker { fill: #8fd3ff; font-size: 13px; font-weight: 700; letter-spacing: 1.5px; }
+.cover-title { fill: #f8fafc; font-size: 48px; font-weight: 700; }
+.cover-subtitle { fill: #d1d9e6; font-size: 19px; }
+.cover-note { fill: #93a4bb; font-size: 14px; }
+.cover-stamp { fill: #a9e7c0; font-size: 12px; font-weight: 600; letter-spacing: .8px; }
+.cover-network-line { fill: none; stroke: #5da9ff; stroke-width: 2; opacity: .72; }
+.cover-network-node { fill: #0e213d; stroke: #63b3ff; stroke-width: 2; }
+.cover-network-core { fill: #c66b2d; stroke: #ffd6a5; stroke-width: 2; }
+.cover-network-label { fill: #dce7f4; font-size: 12px; font-weight: 600; letter-spacing: .7px; }
+.cover-card { fill: #111f35; stroke: #30496a; stroke-width: 1; }
+.cover-card-label { fill: #8fa5bf; font-size: 11px; font-weight: 600; letter-spacing: .8px; }
+.cover-card-value { fill: #f8fafc; font-size: 20px; font-weight: 700; }
+</style><rect class="background" x="0" y="0" width="1440" height="560"/><defs><linearGradient id="cover-accent" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#15345c"/><stop offset="100%" stop-color="#0b1220"/></linearGradient></defs><rect class="cover-panel" x="0" y="0" width="1440" height="560"/><rect class="cover-gradient" x="744" y="0" width="696" height="560"/><path class="cover-grid" d="M 760 0 V 560 M 940 0 V 560 M 1120 0 V 560 M 1300 0 V 560 M 744 88 H 1440 M 744 208 H 1440 M 744 328 H 1440 M 744 448 H 1440"/><text class="cover-kicker" x="72.0" y="64.0" text-anchor="start">EVIDENCE-BOUND PUBLIC REPORT</text><text class="cover-title" x="72.0" y="132.0" text-anchor="start">JARVIS PERSONAL</text><text class="cover-title" x="72.0" y="184.0" text-anchor="start">1.0.0 / REPORT</text><text class="cover-subtitle" x="72.0" y="235.0" text-anchor="start">Veřejný přehled stavu vývoje, ověřené evidence</text><text class="cover-subtitle" x="72.0" y="263.0" text-anchor="start">milníků a otevřených důkazních mezer.</text><text class="cover-note" x="72.0" y="326.0" text-anchor="start">Není to instalační balíček ani tvrzení o hotovém produktu.</text><text class="cover-note" x="72.0" y="351.0" text-anchor="start">Čísla a stavy jsou evidence-bound a mají vlastní význam.</text><text class="cover-stamp" x="72.0" y="386.0" text-anchor="start">REPORT  •  EVIDENCE  •  MILESTONES  •  OPEN GAPS</text><text class="cover-stamp" x="1368.0" y="64.0" text-anchor="end">JARVIS / PUBLIC</text><rect class="cover-card" x="72" y="430" width="155" height="82" rx="12"/><text class="cover-card-label" x="90.0" y="461.0" text-anchor="start">PURPOSE</text><text class="cover-card-value" x="90.0" y="493.0" text-anchor="start">WHY</text><rect class="cover-card" x="245" y="430" width="155" height="82" rx="12"/><text class="cover-card-label" x="263.0" y="461.0" text-anchor="start">SOURCE</text><text class="cover-card-value" x="263.0" y="493.0" text-anchor="start">WHAT</text><rect class="cover-card" x="418" y="430" width="155" height="82" rx="12"/><text class="cover-card-label" x="436.0" y="461.0" text-anchor="start">EVIDENCE</text><text class="cover-card-value" x="436.0" y="493.0" text-anchor="start">PROOF</text><rect class="cover-card" x="591" y="430" width="155" height="82" rx="12"/><text class="cover-card-label" x="609.0" y="461.0" text-anchor="start">BOUNDARIES</text><text class="cover-card-value" x="609.0" y="493.0" text-anchor="start">LIMITS</text><path class="cover-network-line" d="M 840.0 132.0 L 1030.0 104.0"/><path class="cover-network-line" d="M 1030.0 104.0 L 1230.0 152.0"/><path class="cover-network-line" d="M 840.0 132.0 L 920.0 286.0"/><path class="cover-network-line" d="M 1030.0 104.0 L 1120.0 276.0"/><path class="cover-network-line" d="M 1230.0 152.0 L 1120.0 276.0"/><path class="cover-network-line" d="M 920.0 286.0 L 1020.0 426.0"/><path class="cover-network-line" d="M 1120.0 276.0 L 1020.0 426.0"/><circle class="cover-network-node" cx="840.0" cy="132.0" r="24"><title>SOURCE</title></circle><text class="cover-network-label" x="840.0" y="179.0" text-anchor="middle">SOURCE</text><circle class="cover-network-node" cx="1030.0" cy="104.0" r="24"><title>MILESTONES</title></circle><text class="cover-network-label" x="1030.0" y="151.0" text-anchor="middle">MILESTONES</text><circle class="cover-network-node" cx="1230.0" cy="152.0" r="24"><title>EVIDENCE</title></circle><text class="cover-network-label" x="1230.0" y="199.0" text-anchor="middle">EVIDENCE</text><circle class="cover-network-node" cx="920.0" cy="286.0" r="24"><title>VERIFY</title></circle><text class="cover-network-label" x="920.0" y="333.0" text-anchor="middle">VERIFY</text><circle class="cover-network-core" cx="1120.0" cy="276.0" r="24"><title>PUBLIC REPORT</title></circle><text class="cover-network-label" x="1120.0" y="323.0" text-anchor="middle">PUBLIC REPORT</text><circle class="cover-network-node" cx="1020.0" cy="426.0" r="24"><title>OPEN GAPS</title></circle><text class="cover-network-label" x="1020.0" y="473.0" text-anchor="middle">OPEN GAPS</text></svg>

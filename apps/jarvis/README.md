@@ -13,6 +13,13 @@ Aktuálně zde není žádný veřejný instalační balíček ke stažení. Dř
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
 
+### Jarvis report
+
+![Jarvis Personal 1.0.0 evidence-bound public report cover](visuals/report-cover.svg)
+
+Tato stránka je veřejný evidence-bound report o stavu vývoje Jarvis Personal 1.0.0: ukazuje ověřenou implementaci, stav milestone a otevřené důkazní mezery.
+Nejde o instalační balíček ani o prohlášení, že je produkt hotový; release readiness je samostatná roadmapová brána.
+
 ### Grafický dashboard
 
 ![Evidence-bound overview](visuals/implementation-overview.svg)
@@ -88,7 +95,7 @@ flowchart LR
 | UX/support | Jazyk, lokalizace a accessibility quality | `partial` | Localization accounting existuje, ale fallback backlog je explicitně otevřený a není důkazem hotové kvality.; mezera: Uzavřít překladový backlog a projít accessibility/DPI acceptance na reálném UI.; typy: runtime, self-test |
 | UX/support | Owner-facing live QA | `open` | Žádný aktuální univerzální live owner acceptance receipt není v manifestu.; mezera: Dodat vizuální a interakční QA pack včetně accessibility, DPI a recovery scénářů.; typy: roadmap |
 | QA/dogfood | Contract/self-test gates | `verified-build` | Current capability matrix uvádí warning-free build a více self-test gates.; mezera: Self-test nenahrazuje dlouhý dogfood ani reálnou konfiguraci ownera.; typy: build, runtime |
-| QA/dogfood | Deterministic dogfood a regression fixtures | `partial` | Contract and dogfood scaffolding exist, ale potvrzené ticket-driven regression closure není úplné.; mezera: Navázat potvrzené chyby na immutable acceptance pack a regression fixture.; typy: contract, release-gate |
+| QA/dogfood | Deterministic dogfood a regression fixtures | `partial` | Contract and dogfood scaffolding exist, ale potvrzené ticket-driven regression closure není úplné.; mezera: Navázat potvrzené chyby na immutable acceptance pack a regression fixture.; typy: contract, release-gate, self-test |
 | QA/dogfood | Reálný hardware/configuration matrix | `open` | Owner-approved release source označuje hardware/configuration matrix jako early.; mezera: Dodat opakovatelná měření na skutečných konfiguracích s identity a environment receipts.; typy: release-gate |
 | QA/dogfood | Release acceptance pack a bezpečnostní audit | `open` | Release readiness je samostatně 50 %, ale neprokazuje dokončený safety/release acceptance pack.; mezera: Dodat current release candidate, signed artifacts, clean install/upgrade/rollback a safety audit receipts.; typy: release-gate |
 
@@ -176,7 +183,6 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 
 | Veřejná revize | Datum | Změněné kapitoly | Milestone evidence events |
 | --- | --- | --- | --- |
-| `b9b7ba47db52` | 2026-08-24 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `03827be72d3b` | 2026-08-24 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `c9935a031992` | 2026-08-24 | evidence-only | — |
 | `5edf2d872f62` | 2026-08-24 | model-routing | 2: model-routing/typed-routing-fallback, model-routing/live-provider-reliability |
@@ -194,6 +200,7 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 | `f7b1013bfd5c` | 2026-08-24 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
 | `68dd4dbe04e9` | 2026-08-24 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
 | `686bcbee4d60` | 2026-08-24 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
+| `a89906fb2310` | 2026-08-24 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
 
 Úplná machine-readable historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
