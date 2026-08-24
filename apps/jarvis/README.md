@@ -176,7 +176,6 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 
 | Veřejná revize | Datum | Změněné kapitoly | Milestone evidence events |
 | --- | --- | --- | --- |
-| `f1cabc366a70` | 2026-08-24 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `3c6902ad1c14` | 2026-08-24 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `b9b7ba47db52` | 2026-08-24 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `03827be72d3b` | 2026-08-24 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
@@ -194,6 +193,7 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 | `fbdc945941e9` | 2026-08-24 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
 | `2850381499b9` | 2026-08-24 | evidence-only | — |
 | `f7b1013bfd5c` | 2026-08-24 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
+| `4e034a6d8806` | 2026-08-24 | evidence-only | — |
 
 Úplná machine-readable historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
