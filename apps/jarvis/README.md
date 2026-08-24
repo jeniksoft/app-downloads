@@ -38,11 +38,11 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 922 | 313 277 | 21.08 |
-| JSON | 225 | 144 486 | 11.23 |
-| Markdown | 631 | 60 947 | 3.03 |
-| Python | 113 | 28 770 | 1.19 |
-| PowerShell | 49 | 24 123 | 1.26 |
+| C/C++ | 922 | 313 260 | 20.92 |
+| JSON | 225 | 144 506 | 11.23 |
+| Markdown | 632 | 61 050 | 3.04 |
+| Python | 114 | 28 959 | 1.20 |
+| PowerShell | 49 | 24 204 | 1.27 |
 | JSONL | 14 | 2 499 | 6.91 |
 | Plain text | 106 | 1 652 | 0.18 |
 | INI | 5 | 66 | 0.00 |
@@ -52,9 +52,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
 | Other text | 7 | 7 | 0.00 |
-| **Text/source celkem** | **2 092** | **575 906** | **44.95** |
+| **Text/source celkem** | **2 094** | **576 282** | **44.81** |
 | Binární assety (mimo řádky) | 35 | — | 14.47 |
-| **Trackovaný strom celkem** | **2 127** | **575 906** | **59.42** |
+| **Trackovaný strom celkem** | **2 129** | **576 282** | **59.28** |
 
 ### Přírůstek od předchozí revize
 
@@ -62,9 +62,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +0 | +54 | +0.00 |
+| Text/source celkem | +2 | +376 | -0.14 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +0 | +54 | +0.00 |
+| Trackovaný strom celkem | +2 | +376 | -0.14 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -221,7 +221,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `3d6a7d04bae6` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `f13f8a5162dd` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `599fba588fe6` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `779892c49692` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -239,6 +238,7 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `5f1415036e96` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/first-run-diagnostics |
 | `9386e5930c44` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/first-run-diagnostics |
 | `b9a5b6eff3a7` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/first-run-diagnostics |
+| `a940e91f6ac5` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
