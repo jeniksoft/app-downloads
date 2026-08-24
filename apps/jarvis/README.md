@@ -176,7 +176,6 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 
 | Veřejná revize | Datum | Změněné kapitoly | Milestone evidence events |
 | --- | --- | --- | --- |
-| `938c68511f2c` | 2026-08-19 | evidence-only | — |
 | `9688beecfae4` | 2026-08-20 | evidence-only | — |
 | `68934887ccb7` | 2026-08-22 | evidence-only | — |
 | `a9a4671f1224` | 2026-08-23 | app-shell-release, worker-recovery, model-routing, workspace-actions, extensions-permissions, executor-runtime, owner-ux, qa-dogfood | 32: app-shell-release/wdui-shell-contract, app-shell-release/installer-update-contract, app-shell-release/adpu-public-channel, app-shell-release/clean-release-acceptance… |
@@ -194,6 +193,7 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 | `0693f6322cdd` | 2026-08-24 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `a7a685cd0af9` | 2026-08-24 | evidence-only | — |
 | `ac6faed1eb13` | 2026-08-24 | evidence-only | — |
+| `127fb45d7d72` | 2026-08-24 | evidence-only | — |
 
 Úplná machine-readable historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
