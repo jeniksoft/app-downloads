@@ -28,7 +28,7 @@ Nejde o instalační balíček ani o prohlášení, že je produkt hotový; rele
 ![Milestone evidence matrix](visuals/milestone-evidence.svg)
 ![Tracked progress history](visuals/progress-history.svg)
 
-Čísla jsou záměrně kreslená přímo na sloupcích, bodech, uzlech a milestone tiles. Tabulky níže drží jen stav, kontext a důkazní mezeru.
+Čísla jsou záměrně kreslená přímo na sloupcích, bodech, uzlech a milestone tiles. Graf `Tracked progress history` je časový graf: vodorovná osa představuje anonymizované relevantní revize a delta anotace ukazují přírůstky mezi body. Tabulky níže drží stav, kontext a důkazní mezeru.
 
 ### Zdrojový inventář Jarvise
 
@@ -53,6 +53,16 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | **Text/source celkem** | **2 046** | **563 002** | **44.33** |
 | Binární assety (mimo řádky) | 35 | — | 14.47 |
 | **Trackovaný strom celkem** | **2 081** | **563 002** | **58.80** |
+
+### Přírůstek od předchozí revize
+
+Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota znamená přírůstek a záporná úbytek. U prvního commitu je baseline nedostupná.
+
+| Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
+| --- | ---: | ---: | ---: |
+| Text/source celkem | +0 | +0 | +0.00 |
+| Binární assety | +0 | — | +0.00 |
+| Trackovaný strom celkem | +0 | +0 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -205,28 +215,28 @@ Detailní privátní zdrojové cesty, receipts a owner-specific data zůstávaj�
 
 ### Vývoj v relevantních revizích
 
-Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný záznam zůstává i ve strojově čitelném JSON. Raw private source commit, subject ani interní cesta se do veřejného repa nekopírují.
+Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí přírůstky všech hlavních metrik oproti předchozímu bodu a každý anonymizovaný záznam zůstává i ve strojově čitelném JSON. Raw private source commit, subject ani interní cesta se do veřejného repa nekopírují.
 
-| Veřejná revize | Datum | Změněné kapitoly | Milestone evidence events |
-| --- | --- | --- | --- |
-| `7117eb235acc` | 2026-08-24 | executor-runtime | 1: executor-runtime/mcp-plugin-app-results |
-| `e4062106701f` | 2026-08-24 | executor-runtime, owner-ux | 2: executor-runtime/mcp-plugin-app-results, owner-ux/failure-recovery-ticket-ui |
-| `8d4845a91956` | 2026-08-24 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
-| `0f4cbcfd7e0a` | 2026-08-24 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
-| `0a7063d01615` | 2026-08-24 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
-| `4229af949195` | 2026-08-24 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
-| `fbdc945941e9` | 2026-08-24 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
-| `2850381499b9` | 2026-08-24 | evidence-only | — |
-| `f7b1013bfd5c` | 2026-08-24 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
-| `68dd4dbe04e9` | 2026-08-24 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
-| `686bcbee4d60` | 2026-08-24 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
-| `a89906fb2310` | 2026-08-24 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
-| `723775300145` | 2026-08-24 | evidence-only | — |
-| `80a560f0d504` | 2026-08-24 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
-| `65deab7abb2c` | 2026-08-24 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
-| `500b2da59519` | 2026-08-24 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
-| `3d6a7d04bae6` | 2026-08-24 | evidence-only | — |
-| `f13f8a5162dd` | 2026-08-24 | evidence-only | — |
+| Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
+| `e4062106701f` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | executor-runtime, owner-ux | 2: executor-runtime/mcp-plugin-app-results, owner-ux/failure-recovery-ticket-ui |
+| `8d4845a91956` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
+| `0f4cbcfd7e0a` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
+| `0a7063d01615` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
+| `4229af949195` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
+| `fbdc945941e9` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
+| `2850381499b9` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `f7b1013bfd5c` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
+| `68dd4dbe04e9` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
+| `686bcbee4d60` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
+| `a89906fb2310` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
+| `723775300145` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `80a560f0d504` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
+| `65deab7abb2c` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
+| `500b2da59519` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
+| `3d6a7d04bae6` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `f13f8a5162dd` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `599fba588fe6` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná machine-readable historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 

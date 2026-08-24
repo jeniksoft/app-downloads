@@ -16,7 +16,8 @@
       "done": "weighted milestone minimum after the chapter cap; open milestones contribute zero",
       "release_readiness": "optional roadmap-weighted release gate metric"
     },
-    "commit_history": "Every tracked revision changes only when configured progress inputs change; public IDs are opaque fingerprints.",
+    "commit_history": "The workflow regenerates after every main commit; tracked history records only configured input revisions, and public deltas compare successive records using opaque fingerprints.",
+    "automatic_regeneration": "Every main commit triggers a full snapshot, history, README and SVG recomputation; a public commit is created only when generated contents differ.",
     "limitations": "A commit is visible as evidence history, but source size, source lines, a plan, or a contract-only document never increases the primary score without declared milestone evidence. Task Board area estimates are structural inputs, not a scored axis."
   },
   "source_inventory": {
@@ -144,7 +145,28 @@
       "bytes": 58800308,
       "megabytes": 58.800308
     },
-    "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages."
+    "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
+    "delta_from_parent": {
+      "base_revision": "HEAD^",
+      "source_text": {
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
+      },
+      "binary_assets": {
+        "files": 0,
+        "physical_lines": null,
+        "bytes": 0,
+        "megabytes": 0.0
+      },
+      "tracked_total": {
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
+      }
+    }
   },
   "updated_at": "2026-08-24",
   "overall_percent": 32.5,
@@ -6661,6 +6683,28 @@
     },
     {
       "revision": "f13f8a5162dd",
+      "date": "2026-08-24",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "599fba588fe6",
       "date": "2026-08-24",
       "metrics": {
         "primary_percent": 32.5,
