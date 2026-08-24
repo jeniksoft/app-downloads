@@ -5101,11 +5101,9 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "owner-ux"
+        "evidence-only"
       ],
-      "changed_milestones": [
-        "owner-ux/failure-recovery-ticket-ui"
-      ]
+      "changed_milestones": []
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim."
