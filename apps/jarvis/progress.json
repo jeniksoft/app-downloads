@@ -5947,6 +5947,28 @@
       "changed_milestones": [
         "worker-recovery/queue-journal-persistence"
       ]
+    },
+    {
+      "revision": "52e93e84d939",
+      "date": "2026-08-24",
+      "metrics": {
+        "primary_percent": 31.25,
+        "implementation_percent": 43.75,
+        "verified_percent": 31.25,
+        "done_percent": 31.25,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
     }
   ],
   "history_contract": {
