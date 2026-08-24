@@ -32,7 +32,7 @@
     "manifest_present": true,
     "milestone_count": 32,
     "verified_milestone_count": 11,
-    "verified_evidence_count": 40,
+    "verified_evidence_count": 41,
     "state_counts": {
       "verified-build": 9,
       "partial": 12,
@@ -738,8 +738,8 @@
           "implementation_percent": 50.0,
           "verified_percent": 25.0,
           "done_percent": 25.0,
-          "evidence_count": 2,
-          "verified_evidence_count": 1,
+          "evidence_count": 3,
+          "verified_evidence_count": 2,
           "evidence_kinds": [
             "documentation",
             "self-test"
@@ -750,8 +750,8 @@
           "evidence_statuses": [
             "verified"
           ],
-          "evidence_summary_cs": "Existující read-only app connector nyní po skutečném PolicyExecutor runtime předá typed receipt do WorkerJournal před dispatch-done; deterministický self-test a source guard prošly. Obecný MCP/plugin transport a live acceptance zůstávají otevřené.",
-          "open_gap_cs": "Dodat generic typed fixtures pro success, partial, failure, timeout, retry a owner review; MCP/plugin stdio, mutující extension třídy a owner-approved live acceptance nejsou uzavřené."
+          "evidence_summary_cs": "Existující read-only app connector nyní po skutečném PolicyExecutor runtime předá typed receipt do WorkerJournal před dispatch-done. P4.12 navíc klasifikuje MCP/plugin/app entrypoint přes typovaný no-side-effect obal s not-started výsledkem a bez launch/workspace context; deterministický self-test, source guard a navazující lifecycle/receipt guardy prošly.",
+          "open_gap_cs": "Dodat generic typed fixtures pro success, partial, failure, timeout, retry a owner review; skutečný MCP/plugin stdio/process runtime, mutující extension třídy a owner-approved live acceptance nejsou uzavřené."
         },
         {
           "id": "external-integration-acceptance",
@@ -6125,7 +6125,7 @@
       ]
     },
     {
-      "revision": "a1955784cbdf",
+      "revision": "7117eb235acc",
       "date": "2026-08-24",
       "metrics": {
         "primary_percent": 32.5,
@@ -6142,9 +6142,11 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "executor-runtime"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "executor-runtime/mcp-plugin-app-results"
+      ]
     }
   ],
   "history_contract": {
