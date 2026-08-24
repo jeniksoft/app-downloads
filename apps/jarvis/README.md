@@ -183,7 +183,6 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 
 | Veřejná revize | Datum | Změněné kapitoly | Milestone evidence events |
 | --- | --- | --- | --- |
-| `942f44d0d066` | 2026-08-24 | worker-recovery, executor-runtime | 2: worker-recovery/fail-closed-replay-review, executor-runtime/policy-audit-fail-closed |
 | `3511ea478654` | 2026-08-24 | executor-runtime | 1: executor-runtime/mcp-plugin-app-results |
 | `7117eb235acc` | 2026-08-24 | executor-runtime | 1: executor-runtime/mcp-plugin-app-results |
 | `e4062106701f` | 2026-08-24 | executor-runtime, owner-ux | 2: executor-runtime/mcp-plugin-app-results, owner-ux/failure-recovery-ticket-ui |
@@ -201,6 +200,7 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 | `80a560f0d504` | 2026-08-24 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
 | `65deab7abb2c` | 2026-08-24 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
 | `500b2da59519` | 2026-08-24 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
+| `3d6a7d04bae6` | 2026-08-24 | evidence-only | — |
 
 Úplná machine-readable historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
