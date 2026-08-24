@@ -20,25 +20,25 @@
     "limitations": "A commit is visible as evidence history, but source size, a plan, or a contract-only document never increases the primary score without declared milestone evidence. Task Board area estimates are structural inputs, not a scored axis."
   },
   "updated_at": "2026-08-24",
-  "overall_percent": 31.25,
-  "primary_percent": 31.25,
+  "overall_percent": 32.5,
+  "primary_percent": 32.5,
   "implementation_complete_percent": 43.75,
-  "verified_percent": 31.25,
-  "done_percent": 31.25,
-  "milestone_implementation_percent": 53.0,
-  "milestone_verified_percent": 31.25,
-  "milestone_done_percent": 31.25,
+  "verified_percent": 32.5,
+  "done_percent": 32.5,
+  "milestone_implementation_percent": 54.25,
+  "milestone_verified_percent": 32.5,
+  "milestone_done_percent": 32.5,
   "evidence_summary": {
     "manifest_present": true,
     "milestone_count": 32,
     "verified_milestone_count": 11,
-    "verified_evidence_count": 39,
+    "verified_evidence_count": 40,
     "state_counts": {
       "verified-build": 9,
-      "partial": 11,
+      "partial": 12,
       "open": 7,
       "verified-contract": 2,
-      "contract-only": 3
+      "contract-only": 2
     }
   },
   "release_readiness_percent": 50.0,
@@ -661,12 +661,12 @@
       "chart_label": "Executor",
       "architecture_group": "Integration boundary",
       "weight_percent": 20.0,
-      "milestone_implementation_percent": 43.75,
-      "milestone_verified_percent": 18.75,
-      "milestone_done_percent": 18.75,
+      "milestone_implementation_percent": 50.0,
+      "milestone_verified_percent": 25.0,
+      "milestone_done_percent": 25.0,
       "implementation_percent": 25.0,
-      "verified_percent": 18.75,
-      "done_percent": 18.75,
+      "verified_percent": 25.0,
+      "done_percent": 25.0,
       "evidence_source": "milestone-evidence-manifest",
       "evidence_cap_percent": 25.0,
       "evidence_cap_basis": "Personal P7 supervised self-development is early; generic MCP/plugin/app lifecycle remains incomplete.",
@@ -734,21 +734,24 @@
           "name_cs": "MCP/plugin/app result lifecycle",
           "name_en": "MCP/plugin/app result lifecycle",
           "weight_percent": 25.0,
-          "state": "contract-only",
-          "implementation_percent": 25.0,
-          "verified_percent": 0.0,
-          "done_percent": 0.0,
-          "evidence_count": 1,
-          "verified_evidence_count": 0,
+          "state": "partial",
+          "implementation_percent": 50.0,
+          "verified_percent": 25.0,
+          "done_percent": 25.0,
+          "evidence_count": 2,
+          "verified_evidence_count": 1,
           "evidence_kinds": [
-            "documentation"
+            "documentation",
+            "self-test"
           ],
-          "verified_evidence_kinds": [],
+          "verified_evidence_kinds": [
+            "self-test"
+          ],
           "evidence_statuses": [
             "verified"
           ],
-          "evidence_summary_cs": "Result lifecycle je v architektuře popsán, ale generic integration evidence chybí.",
-          "open_gap_cs": "Dodat typed fixtures pro success, partial, failure, timeout, retry a owner review."
+          "evidence_summary_cs": "Existující read-only app connector nyní po skutečném PolicyExecutor runtime předá typed receipt do WorkerJournal před dispatch-done; deterministický self-test a source guard prošly. Obecný MCP/plugin transport a live acceptance zůstávají otevřené.",
+          "open_gap_cs": "Dodat generic typed fixtures pro success, partial, failure, timeout, retry a owner review; MCP/plugin stdio, mutující extension třídy a owner-approved live acceptance nejsou uzavřené."
         },
         {
           "id": "external-integration-acceptance",
@@ -6098,26 +6101,28 @@
       ]
     },
     {
-      "revision": "03a44f31fd38",
+      "revision": "3511ea478654",
       "date": "2026-08-24",
       "metrics": {
-        "primary_percent": 31.25,
+        "primary_percent": 32.5,
         "implementation_percent": 43.75,
-        "verified_percent": 31.25,
-        "done_percent": 31.25,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
         "release_readiness_percent": 50.0
       },
       "delta": {
-        "primary_percent": 0.0,
+        "primary_percent": 1.25,
         "implementation_percent": 0.0,
-        "verified_percent": 0.0,
-        "done_percent": 0.0,
+        "verified_percent": 1.25,
+        "done_percent": 1.25,
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "executor-runtime"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "executor-runtime/mcp-plugin-app-results"
+      ]
     }
   ],
   "history_contract": {
