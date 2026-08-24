@@ -4887,7 +4887,7 @@
       "changed_milestones": []
     },
     {
-      "revision": "6cbc0af892c6",
+      "revision": "5edf2d872f62",
       "date": "2026-08-24",
       "metrics": {
         "primary_percent": 31.25,
@@ -4904,9 +4904,12 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "model-routing"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "model-routing/typed-routing-fallback",
+        "model-routing/live-provider-reliability"
+      ]
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim."
