@@ -4934,6 +4934,28 @@
       "changed_milestones": [
         "worker-recovery/queue-journal-persistence"
       ]
+    },
+    {
+      "revision": "9eee831fe8cb",
+      "date": "2026-08-24",
+      "metrics": {
+        "primary_percent": 31.25,
+        "implementation_percent": 43.75,
+        "verified_percent": 31.25,
+        "done_percent": 31.25,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim."
