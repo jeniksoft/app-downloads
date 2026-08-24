@@ -7,28 +7,30 @@ Cílem je bezplatná edice **Personal 1.0.0**. Až bude připravená k veřejné
 Aktuálně zde není žádný veřejný instalační balíček ke stažení. Dřívější vývojové a beta buildy byly z aktuálního download kanálu odstraněny, protože neodpovídají cílové kvalitě a rozsahu verze 1.0.0.
 
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_BEGIN -->
-## Personal 1.0.0 implementation tracking
+## Sledování implementace Personal 1.0.0
 
 **Synchronizovaný snapshot: 2026-08-24**
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
 
+**Jazyk reportu:** čeština pro `cs*`; jiné locale používá anglický fallback. GitHub README je statický a jazyk se určuje při generování.
+
 ### Jarvis report
 
-![Jarvis Personal 1.0.0 evidence-bound public report cover](visuals/report-cover.svg)
+![Grafický cover veřejného reportu Jarvis Personal 1.0.0 vázaného na důkazy](visuals/report-cover.svg)
 
-Tato stránka je veřejný evidence-bound report o stavu vývoje Jarvis Personal 1.0.0: ukazuje ověřenou implementaci, stav milestone a otevřené důkazní mezery.
-Nejde o instalační balíček ani o prohlášení, že je produkt hotový; release readiness je samostatná roadmapová brána.
+Tato stránka je veřejný report o stavu vývoje Jarvis Personal 1.0.0 vázaný na důkazy: ukazuje ověřenou implementaci, stav milestone a otevřené důkazní mezery.
+Nejde o instalační balíček ani o prohlášení, že je produkt hotový; připravenost vydání je samostatná roadmapová brána.
 
 ### Grafický dashboard
 
-![Evidence-bound overview](visuals/implementation-overview.svg)
-![Architecture dependency map](visuals/architecture-map.svg)
-![Architecture chapter chart](visuals/architecture-chapters.svg)
-![Milestone evidence matrix](visuals/milestone-evidence.svg)
-![Tracked progress history](visuals/progress-history.svg)
+![Přehled vázaný na důkazy](visuals/implementation-overview.svg)
+![Mapa závislostí architektury](visuals/architecture-map.svg)
+![Graf architektonických kapitol](visuals/architecture-chapters.svg)
+![Matice evidence milestone](visuals/milestone-evidence.svg)
+![Časový graf sledovaného pokroku](visuals/progress-history.svg)
 
-Čísla jsou záměrně kreslená přímo na sloupcích, bodech, uzlech a milestone tiles. Graf `Tracked progress history` je časový graf: vodorovná osa představuje anonymizované relevantní revize a delta anotace ukazují přírůstky mezi body. Tabulky níže drží stav, kontext a důkazní mezeru.
+Čísla jsou záměrně kreslená přímo na sloupcích, bodech, uzlech a milestone tiles. Časový graf sledovaného pokroku má na vodorovné ose anonymizované relevantní revize a delta anotace ukazují přírůstky mezi body. Tabulky níže drží stav, kontext a důkazní mezeru.
 
 ### Zdrojový inventář Jarvise
 
@@ -219,10 +221,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `e4062106701f` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | executor-runtime, owner-ux | 2: executor-runtime/mcp-plugin-app-results, owner-ux/failure-recovery-ticket-ui |
-| `8d4845a91956` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
-| `0f4cbcfd7e0a` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
-| `0a7063d01615` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
 | `4229af949195` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
 | `fbdc945941e9` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
 | `2850381499b9` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -237,8 +235,12 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `3d6a7d04bae6` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `f13f8a5162dd` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `599fba588fe6` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `779892c49692` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `035d9acf4f62` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `8c40f7e3bf50` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `4f200f5e6356` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
-Úplná machine-readable historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
+Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Release readiness
 
