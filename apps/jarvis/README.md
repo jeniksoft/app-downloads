@@ -183,7 +183,6 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 
 | Veřejná revize | Datum | Změněné kapitoly | Milestone evidence events |
 | --- | --- | --- | --- |
-| `03827be72d3b` | 2026-08-24 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `c9935a031992` | 2026-08-24 | evidence-only | — |
 | `5edf2d872f62` | 2026-08-24 | model-routing | 2: model-routing/typed-routing-fallback, model-routing/live-provider-reliability |
 | `e09adafe0c1d` | 2026-08-24 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
@@ -201,6 +200,7 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 | `68dd4dbe04e9` | 2026-08-24 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
 | `686bcbee4d60` | 2026-08-24 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
 | `a89906fb2310` | 2026-08-24 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
+| `723775300145` | 2026-08-24 | evidence-only | — |
 
 Úplná machine-readable historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
