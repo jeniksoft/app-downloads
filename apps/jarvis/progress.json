@@ -6941,6 +6941,28 @@
         "qa-dogfood/contract-self-test-gates",
         "qa-dogfood/deterministic-dogfood"
       ]
+    },
+    {
+      "revision": "b3ce2075fb03",
+      "date": "2026-08-24",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
     }
   ],
   "history_contract": {

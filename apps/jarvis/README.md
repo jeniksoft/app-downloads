@@ -221,7 +221,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `686bcbee4d60` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/failure-recovery-ticket-ui |
 | `a89906fb2310` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
 | `723775300145` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `80a560f0d504` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
@@ -239,6 +238,7 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `162274b40e77` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
 | `6fa4cc7e4156` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/deterministic-dogfood |
 | `a7b7b7c5f31f` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux, qa-dogfood | 3: owner-ux/first-run-diagnostics, qa-dogfood/contract-self-test-gates, qa-dogfood/deterministic-dogfood |
+| `b3ce2075fb03` | 2026-08-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
