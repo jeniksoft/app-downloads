@@ -176,7 +176,6 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 
 | Veřejná revize | Datum | Změněné kapitoly | Milestone evidence events |
 | --- | --- | --- | --- |
-| `a9a4671f1224` | 2026-08-23 | app-shell-release, worker-recovery, model-routing, workspace-actions, extensions-permissions, executor-runtime, owner-ux, qa-dogfood | 32: app-shell-release/wdui-shell-contract, app-shell-release/installer-update-contract, app-shell-release/adpu-public-channel, app-shell-release/clean-release-acceptance… |
 | `5f45d9918221` | 2026-08-23 | evidence-only | — |
 | `a6ae9a75975b` | 2026-08-23 | evidence-only | — |
 | `196fc38b8d64` | 2026-08-23 | model-routing | 1: model-routing/live-provider-reliability |
@@ -194,6 +193,7 @@ Každý bod a změnová anotace jsou v grafu historie; každý anonymizovaný z�
 | `f1cabc366a70` | 2026-08-24 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `3c6902ad1c14` | 2026-08-24 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `b9b7ba47db52` | 2026-08-24 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
+| `03827be72d3b` | 2026-08-24 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 
 Úplná machine-readable historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
