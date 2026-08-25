@@ -86,7 +86,7 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✕ Částečně | Platformní základy · PF7 — Configuration ownership precedence and portability | `PF7.2` | typed effective config | `V2` |
 | ✕ Částečně | Platformní základy · PF7 — Configuration ownership precedence and portability | `PF7.3` | monotonic security merge | `V2` |
 | ✕ Částečně | Platformní základy · PF7 — Configuration ownership precedence and portability | `PF7.4` | portable export | `V2` |
-| ✕ Pouze architektura | Platformní základy · PF7 — Configuration ownership precedence and portability | `PF7.5` | invalid config LKG | `V2` |
+| ✕ Částečně | Platformní základy · PF7 — Configuration ownership precedence and portability | `PF7.5` | invalid config LKG | `V2` |
 | ✓ Hotovo | Platformní základy · PF8 — Architecture Self-Model integration | `PF8.1` | ASM foundation schema extension | `V2` |
 | ✓ Hotovo | Platformní základy · PF8 — Architecture Self-Model integration | `PF8.2` | source manifest derivation | `V2` |
 | ✓ Hotovo | Platformní základy · PF8 — Architecture Self-Model integration | `PF8.3` | stale-on-foundation-change fixture | `V2` |
@@ -384,9 +384,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +5 | +1155 | +0.05 |
+| Text/source celkem | +0 | +0 | +0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +5 | +1155 | +0.05 |
+| Trackovaný strom celkem | +0 | +0 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -560,7 +560,7 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `e9a823b20e14` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/hardware-configuration-matrix |
 | `f004719c928d` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `6c7818e40b65` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `fe5b9b6bd441` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `f177c274352d` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/hardware-configuration-matrix |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
