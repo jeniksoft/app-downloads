@@ -150,10 +150,10 @@
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 5,
-        "physical_lines": 925,
-        "bytes": 38793,
-        "megabytes": 0.038793
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       },
       "binary_assets": {
         "files": 0,
@@ -162,10 +162,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 5,
-        "physical_lines": 925,
-        "bytes": 38793,
-        "megabytes": 0.038793
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       }
     }
   },
@@ -278,7 +278,7 @@
     "manifest_present": true,
     "milestone_count": 32,
     "verified_milestone_count": 11,
-    "verified_evidence_count": 60,
+    "verified_evidence_count": 61,
     "state_counts": {
       "verified-build": 9,
       "partial": 12,
@@ -442,8 +442,8 @@
           "implementation_percent": 100.0,
           "verified_percent": 75.0,
           "done_percent": 75.0,
-          "evidence_count": 14,
-          "verified_evidence_count": 12,
+          "evidence_count": 15,
+          "verified_evidence_count": 13,
           "evidence_kinds": [
             "runtime",
             "self-test"
@@ -7635,7 +7635,7 @@
       ]
     },
     {
-      "revision": "96ea8a1597d3",
+      "revision": "abd9e9368f30",
       "date": "2026-08-25",
       "metrics": {
         "primary_percent": 32.5,
@@ -7652,9 +7652,11 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "worker-recovery"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "worker-recovery/queue-journal-persistence"
+      ]
     }
   ],
   "history_contract": {
