@@ -150,10 +150,10 @@
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 5,
-        "physical_lines": 997,
-        "bytes": 39695,
-        "megabytes": 0.039695
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       },
       "binary_assets": {
         "files": 0,
@@ -162,10 +162,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 5,
-        "physical_lines": 997,
-        "bytes": 39695,
-        "megabytes": 0.039695
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       }
     }
   },
@@ -277,7 +277,7 @@
         "chapter_color": "foundation",
         "chapter_count": 9,
         "item_count": 45,
-        "completed_item_count": 10
+        "completed_item_count": 11
       },
       {
         "id": "core-runtime",
@@ -369,7 +369,7 @@
         "status_label_en": "Architecture only",
         "is_complete": false,
         "item_count": 5,
-        "completed_item_count": 1
+        "completed_item_count": 2
       },
       {
         "id": "PF3",
@@ -1358,11 +1358,11 @@
         "chapter_color": "foundation",
         "description_cs": "typed time helpers",
         "description_en": "typed time helpers",
-        "status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
+        "status_source": "current-evidence",
+        "is_complete": true,
         "verify": "V1",
         "is_slice": true
       },
@@ -6612,7 +6612,7 @@
       }
     ],
     "item_count": 288,
-    "completed_item_count": 74,
+    "completed_item_count": 75,
     "limitations": "Release-gate status is roadmap state, not a percentage. Item ✓ means deterministic implementation/evidence is present; live owner acceptance can remain open. Teams and Enterprise have no active measured evidence track."
   },
   "milestone_implementation_percent": 54.25,
@@ -6622,7 +6622,7 @@
     "manifest_present": true,
     "milestone_count": 32,
     "verified_milestone_count": 11,
-    "verified_evidence_count": 64,
+    "verified_evidence_count": 65,
     "state_counts": {
       "verified-build": 9,
       "partial": 12,
@@ -6786,8 +6786,8 @@
           "implementation_percent": 100.0,
           "verified_percent": 75.0,
           "done_percent": 75.0,
-          "evidence_count": 18,
-          "verified_evidence_count": 16,
+          "evidence_count": 19,
+          "verified_evidence_count": 17,
           "evidence_kinds": [
             "runtime",
             "self-test"
@@ -24085,7 +24085,7 @@
       ]
     },
     {
-      "revision": "3b4956a21e3f",
+      "revision": "edd499f4a8ee",
       "date": "2026-08-25",
       "metrics": {
         "primary_percent": 32.5,
@@ -24102,9 +24102,11 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "worker-recovery"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "worker-recovery/queue-journal-persistence"
+      ]
     }
   ],
   "history_contract": {
