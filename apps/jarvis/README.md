@@ -36,6 +36,8 @@ Nejde o instalační balíček ani o prohlášení, že je produkt hotový; při
 
 Tabulka používá pevnou ✓/✕ značku: ✓ znamená ověřenou release bránu, ✕ znamená, že brána ještě není ověřená. ✕ není důkaz chyby; u architektury označuje plánovaný rozsah.
 
+**Změna od předchozího snapshotu: roadmapa položky +0 · hotovo +0 · ověřené důkazy +0**
+
 ![Roadmapa a progress edic Jarvis](visuals/roadmap-editions.svg)
 
 ### Celá roadmapa — kapitoly a podřezy
@@ -541,7 +543,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `8e20be1e5db0` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `5170ce6916a8` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `f1e89e5d069a` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `106a910fb101` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
@@ -559,6 +560,7 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `dadc2a855223` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `e9a823b20e14` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/hardware-configuration-matrix |
 | `f004719c928d` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `6c7818e40b65` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
