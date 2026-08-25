@@ -32,38 +32,38 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 944,
-        "physical_lines": 321824,
-        "bytes": 21302123,
-        "megabytes": 21.302123
+        "files": 946,
+        "physical_lines": 322357,
+        "bytes": 21323847,
+        "megabytes": 21.323847
       },
       {
         "language": "JSON",
-        "files": 237,
-        "physical_lines": 145817,
-        "bytes": 11263156,
-        "megabytes": 11.263156
+        "files": 238,
+        "physical_lines": 145848,
+        "bytes": 11264170,
+        "megabytes": 11.26417
       },
       {
         "language": "Markdown",
-        "files": 644,
-        "physical_lines": 62193,
-        "bytes": 3095637,
-        "megabytes": 3.095637
+        "files": 645,
+        "physical_lines": 62284,
+        "bytes": 3100062,
+        "megabytes": 3.100062
       },
       {
         "language": "Python",
-        "files": 127,
-        "physical_lines": 30721,
-        "bytes": 1265072,
-        "megabytes": 1.265072
+        "files": 128,
+        "physical_lines": 30836,
+        "bytes": 1268706,
+        "megabytes": 1.268706
       },
       {
         "language": "PowerShell",
         "files": 50,
-        "physical_lines": 24535,
-        "bytes": 1285195,
-        "megabytes": 1.285195
+        "physical_lines": 24554,
+        "bytes": 1286298,
+        "megabytes": 1.286298
       },
       {
         "language": "JSONL",
@@ -130,10 +130,10 @@
       }
     ],
     "source_text": {
-      "files": 2154,
-      "physical_lines": 589393,
-      "bytes": 45362300,
-      "megabytes": 45.3623
+      "files": 2159,
+      "physical_lines": 590182,
+      "bytes": 45394200,
+      "megabytes": 45.3942
     },
     "binary_assets": {
       "files": 35,
@@ -141,10 +141,10 @@
       "megabytes": 14.4705
     },
     "tracked_total": {
-      "files": 2189,
-      "physical_lines": 589393,
-      "bytes": 59832800,
-      "megabytes": 59.8328
+      "files": 2194,
+      "physical_lines": 590182,
+      "bytes": 59864700,
+      "megabytes": 59.8647
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
@@ -278,7 +278,7 @@
     "manifest_present": true,
     "milestone_count": 32,
     "verified_milestone_count": 11,
-    "verified_evidence_count": 59,
+    "verified_evidence_count": 60,
     "state_counts": {
       "verified-build": 9,
       "partial": 12,
@@ -442,8 +442,8 @@
           "implementation_percent": 100.0,
           "verified_percent": 75.0,
           "done_percent": 75.0,
-          "evidence_count": 13,
-          "verified_evidence_count": 11,
+          "evidence_count": 14,
+          "verified_evidence_count": 12,
           "evidence_kinds": [
             "runtime",
             "self-test"
@@ -7609,6 +7609,30 @@
         "evidence-only"
       ],
       "changed_milestones": []
+    },
+    {
+      "revision": "94dca6fe5fef",
+      "date": "2026-08-25",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "worker-recovery"
+      ],
+      "changed_milestones": [
+        "worker-recovery/queue-journal-persistence"
+      ]
     }
   ],
   "history_contract": {
