@@ -6101,7 +6101,7 @@
       ]
     },
     {
-      "revision": "e847280de920",
+      "revision": "8ae4491c2ebc",
       "date": "2026-08-25",
       "metrics": {
         "primary_percent": 32.5,
@@ -6118,9 +6118,11 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "worker-recovery"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "worker-recovery/queue-journal-persistence"
+      ]
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim."

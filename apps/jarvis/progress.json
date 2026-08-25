@@ -150,10 +150,10 @@
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 5,
-        "physical_lines": 1101,
-        "bytes": 43859,
-        "megabytes": 0.043859
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       },
       "binary_assets": {
         "files": 0,
@@ -162,10 +162,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 5,
-        "physical_lines": 1101,
-        "bytes": 43859,
-        "megabytes": 0.043859
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       }
     }
   },
@@ -346,7 +346,7 @@
           "implementation_percent": 100.0,
           "verified_percent": 75.0,
           "done_percent": 75.0,
-          "evidence_count": 12,
+          "evidence_count": 13,
           "verified_evidence_count": 11,
           "evidence_kinds": [
             "runtime",
@@ -357,9 +357,10 @@
           ],
           "evidence_statuses": [
             "open",
+            "partial",
             "verified"
           ],
-          "evidence_summary_cs": "Capability matrix uvádí queue, worker, typed recovery UI projection, durable evidence gates a skrytý parent/child process-restart self-test jako build/contract ověřené.",
+          "evidence_summary_cs": "Capability matrix a PF1.2 common durable envelope uvádějí queue, worker, typed recovery UI projection, durable evidence gates a skrytý parent/child process-restart self-test jako build/contract ověřené.",
           "open_gap_cs": "Skutečný crash/restart průchod reálného workflow, dlouhý providerový requeue a V5 owner-facing recovery workflow acceptance zůstávají samostatnými důkazy."
         },
         {
@@ -7402,7 +7403,7 @@
       ]
     },
     {
-      "revision": "e847280de920",
+      "revision": "8ae4491c2ebc",
       "date": "2026-08-25",
       "metrics": {
         "primary_percent": 32.5,
@@ -7419,9 +7420,11 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "worker-recovery"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "worker-recovery/queue-journal-persistence"
+      ]
     }
   ],
   "history_contract": {
