@@ -57,7 +57,7 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✓ Hotovo | Platformní základy · PF2 — Time epochs and leases | `PF2.1` | time-use inventory | `V1` |
 | ✓ Hotovo | Platformní základy · PF2 — Time epochs and leases | `PF2.2` | typed time helpers | `V1` |
 | ✓ Hotovo | Platformní základy · PF2 — Time epochs and leases | `PF2.3` | clock rollback fixtures | `V1` |
-| ✕ Pouze architektura | Platformní základy · PF2 — Time epochs and leases | `PF2.4` | lease envelope | `V1` |
+| ✓ Hotovo | Platformní základy · PF2 — Time epochs and leases | `PF2.4` | lease envelope | `V1` |
 | ✕ Pouze architektura | Platformní základy · PF2 — Time epochs and leases | `PF2.5` | authority epoch fixture | `V1` |
 | ✕ Pouze architektura | Platformní základy · PF3 — Secrets and credential boundary | `PF3.1` | credential flow audit | `V2` |
 | ✕ Pouze architektura | Platformní základy · PF3 — Secrets and credential boundary | `PF3.2` | CredentialRef types | `V2` |
@@ -381,9 +381,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +5 | +1072 | +0.04 |
+| Text/source celkem | +0 | +0 | +0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +5 | +1072 | +0.04 |
+| Trackovaný strom celkem | +0 | +0 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -557,7 +557,7 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `9cfd76c521b5` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `edd499f4a8ee` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `8505d8acc449` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
-| `0c2f047dfdb5` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `5ab56f720f25` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
