@@ -74,7 +74,7 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✓ Hotovo | Platformní základy · PF5 — Artifact evidence and provenance | `PF5.2` | evidence link helper | `V1` |
 | ✓ Hotovo | Platformní základy · PF5 — Artifact evidence and provenance | `PF5.3` | provenance chain fixture | `V1` |
 | ✓ Hotovo | Platformní základy · PF5 — Artifact evidence and provenance | `PF5.4` | quarantine provenance fixture | `V1` |
-| ✕ Rozpracováno | Platformní základy · PF5 — Artifact evidence and provenance | `PF5.5` | local export manifest | `V1` |
+| ✓ Hotovo | Platformní základy · PF5 — Artifact evidence and provenance | `PF5.5` | local export manifest | `V1` |
 | ✕ Pouze architektura | Platformní základy · PF6 — Capability health degraded and quarantine states | `PF6.1` | health vocabulary | `V2` |
 | ✕ Pouze architektura | Platformní základy · PF6 — Capability health degraded and quarantine states | `PF6.2` | one provider health adapter | `V2` |
 | ✕ Pouze architektura | Platformní základy · PF6 — Capability health degraded and quarantine states | `PF6.3` | aggregate projection | `V2` |
@@ -381,9 +381,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +5 | +885 | +0.04 |
+| Text/source celkem | +0 | +0 | +0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +5 | +885 | +0.04 |
+| Trackovaný strom celkem | +0 | +0 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -557,7 +557,7 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `f1e89e5d069a` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `106a910fb101` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `3ff32c6916e7` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
-| `1fd7dde9e03b` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `48874248fae5` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
