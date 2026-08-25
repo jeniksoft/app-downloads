@@ -32,38 +32,38 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 982,
-        "physical_lines": 334529,
-        "bytes": 21831106,
-        "megabytes": 21.831106
+        "files": 984,
+        "physical_lines": 335050,
+        "bytes": 21853881,
+        "megabytes": 21.853881
       },
       {
         "language": "JSON",
-        "files": 264,
-        "physical_lines": 149648,
-        "bytes": 11446224,
-        "megabytes": 11.446224
+        "files": 265,
+        "physical_lines": 149756,
+        "bytes": 11448639,
+        "megabytes": 11.448639
       },
       {
         "language": "Markdown",
-        "files": 664,
-        "physical_lines": 63985,
-        "bytes": 3188498,
-        "megabytes": 3.188498
+        "files": 665,
+        "physical_lines": 64089,
+        "bytes": 3193989,
+        "megabytes": 3.193989
       },
       {
         "language": "Python",
-        "files": 146,
-        "physical_lines": 33877,
-        "bytes": 1375744,
-        "megabytes": 1.375744
+        "files": 147,
+        "physical_lines": 34022,
+        "bytes": 1381664,
+        "megabytes": 1.381664
       },
       {
         "language": "PowerShell",
         "files": 50,
-        "physical_lines": 24748,
-        "bytes": 1298472,
-        "megabytes": 1.298472
+        "physical_lines": 24759,
+        "bytes": 1299148,
+        "megabytes": 1.299148
       },
       {
         "language": "JSONL",
@@ -130,10 +130,10 @@
       }
     ],
     "source_text": {
-      "files": 2258,
-      "physical_lines": 611090,
-      "bytes": 46291161,
-      "megabytes": 46.291161
+      "files": 2263,
+      "physical_lines": 611979,
+      "bytes": 46328438,
+      "megabytes": 46.328438
     },
     "binary_assets": {
       "files": 35,
@@ -141,10 +141,10 @@
       "megabytes": 14.4705
     },
     "tracked_total": {
-      "files": 2293,
-      "physical_lines": 611090,
-      "bytes": 60761661,
-      "megabytes": 60.761661
+      "files": 2298,
+      "physical_lines": 611979,
+      "bytes": 60798938,
+      "megabytes": 60.798938
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
@@ -277,7 +277,7 @@
         "chapter_color": "foundation",
         "chapter_count": 9,
         "item_count": 45,
-        "completed_item_count": 25
+        "completed_item_count": 26
       },
       {
         "id": "core-runtime",
@@ -429,7 +429,7 @@
         "status_label_en": "Architecture only",
         "is_complete": false,
         "item_count": 5,
-        "completed_item_count": 1
+        "completed_item_count": 2
       },
       {
         "id": "PF7",
@@ -1757,11 +1757,11 @@
         "chapter_color": "foundation",
         "description_cs": "one provider health adapter",
         "description_en": "one provider health adapter",
-        "status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
+        "status_source": "current-evidence",
+        "is_complete": true,
         "verify": "V2",
         "is_slice": true
       },
@@ -6631,7 +6631,7 @@
       }
     ],
     "item_count": 289,
-    "completed_item_count": 89,
+    "completed_item_count": 90,
     "limitations": "Release-gate status is roadmap state, not a percentage. Item ✓ means deterministic implementation/evidence is present; live owner acceptance can remain open. Teams and Enterprise have no active measured evidence track."
   },
   "milestone_implementation_percent": 54.25,
@@ -6641,7 +6641,7 @@
     "manifest_present": true,
     "milestone_count": 32,
     "verified_milestone_count": 11,
-    "verified_evidence_count": 79,
+    "verified_evidence_count": 80,
     "state_counts": {
       "verified-build": 9,
       "partial": 12,
@@ -6805,8 +6805,8 @@
           "implementation_percent": 100.0,
           "verified_percent": 75.0,
           "done_percent": 75.0,
-          "evidence_count": 33,
-          "verified_evidence_count": 31,
+          "evidence_count": 34,
+          "verified_evidence_count": 32,
           "evidence_kinds": [
             "runtime",
             "self-test"
@@ -24485,6 +24485,30 @@
     },
     {
       "revision": "57e0b77d6cea",
+      "date": "2026-08-25",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "worker-recovery"
+      ],
+      "changed_milestones": [
+        "worker-recovery/queue-journal-persistence"
+      ]
+    },
+    {
+      "revision": "c23c8217bac6",
       "date": "2026-08-25",
       "metrics": {
         "primary_percent": 32.5,

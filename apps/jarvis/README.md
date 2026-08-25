@@ -76,7 +76,7 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✓ Hotovo | Platformní základy · PF5 — Artifact evidence and provenance | `PF5.4` | quarantine provenance fixture | `V1` |
 | ✓ Hotovo | Platformní základy · PF5 — Artifact evidence and provenance | `PF5.5` | local export manifest | `V1` |
 | ✓ Hotovo | Platformní základy · PF6 — Capability health degraded and quarantine states | `PF6.1` | health vocabulary | `V2` |
-| ✕ Pouze architektura | Platformní základy · PF6 — Capability health degraded and quarantine states | `PF6.2` | one provider health adapter | `V2` |
+| ✓ Hotovo | Platformní základy · PF6 — Capability health degraded and quarantine states | `PF6.2` | one provider health adapter | `V2` |
 | ✕ Pouze architektura | Platformní základy · PF6 — Capability health degraded and quarantine states | `PF6.3` | aggregate projection | `V2` |
 | ✕ Pouze architektura | Platformní základy · PF6 — Capability health degraded and quarantine states | `PF6.4` | degraded fallback fixture | `V2` |
 | ✕ Pouze architektura | Platformní základy · PF6 — Capability health degraded and quarantine states | `PF6.5` | quarantine separation test | `V2` |
@@ -358,11 +358,11 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 982 | 334 529 | 21.83 |
-| JSON | 264 | 149 648 | 11.45 |
-| Markdown | 664 | 63 985 | 3.19 |
-| Python | 146 | 33 877 | 1.38 |
-| PowerShell | 50 | 24 748 | 1.30 |
+| C/C++ | 984 | 335 050 | 21.85 |
+| JSON | 265 | 149 756 | 11.45 |
+| Markdown | 665 | 64 089 | 3.19 |
+| Python | 147 | 34 022 | 1.38 |
+| PowerShell | 50 | 24 759 | 1.30 |
 | JSONL | 14 | 2 499 | 6.91 |
 | Plain text | 106 | 1 652 | 0.18 |
 | INI | 5 | 66 | 0.00 |
@@ -372,9 +372,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
 | Other text | 7 | 7 | 0.00 |
-| **Text/source celkem** | **2 258** | **611 090** | **46.29** |
+| **Text/source celkem** | **2 263** | **611 979** | **46.33** |
 | Binární assety (mimo řádky) | 35 | — | 14.47 |
-| **Trackovaný strom celkem** | **2 293** | **611 090** | **60.76** |
+| **Trackovaný strom celkem** | **2 298** | **611 979** | **60.80** |
 
 ### Přírůstek od předchozí revize
 
@@ -541,7 +541,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `9cfd76c521b5` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `edd499f4a8ee` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `8505d8acc449` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `5ab56f720f25` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
@@ -559,6 +558,7 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `48874248fae5` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `e6e29e9f4723` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `57e0b77d6cea` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
+| `c23c8217bac6` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
