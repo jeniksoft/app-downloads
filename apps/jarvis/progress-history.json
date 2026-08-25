@@ -6053,7 +6053,7 @@
       ]
     },
     {
-      "revision": "6a6d3bd4176a",
+      "revision": "11579b637f98",
       "date": "2026-08-25",
       "metrics": {
         "primary_percent": 32.5,
@@ -6070,9 +6070,11 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "qa-dogfood"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "qa-dogfood/hardware-configuration-matrix"
+      ]
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim."
