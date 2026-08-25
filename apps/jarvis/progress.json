@@ -150,10 +150,10 @@
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 5,
-        "physical_lines": 1925,
-        "bytes": 87827,
-        "megabytes": 0.087827
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       },
       "binary_assets": {
         "files": 0,
@@ -162,10 +162,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 5,
-        "physical_lines": 1925,
-        "bytes": 87827,
-        "megabytes": 0.087827
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       }
     }
   },
@@ -1833,10 +1833,10 @@
         "chapter_color": "foundation",
         "description_cs": "settings inventory",
         "description_en": "settings inventory",
-        "status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
-        "status_source": "canonical-roadmap",
+        "status": "partial",
+        "status_label_cs": "Částečně",
+        "status_label_en": "Partial",
+        "status_source": "current-evidence",
         "is_complete": false,
         "verify": "V2",
         "is_slice": true
@@ -7599,7 +7599,7 @@
           "implementation_percent": 0.0,
           "verified_percent": 0.0,
           "done_percent": 0.0,
-          "evidence_count": 7,
+          "evidence_count": 8,
           "verified_evidence_count": 0,
           "evidence_kinds": [
             "release-gate",
@@ -24604,7 +24604,7 @@
       ]
     },
     {
-      "revision": "cbf3de5000fd",
+      "revision": "4a44b24a9c6a",
       "date": "2026-08-25",
       "metrics": {
         "primary_percent": 32.5,
@@ -24621,9 +24621,11 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "qa-dogfood"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "qa-dogfood/hardware-configuration-matrix"
+      ]
     }
   ],
   "history_contract": {
