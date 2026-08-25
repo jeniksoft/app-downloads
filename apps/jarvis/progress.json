@@ -150,10 +150,10 @@
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 5,
-        "physical_lines": 818,
-        "bytes": 33019,
-        "megabytes": 0.033019
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       },
       "binary_assets": {
         "files": 0,
@@ -162,10 +162,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 5,
-        "physical_lines": 818,
-        "bytes": 33019,
-        "megabytes": 0.033019
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       }
     }
   },
@@ -1160,7 +1160,7 @@
           "implementation_percent": 0.0,
           "verified_percent": 0.0,
           "done_percent": 0.0,
-          "evidence_count": 3,
+          "evidence_count": 4,
           "verified_evidence_count": 0,
           "evidence_kinds": [
             "release-gate",
@@ -1171,7 +1171,7 @@
             "open",
             "partial"
           ],
-          "evidence_summary_cs": "P8.9 nyní obsahuje deterministický evaluator immutable clean-install receiptu a P8.10 deterministický evaluator přesné pre-1.0 upgrade matice nad existujícím build/setup tokem, ale samotný V6 live acceptance pack stále není dodaný.",
+          "evidence_summary_cs": "P8.9 nyní obsahuje deterministický evaluator immutable clean-install receiptu, P8.10 evaluator přesné pre-1.0 upgrade matice a P8.11 evaluator LKG rollback receiptu nad existujícím build/setup tokem, ale samotný V6 live acceptance pack stále není dodaný.",
           "open_gap_cs": "Dodat current release candidate, signed artifacts, skutečný clean install/upgrade/rollback a safety audit receipts."
         }
       ]
@@ -7160,7 +7160,7 @@
       ]
     },
     {
-      "revision": "55591a6d8982",
+      "revision": "815f0afb122d",
       "date": "2026-08-25",
       "metrics": {
         "primary_percent": 32.5,
@@ -7177,9 +7177,11 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "qa-dogfood"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "qa-dogfood/release-acceptance-pack"
+      ]
     }
   ],
   "history_contract": {
