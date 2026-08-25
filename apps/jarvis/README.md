@@ -65,7 +65,7 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✕ Pouze architektura | Platformní základy · PF3 — Secrets and credential boundary | `PF3.4` | exact alias resolution | `V2` |
 | ✕ Pouze architektura | Platformní základy · PF3 — Secrets and credential boundary | `PF3.5` | redaction regression | `V2` |
 | ✕ Pouze architektura | Platformní základy · PF3 — Secrets and credential boundary | `PF3.6` | revoke rotate fixture | `V2` |
-| ✕ Pouze architektura | Platformní základy · PF4 — Resource budgets cancellation and cleanup | `PF4.1` | budget schema | `V1` |
+| ✓ Hotovo | Platformní základy · PF4 — Resource budgets cancellation and cleanup | `PF4.1` | budget schema | `V1` |
 | ✕ Pouze architektura | Platformní základy · PF4 — Resource budgets cancellation and cleanup | `PF4.2` | preflight fixture | `V1` |
 | ✕ Pouze architektura | Platformní základy · PF4 — Resource budgets cancellation and cleanup | `PF4.3` | cancellation state machine | `V1` |
 | ✕ Pouze architektura | Platformní základy · PF4 — Resource budgets cancellation and cleanup | `PF4.4` | partial cleanup fixture | `V1` |
@@ -381,9 +381,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +5 | +1159 | +0.04 |
+| Text/source celkem | +0 | +0 | +0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +5 | +1159 | +0.04 |
+| Trackovaný strom celkem | +0 | +0 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -557,7 +557,7 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `8505d8acc449` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `5ab56f720f25` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `39245fb7a37d` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
-| `a63a9cf5ae60` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `158d43e9352b` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
