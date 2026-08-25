@@ -79,7 +79,7 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✓ Hotovo | Platformní základy · PF6 — Capability health degraded and quarantine states | `PF6.2` | one provider health adapter | `V2` |
 | ✓ Hotovo | Platformní základy · PF6 — Capability health degraded and quarantine states | `PF6.3` | aggregate projection | `V2` |
 | ✓ Hotovo | Platformní základy · PF6 — Capability health degraded and quarantine states | `PF6.4` | degraded fallback fixture | `V2` |
-| ✕ Pouze architektura | Platformní základy · PF6 — Capability health degraded and quarantine states | `PF6.5` | quarantine separation test | `V2` |
+| ✓ Hotovo | Platformní základy · PF6 — Capability health degraded and quarantine states | `PF6.5` | quarantine separation test | `V2` |
 | ✕ Pouze architektura | Platformní základy · PF7 — Configuration ownership precedence and portability | `PF7.1` | settings inventory | `V2` |
 | ✕ Pouze architektura | Platformní základy · PF7 — Configuration ownership precedence and portability | `PF7.2` | typed effective config | `V2` |
 | ✕ Pouze architektura | Platformní základy · PF7 — Configuration ownership precedence and portability | `PF7.3` | monotonic security merge | `V2` |
@@ -382,9 +382,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +5 | +1280 | +0.05 |
+| Text/source celkem | +0 | +0 | +0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +5 | +1280 | +0.05 |
+| Trackovaný strom celkem | +0 | +0 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -558,7 +558,7 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `c23c8217bac6` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `29b0a6a53321` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `e5f76a076076` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
-| `6b97a0ecc479` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `61f70adc5347` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
