@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "report_locale": "cs-CZ",
   "project_codename": "Jarvis",
   "codename_is_not_final_product_name": true,
@@ -175,6 +175,102 @@
   "implementation_complete_percent": 43.75,
   "verified_percent": 32.5,
   "done_percent": 32.5,
+  "roadmap": {
+    "source": {
+      "roadmap_id": "jarvis.master.worker.v2",
+      "updated_at": "2026-08-21",
+      "file": "canonical roadmap release-gate summary"
+    },
+    "gates": [
+      {
+        "id": "PG1",
+        "edition": "personal-1.0.0",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
+        "is_complete": false,
+        "verify": "V6",
+        "dependency_count": 9,
+        "summary_cs": "Bezplatný local-first Jarvis pro jednoho člověka.",
+        "summary_en": "Free local-first Jarvis for one person."
+      },
+      {
+        "id": "TG1",
+        "edition": "teams",
+        "status": "architecture-only",
+        "status_label_cs": "Pouze architektura",
+        "status_label_en": "Architecture only",
+        "is_complete": false,
+        "verify": "V6",
+        "dependency_count": 12,
+        "summary_cs": "Spolupráce v jednom zákaznicky vlastněném TeamRealmu.",
+        "summary_en": "Collaboration in one customer-owned TeamRealm."
+      },
+      {
+        "id": "EG1",
+        "edition": "enterprise",
+        "status": "architecture-only",
+        "status_label_cs": "Pouze architektura",
+        "status_label_en": "Architecture only",
+        "is_complete": false,
+        "verify": "V6",
+        "dependency_count": 10,
+        "summary_cs": "Rekurzivní zákaznicky vlastněná organizace a Konstelace.",
+        "summary_en": "Recursive customer-owned organization and Constellation."
+      }
+    ],
+    "editions": [
+      {
+        "edition": "personal-1.0.0",
+        "name_cs": "Personal 1.0.0",
+        "name_en": "Personal 1.0.0",
+        "summary_cs": "Bezplatný local-first Jarvis pro jednoho člověka.",
+        "summary_en": "Free local-first Jarvis for one person.",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
+        "is_complete": false,
+        "progress_available": true,
+        "progress_kind": "evidence-bound",
+        "progress_percent": 32.5,
+        "measurement_cs": "Evidence-bound primary index",
+        "measurement_en": "Evidence-bound primary index"
+      },
+      {
+        "edition": "teams",
+        "name_cs": "Teams",
+        "name_en": "Teams",
+        "summary_cs": "Spolupráce v jednom zákaznicky vlastněném TeamRealmu.",
+        "summary_en": "Collaboration in one customer-owned TeamRealm.",
+        "status": "architecture-only",
+        "status_label_cs": "Pouze architektura",
+        "status_label_en": "Architecture only",
+        "is_complete": false,
+        "progress_available": false,
+        "progress_kind": "roadmap-only",
+        "progress_percent": null,
+        "measurement_cs": "Měření není aktivní",
+        "measurement_en": "Measurement not active"
+      },
+      {
+        "edition": "enterprise",
+        "name_cs": "Enterprise",
+        "name_en": "Enterprise",
+        "summary_cs": "Rekurzivní zákaznicky vlastněná organizace a Konstelace.",
+        "summary_en": "Recursive customer-owned organization and Constellation.",
+        "status": "architecture-only",
+        "status_label_cs": "Pouze architektura",
+        "status_label_en": "Architecture only",
+        "is_complete": false,
+        "progress_available": false,
+        "progress_kind": "roadmap-only",
+        "progress_percent": null,
+        "measurement_cs": "Měření není aktivní",
+        "measurement_en": "Measurement not active"
+      }
+    ],
+    "limitations": "Release-gate status is roadmap state, not a percentage. Teams and Enterprise have no active measured evidence track."
+  },
   "milestone_implementation_percent": 54.25,
   "milestone_verified_percent": 32.5,
   "milestone_done_percent": 32.5,
@@ -5663,6 +5759,50 @@
       "changed_milestones": []
     },
     {
+      "revision": "17789de6236a",
+      "date": "2026-08-21",
+      "metrics": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
+      "revision": "4febed9ae086",
+      "date": "2026-08-21",
+      "metrics": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
+    },
+    {
       "revision": "68934887ccb7",
       "date": "2026-08-22",
       "metrics": {
@@ -7425,6 +7565,28 @@
       "changed_milestones": [
         "worker-recovery/queue-journal-persistence"
       ]
+    },
+    {
+      "revision": "5fd72be18416",
+      "date": "2026-08-25",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
     }
   ],
   "history_contract": {

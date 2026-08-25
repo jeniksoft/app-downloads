@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="svg-title svg-desc" viewBox="0 0 1480 900" width="1480" height="900"><title id="svg-title">Roadmapa produktu a progress edic Jarvis</title><desc id="svg-desc">Veřejná roadmapa používá pevné fajfky a křížky pro stav bran; procentní evidence track je aktivní pouze pro Personal.</desc><style>
+:root {
+  --background: #ffffff;
+  --foreground: #1f2328;
+  --muted: #656d76;
+  --border: #d0d7de;
+  --grid: #e6ebf1;
+  --track: #f0f3f6;
+  --series-1: #0969da;
+  --series-2: #8250df;
+  --series-3: #1a7f37;
+  --series-4: #bc4c00;
+  --series-5: #cf222e;
+  --series-6: #6e7781;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0d1117;
+    --foreground: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --grid: #21262d;
+    --track: #161b22;
+    --series-1: #58a6ff;
+    --series-2: #d2a8ff;
+    --series-3: #56d364;
+    --series-4: #ffa657;
+    --series-5: #ff7b72;
+    --series-6: #8b949e;
+  }
+}
+svg { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.background { fill: var(--background); }
+.title { fill: var(--foreground); font-size: 26px; font-weight: 500; }
+.subtitle { fill: var(--muted); font-size: 15px; }
+.label { fill: var(--foreground); font-size: 15px; }
+.value { fill: var(--foreground); font-size: 16px; font-weight: 500; }
+.small { fill: var(--muted); font-size: 12px; }
+.axis-title { fill: var(--muted); font-size: 13px; }
+.axis { stroke: var(--border); stroke-width: 1; }
+.grid { stroke: var(--grid); stroke-width: 1; }
+.track { fill: var(--track); }
+.series-1 { fill: var(--series-1); stroke: var(--series-1); }
+.series-2 { fill: var(--series-2); stroke: var(--series-2); }
+.series-3 { fill: var(--series-3); stroke: var(--series-3); }
+.series-4 { fill: var(--series-4); stroke: var(--series-4); }
+.series-5 { fill: var(--series-5); stroke: var(--series-5); }
+.series-6 { fill: var(--series-6); stroke: var(--series-6); }
+.line-1 { fill: none; stroke: var(--series-1); stroke-width: 3; }
+.line-2 { fill: none; stroke: var(--series-2); stroke-width: 3; }
+.line-3 { fill: none; stroke: var(--series-3); stroke-width: 3; }
+.line-4 { fill: none; stroke: var(--series-4); stroke-width: 3; }
+.node { fill: var(--background); stroke: var(--border); stroke-width: 1.5; }
+.node-accent { fill: var(--series-1); opacity: .18; }
+.state-verified-runtime { fill: var(--series-3); }
+.state-verified-build { fill: var(--series-1); }
+.state-verified-contract { fill: var(--series-2); }
+.state-in-progress { fill: var(--series-4); }
+.state-implemented-unverified { fill: var(--series-4); }
+.state-partial { fill: var(--series-4); }
+.state-contract-only { fill: var(--series-5); }
+.state-research-only, .state-open { fill: var(--series-6); }
+.state-label { fill: var(--foreground); font-size: 13px; font-weight: 500; }
+.tile { stroke: var(--border); stroke-width: 1; }
+.status-stripe { opacity: .95; }
+.tile-stripe { opacity: .95; }
+.progress-track { fill: var(--track); stroke: var(--border); stroke-width: .5; }
+.progress-fill { fill: var(--series-1); opacity: .9; }
+.change { fill: var(--foreground); font-size: 12px; }
+.cover-panel { fill: #0b1220; }
+.cover-gradient { fill: url(#cover-accent); opacity: .78; }
+.cover-grid { fill: none; stroke: #203754; stroke-width: 1; opacity: .82; }
+.cover-kicker { fill: #8fd3ff; font-size: 13px; font-weight: 700; letter-spacing: 1.5px; }
+.cover-title { fill: #f8fafc; font-size: 48px; font-weight: 700; }
+.cover-subtitle { fill: #d1d9e6; font-size: 19px; }
+.cover-note { fill: #93a4bb; font-size: 14px; }
+.cover-stamp { fill: #a9e7c0; font-size: 12px; font-weight: 600; letter-spacing: .8px; }
+.cover-network-line { fill: none; stroke: #5da9ff; stroke-width: 2; opacity: .72; }
+.cover-network-node { fill: #0e213d; stroke: #63b3ff; stroke-width: 2; }
+.cover-network-core { fill: #c66b2d; stroke: #ffd6a5; stroke-width: 2; }
+.cover-network-label { fill: #dce7f4; font-size: 12px; font-weight: 600; letter-spacing: .7px; }
+.cover-card { fill: #111f35; stroke: #30496a; stroke-width: 1; }
+.cover-card-label { fill: #8fa5bf; font-size: 11px; font-weight: 600; letter-spacing: .8px; }
+.cover-card-value { fill: #f8fafc; font-size: 20px; font-weight: 700; }
+.roadmap-row { fill: var(--background); stroke: var(--border); stroke-width: 1; }
+.roadmap-card { fill: var(--background); stroke: var(--border); stroke-width: 1; }
+.roadmap-icon { fill: var(--background); stroke-width: 2; }
+.roadmap-badge { fill: var(--track); stroke: var(--border); stroke-width: 1; }
+.roadmap-complete { fill: var(--series-3); }
+.roadmap-open { fill: var(--series-4); }
+.roadmap-planned { fill: var(--series-6); }
+.roadmap-check { fill: var(--series-3); font-size: 24px; font-weight: 700; }
+.roadmap-cross { fill: var(--series-4); font-size: 24px; font-weight: 700; }
+.roadmap-planned-text { fill: var(--series-6); }
+.roadmap-track { fill: var(--track); stroke: var(--border); stroke-width: .5; }
+.roadmap-fill { fill: var(--series-1); opacity: .9; }
+.roadmap-track-inactive { fill: none; stroke: var(--muted); stroke-dasharray: 6 5; opacity: .72; }
+.roadmap-note { fill: var(--muted); font-size: 13px; }
+</style><rect class="background" x="0" y="0" width="1480" height="900"/><text class="title" x="42.0" y="48.0" text-anchor="start">Roadmapa produktu a progress edic</text><text class="subtitle" x="42.0" y="78.0" text-anchor="start">Pevné ✓/✕ označuje stav brány; délka ani plocha ikony nevyjadřuje procento.</text><rect class="roadmap-row" x="42" y="116" width="1396" height="38" rx="6"/><text class="small" x="68.0" y="141.0" text-anchor="start">Stav</text><text class="small" x="154.0" y="141.0" text-anchor="start">Edice</text><text class="small" x="372.0" y="141.0" text-anchor="start">Stručný popis</text><text class="small" x="1052.0" y="141.0" text-anchor="start">Ověření</text><text class="small" x="1232.0" y="141.0" text-anchor="start">Závislosti</text><rect class="roadmap-row" x="42" y="160" width="1396" height="68" rx="6"><title>Bezplatný local-first Jarvis pro jednoho člověka.</title></rect><circle class="roadmap-icon roadmap-open" cx="72" cy="192" r="17"><title>Rozpracováno</title></circle><text class="roadmap-cross" x="72.0" y="200.0" text-anchor="middle">✕</text><text class="label" x="154.0" y="190.0" text-anchor="start">PG1</text><text class="small" x="154.0" y="211.0" text-anchor="start">personal-1.0.0</text><text class="label" x="372.0" y="192.0" text-anchor="start">Bezplatný local-first Jarvis pro jednoho člověka.</text><text class="value" x="1052.0" y="192.0" text-anchor="start">V6</text><text class="value" x="1232.0" y="192.0" text-anchor="start">9</text><text class="small" x="1337.0" y="192.0" text-anchor="start">Rozpracováno</text><rect class="roadmap-row" x="42" y="236" width="1396" height="68" rx="6"><title>Spolupráce v jednom zákaznicky vlastněném TeamRealmu.</title></rect><circle class="roadmap-icon roadmap-planned" cx="72" cy="268" r="17"><title>Pouze architektura</title></circle><text class="roadmap-cross roadmap-planned-text" x="72.0" y="276.0" text-anchor="middle">✕</text><text class="label" x="154.0" y="266.0" text-anchor="start">TG1</text><text class="small" x="154.0" y="287.0" text-anchor="start">teams</text><text class="label" x="372.0" y="268.0" text-anchor="start">Spolupráce v jednom zákaznicky vlastněném TeamRealmu.</text><text class="value" x="1052.0" y="268.0" text-anchor="start">V6</text><text class="value" x="1232.0" y="268.0" text-anchor="start">12</text><text class="small" x="1337.0" y="268.0" text-anchor="start">Pouze architektura</text><rect class="roadmap-row" x="42" y="312" width="1396" height="68" rx="6"><title>Rekurzivní zákaznicky vlastněná organizace a Konstelace.</title></rect><circle class="roadmap-icon roadmap-planned" cx="72" cy="344" r="17"><title>Pouze architektura</title></circle><text class="roadmap-cross roadmap-planned-text" x="72.0" y="352.0" text-anchor="middle">✕</text><text class="label" x="154.0" y="342.0" text-anchor="start">EG1</text><text class="small" x="154.0" y="363.0" text-anchor="start">enterprise</text><text class="label" x="372.0" y="344.0" text-anchor="start">Rekurzivní zákaznicky vlastněná organizace a Konstelace.</text><text class="value" x="1052.0" y="344.0" text-anchor="start">V6</text><text class="value" x="1232.0" y="344.0" text-anchor="start">10</text><text class="small" x="1337.0" y="344.0" text-anchor="start">Pouze architektura</text><text class="title" x="42.0" y="414.0" text-anchor="start">Progress podle edice</text><text class="subtitle" x="42.0" y="444.0" text-anchor="start">Personal používá evidence-bound index; Teams a Enterprise čekají na vlastní aktivní měření.</text><rect class="roadmap-card" x="42" y="478" width="442" height="320" rx="10"><title>Bezplatný local-first Jarvis pro jednoho člověka.</title></rect><circle class="roadmap-badge roadmap-open" cx="72" cy="530" r="10"/><text class="title" x="94.0" y="526.0" text-anchor="start">Personal 1.0.0</text><text class="state-label" x="94.0" y="554.0" text-anchor="start">Rozpracováno</text><text class="small" x="66.0" y="600.0" text-anchor="start">Bezplatný local-first Jarvis pro jednoho člověka.</text><text class="small" x="66.0" y="632.0" text-anchor="start">Evidence-bound primary index</text><rect class="roadmap-track" x="66.0" y="692.0" width="394.0" height="14" rx="7"><title>Evidence-bound primary index</title></rect><rect class="roadmap-fill" x="66.0" y="692.0" width="128.1" height="14" rx="7"><title>32.50%</title></rect><text class="value" x="66.0" y="738.0" text-anchor="start">32.50%</text><rect class="roadmap-card" x="516" y="478" width="442" height="320" rx="10"><title>Spolupráce v jednom zákaznicky vlastněném TeamRealmu.</title></rect><circle class="roadmap-badge roadmap-planned" cx="546" cy="530" r="10"/><text class="title" x="568.0" y="526.0" text-anchor="start">Teams</text><text class="state-label" x="568.0" y="554.0" text-anchor="start">Pouze architektura</text><text class="small" x="540.0" y="600.0" text-anchor="start">Spolupráce v jednom zákaznicky vlastněném TeamRealmu.</text><text class="small" x="540.0" y="632.0" text-anchor="start">Měření není aktivní</text><rect class="roadmap-track" x="540.0" y="692.0" width="394.0" height="14" rx="7"><title>Měření není aktivní</title></rect><rect class="roadmap-track-inactive" x="540.0" y="692.0" width="394.0" height="14" rx="7"/><text class="roadmap-note" x="540.0" y="738.0" text-anchor="start">Měření není aktivní</text><rect class="roadmap-card" x="990" y="478" width="442" height="320" rx="10"><title>Rekurzivní zákaznicky vlastněná organizace a Konstelace.</title></rect><circle class="roadmap-badge roadmap-planned" cx="1020" cy="530" r="10"/><text class="title" x="1042.0" y="526.0" text-anchor="start">Enterprise</text><text class="state-label" x="1042.0" y="554.0" text-anchor="start">Pouze architektura</text><text class="small" x="1014.0" y="600.0" text-anchor="start">Rekurzivní zákaznicky vlastněná organizace a Konstela…</text><text class="small" x="1014.0" y="632.0" text-anchor="start">Měření není aktivní</text><rect class="roadmap-track" x="1014.0" y="692.0" width="394.0" height="14" rx="7"><title>Měření není aktivní</title></rect><rect class="roadmap-track-inactive" x="1014.0" y="692.0" width="394.0" height="14" rx="7"/><text class="roadmap-note" x="1014.0" y="738.0" text-anchor="start">Měření není aktivní</text></svg>
