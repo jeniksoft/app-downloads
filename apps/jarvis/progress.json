@@ -150,10 +150,10 @@
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 1,
-        "physical_lines": 186,
-        "bytes": 9585,
-        "megabytes": 0.009585
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       },
       "binary_assets": {
         "files": 0,
@@ -162,10 +162,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 1,
-        "physical_lines": 186,
-        "bytes": 9585,
-        "megabytes": 0.009585
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       }
     }
   },
@@ -1160,7 +1160,7 @@
           "implementation_percent": 0.0,
           "verified_percent": 0.0,
           "done_percent": 0.0,
-          "evidence_count": 6,
+          "evidence_count": 7,
           "verified_evidence_count": 0,
           "evidence_kinds": [
             "release-gate",
@@ -7232,7 +7232,7 @@
       ]
     },
     {
-      "revision": "8e7501ccb600",
+      "revision": "67ac3f8ef51f",
       "date": "2026-08-25",
       "metrics": {
         "primary_percent": 32.5,
@@ -7249,9 +7249,11 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "qa-dogfood"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "qa-dogfood/release-acceptance-pack"
+      ]
     }
   ],
   "history_contract": {
