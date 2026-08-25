@@ -32,38 +32,38 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 998,
-        "physical_lines": 341937,
-        "bytes": 22154770,
-        "megabytes": 22.15477
+        "files": 1000,
+        "physical_lines": 342750,
+        "bytes": 22190499,
+        "megabytes": 22.190499
       },
       {
         "language": "JSON",
-        "files": 272,
-        "physical_lines": 150776,
-        "bytes": 11478329,
-        "megabytes": 11.478329
+        "files": 273,
+        "physical_lines": 150885,
+        "bytes": 11482402,
+        "megabytes": 11.482402
       },
       {
         "language": "Markdown",
-        "files": 672,
-        "physical_lines": 64969,
-        "bytes": 3237423,
-        "megabytes": 3.237423
+        "files": 673,
+        "physical_lines": 65091,
+        "bytes": 3243621,
+        "megabytes": 3.243621
       },
       {
         "language": "Python",
-        "files": 154,
-        "physical_lines": 34926,
-        "bytes": 1416442,
-        "megabytes": 1.416442
+        "files": 155,
+        "physical_lines": 35026,
+        "bytes": 1420025,
+        "megabytes": 1.420025
       },
       {
         "language": "PowerShell",
         "files": 50,
-        "physical_lines": 24822,
-        "bytes": 1303244,
-        "megabytes": 1.303244
+        "physical_lines": 24833,
+        "bytes": 1303965,
+        "megabytes": 1.303965
       },
       {
         "language": "JSONL",
@@ -130,10 +130,10 @@
       }
     ],
     "source_text": {
-      "files": 2298,
-      "physical_lines": 621733,
-      "bytes": 46741325,
-      "megabytes": 46.741325
+      "files": 2303,
+      "physical_lines": 622888,
+      "bytes": 46791629,
+      "megabytes": 46.791629
     },
     "binary_assets": {
       "files": 35,
@@ -141,19 +141,19 @@
       "megabytes": 14.4705
     },
     "tracked_total": {
-      "files": 2333,
-      "physical_lines": 621733,
-      "bytes": 61211825,
-      "megabytes": 61.211825
+      "files": 2338,
+      "physical_lines": 622888,
+      "bytes": 61262129,
+      "megabytes": 61.262129
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "files": 5,
+        "physical_lines": 1155,
+        "bytes": 50304,
+        "megabytes": 0.050304
       },
       "binary_assets": {
         "files": 0,
@@ -162,10 +162,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "files": 5,
+        "physical_lines": 1155,
+        "bytes": 50304,
+        "megabytes": 0.050304
       }
     }
   },
@@ -28810,6 +28810,40 @@
     {
       "revision": "6c7818e40b65",
       "date": "2026-08-25",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 289,
+        "completed_item_count": 93,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 83,
+      "verified_evidence_delta": 0
+    },
+    {
+      "revision": "fe5b9b6bd441",
+      "date": "2026-08-26",
       "metrics": {
         "primary_percent": 32.5,
         "implementation_percent": 43.75,
