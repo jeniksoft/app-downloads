@@ -150,10 +150,10 @@
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 5,
-        "physical_lines": 881,
-        "bytes": 35459,
-        "megabytes": 0.035459
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       },
       "binary_assets": {
         "files": 0,
@@ -162,10 +162,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 5,
-        "physical_lines": 881,
-        "bytes": 35459,
-        "megabytes": 0.035459
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       }
     }
   },
@@ -1139,14 +1139,16 @@
           "implementation_percent": 0.0,
           "verified_percent": 0.0,
           "done_percent": 0.0,
-          "evidence_count": 1,
+          "evidence_count": 2,
           "verified_evidence_count": 0,
           "evidence_kinds": [
-            "release-gate"
+            "release-gate",
+            "self-test"
           ],
           "verified_evidence_kinds": [],
           "evidence_statuses": [
-            "open"
+            "open",
+            "partial"
           ],
           "evidence_summary_cs": "Owner-approved release source označuje hardware/configuration matrix jako early.",
           "open_gap_cs": "Dodat opakovatelná měření na skutečných konfiguracích s identity a environment receipts."
@@ -7256,7 +7258,7 @@
       ]
     },
     {
-      "revision": "4e64b9d2472e",
+      "revision": "e30d365315ae",
       "date": "2026-08-25",
       "metrics": {
         "primary_percent": 32.5,
@@ -7273,9 +7275,11 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "qa-dogfood"
       ],
-      "changed_milestones": []
+      "changed_milestones": [
+        "qa-dogfood/hardware-configuration-matrix"
+      ]
     }
   ],
   "history_contract": {
