@@ -32,38 +32,38 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 946,
-        "physical_lines": 322357,
-        "bytes": 21323847,
-        "megabytes": 21.323847
+        "files": 948,
+        "physical_lines": 323003,
+        "bytes": 21352164,
+        "megabytes": 21.352164
       },
       {
         "language": "JSON",
-        "files": 238,
-        "physical_lines": 145848,
-        "bytes": 11264170,
-        "megabytes": 11.26417
+        "files": 239,
+        "physical_lines": 145928,
+        "bytes": 11266926,
+        "megabytes": 11.266926
       },
       {
         "language": "Markdown",
-        "files": 645,
-        "physical_lines": 62284,
-        "bytes": 3100062,
-        "megabytes": 3.100062
+        "files": 646,
+        "physical_lines": 62339,
+        "bytes": 3103135,
+        "megabytes": 3.103135
       },
       {
         "language": "Python",
-        "files": 128,
-        "physical_lines": 30836,
-        "bytes": 1268706,
-        "megabytes": 1.268706
+        "files": 129,
+        "physical_lines": 30971,
+        "bytes": 1272785,
+        "megabytes": 1.272785
       },
       {
         "language": "PowerShell",
         "files": 50,
-        "physical_lines": 24554,
-        "bytes": 1286298,
-        "megabytes": 1.286298
+        "physical_lines": 24563,
+        "bytes": 1286866,
+        "megabytes": 1.286866
       },
       {
         "language": "JSONL",
@@ -130,10 +130,10 @@
       }
     ],
     "source_text": {
-      "files": 2159,
-      "physical_lines": 590182,
-      "bytes": 45394200,
-      "megabytes": 45.3942
+      "files": 2164,
+      "physical_lines": 591107,
+      "bytes": 45432993,
+      "megabytes": 45.432993
     },
     "binary_assets": {
       "files": 35,
@@ -141,19 +141,19 @@
       "megabytes": 14.4705
     },
     "tracked_total": {
-      "files": 2194,
-      "physical_lines": 590182,
-      "bytes": 59864700,
-      "megabytes": 59.8647
+      "files": 2199,
+      "physical_lines": 591107,
+      "bytes": 59903493,
+      "megabytes": 59.903493
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "files": 5,
+        "physical_lines": 925,
+        "bytes": 38793,
+        "megabytes": 0.038793
       },
       "binary_assets": {
         "files": 0,
@@ -162,10 +162,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "files": 5,
+        "physical_lines": 925,
+        "bytes": 38793,
+        "megabytes": 0.038793
       }
     }
   },
@@ -7633,6 +7633,28 @@
       "changed_milestones": [
         "worker-recovery/queue-journal-persistence"
       ]
+    },
+    {
+      "revision": "96ea8a1597d3",
+      "date": "2026-08-25",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
     }
   ],
   "history_contract": {
