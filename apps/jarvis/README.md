@@ -53,7 +53,7 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✓ Hotovo | Platformní základy · PF1 — Schémata, persistence a migrace | `PF1.3` | Znovupoužitelný atomický zápis s crash fixture | `V1` |
 | ✓ Hotovo | Platformní základy · PF1 — Schémata, persistence a migrace | `PF1.4` | Čistý plánovač migrace bez mutace dat | `V1` |
 | ✓ Hotovo | Platformní základy · PF1 — Schémata, persistence a migrace | `PF1.5` | Migrační fixture old → new → rollback | `V1` |
-| ✕ Pouze architektura | Platformní základy · PF1 — Schémata, persistence a migrace | `PF1.6` | Napojení kompatibility schémat do LKG evidence | `V1` |
+| ✓ Hotovo | Platformní základy · PF1 — Schémata, persistence a migrace | `PF1.6` | Napojení kompatibility schémat do LKG evidence | `V1` |
 | ✕ Pouze architektura | Platformní základy · PF2 — Time epochs and leases | `PF2.1` | time-use inventory | `V1` |
 | ✕ Pouze architektura | Platformní základy · PF2 — Time epochs and leases | `PF2.2` | typed time helpers | `V1` |
 | ✕ Pouze architektura | Platformní základy · PF2 — Time epochs and leases | `PF2.3` | clock rollback fixtures | `V1` |
@@ -381,9 +381,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +0 | +404 | +0.02 |
+| Text/source celkem | +0 | +0 | +0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +0 | +404 | +0.02 |
+| Trackovaný strom celkem | +0 | +0 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -557,7 +557,7 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `5bcf5315abc8` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `9757ef3f02e5` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `5cf8764a299e` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `9e243821a3a2` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `e233227bffcc` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
