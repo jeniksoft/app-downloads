@@ -40,16 +40,16 @@
       {
         "language": "JSON",
         "files": 263,
-        "physical_lines": 149547,
-        "bytes": 11442348,
-        "megabytes": 11.442348
+        "physical_lines": 149551,
+        "bytes": 11444142,
+        "megabytes": 11.444142
       },
       {
         "language": "Markdown",
         "files": 663,
-        "physical_lines": 63719,
-        "bytes": 3175580,
-        "megabytes": 3.17558
+        "physical_lines": 63820,
+        "bytes": 3182145,
+        "megabytes": 3.182145
       },
       {
         "language": "Python",
@@ -131,9 +131,9 @@
     ],
     "source_text": {
       "files": 2253,
-      "physical_lines": 609810,
-      "bytes": 46237567,
-      "megabytes": 46.237567
+      "physical_lines": 609915,
+      "bytes": 46245926,
+      "megabytes": 46.245926
     },
     "binary_assets": {
       "files": 35,
@@ -142,18 +142,18 @@
     },
     "tracked_total": {
       "files": 2288,
-      "physical_lines": 609810,
-      "bytes": 60708067,
-      "megabytes": 60.708067
+      "physical_lines": 609915,
+      "bytes": 60716426,
+      "megabytes": 60.716426
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "physical_lines": 105,
+        "bytes": 8359,
+        "megabytes": 0.008359
       },
       "binary_assets": {
         "files": 0,
@@ -163,9 +163,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "physical_lines": 105,
+        "bytes": 8359,
+        "megabytes": 0.008359
       }
     }
   },
@@ -178,7 +178,7 @@
   "roadmap": {
     "source": {
       "roadmap_id": "jarvis.master.worker.v2",
-      "updated_at": "2026-08-21",
+      "updated_at": "2026-08-25",
       "file": "canonical roadmap hierarchy and release-gate summary"
     },
     "gates": [
@@ -294,7 +294,7 @@
         "name_en": "Personal 1.0.0",
         "chapter_color": "personal",
         "chapter_count": 9,
-        "item_count": 98,
+        "item_count": 99,
         "completed_item_count": 24
       },
       {
@@ -608,7 +608,7 @@
         "status_label_cs": "Rozpracováno",
         "status_label_en": "In progress",
         "is_complete": false,
-        "item_count": 10,
+        "item_count": 11,
         "completed_item_count": 0
       },
       {
@@ -3685,6 +3685,25 @@
         "is_slice": true
       },
       {
+        "id": "P3.11",
+        "chapter_id": "P3",
+        "chapter_name_cs": "P3 — Intake Research and source quality",
+        "chapter_name_en": "P3 — Intake Research and source quality",
+        "group_id": "personal",
+        "group_name_cs": "Personal 1.0.0",
+        "group_name_en": "Personal 1.0.0",
+        "chapter_color": "personal",
+        "description_cs": "multimedia and ambiguous input authority gate",
+        "description_en": "multimedia and ambiguous input authority gate",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
+        "status_source": "canonical-roadmap",
+        "is_complete": false,
+        "verify": "V2",
+        "is_slice": true
+      },
+      {
         "id": "P4.1",
         "chapter_id": "P4",
         "chapter_name_cs": "P4 — Workspace action reliability",
@@ -6611,7 +6630,7 @@
         "is_slice": false
       }
     ],
-    "item_count": 288,
+    "item_count": 289,
     "completed_item_count": 88,
     "limitations": "Release-gate status is roadmap state, not a percentage. Item ✓ means deterministic implementation/evidence is present; live owner acceptance can remain open. Teams and Enterprise have no active measured evidence track."
   },
@@ -24441,6 +24460,28 @@
       "changed_milestones": [
         "worker-recovery/queue-journal-persistence"
       ]
+    },
+    {
+      "revision": "e6e29e9f4723",
+      "date": "2026-08-25",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": []
     }
   ],
   "history_contract": {

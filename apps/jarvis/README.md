@@ -178,6 +178,7 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.8` | contradiction preservation and revalidation | `V2` |
 | ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.9` | owner-facing sourced answer truth contract | `V2` |
 | ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.10` | intake-research-re-evaluate live dogfood | `V4` |
+| ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.11` | multimedia and ambiguous input authority gate | `V2` |
 | ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.1` | natural text maps to typed intent only | `V1` |
 | ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.2` | bounded file read-list runtime | `V2` |
 | ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.3` | atomic file create-write-append | `V2` |
@@ -358,8 +359,8 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
 | C/C++ | 980 | 333 767 | 21.80 |
-| JSON | 263 | 149 547 | 11.44 |
-| Markdown | 663 | 63 719 | 3.18 |
+| JSON | 263 | 149 551 | 11.44 |
+| Markdown | 663 | 63 820 | 3.18 |
 | Python | 145 | 33 737 | 1.37 |
 | PowerShell | 50 | 24 737 | 1.30 |
 | JSONL | 14 | 2 499 | 6.91 |
@@ -371,9 +372,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
 | Other text | 7 | 7 | 0.00 |
-| **Text/source celkem** | **2 253** | **609 810** | **46.24** |
+| **Text/source celkem** | **2 253** | **609 915** | **46.25** |
 | Binární assety (mimo řádky) | 35 | — | 14.47 |
-| **Trackovaný strom celkem** | **2 288** | **609 810** | **60.71** |
+| **Trackovaný strom celkem** | **2 288** | **609 915** | **60.72** |
 
 ### Přírůstek od předchozí revize
 
@@ -381,9 +382,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +0 | +0 | +0.00 |
+| Text/source celkem | +0 | +105 | +0.01 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +0 | +0 | +0.00 |
+| Trackovaný strom celkem | +0 | +105 | +0.01 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -540,7 +541,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `5cf8764a299e` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `e233227bffcc` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `9cfd76c521b5` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `edd499f4a8ee` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
@@ -558,6 +558,7 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `106a910fb101` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `3ff32c6916e7` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `48874248fae5` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
+| `e6e29e9f4723` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
