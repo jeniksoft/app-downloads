@@ -62,9 +62,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +5 | +1034 | +0.04 |
+| Text/source celkem | +0 | +0 | +0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +5 | +1034 | +0.04 |
+| Trackovaný strom celkem | +0 | +0 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -238,7 +238,7 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `c7a0f53679e5` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/release-acceptance-pack |
 | `67ac3f8ef51f` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/release-acceptance-pack |
 | `e30d365315ae` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/hardware-configuration-matrix |
-| `76adac845fb4` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `762b687e684f` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/hardware-configuration-matrix |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
