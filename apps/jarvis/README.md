@@ -38,6 +38,303 @@ Tabulka používá pevnou ✓/✕ značku: ✓ znamená ověřenou release brán
 
 ![Roadmapa a progress edic Jarvis](visuals/roadmap-editions.svg)
 
+### Celá roadmapa — kapitoly a podřezy
+
+Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné kapitoly jsou vidět v grafu; zde je stejný obsah dostupný i jako přesná textová tabulka. ✓ znamená deterministicky implementováno nebo doloženo aktuální evidencí; živé owner acceptance může zůstat otevřené.
+
+| Stav | Kapitola | ID | Stručný popis | Ověření |
+| --- | --- | --- | --- | --- |
+| ✕ Pouze architektura | Platformní základy · PF0 — Stable identities and namespaces | `PF0.1` | identity-types inventory | `V1` |
+| ✕ Pouze architektura | Platformní základy · PF0 — Stable identities and namespaces | `PF0.2` | identity normalization | `V1` |
+| ✕ Pouze architektura | Platformní základy · PF0 — Stable identities and namespaces | `PF0.3` | identity negative fixtures | `V1` |
+| ✕ Pouze architektura | Platformní základy · PF0 — Stable identities and namespaces | `PF0.4` | lineage contract | `V1` |
+| ✓ Hotovo | Platformní základy · PF1 — Schémata, persistence a migrace | `PF1.1` | Inventář durable schémat bez mutace | `V1` |
+| ✕ Částečně | Platformní základy · PF1 — Schémata, persistence a migrace | `PF1.2` | Společný UI-free envelope a parser self-test | `V1` |
+| ✓ Hotovo | Platformní základy · PF1 — Schémata, persistence a migrace | `PF1.3` | Znovupoužitelný atomický zápis s crash fixture | `V1` |
+| ✓ Hotovo | Platformní základy · PF1 — Schémata, persistence a migrace | `PF1.4` | Čistý plánovač migrace bez mutace dat | `V1` |
+| ✕ Pouze architektura | Platformní základy · PF1 — Schémata, persistence a migrace | `PF1.5` | Migrační fixture old → new → rollback | `V1` |
+| ✕ Pouze architektura | Platformní základy · PF1 — Schémata, persistence a migrace | `PF1.6` | Napojení kompatibility schémat do LKG evidence | `V1` |
+| ✕ Pouze architektura | Platformní základy · PF2 — Time epochs and leases | `PF2.1` | time-use inventory | `V1` |
+| ✕ Pouze architektura | Platformní základy · PF2 — Time epochs and leases | `PF2.2` | typed time helpers | `V1` |
+| ✕ Pouze architektura | Platformní základy · PF2 — Time epochs and leases | `PF2.3` | clock rollback fixtures | `V1` |
+| ✕ Pouze architektura | Platformní základy · PF2 — Time epochs and leases | `PF2.4` | lease envelope | `V1` |
+| ✕ Pouze architektura | Platformní základy · PF2 — Time epochs and leases | `PF2.5` | authority epoch fixture | `V1` |
+| ✕ Pouze architektura | Platformní základy · PF3 — Secrets and credential boundary | `PF3.1` | credential flow audit | `V2` |
+| ✕ Pouze architektura | Platformní základy · PF3 — Secrets and credential boundary | `PF3.2` | CredentialRef types | `V2` |
+| ✕ Pouze architektura | Platformní základy · PF3 — Secrets and credential boundary | `PF3.3` | local protected store adapter | `V2` |
+| ✕ Pouze architektura | Platformní základy · PF3 — Secrets and credential boundary | `PF3.4` | exact alias resolution | `V2` |
+| ✕ Pouze architektura | Platformní základy · PF3 — Secrets and credential boundary | `PF3.5` | redaction regression | `V2` |
+| ✕ Pouze architektura | Platformní základy · PF3 — Secrets and credential boundary | `PF3.6` | revoke rotate fixture | `V2` |
+| ✕ Pouze architektura | Platformní základy · PF4 — Resource budgets cancellation and cleanup | `PF4.1` | budget schema | `V1` |
+| ✕ Pouze architektura | Platformní základy · PF4 — Resource budgets cancellation and cleanup | `PF4.2` | preflight fixture | `V1` |
+| ✕ Pouze architektura | Platformní základy · PF4 — Resource budgets cancellation and cleanup | `PF4.3` | cancellation state machine | `V1` |
+| ✕ Pouze architektura | Platformní základy · PF4 — Resource budgets cancellation and cleanup | `PF4.4` | partial cleanup fixture | `V1` |
+| ✕ Pouze architektura | Platformní základy · PF4 — Resource budgets cancellation and cleanup | `PF4.5` | resource observability | `V1` |
+| ✕ Rozpracováno | Platformní základy · PF5 — Artifact evidence and provenance | `PF5.1` | ArtifactRef types | `V1` |
+| ✕ Rozpracováno | Platformní základy · PF5 — Artifact evidence and provenance | `PF5.2` | evidence link helper | `V1` |
+| ✕ Rozpracováno | Platformní základy · PF5 — Artifact evidence and provenance | `PF5.3` | provenance chain fixture | `V1` |
+| ✕ Rozpracováno | Platformní základy · PF5 — Artifact evidence and provenance | `PF5.4` | quarantine provenance fixture | `V1` |
+| ✕ Rozpracováno | Platformní základy · PF5 — Artifact evidence and provenance | `PF5.5` | local export manifest | `V1` |
+| ✕ Pouze architektura | Platformní základy · PF6 — Capability health degraded and quarantine states | `PF6.1` | health vocabulary | `V2` |
+| ✕ Pouze architektura | Platformní základy · PF6 — Capability health degraded and quarantine states | `PF6.2` | one provider health adapter | `V2` |
+| ✕ Pouze architektura | Platformní základy · PF6 — Capability health degraded and quarantine states | `PF6.3` | aggregate projection | `V2` |
+| ✕ Pouze architektura | Platformní základy · PF6 — Capability health degraded and quarantine states | `PF6.4` | degraded fallback fixture | `V2` |
+| ✕ Pouze architektura | Platformní základy · PF6 — Capability health degraded and quarantine states | `PF6.5` | quarantine separation test | `V2` |
+| ✕ Pouze architektura | Platformní základy · PF7 — Configuration ownership precedence and portability | `PF7.1` | settings inventory | `V2` |
+| ✕ Pouze architektura | Platformní základy · PF7 — Configuration ownership precedence and portability | `PF7.2` | typed effective config | `V2` |
+| ✕ Pouze architektura | Platformní základy · PF7 — Configuration ownership precedence and portability | `PF7.3` | monotonic security merge | `V2` |
+| ✕ Pouze architektura | Platformní základy · PF7 — Configuration ownership precedence and portability | `PF7.4` | portable export | `V2` |
+| ✕ Pouze architektura | Platformní základy · PF7 — Configuration ownership precedence and portability | `PF7.5` | invalid config LKG | `V2` |
+| ✓ Hotovo | Platformní základy · PF8 — Architecture Self-Model integration | `PF8.1` | ASM foundation schema extension | `V2` |
+| ✓ Hotovo | Platformní základy · PF8 — Architecture Self-Model integration | `PF8.2` | source manifest derivation | `V2` |
+| ✓ Hotovo | Platformní základy · PF8 — Architecture Self-Model integration | `PF8.3` | stale-on-foundation-change fixture | `V2` |
+| ✓ Hotovo | Platformní základy · PF8 — Architecture Self-Model integration | `PF8.4` | protected-boundary negative test | `V2` |
+| ✓ Hotovo | Jádro runtime · C0 — Polaris durable owner goal authority | `C0.1` | goal schema and stable status forms | `V2` |
+| ✓ Hotovo | Jádro runtime · C0 — Polaris durable owner goal authority | `C0.2` | one-active-goal invariant | `V2` |
+| ✓ Hotovo | Jádro runtime · C0 — Polaris durable owner goal authority | `C0.3` | Hydra-Nanity anchor binding | `V2` |
+| ✓ Hotovo | Jádro runtime · C0 — Polaris durable owner goal authority | `C0.4` | restart persistence and exact load | `V2` |
+| ✓ Hotovo | Jádro runtime · C0 — Polaris durable owner goal authority | `C0.5` | owner goal switch fail-safe transition | `V2` |
+| ✓ Hotovo | Jádro runtime · C0 — Polaris durable owner goal authority | `C0.6` | progress-known versus unknown projection | `V2` |
+| ✓ Hotovo | Jádro runtime · C0 — Polaris durable owner goal authority | `C0.7` | terminal immutability and recovery fixture | `V2` |
+| ✕ Rozpracováno | Jádro runtime · C1 — Ariadna Hydra Norn Nanity Mimir execution control plane | `C1.1` | typed intent envelope | `V3` |
+| ✕ Rozpracováno | Jádro runtime · C1 — Ariadna Hydra Norn Nanity Mimir execution control plane | `C1.2` | bounded context envelope | `V3` |
+| ✕ Rozpracováno | Jádro runtime · C1 — Ariadna Hydra Norn Nanity Mimir execution control plane | `C1.3` | Hydra decomposition contract | `V3` |
+| ✕ Rozpracováno | Jádro runtime · C1 — Ariadna Hydra Norn Nanity Mimir execution control plane | `C1.4` | Norn Nanity compilation | `V3` |
+| ✕ Rozpracováno | Jádro runtime · C1 — Ariadna Hydra Norn Nanity Mimir execution control plane | `C1.5` | one atomic Nanity target | `V3` |
+| ✕ Rozpracováno | Jádro runtime · C1 — Ariadna Hydra Norn Nanity Mimir execution control plane | `C1.6` | immutable Ariadna receipt | `V3` |
+| ✕ Rozpracováno | Jádro runtime · C1 — Ariadna Hydra Norn Nanity Mimir execution control plane | `C1.7` | Mimir same-tier attempt memory | `V3` |
+| ✕ Rozpracováno | Jádro runtime · C1 — Ariadna Hydra Norn Nanity Mimir execution control plane | `C1.8` | Fragment-preserving repair | `V3` |
+| ✕ Rozpracováno | Jádro runtime · C1 — Ariadna Hydra Norn Nanity Mimir execution control plane | `C1.9` | bottom-up receipt assembly | `V3` |
+| ✕ Rozpracováno | Jádro runtime · C1 — Ariadna Hydra Norn Nanity Mimir execution control plane | `C1.10` | restart graph restoration | `V3` |
+| ✓ Hotovo | Jádro runtime · C2 — Kormidlo benchmark Work Report and deployment decision | `C2.1` | benchmark identity and freshness | `V2` |
+| ✓ Hotovo | Jádro runtime · C2 — Kormidlo benchmark Work Report and deployment decision | `C2.2` | Work Report exact role-task scope | `V2` |
+| ✓ Hotovo | Jádro runtime · C2 — Kormidlo benchmark Work Report and deployment decision | `C2.3` | deployment decision persistence | `V2` |
+| ✓ Hotovo | Jádro runtime · C2 — Kormidlo benchmark Work Report and deployment decision | `C2.4` | dynamic role ordering | `V2` |
+| ✓ Hotovo | Jádro runtime · C2 — Kormidlo benchmark Work Report and deployment decision | `C2.5` | failure-only evidence demotion | `V2` |
+| ✓ Hotovo | Jádro runtime · C2 — Kormidlo benchmark Work Report and deployment decision | `C2.6` | cost-latency evidence without quality bypass | `V2` |
+| ✓ Hotovo | Jádro runtime · C2 — Kormidlo benchmark Work Report and deployment decision | `C2.7` | owner explanation of selected model | `V2` |
+| ✓ Hotovo | Jádro runtime · C2 — Kormidlo benchmark Work Report and deployment decision | `C2.8` | stale evidence re-evaluation | `V2` |
+| ✓ Hotovo | Jádro runtime · C3 — Typed executor scope source authority and structured edit boundary | `C3.1` | executor-scope schema | `V3` |
+| ✓ Hotovo | Jádro runtime · C3 — Typed executor scope source authority and structured edit boundary | `C3.2` | canonical containment | `V3` |
+| ✓ Hotovo | Jádro runtime · C3 — Typed executor scope source authority and structured edit boundary | `C3.3` | tracked-source authority | `V3` |
+| ✓ Hotovo | Jádro runtime · C3 — Typed executor scope source authority and structured edit boundary | `C3.4` | bounded scoped source discovery | `V3` |
+| ✓ Hotovo | Jádro runtime · C3 — Typed executor scope source authority and structured edit boundary | `C3.5` | collector-owned exact anchor | `V3` |
+| ✓ Hotovo | Jádro runtime · C3 — Typed executor scope source authority and structured edit boundary | `C3.6` | writable artifact family | `V3` |
+| ✓ Hotovo | Jádro runtime · C3 — Typed executor scope source authority and structured edit boundary | `C3.7` | structured edit precondition | `V3` |
+| ✓ Hotovo | Jádro runtime · C3 — Typed executor scope source authority and structured edit boundary | `C3.8` | post-mutation real Git diff proof | `V3` |
+| ✓ Hotovo | Jádro runtime · C3 — Typed executor scope source authority and structured edit boundary | `C3.9` | exact rollback on apply failure | `V3` |
+| ✓ Hotovo | Jádro runtime · C3 — Typed executor scope source authority and structured edit boundary | `C3.10` | resume reapplies persisted scope transactionally | `V3` |
+| ✓ Hotovo | Jádro runtime · C4 — Pulse and Saga truthful owner observability | `C4.1` | typed Pulse input only | `V2` |
+| ✓ Hotovo | Jádro runtime · C4 — Pulse and Saga truthful owner observability | `C4.2` | deterministic phase vocabulary | `V2` |
+| ✓ Hotovo | Jádro runtime · C4 — Pulse and Saga truthful owner observability | `C4.3` | exact model-contract-gate facts | `V2` |
+| ✓ Hotovo | Jádro runtime · C4 — Pulse and Saga truthful owner observability | `C4.4` | Saga structured component-action vocabulary | `V2` |
+| ✓ Hotovo | Jádro runtime · C4 — Pulse and Saga truthful owner observability | `C4.5` | unknown action suppression | `V2` |
+| ✓ Hotovo | Jádro runtime · C4 — Pulse and Saga truthful owner observability | `C4.6` | secret and prompt-plumbing sanitization | `V2` |
+| ✓ Hotovo | Jádro runtime · C4 — Pulse and Saga truthful owner observability | `C4.7` | live-to-collapsed activity roundtrip | `V2` |
+| ✓ Hotovo | Jádro runtime · C4 — Pulse and Saga truthful owner observability | `C4.8` | owner-facing reason without hidden reasoning | `V2` |
+| ✕ Rozpracováno | Jádro runtime · C5 — Independent Aegis verification and acceptance authority | `C5.1` | immutable acceptance oracle identity | `V3` |
+| ✕ Rozpracováno | Jádro runtime · C5 — Independent Aegis verification and acceptance authority | `C5.2` | candidate cannot edit acceptance pack | `V3` |
+| ✕ Rozpracováno | Jádro runtime · C5 — Independent Aegis verification and acceptance authority | `C5.3` | parser-compiler-test separation from model | `V3` |
+| ✕ Rozpracováno | Jádro runtime · C5 — Independent Aegis verification and acceptance authority | `C5.4` | result-known-unknown taxonomy | `V3` |
+| ✕ Rozpracováno | Jádro runtime · C5 — Independent Aegis verification and acceptance authority | `C5.5` | build versus live-acceptance distinction | `V3` |
+| ✕ Rozpracováno | Jádro runtime · C5 — Independent Aegis verification and acceptance authority | `C5.6` | evidence-backed finding receipt | `V3` |
+| ✕ Rozpracováno | Jádro runtime · C5 — Independent Aegis verification and acceptance authority | `C5.7` | verification replay without mutation | `V3` |
+| ✓ Hotovo | Jádro runtime · C6 — CoreService Bifrost and typed same-user process boundary | `C6.1` | bounded Core event contract | `V3` |
+| ✓ Hotovo | Jádro runtime · C6 — CoreService Bifrost and typed same-user process boundary | `C6.2` | single worker lifecycle | `V3` |
+| ✓ Hotovo | Jádro runtime · C6 — CoreService Bifrost and typed same-user process boundary | `C6.3` | strict IPC schema and framing | `V3` |
+| ✓ Hotovo | Jádro runtime · C6 — CoreService Bifrost and typed same-user process boundary | `C6.4` | local SID and executable identity | `V3` |
+| ✓ Hotovo | Jádro runtime · C6 — CoreService Bifrost and typed same-user process boundary | `C6.5` | remote client rejection | `V3` |
+| ✓ Hotovo | Jádro runtime · C6 — CoreService Bifrost and typed same-user process boundary | `C6.6` | graceful bounded child lifecycle | `V3` |
+| ✓ Hotovo | Jádro runtime · C6 — CoreService Bifrost and typed same-user process boundary | `C6.7` | headless-tray presentation authority separation | `V3` |
+| ✕ Rozpracováno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.1` | read-only durable state ownership map | `V0` |
+| ✕ Rozpracováno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.2` | typed resume phase vocabulary | `V1` |
+| ✕ Rozpracováno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.3` | precondition snapshot before consequential step | `V1` |
+| ✕ Rozpracováno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.4` | post-mutation checkpoint with before-after digest | `V1` |
+| ✕ Rozpracováno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.5` | pure safe-resume classifier | `V1` |
+| ✕ Rozpracováno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.6` | verify-only resume without mutation replay | `V3` |
+| ✕ Rozpracováno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.7` | one tool-specific resume adapter per run | `V3` |
+| ✓ Hotovo | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.8` | production-complete model continuation enumerator | `V3` |
+| ✕ Rozpracováno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.9` | long provider requeue live acceptance | `V4` |
+| ✓ Hotovo | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.10` | crash restart fault matrix | `V4` |
+| ✓ Hotovo | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.11` | recovery UI projects typed truth only | `V5` |
+| ✕ Rozpracováno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.1` | canonical provider endpoint identity | `V1` |
+| ✕ Rozpracováno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.2` | canonical model identity digest revision quantization | `V1` |
+| ✕ Rozpracováno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.3` | explicit model capability manifest | `V1` |
+| ✕ Rozpracováno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.4` | typed health readiness state | `V2` |
+| ✕ Rozpracováno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.5` | owner-facing local and LAN endpoint validation | `V4` |
+| ✕ Rozpracováno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.6` | download install readiness and durable cancel-resume | `V3` |
+| ✕ Rozpracováno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.7` | hard-task downgrade regression matrix | `V1` |
+| ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.8` | fallback failure taxonomy | `V2` |
+| ✕ Rozpracováno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.9` | Kormidlo benchmark-Work Report evidence bridge | `V2` |
+| ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.10` | provider resource arbitration | `V3` |
+| ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.11` | local and LAN disconnect recovery matrix | `V5` |
+| ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.1` | current request authority regression | `V1` |
+| ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.2` | project snapshot fingerprint and delta classification | `V2` |
+| ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.3` | typed evidence classes and provenance | `V1` |
+| ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.4` | evidence sufficiency typed result | `V1` |
+| ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.5` | bounded research request contract | `V1` |
+| ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.6` | local-first research adapters | `V2` |
+| ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.7` | public web source isolation and attribution | `V3` |
+| ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.8` | contradiction preservation and revalidation | `V2` |
+| ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.9` | owner-facing sourced answer truth contract | `V2` |
+| ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.10` | intake-research-re-evaluate live dogfood | `V4` |
+| ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.1` | natural text maps to typed intent only | `V1` |
+| ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.2` | bounded file read-list runtime | `V2` |
+| ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.3` | atomic file create-write-append | `V2` |
+| ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.4` | exact replace edit with precondition | `V2` |
+| ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.5` | copy-move-delete rollback semantics | `V2` |
+| ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.6` | safe directory create | `V2` |
+| ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.7` | allow-listed build-test presets | `V3` |
+| ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.8` | read-only Git exact args | `V2` |
+| ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.9` | confirmed Git commit-push with identity receipts | `V3` |
+| ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.10` | confirmed app-browser open boundaries | `V4` |
+| ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.11` | manifest-declared read-only extension HTTP | `V3` |
+| ✓ Hotovo | Personal 1.0.0 · P4 — Workspace action reliability | `P4.12` | typed general MCP-plugin-app transport with no side effects | `V2` |
+| ✓ Hotovo | Personal 1.0.0 · P4 — Workspace action reliability | `P4.13` | read-only extension invocation lifecycle | `V3` |
+| ✓ Hotovo | Personal 1.0.0 · P4 — Workspace action reliability | `P4.14` | one reversible mutating extension class | `V4` |
+| ✓ Hotovo | Personal 1.0.0 · P4 — Workspace action reliability | `P4.15` | result-known-unknown resume lifecycle | `V4` |
+| ✓ Hotovo | Personal 1.0.0 · P4 — Workspace action reliability | `P4.16` | workspace action fault matrix | `V4` |
+| ✕ Rozpracováno | Personal 1.0.0 · P5 — Memory and continuity | `P5.1` | immutable memory event schema | `V1` |
+| ✕ Rozpracováno | Personal 1.0.0 · P5 — Memory and continuity | `P5.2` | fact derivation state machine | `V1` |
+| ✕ Rozpracováno | Personal 1.0.0 · P5 — Memory and continuity | `P5.3` | owner correction-retraction events | `V2` |
+| ✕ Rozpracováno | Personal 1.0.0 · P5 — Memory and continuity | `P5.4` | bounded retrieval index and context pack | `V2` |
+| ✕ Rozpracováno | Personal 1.0.0 · P5 — Memory and continuity | `P5.5` | current-state freshness gate | `V2` |
+| ✕ Rozpracováno | Personal 1.0.0 · P5 — Memory and continuity | `P5.6` | memory prompt projection cannot replay tasks | `V1` |
+| ✕ Rozpracováno | Personal 1.0.0 · P5 — Memory and continuity | `P5.7` | cross-chat SharedWork evidence integration | `V2` |
+| ✕ Rozpracováno | Personal 1.0.0 · P5 — Memory and continuity | `P5.8` | retention-delete-export semantics | `V2` |
+| ✕ Rozpracováno | Personal 1.0.0 · P5 — Memory and continuity | `P5.9` | private memory public-provider transfer gate | `V3` |
+| ✕ Rozpracováno | Personal 1.0.0 · P5 — Memory and continuity | `P5.10` | long-context restart continuity dogfood | `V4` |
+| ✓ Hotovo | Personal 1.0.0 · P6 — Secure Support Ticket | `P6.1` | ticket typed state machine | `V1` |
+| ✓ Hotovo | Personal 1.0.0 · P6 — Secure Support Ticket | `P6.2` | evidence candidate refs not raw workspace copy | `V1` |
+| ✓ Hotovo | Personal 1.0.0 · P6 — Secure Support Ticket | `P6.3` | shared sanitizer integration | `V2` |
+| ✓ Hotovo | Personal 1.0.0 · P6 — Secure Support Ticket | `P6.4` | local protected draft store | `V2` |
+| ✓ Hotovo | Personal 1.0.0 · P6 — Secure Support Ticket | `P6.5` | owner evidence selection review | `V5` |
+| ✓ Hotovo | Personal 1.0.0 · P6 — Secure Support Ticket | `P6.6` | immutable prepared manifest digest | `V2` |
+| ✓ Hotovo | Personal 1.0.0 · P6 — Secure Support Ticket | `P6.7` | local export package without network | `V3` |
+| ✓ Hotovo | Personal 1.0.0 · P6 — Secure Support Ticket | `P6.8` | untrusted ticket import reproduction intake | `V4` |
+| ✓ Hotovo | Personal 1.0.0 · P6 — Secure Support Ticket | `P6.9` | confirmed bug to regression lineage | `V3` |
+| ✕ Rozpracováno | Personal 1.0.0 · P6 — Secure Support Ticket | `P6.10` | network backend deferred separate capability | `V0` |
+| ✓ Hotovo | Personal 1.0.0 · P7 — Supervised self development | `P7.1` | isolated candidate workspace base identity | `V2` |
+| ✓ Hotovo | Personal 1.0.0 · P7 — Supervised self development | `P7.2` | protected immutable acceptance pack | `V1` |
+| ✓ Hotovo | Personal 1.0.0 · P7 — Supervised self development | `P7.3` | current ASM or exact source boundary gate | `V2` |
+| ✓ Hotovo | Personal 1.0.0 · P7 — Supervised self development | `P7.4` | select one Personal roadmap leaf bound to active Polaris goal | `V1` |
+| ✕ Částečně | Personal 1.0.0 · P7 — Supervised self development | `P7.5` | one bounded Nanity implementation | `V3` |
+| ✕ Částečně | Personal 1.0.0 · P7 — Supervised self development | `P7.6` | independent deterministic verify | `V3` |
+| ✕ Částečně | Personal 1.0.0 · P7 — Supervised self development | `P7.7` | mentor finding receipt without target patch | `V1` |
+| ✕ Částečně | Personal 1.0.0 · P7 — Supervised self development | `P7.8` | Jarvis evidence-backed repair attempt | `V3` |
+| ✕ Částečně | Personal 1.0.0 · P7 — Supervised self development | `P7.9` | ASM refresh after architecture-affecting candidate | `V2` |
+| ✕ Částečně | Personal 1.0.0 · P7 — Supervised self development | `P7.10` | truthful candidate closeout and separate merge authority | `V2` |
+| ✕ Částečně | Personal 1.0.0 · P7 — Supervised self development | `P7.11` | multi-run repeatability cohort | `V5` |
+| ✕ Částečně | Personal 1.0.0 · P8 — Owner UX observability and release QA | `P8.1` | first-run local-LAN provider setup UX | `V5` |
+| ✕ Částečně | Personal 1.0.0 · P8 — Owner UX observability and release QA | `P8.2` | chat-project-attachments baseline UX | `V5` |
+| ✕ Částečně | Personal 1.0.0 · P8 — Owner UX observability and release QA | `P8.3` | consequential action confirmation UX | `V5` |
+| ✕ Částečně | Personal 1.0.0 · P8 — Owner UX observability and release QA | `P8.4` | typed recovery UX | `V5` |
+| ✕ Částečně | Personal 1.0.0 · P8 — Owner UX observability and release QA | `P8.5` | diagnostics and ticket UX | `V5` |
+| ✕ Částečně | Personal 1.0.0 · P8 — Owner UX observability and release QA | `P8.6` | keyboard-focus-DPI-accessibility sanity | `V5` |
+| ✕ Částečně | Personal 1.0.0 · P8 — Owner UX observability and release QA | `P8.7` | multi-monitor skin snapshot matrix | `V5` |
+| ✕ Částečně | Personal 1.0.0 · P8 — Owner UX observability and release QA | `P8.8` | localization release gate | `V3` |
+| ✕ Částečně | Personal 1.0.0 · P8 — Owner UX observability and release QA | `P8.9` | clean install acceptance | `V6` |
+| ✕ Částečně | Personal 1.0.0 · P8 — Owner UX observability and release QA | `P8.10` | supported pre-1.0 upgrade matrix | `V6` |
+| ✕ Částečně | Personal 1.0.0 · P8 — Owner UX observability and release QA | `P8.11` | rollback Last Known Good acceptance | `V6` |
+| ✕ Částečně | Personal 1.0.0 · P8 — Owner UX observability and release QA | `P8.12` | signed 1.0 artifact consistency | `V6` |
+| ✕ Částečně | Personal 1.0.0 · P8 — Owner UX observability and release QA | `P8.13` | owner normal-workflow acceptance script | `V5` |
+| ✕ Částečně | Personal 1.0.0 · P8 — Owner UX observability and release QA | `P8.14` | Pulse-Saga owner-facing truth and collapse live acceptance | `V5` |
+| ✕ Částečně | Personal 1.0.0 · P9 — Real world configuration matrix | `P9.1` | privacy-safe environment fingerprint schema | `V1` |
+| ✕ Částečně | Personal 1.0.0 · P9 — Real world configuration matrix | `P9.2` | matrix receipt runner | `V3` |
+| ✕ Částečně | Personal 1.0.0 · P9 — Real world configuration matrix | `P9.3` | baseline hardware-provider-DPI-locale cohort | `V6` |
+| ✕ Částečně | Personal 1.0.0 · P9 — Real world configuration matrix | `P9.4` | ticket-to-matrix regression promotion | `V3` |
+| ✕ Částečně | Personal 1.0.0 · P9 — Real world configuration matrix | `P9.5` | release matrix minimum and known limitations | `V6` |
+| ✕ Odloženo | Volitelné tratě · OP1 — Hermes local facade | `OP1` | Hermes local facade | `—` |
+| ✕ Odloženo | Volitelné tratě · OP2 — Image generation | `OP2` | Image generation | `—` |
+| ✕ Odloženo | Volitelné tratě · OP3 — TTS STT audio | `OP3` | TTS STT audio | `—` |
+| ✕ Odloženo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4` | Ambient Presence Voice Mesh | `—` |
+| ✕ Odloženo | Volitelné tratě · OP5 — Repair Capsules | `OP5` | Repair Capsules | `—` |
+| ✕ Pouze architektura | Volitelné tratě · OP6 — Architecture Self Model | `OP6` | Architecture Self Model | `—` |
+| ✕ Odloženo | Volitelné tratě · OP7 — Tyr isolated computer control | `OP7` | Tyr isolated computer control | `—` |
+| ✕ Odloženo | Volitelné tratě · OP8 — Defensive Security Lab | `OP8` | Defensive Security Lab | `—` |
+| ✕ Odloženo | Volitelné tratě · OP9 — Research tutoring Strata Trace | `OP9` | Research tutoring Strata Trace | `—` |
+| ✕ Pouze architektura | Teams · TR0 — Realm identity and local topology | `TR0.1` | realm id types | `V2` |
+| ✕ Pouze architektura | Teams · TR0 — Realm identity and local topology | `TR0.2` | realm state serialize | `V2` |
+| ✕ Pouze architektura | Teams · TR0 — Realm identity and local topology | `TR0.3` | invalid state fixtures | `V2` |
+| ✕ Pouze architektura | Teams · TR0 — Realm identity and local topology | `TR0.4` | realm LKG | `V2` |
+| ✕ Pouze architektura | Teams · TR1 — Principals devices membership | `TR1.1` | principal types | `V2` |
+| ✕ Pouze architektura | Teams · TR1 — Principals devices membership | `TR1.2` | membership events | `V2` |
+| ✕ Pouze architektura | Teams · TR1 — Principals devices membership | `TR1.3` | device enrollment record | `V2` |
+| ✕ Pouze architektura | Teams · TR1 — Principals devices membership | `TR1.4` | device revocation | `V2` |
+| ✕ Pouze architektura | Teams · TR1 — Principals devices membership | `TR1.5` | membership epoch | `V2` |
+| ✕ Pouze architektura | Teams · TR2 — Roles capabilities policy | `TR2.1` | capability vocabulary | `V2` |
+| ✕ Pouze architektura | Teams · TR2 — Roles capabilities policy | `TR2.2` | role presets | `V2` |
+| ✕ Pouze architektura | Teams · TR2 — Roles capabilities policy | `TR2.3` | effective policy intersection | `V2` |
+| ✕ Pouze architektura | Teams · TR2 — Roles capabilities policy | `TR2.4` | governance versus content read | `V2` |
+| ✕ Pouze architektura | Teams · TR2 — Roles capabilities policy | `TR2.5` | revocation cache invalidation | `V2` |
+| ✕ Pouze architektura | Teams · TR3 — Shared project registry | `TR3.1` | project refs | `V4` |
+| ✕ Pouze architektura | Teams · TR3 — Shared project registry | `TR3.2` | explicit share plan | `V4` |
+| ✕ Pouze architektura | Teams · TR3 — Shared project registry | `TR3.3` | revision precondition | `V4` |
+| ✕ Pouze architektura | Teams · TR3 — Shared project registry | `TR3.4` | read-only fixture | `V4` |
+| ✕ Pouze architektura | Teams · TR3 — Shared project registry | `TR3.5` | one policy-bound write | `V4` |
+| ✕ Pouze architektura | Teams · TR3 — Shared project registry | `TR3.6` | conflict receipt | `V4` |
+| ✕ Pouze architektura | Teams · TR4 — Realm event log and offline sync | `TR4.1` | event types | `V4` |
+| ✕ Pouze architektura | Teams · TR4 — Realm event log and offline sync | `TR4.2` | append idempotency | `V4` |
+| ✕ Pouze architektura | Teams · TR4 — Realm event log and offline sync | `TR4.3` | event head snapshot | `V4` |
+| ✕ Pouze architektura | Teams · TR4 — Realm event log and offline sync | `TR4.4` | offline pending operation | `V4` |
+| ✕ Pouze architektura | Teams · TR4 — Realm event log and offline sync | `TR4.5` | reconnect revalidation | `V4` |
+| ✕ Pouze architektura | Teams · TR4 — Realm event log and offline sync | `TR4.6` | conflict state machine | `V4` |
+| ✕ Pouze architektura | Teams · TR5 — Shared Global Memory | `TR5.1` | Realm audience selector | `V4` |
+| ✕ Pouze architektura | Teams · TR5 — Shared Global Memory | `TR5.2` | Private non leak | `V4` |
+| ✕ Pouze architektura | Teams · TR5 — Shared Global Memory | `TR5.3` | Protected audience | `V4` |
+| ✕ Pouze architektura | Teams · TR5 — Shared Global Memory | `TR5.4` | Public within Realm | `V4` |
+| ✕ Pouze architektura | Teams · TR5 — Shared Global Memory | `TR5.5` | replicated provenance | `V4` |
+| ✕ Pouze architektura | Teams · TR5 — Shared Global Memory | `TR5.6` | revoke retrieval | `V4` |
+| ✕ Pouze architektura | Teams · TR5 — Shared Global Memory | `TR5.7` | freshness revalidation | `V4` |
+| ✕ Pouze architektura | Teams · TR6 — Shared skills pipelines model profiles | `TR6.1` | package schema | `V4` |
+| ✕ Pouze architektura | Teams · TR6 — Shared skills pipelines model profiles | `TR6.2` | publish revision | `V4` |
+| ✕ Pouze architektura | Teams · TR6 — Shared skills pipelines model profiles | `TR6.3` | approval before enable | `V4` |
+| ✕ Pouze architektura | Teams · TR6 — Shared skills pipelines model profiles | `TR6.4` | enable disable | `V4` |
+| ✕ Pouze architektura | Teams · TR6 — Shared skills pipelines model profiles | `TR6.5` | Ariadna receipt pinning | `V4` |
+| ✕ Pouze architektura | Teams · TR6 — Shared skills pipelines model profiles | `TR6.6` | profile without credentials | `V4` |
+| ✕ Pouze architektura | Teams · TR7 — Approvals collaborative workflows | `TR7.1` | approval state machine | `V4` |
+| ✕ Pouze architektura | Teams · TR7 — Approvals collaborative workflows | `TR7.2` | exact target diff binding | `V4` |
+| ✕ Pouze architektura | Teams · TR7 — Approvals collaborative workflows | `TR7.3` | expiry replay rejection | `V4` |
+| ✕ Pouze architektura | Teams · TR7 — Approvals collaborative workflows | `TR7.4` | four-eyes fixture | `V4` |
+| ✕ Pouze architektura | Teams · TR7 — Approvals collaborative workflows | `TR7.5` | one reversible PolicyExecutor bridge | `V4` |
+| ✕ Pouze architektura | Teams · TR7 — Approvals collaborative workflows | `TR7.6` | restart recovery receipt | `V4` |
+| ✕ Pouze architektura | Teams · TR8 — Customer hosted LAN transport | `TR8.1` | bounded protocol fixture | `V5` |
+| ✕ Pouze architektura | Teams · TR8 — Customer hosted LAN transport | `TR8.2` | loopback read-only | `V5` |
+| ✕ Pouze architektura | Teams · TR8 — Customer hosted LAN transport | `TR8.3` | peer identity auth | `V5` |
+| ✕ Pouze architektura | Teams · TR8 — Customer hosted LAN transport | `TR8.4` | LAN bind policy | `V5` |
+| ✕ Pouze architektura | Teams · TR8 — Customer hosted LAN transport | `TR8.5` | authenticated session | `V5` |
+| ✕ Pouze architektura | Teams · TR8 — Customer hosted LAN transport | `TR8.6` | disconnect cancel replay | `V5` |
+| ✕ Pouze architektura | Teams · TR8 — Customer hosted LAN transport | `TR8.7` | no public listener | `V5` |
+| ✕ Pouze architektura | Teams · TR9 — Backup recovery admin audit | `TR9.1` | export manifest | `V5` |
+| ✕ Pouze architektura | Teams · TR9 — Backup recovery admin audit | `TR9.2` | backup writer | `V5` |
+| ✕ Pouze architektura | Teams · TR9 — Backup recovery admin audit | `TR9.3` | restore planner | `V5` |
+| ✕ Pouze architektura | Teams · TR9 — Backup recovery admin audit | `TR9.4` | same lineage fencing | `V5` |
+| ✕ Pouze architektura | Teams · TR9 — Backup recovery admin audit | `TR9.5` | admin summary | `V5` |
+| ✕ Pouze architektura | Teams · TR9 — Backup recovery admin audit | `TR9.6` | revoke UI API | `V5` |
+| ✕ Pouze architektura | Teams · TR9 — Backup recovery admin audit | `TR9.7` | audit drilldown | `V5` |
+| ✕ Pouze architektura | Teams · TR9 — Backup recovery admin audit | `TR9.8` | restore acceptance | `V5` |
+| ✕ Pouze architektura | Teams · TR10 — Offline licensing expiry release | `TR10.1` | signed entitlement verifier | `V6` |
+| ✕ Pouze architektura | Teams · TR10 — Offline licensing expiry release | `TR10.2` | arbitrary month term | `V6` |
+| ✕ Pouze architektura | Teams · TR10 — Offline licensing expiry release | `TR10.3` | realm binding | `V6` |
+| ✕ Pouze architektura | Teams · TR10 — Offline licensing expiry release | `TR10.4` | expired capability envelope | `V6` |
+| ✕ Pouze architektura | Teams · TR10 — Offline licensing expiry release | `TR10.5` | Personal fallback | `V6` |
+| ✕ Pouze architektura | Teams · TR10 — Offline licensing expiry release | `TR10.6` | preserved Realm read export | `V6` |
+| ✕ Pouze architektura | Teams · TR10 — Offline licensing expiry release | `TR10.7` | renewal lineage | `V6` |
+| ✕ Pouze architektura | Teams · TR10 — Offline licensing expiry release | `TR10.8` | airgap import | `V6` |
+| ✕ Pouze architektura | Teams · TR10 — Offline licensing expiry release | `TR10.9` | install upgrade rollback | `V6` |
+| ✕ Pouze architektura | Teams · TR10 — Offline licensing expiry release | `TR10.10` | two-device acceptance | `V6` |
+| ✕ Pouze architektura | Enterprise · RC0 — Recursive topology foundation | `RC0` | Recursive topology foundation | `V2` |
+| ✕ Pouze architektura | Enterprise · RC1 — Delegated policy and authority | `RC1` | Delegated policy and authority | `V3` |
+| ✕ Pouze architektura | Enterprise · RC2 — Recursive memory and data scopes | `RC2` | Recursive memory and data scopes | `V4` |
+| ✕ Pouze architektura | Enterprise · RC3 — Hierarchical capability aggregation and scheduling | `RC3` | Hierarchical capability aggregation and scheduling | `V4` |
+| ✕ Pouze architektura | Enterprise · RC4 — Explicit cross-scope compute artifacts collaboration | `RC4` | Explicit cross-scope compute artifacts collaboration | `V4` |
+| ✕ Pouze architektura | Enterprise · RC5 — Offline subtree autonomy | `RC5` | Offline subtree autonomy | `V5` |
+| ✕ Pouze architektura | Enterprise · RC6 — Reconciliation hostile partition partial reintegration | `RC6` | Reconciliation hostile partition partial reintegration | `V5` |
+| ✕ Pouze architektura | Enterprise · RC7 — Scale administration operability | `RC7` | Scale administration operability | `V6` |
+| ✕ Pouze architektura | Enterprise · RC8 — Enterprise licensing migration release acceptance | `RC8` | Enterprise licensing migration release acceptance | `V6` |
+
+### Release gates
+
 | Stav | Edice | Stručný popis | Ověření | Závislosti |
 | --- | --- | --- | --- | ---: |
 | ✕ Otevřeno | `personal-1.0.0` | Bezplatný local-first Jarvis pro jednoho člověka. | `V6` | 9 |
@@ -243,7 +540,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `54c1f3d34644` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/language-accessibility-quality |
 | `4f7e8600b92d` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/release-acceptance-pack |
 | `da46d3948150` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/release-acceptance-pack |
 | `815f0afb122d` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/release-acceptance-pack |
@@ -261,6 +557,7 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `dce8f12dccc2` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `94dca6fe5fef` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
 | `abd9e9368f30` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
+| `5bcf5315abc8` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
