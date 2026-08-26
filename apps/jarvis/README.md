@@ -36,7 +36,7 @@ Nejde o instalační balíček ani o prohlášení, že je produkt hotový; při
 
 Tabulka používá pevnou ✓/✕ značku: ✓ znamená ověřenou release bránu, ✕ znamená, že brána ještě není ověřená. ✕ není důkaz chyby; u architektury označuje plánovaný rozsah.
 
-**Změna od předchozího snapshotu: roadmapa položky +0 · hotovo +1 · ověřené důkazy +1**
+**Změna od předchozího snapshotu: roadmapa položky +108 · hotovo +0 · ověřené důkazy +0**
 
 ![Roadmapa a progress edic Jarvis](visuals/roadmap-editions.svg)
 
@@ -67,6 +67,11 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✕ Pouze architektura | Platformní základy · PF3 — Secrets and credential boundary | `PF3.4` | exact alias resolution | `V2` |
 | ✕ Pouze architektura | Platformní základy · PF3 — Secrets and credential boundary | `PF3.5` | redaction regression | `V2` |
 | ✕ Pouze architektura | Platformní základy · PF3 — Secrets and credential boundary | `PF3.6` | revoke rotate fixture | `V2` |
+| ✕ Pouze architektura | Platformní základy · PF3 — Secrets and credential boundary | `PF3.7` | credential consent assurance | `V2` |
+| ✕ Pouze architektura | Platformní základy · PF3 — Secrets and credential boundary | `PF3.8` | Windows user credential store | `V2` |
+| ✕ Pouze architektura | Platformní základy · PF3 — Secrets and credential boundary | `PF3.9` | exact credential executor | `V2` |
+| ✕ Pouze architektura | Platformní základy · PF3 — Secrets and credential boundary | `PF3.10` | Windows login provider boundary | `V2` |
+| ✕ Pouze architektura | Platformní základy · PF3 — Secrets and credential boundary | `PF3.11` | encrypted Jarvis sharing | `V2` |
 | ✓ Hotovo | Platformní základy · PF4 — Resource budgets cancellation and cleanup | `PF4.1` | budget schema | `V1` |
 | ✓ Hotovo | Platformní základy · PF4 — Resource budgets cancellation and cleanup | `PF4.2` | preflight fixture | `V1` |
 | ✓ Hotovo | Platformní základy · PF4 — Resource budgets cancellation and cleanup | `PF4.3` | cancellation state machine | `V1` |
@@ -152,16 +157,16 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✓ Hotovo | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.2` | typed resume phase vocabulary | `V1` |
 | ✓ Hotovo | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.3` | precondition snapshot before consequential step | `V1` |
 | ✓ Hotovo | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.4` | post-mutation checkpoint with before-after digest | `V1` |
-| ✕ Rozpracováno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.5` | pure safe-resume classifier | `V1` |
-| ✕ Rozpracováno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.6` | verify-only resume without mutation replay | `V3` |
-| ✕ Rozpracováno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.7` | one tool-specific resume adapter per run | `V3` |
+| ✓ Hotovo | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.5` | pure safe-resume classifier | `V1` |
+| ✓ Hotovo | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.6` | verify-only resume without mutation replay | `V3` |
+| ✓ Hotovo | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.7` | one tool-specific resume adapter per run | `V3` |
 | ✓ Hotovo | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.8` | production-complete model continuation enumerator | `V3` |
-| ✕ Rozpracováno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.9` | long provider requeue live acceptance | `V4` |
+| ✕ Částečně | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.9` | long provider requeue live acceptance | `V4` |
 | ✓ Hotovo | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.10` | crash restart fault matrix | `V4` |
 | ✓ Hotovo | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.11` | recovery UI projects typed truth only | `V5` |
-| ✕ Rozpracováno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.1` | canonical provider endpoint identity | `V1` |
-| ✕ Rozpracováno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.2` | canonical model identity digest revision quantization | `V1` |
-| ✕ Rozpracováno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.3` | explicit model capability manifest | `V1` |
+| ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.1` | canonical provider endpoint identity | `V1` |
+| ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.2` | canonical model identity digest revision quantization | `V1` |
+| ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.3` | explicit model capability manifest | `V1` |
 | ✕ Rozpracováno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.4` | typed health readiness state | `V2` |
 | ✕ Rozpracováno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.5` | owner-facing local and LAN endpoint validation | `V4` |
 | ✕ Rozpracováno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.6` | download install readiness and durable cancel-resume | `V3` |
@@ -247,15 +252,73 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✕ Částečně | Personal 1.0.0 · P9 — Real world configuration matrix | `P9.3` | baseline hardware-provider-DPI-locale cohort | `V6` |
 | ✕ Částečně | Personal 1.0.0 · P9 — Real world configuration matrix | `P9.4` | ticket-to-matrix regression promotion | `V3` |
 | ✕ Částečně | Personal 1.0.0 · P9 — Real world configuration matrix | `P9.5` | release matrix minimum and known limitations | `V6` |
-| ✕ Odloženo | Volitelné tratě · OP1 — Hermes local facade | `OP1` | Hermes local facade | `—` |
-| ✕ Odloženo | Volitelné tratě · OP2 — Image generation | `OP2` | Image generation | `—` |
-| ✕ Odloženo | Volitelné tratě · OP3 — TTS STT audio | `OP3` | TTS STT audio | `—` |
-| ✕ Odloženo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4` | Ambient Presence Voice Mesh | `—` |
-| ✕ Odloženo | Volitelné tratě · OP5 — Repair Capsules | `OP5` | Repair Capsules | `—` |
-| ✕ Pouze architektura | Volitelné tratě · OP6 — Architecture Self Model | `OP6` | Architecture Self Model | `—` |
-| ✕ Odloženo | Volitelné tratě · OP7 — Tyr isolated computer control | `OP7` | Tyr isolated computer control | `—` |
-| ✕ Odloženo | Volitelné tratě · OP8 — Defensive Security Lab | `OP8` | Defensive Security Lab | `—` |
-| ✕ Odloženo | Volitelné tratě · OP9 — Research tutoring Strata Trace | `OP9` | Research tutoring Strata Trace | `—` |
+| ✕ Odloženo | Volitelné tratě · OP1 — Hermes local facade | `OP1.1` | Kontrakt a hranice Hermesu | `V1` |
+| ✕ Odloženo | Volitelné tratě · OP1 — Hermes local facade | `OP1.2` | Lokální read-only brána | `V3` |
+| ✕ Odloženo | Volitelné tratě · OP1 — Hermes local facade | `OP1.3` | Chat a živé události | `V5` |
+| ✕ Odloženo | Volitelné tratě · OP1 — Hermes local facade | `OP1.4` | Cíle, schválení a řízení | `V5` |
+| ✕ Odloženo | Volitelné tratě · OP1 — Hermes local facade | `OP1.5` | Mobilní klient a mini-panel | `V5` |
+| ✕ Odloženo | Volitelné tratě · OP1 — Hermes local facade | `OP1.6` | Párovací režim LAN | `V5` |
+| ✕ Odloženo | Volitelné tratě · OP1 — Hermes local facade | `OP1.7` | Automatizace podle schopností | `V5` |
+| ✕ Odloženo | Volitelné tratě · OP1 — Hermes local facade | `OP1.8` | Stabilizace pro produkci | `V6` |
+| ✕ Odloženo | Volitelné tratě · OP2 — Image generation | `OP2.1` | Hranice záměru a regresí | `V1` |
+| ✕ Odloženo | Volitelné tratě · OP2 — Image generation | `OP2.2` | Abstrakce providera | `V2` |
+| ✕ Odloženo | Volitelné tratě · OP2 — Image generation | `OP2.3` | Omezené generování artefaktů | `V3` |
+| ✕ Odloženo | Volitelné tratě · OP2 — Image generation | `OP2.4` | Workflow referenčních obrazů a multimodality | `V3` |
+| ✕ Odloženo | Volitelné tratě · OP2 — Image generation | `OP2.5` | Vizuální QA a opravná smyčka | `V4` |
+| ✕ Odloženo | Volitelné tratě · OP2 — Image generation | `OP2.6` | Akceptace ownerem a dogfoodingem | `V5` |
+| ✕ Odloženo | Volitelné tratě · OP3 — TTS STT audio | `OP3.1` | Typovaná řečová modalita a popis modelu | `V1` |
+| ✕ Odloženo | Volitelné tratě · OP3 — TTS STT audio | `OP3.2` | Providerově neutrální hranice syntézy | `V2` |
+| ✕ Odloženo | Volitelné tratě · OP3 — TTS STT audio | `OP3.3` | Katalog, stažení a instalační ledger | `V3` |
+| ✕ Odloženo | Volitelné tratě · OP3 — TTS STT audio | `OP3.4` | Příprava českého textu a výslovnosti | `V2` |
+| ✕ Odloženo | Volitelné tratě · OP3 — TTS STT audio | `OP3.5` | Lokální baseline Piper a ONNX | `V3` |
+| ✕ Odloženo | Volitelné tratě · OP3 — TTS STT audio | `OP3.6` | Typovaný doklad WAV a MP3 artefaktu | `V3` |
+| ✕ Odloženo | Volitelné tratě · OP3 — TTS STT audio | `OP3.7` | Akceptace kvality ownerem | `V5` |
+| ✕ Odloženo | Volitelné tratě · OP3 — TTS STT audio | `OP3.8` | Další jazyky a modality | `V5` |
+| ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.1` | Core host před přihlášením a ownerem schválený hlasový tray adaptér s nastavitelným českým wake profilem | `V3` |
+| ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.2` | Typovaný handoff credential/login záměru bez tajných údajů | `V2` |
+| ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.3` | Adaptér fyzického a biometrického zajištění pro důsledkové hlasové akce | `V4` |
+| ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.4` | Provider-free paměťová kapsle interních zdrojových fragmentů s kompresí a autentizací AES-GCM; scope uživatelského GitHub projektu zůstává oddělený a persistovaný NCrypt/ACL vault je otevřený | `V4` |
+| ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.4.1` | NCrypt broker pro machine-scoped neexportovatelný RSA-OAEP-SHA256 decrypt-only wrap s chráněným DACL pouze pro SYSTEM; persistovaný source vault a vydání Core capability zůstávají otevřené | `V4` |
+| ✕ Odloženo | Volitelné tratě · OP5 — Repair Capsules | `OP5.1` | Kontrakt service slotu a nízkorizikový pilot | `V1` |
+| ✕ Odloženo | Volitelné tratě · OP5 — Repair Capsules | `OP5.2` | Chráněné recovery jádro a izolace | `V2` |
+| ✕ Odloženo | Volitelné tratě · OP5 — Repair Capsules | `OP5.3` | Průnik schopností a třídy provenience | `V2` |
+| ✕ Odloženo | Volitelné tratě · OP5 — Repair Capsules | `OP5.4` | Manifest kapsle a stavový automat aktivace | `V2` |
+| ✕ Odloženo | Volitelné tratě · OP5 — Repair Capsules | `OP5.5` | Sémantická akceptace ve stínu a canary režimu | `V3` |
+| ✕ Odloženo | Volitelné tratě · OP5 — Repair Capsules | `OP5.6` | Rollback na poslední známý dobrý stav a jistič crash smyčky | `V3` |
+| ✕ Odloženo | Volitelné tratě · OP5 — Repair Capsules | `OP5.7` | Trvalý stav a obnova po offline restartu | `V3` |
+| ✕ Odloženo | Volitelné tratě · OP5 — Repair Capsules | `OP5.8` | Akceptace ownerem a hranice samogenerované kapsle | `V5` |
+| ✕ Pouze architektura | Volitelné tratě · OP6 — Architecture Self Model | `OP6.1` | Schéma self-modelu architektury a vlastnictví zdrojů | `V1` |
+| ✕ Pouze architektura | Volitelné tratě · OP6 — Architecture Self Model | `OP6.2` | Fingerprint aktuálnosti buildu a zdrojů | `V1` |
+| ✕ Pouze architektura | Volitelné tratě · OP6 — Architecture Self Model | `OP6.3` | Vyhodnocení aktuálního, zastaralého a nekonzistentního stavu | `V2` |
+| ✕ Pouze architektura | Volitelné tratě · OP6 — Architecture Self Model | `OP6.4` | Objevování a obnovení source manifestu | `V2` |
+| ✕ Pouze architektura | Volitelné tratě · OP6 — Architecture Self Model | `OP6.5` | Brána self-repair a degradovaný fallback | `V3` |
+| ✕ Pouze architektura | Volitelné tratě · OP6 — Architecture Self Model | `OP6.6` | Akceptační doklad a provenience | `V5` |
+| ✕ Odloženo | Volitelné tratě · OP7 — Tyr isolated computer control | `OP7.1` | Základ typovaného protokolu | `V2` |
+| ✕ Odloženo | Volitelné tratě · OP7 — Tyr isolated computer control | `OP7.2` | Prověření identity a izolace | `V2` |
+| ✕ Odloženo | Volitelné tratě · OP7 — Tyr isolated computer control | `OP7.3` | Policy broker | `V2` |
+| ✕ Odloženo | Volitelné tratě · OP7 — Tyr isolated computer control | `OP7.4` | Harness sémantických akcí | `V3` |
+| ✕ Odloženo | Volitelné tratě · OP7 — Tyr isolated computer control | `OP7.5` | Izolovaný fallback fyzického vstupu | `V3` |
+| ✕ Odloženo | Volitelné tratě · OP7 — Tyr isolated computer control | `OP7.6` | Adaptér Codexu | `V3` |
+| ✕ Odloženo | Volitelné tratě · OP7 — Tyr isolated computer control | `OP7.7` | Adaptér Jarvise | `V3` |
+| ✕ Odloženo | Volitelné tratě · OP7 — Tyr isolated computer control | `OP7.8` | Matice skutečných aplikací | `V5` |
+| ✕ Odloženo | Volitelné tratě · OP7 — Tyr isolated computer control | `OP7.9` | Zpevnění pro vydání | `V6` |
+| ✕ Odloženo | Volitelné tratě · OP8 — Defensive Security Lab | `OP8.1` | Typovaný scope a policy fixtures | `V1` |
+| ✕ Odloženo | Volitelné tratě · OP8 — Defensive Security Lab | `OP8.2` | Statické reverse engineering analýzy | `V1` |
+| ✕ Odloženo | Volitelné tratě · OP8 — Defensive Security Lab | `OP8.3` | Jednorázová izolovaná laboratoř | `V2` |
+| ✕ Odloženo | Volitelné tratě · OP8 — Defensive Security Lab | `OP8.4` | Trajektorie agentů pouze pro monitoring | `V3` |
+| ✕ Odloženo | Volitelné tratě · OP8 — Defensive Security Lab | `OP8.5` | Omezené containment playbooky | `V3` |
+| ✕ Odloženo | Volitelné tratě · OP8 — Defensive Security Lab | `OP8.6` | Containment endpointu zapsaného ownerem | `V4` |
+| ✕ Odloženo | Volitelné tratě · OP8 — Defensive Security Lab | `OP8.7` | Ověření autorizovaného vlastního cíle | `V4` |
+| ✕ Odloženo | Volitelné tratě · OP8 — Defensive Security Lab | `OP8.8` | Organizační a enterprise integrace | `V5` |
+| ✕ Odloženo | Volitelné tratě · OP9 — Research tutoring Strata Trace | `OP9.1` | Kanonické tutoring kontrakty | `V1` |
+| ✕ Odloženo | Volitelné tratě · OP9 — Research tutoring Strata Trace | `OP9.2` | Lokální dry-run planner | `V1` |
+| ✕ Odloženo | Volitelné tratě · OP9 — Research tutoring Strata Trace | `OP9.3` | Lokální pilot tutoring baseline | `V3` |
+| ✕ Odloženo | Volitelné tratě · OP9 — Research tutoring Strata Trace | `OP9.4` | Benchmark tutoring metod | `V3` |
+| ✕ Odloženo | Volitelné tratě · OP9 — Research tutoring Strata Trace | `OP9.5` | Privátní runtime adaptace | `V4` |
+| ✕ Odloženo | Volitelné tratě · OP9 — Research tutoring Strata Trace | `OP9.6` | Chráněná a týmová adaptace | `V4` |
+| ✕ Odloženo | Volitelné tratě · OP9 — Research tutoring Strata Trace | `OP9.7` | Tréninkový broker Konstelace | `V4` |
+| ✕ Odloženo | Volitelné tratě · OP9 — Research tutoring Strata Trace | `OP9.8` | Organizační adaptace | `V5` |
+| ✕ Odloženo | Volitelné tratě · OP9 — Research tutoring Strata Trace | `OP9.9` | Volitelný distribuovaný trénink a produkční backend Strata Trace | `V6` |
 | ✕ Pouze architektura | Teams · TR0 — Realm identity and local topology | `TR0.1` | realm id types | `V2` |
 | ✕ Pouze architektura | Teams · TR0 — Realm identity and local topology | `TR0.2` | realm state serialize | `V2` |
 | ✕ Pouze architektura | Teams · TR0 — Realm identity and local topology | `TR0.3` | invalid state fixtures | `V2` |
@@ -326,15 +389,69 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✕ Pouze architektura | Teams · TR10 — Offline licensing expiry release | `TR10.8` | airgap import | `V6` |
 | ✕ Pouze architektura | Teams · TR10 — Offline licensing expiry release | `TR10.9` | install upgrade rollback | `V6` |
 | ✕ Pouze architektura | Teams · TR10 — Offline licensing expiry release | `TR10.10` | two-device acceptance | `V6` |
-| ✕ Pouze architektura | Enterprise · RC0 — Recursive topology foundation | `RC0` | Recursive topology foundation | `V2` |
-| ✕ Pouze architektura | Enterprise · RC1 — Delegated policy and authority | `RC1` | Delegated policy and authority | `V3` |
-| ✕ Pouze architektura | Enterprise · RC2 — Recursive memory and data scopes | `RC2` | Recursive memory and data scopes | `V4` |
-| ✕ Pouze architektura | Enterprise · RC3 — Hierarchical capability aggregation and scheduling | `RC3` | Hierarchical capability aggregation and scheduling | `V4` |
-| ✕ Pouze architektura | Enterprise · RC4 — Explicit cross-scope compute artifacts collaboration | `RC4` | Explicit cross-scope compute artifacts collaboration | `V4` |
-| ✕ Pouze architektura | Enterprise · RC5 — Offline subtree autonomy | `RC5` | Offline subtree autonomy | `V5` |
-| ✕ Pouze architektura | Enterprise · RC6 — Reconciliation hostile partition partial reintegration | `RC6` | Reconciliation hostile partition partial reintegration | `V5` |
-| ✕ Pouze architektura | Enterprise · RC7 — Scale administration operability | `RC7` | Scale administration operability | `V6` |
-| ✕ Pouze architektura | Enterprise · RC8 — Enterprise licensing migration release acceptance | `RC8` | Enterprise licensing migration release acceptance | `V6` |
+| ✕ Pouze architektura | Enterprise · RC0 — Recursive topology foundation | `RC0.1` | Schéma rekurzivní identity | `V2` |
+| ✕ Pouze architektura | Enterprise · RC0 — Recursive topology foundation | `RC0.2` | Invarianty stromu rodičů a dětí | `V2` |
+| ✕ Pouze architektura | Enterprise · RC0 — Recursive topology foundation | `RC0.3` | Deterministický iterativní průchod | `V2` |
+| ✕ Pouze architektura | Enterprise · RC0 — Recursive topology foundation | `RC0.4` | Omezené vyjmenování dětí a stránkování | `V2` |
+| ✕ Pouze architektura | Enterprise · RC0 — Recursive topology foundation | `RC0.5` | Negativní fixtures cyklů, více rodičů a duplicit | `V3` |
+| ✕ Pouze architektura | Enterprise · RC0 — Recursive topology foundation | `RC0.6` | Persistence round-trip a fingerprint | `V3` |
+| ✕ Pouze architektura | Enterprise · RC1 — Delegated policy and authority | `RC1.1` | Řetězec delegované autority | `V3` |
+| ✕ Pouze architektura | Enterprise · RC1 — Delegated policy and authority | `RC1.2` | Odvolatelná auditní identita vázaná na scope | `V3` |
+| ✕ Pouze architektura | Enterprise · RC1 — Delegated policy and authority | `RC1.3` | Monotónní průnik účinných policy | `V3` |
+| ✕ Pouze architektura | Enterprise · RC1 — Delegated policy and authority | `RC1.4` | Bezpečnostní rozdíly a rollback přesunu podstromu | `V4` |
+| ✕ Pouze architektura | Enterprise · RC1 — Delegated policy and authority | `RC1.5` | Governance bez čtení obsahu | `V4` |
+| ✕ Pouze architektura | Enterprise · RC1 — Delegated policy and authority | `RC1.6` | Odmítnutí eskalace z dítěte na rodiče | `V4` |
+| ✕ Pouze architektura | Enterprise · RC1 — Delegated policy and authority | `RC1.7` | Odmítnutí zastaralé delegace po změně epochy | `V4` |
+| ✕ Pouze architektura | Enterprise · RC2 — Recursive memory and data scopes | `RC2.1` | Rekurzivní selektory audience | `V4` |
+| ✕ Pouze architektura | Enterprise · RC2 — Recursive memory and data scopes | `RC2.2` | Viditelnost private-by-default | `V4` |
+| ✕ Pouze architektura | Enterprise · RC2 — Recursive memory and data scopes | `RC2.3` | Oddělení přístupu, důvěry, replikace a klíčů | `V4` |
+| ✕ Pouze architektura | Enterprise · RC2 — Recursive memory and data scopes | `RC2.4` | Načtení sady podstromu a více větví | `V4` |
+| ✕ Pouze architektura | Enterprise · RC2 — Recursive memory and data scopes | `RC2.5` | Revokace zastaví načítání a replikaci | `V4` |
+| ✕ Pouze architektura | Enterprise · RC2 — Recursive memory and data scopes | `RC2.6` | Přesun scope zachová explicitní audience | `V4` |
+| ✕ Pouze architektura | Enterprise · RC3 — Hierarchical capability aggregation and scheduling | `RC3.1` | Omezený souhrn agregovaných schopností | `V4` |
+| ✕ Pouze architektura | Enterprise · RC3 — Hierarchical capability aggregation and scheduling | `RC3.2` | Souhrn pouze jako nápověda a projekce | `V4` |
+| ✕ Pouze architektura | Enterprise · RC3 — Hierarchical capability aggregation and scheduling | `RC3.3` | Znovuověření identity a policy při umístění listu | `V4` |
+| ✕ Pouze architektura | Enterprise · RC3 — Hierarchical capability aggregation and scheduling | `RC3.4` | Pořadí autorizace, důvěry, techniky a zdrojů | `V4` |
+| ✕ Pouze architektura | Enterprise · RC3 — Hierarchical capability aggregation and scheduling | `RC3.5` | Deterministické vysvětlení trasy a doklad | `V4` |
+| ✕ Pouze architektura | Enterprise · RC3 — Hierarchical capability aggregation and scheduling | `RC3.6` | Fallback větev vyžaduje nový důkaz umístění | `V5` |
+| ✕ Pouze architektura | Enterprise · RC3 — Hierarchical capability aggregation and scheduling | `RC3.7` | Omezené umístění v hlubokém stromu | `V5` |
+| ✕ Pouze architektura | Enterprise · RC4 — Explicit cross-scope compute artifacts collaboration | `RC4.1` | Explicitní granty mezi scope | `V4` |
+| ✕ Pouze architektura | Enterprise · RC4 — Explicit cross-scope compute artifacts collaboration | `RC4.2` | Typovaný doklad operace mezi scope | `V4` |
+| ✕ Pouze architektura | Enterprise · RC4 — Explicit cross-scope compute artifacts collaboration | `RC4.3` | Brána default-deny a klasifikace dat | `V4` |
+| ✕ Pouze architektura | Enterprise · RC4 — Explicit cross-scope compute artifacts collaboration | `RC4.4` | Životní cyklus udělení a revokace | `V4` |
+| ✕ Pouze architektura | Enterprise · RC4 — Explicit cross-scope compute artifacts collaboration | `RC4.5` | Úklid částečného přenosu a idempotentní opakování | `V5` |
+| ✕ Pouze architektura | Enterprise · RC4 — Explicit cross-scope compute artifacts collaboration | `RC4.6` | Zachování provenience přes více hopů | `V5` |
+| ✕ Pouze architektura | Enterprise · RC5 — Offline subtree autonomy | `RC5.1` | Kontinuita lokální identity, policy a entitlementu | `V5` |
+| ✕ Pouze architektura | Enterprise · RC5 — Offline subtree autonomy | `RC5.2` | Omezená offline použitelnost | `V5` |
+| ✕ Pouze architektura | Enterprise · RC5 — Offline subtree autonomy | `RC5.3` | Práce závislá na čerstvém rodiči je degradována nebo blokována | `V5` |
+| ✕ Pouze architektura | Enterprise · RC5 — Offline subtree autonomy | `RC5.4` | Důkaz provenience při partition | `V5` |
+| ✕ Pouze architektura | Enterprise · RC5 — Offline subtree autonomy | `RC5.5` | Restart během partition | `V5` |
+| ✕ Pouze architektura | Enterprise · RC5 — Offline subtree autonomy | `RC5.6` | Offline operace bez heartbeat dodavatele | `V5` |
+| ✕ Pouze architektura | Enterprise · RC6 — Reconciliation hostile partition partial reintegration | `RC6.1` | Běžné rozdělení a návrat bez rozšíření autority | `V5` |
+| ✕ Pouze architektura | Enterprise · RC6 — Reconciliation hostile partition partial reintegration | `RC6.2` | Provenience divergentních důkazů | `V5` |
+| ✕ Pouze architektura | Enterprise · RC6 — Reconciliation hostile partition partial reintegration | `RC6.3` | Karanténa nepřátelské child větve | `V5` |
+| ✕ Pouze architektura | Enterprise · RC6 — Reconciliation hostile partition partial reintegration | `RC6.4` | Revokace lokality a podstromu | `V5` |
+| ✕ Pouze architektura | Enterprise · RC6 — Reconciliation hostile partition partial reintegration | `RC6.5` | Nová identita při rebuildu a novém enrollmentu | `V5` |
+| ✕ Pouze architektura | Enterprise · RC6 — Reconciliation hostile partition partial reintegration | `RC6.6` | Selektivní obnova pouze dat | `V5` |
+| ✕ Pouze architektura | Enterprise · RC6 — Reconciliation hostile partition partial reintegration | `RC6.7` | Obnova sourozence nezávislá na nepřátelské větvi | `V5` |
+| ✕ Pouze architektura | Enterprise · RC7 — Scale administration operability | `RC7.1` | Inkrementální digesty ancestry, policy a schopností | `V5` |
+| ✕ Pouze architektura | Enterprise · RC7 — Scale administration operability | `RC7.2` | Stránkování a streaming velkého počtu dětí | `V5` |
+| ✕ Pouze architektura | Enterprise · RC7 — Scale administration operability | `RC7.3` | Omezené operace podstromu s rozpočtem, zrušením a progressem | `V5` |
+| ✕ Pouze architektura | Enterprise · RC7 — Scale administration operability | `RC7.4` | Lazy administrační strom | `V5` |
+| ✕ Pouze architektura | Enterprise · RC7 — Scale administration operability | `RC7.5` | Stabilní identita, zobrazení a hledání v cestě | `V5` |
+| ✕ Pouze architektura | Enterprise · RC7 — Scale administration operability | `RC7.6` | Náhled rozdílu policy | `V5` |
+| ✕ Pouze architektura | Enterprise · RC7 — Scale administration operability | `RC7.7` | UI zdraví, ostrova a karantény s auditním drilldownem | `V5` |
+| ✕ Pouze architektura | Enterprise · RC7 — Scale administration operability | `RC7.8` | Typované admin API a deep-wide zátěžové testy | `V6` |
+| ✕ Pouze architektura | Enterprise · RC8 — Enterprise licensing migration release acceptance | `RC8.1` | Entitlement vázaný na organizaci bez runtime meteringu | `V6` |
+| ✕ Pouze architektura | Enterprise · RC8 — Enterprise licensing migration release acceptance | `RC8.2` | Lokální ověření entitlementu v air-gapped režimu | `V6` |
+| ✕ Pouze architektura | Enterprise · RC8 — Enterprise licensing migration release acceptance | `RC8.3` | Libovolná hloubka a nestejné větve | `V6` |
+| ✕ Pouze architektura | Enterprise · RC8 — Enterprise licensing migration release acceptance | `RC8.4` | Záloha a obnova organizace | `V6` |
+| ✕ Pouze architektura | Enterprise · RC8 — Enterprise licensing migration release acceptance | `RC8.5` | Migrace z plochého na rekurzivní model | `V6` |
+| ✕ Pouze architektura | Enterprise · RC8 — Enterprise licensing migration release acceptance | `RC8.6` | Exspirace zachová topologii, data, identitu a audit | `V6` |
+| ✕ Pouze architektura | Enterprise · RC8 — Enterprise licensing migration release acceptance | `RC8.7` | Fallback Teams a Personal po exspiraci | `V6` |
+| ✕ Pouze architektura | Enterprise · RC8 — Enterprise licensing migration release acceptance | `RC8.8` | Linie obnovení | `V6` |
+| ✕ Pouze architektura | Enterprise · RC8 — Enterprise licensing migration release acceptance | `RC8.9` | Podepsané vydání, upgrade, rollback a admin kit | `V6` |
+| ✕ Pouze architektura | Enterprise · RC8 — Enterprise licensing migration release acceptance | `RC8.10` | End-to-end enterprise akceptace | `V6` |
 
 ### Release gates
 
@@ -360,11 +477,11 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 1 004 | 345 406 | 22.32 |
-| JSON | 278 | 151 244 | 11.50 |
-| Markdown | 679 | 65 913 | 3.29 |
-| Python | 161 | 35 970 | 1.46 |
-| PowerShell | 50 | 24 853 | 1.31 |
+| C/C++ | 1 020 | 353 394 | 22.66 |
+| JSON | 286 | 151 707 | 11.54 |
+| Markdown | 691 | 68 459 | 3.44 |
+| Python | 173 | 37 693 | 1.52 |
+| PowerShell | 50 | 24 871 | 1.31 |
 | JSONL | 14 | 2 499 | 6.91 |
 | Plain text | 106 | 1 652 | 0.18 |
 | INI | 5 | 66 | 0.00 |
@@ -374,9 +491,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
 | Other text | 7 | 7 | 0.00 |
-| **Text/source celkem** | **2 324** | **627 689** | **47.02** |
+| **Text/source celkem** | **2 372** | **640 427** | **47.61** |
 | Binární assety (mimo řádky) | 35 | — | 14.47 |
-| **Trackovaný strom celkem** | **2 359** | **627 689** | **61.49** |
+| **Trackovaný strom celkem** | **2 407** | **640 427** | **62.08** |
 
 ### Přírůstek od předchozí revize
 
@@ -384,9 +501,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +3 | +412 | +0.02 |
+| Text/source celkem | +0 | +195 | +0.03 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +3 | +412 | +0.02 |
+| Trackovaný strom celkem | +0 | +195 | +0.03 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -543,24 +660,24 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `18d64d36f0cd` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/hardware-configuration-matrix |
-| `1f52122969e8` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/hardware-configuration-matrix |
-| `dadc2a855223` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `e9a823b20e14` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/hardware-configuration-matrix |
-| `f004719c928d` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `6c7818e40b65` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `f177c274352d` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/hardware-configuration-matrix |
-| `dbf901258e48` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `bb470556287e` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `f451ac8ddde1` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | workspace-actions | 1: workspace-actions/workspace-source-grounding |
-| `040d6fb465a6` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | workspace-actions | 1: workspace-actions/workspace-source-grounding |
-| `afb88082a662` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `3cc5115de578` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/queue-journal-persistence |
-| `ff3a9d87cc0d` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `382dbcc7add6` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/mid-step-resume-contract |
 | `066c42e8742e` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `a66ee87c80ee` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/mid-step-resume-contract |
 | `7184445264ff` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/mid-step-resume-contract |
+| `51733f200b94` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/mid-step-resume-contract |
+| `1e8fcd58f985` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/mid-step-resume-contract |
+| `f26c37e940d8` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/mid-step-resume-contract |
+| `02ff46276014` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/mid-step-resume-contract |
+| `98e9f69bcad2` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/mid-step-resume-contract |
+| `71db68c98e20` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | model-routing | 1: model-routing/live-provider-reliability |
+| `1de5695f5549` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `3b6202d4023d` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | model-routing | 1: model-routing/live-provider-reliability |
+| `c429c773133c` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | model-routing | 1: model-routing/live-provider-reliability |
+| `829ee6c0572c` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `83546dad7738` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `335ab6caa8c7` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `a2f215067c6c` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `4563b848404b` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `8b2e3a919acd` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 

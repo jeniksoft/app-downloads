@@ -14,8 +14,8 @@
       "done": "weighted milestone minimum after the chapter cap; open milestones contribute zero",
       "release_readiness": "optional roadmap-weighted release gate metric"
     },
-    "commit_history": "The workflow regenerates after every main commit; tracked history records only configured input revisions, and public deltas compare successive records using opaque fingerprints.",
-    "automatic_regeneration": "Every main commit triggers a full snapshot, history, README and SVG recomputation; a public commit is created only when generated contents differ.",
+    "commit_history": "Tracked history records configured input revisions; public deltas compare successive records using opaque fingerprints.",
+    "automatic_regeneration": "The public sync is explicitly dispatched after a completed roadmap closeout; ordinary main commits do not trigger it.",
     "limitations": "A commit is visible as evidence history, but source size, source lines, a plan, or a contract-only document never increases the primary score without declared milestone evidence. Task Board area estimates are structural inputs, not a scored axis."
   },
   "entries": [
@@ -21485,6 +21485,512 @@
       },
       "verified_evidence_count": 89,
       "verified_evidence_delta": 1
+    },
+    {
+      "revision": "51733f200b94",
+      "date": "2026-08-26",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "worker-recovery"
+      ],
+      "changed_milestones": [
+        "worker-recovery/mid-step-resume-contract"
+      ],
+      "roadmap": {
+        "item_count": 289,
+        "completed_item_count": 100,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 90,
+      "verified_evidence_delta": 1
+    },
+    {
+      "revision": "1e8fcd58f985",
+      "date": "2026-08-26",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "worker-recovery"
+      ],
+      "changed_milestones": [
+        "worker-recovery/mid-step-resume-contract"
+      ],
+      "roadmap": {
+        "item_count": 289,
+        "completed_item_count": 101,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 91,
+      "verified_evidence_delta": 1
+    },
+    {
+      "revision": "f26c37e940d8",
+      "date": "2026-08-26",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "worker-recovery"
+      ],
+      "changed_milestones": [
+        "worker-recovery/mid-step-resume-contract"
+      ],
+      "roadmap": null,
+      "roadmap_delta": null,
+      "verified_evidence_count": 92,
+      "verified_evidence_delta": 1
+    },
+    {
+      "revision": "02ff46276014",
+      "date": "2026-08-26",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "worker-recovery"
+      ],
+      "changed_milestones": [
+        "worker-recovery/mid-step-resume-contract"
+      ],
+      "roadmap": null,
+      "roadmap_delta": null,
+      "verified_evidence_count": 93,
+      "verified_evidence_delta": 1
+    },
+    {
+      "revision": "98e9f69bcad2",
+      "date": "2026-08-26",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "worker-recovery"
+      ],
+      "changed_milestones": [
+        "worker-recovery/mid-step-resume-contract"
+      ],
+      "roadmap": {
+        "item_count": 289,
+        "completed_item_count": 102,
+        "chapter_count": 54
+      },
+      "roadmap_delta": null,
+      "verified_evidence_count": 93,
+      "verified_evidence_delta": 0
+    },
+    {
+      "revision": "71db68c98e20",
+      "date": "2026-08-26",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "model-routing"
+      ],
+      "changed_milestones": [
+        "model-routing/live-provider-reliability"
+      ],
+      "roadmap": {
+        "item_count": 289,
+        "completed_item_count": 103,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 94,
+      "verified_evidence_delta": 1
+    },
+    {
+      "revision": "1de5695f5549",
+      "date": "2026-08-26",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 289,
+        "completed_item_count": 103,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 94,
+      "verified_evidence_delta": 0
+    },
+    {
+      "revision": "3b6202d4023d",
+      "date": "2026-08-26",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "model-routing"
+      ],
+      "changed_milestones": [
+        "model-routing/live-provider-reliability"
+      ],
+      "roadmap": {
+        "item_count": 289,
+        "completed_item_count": 104,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 95,
+      "verified_evidence_delta": 1
+    },
+    {
+      "revision": "c429c773133c",
+      "date": "2026-08-26",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "model-routing"
+      ],
+      "changed_milestones": [
+        "model-routing/live-provider-reliability"
+      ],
+      "roadmap": {
+        "item_count": 289,
+        "completed_item_count": 105,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 96,
+      "verified_evidence_delta": 1
+    },
+    {
+      "revision": "829ee6c0572c",
+      "date": "2026-08-26",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 297,
+        "completed_item_count": 106,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 8,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 96,
+      "verified_evidence_delta": 0
+    },
+    {
+      "revision": "83546dad7738",
+      "date": "2026-08-26",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 297,
+        "completed_item_count": 107,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 96,
+      "verified_evidence_delta": 0
+    },
+    {
+      "revision": "335ab6caa8c7",
+      "date": "2026-08-26",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 297,
+        "completed_item_count": 108,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 96,
+      "verified_evidence_delta": 0
+    },
+    {
+      "revision": "a2f215067c6c",
+      "date": "2026-08-26",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 297,
+        "completed_item_count": 109,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 96,
+      "verified_evidence_delta": 0
+    },
+    {
+      "revision": "4563b848404b",
+      "date": "2026-08-26",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 298,
+        "completed_item_count": 110,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 1,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 96,
+      "verified_evidence_delta": 0
+    },
+    {
+      "revision": "8b2e3a919acd",
+      "date": "2026-08-26",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 406,
+        "completed_item_count": 110,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 108,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 96,
+      "verified_evidence_delta": 0
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim."
