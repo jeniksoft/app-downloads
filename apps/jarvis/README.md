@@ -36,7 +36,7 @@ Nejde o instalační balíček ani o prohlášení, že je produkt hotový; při
 
 Tabulka používá pevnou ✓/✕ značku: ✓ znamená ověřenou release bránu, ✕ znamená, že brána ještě není ověřená. ✕ není důkaz chyby; u architektury označuje plánovaný rozsah.
 
-**Změna od předchozího snapshotu: roadmapa položky +0 · hotovo +0 · ověřené důkazy +0**
+**Změna od předchozího snapshotu: roadmapa položky +0 · hotovo +1 · ověřené důkazy +1**
 
 ![Roadmapa a progress edic Jarvis](visuals/roadmap-editions.svg)
 
@@ -170,7 +170,7 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✕ Rozpracováno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.9` | Kormidlo benchmark-Work Report evidence bridge | `V2` |
 | ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.10` | provider resource arbitration | `V3` |
 | ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.11` | local and LAN disconnect recovery matrix | `V5` |
-| ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.1` | current request authority regression | `V1` |
+| ✓ Hotovo | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.1` | current request authority regression | `V1` |
 | ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.2` | project snapshot fingerprint and delta classification | `V2` |
 | ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.3` | typed evidence classes and provenance | `V1` |
 | ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.4` | evidence sufficiency typed result | `V1` |
@@ -384,9 +384,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +2 | +320 | +0.02 |
+| Text/source celkem | +0 | +0 | +0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +2 | +320 | +0.02 |
+| Trackovaný strom celkem | +0 | +0 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -560,7 +560,7 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `dbf901258e48` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `bb470556287e` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `f451ac8ddde1` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | workspace-actions | 1: workspace-actions/workspace-source-grounding |
-| `2396bee0b326` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `040d6fb465a6` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | workspace-actions | 1: workspace-actions/workspace-source-grounding |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 

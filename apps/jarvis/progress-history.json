@@ -21205,7 +21205,7 @@
       "verified_evidence_delta": 1
     },
     {
-      "revision": "2396bee0b326",
+      "revision": "040d6fb465a6",
       "date": "2026-08-26",
       "metrics": {
         "primary_percent": 32.5,
@@ -21222,21 +21222,23 @@
         "release_readiness_percent": 0.0
       },
       "changed_chapters": [
-        "evidence-only"
+        "workspace-actions"
       ],
-      "changed_milestones": [],
+      "changed_milestones": [
+        "workspace-actions/workspace-source-grounding"
+      ],
       "roadmap": {
         "item_count": 289,
-        "completed_item_count": 94,
+        "completed_item_count": 95,
         "chapter_count": 54
       },
       "roadmap_delta": {
         "item_count": 0,
-        "completed_item_count": 0,
+        "completed_item_count": 1,
         "chapter_count": 0
       },
-      "verified_evidence_count": 84,
-      "verified_evidence_delta": 0
+      "verified_evidence_count": 85,
+      "verified_evidence_delta": 1
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim."
