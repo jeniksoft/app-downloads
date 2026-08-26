@@ -150,10 +150,10 @@
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 3,
-        "physical_lines": 773,
-        "bytes": 40743,
-        "megabytes": 0.040743
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       },
       "binary_assets": {
         "files": 0,
@@ -162,10 +162,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 3,
-        "physical_lines": 773,
-        "bytes": 40743,
-        "megabytes": 0.040743
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       }
     }
   },
@@ -295,7 +295,7 @@
         "chapter_color": "personal",
         "chapter_count": 9,
         "item_count": 99,
-        "completed_item_count": 27
+        "completed_item_count": 28
       },
       {
         "id": "optional",
@@ -579,7 +579,7 @@
         "status_label_en": "In progress",
         "is_complete": false,
         "item_count": 11,
-        "completed_item_count": 4
+        "completed_item_count": 5
       },
       {
         "id": "P2",
@@ -3106,11 +3106,11 @@
         "chapter_color": "personal",
         "description_cs": "typed resume phase vocabulary",
         "description_en": "typed resume phase vocabulary",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
+        "status_source": "current-evidence",
+        "is_complete": true,
         "verify": "V1",
         "is_slice": true
       },
@@ -6631,7 +6631,7 @@
       }
     ],
     "item_count": 289,
-    "completed_item_count": 96,
+    "completed_item_count": 97,
     "chapter_count": 54,
     "limitations": "Release-gate status is roadmap state, not a percentage. Item ✓ means deterministic implementation/evidence is present; live owner acceptance can remain open. Teams and Enterprise have no active measured evidence track."
   },
@@ -6639,9 +6639,9 @@
     "available": true,
     "previous_date": "2026-08-26",
     "roadmap_items_delta": 0,
-    "roadmap_completed_delta": 0,
+    "roadmap_completed_delta": 1,
     "roadmap_chapters_delta": 0,
-    "verified_evidence_delta": 0,
+    "verified_evidence_delta": 1,
     "metrics_delta": {
       "primary_percent": 0.0,
       "implementation_percent": 0.0,
@@ -6657,7 +6657,7 @@
     "manifest_present": true,
     "milestone_count": 32,
     "verified_milestone_count": 11,
-    "verified_evidence_count": 86,
+    "verified_evidence_count": 87,
     "state_counts": {
       "verified-build": 9,
       "partial": 12,
@@ -6847,20 +6847,22 @@
           "implementation_percent": 100.0,
           "verified_percent": 50.0,
           "done_percent": 50.0,
-          "evidence_count": 2,
-          "verified_evidence_count": 1,
+          "evidence_count": 3,
+          "verified_evidence_count": 2,
           "evidence_kinds": [
             "contract",
-            "runtime"
+            "runtime",
+            "self-test"
           ],
           "verified_evidence_kinds": [
-            "contract"
+            "contract",
+            "self-test"
           ],
           "evidence_statuses": [
             "open",
             "verified"
           ],
-          "evidence_summary_cs": "Typed phase, target, digest a exact Fragment selection mají kontraktní self-test evidence.",
+          "evidence_summary_cs": "Typed phase, policy, target, digest a exact Fragment selection mají kontraktní self-test evidence; closed vocabulary navíc odmítá neznámé, částečné a nesouhlasné vazby.",
           "open_gap_cs": "Live provider replay a pokračování po skutečné mutaci nejsou tímto kontraktem prokázané."
         },
         {
@@ -29120,6 +29122,42 @@
       },
       "verified_evidence_count": 86,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "382dbcc7add6",
+      "date": "2026-08-26",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "worker-recovery"
+      ],
+      "changed_milestones": [
+        "worker-recovery/mid-step-resume-contract"
+      ],
+      "roadmap": {
+        "item_count": 289,
+        "completed_item_count": 97,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 87,
+      "verified_evidence_delta": 1
     }
   ],
   "history_contract": {
