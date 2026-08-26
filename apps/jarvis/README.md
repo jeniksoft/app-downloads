@@ -151,7 +151,7 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✓ Hotovo | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.1` | read-only durable state ownership map | `V0` |
 | ✓ Hotovo | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.2` | typed resume phase vocabulary | `V1` |
 | ✓ Hotovo | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.3` | precondition snapshot before consequential step | `V1` |
-| ✕ Rozpracováno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.4` | post-mutation checkpoint with before-after digest | `V1` |
+| ✓ Hotovo | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.4` | post-mutation checkpoint with before-after digest | `V1` |
 | ✕ Rozpracováno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.5` | pure safe-resume classifier | `V1` |
 | ✕ Rozpracováno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.6` | verify-only resume without mutation replay | `V3` |
 | ✕ Rozpracováno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.7` | one tool-specific resume adapter per run | `V3` |
@@ -361,9 +361,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
 | C/C++ | 1 004 | 345 406 | 22.32 |
-| JSON | 277 | 151 162 | 11.49 |
-| Markdown | 678 | 65 752 | 3.28 |
-| Python | 160 | 35 801 | 1.45 |
+| JSON | 278 | 151 244 | 11.50 |
+| Markdown | 679 | 65 913 | 3.29 |
+| Python | 161 | 35 970 | 1.46 |
 | PowerShell | 50 | 24 853 | 1.31 |
 | JSONL | 14 | 2 499 | 6.91 |
 | Plain text | 106 | 1 652 | 0.18 |
@@ -374,9 +374,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
 | Other text | 7 | 7 | 0.00 |
-| **Text/source celkem** | **2 321** | **627 277** | **47.00** |
+| **Text/source celkem** | **2 324** | **627 689** | **47.02** |
 | Binární assety (mimo řádky) | 35 | — | 14.47 |
-| **Trackovaný strom celkem** | **2 356** | **627 277** | **61.47** |
+| **Trackovaný strom celkem** | **2 359** | **627 689** | **61.49** |
 
 ### Přírůstek od předchozí revize
 
@@ -384,9 +384,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +0 | +0 | +0.00 |
+| Text/source celkem | +3 | +412 | +0.02 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +0 | +0 | +0.00 |
+| Trackovaný strom celkem | +3 | +412 | +0.02 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -431,7 +431,7 @@ flowchart LR
 | App shell | ADPU a veřejný kanál | `partial` | Veřejný kanál a synchronizační kontrakt existují, ale samotná distribuce není důkazem funkčního release.; mezera: Je nutné dokončit a opakovaně ověřit end-to-end publikaci artefaktu, integritu a rollback hranice.; typy: contract, release-gate |
 | App shell | Čistá instalace, upgrade, podpis a rollback acceptance | `open` | Release milestone je deklarovaný jako požadavek, nikoli jako uzavřený důkaz.; mezera: Chybí aktuální acceptance pack navázaný na konkrétní release candidate.; typy: roadmap |
 | Worker/recovery | Queue, WorkerJournal a persistence | `verified-build` | Capability matrix a PF1.2 common durable envelope uvádějí queue, worker, typed recovery UI projection, durable evidence gates a skrytý parent/child process-restart self-test jako build/contract ověřené.; mezera: Skutečný crash/restart průchod reálného workflow, dlouhý providerový requeue a V5 owner-facing recovery workflow acceptance zůstávají samostatnými důkazy.; typy: runtime, self-test |
-| Worker/recovery | Mid-step resume a přesný Fragment | `verified-contract` | Typed phase, policy, target, digest a exact Fragment selection mají kontraktní self-test evidence; closed vocabulary navíc odmítá neznámé, částečné a nesouhlasné vazby a P1.3 váže request/efektivní policy identity před consequential krokem s verified-only gate.; mezera: Live provider replay a pokračování po skutečné mutaci nejsou tímto kontraktem prokázané.; typy: contract, runtime, self-test |
+| Worker/recovery | Mid-step resume a přesný Fragment | `verified-contract` | Typed phase, policy, target, digest a exact Fragment selection mají kontraktní self-test evidence; closed vocabulary navíc odmítá neznámé, částečné a nesouhlasné vazby, P1.3 váže request/efektivní policy identity před consequential krokem s verified-only gate a P1.4 váže before/after digest stejné množiny targetů bez replaye mutace.; mezera: Live provider replay a pokračování po skutečné mutaci nejsou tímto kontraktem prokázané.; typy: contract, runtime, self-test |
 | Worker/recovery | Fail-closed review pro síťové a mutující replaye | `partial` | Fail-closed hranice a typed receipt continuity jsou deterministicky ověřené v existujícím policy/WorkerJournal toku, ale jejich úplná Personal acceptance není uzavřená.; mezera: Zbývá live a skutečný workflow důkaz přes všechny privilegované a mutující replay cesty.; typy: contract, runtime, self-test |
 | Worker/recovery | Crash/restart dogfood skutečného workflow | `open` | Roadmap požadavek je známý, ale aktuální receipt není v registru.; mezera: Dodat opakovatelný crash/restart test s identity, journalem, resume a owner review.; typy: roadmap |
 | Models/routing | Provider health, capability a identity | `verified-build` | Current evidence covers provider/model identity, readiness and bounded routing contracts.; mezera: Živá dostupnost každého podporovaného endpointu není permanentně prokázaná.; typy: runtime, self-test |
@@ -543,7 +543,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `4a44b24a9c6a` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/hardware-configuration-matrix |
 | `18d64d36f0cd` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/hardware-configuration-matrix |
 | `1f52122969e8` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/hardware-configuration-matrix |
 | `dadc2a855223` | 2026-08-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -561,6 +560,7 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `382dbcc7add6` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/mid-step-resume-contract |
 | `066c42e8742e` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `a66ee87c80ee` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/mid-step-resume-contract |
+| `7184445264ff` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/mid-step-resume-contract |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
