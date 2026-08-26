@@ -150,10 +150,10 @@
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 5,
-        "physical_lines": 1122,
-        "bytes": 48639,
-        "megabytes": 0.048639
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       },
       "binary_assets": {
         "files": 0,
@@ -162,10 +162,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 5,
-        "physical_lines": 1122,
-        "bytes": 48639,
-        "megabytes": 0.048639
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       }
     }
   },
@@ -295,7 +295,7 @@
         "chapter_color": "personal",
         "chapter_count": 9,
         "item_count": 99,
-        "completed_item_count": 26
+        "completed_item_count": 27
       },
       {
         "id": "optional",
@@ -579,7 +579,7 @@
         "status_label_en": "In progress",
         "is_complete": false,
         "item_count": 11,
-        "completed_item_count": 3
+        "completed_item_count": 4
       },
       {
         "id": "P2",
@@ -3087,11 +3087,11 @@
         "chapter_color": "personal",
         "description_cs": "read-only durable state ownership map",
         "description_en": "read-only durable state ownership map",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
+        "status_source": "current-evidence",
+        "is_complete": true,
         "verify": "V0",
         "is_slice": true
       },
@@ -6631,7 +6631,7 @@
       }
     ],
     "item_count": 289,
-    "completed_item_count": 95,
+    "completed_item_count": 96,
     "chapter_count": 54,
     "limitations": "Release-gate status is roadmap state, not a percentage. Item ✓ means deterministic implementation/evidence is present; live owner acceptance can remain open. Teams and Enterprise have no active measured evidence track."
   },
@@ -6639,9 +6639,9 @@
     "available": true,
     "previous_date": "2026-08-26",
     "roadmap_items_delta": 0,
-    "roadmap_completed_delta": 0,
+    "roadmap_completed_delta": 1,
     "roadmap_chapters_delta": 0,
-    "verified_evidence_delta": 0,
+    "verified_evidence_delta": 1,
     "metrics_delta": {
       "primary_percent": 0.0,
       "implementation_percent": 0.0,
@@ -6657,7 +6657,7 @@
     "manifest_present": true,
     "milestone_count": 32,
     "verified_milestone_count": 11,
-    "verified_evidence_count": 85,
+    "verified_evidence_count": 86,
     "state_counts": {
       "verified-build": 9,
       "partial": 12,
@@ -6821,8 +6821,8 @@
           "implementation_percent": 100.0,
           "verified_percent": 75.0,
           "done_percent": 75.0,
-          "evidence_count": 37,
-          "verified_evidence_count": 35,
+          "evidence_count": 38,
+          "verified_evidence_count": 36,
           "evidence_kinds": [
             "runtime",
             "self-test"
@@ -29050,6 +29050,42 @@
       },
       "verified_evidence_count": 85,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "3cc5115de578",
+      "date": "2026-08-26",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "worker-recovery"
+      ],
+      "changed_milestones": [
+        "worker-recovery/queue-journal-persistence"
+      ],
+      "roadmap": {
+        "item_count": 289,
+        "completed_item_count": 96,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 86,
+      "verified_evidence_delta": 1
     }
   ],
   "history_contract": {
