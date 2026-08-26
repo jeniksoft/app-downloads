@@ -32,38 +32,38 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 1002,
-        "physical_lines": 343756,
-        "bytes": 22238703,
-        "megabytes": 22.238703
+        "files": 1004,
+        "physical_lines": 344487,
+        "bytes": 22271263,
+        "megabytes": 22.271263
       },
       {
         "language": "JSON",
-        "files": 274,
-        "physical_lines": 150946,
-        "bytes": 11484917,
-        "megabytes": 11.484917
+        "files": 275,
+        "physical_lines": 151031,
+        "bytes": 11487814,
+        "megabytes": 11.487814
       },
       {
         "language": "Markdown",
-        "files": 675,
-        "physical_lines": 65325,
-        "bytes": 3257040,
-        "megabytes": 3.25704
+        "files": 676,
+        "physical_lines": 65445,
+        "bytes": 3263512,
+        "megabytes": 3.263512
       },
       {
         "language": "Python",
-        "files": 157,
-        "physical_lines": 35253,
-        "bytes": 1428048,
-        "megabytes": 1.428048
+        "files": 158,
+        "physical_lines": 35430,
+        "bytes": 1434155,
+        "megabytes": 1.434155
       },
       {
         "language": "PowerShell",
         "files": 50,
-        "physical_lines": 24844,
-        "bytes": 1304688,
-        "megabytes": 1.304688
+        "physical_lines": 24853,
+        "bytes": 1305291,
+        "megabytes": 1.305291
       },
       {
         "language": "JSONL",
@@ -130,10 +130,10 @@
       }
     ],
     "source_text": {
-      "files": 2310,
-      "physical_lines": 624427,
-      "bytes": 46864513,
-      "megabytes": 46.864513
+      "files": 2315,
+      "physical_lines": 625549,
+      "bytes": 46913152,
+      "megabytes": 46.913152
     },
     "binary_assets": {
       "files": 35,
@@ -141,19 +141,19 @@
       "megabytes": 14.4705
     },
     "tracked_total": {
-      "files": 2345,
-      "physical_lines": 624427,
-      "bytes": 61335013,
-      "megabytes": 61.335013
+      "files": 2350,
+      "physical_lines": 625549,
+      "bytes": 61383652,
+      "megabytes": 61.383652
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "files": 5,
+        "physical_lines": 1122,
+        "bytes": 48639,
+        "megabytes": 0.048639
       },
       "binary_assets": {
         "files": 0,
@@ -162,10 +162,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "files": 5,
+        "physical_lines": 1122,
+        "bytes": 48639,
+        "megabytes": 0.048639
       }
     }
   },
@@ -6639,9 +6639,9 @@
     "available": true,
     "previous_date": "2026-08-26",
     "roadmap_items_delta": 0,
-    "roadmap_completed_delta": 1,
+    "roadmap_completed_delta": 0,
     "roadmap_chapters_delta": 0,
-    "verified_evidence_delta": 1,
+    "verified_evidence_delta": 0,
     "metrics_delta": {
       "primary_percent": 0.0,
       "implementation_percent": 0.0,
@@ -29016,6 +29016,40 @@
       },
       "verified_evidence_count": 85,
       "verified_evidence_delta": 1
+    },
+    {
+      "revision": "afb88082a662",
+      "date": "2026-08-26",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 289,
+        "completed_item_count": 95,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 85,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
