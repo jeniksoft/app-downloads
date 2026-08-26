@@ -33,30 +33,30 @@
       {
         "language": "C/C++",
         "files": 1004,
-        "physical_lines": 344902,
-        "bytes": 22292558,
-        "megabytes": 22.292558
+        "physical_lines": 345406,
+        "bytes": 22319317,
+        "megabytes": 22.319317
       },
       {
         "language": "JSON",
-        "files": 276,
-        "physical_lines": 151106,
-        "bytes": 11491308,
-        "megabytes": 11.491308
+        "files": 277,
+        "physical_lines": 151162,
+        "bytes": 11493547,
+        "megabytes": 11.493547
       },
       {
         "language": "Markdown",
-        "files": 677,
-        "physical_lines": 65571,
-        "bytes": 3272378,
-        "megabytes": 3.272378
+        "files": 678,
+        "physical_lines": 65752,
+        "bytes": 3282223,
+        "megabytes": 3.282223
       },
       {
         "language": "Python",
-        "files": 159,
-        "physical_lines": 35587,
-        "bytes": 1441243,
-        "megabytes": 1.441243
+        "files": 160,
+        "physical_lines": 35801,
+        "bytes": 1448743,
+        "megabytes": 1.448743
       },
       {
         "language": "PowerShell",
@@ -130,10 +130,10 @@
       }
     ],
     "source_text": {
-      "files": 2318,
-      "physical_lines": 626322,
-      "bytes": 46953895,
-      "megabytes": 46.953895
+      "files": 2321,
+      "physical_lines": 627277,
+      "bytes": 47000238,
+      "megabytes": 47.000238
     },
     "binary_assets": {
       "files": 35,
@@ -141,19 +141,19 @@
       "megabytes": 14.4705
     },
     "tracked_total": {
-      "files": 2353,
-      "physical_lines": 626322,
-      "bytes": 61424395,
-      "megabytes": 61.424395
+      "files": 2356,
+      "physical_lines": 627277,
+      "bytes": 61470738,
+      "megabytes": 61.470738
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "files": 3,
+        "physical_lines": 955,
+        "bytes": 46343,
+        "megabytes": 0.046343
       },
       "binary_assets": {
         "files": 0,
@@ -162,10 +162,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "files": 3,
+        "physical_lines": 955,
+        "bytes": 46343,
+        "megabytes": 0.046343
       }
     }
   },
@@ -6639,9 +6639,9 @@
     "available": true,
     "previous_date": "2026-08-26",
     "roadmap_items_delta": 0,
-    "roadmap_completed_delta": 1,
+    "roadmap_completed_delta": 0,
     "roadmap_chapters_delta": 0,
-    "verified_evidence_delta": 1,
+    "verified_evidence_delta": 0,
     "metrics_delta": {
       "primary_percent": 0.0,
       "implementation_percent": 0.0,
@@ -29158,6 +29158,40 @@
       },
       "verified_evidence_count": 87,
       "verified_evidence_delta": 1
+    },
+    {
+      "revision": "066c42e8742e",
+      "date": "2026-08-26",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 289,
+        "completed_item_count": 97,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 87,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
