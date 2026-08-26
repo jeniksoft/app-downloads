@@ -13,7 +13,7 @@ Aktuálně zde není žádný veřejný instalační balíček ke stažení. Dř
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `OP4.6.1` je veřejně spojen se zdrojovým SHA `6649cb6cbb835ae26503509b6128e129793edae7` a closeout SHA `d068be38659b1c4a3801ff2a66261264690dd46b`. Stav: **verified**.
+Řez `P2.5` je veřejně spojen se zdrojovým SHA `d80dcd7d113130241cb8a377f94b51e3197f8afb` a closeout SHA `8d4bf120b359d3e4338495d7955feefe2d85df04`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -41,7 +41,7 @@ Nejde o instalační balíček ani o prohlášení, že je produkt hotový; při
 
 Tabulka používá pevnou ✓/✕ značku: ✓ znamená ověřenou release bránu, ✕ znamená, že brána ještě není ověřená. ✕ není důkaz chyby; u architektury označuje plánovaný rozsah.
 
-**Změna od předchozího snapshotu: roadmapa položky +0 · hotovo +0 · ověřené důkazy +0**
+**Změna od předchozího snapshotu: roadmapa položky +4 · hotovo +0 · ověřené důkazy +0**
 
 ![Roadmapa a progress edic Jarvis](visuals/roadmap-editions.svg)
 
@@ -173,7 +173,7 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.2` | canonical model identity digest revision quantization | `V1` |
 | ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.3` | explicit model capability manifest | `V1` |
 | ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.4` | Typovaný stav health a readiness nad existujícími autoritami | `V2` |
-| ✕ Rozpracováno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.5` | owner-facing local and LAN endpoint validation | `V4` |
+| ✕ Částečně | Personal 1.0.0 · P2 — Model and provider reliability | `P2.5` | owner-facing local and LAN endpoint validation | `V4` |
 | ✕ Rozpracováno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.6` | download install readiness and durable cancel-resume | `V3` |
 | ✕ Rozpracováno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.7` | hard-task downgrade regression matrix | `V1` |
 | ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.8` | fallback failure taxonomy | `V2` |
@@ -271,14 +271,15 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✕ Odloženo | Volitelné tratě · OP2 — Image generation | `OP2.4` | Workflow referenčních obrazů a multimodality | `V3` |
 | ✕ Odloženo | Volitelné tratě · OP2 — Image generation | `OP2.5` | Vizuální QA a opravná smyčka | `V4` |
 | ✕ Odloženo | Volitelné tratě · OP2 — Image generation | `OP2.6` | Akceptace ownerem a dogfoodingem | `V5` |
-| ✕ Odloženo | Volitelné tratě · OP3 — TTS STT audio | `OP3.1` | Typovaná řečová modalita a popis modelu | `V1` |
-| ✕ Odloženo | Volitelné tratě · OP3 — TTS STT audio | `OP3.2` | Providerově neutrální hranice syntézy | `V2` |
-| ✕ Odloženo | Volitelné tratě · OP3 — TTS STT audio | `OP3.3` | Katalog, stažení a instalační ledger | `V3` |
-| ✕ Odloženo | Volitelné tratě · OP3 — TTS STT audio | `OP3.4` | Příprava českého textu a výslovnosti | `V2` |
-| ✕ Odloženo | Volitelné tratě · OP3 — TTS STT audio | `OP3.5` | Lokální baseline Piper a ONNX | `V3` |
-| ✕ Odloženo | Volitelné tratě · OP3 — TTS STT audio | `OP3.6` | Typovaný doklad WAV a MP3 artefaktu | `V3` |
-| ✕ Odloženo | Volitelné tratě · OP3 — TTS STT audio | `OP3.7` | Akceptace kvality ownerem | `V5` |
-| ✕ Odloženo | Volitelné tratě · OP3 — TTS STT audio | `OP3.8` | Další jazyky a modality | `V5` |
+| ✕ Rozpracováno | Volitelné tratě · OP3 — TTS STT audio | `OP3.1` | Typovaná řečová modalita a popis modelu | `V1` |
+| ✕ Rozpracováno | Volitelné tratě · OP3 — TTS STT audio | `OP3.2` | Providerově neutrální hranice syntézy | `V2` |
+| ✕ Rozpracováno | Volitelné tratě · OP3 — TTS STT audio | `OP3.3` | Katalog, stažení a instalační ledger | `V3` |
+| ✕ Rozpracováno | Volitelné tratě · OP3 — TTS STT audio | `OP3.4` | Příprava českého textu a výslovnosti | `V2` |
+| ✕ Rozpracováno | Volitelné tratě · OP3 — TTS STT audio | `OP3.5` | Lokální baseline Piper a ONNX | `V3` |
+| ✕ Rozpracováno | Volitelné tratě · OP3 — TTS STT audio | `OP3.6` | Typovaný doklad WAV a MP3 artefaktu | `V3` |
+| ✕ Rozpracováno | Volitelné tratě · OP3 — TTS STT audio | `OP3.7` | Akceptace kvality ownerem | `V5` |
+| ✕ Rozpracováno | Volitelné tratě · OP3 — TTS STT audio | `OP3.8` | Další jazyky a modality | `V5` |
+| ✕ Rozpracováno | Volitelné tratě · OP3 — TTS STT audio | `OP3.9` | Lokální české STT routování pro tray a kontrakt integrace se secure desktopem | `V3` |
 | ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.1` | Core host před přihlášením a ownerem schválený hlasový tray adaptér s nastavitelným českým wake profilem | `V3` |
 | ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.2` | Typovaný handoff credential/login záměru bez tajných údajů | `V2` |
 | ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.3` | Adaptér fyzického a biometrického zajištění pro důsledkové hlasové akce | `V4` |
@@ -287,7 +288,10 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.5` | Okamžité deterministické potvrzení oslovení a typovaný lokální AIMP executor pojmenovaného playlistu | `V3` |
 | ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.6` | Parita hlasu s UI přes existující prompt cestu a bounded důležitá lokální audio oznámení | `V3` |
 | ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.6.1` | Omezené zesílení capture v ownerově relaci s obnovením při cizím klientovi | `V3` |
-| ✕ Rozpracováno | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.14` | Voice-only hranice předpřihlašovacího Windows UI přes nativní Voice Access a credential flow LogonUI | `V4` |
+| ✕ Rozpracováno | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.14` | Voice-only hranice předpřihlašovacího Windows UI přes Voice Access pro podporované jazyky nebo ověřenou lokální secure-desktop cestu | `V4` |
+| ✕ Rozpracováno | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.14.1` | Podepsaná lokální česká secure-desktop STT hranice Credential Provideru bez mikrofonu v Session 0 a bez credential handoffu do Core | `V4` |
+| ✕ Rozpracováno | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.14.2` | Deterministický český předpřihlašovací poradce bez generativního modelu, autority intentu a Core handoffu | `V3` |
+| ✕ Rozpracováno | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.14.3` | Jednorázová obnova původního stavu session po ověřeném neplánovaném výpadku se sealed credential referencí vlastněnou providerem | `V4` |
 | ✕ Odloženo | Volitelné tratě · OP5 — Repair Capsules | `OP5.1` | Kontrakt service slotu a nízkorizikový pilot | `V1` |
 | ✕ Odloženo | Volitelné tratě · OP5 — Repair Capsules | `OP5.2` | Chráněné recovery jádro a izolace | `V2` |
 | ✕ Odloženo | Volitelné tratě · OP5 — Repair Capsules | `OP5.3` | Průnik schopností a třídy provenience | `V2` |
@@ -486,11 +490,11 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 1 026 | 355 790 | 22.77 |
-| JSON | 288 | 151 901 | 11.55 |
-| Markdown | 698 | 70 636 | 3.53 |
-| Python | 177 | 38 264 | 1.54 |
-| PowerShell | 50 | 24 889 | 1.31 |
+| C/C++ | 1 038 | 358 591 | 22.88 |
+| JSON | 291 | 152 256 | 11.58 |
+| Markdown | 701 | 71 370 | 3.58 |
+| Python | 180 | 38 701 | 1.55 |
+| PowerShell | 50 | 24 909 | 1.31 |
 | JSONL | 14 | 2 499 | 6.91 |
 | Plain text | 106 | 1 652 | 0.18 |
 | INI | 5 | 66 | 0.00 |
@@ -500,9 +504,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
 | Other text | 7 | 7 | 0.00 |
-| **Text/source celkem** | **2 391** | **645 783** | **47.84** |
+| **Text/source celkem** | **2 412** | **650 130** | **48.05** |
 | Binární assety (mimo řádky) | 35 | — | 14.47 |
-| **Trackovaný strom celkem** | **2 426** | **645 783** | **62.31** |
+| **Trackovaný strom celkem** | **2 447** | **650 130** | **62.52** |
 
 ### Přírůstek od předchozí revize
 
@@ -669,7 +673,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `f26c37e940d8` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/mid-step-resume-contract |
 | `02ff46276014` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/mid-step-resume-contract |
 | `98e9f69bcad2` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/mid-step-resume-contract |
 | `71db68c98e20` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | model-routing | 1: model-routing/live-provider-reliability |
@@ -687,13 +690,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `9834cd1eba3d` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `7fd5ec174183` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `a299cb6a89db` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `5894ff30da38` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | model-routing | 1: model-routing/typed-routing-fallback |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 4 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 5 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
