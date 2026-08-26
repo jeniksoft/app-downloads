@@ -32,31 +32,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 1020,
-        "physical_lines": 353394,
-        "bytes": 22659115,
-        "megabytes": 22.659115
+        "files": 1022,
+        "physical_lines": 353855,
+        "bytes": 22681657,
+        "megabytes": 22.681657
       },
       {
         "language": "JSON",
         "files": 286,
-        "physical_lines": 151707,
-        "bytes": 11537037,
-        "megabytes": 11.537037
+        "physical_lines": 151708,
+        "bytes": 11537340,
+        "megabytes": 11.53734
       },
       {
         "language": "Markdown",
         "files": 691,
-        "physical_lines": 68459,
-        "bytes": 3436872,
-        "megabytes": 3.436872
+        "physical_lines": 68562,
+        "bytes": 3443016,
+        "megabytes": 3.443016
       },
       {
         "language": "Python",
         "files": 173,
-        "physical_lines": 37693,
-        "bytes": 1517158,
-        "megabytes": 1.517158
+        "physical_lines": 37744,
+        "bytes": 1519183,
+        "megabytes": 1.519183
       },
       {
         "language": "PowerShell",
@@ -130,10 +130,10 @@
       }
     ],
     "source_text": {
-      "files": 2372,
-      "physical_lines": 640427,
-      "bytes": 47607635,
-      "megabytes": 47.607635
+      "files": 2374,
+      "physical_lines": 641043,
+      "bytes": 47638649,
+      "megabytes": 47.638649
     },
     "binary_assets": {
       "files": 35,
@@ -141,19 +141,19 @@
       "megabytes": 14.4705
     },
     "tracked_total": {
-      "files": 2407,
-      "physical_lines": 640427,
-      "bytes": 62078135,
-      "megabytes": 62.078135
+      "files": 2409,
+      "physical_lines": 641043,
+      "bytes": 62109149,
+      "megabytes": 62.109149
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 0,
-        "physical_lines": 195,
-        "bytes": 25031,
-        "megabytes": 0.025031
+        "files": 2,
+        "physical_lines": 616,
+        "bytes": 31014,
+        "megabytes": 0.031014
       },
       "binary_assets": {
         "files": 0,
@@ -162,10 +162,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 0,
-        "physical_lines": 195,
-        "bytes": 25031,
-        "megabytes": 0.025031
+        "files": 2,
+        "physical_lines": 616,
+        "bytes": 31014,
+        "megabytes": 0.031014
       }
     }
   },
@@ -178,7 +178,7 @@
   "roadmap": {
     "source": {
       "roadmap_id": "jarvis.master.worker.v2",
-      "updated_at": "2026-08-25",
+      "updated_at": "2026-08-26",
       "file": "canonical roadmap hierarchy and release-gate summary"
     },
     "gates": [
@@ -303,8 +303,8 @@
         "name_en": "Optional tracks",
         "chapter_color": "optional",
         "chapter_count": 9,
-        "item_count": 67,
-        "completed_item_count": 5
+        "item_count": 68,
+        "completed_item_count": 6
       },
       {
         "id": "teams",
@@ -758,8 +758,8 @@
         "status_label_cs": "Rozpracováno",
         "status_label_en": "In progress",
         "is_complete": false,
-        "item_count": 5,
-        "completed_item_count": 5
+        "item_count": 6,
+        "completed_item_count": 6
       },
       {
         "id": "OP5",
@@ -5566,6 +5566,25 @@
         "is_slice": true
       },
       {
+        "id": "OP4.5",
+        "chapter_id": "OP4",
+        "chapter_name_cs": "OP4 — Ambient Presence Voice Mesh",
+        "chapter_name_en": "OP4 — Ambient Presence Voice Mesh",
+        "group_id": "optional",
+        "group_name_cs": "Volitelné tratě",
+        "group_name_en": "Optional tracks",
+        "chapter_color": "optional",
+        "description_cs": "Okamžité deterministické potvrzení oslovení a typovaný lokální AIMP executor pojmenovaného playlistu",
+        "description_en": "immediate deterministic wake acknowledgement and typed local AIMP named-playlist media executor",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "verify": "V3",
+        "is_slice": true
+      },
+      {
         "id": "OP5.1",
         "chapter_id": "OP5",
         "chapter_name_cs": "OP5 — Repair Capsules",
@@ -8853,16 +8872,16 @@
         "is_slice": true
       }
     ],
-    "item_count": 406,
-    "completed_item_count": 110,
+    "item_count": 407,
+    "completed_item_count": 111,
     "chapter_count": 54,
     "limitations": "Release-gate status is roadmap state, not a percentage. Item ✓ means deterministic implementation/evidence is present; live owner acceptance can remain open. Teams and Enterprise have no active measured evidence track."
   },
   "change_summary": {
     "available": true,
     "previous_date": "2026-08-26",
-    "roadmap_items_delta": 108,
-    "roadmap_completed_delta": 0,
+    "roadmap_items_delta": 1,
+    "roadmap_completed_delta": 1,
     "roadmap_chapters_delta": 0,
     "verified_evidence_delta": 0,
     "metrics_delta": {
@@ -8875,12 +8894,12 @@
   },
   "publication_savings": {
     "measurement": "estimated_workflow_runs_avoided",
-    "tracked_main_commits": 789,
-    "relevant_closeout_snapshots": 154,
-    "legacy_runs_estimate": 789,
-    "closeout_runs_estimate": 154,
+    "tracked_main_commits": 790,
+    "relevant_closeout_snapshots": 155,
+    "legacy_runs_estimate": 790,
+    "closeout_runs_estimate": 155,
     "avoided_runs_estimate": 635,
-    "avoided_percent": 80.48,
+    "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot."
   },
   "milestone_implementation_percent": 54.25,
@@ -32000,6 +32019,40 @@
       "roadmap_delta": {
         "item_count": 108,
         "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 96,
+      "verified_evidence_delta": 0
+    },
+    {
+      "revision": "bcb7e8edde14",
+      "date": "2026-08-26",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 407,
+        "completed_item_count": 111,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 1,
+        "completed_item_count": 1,
         "chapter_count": 0
       },
       "verified_evidence_count": 96,

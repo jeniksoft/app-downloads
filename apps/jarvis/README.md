@@ -36,7 +36,7 @@ Nejde o instalační balíček ani o prohlášení, že je produkt hotový; při
 
 Tabulka používá pevnou ✓/✕ značku: ✓ znamená ověřenou release bránu, ✕ znamená, že brána ještě není ověřená. ✕ není důkaz chyby; u architektury označuje plánovaný rozsah.
 
-**Změna od předchozího snapshotu: roadmapa položky +108 · hotovo +0 · ověřené důkazy +0**
+**Změna od předchozího snapshotu: roadmapa položky +1 · hotovo +1 · ověřené důkazy +0**
 
 ![Roadmapa a progress edic Jarvis](visuals/roadmap-editions.svg)
 
@@ -279,6 +279,7 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.3` | Adaptér fyzického a biometrického zajištění pro důsledkové hlasové akce | `V4` |
 | ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.4` | Provider-free paměťová kapsle interních zdrojových fragmentů s kompresí a autentizací AES-GCM; scope uživatelského GitHub projektu zůstává oddělený a persistovaný NCrypt/ACL vault je otevřený | `V4` |
 | ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.4.1` | NCrypt broker pro machine-scoped neexportovatelný RSA-OAEP-SHA256 decrypt-only wrap s chráněným DACL pouze pro SYSTEM; persistovaný source vault a vydání Core capability zůstávají otevřené | `V4` |
+| ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.5` | Okamžité deterministické potvrzení oslovení a typovaný lokální AIMP executor pojmenovaného playlistu | `V3` |
 | ✕ Odloženo | Volitelné tratě · OP5 — Repair Capsules | `OP5.1` | Kontrakt service slotu a nízkorizikový pilot | `V1` |
 | ✕ Odloženo | Volitelné tratě · OP5 — Repair Capsules | `OP5.2` | Chráněné recovery jádro a izolace | `V2` |
 | ✕ Odloženo | Volitelné tratě · OP5 — Repair Capsules | `OP5.3` | Průnik schopností a třídy provenience | `V2` |
@@ -477,10 +478,10 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 1 020 | 353 394 | 22.66 |
-| JSON | 286 | 151 707 | 11.54 |
-| Markdown | 691 | 68 459 | 3.44 |
-| Python | 173 | 37 693 | 1.52 |
+| C/C++ | 1 022 | 353 855 | 22.68 |
+| JSON | 286 | 151 708 | 11.54 |
+| Markdown | 691 | 68 562 | 3.44 |
+| Python | 173 | 37 744 | 1.52 |
 | PowerShell | 50 | 24 871 | 1.31 |
 | JSONL | 14 | 2 499 | 6.91 |
 | Plain text | 106 | 1 652 | 0.18 |
@@ -491,9 +492,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
 | Other text | 7 | 7 | 0.00 |
-| **Text/source celkem** | **2 372** | **640 427** | **47.61** |
+| **Text/source celkem** | **2 374** | **641 043** | **47.64** |
 | Binární assety (mimo řádky) | 35 | — | 14.47 |
-| **Trackovaný strom celkem** | **2 407** | **640 427** | **62.08** |
+| **Trackovaný strom celkem** | **2 409** | **641 043** | **62.11** |
 
 ### Přírůstek od předchozí revize
 
@@ -501,9 +502,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +0 | +195 | +0.03 |
+| Text/source celkem | +2 | +616 | +0.03 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +0 | +195 | +0.03 |
+| Trackovaný strom celkem | +2 | +616 | +0.03 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -660,7 +661,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `066c42e8742e` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `a66ee87c80ee` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/mid-step-resume-contract |
 | `7184445264ff` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/mid-step-resume-contract |
 | `51733f200b94` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | worker-recovery | 1: worker-recovery/mid-step-resume-contract |
@@ -678,6 +678,7 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `a2f215067c6c` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `4563b848404b` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `8b2e3a919acd` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `bcb7e8edde14` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
