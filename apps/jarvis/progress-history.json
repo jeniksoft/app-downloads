@@ -1,5 +1,5 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "project_codename": "Jarvis",
   "report_locale": "cs-CZ",
   "generated_at": "2026-08-26",
@@ -16,6 +16,8 @@
     },
     "commit_history": "Tracked history records configured input revisions; public deltas compare successive records using opaque fingerprints.",
     "automatic_regeneration": "The public sync is explicitly dispatched after a completed roadmap closeout; ordinary main commits do not trigger it.",
+    "history_update": "Incremental closeout mode reuses the previous public history and appends one current closeout point; full-history mode is a deterministic fallback.",
+    "artifact_publication": "The publisher compares target bytes and commits only changed JSON, README, history or SVG artifact paths; unchanged tables and visuals remain untouched.",
     "limitations": "A commit is visible as evidence history, but source size, source lines, a plan, or a contract-only document never increases the primary score without declared milestone evidence. Task Board area estimates are structural inputs, not a scored axis."
   },
   "entries": [
@@ -22021,6 +22023,40 @@
       "roadmap_delta": {
         "item_count": 1,
         "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 96,
+      "verified_evidence_delta": 0
+    },
+    {
+      "revision": "342b840f0bea",
+      "date": "2026-08-26",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 408,
+        "completed_item_count": 113,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 1,
+        "completed_item_count": 2,
         "chapter_count": 0
       },
       "verified_evidence_count": 96,
