@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 1058,
-        "physical_lines": 368231,
-        "bytes": 23280783,
-        "megabytes": 23.280783
+        "files": 1062,
+        "physical_lines": 369700,
+        "bytes": 23351317,
+        "megabytes": 23.351317
       },
       {
         "language": "JSON",
         "files": 293,
         "physical_lines": 152754,
-        "bytes": 11609815,
-        "megabytes": 11.609815
+        "bytes": 11610002,
+        "megabytes": 11.610002
       },
       {
         "language": "Markdown",
-        "files": 709,
-        "physical_lines": 73468,
-        "bytes": 3698322,
-        "megabytes": 3.698322
+        "files": 716,
+        "physical_lines": 74404,
+        "bytes": 3753429,
+        "megabytes": 3.753429
       },
       {
         "language": "Python",
-        "files": 190,
-        "physical_lines": 40410,
-        "bytes": 1616848,
-        "megabytes": 1.616848
+        "files": 191,
+        "physical_lines": 40638,
+        "bytes": 1624855,
+        "megabytes": 1.624855
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 2452,
-      "physical_lines": 664075,
-      "bytes": 48665664,
-      "megabytes": 48.665664
+      "files": 2464,
+      "physical_lines": 666708,
+      "bytes": 48799499,
+      "megabytes": 48.799499
     },
     "binary_assets": {
       "files": 35,
@@ -144,19 +144,19 @@
       "megabytes": 14.4705
     },
     "tracked_total": {
-      "files": 2487,
-      "physical_lines": 664075,
-      "bytes": 63136164,
-      "megabytes": 63.136164
+      "files": 2499,
+      "physical_lines": 666708,
+      "bytes": 63269999,
+      "megabytes": 63.269999
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 3,
-        "physical_lines": 1558,
-        "bytes": 69840,
-        "megabytes": 0.06984
+        "files": 2,
+        "physical_lines": 265,
+        "bytes": 14460,
+        "megabytes": 0.01446
       },
       "binary_assets": {
         "files": 0,
@@ -165,10 +165,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 3,
-        "physical_lines": 1558,
-        "bytes": 69840,
-        "megabytes": 0.06984
+        "files": 2,
+        "physical_lines": 265,
+        "bytes": 14460,
+        "megabytes": 0.01446
       }
     }
   },
@@ -5501,8 +5501,8 @@
         "group_name_cs": "Volitelné tratě",
         "group_name_en": "Optional tracks",
         "chapter_color": "optional",
-        "description_cs": "Core host před přihlášením a ownerem schválený hlasový tray adaptér s nastavitelným českým wake profilem",
-        "description_en": "pre-login Core service host and owner-authorized tray voice adapter with configurable Czech wake profile",
+        "description_cs": "Core host před přihlášením a ownerem schválený hlasový tray adaptér s nastavitelným českým wake profilem a automatickým lokálním CPU-only STT provisioningem",
+        "description_en": "pre-login Core service host and owner-authorized tray voice adapter with configurable Czech wake profile and automatic local CPU-only STT provisioning",
         "status": "implementation-complete",
         "status_label_cs": "Implementováno; živé ověření čeká",
         "status_label_en": "Implemented; live acceptance pending",
@@ -9017,9 +9017,9 @@
     "available": true,
     "previous_date": "2026-08-27",
     "roadmap_items_delta": 0,
-    "roadmap_completed_delta": 1,
+    "roadmap_completed_delta": 0,
     "roadmap_chapters_delta": 0,
-    "verified_evidence_delta": 1,
+    "verified_evidence_delta": 0,
     "metrics_delta": {
       "primary_percent": 0.0,
       "implementation_percent": 0.0,
@@ -9038,7 +9038,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 15,
+    "incremental_closeout_points_since_full_baseline": 16,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -32724,6 +32724,40 @@
       },
       "verified_evidence_count": 98,
       "verified_evidence_delta": 1
+    },
+    {
+      "revision": "2c7febde9e88",
+      "date": "2026-08-27",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 414,
+        "completed_item_count": 123,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 98,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -32735,8 +32769,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP1.3",
-    "source_commit_sha": "83956162b7779ebd22674eaa204ef6aca31cff8a",
-    "closeout_sha": "b1f104c597a3e840ddd0edb98f6e0341e773fddd"
+    "roadmap_slice_id": "OP4.1",
+    "source_commit_sha": "1ae51e0f2978077c4f735e9f99f24161db8a2659",
+    "closeout_sha": "95a8ceebc306f9789c4c322747ad8089371c60e1"
   }
 }

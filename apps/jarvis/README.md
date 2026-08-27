@@ -13,7 +13,7 @@ Aktuálně zde není žádný veřejný instalační balíček ke stažení. Dř
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `OP1.3` je veřejně spojen se zdrojovým SHA `83956162b7779ebd22674eaa204ef6aca31cff8a` a closeout SHA `b1f104c597a3e840ddd0edb98f6e0341e773fddd`. Stav: **verified**.
+Řez `OP4.1` je veřejně spojen se zdrojovým SHA `1ae51e0f2978077c4f735e9f99f24161db8a2659` a closeout SHA `95a8ceebc306f9789c4c322747ad8089371c60e1`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -41,7 +41,7 @@ Nejde o instalační balíček ani o prohlášení, že je produkt hotový; při
 
 Tabulka používá pevnou ✓/✕ značku: ✓ znamená ověřenou release bránu, ✕ znamená, že brána ještě není ověřená. ✕ není důkaz chyby; u architektury označuje plánovaný rozsah.
 
-**Změna od předchozího snapshotu: roadmapa položky +0 · hotovo +1 · ověřené důkazy +1**
+**Změna od předchozího snapshotu: roadmapa položky +0 · hotovo +0 · ověřené důkazy +0**
 
 ![Roadmapa a progress edic Jarvis](visuals/roadmap-editions.svg)
 
@@ -280,7 +280,7 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✕ Rozpracováno | Volitelné tratě · OP3 — TTS STT audio | `OP3.7` | Akceptace kvality ownerem | `V5` |
 | ✕ Rozpracováno | Volitelné tratě · OP3 — TTS STT audio | `OP3.8` | Další jazyky a modality | `V5` |
 | ✕ Rozpracováno | Volitelné tratě · OP3 — TTS STT audio | `OP3.9` | Lokální české STT routování pro tray a kontrakt integrace se secure desktopem | `V3` |
-| ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.1` | Core host před přihlášením a ownerem schválený hlasový tray adaptér s nastavitelným českým wake profilem | `V3` |
+| ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.1` | Core host před přihlášením a ownerem schválený hlasový tray adaptér s nastavitelným českým wake profilem a automatickým lokálním CPU-only STT provisioningem | `V3` |
 | ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.2` | Typovaný handoff credential/login záměru bez tajných údajů | `V2` |
 | ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.3` | Adaptér fyzického a biometrického zajištění pro důsledkové hlasové akce | `V4` |
 | ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.4` | Provider-free paměťová kapsle interních zdrojových fragmentů s kompresí a autentizací AES-GCM; scope uživatelského GitHub projektu zůstává oddělený a persistovaný NCrypt/ACL vault je otevřený | `V4` |
@@ -490,10 +490,10 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 1 058 | 368 231 | 23.28 |
+| C/C++ | 1 062 | 369 700 | 23.35 |
 | JSON | 293 | 152 754 | 11.61 |
-| Markdown | 709 | 73 468 | 3.70 |
-| Python | 190 | 40 410 | 1.62 |
+| Markdown | 716 | 74 404 | 3.75 |
+| Python | 191 | 40 638 | 1.62 |
 | PowerShell | 50 | 24 909 | 1.31 |
 | JSONL | 14 | 2 499 | 6.91 |
 | Plain text | 106 | 1 652 | 0.18 |
@@ -504,9 +504,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
 | Other text | 7 | 7 | 0.00 |
-| **Text/source celkem** | **2 452** | **664 075** | **48.67** |
+| **Text/source celkem** | **2 464** | **666 708** | **48.80** |
 | Binární assety (mimo řádky) | 35 | — | 14.47 |
-| **Trackovaný strom celkem** | **2 487** | **664 075** | **63.14** |
+| **Trackovaný strom celkem** | **2 499** | **666 708** | **63.27** |
 
 ### Přírůstek od předchozí revize
 
@@ -514,9 +514,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +3 | +1558 | +0.07 |
+| Text/source celkem | +2 | +265 | +0.01 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +3 | +1558 | +0.07 |
+| Trackovaný strom celkem | +2 | +265 | +0.01 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -673,7 +673,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `4563b848404b` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `8b2e3a919acd` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `bcb7e8edde14` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `342b840f0bea` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -691,13 +690,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `88f3487693ab` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `25f5f32f5d1a` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
 | `7883e8524e93` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
+| `2c7febde9e88` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 15 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 16 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
