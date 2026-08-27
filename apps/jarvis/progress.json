@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 1050,
-        "physical_lines": 363736,
-        "bytes": 23108548,
-        "megabytes": 23.108548
+        "files": 1052,
+        "physical_lines": 364700,
+        "bytes": 23145489,
+        "megabytes": 23.145489
       },
       {
         "language": "JSON",
-        "files": 292,
-        "physical_lines": 152465,
-        "bytes": 11593377,
-        "megabytes": 11.593377
+        "files": 293,
+        "physical_lines": 152671,
+        "bytes": 11601766,
+        "megabytes": 11.601766
       },
       {
         "language": "Markdown",
-        "files": 707,
-        "physical_lines": 72901,
-        "bytes": 3663898,
-        "megabytes": 3.663898
+        "files": 708,
+        "physical_lines": 73174,
+        "bytes": 3678732,
+        "megabytes": 3.678732
       },
       {
         "language": "Python",
-        "files": 187,
-        "physical_lines": 39772,
-        "bytes": 1590134,
-        "megabytes": 1.590134
+        "files": 188,
+        "physical_lines": 39979,
+        "bytes": 1598757,
+        "megabytes": 1.598757
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 2438,
-      "physical_lines": 658086,
-      "bytes": 48415853,
-      "megabytes": 48.415853
+      "files": 2443,
+      "physical_lines": 659736,
+      "bytes": 48484640,
+      "megabytes": 48.48464
     },
     "binary_assets": {
       "files": 35,
@@ -144,19 +144,19 @@
       "megabytes": 14.4705
     },
     "tracked_total": {
-      "files": 2473,
-      "physical_lines": 658086,
-      "bytes": 62886353,
-      "megabytes": 62.886353
+      "files": 2478,
+      "physical_lines": 659736,
+      "bytes": 62955140,
+      "megabytes": 62.95514
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 5,
-        "physical_lines": 1413,
-        "bytes": 65136,
-        "megabytes": 0.065136
+        "physical_lines": 1650,
+        "bytes": 68787,
+        "megabytes": 0.068787
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 5,
-        "physical_lines": 1413,
-        "bytes": 65136,
-        "megabytes": 0.065136
+        "physical_lines": 1650,
+        "bytes": 68787,
+        "megabytes": 0.068787
       }
     }
   },
@@ -307,7 +307,7 @@
         "chapter_color": "optional",
         "chapter_count": 9,
         "item_count": 75,
-        "completed_item_count": 14
+        "completed_item_count": 15
       },
       {
         "id": "teams",
@@ -712,12 +712,12 @@
         "chapter_color": "optional",
         "name_cs": "OP1 — Hermes local facade",
         "name_en": "OP1 — Hermes local facade",
-        "status": "deferred",
-        "status_label_cs": "Odloženo",
-        "status_label_en": "Deferred",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
         "is_complete": false,
         "item_count": 8,
-        "completed_item_count": 0
+        "completed_item_count": 1
       },
       {
         "id": "OP2",
@@ -5066,11 +5066,11 @@
         "chapter_color": "optional",
         "description_cs": "Kontrakt a hranice Hermesu",
         "description_en": "Hermes contract and boundaries",
-        "status": "deferred",
-        "status_label_cs": "Odloženo",
-        "status_label_en": "Deferred",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V1",
         "is_slice": true
       },
@@ -5085,9 +5085,9 @@
         "chapter_color": "optional",
         "description_cs": "Lokální read-only brána",
         "description_en": "local read-only gateway",
-        "status": "deferred",
-        "status_label_cs": "Odloženo",
-        "status_label_en": "Deferred",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "verify": "V3",
@@ -5104,9 +5104,9 @@
         "chapter_color": "optional",
         "description_cs": "Chat a živé události",
         "description_en": "chat and live events",
-        "status": "deferred",
-        "status_label_cs": "Odloženo",
-        "status_label_en": "Deferred",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "verify": "V5",
@@ -5123,9 +5123,9 @@
         "chapter_color": "optional",
         "description_cs": "Cíle, schválení a řízení",
         "description_en": "goals, approvals and control",
-        "status": "deferred",
-        "status_label_cs": "Odloženo",
-        "status_label_en": "Deferred",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "verify": "V5",
@@ -5142,9 +5142,9 @@
         "chapter_color": "optional",
         "description_cs": "Mobilní klient a mini-panel",
         "description_en": "mobile client and mini-panel",
-        "status": "deferred",
-        "status_label_cs": "Odloženo",
-        "status_label_en": "Deferred",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "verify": "V5",
@@ -5161,9 +5161,9 @@
         "chapter_color": "optional",
         "description_cs": "Párovací režim LAN",
         "description_en": "paired LAN mode",
-        "status": "deferred",
-        "status_label_cs": "Odloženo",
-        "status_label_en": "Deferred",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "verify": "V5",
@@ -5180,9 +5180,9 @@
         "chapter_color": "optional",
         "description_cs": "Automatizace podle schopností",
         "description_en": "capability-specific automation",
-        "status": "deferred",
-        "status_label_cs": "Odloženo",
-        "status_label_en": "Deferred",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "verify": "V5",
@@ -5199,9 +5199,9 @@
         "chapter_color": "optional",
         "description_cs": "Stabilizace pro produkci",
         "description_en": "production stabilization",
-        "status": "deferred",
-        "status_label_cs": "Odloženo",
-        "status_label_en": "Deferred",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "verify": "V6",
@@ -9009,7 +9009,7 @@
       }
     ],
     "item_count": 414,
-    "completed_item_count": 120,
+    "completed_item_count": 121,
     "chapter_count": 54,
     "limitations": "Release-gate status is roadmap state, not a percentage. Item ✓ means deterministic implementation/evidence is present; live owner acceptance can remain open. Teams and Enterprise have no active measured evidence track."
   },
@@ -9038,7 +9038,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 12,
+    "incremental_closeout_points_since_full_baseline": 13,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -32618,6 +32618,40 @@
       },
       "verified_evidence_count": 96,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "88f3487693ab",
+      "date": "2026-08-27",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 414,
+        "completed_item_count": 121,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 96,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -32629,8 +32663,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP3.6",
-    "source_commit_sha": "e3cc429a6ad8a1ed8fe54a861ac96b5053a482d9",
-    "closeout_sha": "e3cc429a6ad8a1ed8fe54a861ac96b5053a482d9"
+    "roadmap_slice_id": "OP1.1",
+    "source_commit_sha": "5f1ff74af80443ff8f33db15791209f9d1c9844f",
+    "closeout_sha": "5f1ff74af80443ff8f33db15791209f9d1c9844f"
   }
 }

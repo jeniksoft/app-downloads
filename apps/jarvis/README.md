@@ -13,7 +13,7 @@ Aktuálně zde není žádný veřejný instalační balíček ke stažení. Dř
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `OP3.6` je veřejně spojen se zdrojovým SHA `e3cc429a6ad8a1ed8fe54a861ac96b5053a482d9` a closeout SHA `e3cc429a6ad8a1ed8fe54a861ac96b5053a482d9`. Stav: **verified**.
+Řez `OP1.1` je veřejně spojen se zdrojovým SHA `5f1ff74af80443ff8f33db15791209f9d1c9844f` a closeout SHA `5f1ff74af80443ff8f33db15791209f9d1c9844f`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -257,14 +257,14 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✕ Částečně | Personal 1.0.0 · P9 — Real world configuration matrix | `P9.3` | baseline hardware-provider-DPI-locale cohort | `V6` |
 | ✕ Částečně | Personal 1.0.0 · P9 — Real world configuration matrix | `P9.4` | ticket-to-matrix regression promotion | `V3` |
 | ✕ Částečně | Personal 1.0.0 · P9 — Real world configuration matrix | `P9.5` | release matrix minimum and known limitations | `V6` |
-| ✕ Odloženo | Volitelné tratě · OP1 — Hermes local facade | `OP1.1` | Kontrakt a hranice Hermesu | `V1` |
-| ✕ Odloženo | Volitelné tratě · OP1 — Hermes local facade | `OP1.2` | Lokální read-only brána | `V3` |
-| ✕ Odloženo | Volitelné tratě · OP1 — Hermes local facade | `OP1.3` | Chat a živé události | `V5` |
-| ✕ Odloženo | Volitelné tratě · OP1 — Hermes local facade | `OP1.4` | Cíle, schválení a řízení | `V5` |
-| ✕ Odloženo | Volitelné tratě · OP1 — Hermes local facade | `OP1.5` | Mobilní klient a mini-panel | `V5` |
-| ✕ Odloženo | Volitelné tratě · OP1 — Hermes local facade | `OP1.6` | Párovací režim LAN | `V5` |
-| ✕ Odloženo | Volitelné tratě · OP1 — Hermes local facade | `OP1.7` | Automatizace podle schopností | `V5` |
-| ✕ Odloženo | Volitelné tratě · OP1 — Hermes local facade | `OP1.8` | Stabilizace pro produkci | `V6` |
+| ✓ Hotovo | Volitelné tratě · OP1 — Hermes local facade | `OP1.1` | Kontrakt a hranice Hermesu | `V1` |
+| ✕ Rozpracováno | Volitelné tratě · OP1 — Hermes local facade | `OP1.2` | Lokální read-only brána | `V3` |
+| ✕ Rozpracováno | Volitelné tratě · OP1 — Hermes local facade | `OP1.3` | Chat a živé události | `V5` |
+| ✕ Rozpracováno | Volitelné tratě · OP1 — Hermes local facade | `OP1.4` | Cíle, schválení a řízení | `V5` |
+| ✕ Rozpracováno | Volitelné tratě · OP1 — Hermes local facade | `OP1.5` | Mobilní klient a mini-panel | `V5` |
+| ✕ Rozpracováno | Volitelné tratě · OP1 — Hermes local facade | `OP1.6` | Párovací režim LAN | `V5` |
+| ✕ Rozpracováno | Volitelné tratě · OP1 — Hermes local facade | `OP1.7` | Automatizace podle schopností | `V5` |
+| ✕ Rozpracováno | Volitelné tratě · OP1 — Hermes local facade | `OP1.8` | Stabilizace pro produkci | `V6` |
 | ✕ Odloženo | Volitelné tratě · OP2 — Image generation | `OP2.1` | Hranice záměru a regresí | `V1` |
 | ✕ Odloženo | Volitelné tratě · OP2 — Image generation | `OP2.2` | Abstrakce providera | `V2` |
 | ✕ Odloženo | Volitelné tratě · OP2 — Image generation | `OP2.3` | Omezené generování artefaktů | `V3` |
@@ -490,10 +490,10 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 1 050 | 363 736 | 23.11 |
-| JSON | 292 | 152 465 | 11.59 |
-| Markdown | 707 | 72 901 | 3.66 |
-| Python | 187 | 39 772 | 1.59 |
+| C/C++ | 1 052 | 364 700 | 23.15 |
+| JSON | 293 | 152 671 | 11.60 |
+| Markdown | 708 | 73 174 | 3.68 |
+| Python | 188 | 39 979 | 1.60 |
 | PowerShell | 50 | 24 909 | 1.31 |
 | JSONL | 14 | 2 499 | 6.91 |
 | Plain text | 106 | 1 652 | 0.18 |
@@ -504,9 +504,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
 | Other text | 7 | 7 | 0.00 |
-| **Text/source celkem** | **2 438** | **658 086** | **48.42** |
+| **Text/source celkem** | **2 443** | **659 736** | **48.48** |
 | Binární assety (mimo řádky) | 35 | — | 14.47 |
-| **Trackovaný strom celkem** | **2 473** | **658 086** | **62.89** |
+| **Trackovaný strom celkem** | **2 478** | **659 736** | **62.96** |
 
 ### Přírůstek od předchozí revize
 
@@ -514,9 +514,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +5 | +1413 | +0.07 |
+| Text/source celkem | +5 | +1650 | +0.07 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +5 | +1413 | +0.07 |
+| Trackovaný strom celkem | +5 | +1650 | +0.07 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -673,7 +673,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `83546dad7738` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `335ab6caa8c7` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `a2f215067c6c` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `4563b848404b` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -691,13 +690,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `0af265525a47` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `de33f44a06ff` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `7c066cb10d24` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `88f3487693ab` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 12 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 13 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
