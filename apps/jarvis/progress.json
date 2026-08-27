@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 1048,
-        "physical_lines": 362880,
-        "bytes": 23069908,
-        "megabytes": 23.069908
+        "files": 1050,
+        "physical_lines": 363736,
+        "bytes": 23108548,
+        "megabytes": 23.108548
       },
       {
         "language": "JSON",
-        "files": 291,
-        "physical_lines": 152346,
-        "bytes": 11587816,
-        "megabytes": 11.587816
+        "files": 292,
+        "physical_lines": 152465,
+        "bytes": 11593377,
+        "megabytes": 11.593377
       },
       {
         "language": "Markdown",
-        "files": 706,
-        "physical_lines": 72653,
-        "bytes": 3649533,
-        "megabytes": 3.649533
+        "files": 707,
+        "physical_lines": 72901,
+        "bytes": 3663898,
+        "megabytes": 3.663898
       },
       {
         "language": "Python",
-        "files": 186,
-        "physical_lines": 39582,
-        "bytes": 1583564,
-        "megabytes": 1.583564
+        "files": 187,
+        "physical_lines": 39772,
+        "bytes": 1590134,
+        "megabytes": 1.590134
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 2433,
-      "physical_lines": 656673,
-      "bytes": 48350717,
-      "megabytes": 48.350717
+      "files": 2438,
+      "physical_lines": 658086,
+      "bytes": 48415853,
+      "megabytes": 48.415853
     },
     "binary_assets": {
       "files": 35,
@@ -144,19 +144,19 @@
       "megabytes": 14.4705
     },
     "tracked_total": {
-      "files": 2468,
-      "physical_lines": 656673,
-      "bytes": 62821217,
-      "megabytes": 62.821217
+      "files": 2473,
+      "physical_lines": 658086,
+      "bytes": 62886353,
+      "megabytes": 62.886353
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 4,
-        "physical_lines": 1368,
-        "bytes": 64430,
-        "megabytes": 0.06443
+        "files": 5,
+        "physical_lines": 1413,
+        "bytes": 65136,
+        "megabytes": 0.065136
       },
       "binary_assets": {
         "files": 0,
@@ -165,10 +165,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 4,
-        "physical_lines": 1368,
-        "bytes": 64430,
-        "megabytes": 0.06443
+        "files": 5,
+        "physical_lines": 1413,
+        "bytes": 65136,
+        "megabytes": 0.065136
       }
     }
   },
@@ -307,7 +307,7 @@
         "chapter_color": "optional",
         "chapter_count": 9,
         "item_count": 75,
-        "completed_item_count": 13
+        "completed_item_count": 14
       },
       {
         "id": "teams",
@@ -747,7 +747,7 @@
         "status_label_en": "In progress",
         "is_complete": false,
         "item_count": 9,
-        "completed_item_count": 5
+        "completed_item_count": 6
       },
       {
         "id": "OP4",
@@ -5427,11 +5427,11 @@
         "chapter_color": "optional",
         "description_cs": "Typovaný doklad WAV a MP3 artefaktu",
         "description_en": "typed WAV and MP3 artifact receipt",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V3",
         "is_slice": true
       },
@@ -9009,7 +9009,7 @@
       }
     ],
     "item_count": 414,
-    "completed_item_count": 119,
+    "completed_item_count": 120,
     "chapter_count": 54,
     "limitations": "Release-gate status is roadmap state, not a percentage. Item ✓ means deterministic implementation/evidence is present; live owner acceptance can remain open. Teams and Enterprise have no active measured evidence track."
   },
@@ -9038,7 +9038,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 11,
+    "incremental_closeout_points_since_full_baseline": 12,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -32584,6 +32584,40 @@
       },
       "verified_evidence_count": 96,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "7c066cb10d24",
+      "date": "2026-08-27",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 414,
+        "completed_item_count": 120,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 96,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -32595,8 +32629,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP3.5",
-    "source_commit_sha": "c0172a056cf526001696de0bc35cfd665d6ed18f",
-    "closeout_sha": "c0172a056cf526001696de0bc35cfd665d6ed18f"
+    "roadmap_slice_id": "OP3.6",
+    "source_commit_sha": "e3cc429a6ad8a1ed8fe54a861ac96b5053a482d9",
+    "closeout_sha": "e3cc429a6ad8a1ed8fe54a861ac96b5053a482d9"
   }
 }
