@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 1052,
-        "physical_lines": 364700,
-        "bytes": 23145489,
-        "megabytes": 23.145489
+        "files": 1056,
+        "physical_lines": 367065,
+        "bytes": 23232658,
+        "megabytes": 23.232658
       },
       {
         "language": "JSON",
         "files": 293,
-        "physical_lines": 152671,
-        "bytes": 11601766,
-        "megabytes": 11.601766
+        "physical_lines": 152690,
+        "bytes": 11604899,
+        "megabytes": 11.604899
       },
       {
         "language": "Markdown",
-        "files": 708,
-        "physical_lines": 73174,
-        "bytes": 3678732,
-        "megabytes": 3.678732
+        "files": 709,
+        "physical_lines": 73353,
+        "bytes": 3689928,
+        "megabytes": 3.689928
       },
       {
         "language": "Python",
-        "files": 188,
-        "physical_lines": 39979,
-        "bytes": 1598757,
-        "megabytes": 1.598757
+        "files": 189,
+        "physical_lines": 40197,
+        "bytes": 1608443,
+        "megabytes": 1.608443
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 2443,
-      "physical_lines": 659736,
-      "bytes": 48484640,
-      "megabytes": 48.48464
+      "files": 2449,
+      "physical_lines": 662517,
+      "bytes": 48595824,
+      "megabytes": 48.595824
     },
     "binary_assets": {
       "files": 35,
@@ -144,19 +144,19 @@
       "megabytes": 14.4705
     },
     "tracked_total": {
-      "files": 2478,
-      "physical_lines": 659736,
-      "bytes": 62955140,
-      "megabytes": 62.95514
+      "files": 2484,
+      "physical_lines": 662517,
+      "bytes": 63066324,
+      "megabytes": 63.066324
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 5,
-        "physical_lines": 1650,
-        "bytes": 68787,
-        "megabytes": 0.068787
+        "files": 6,
+        "physical_lines": 2781,
+        "bytes": 111184,
+        "megabytes": 0.111184
       },
       "binary_assets": {
         "files": 0,
@@ -165,10 +165,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 5,
-        "physical_lines": 1650,
-        "bytes": 68787,
-        "megabytes": 0.068787
+        "files": 6,
+        "physical_lines": 2781,
+        "bytes": 111184,
+        "megabytes": 0.111184
       }
     }
   },
@@ -307,7 +307,7 @@
         "chapter_color": "optional",
         "chapter_count": 9,
         "item_count": 75,
-        "completed_item_count": 15
+        "completed_item_count": 16
       },
       {
         "id": "teams",
@@ -717,7 +717,7 @@
         "status_label_en": "In progress",
         "is_complete": false,
         "item_count": 8,
-        "completed_item_count": 1
+        "completed_item_count": 2
       },
       {
         "id": "OP2",
@@ -5085,11 +5085,11 @@
         "chapter_color": "optional",
         "description_cs": "Lokální read-only brána",
         "description_en": "local read-only gateway",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
+        "status_source": "current-evidence",
+        "is_complete": true,
         "verify": "V3",
         "is_slice": true
       },
@@ -9009,7 +9009,7 @@
       }
     ],
     "item_count": 414,
-    "completed_item_count": 121,
+    "completed_item_count": 122,
     "chapter_count": 54,
     "limitations": "Release-gate status is roadmap state, not a percentage. Item ✓ means deterministic implementation/evidence is present; live owner acceptance can remain open. Teams and Enterprise have no active measured evidence track."
   },
@@ -9019,7 +9019,7 @@
     "roadmap_items_delta": 0,
     "roadmap_completed_delta": 1,
     "roadmap_chapters_delta": 0,
-    "verified_evidence_delta": 0,
+    "verified_evidence_delta": 1,
     "metrics_delta": {
       "primary_percent": 0.0,
       "implementation_percent": 0.0,
@@ -9038,7 +9038,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 13,
+    "incremental_closeout_points_since_full_baseline": 14,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -9059,7 +9059,7 @@
     "manifest_present": true,
     "milestone_count": 32,
     "verified_milestone_count": 11,
-    "verified_evidence_count": 96,
+    "verified_evidence_count": 97,
     "state_counts": {
       "verified-build": 9,
       "partial": 12,
@@ -9966,8 +9966,8 @@
           "implementation_percent": 100.0,
           "verified_percent": 75.0,
           "done_percent": 75.0,
-          "evidence_count": 6,
-          "verified_evidence_count": 5,
+          "evidence_count": 7,
+          "verified_evidence_count": 6,
           "evidence_kinds": [
             "build",
             "runtime",
@@ -32652,6 +32652,42 @@
       },
       "verified_evidence_count": 96,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "25f5f32f5d1a",
+      "date": "2026-08-27",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "qa-dogfood"
+      ],
+      "changed_milestones": [
+        "qa-dogfood/contract-self-test-gates"
+      ],
+      "roadmap": {
+        "item_count": 414,
+        "completed_item_count": 122,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 97,
+      "verified_evidence_delta": 1
     }
   ],
   "history_contract": {
@@ -32663,8 +32699,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP1.1",
-    "source_commit_sha": "5f1ff74af80443ff8f33db15791209f9d1c9844f",
-    "closeout_sha": "5f1ff74af80443ff8f33db15791209f9d1c9844f"
+    "roadmap_slice_id": "OP1.2",
+    "source_commit_sha": "83956162b7779ebd22674eaa204ef6aca31cff8a",
+    "closeout_sha": "83956162b7779ebd22674eaa204ef6aca31cff8a"
   }
 }
