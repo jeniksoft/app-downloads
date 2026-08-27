@@ -35,38 +35,38 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 1066,
-        "physical_lines": 372263,
-        "bytes": 23455670,
-        "megabytes": 23.45567
+        "files": 1072,
+        "physical_lines": 375104,
+        "bytes": 23575762,
+        "megabytes": 23.575762
       },
       {
         "language": "JSON",
         "files": 293,
-        "physical_lines": 152754,
-        "bytes": 11610366,
-        "megabytes": 11.610366
+        "physical_lines": 152756,
+        "bytes": 11611192,
+        "megabytes": 11.611192
       },
       {
         "language": "Markdown",
-        "files": 717,
-        "physical_lines": 74568,
-        "bytes": 3762682,
-        "megabytes": 3.762682
+        "files": 720,
+        "physical_lines": 75293,
+        "bytes": 3803165,
+        "megabytes": 3.803165
       },
       {
         "language": "Python",
-        "files": 192,
-        "physical_lines": 40885,
-        "bytes": 1633130,
-        "megabytes": 1.63313
+        "files": 195,
+        "physical_lines": 41406,
+        "bytes": 1649516,
+        "megabytes": 1.649516
       },
       {
         "language": "PowerShell",
-        "files": 50,
-        "physical_lines": 24909,
-        "bytes": 1308779,
-        "megabytes": 1.308779
+        "files": 51,
+        "physical_lines": 25113,
+        "bytes": 1318361,
+        "megabytes": 1.318361
       },
       {
         "language": "JSONL",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 2470,
-      "physical_lines": 669682,
-      "bytes": 48921744,
-      "megabytes": 48.921744
+      "files": 2483,
+      "physical_lines": 673975,
+      "bytes": 49109113,
+      "megabytes": 49.109113
     },
     "binary_assets": {
       "files": 35,
@@ -144,19 +144,19 @@
       "megabytes": 14.4705
     },
     "tracked_total": {
-      "files": 2505,
-      "physical_lines": 669682,
-      "bytes": 63392244,
-      "megabytes": 63.392244
+      "files": 2518,
+      "physical_lines": 673975,
+      "bytes": 63579613,
+      "megabytes": 63.579613
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 6,
-        "physical_lines": 2974,
-        "bytes": 122245,
-        "megabytes": 0.122245
+        "files": 9,
+        "physical_lines": 2906,
+        "bytes": 124924,
+        "megabytes": 0.124924
       },
       "binary_assets": {
         "files": 0,
@@ -165,10 +165,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 6,
-        "physical_lines": 2974,
-        "bytes": 122245,
-        "megabytes": 0.122245
+        "files": 9,
+        "physical_lines": 2906,
+        "bytes": 124924,
+        "megabytes": 0.124924
       }
     }
   },
@@ -306,8 +306,8 @@
         "name_en": "Optional tracks",
         "chapter_color": "optional",
         "chapter_count": 9,
-        "item_count": 75,
-        "completed_item_count": 15
+        "item_count": 77,
+        "completed_item_count": 16
       },
       {
         "id": "teams",
@@ -761,8 +761,8 @@
         "status_label_cs": "Rozpracováno",
         "status_label_en": "In progress",
         "is_complete": false,
-        "item_count": 12,
-        "completed_item_count": 8
+        "item_count": 14,
+        "completed_item_count": 9
       },
       {
         "id": "OP5",
@@ -5645,6 +5645,44 @@
         "is_slice": true
       },
       {
+        "id": "OP4.6.2",
+        "chapter_id": "OP4",
+        "chapter_name_cs": "OP4 — Ambient Presence Voice Mesh",
+        "chapter_name_en": "OP4 — Ambient Presence Voice Mesh",
+        "group_id": "optional",
+        "group_name_cs": "Volitelné tratě",
+        "group_name_en": "Optional tracks",
+        "chapter_color": "optional",
+        "description_cs": "Ohraničená WASAPI loopback reference s lokálním potlačením ozvěny a RNNoise/nativním potlačením hluku před lokálním STT",
+        "description_en": "bounded WASAPI loopback reference with local echo cancellation and RNNoise/native noise suppression before local STT",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
+        "status_source": "canonical-roadmap",
+        "is_complete": false,
+        "verify": "V3",
+        "is_slice": true
+      },
+      {
+        "id": "OP4.6.3",
+        "chapter_id": "OP4",
+        "chapter_name_cs": "OP4 — Ambient Presence Voice Mesh",
+        "chapter_name_en": "OP4 — Ambient Presence Voice Mesh",
+        "group_id": "optional",
+        "group_name_cs": "Volitelné tratě",
+        "group_name_en": "Optional tracks",
+        "chapter_color": "optional",
+        "description_cs": "Schopnostmi řízené routování lokálních modelů s NVIDIA CUDA, AMD/Intel Vulkan, deterministickým CPU fallbackem pro neznámé výrobce a 70procentním admission backpressure",
+        "description_en": "capability-driven local model backend routing with NVIDIA CUDA, AMD/Intel Vulkan, deterministic unknown-vendor CPU fallback and 70 percent admission backpressure",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "verify": "V3",
+        "is_slice": true
+      },
+      {
         "id": "OP4.14",
         "chapter_id": "OP4",
         "chapter_name_cs": "OP4 — Ambient Presence Voice Mesh",
@@ -9008,16 +9046,16 @@
         "is_slice": true
       }
     ],
-    "item_count": 414,
-    "completed_item_count": 121,
+    "item_count": 416,
+    "completed_item_count": 122,
     "chapter_count": 54,
     "limitations": "Release-gate status is roadmap state, not a percentage. Item ✓ means deterministic implementation/evidence is present; live owner acceptance can remain open. Teams and Enterprise have no active measured evidence track."
   },
   "change_summary": {
     "available": true,
     "previous_date": "2026-08-27",
-    "roadmap_items_delta": 0,
-    "roadmap_completed_delta": -2,
+    "roadmap_items_delta": 2,
+    "roadmap_completed_delta": 1,
     "roadmap_chapters_delta": 0,
     "verified_evidence_delta": 0,
     "metrics_delta": {
@@ -9038,7 +9076,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 17,
+    "incremental_closeout_points_since_full_baseline": 18,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -32794,6 +32832,40 @@
       },
       "verified_evidence_count": 98,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "40d138d032c1",
+      "date": "2026-08-27",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 416,
+        "completed_item_count": 122,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 2,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 98,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -32805,8 +32877,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP3.6",
-    "source_commit_sha": "9a86aac01a9693fcd9417750502d0bfacc3b396b",
-    "closeout_sha": "9a86aac01a9693fcd9417750502d0bfacc3b396b"
+    "roadmap_slice_id": "OP4.6.3",
+    "source_commit_sha": "37499c939515e478bc1ee0f31541b4c288bf1ce5",
+    "closeout_sha": "37499c939515e478bc1ee0f31541b4c288bf1ce5"
   }
 }

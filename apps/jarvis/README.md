@@ -13,7 +13,7 @@ Aktuálně zde není žádný veřejný instalační balíček ke stažení. Dř
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `OP3.6` je veřejně spojen se zdrojovým SHA `9a86aac01a9693fcd9417750502d0bfacc3b396b` a closeout SHA `9a86aac01a9693fcd9417750502d0bfacc3b396b`. Stav: **verified**.
+Řez `OP4.6.3` je veřejně spojen se zdrojovým SHA `37499c939515e478bc1ee0f31541b4c288bf1ce5` a closeout SHA `37499c939515e478bc1ee0f31541b4c288bf1ce5`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -41,7 +41,7 @@ Nejde o instalační balíček ani o prohlášení, že je produkt hotový; při
 
 Tabulka používá pevnou ✓/✕ značku: ✓ znamená ověřenou release bránu, ✕ znamená, že brána ještě není ověřená. ✕ není důkaz chyby; u architektury označuje plánovaný rozsah.
 
-**Změna od předchozího snapshotu: roadmapa položky +0 · hotovo -2 · ověřené důkazy +0**
+**Změna od předchozího snapshotu: roadmapa položky +2 · hotovo +1 · ověřené důkazy +0**
 
 ![Roadmapa a progress edic Jarvis](visuals/roadmap-editions.svg)
 
@@ -288,6 +288,8 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.5` | Okamžité deterministické potvrzení oslovení a typovaný lokální AIMP executor pojmenovaného playlistu | `V3` |
 | ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.6` | Parita hlasu s UI přes existující prompt cestu a bounded důležitá lokální audio oznámení | `V3` |
 | ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.6.1` | Omezené zesílení capture v ownerově relaci s obnovením při cizím klientovi | `V3` |
+| ✕ Rozpracováno | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.6.2` | Ohraničená WASAPI loopback reference s lokálním potlačením ozvěny a RNNoise/nativním potlačením hluku před lokálním STT | `V3` |
+| ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.6.3` | Schopnostmi řízené routování lokálních modelů s NVIDIA CUDA, AMD/Intel Vulkan, deterministickým CPU fallbackem pro neznámé výrobce a 70procentním admission backpressure | `V3` |
 | ✕ Rozpracováno | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.14` | Voice-only hranice předpřihlašovacího Windows UI přes Voice Access pro podporované jazyky nebo ověřenou lokální secure-desktop cestu | `V4` |
 | ✕ Rozpracováno | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.14.1` | Podepsaná lokální česká secure-desktop STT hranice Credential Provideru bez mikrofonu v Session 0 a bez credential handoffu do Core | `V4` |
 | ✕ Rozpracováno | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.14.2` | Deterministický český předpřihlašovací poradce bez generativního modelu, autority intentu a Core handoffu | `V3` |
@@ -490,11 +492,11 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 1 066 | 372 263 | 23.46 |
-| JSON | 293 | 152 754 | 11.61 |
-| Markdown | 717 | 74 568 | 3.76 |
-| Python | 192 | 40 885 | 1.63 |
-| PowerShell | 50 | 24 909 | 1.31 |
+| C/C++ | 1 072 | 375 104 | 23.58 |
+| JSON | 293 | 152 756 | 11.61 |
+| Markdown | 720 | 75 293 | 3.80 |
+| Python | 195 | 41 406 | 1.65 |
+| PowerShell | 51 | 25 113 | 1.32 |
 | JSONL | 14 | 2 499 | 6.91 |
 | Plain text | 106 | 1 652 | 0.18 |
 | INI | 5 | 66 | 0.00 |
@@ -504,9 +506,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
 | Other text | 7 | 7 | 0.00 |
-| **Text/source celkem** | **2 470** | **669 682** | **48.92** |
+| **Text/source celkem** | **2 483** | **673 975** | **49.11** |
 | Binární assety (mimo řádky) | 35 | — | 14.47 |
-| **Trackovaný strom celkem** | **2 505** | **669 682** | **63.39** |
+| **Trackovaný strom celkem** | **2 518** | **673 975** | **63.58** |
 
 ### Přírůstek od předchozí revize
 
@@ -514,9 +516,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +6 | +2974 | +0.12 |
+| Text/source celkem | +9 | +2906 | +0.12 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +6 | +2974 | +0.12 |
+| Trackovaný strom celkem | +9 | +2906 | +0.12 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -673,7 +675,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `bcb7e8edde14` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `342b840f0bea` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `9834cd1eba3d` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `7fd5ec174183` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -691,13 +692,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `7883e8524e93` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
 | `2c7febde9e88` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `830735445b96` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | model-routing | 1: model-routing/typed-routing-fallback |
+| `40d138d032c1` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 17 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 18 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
