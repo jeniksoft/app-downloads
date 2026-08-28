@@ -9,11 +9,11 @@ Aktuálně zde není žádný veřejný instalační balíček ke stažení. Dř
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_BEGIN -->
 ## Sledování implementace Personal 1.0.0
 
-**Synchronizovaný snapshot: 2026-08-27**
+**Synchronizovaný snapshot: 2026-08-28**
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `OP4.6.3` je veřejně spojen se zdrojovým SHA `37499c939515e478bc1ee0f31541b4c288bf1ce5` a closeout SHA `37499c939515e478bc1ee0f31541b4c288bf1ce5`. Stav: **verified**.
+Řez `OP1.4.1` je veřejně spojen se zdrojovým SHA `2bdcae77343667e9164f5672e52fd222357b619c` a closeout SHA `2bdcae77343667e9164f5672e52fd222357b619c`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -41,7 +41,7 @@ Nejde o instalační balíček ani o prohlášení, že je produkt hotový; při
 
 Tabulka používá pevnou ✓/✕ značku: ✓ znamená ověřenou release bránu, ✕ znamená, že brána ještě není ověřená. ✕ není důkaz chyby; u architektury označuje plánovaný rozsah.
 
-**Změna od předchozího snapshotu: roadmapa položky +2 · hotovo +1 · ověřené důkazy +0**
+**Změna od předchozího snapshotu: roadmapa položky +1 · hotovo +4 · ověřené důkazy +0**
 
 ![Roadmapa a progress edic Jarvis](visuals/roadmap-editions.svg)
 
@@ -174,12 +174,12 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.3` | explicit model capability manifest | `V1` |
 | ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.4` | Typovaný stav health a readiness nad existujícími autoritami | `V2` |
 | ✕ Částečně | Personal 1.0.0 · P2 — Model and provider reliability | `P2.5` | owner-facing local and LAN endpoint validation | `V4` |
-| ✕ Rozpracováno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.6` | download install readiness and durable cancel-resume | `V3` |
-| ✕ Rozpracováno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.7` | hard-task downgrade regression matrix | `V1` |
-| ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.8` | fallback failure taxonomy | `V2` |
-| ✕ Rozpracováno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.9` | Kormidlo benchmark-Work Report evidence bridge | `V2` |
-| ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.10` | provider resource arbitration | `V3` |
-| ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.11` | local and LAN disconnect recovery matrix | `V5` |
+| ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.6` | download install readiness and durable cancel-resume | `V3` |
+| ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.7` | Regresní matice ochrany hard úloh před sémantickým poklesem Intent IR | `V1` |
+| ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.8` | Hostitelská taxonomie selhání fallbacku | `V2` |
+| ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.9` | Most Kormidla mezi benchmarkem a Work Reportem | `V2` |
+| ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.10` | Arbitráž zdrojů providera | `V3` |
+| ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.11` | Matice obnovy po odpojení lokálního a LAN providera | `V5` |
 | ✓ Hotovo | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.1` | current request authority regression | `V1` |
 | ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.2` | project snapshot fingerprint and delta classification | `V2` |
 | ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.3` | typed evidence classes and provenance | `V1` |
@@ -260,7 +260,8 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✓ Hotovo | Volitelné tratě · OP1 — Hermes local facade | `OP1.1` | Kontrakt a hranice Hermesu | `V1` |
 | ✓ Hotovo | Volitelné tratě · OP1 — Hermes local facade | `OP1.2` | Lokální read-only brána | `V3` |
 | ✓ Hotovo | Volitelné tratě · OP1 — Hermes local facade | `OP1.3` | Omezený read-only replay chatu a událostí | `V3` |
-| ✕ Rozpracováno | Volitelné tratě · OP1 — Hermes local facade | `OP1.4` | Cíle, schválení a řízení | `V5` |
+| ✓ Hotovo | Volitelné tratě · OP1 — Hermes local facade | `OP1.4` | Cíle, schválení a řízení | `V5` |
+| ✕ Rozpracováno | Volitelné tratě · OP1 — Hermes local facade | `OP1.4.1` | Model-led typované akce s policy branou a read-backem | `V3` |
 | ✕ Rozpracováno | Volitelné tratě · OP1 — Hermes local facade | `OP1.5` | Mobilní klient a mini-panel | `V5` |
 | ✕ Rozpracováno | Volitelné tratě · OP1 — Hermes local facade | `OP1.6` | Párovací režim LAN | `V5` |
 | ✕ Rozpracováno | Volitelné tratě · OP1 — Hermes local facade | `OP1.7` | Automatizace podle schopností | `V5` |
@@ -492,11 +493,11 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 1 072 | 375 104 | 23.58 |
-| JSON | 293 | 152 756 | 11.61 |
-| Markdown | 720 | 75 293 | 3.80 |
-| Python | 195 | 41 406 | 1.65 |
-| PowerShell | 51 | 25 113 | 1.32 |
+| C/C++ | 1 084 | 382 260 | 23.90 |
+| JSON | 294 | 153 006 | 11.64 |
+| Markdown | 730 | 77 722 | 3.94 |
+| Python | 205 | 43 359 | 1.73 |
+| PowerShell | 54 | 25 543 | 1.34 |
 | JSONL | 14 | 2 499 | 6.91 |
 | Plain text | 106 | 1 652 | 0.18 |
 | INI | 5 | 66 | 0.00 |
@@ -506,9 +507,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
 | Other text | 7 | 7 | 0.00 |
-| **Text/source celkem** | **2 483** | **673 975** | **49.11** |
+| **Text/source celkem** | **2 519** | **686 193** | **49.70** |
 | Binární assety (mimo řádky) | 35 | — | 14.47 |
-| **Trackovaný strom celkem** | **2 518** | **673 975** | **63.58** |
+| **Trackovaný strom celkem** | **2 554** | **686 193** | **64.18** |
 
 ### Přírůstek od předchozí revize
 
@@ -516,9 +517,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +9 | +2906 | +0.12 |
+| Text/source celkem | +6 | +2007 | +0.11 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +9 | +2906 | +0.12 |
+| Trackovaný strom celkem | +6 | +2007 | +0.11 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -675,7 +676,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `342b840f0bea` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `9834cd1eba3d` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `7fd5ec174183` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `a299cb6a89db` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -693,13 +693,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `2c7febde9e88` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `830735445b96` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | model-routing | 1: model-routing/typed-routing-fallback |
 | `40d138d032c1` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `ca295a75550a` | 2026-08-28 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 18 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 19 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
