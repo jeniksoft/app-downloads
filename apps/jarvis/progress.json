@@ -36,30 +36,30 @@
       {
         "language": "C/C++",
         "files": 1104,
-        "physical_lines": 404438,
-        "bytes": 25035105,
-        "megabytes": 25.035105
+        "physical_lines": 404506,
+        "bytes": 25038608,
+        "megabytes": 25.038608
       },
       {
         "language": "JSON",
         "files": 313,
-        "physical_lines": 159140,
-        "bytes": 12134330,
-        "megabytes": 12.13433
+        "physical_lines": 159161,
+        "bytes": 12138755,
+        "megabytes": 12.138755
       },
       {
         "language": "Markdown",
-        "files": 762,
-        "physical_lines": 85880,
-        "bytes": 4423865,
-        "megabytes": 4.423865
+        "files": 763,
+        "physical_lines": 86123,
+        "bytes": 4437935,
+        "megabytes": 4.437935
       },
       {
         "language": "Python",
-        "files": 225,
-        "physical_lines": 51546,
-        "bytes": 2073739,
-        "megabytes": 2.073739
+        "files": 226,
+        "physical_lines": 51692,
+        "bytes": 2079579,
+        "megabytes": 2.079579
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 2613,
-      "physical_lines": 731703,
-      "bytes": 52205837,
-      "megabytes": 52.205837
+      "files": 2615,
+      "physical_lines": 732181,
+      "bytes": 52233675,
+      "megabytes": 52.233675
     },
     "binary_assets": {
       "files": 39,
@@ -144,19 +144,19 @@
       "megabytes": 14.50034
     },
     "tracked_total": {
-      "files": 2652,
-      "physical_lines": 731703,
-      "bytes": 66706177,
-      "megabytes": 66.706177
+      "files": 2654,
+      "physical_lines": 732181,
+      "bytes": 66734015,
+      "megabytes": 66.734015
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 1,
-        "physical_lines": 38,
-        "bytes": 3120,
-        "megabytes": 0.00312
+        "files": 2,
+        "physical_lines": 478,
+        "bytes": 27838,
+        "megabytes": 0.027838
       },
       "binary_assets": {
         "files": 0,
@@ -165,19 +165,19 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 1,
-        "physical_lines": 38,
-        "bytes": 3120,
-        "megabytes": 0.00312
+        "files": 2,
+        "physical_lines": 478,
+        "bytes": 27838,
+        "megabytes": 0.027838
       }
     }
   },
   "updated_at": "2026-08-31",
-  "overall_percent": 32.5,
-  "primary_percent": 32.5,
+  "overall_percent": 32.85,
+  "primary_percent": 32.85,
   "implementation_complete_percent": 43.75,
-  "verified_percent": 32.5,
-  "done_percent": 32.5,
+  "verified_percent": 32.85,
+  "done_percent": 32.85,
   "roadmap": {
     "source": {
       "roadmap_id": "jarvis.master.worker.v2",
@@ -235,7 +235,7 @@
         "is_complete": false,
         "progress_available": true,
         "progress_kind": "evidence-bound",
-        "progress_percent": 32.5,
+        "progress_percent": 32.85,
         "measurement_cs": "Evidence-bound primary index",
         "measurement_en": "Evidence-bound primary index"
       },
@@ -298,7 +298,7 @@
         "chapter_color": "personal",
         "chapter_count": 9,
         "item_count": 99,
-        "completed_item_count": 54
+        "completed_item_count": 55
       },
       {
         "id": "optional",
@@ -627,7 +627,7 @@
         "status_label_en": "In progress",
         "is_complete": false,
         "item_count": 16,
-        "completed_item_count": 11
+        "completed_item_count": 12
       },
       {
         "id": "P5",
@@ -3924,13 +3924,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "allow-listed build-test presets",
+        "description_cs": "Allow-listované build/test presety",
         "description_en": "allow-listed build-test presets",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
+        "status_source": "current-evidence",
+        "is_complete": true,
         "verify": "V3",
         "is_slice": true
       },
@@ -9085,22 +9085,22 @@
       }
     ],
     "item_count": 418,
-    "completed_item_count": 140,
+    "completed_item_count": 141,
     "chapter_count": 54,
     "limitations": "Release-gate status is roadmap state, not a percentage. Item ✓ means deterministic implementation/evidence is present; live owner acceptance can remain open. Teams and Enterprise have no active measured evidence track."
   },
   "change_summary": {
     "available": true,
-    "previous_date": "2026-08-28",
-    "roadmap_items_delta": 1,
-    "roadmap_completed_delta": 14,
+    "previous_date": "2026-08-31",
+    "roadmap_items_delta": 0,
+    "roadmap_completed_delta": 1,
     "roadmap_chapters_delta": 0,
-    "verified_evidence_delta": 0,
+    "verified_evidence_delta": 1,
     "metrics_delta": {
-      "primary_percent": 0.0,
+      "primary_percent": 0.35,
       "implementation_percent": 0.0,
-      "verified_percent": 0.0,
-      "done_percent": 0.0,
+      "verified_percent": 0.35,
+      "done_percent": 0.35,
       "release_readiness_percent": 0.0
     }
   },
@@ -9114,7 +9114,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 21,
+    "incremental_closeout_points_since_full_baseline": 22,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -9128,16 +9128,16 @@
     "max_public_commits_per_closeout": 1,
     "closeout_proof": "exact-slice-source-and-closeout-sha"
   },
-  "milestone_implementation_percent": 54.25,
-  "milestone_verified_percent": 32.5,
-  "milestone_done_percent": 32.5,
+  "milestone_implementation_percent": 54.6,
+  "milestone_verified_percent": 32.85,
+  "milestone_done_percent": 32.85,
   "evidence_summary": {
     "manifest_present": true,
-    "milestone_count": 32,
-    "verified_milestone_count": 11,
-    "verified_evidence_count": 98,
+    "milestone_count": 33,
+    "verified_milestone_count": 12,
+    "verified_evidence_count": 99,
     "state_counts": {
-      "verified-build": 9,
+      "verified-build": 10,
       "partial": 12,
       "open": 7,
       "verified-contract": 2,
@@ -9531,12 +9531,12 @@
       "chart_label": "Workspace/actions",
       "architecture_group": "Evidence and action boundary",
       "weight_percent": 14.0,
-      "milestone_implementation_percent": 87.5,
-      "milestone_verified_percent": 62.5,
-      "milestone_done_percent": 62.5,
+      "milestone_implementation_percent": 90.0,
+      "milestone_verified_percent": 65.0,
+      "milestone_done_percent": 65.0,
       "implementation_percent": 75.0,
-      "verified_percent": 62.5,
-      "done_percent": 62.5,
+      "verified_percent": 65.0,
+      "done_percent": 65.0,
       "evidence_source": "milestone-evidence-manifest",
       "evidence_cap_percent": 75.0,
       "evidence_cap_basis": "Personal P4 workspace and safe actions is advanced, not release-accepted across every action path.",
@@ -9551,7 +9551,7 @@
           "id": "workspace-source-grounding",
           "name_cs": "Workspace, source grounding a freshness",
           "name_en": "Workspace, source grounding and freshness",
-          "weight_percent": 25.0,
+          "weight_percent": 20.0,
           "state": "verified-build",
           "implementation_percent": 100.0,
           "verified_percent": 75.0,
@@ -9576,7 +9576,7 @@
           "id": "memory-provenance-continuity",
           "name_cs": "Memory, provenance a continuity",
           "name_en": "Memory, provenance and continuity",
-          "weight_percent": 25.0,
+          "weight_percent": 20.0,
           "state": "verified-build",
           "implementation_percent": 100.0,
           "verified_percent": 75.0,
@@ -9601,7 +9601,7 @@
           "id": "policy-bound-actions",
           "name_cs": "Policy-bound file/build/test/Git/web akce",
           "name_en": "Policy-bound file/build/test/Git/web actions",
-          "weight_percent": 25.0,
+          "weight_percent": 20.0,
           "state": "verified-build",
           "implementation_percent": 100.0,
           "verified_percent": 75.0,
@@ -9626,7 +9626,7 @@
           "id": "action-failure-recovery",
           "name_cs": "Recovery po selhání nástroje a no-overwrite hranice",
           "name_en": "Tool-failure recovery and no-overwrite boundaries",
-          "weight_percent": 25.0,
+          "weight_percent": 20.0,
           "state": "partial",
           "implementation_percent": 50.0,
           "verified_percent": 25.0,
@@ -9646,6 +9646,31 @@
           ],
           "evidence_summary_cs": "Bezpečnostní guardy a recovery kontrakty existují, ale nejsou kompletně potvrzené napříč runtime cestami.",
           "open_gap_cs": "Dodat end-to-end receipts pro containment, no-overwrite, destructive guard a recovery po pádu procesu."
+        },
+        {
+          "id": "policy-bound-build-test-presets",
+          "name_cs": "Allow-listované build/test presety",
+          "name_en": "Allow-listed build/test presets",
+          "weight_percent": 20.0,
+          "state": "verified-build",
+          "implementation_percent": 100.0,
+          "verified_percent": 75.0,
+          "done_percent": 75.0,
+          "evidence_count": 2,
+          "verified_evidence_count": 1,
+          "evidence_kinds": [
+            "runtime",
+            "self-test"
+          ],
+          "verified_evidence_kinds": [
+            "self-test"
+          ],
+          "evidence_statuses": [
+            "open",
+            "verified"
+          ],
+          "evidence_summary_cs": "P4.7 má provider-free source guard, nativní self-test a build evidence pro uzavřený registr workspace build/test presetů.",
+          "open_gap_cs": "Živý provider, model, workspace, dlouhý build/test běh a owner acceptance zůstávají samostatnými branami."
         }
       ]
     },
@@ -33006,6 +33031,42 @@
       },
       "verified_evidence_count": 98,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "9907e7d7ee73",
+      "date": "2026-08-31",
+      "metrics": {
+        "primary_percent": 32.85,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.85,
+        "done_percent": 32.85,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.35,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.35,
+        "done_percent": 0.35,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "workspace-actions"
+      ],
+      "changed_milestones": [
+        "workspace-actions/policy-bound-build-test-presets"
+      ],
+      "roadmap": {
+        "item_count": 418,
+        "completed_item_count": 141,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 99,
+      "verified_evidence_delta": 1
     }
   ],
   "history_contract": {
@@ -33017,8 +33078,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "P4.6",
-    "source_commit_sha": "a06b4d2715644afe58b77416e7fde59c2a60ad2c",
-    "closeout_sha": "d3d9947f84f6a028b757af0b26dbc45caede5700"
+    "roadmap_slice_id": "P4.7",
+    "source_commit_sha": "a209d5ab66b7d7ff92a9c01494a90b9d79e78abf",
+    "closeout_sha": "a209d5ab66b7d7ff92a9c01494a90b9d79e78abf"
   }
 }
