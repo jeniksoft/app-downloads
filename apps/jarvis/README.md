@@ -9,11 +9,11 @@ Aktuálně zde není žádný veřejný instalační balíček ke stažení. Dř
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_BEGIN -->
 ## Sledování implementace Personal 1.0.0
 
-**Synchronizovaný snapshot: 2026-08-28**
+**Synchronizovaný snapshot: 2026-08-31**
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `OP1.4.1` je veřejně spojen se zdrojovým SHA `b48b3298dcec8680697ce6ef53b6a28e5d621b8e` a closeout SHA `b48b3298dcec8680697ce6ef53b6a28e5d621b8e`. Stav: **verified**.
+Řez `P4.6` je veřejně spojen se zdrojovým SHA `a06b4d2715644afe58b77416e7fde59c2a60ad2c` a closeout SHA `d3d9947f84f6a028b757af0b26dbc45caede5700`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -41,7 +41,7 @@ Nejde o instalační balíček ani o prohlášení, že je produkt hotový; při
 
 Tabulka používá pevnou ✓/✕ značku: ✓ znamená ověřenou release bránu, ✕ znamená, že brána ještě není ověřená. ✕ není důkaz chyby; u architektury označuje plánovaný rozsah.
 
-**Změna od předchozího snapshotu: roadmapa položky +0 · hotovo +0 · ověřené důkazy +0**
+**Změna od předchozího snapshotu: roadmapa položky +1 · hotovo +14 · ověřené důkazy +0**
 
 ![Roadmapa a progress edic Jarvis](visuals/roadmap-editions.svg)
 
@@ -181,22 +181,22 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.10` | Arbitráž zdrojů providera | `V3` |
 | ✓ Hotovo | Personal 1.0.0 · P2 — Model and provider reliability | `P2.11` | Matice obnovy po odpojení lokálního a LAN providera | `V5` |
 | ✓ Hotovo | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.1` | current request authority regression | `V1` |
-| ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.2` | project snapshot fingerprint and delta classification | `V2` |
-| ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.3` | typed evidence classes and provenance | `V1` |
-| ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.4` | evidence sufficiency typed result | `V1` |
-| ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.5` | bounded research request contract | `V1` |
-| ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.6` | local-first research adapters | `V2` |
-| ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.7` | public web source isolation and attribution | `V3` |
-| ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.8` | contradiction preservation and revalidation | `V2` |
-| ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.9` | owner-facing sourced answer truth contract | `V2` |
+| ✓ Hotovo | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.2` | Fingerprint projektového snapshotu a klasifikace delty | `V2` |
+| ✓ Hotovo | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.3` | Typované třídy důkazů a provenience | `V1` |
+| ✓ Hotovo | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.4` | Typovaná dostatečnost důkazů | `V1` |
+| ✓ Hotovo | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.5` | Omezený research request | `V1` |
+| ✓ Hotovo | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.6` | Lokální research-first adapter | `V2` |
+| ✓ Hotovo | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.7` | Izolace veřejného webu a atribuce | `V3` |
+| ✓ Hotovo | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.8` | Zachování rozporu a revalidace | `V2` |
+| ✓ Hotovo | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.9` | Pravdivostní kontrakt odpovědi ze zdrojů pro ownera | `V2` |
 | ✕ Rozpracováno | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.10` | intake-research-re-evaluate live dogfood | `V4` |
 | ✓ Hotovo | Personal 1.0.0 · P3 — Intake Research and source quality | `P3.11` | multimedia and ambiguous input authority gate | `V2` |
-| ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.1` | natural text maps to typed intent only | `V1` |
-| ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.2` | bounded file read-list runtime | `V2` |
-| ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.3` | atomic file create-write-append | `V2` |
-| ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.4` | exact replace edit with precondition | `V2` |
-| ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.5` | copy-move-delete rollback semantics | `V2` |
-| ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.6` | safe directory create | `V2` |
+| ✓ Hotovo | Personal 1.0.0 · P4 — Workspace action reliability | `P4.1` | Přirozený text se mapuje pouze na typovaný intent | `V1` |
+| ✓ Hotovo | Personal 1.0.0 · P4 — Workspace action reliability | `P4.2` | Omezené čtení a seznam workspace | `V2` |
+| ✓ Hotovo | Personal 1.0.0 · P4 — Workspace action reliability | `P4.3` | Atomické vytvoření, zápis a připojení souboru | `V2` |
+| ✓ Hotovo | Personal 1.0.0 · P4 — Workspace action reliability | `P4.4` | Přesná náhrada úpravy s předběžnou podmínkou | `V2` |
+| ✓ Hotovo | Personal 1.0.0 · P4 — Workspace action reliability | `P4.5` | Rollback sémantika kopírování, přesunu a smazání | `V2` |
+| ✓ Hotovo | Personal 1.0.0 · P4 — Workspace action reliability | `P4.6` | Bezpečné vytvoření workspace adresáře | `V2` |
 | ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.7` | allow-listed build-test presets | `V3` |
 | ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.8` | read-only Git exact args | `V2` |
 | ✕ Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.9` | confirmed Git commit-push with identity receipts | `V3` |
@@ -262,6 +262,7 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✓ Hotovo | Volitelné tratě · OP1 — Hermes local facade | `OP1.3` | Omezený read-only replay chatu a událostí | `V3` |
 | ✓ Hotovo | Volitelné tratě · OP1 — Hermes local facade | `OP1.4` | Cíle, schválení a řízení | `V5` |
 | ✕ Rozpracováno | Volitelné tratě · OP1 — Hermes local facade | `OP1.4.1` | Model-led typované akce s policy branou a read-backem | `V3` |
+| ✕ Rozpracováno | Volitelné tratě · OP1 — Hermes local facade | `OP1.4.2` | Externí katalog owner-facing UI textů s ručními a modelově řízenými override | `V3` |
 | ✕ Rozpracováno | Volitelné tratě · OP1 — Hermes local facade | `OP1.5` | Mobilní klient a mini-panel | `V5` |
 | ✕ Rozpracováno | Volitelné tratě · OP1 — Hermes local facade | `OP1.6` | Párovací režim LAN | `V5` |
 | ✕ Rozpracováno | Volitelné tratě · OP1 — Hermes local facade | `OP1.7` | Automatizace podle schopností | `V5` |
@@ -279,9 +280,9 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | ✕ Částečně | Volitelné tratě · OP3 — TTS STT audio | `OP3.5` | Lokální baseline Piper a ONNX s ownerem autorizovaným provisioningem pinned runtime | `V3` |
 | ✕ Částečně | Volitelné tratě · OP3 — TTS STT audio | `OP3.6` | Typovaný doklad WAV a MP3 artefaktu s dočasným ověřeným lokálním předáním k přehrání | `V3` |
 | ✕ Rozpracováno | Volitelné tratě · OP3 — TTS STT audio | `OP3.7` | Akceptace kvality ownerem | `V5` |
-| ✕ Rozpracováno | Volitelné tratě · OP3 — TTS STT audio | `OP3.8` | Další jazyky a modality | `V5` |
-| ✕ Rozpracováno | Volitelné tratě · OP3 — TTS STT audio | `OP3.9` | Lokální české STT routování pro tray a kontrakt integrace se secure desktopem | `V3` |
-| ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.1` | Core host před přihlášením a ownerem schválený hlasový tray adaptér s nastavitelným českým wake profilem a automatickým lokálním CPU-only STT provisioningem | `V3` |
+| ✕ Rozpracováno | Volitelné tratě · OP3 — TTS STT audio | `OP3.8` | Další jazyky a modality s ověřenými jazykovými profily a lokálním enrollmentem z nahrávek uživatele | `V5` |
+| ✕ Rozpracováno | Volitelné tratě · OP3 — TTS STT audio | `OP3.9` | Lokálně profilované STT routování podle jazyka pro tray a kontrakt integrace se secure desktopem | `V3` |
+| ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.1` | Core host před přihlášením a ownerem schválený hlasový tray adaptér s jazykově profilovanými wake variantami, lokální hranicí enrollmentu z nahrávek uživatele a automatickým lokálním STT provisioningem | `V3` |
 | ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.2` | Typovaný handoff credential/login záměru bez tajných údajů | `V2` |
 | ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.3` | Adaptér fyzického a biometrického zajištění pro důsledkové hlasové akce | `V4` |
 | ✓ Hotovo | Volitelné tratě · OP4 — Ambient Presence Voice Mesh | `OP4.4` | Provider-free paměťová kapsle interních zdrojových fragmentů s kompresí a autentizací AES-GCM; scope uživatelského GitHub projektu zůstává oddělený a persistovaný NCrypt/ACL vault je otevřený | `V4` |
@@ -493,23 +494,23 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 1 084 | 382 419 | 23.91 |
-| JSON | 294 | 153 006 | 11.64 |
-| Markdown | 730 | 77 777 | 3.95 |
-| Python | 205 | 43 381 | 1.73 |
-| PowerShell | 54 | 25 543 | 1.34 |
+| C/C++ | 1 104 | 404 438 | 25.04 |
+| JSON | 313 | 159 140 | 12.13 |
+| Markdown | 762 | 85 880 | 4.42 |
+| Python | 225 | 51 546 | 2.07 |
+| PowerShell | 55 | 25 785 | 1.35 |
 | JSONL | 14 | 2 499 | 6.91 |
 | Plain text | 106 | 1 652 | 0.18 |
-| INI | 5 | 66 | 0.00 |
+| INI | 6 | 675 | 0.04 |
 | CMake | 1 | 20 | 0.00 |
 | Shell | 1 | 17 | 0.00 |
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| Other text | 7 | 7 | 0.00 |
-| **Text/source celkem** | **2 519** | **686 429** | **49.72** |
-| Binární assety (mimo řádky) | 35 | — | 14.47 |
-| **Trackovaný strom celkem** | **2 554** | **686 429** | **64.19** |
+| Other text | 8 | 9 | 0.00 |
+| **Text/source celkem** | **2 613** | **731 703** | **52.21** |
+| Binární assety (mimo řádky) | 39 | — | 14.50 |
+| **Trackovaný strom celkem** | **2 652** | **731 703** | **66.71** |
 
 ### Přírůstek od předchozí revize
 
@@ -517,9 +518,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +0 | +236 | +0.02 |
+| Text/source celkem | +1 | +38 | +0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +0 | +236 | +0.02 |
+| Trackovaný strom celkem | +1 | +38 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -676,7 +677,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `7fd5ec174183` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `a299cb6a89db` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `5894ff30da38` | 2026-08-26 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | model-routing | 1: model-routing/typed-routing-fallback |
 | `a22160c8171e` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -694,13 +694,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `40d138d032c1` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `ca295a75550a` | 2026-08-28 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `03fb26c1880e` | 2026-08-28 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `95e6e33f1c04` | 2026-08-31 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 20 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 21 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness

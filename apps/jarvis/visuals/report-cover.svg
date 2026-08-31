@@ -50,6 +50,15 @@ svg { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
 .line-2 { fill: none; stroke: var(--series-2); stroke-width: 3; }
 .line-3 { fill: none; stroke: var(--series-3); stroke-width: 3; }
 .line-4 { fill: none; stroke: var(--series-4); stroke-width: 3; }
+.report-icon { overflow: visible; }
+.report-icon-complete { --icon-color: var(--series-3); }
+.report-icon-evidence { --icon-color: var(--series-1); }
+.report-icon-progress { --icon-color: var(--series-4); }
+.report-icon-planned { --icon-color: var(--series-6); }
+.report-icon-blocked { --icon-color: var(--series-5); }
+.report-icon-shell { fill: var(--icon-color); stroke: var(--icon-color); stroke-width: 1; }
+.report-icon-mark { fill: none; stroke: var(--background); stroke-width: 2.3; stroke-linecap: round; stroke-linejoin: round; }
+.report-icon-glyph { fill: var(--background); font-size: 14px; font-weight: 700; text-anchor: middle; }
 .node { fill: var(--background); stroke: var(--border); stroke-width: 1.5; }
 .node-accent { fill: var(--series-1); opacity: .18; }
 .state-verified-runtime { fill: var(--series-3); }
@@ -98,15 +107,6 @@ svg { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
 .roadmap-group-chip-label { fill: var(--background); font-size: 11px; font-weight: 700; }
 .roadmap-summary-chip { fill: var(--track); stroke: var(--border); stroke-width: 1; }
 .roadmap-card { fill: var(--background); stroke: var(--border); stroke-width: 1; }
-.roadmap-icon { fill: var(--background); stroke-width: 2; }
-.roadmap-badge { fill: var(--track); stroke: var(--border); stroke-width: 1; }
-.roadmap-complete { fill: var(--series-3); }
-.roadmap-open { fill: var(--series-4); }
-.roadmap-planned { fill: var(--series-6); }
-.roadmap-check { fill: var(--background); font-size: 24px; font-weight: 700; }
-.roadmap-cross { fill: var(--background); font-size: 24px; font-weight: 700; }
-.roadmap-item-icon { font-size: 15px; }
-.roadmap-planned-text { fill: var(--background); }
 .roadmap-track { fill: var(--track); stroke: var(--border); stroke-width: .5; }
 .roadmap-fill { fill: var(--series-1); opacity: .9; }
 .roadmap-track-inactive { fill: none; stroke: var(--muted); stroke-dasharray: 6 5; opacity: .72; }

@@ -2,7 +2,7 @@
   "schema_version": 8,
   "project_codename": "Jarvis",
   "report_locale": "cs-CZ",
-  "generated_at": "2026-08-28",
+  "generated_at": "2026-08-31",
   "measurement": {
     "mode": "milestone_evidence_rollup",
     "primary_metric": "primary_percent",
@@ -22716,13 +22716,47 @@
       },
       "verified_evidence_count": 98,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "95e6e33f1c04",
+      "date": "2026-08-31",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 418,
+        "completed_item_count": 140,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 1,
+        "completed_item_count": 14,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 98,
+      "verified_evidence_delta": 0
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP1.4.1",
-    "source_commit_sha": "b48b3298dcec8680697ce6ef53b6a28e5d621b8e",
-    "closeout_sha": "b48b3298dcec8680697ce6ef53b6a28e5d621b8e"
+    "roadmap_slice_id": "P4.6",
+    "source_commit_sha": "a06b4d2715644afe58b77416e7fde59c2a60ad2c",
+    "closeout_sha": "d3d9947f84f6a028b757af0b26dbc45caede5700"
   }
 }

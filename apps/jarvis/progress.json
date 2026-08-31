@@ -35,38 +35,38 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 1084,
-        "physical_lines": 382419,
-        "bytes": 23908692,
-        "megabytes": 23.908692
+        "files": 1104,
+        "physical_lines": 404438,
+        "bytes": 25035105,
+        "megabytes": 25.035105
       },
       {
         "language": "JSON",
-        "files": 294,
-        "physical_lines": 153006,
-        "bytes": 11643243,
-        "megabytes": 11.643243
+        "files": 313,
+        "physical_lines": 159140,
+        "bytes": 12134330,
+        "megabytes": 12.13433
       },
       {
         "language": "Markdown",
-        "files": 730,
-        "physical_lines": 77777,
-        "bytes": 3946870,
-        "megabytes": 3.94687
+        "files": 762,
+        "physical_lines": 85880,
+        "bytes": 4423865,
+        "megabytes": 4.423865
       },
       {
         "language": "Python",
-        "files": 205,
-        "physical_lines": 43381,
-        "bytes": 1733293,
-        "megabytes": 1.733293
+        "files": 225,
+        "physical_lines": 51546,
+        "bytes": 2073739,
+        "megabytes": 2.073739
       },
       {
         "language": "PowerShell",
-        "files": 54,
-        "physical_lines": 25543,
-        "bytes": 1337121,
-        "megabytes": 1.337121
+        "files": 55,
+        "physical_lines": 25785,
+        "bytes": 1349127,
+        "megabytes": 1.349127
       },
       {
         "language": "JSONL",
@@ -84,10 +84,10 @@
       },
       {
         "language": "INI",
-        "files": 5,
-        "physical_lines": 66,
-        "bytes": 2672,
-        "megabytes": 0.002672
+        "files": 6,
+        "physical_lines": 675,
+        "bytes": 40746,
+        "megabytes": 0.040746
       },
       {
         "language": "CMake",
@@ -126,37 +126,37 @@
       },
       {
         "language": "Other text",
-        "files": 7,
-        "physical_lines": 7,
-        "bytes": 86,
-        "megabytes": 8.6e-05
+        "files": 8,
+        "physical_lines": 9,
+        "bytes": 566,
+        "megabytes": 0.000566
       }
     ],
     "source_text": {
-      "files": 2519,
-      "physical_lines": 686429,
-      "bytes": 49720336,
-      "megabytes": 49.720336
+      "files": 2613,
+      "physical_lines": 731703,
+      "bytes": 52205837,
+      "megabytes": 52.205837
     },
     "binary_assets": {
-      "files": 35,
-      "bytes": 14470500,
-      "megabytes": 14.4705
+      "files": 39,
+      "bytes": 14500340,
+      "megabytes": 14.50034
     },
     "tracked_total": {
-      "files": 2554,
-      "physical_lines": 686429,
-      "bytes": 64190836,
-      "megabytes": 64.190836
+      "files": 2652,
+      "physical_lines": 731703,
+      "bytes": 66706177,
+      "megabytes": 66.706177
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 0,
-        "physical_lines": 236,
-        "bytes": 15808,
-        "megabytes": 0.015808
+        "files": 1,
+        "physical_lines": 38,
+        "bytes": 3120,
+        "megabytes": 0.00312
       },
       "binary_assets": {
         "files": 0,
@@ -165,14 +165,14 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 0,
-        "physical_lines": 236,
-        "bytes": 15808,
-        "megabytes": 0.015808
+        "files": 1,
+        "physical_lines": 38,
+        "bytes": 3120,
+        "megabytes": 0.00312
       }
     }
   },
-  "updated_at": "2026-08-28",
+  "updated_at": "2026-08-31",
   "overall_percent": 32.5,
   "primary_percent": 32.5,
   "implementation_complete_percent": 43.75,
@@ -181,7 +181,7 @@
   "roadmap": {
     "source": {
       "roadmap_id": "jarvis.master.worker.v2",
-      "updated_at": "2026-08-27",
+      "updated_at": "2026-08-31",
       "file": "canonical roadmap hierarchy and release-gate summary"
     },
     "gates": [
@@ -298,7 +298,7 @@
         "chapter_color": "personal",
         "chapter_count": 9,
         "item_count": 99,
-        "completed_item_count": 40
+        "completed_item_count": 54
       },
       {
         "id": "optional",
@@ -306,7 +306,7 @@
         "name_en": "Optional tracks",
         "chapter_color": "optional",
         "chapter_count": 9,
-        "item_count": 78,
+        "item_count": 79,
         "completed_item_count": 17
       },
       {
@@ -612,7 +612,7 @@
         "status_label_en": "In progress",
         "is_complete": false,
         "item_count": 11,
-        "completed_item_count": 2
+        "completed_item_count": 10
       },
       {
         "id": "P4",
@@ -627,7 +627,7 @@
         "status_label_en": "In progress",
         "is_complete": false,
         "item_count": 16,
-        "completed_item_count": 5
+        "completed_item_count": 11
       },
       {
         "id": "P5",
@@ -716,7 +716,7 @@
         "status_label_cs": "Rozpracováno",
         "status_label_en": "In progress",
         "is_complete": false,
-        "item_count": 9,
+        "item_count": 10,
         "completed_item_count": 4
       },
       {
@@ -3620,13 +3620,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "project snapshot fingerprint and delta classification",
+        "description_cs": "Fingerprint projektového snapshotu a klasifikace delty",
         "description_en": "project snapshot fingerprint and delta classification",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V2",
         "is_slice": true
       },
@@ -3639,13 +3639,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "typed evidence classes and provenance",
+        "description_cs": "Typované třídy důkazů a provenience",
         "description_en": "typed evidence classes and provenance",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V1",
         "is_slice": true
       },
@@ -3658,13 +3658,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "evidence sufficiency typed result",
+        "description_cs": "Typovaná dostatečnost důkazů",
         "description_en": "evidence sufficiency typed result",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V1",
         "is_slice": true
       },
@@ -3677,13 +3677,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "bounded research request contract",
+        "description_cs": "Omezený research request",
         "description_en": "bounded research request contract",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V1",
         "is_slice": true
       },
@@ -3696,13 +3696,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "local-first research adapters",
+        "description_cs": "Lokální research-first adapter",
         "description_en": "local-first research adapters",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V2",
         "is_slice": true
       },
@@ -3715,13 +3715,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "public web source isolation and attribution",
+        "description_cs": "Izolace veřejného webu a atribuce",
         "description_en": "public web source isolation and attribution",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V3",
         "is_slice": true
       },
@@ -3734,13 +3734,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "contradiction preservation and revalidation",
+        "description_cs": "Zachování rozporu a revalidace",
         "description_en": "contradiction preservation and revalidation",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V2",
         "is_slice": true
       },
@@ -3753,13 +3753,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "owner-facing sourced answer truth contract",
+        "description_cs": "Pravdivostní kontrakt odpovědi ze zdrojů pro ownera",
         "description_en": "owner-facing sourced answer truth contract",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V2",
         "is_slice": true
       },
@@ -3810,13 +3810,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "natural text maps to typed intent only",
+        "description_cs": "Přirozený text se mapuje pouze na typovaný intent",
         "description_en": "natural text maps to typed intent only",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V1",
         "is_slice": true
       },
@@ -3829,13 +3829,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "bounded file read-list runtime",
+        "description_cs": "Omezené čtení a seznam workspace",
         "description_en": "bounded file read-list runtime",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V2",
         "is_slice": true
       },
@@ -3848,13 +3848,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "atomic file create-write-append",
+        "description_cs": "Atomické vytvoření, zápis a připojení souboru",
         "description_en": "atomic file create-write-append",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V2",
         "is_slice": true
       },
@@ -3867,13 +3867,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "exact replace edit with precondition",
+        "description_cs": "Přesná náhrada úpravy s předběžnou podmínkou",
         "description_en": "exact replace edit with precondition",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V2",
         "is_slice": true
       },
@@ -3886,13 +3886,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "copy-move-delete rollback semantics",
+        "description_cs": "Rollback sémantika kopírování, přesunu a smazání",
         "description_en": "copy-move-delete rollback semantics",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V2",
         "is_slice": true
       },
@@ -3905,13 +3905,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "safe directory create",
+        "description_cs": "Bezpečné vytvoření workspace adresáře",
         "description_en": "safe directory create",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V2",
         "is_slice": true
       },
@@ -5151,6 +5151,25 @@
         "is_slice": true
       },
       {
+        "id": "OP1.4.2",
+        "chapter_id": "OP1",
+        "chapter_name_cs": "OP1 — Hermes local facade",
+        "chapter_name_en": "OP1 — Hermes local facade",
+        "group_id": "optional",
+        "group_name_cs": "Volitelné tratě",
+        "group_name_en": "Optional tracks",
+        "chapter_color": "optional",
+        "description_cs": "Externí katalog owner-facing UI textů s ručními a modelově řízenými override",
+        "description_en": "external owner-facing UI text catalog with manual and model-gated overrides",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
+        "status_source": "canonical-roadmap",
+        "is_complete": false,
+        "verify": "V3",
+        "is_slice": true
+      },
+      {
         "id": "OP1.5",
         "chapter_id": "OP1",
         "chapter_name_cs": "OP1 — Hermes local facade",
@@ -5482,8 +5501,8 @@
         "group_name_cs": "Volitelné tratě",
         "group_name_en": "Optional tracks",
         "chapter_color": "optional",
-        "description_cs": "Další jazyky a modality",
-        "description_en": "additional languages and modalities",
+        "description_cs": "Další jazyky a modality s ověřenými jazykovými profily a lokálním enrollmentem z nahrávek uživatele",
+        "description_en": "additional languages and modalities with verified language profiles and local user-recording enrollment",
         "status": "in-progress",
         "status_label_cs": "Rozpracováno",
         "status_label_en": "In progress",
@@ -5501,8 +5520,8 @@
         "group_name_cs": "Volitelné tratě",
         "group_name_en": "Optional tracks",
         "chapter_color": "optional",
-        "description_cs": "Lokální české STT routování pro tray a kontrakt integrace se secure desktopem",
-        "description_en": "local Czech STT routing for tray and secure-desktop integration contract",
+        "description_cs": "Lokálně profilované STT routování podle jazyka pro tray a kontrakt integrace se secure desktopem",
+        "description_en": "language-profiled local STT routing for tray and secure-desktop integration contract",
         "status": "in-progress",
         "status_label_cs": "Rozpracováno",
         "status_label_en": "In progress",
@@ -5520,8 +5539,8 @@
         "group_name_cs": "Volitelné tratě",
         "group_name_en": "Optional tracks",
         "chapter_color": "optional",
-        "description_cs": "Core host před přihlášením a ownerem schválený hlasový tray adaptér s nastavitelným českým wake profilem a automatickým lokálním CPU-only STT provisioningem",
-        "description_en": "pre-login Core service host and owner-authorized tray voice adapter with configurable Czech wake profile and automatic local CPU-only STT provisioning",
+        "description_cs": "Core host před přihlášením a ownerem schválený hlasový tray adaptér s jazykově profilovanými wake variantami, lokální hranicí enrollmentu z nahrávek uživatele a automatickým lokálním STT provisioningem",
+        "description_en": "pre-login Core service host and owner-authorized tray voice adapter with language-profiled wake variants, local user-recording enrollment boundary and automatic local STT provisioning",
         "status": "implementation-complete",
         "status_label_cs": "Implementováno; živé ověření čeká",
         "status_label_en": "Implemented; live acceptance pending",
@@ -9065,16 +9084,16 @@
         "is_slice": true
       }
     ],
-    "item_count": 417,
-    "completed_item_count": 126,
+    "item_count": 418,
+    "completed_item_count": 140,
     "chapter_count": 54,
     "limitations": "Release-gate status is roadmap state, not a percentage. Item ✓ means deterministic implementation/evidence is present; live owner acceptance can remain open. Teams and Enterprise have no active measured evidence track."
   },
   "change_summary": {
     "available": true,
     "previous_date": "2026-08-28",
-    "roadmap_items_delta": 0,
-    "roadmap_completed_delta": 0,
+    "roadmap_items_delta": 1,
+    "roadmap_completed_delta": 14,
     "roadmap_chapters_delta": 0,
     "verified_evidence_delta": 0,
     "metrics_delta": {
@@ -9095,7 +9114,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 20,
+    "incremental_closeout_points_since_full_baseline": 21,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -32953,6 +32972,40 @@
       },
       "verified_evidence_count": 98,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "95e6e33f1c04",
+      "date": "2026-08-31",
+      "metrics": {
+        "primary_percent": 32.5,
+        "implementation_percent": 43.75,
+        "verified_percent": 32.5,
+        "done_percent": 32.5,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 418,
+        "completed_item_count": 140,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 1,
+        "completed_item_count": 14,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 98,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -32964,8 +33017,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP1.4.1",
-    "source_commit_sha": "b48b3298dcec8680697ce6ef53b6a28e5d621b8e",
-    "closeout_sha": "b48b3298dcec8680697ce6ef53b6a28e5d621b8e"
+    "roadmap_slice_id": "P4.6",
+    "source_commit_sha": "a06b4d2715644afe58b77416e7fde59c2a60ad2c",
+    "closeout_sha": "d3d9947f84f6a028b757af0b26dbc45caede5700"
   }
 }
