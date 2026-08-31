@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 1104,
-        "physical_lines": 404765,
-        "bytes": 25049904,
-        "megabytes": 25.049904
+        "files": 1106,
+        "physical_lines": 405588,
+        "bytes": 25087096,
+        "megabytes": 25.087096
       },
       {
         "language": "JSON",
         "files": 313,
-        "physical_lines": 159182,
-        "bytes": 12143187,
-        "megabytes": 12.143187
+        "physical_lines": 159203,
+        "bytes": 12148270,
+        "megabytes": 12.14827
       },
       {
         "language": "Markdown",
-        "files": 764,
-        "physical_lines": 86319,
-        "bytes": 4448706,
-        "megabytes": 4.448706
+        "files": 765,
+        "physical_lines": 86541,
+        "bytes": 4462116,
+        "megabytes": 4.462116
       },
       {
         "language": "Python",
-        "files": 227,
-        "physical_lines": 51876,
-        "bytes": 2086663,
-        "megabytes": 2.086663
+        "files": 228,
+        "physical_lines": 52041,
+        "bytes": 2093399,
+        "megabytes": 2.093399
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 2617,
-      "physical_lines": 732841,
-      "bytes": 52267258,
-      "megabytes": 52.267258
+      "files": 2621,
+      "physical_lines": 734072,
+      "bytes": 52329679,
+      "megabytes": 52.329679
     },
     "binary_assets": {
       "files": 39,
@@ -144,19 +144,19 @@
       "megabytes": 14.50034
     },
     "tracked_total": {
-      "files": 2656,
-      "physical_lines": 732841,
-      "bytes": 66767598,
-      "megabytes": 66.767598
+      "files": 2660,
+      "physical_lines": 734072,
+      "bytes": 66830019,
+      "megabytes": 66.830019
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 2,
-        "physical_lines": 660,
-        "bytes": 33583,
-        "megabytes": 0.033583
+        "files": 4,
+        "physical_lines": 1231,
+        "bytes": 62421,
+        "megabytes": 0.062421
       },
       "binary_assets": {
         "files": 0,
@@ -165,10 +165,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 2,
-        "physical_lines": 660,
-        "bytes": 33583,
-        "megabytes": 0.033583
+        "files": 4,
+        "physical_lines": 1231,
+        "bytes": 62421,
+        "megabytes": 0.062421
       }
     }
   },
@@ -298,7 +298,7 @@
         "chapter_color": "personal",
         "chapter_count": 9,
         "item_count": 99,
-        "completed_item_count": 56
+        "completed_item_count": 57
       },
       {
         "id": "optional",
@@ -627,7 +627,7 @@
         "status_label_en": "In progress",
         "is_complete": false,
         "item_count": 16,
-        "completed_item_count": 13
+        "completed_item_count": 14
       },
       {
         "id": "P5",
@@ -3962,13 +3962,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "confirmed Git commit-push with identity receipts",
+        "description_cs": "Potvrzený Git commit/push s identitními receipty",
         "description_en": "confirmed Git commit-push with identity receipts",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
+        "status_source": "current-evidence",
+        "is_complete": true,
         "verify": "V3",
         "is_slice": true
       },
@@ -9085,7 +9085,7 @@
       }
     ],
     "item_count": 418,
-    "completed_item_count": 142,
+    "completed_item_count": 143,
     "chapter_count": 54,
     "limitations": "Release-gate status is roadmap state, not a percentage. Item ✓ means deterministic implementation/evidence is present; live owner acceptance can remain open. Teams and Enterprise have no active measured evidence track."
   },
@@ -9097,10 +9097,10 @@
     "roadmap_chapters_delta": 0,
     "verified_evidence_delta": 1,
     "metrics_delta": {
-      "primary_percent": 0.35,
+      "primary_percent": 0.0,
       "implementation_percent": 0.0,
-      "verified_percent": 0.35,
-      "done_percent": 0.35,
+      "verified_percent": 0.0,
+      "done_percent": 0.0,
       "release_readiness_percent": 0.0
     }
   },
@@ -9114,7 +9114,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 23,
+    "incremental_closeout_points_since_full_baseline": 24,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -9133,11 +9133,11 @@
   "milestone_done_percent": 33.2,
   "evidence_summary": {
     "manifest_present": true,
-    "milestone_count": 34,
-    "verified_milestone_count": 13,
-    "verified_evidence_count": 100,
+    "milestone_count": 35,
+    "verified_milestone_count": 14,
+    "verified_evidence_count": 101,
     "state_counts": {
-      "verified-build": 11,
+      "verified-build": 12,
       "partial": 12,
       "open": 7,
       "verified-contract": 2,
@@ -9651,7 +9651,7 @@
           "id": "policy-bound-build-test-presets",
           "name_cs": "Allow-listované build/test presety",
           "name_en": "Allow-listed build/test presets",
-          "weight_percent": 20.0,
+          "weight_percent": 15.0,
           "state": "verified-build",
           "implementation_percent": 100.0,
           "verified_percent": 75.0,
@@ -9676,7 +9676,7 @@
           "id": "policy-bound-readonly-git-exact-args",
           "name_cs": "Read-only Git s přesnými hostitelskými argumenty",
           "name_en": "Read-only Git with exact host-owned arguments",
-          "weight_percent": 20.0,
+          "weight_percent": 15.0,
           "state": "verified-build",
           "implementation_percent": 100.0,
           "verified_percent": 75.0,
@@ -9696,6 +9696,31 @@
           ],
           "evidence_summary_cs": "P4.8 má provider-free source guard, nativní self-test a build evidence pro uzavřený registr read-only Git argumentů.",
           "open_gap_cs": "Provider, model, síť, živý workspace a owner acceptance zůstávají samostatnými branami; síťový fetch není povolen."
+        },
+        {
+          "id": "policy-bound-git-identity-receipts",
+          "name_cs": "Potvrzený Git commit/push s identitními receipty",
+          "name_en": "Confirmed Git commit/push with identity receipts",
+          "weight_percent": 10.0,
+          "state": "verified-build",
+          "implementation_percent": 100.0,
+          "verified_percent": 75.0,
+          "done_percent": 75.0,
+          "evidence_count": 2,
+          "verified_evidence_count": 1,
+          "evidence_kinds": [
+            "runtime",
+            "self-test"
+          ],
+          "verified_evidence_kinds": [
+            "self-test"
+          ],
+          "evidence_statuses": [
+            "open",
+            "verified"
+          ],
+          "evidence_summary_cs": "P4.9 má provider-free source guard, nativní receipt self-test a build evidence pro hostitelem vázaný Git commit/push.",
+          "open_gap_cs": "Credentialy, provider, živý repozitář, crash/restart a owner acceptance zůstávají samostatnými branami."
         }
       ]
     },
@@ -33128,6 +33153,42 @@
       },
       "verified_evidence_count": 100,
       "verified_evidence_delta": 1
+    },
+    {
+      "revision": "6ed157b03cc1",
+      "date": "2026-08-31",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "workspace-actions"
+      ],
+      "changed_milestones": [
+        "workspace-actions/policy-bound-git-identity-receipts"
+      ],
+      "roadmap": {
+        "item_count": 418,
+        "completed_item_count": 143,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 101,
+      "verified_evidence_delta": 1
     }
   ],
   "history_contract": {
@@ -33139,8 +33200,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "P4.8",
-    "source_commit_sha": "45e10c033b2bca27106ecf00991a2519185731f7",
-    "closeout_sha": "45e10c033b2bca27106ecf00991a2519185731f7"
+    "roadmap_slice_id": "P4.9",
+    "source_commit_sha": "177ec73fd273f7563c1a5ebf72180bdc33939196",
+    "closeout_sha": "177ec73fd273f7563c1a5ebf72180bdc33939196"
   }
 }
