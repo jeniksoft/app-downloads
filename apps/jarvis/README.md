@@ -13,7 +13,7 @@ Aktuálně zde není žádný veřejný instalační balíček ke stažení. Dř
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `OP1.4.2.automation` je veřejně spojen se zdrojovým SHA `636ae590ba4156deffc73a1d5fc0560ff35fa20c` a closeout SHA `9520e7d2834163761350db32c54097b3ddf83f78`. Stav: **verified**.
+Řez `OP1.4.2.automation` je veřejně spojen se zdrojovým SHA `636ae590ba4156deffc73a1d5fc0560ff35fa20c` a closeout SHA `c354e1b065f905af6e40612da9945cc8e84a298d`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -42,7 +42,7 @@ Nejde o instalační balíček ani o prohlášení, že je produkt hotový; při
 **Legenda ikon:** · <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno · <span role="img" title="Evidence: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření." aria-label="Evidence: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření.">🟦</span> Evidence · <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno · <span role="img" title="Plánováno: Stav je plánovaný nebo pouze architektonický; značka není důkaz dokončení." aria-label="Plánováno: Stav je plánovaný nebo pouze architektonický; značka není důkaz dokončení.">⚪</span> Plánováno · <span role="img" title="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch." aria-label="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch.">⛔</span> Blokováno
 Ikona i popisek jsou viditelné přímo v README; po najetí kurzorem tooltip vysvětlí význam a nezaměňuje implementaci za živé ověření.
 
-**Změna od předchozího snapshotu: roadmapa položky +0 · hotovo -1 · ověřené důkazy +0**
+**Změna od předchozího snapshotu: roadmapa položky +0 · hotovo +0 · ověřené důkazy +0**
 
 ![Roadmapa a progress edic Jarvis](visuals/roadmap-editions.svg)
 
@@ -519,9 +519,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +0 | +497 | +0.04 |
+| Text/source celkem | +0 | +0 | +0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +0 | +497 | +0.04 |
+| Trackovaný strom celkem | +0 | +0 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -538,24 +538,7 @@ Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovac�
 | Owner-facing UX, diagnostika, support a lokalizace | `in-progress` | chat/project-first UX; diagnostics and support evidence; language and accessibility quality |
 | End-to-end QA, dogfooding a bezpečnostní audity | `in-progress` | contract and self-test gates; long dogfood and live acceptance; hardware/configuration and safety evidence |
 
-```mermaid
-flowchart LR
-    C1[App shell]
-    C2[Worker/recovery]
-    C1 --> C2
-    C3[Models/routing]
-    C2 --> C3
-    C4[Workspace/actions]
-    C3 --> C4
-    C5[Extensions]
-    C4 --> C5
-    C6[Executor]
-    C5 --> C6
-    C7[UX/support]
-    C6 --> C7
-    C8[QA/dogfood]
-    C7 --> C8
-```
+Graf kapitol je v dashboardu výše jako statické SVG. Tato úplná textová tabulka je jeho přístupný fallback a nevyžaduje další renderer.
 
 ### Milestone evidence
 
@@ -598,89 +581,7 @@ flowchart LR
 | QA/dogfood | Reálný hardware/configuration matrix | `open` | Owner-approved release source označuje hardware/configuration matrix jako early.; mezera: Dodat opakovatelná měření na skutečných konfiguracích s identity a environment receipts.; typy: release-gate, self-test |
 | QA/dogfood | Release acceptance pack a bezpečnostní audit | `open` | P8.9 nyní obsahuje deterministický evaluator immutable clean-install receiptu, P8.10 evaluator přesné pre-1.0 upgrade matice a P8.11 evaluator LKG rollback receiptu nad existujícím build/setup tokem, ale samotný V6 live acceptance pack stále není dodaný.; mezera: Dodat current release candidate, signed artifacts, skutečný clean install/upgrade/rollback a safety audit receipts.; typy: release-gate, self-test |
 
-```mermaid
-flowchart TD
-    G1[App shell]
-    G1M1[WDUi aplikační shell a základní navigace<br/>verified-build]
-    G1 --> G1M1
-    G1M2[Instalátor, update a rollback kontrakt<br/>partial]
-    G1M1 --> G1M2
-    G1M3[ADPU a veřejný kanál<br/>partial]
-    G1M2 --> G1M3
-    G1M4[Čistá instalace, upgrade, podpis a rollback acceptance<br/>open]
-    G1M3 --> G1M4
-    G10[Worker/recovery]
-    G10M1[Queue, WorkerJournal a persistence<br/>verified-build]
-    G10 --> G10M1
-    G10M2[Mid-step resume a přesný Fragment<br/>verified-contract]
-    G10M1 --> G10M2
-    G10M3[Fail-closed review pro síťové a mutující replaye<br/>partial]
-    G10M2 --> G10M3
-    G10M4[Crash/restart dogfood skutečného workflow<br/>open]
-    G10M3 --> G10M4
-    G19[Models/routing]
-    G19M1[Provider health, capability a identity<br/>verified-build]
-    G19 --> G19M1
-    G19M2[Typed routing, fallback a blocked stav<br/>verified-build]
-    G19M1 --> G19M2
-    G19M3[Benchmark, idle gate a Work Report evidence<br/>verified-build]
-    G19M2 --> G19M3
-    G19M4[Živá provider reliability a hardware-aware recommendation<br/>partial]
-    G19M3 --> G19M4
-    G28[Workspace/actions]
-    G28M1[Workspace, source grounding a freshness<br/>verified-build]
-    G28 --> G28M1
-    G28M2[Memory, provenance a continuity<br/>verified-build]
-    G28M1 --> G28M2
-    G28M3[Policy-bound file/build/test/Git/web akce<br/>verified-build]
-    G28M2 --> G28M3
-    G28M4[Recovery po selhání nástroje a no-overwrite hranice<br/>partial]
-    G28M3 --> G28M4
-    G28M5[Allow-listované build/test presety<br/>verified-build]
-    G28M4 --> G28M5
-    G28M6[Read-only Git s přesnými hostitelskými argumenty<br/>verified-build]
-    G28M5 --> G28M6
-    G28M7[Potvrzený Git commit/push s identitními receipty<br/>verified-build]
-    G28M6 --> G28M7
-    G28M8[Potvrzená hranice otevření URL v browseru<br/>verified-build]
-    G28M7 --> G28M8
-    G45[Extensions]
-    G45M1[Registry a discovery rozšíření<br/>partial]
-    G45 --> G45M1
-    G45M2[Capability center a permission profily<br/>contract-only]
-    G45M1 --> G45M2
-    G45M3[Read-only connector preview<br/>contract-only]
-    G45M2 --> G45M3
-    G45M4[Install/update/disable lifecycle rozšíření<br/>open]
-    G45M3 --> G45M4
-    G54[Executor]
-    G54M1[Typed executor scopes a stream lifecycle<br/>verified-contract]
-    G54 --> G54M1
-    G54M2[Policy, audit, resume a fail-closed executor<br/>partial]
-    G54M1 --> G54M2
-    G54M3[MCP/plugin/app result lifecycle<br/>partial]
-    G54M2 --> G54M3
-    G54M4[Live external integration a resume acceptance<br/>open]
-    G54M3 --> G54M4
-    G63[UX/support]
-    G63M1[First-run, setup a diagnostics<br/>partial]
-    G63 --> G63M1
-    G63M2[Failure/recovery a ticket UI<br/>partial]
-    G63M1 --> G63M2
-    G63M3[Jazyk, lokalizace a accessibility quality<br/>partial]
-    G63M2 --> G63M3
-    G63M4[Owner-facing live QA<br/>open]
-    G63M3 --> G63M4
-    G72[QA/dogfood]
-    G72M1[Contract/self-test gates<br/>verified-build]
-    G72 --> G72M1
-    G72M2[Deterministic dogfood a regression fixtures<br/>partial]
-    G72M1 --> G72M2
-    G72M3[Reálný hardware/configuration matrix<br/>open]
-    G72M2 --> G72M3
-    G72M4[Release acceptance pack a bezpečnostní audit<br/>open]
-    G72M3 --> G72M4
-```
+Graf milestone je v dashboardu výše jako statické SVG. Tabulka zachovává úplný stav, důkaz a mezeru i při nedostupném rich-display rendereru GitHubu.
 
 Detailní privátní zdrojové cesty, receipts a owner-specific data zůstávají v CPM evidence manifestu.
 
@@ -690,7 +591,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `7883e8524e93` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
 | `2c7febde9e88` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `830735445b96` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | model-routing | 1: model-routing/typed-routing-fallback |
 | `40d138d032c1` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -708,13 +608,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `4aa031578700` | 2026-09-01 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | workspace-actions | 1: workspace-actions/memory-provenance-continuity |
 | `9fd5afc42d39` | 2026-09-01 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/first-run-diagnostics |
 | `9928e631b251` | 2026-09-01 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/language-accessibility-quality |
+| `58a7e3317f15` | 2026-09-01 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 32 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 33 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
