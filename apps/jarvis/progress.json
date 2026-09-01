@@ -153,10 +153,10 @@
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 2,
-        "physical_lines": 1148,
-        "bytes": 43919,
-        "megabytes": 0.043919
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       },
       "binary_assets": {
         "files": 0,
@@ -165,10 +165,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 2,
-        "physical_lines": 1148,
-        "bytes": 43919,
-        "megabytes": 0.043919
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       }
     }
   },
@@ -13148,9 +13148,9 @@
   "change_summary": {
     "available": true,
     "previous_date": "2026-09-01",
-    "roadmap_items_delta": 198,
-    "roadmap_completed_delta": 1,
-    "roadmap_chapters_delta": 19,
+    "roadmap_items_delta": 0,
+    "roadmap_completed_delta": 0,
+    "roadmap_chapters_delta": 0,
     "verified_evidence_delta": 0,
     "metrics_delta": {
       "primary_percent": 0.0,
@@ -13170,7 +13170,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 34,
+    "incremental_closeout_points_since_full_baseline": 35,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -37618,6 +37618,40 @@
       },
       "verified_evidence_count": 103,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "3d32d7396600",
+      "date": "2026-09-01",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 616,
+        "completed_item_count": 155,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 103,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -37631,6 +37665,6 @@
     "status": "verified",
     "roadmap_slice_id": "OP4.7",
     "source_commit_sha": "aba6490013b5e559338d5cd4565f1d52018f587b",
-    "closeout_sha": "aba6490013b5e559338d5cd4565f1d52018f587b"
+    "closeout_sha": "a1dc65f3df6acd5371eedcc431caf7a5e3f63acb"
   }
 }
