@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 1133,
-        "physical_lines": 414587,
-        "bytes": 22912747,
-        "megabytes": 22.912747
+        "files": 1135,
+        "physical_lines": 415211,
+        "bytes": 22940646,
+        "megabytes": 22.940646
       },
       {
         "language": "JSON",
         "files": 313,
-        "physical_lines": 160218,
-        "bytes": 12367926,
-        "megabytes": 12.367926
+        "physical_lines": 160267,
+        "bytes": 12372625,
+        "megabytes": 12.372625
       },
       {
         "language": "Markdown",
-        "files": 796,
-        "physical_lines": 93994,
-        "bytes": 4830635,
-        "megabytes": 4.830635
+        "files": 797,
+        "physical_lines": 94174,
+        "bytes": 4840765,
+        "megabytes": 4.840765
       },
       {
         "language": "Python",
-        "files": 260,
-        "physical_lines": 58075,
-        "bytes": 2337316,
-        "megabytes": 2.337316
+        "files": 261,
+        "physical_lines": 58239,
+        "bytes": 2343781,
+        "megabytes": 2.343781
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 2717,
-      "physical_lines": 758333,
-      "bytes": 51018137,
-      "megabytes": 51.018137
+      "files": 2721,
+      "physical_lines": 759350,
+      "bytes": 51067330,
+      "megabytes": 51.06733
     },
     "binary_assets": {
       "files": 40,
@@ -144,19 +144,19 @@
       "megabytes": 14.652514
     },
     "tracked_total": {
-      "files": 2757,
-      "physical_lines": 758333,
-      "bytes": 65670651,
-      "megabytes": 65.670651
+      "files": 2761,
+      "physical_lines": 759350,
+      "bytes": 65719844,
+      "megabytes": 65.719844
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 1,
-        "physical_lines": 592,
-        "bytes": 32301,
-        "megabytes": 0.032301
+        "files": 4,
+        "physical_lines": 1017,
+        "bytes": 49193,
+        "megabytes": 0.049193
       },
       "binary_assets": {
         "files": 0,
@@ -165,10 +165,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 1,
-        "physical_lines": 592,
-        "bytes": 32301,
-        "megabytes": 0.032301
+        "files": 4,
+        "physical_lines": 1017,
+        "bytes": 49193,
+        "megabytes": 0.049193
       }
     }
   },
@@ -4703,7 +4703,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "first-run local-LAN provider setup UX",
+        "description_cs": "Uživatelské první nastavení lokálního/LAN providera",
         "description_en": "first-run local-LAN provider setup UX",
         "status": "partial",
         "status_label_cs": "Částečně",
@@ -9093,9 +9093,9 @@
     "available": true,
     "previous_date": "2026-09-01",
     "roadmap_items_delta": 0,
-    "roadmap_completed_delta": 1,
+    "roadmap_completed_delta": 0,
     "roadmap_chapters_delta": 0,
-    "verified_evidence_delta": 1,
+    "verified_evidence_delta": 0,
     "metrics_delta": {
       "primary_percent": 0.0,
       "implementation_percent": 0.0,
@@ -9114,7 +9114,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 30,
+    "incremental_closeout_points_since_full_baseline": 31,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -10016,7 +10016,7 @@
           "implementation_percent": 50.0,
           "verified_percent": 25.0,
           "done_percent": 25.0,
-          "evidence_count": 9,
+          "evidence_count": 10,
           "verified_evidence_count": 1,
           "evidence_kinds": [
             "build",
@@ -33422,6 +33422,42 @@
       },
       "verified_evidence_count": 103,
       "verified_evidence_delta": 1
+    },
+    {
+      "revision": "9fd5afc42d39",
+      "date": "2026-09-01",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "owner-ux"
+      ],
+      "changed_milestones": [
+        "owner-ux/first-run-diagnostics"
+      ],
+      "roadmap": {
+        "item_count": 418,
+        "completed_item_count": 155,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 103,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -33433,8 +33469,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "P5.1",
-    "source_commit_sha": "ff139b46cd765ae8747244687c81127178cc5207",
-    "closeout_sha": "ff139b46cd765ae8747244687c81127178cc5207"
+    "roadmap_slice_id": "P8.1",
+    "source_commit_sha": "636ae590ba4156deffc73a1d5fc0560ff35fa20c",
+    "closeout_sha": "636ae590ba4156deffc73a1d5fc0560ff35fa20c"
   }
 }

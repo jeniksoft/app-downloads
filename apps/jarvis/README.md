@@ -13,7 +13,7 @@ Aktuálně zde není žádný veřejný instalační balíček ke stažení. Dř
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `P5.1` je veřejně spojen se zdrojovým SHA `ff139b46cd765ae8747244687c81127178cc5207` a closeout SHA `ff139b46cd765ae8747244687c81127178cc5207`. Stav: **verified**.
+Řez `P8.1` je veřejně spojen se zdrojovým SHA `636ae590ba4156deffc73a1d5fc0560ff35fa20c` a closeout SHA `636ae590ba4156deffc73a1d5fc0560ff35fa20c`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -42,7 +42,7 @@ Nejde o instalační balíček ani o prohlášení, že je produkt hotový; při
 **Legenda ikon:** · <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno · <span role="img" title="Evidence: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření." aria-label="Evidence: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření.">🟦</span> Evidence · <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno · <span role="img" title="Plánováno: Stav je plánovaný nebo pouze architektonický; značka není důkaz dokončení." aria-label="Plánováno: Stav je plánovaný nebo pouze architektonický; značka není důkaz dokončení.">⚪</span> Plánováno · <span role="img" title="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch." aria-label="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch.">⛔</span> Blokováno
 Ikona i popisek jsou viditelné přímo v README; po najetí kurzorem tooltip vysvětlí význam a nezaměňuje implementaci za živé ověření.
 
-**Změna od předchozího snapshotu: roadmapa položky +0 · hotovo +1 · ověřené důkazy +1**
+**Změna od předchozího snapshotu: roadmapa položky +0 · hotovo +0 · ověřené důkazy +0**
 
 ![Roadmapa a progress edic Jarvis](visuals/roadmap-editions.svg)
 
@@ -239,7 +239,7 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | <span role="img" title="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Částečně | Personal 1.0.0 · P7 — Supervised self development | `P7.9` | ASM refresh after architecture-affecting candidate | `V2` |
 | <span role="img" title="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Částečně | Personal 1.0.0 · P7 — Supervised self development | `P7.10` | truthful candidate closeout and separate merge authority | `V2` |
 | <span role="img" title="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Částečně | Personal 1.0.0 · P7 — Supervised self development | `P7.11` | multi-run repeatability cohort | `V5` |
-| <span role="img" title="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Částečně | Personal 1.0.0 · P8 — Owner UX observability and release QA | `P8.1` | first-run local-LAN provider setup UX | `V5` |
+| <span role="img" title="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Částečně | Personal 1.0.0 · P8 — Owner UX observability and release QA | `P8.1` | Uživatelské první nastavení lokálního/LAN providera | `V5` |
 | <span role="img" title="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Částečně | Personal 1.0.0 · P8 — Owner UX observability and release QA | `P8.2` | chat-project-attachments baseline UX | `V5` |
 | <span role="img" title="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Částečně | Personal 1.0.0 · P8 — Owner UX observability and release QA | `P8.3` | consequential action confirmation UX | `V5` |
 | <span role="img" title="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Částečně | Personal 1.0.0 · P8 — Owner UX observability and release QA | `P8.4` | typed recovery UX | `V5` |
@@ -495,10 +495,10 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 1 133 | 414 587 | 22.91 |
-| JSON | 313 | 160 218 | 12.37 |
-| Markdown | 796 | 93 994 | 4.83 |
-| Python | 260 | 58 075 | 2.34 |
+| C/C++ | 1 135 | 415 211 | 22.94 |
+| JSON | 313 | 160 267 | 12.37 |
+| Markdown | 797 | 94 174 | 4.84 |
+| Python | 261 | 58 239 | 2.34 |
 | PowerShell | 56 | 25 913 | 1.35 |
 | JSONL | 14 | 2 499 | 6.91 |
 | Plain text | 106 | 1 652 | 0.18 |
@@ -509,9 +509,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **2 717** | **758 333** | **51.02** |
+| **Text/source celkem** | **2 721** | **759 350** | **51.07** |
 | Binární assety (mimo řádky) | 40 | — | 14.65 |
-| **Trackovaný strom celkem** | **2 757** | **758 333** | **65.67** |
+| **Trackovaný strom celkem** | **2 761** | **759 350** | **65.72** |
 
 ### Přírůstek od předchozí revize
 
@@ -519,9 +519,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +1 | +592 | +0.03 |
+| Text/source celkem | +4 | +1017 | +0.05 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +1 | +592 | +0.03 |
+| Trackovaný strom celkem | +4 | +1017 | +0.05 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -690,7 +690,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `88f3487693ab` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `25f5f32f5d1a` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
 | `7883e8524e93` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
 | `2c7febde9e88` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -708,13 +707,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `d0d9dfbc13ae` | 2026-09-01 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `70c1c4841cf3` | 2026-09-01 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `4aa031578700` | 2026-09-01 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | workspace-actions | 1: workspace-actions/memory-provenance-continuity |
+| `9fd5afc42d39` | 2026-09-01 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | owner-ux | 1: owner-ux/first-run-diagnostics |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 30 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 31 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
