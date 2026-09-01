@@ -35,38 +35,38 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 1106,
-        "physical_lines": 405588,
-        "bytes": 25087096,
-        "megabytes": 25.087096
+        "files": 1133,
+        "physical_lines": 414782,
+        "bytes": 25489968,
+        "megabytes": 25.489968
       },
       {
         "language": "JSON",
         "files": 313,
-        "physical_lines": 159203,
-        "bytes": 12148270,
-        "megabytes": 12.14827
+        "physical_lines": 159466,
+        "bytes": 12213858,
+        "megabytes": 12.213858
       },
       {
         "language": "Markdown",
-        "files": 765,
-        "physical_lines": 86541,
-        "bytes": 4462116,
-        "megabytes": 4.462116
+        "files": 783,
+        "physical_lines": 89931,
+        "bytes": 4664640,
+        "megabytes": 4.66464
       },
       {
         "language": "Python",
-        "files": 228,
-        "physical_lines": 52041,
-        "bytes": 2093399,
-        "megabytes": 2.093399
+        "files": 252,
+        "physical_lines": 56404,
+        "bytes": 2266272,
+        "megabytes": 2.266272
       },
       {
         "language": "PowerShell",
-        "files": 55,
-        "physical_lines": 25785,
-        "bytes": 1349127,
-        "megabytes": 1.349127
+        "files": 56,
+        "physical_lines": 25913,
+        "bytes": 1354454,
+        "megabytes": 1.354454
       },
       {
         "language": "JSONL",
@@ -90,18 +90,25 @@
         "megabytes": 0.040746
       },
       {
-        "language": "CMake",
-        "files": 1,
-        "physical_lines": 20,
-        "bytes": 811,
-        "megabytes": 0.000811
+        "language": "Shell",
+        "files": 2,
+        "physical_lines": 501,
+        "bytes": 19368,
+        "megabytes": 0.019368
       },
       {
-        "language": "Shell",
-        "files": 1,
-        "physical_lines": 17,
-        "bytes": 573,
-        "megabytes": 0.000573
+        "language": "CMake",
+        "files": 2,
+        "physical_lines": 100,
+        "bytes": 4750,
+        "megabytes": 0.00475
+      },
+      {
+        "language": "Other text",
+        "files": 11,
+        "physical_lines": 77,
+        "bytes": 3220,
+        "megabytes": 0.00322
       },
       {
         "language": "YAML",
@@ -123,40 +130,33 @@
         "physical_lines": 13,
         "bytes": 523,
         "megabytes": 0.000523
-      },
-      {
-        "language": "Other text",
-        "files": 8,
-        "physical_lines": 9,
-        "bytes": 566,
-        "megabytes": 0.000566
       }
     ],
     "source_text": {
-      "files": 2621,
-      "physical_lines": 734072,
-      "bytes": 52329679,
-      "megabytes": 52.329679
+      "files": 2696,
+      "physical_lines": 752042,
+      "bytes": 53204251,
+      "megabytes": 53.204251
     },
     "binary_assets": {
-      "files": 39,
-      "bytes": 14500340,
-      "megabytes": 14.50034
+      "files": 40,
+      "bytes": 14652514,
+      "megabytes": 14.652514
     },
     "tracked_total": {
-      "files": 2660,
-      "physical_lines": 734072,
-      "bytes": 66830019,
-      "megabytes": 66.830019
+      "files": 2736,
+      "physical_lines": 752042,
+      "bytes": 67856765,
+      "megabytes": 67.856765
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 4,
-        "physical_lines": 1231,
-        "bytes": 62421,
-        "megabytes": 0.062421
+        "files": 1,
+        "physical_lines": 247,
+        "bytes": 10977,
+        "megabytes": 0.010977
       },
       "binary_assets": {
         "files": 0,
@@ -165,14 +165,14 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 4,
-        "physical_lines": 1231,
-        "bytes": 62421,
-        "megabytes": 0.062421
+        "files": 1,
+        "physical_lines": 247,
+        "bytes": 10977,
+        "megabytes": 0.010977
       }
     }
   },
-  "updated_at": "2026-08-31",
+  "updated_at": "2026-09-01",
   "overall_percent": 33.2,
   "primary_percent": 33.2,
   "implementation_complete_percent": 43.75,
@@ -298,7 +298,7 @@
         "chapter_color": "personal",
         "chapter_count": 9,
         "item_count": 99,
-        "completed_item_count": 57
+        "completed_item_count": 68
       },
       {
         "id": "optional",
@@ -627,7 +627,7 @@
         "status_label_en": "In progress",
         "is_complete": false,
         "item_count": 16,
-        "completed_item_count": 14
+        "completed_item_count": 16
       },
       {
         "id": "P5",
@@ -642,7 +642,7 @@
         "status_label_en": "In progress",
         "is_complete": false,
         "item_count": 10,
-        "completed_item_count": 0
+        "completed_item_count": 9
       },
       {
         "id": "P6",
@@ -3316,7 +3316,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "production-complete model continuation enumerator",
+        "description_cs": "Úplný enumerátor pokračování modelu",
         "description_en": "production-complete model continuation enumerator",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -3335,7 +3335,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "long provider requeue live acceptance",
+        "description_cs": "Hranice requeue po odpojení providera",
         "description_en": "long provider requeue live acceptance",
         "status": "partial",
         "status_label_cs": "Částečně",
@@ -3354,7 +3354,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "crash restart fault matrix",
+        "description_cs": "Fault matrix přes hranici procesu",
         "description_en": "crash restart fault matrix",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -3373,7 +3373,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "recovery UI projects typed truth only",
+        "description_cs": "Typovaná projekce recovery UI",
         "description_en": "recovery UI projects typed truth only",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -3392,7 +3392,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "canonical provider endpoint identity",
+        "description_cs": "Kanonická identita endpointu providera",
         "description_en": "canonical provider endpoint identity",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -3411,7 +3411,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "canonical model identity digest revision quantization",
+        "description_cs": "Kanonická identita modelu, digest, revize a kvantizace",
         "description_en": "canonical model identity digest revision quantization",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -3981,13 +3981,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "confirmed app-browser open boundaries",
+        "description_cs": "Potvrzená hranice otevření URL ve výchozím browseru",
         "description_en": "confirmed app-browser open boundaries",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
+        "status_source": "current-evidence",
+        "is_complete": true,
         "verify": "V4",
         "is_slice": true
       },
@@ -4000,13 +4000,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "manifest-declared read-only extension HTTP",
+        "description_cs": "Manifestem deklarované read-only HTTP rozšíření",
         "description_en": "manifest-declared read-only extension HTTP",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V3",
         "is_slice": true
       },
@@ -4019,7 +4019,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "typed general MCP-plugin-app transport with no side effects",
+        "description_cs": "Typovaný transport MCP/plugin/app bez vedlejších účinků",
         "description_en": "typed general MCP-plugin-app transport with no side effects",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -4038,7 +4038,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "read-only extension invocation lifecycle",
+        "description_cs": "Životní cyklus read-only invocation přes WorkerJournal",
         "description_en": "read-only extension invocation lifecycle",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -4057,7 +4057,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "one reversible mutating extension class",
+        "description_cs": "Jedna vratná mutační třída extension",
         "description_en": "one reversible mutating extension class",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -4076,7 +4076,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "result-known-unknown resume lifecycle",
+        "description_cs": "Typovaný lifecycle výsledku executoru a bezpečné resume",
         "description_en": "result-known-unknown resume lifecycle",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -4095,7 +4095,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "workspace action fault matrix",
+        "description_cs": "Matice vad workspace akcí",
         "description_en": "workspace action fault matrix",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -4133,13 +4133,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "fact derivation state machine",
+        "description_cs": "Stavovy automat odvozovani pametovych faktu",
         "description_en": "fact derivation state machine",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V1",
         "is_slice": true
       },
@@ -4152,13 +4152,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "owner correction-retraction events",
+        "description_cs": "Trvale udalosti opravy a odvolani faktu ownerem",
         "description_en": "owner correction-retraction events",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V2",
         "is_slice": true
       },
@@ -4171,13 +4171,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "bounded retrieval index and context pack",
+        "description_cs": "Omezený retrieval index a kontextový balíček",
         "description_en": "bounded retrieval index and context pack",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V2",
         "is_slice": true
       },
@@ -4190,13 +4190,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "current-state freshness gate",
+        "description_cs": "Brána čerstvosti současného stavu",
         "description_en": "current-state freshness gate",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V2",
         "is_slice": true
       },
@@ -4209,13 +4209,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "memory prompt projection cannot replay tasks",
+        "description_cs": "Typovana projekce pameti do promptu bez replay ukolu",
         "description_en": "memory prompt projection cannot replay tasks",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V1",
         "is_slice": true
       },
@@ -4228,13 +4228,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "cross-chat SharedWork evidence integration",
+        "description_cs": "Cross-chat projekce SharedWork nad typovanými důkazy",
         "description_en": "cross-chat SharedWork evidence integration",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V2",
         "is_slice": true
       },
@@ -4247,13 +4247,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "retention-delete-export semantics",
+        "description_cs": "Retention, ownerem autorizované tombstones a přenositelný export",
         "description_en": "retention-delete-export semantics",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V2",
         "is_slice": true
       },
@@ -4266,13 +4266,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "private memory public-provider transfer gate",
+        "description_cs": "Brána přenosu soukromé paměti k veřejnému provideru",
         "description_en": "private memory public-provider transfer gate",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V3",
         "is_slice": true
       },
@@ -4285,13 +4285,13 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "long-context restart continuity dogfood",
+        "description_cs": "Kontinuita dlouhého kontextu po restartu",
         "description_en": "long-context restart continuity dogfood",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
         "verify": "V4",
         "is_slice": true
       },
@@ -9085,7 +9085,7 @@
       }
     ],
     "item_count": 418,
-    "completed_item_count": 143,
+    "completed_item_count": 154,
     "chapter_count": 54,
     "limitations": "Release-gate status is roadmap state, not a percentage. Item ✓ means deterministic implementation/evidence is present; live owner acceptance can remain open. Teams and Enterprise have no active measured evidence track."
   },
@@ -9093,7 +9093,7 @@
     "available": true,
     "previous_date": "2026-08-31",
     "roadmap_items_delta": 0,
-    "roadmap_completed_delta": 1,
+    "roadmap_completed_delta": 11,
     "roadmap_chapters_delta": 0,
     "verified_evidence_delta": 1,
     "metrics_delta": {
@@ -9114,7 +9114,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 24,
+    "incremental_closeout_points_since_full_baseline": 25,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -9133,11 +9133,11 @@
   "milestone_done_percent": 33.2,
   "evidence_summary": {
     "manifest_present": true,
-    "milestone_count": 35,
-    "verified_milestone_count": 14,
-    "verified_evidence_count": 101,
+    "milestone_count": 36,
+    "verified_milestone_count": 15,
+    "verified_evidence_count": 102,
     "state_counts": {
-      "verified-build": 12,
+      "verified-build": 13,
       "partial": 12,
       "open": 7,
       "verified-contract": 2,
@@ -9601,7 +9601,7 @@
           "id": "policy-bound-actions",
           "name_cs": "Policy-bound file/build/test/Git/web akce",
           "name_en": "Policy-bound file/build/test/Git/web actions",
-          "weight_percent": 15.0,
+          "weight_percent": 10.0,
           "state": "verified-build",
           "implementation_percent": 100.0,
           "verified_percent": 75.0,
@@ -9721,6 +9721,31 @@
           ],
           "evidence_summary_cs": "P4.9 má provider-free source guard, nativní receipt self-test a build evidence pro hostitelem vázaný Git commit/push.",
           "open_gap_cs": "Credentialy, provider, živý repozitář, crash/restart a owner acceptance zůstávají samostatnými branami."
+        },
+        {
+          "id": "policy-bound-browser-open-boundaries",
+          "name_cs": "Potvrzená hranice otevření URL v browseru",
+          "name_en": "Confirmed browser-open URL boundary",
+          "weight_percent": 5.0,
+          "state": "verified-build",
+          "implementation_percent": 100.0,
+          "verified_percent": 75.0,
+          "done_percent": 75.0,
+          "evidence_count": 2,
+          "verified_evidence_count": 1,
+          "evidence_kinds": [
+            "runtime",
+            "self-test"
+          ],
+          "verified_evidence_kinds": [
+            "self-test"
+          ],
+          "evidence_statuses": [
+            "open",
+            "verified"
+          ],
+          "evidence_summary_cs": "P4.10 má provider-free kontrolu URL, nativní receipt/self-test a build evidence pro hostitelem řízené předání URL výchozímu browseru.",
+          "open_gap_cs": "WebView2 UI, skutečné síťové načtení, pozorování page-loadu a owner acceptance zůstávají samostatnými branami."
         }
       ]
     },
@@ -33189,6 +33214,42 @@
       },
       "verified_evidence_count": 101,
       "verified_evidence_delta": 1
+    },
+    {
+      "revision": "a7ead34add88",
+      "date": "2026-09-01",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "workspace-actions"
+      ],
+      "changed_milestones": [
+        "workspace-actions/policy-bound-browser-open-boundaries"
+      ],
+      "roadmap": {
+        "item_count": 418,
+        "completed_item_count": 154,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 11,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 102,
+      "verified_evidence_delta": 1
     }
   ],
   "history_contract": {
@@ -33200,8 +33261,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "P4.9",
-    "source_commit_sha": "177ec73fd273f7563c1a5ebf72180bdc33939196",
-    "closeout_sha": "177ec73fd273f7563c1a5ebf72180bdc33939196"
+    "roadmap_slice_id": "P2.2",
+    "source_commit_sha": "f269efa5d67fa1064124c832cab5331a26f8728a",
+    "closeout_sha": "f269efa5d67fa1064124c832cab5331a26f8728a"
   }
 }

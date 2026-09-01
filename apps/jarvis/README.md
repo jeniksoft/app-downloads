@@ -9,11 +9,11 @@ Aktuálně zde není žádný veřejný instalační balíček ke stažení. Dř
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_BEGIN -->
 ## Sledování implementace Personal 1.0.0
 
-**Synchronizovaný snapshot: 2026-08-31**
+**Synchronizovaný snapshot: 2026-09-01**
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `P4.9` je veřejně spojen se zdrojovým SHA `177ec73fd273f7563c1a5ebf72180bdc33939196` a closeout SHA `177ec73fd273f7563c1a5ebf72180bdc33939196`. Stav: **verified**.
+Řez `P2.2` je veřejně spojen se zdrojovým SHA `f269efa5d67fa1064124c832cab5331a26f8728a` a closeout SHA `f269efa5d67fa1064124c832cab5331a26f8728a`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -42,7 +42,7 @@ Nejde o instalační balíček ani o prohlášení, že je produkt hotový; při
 **Legenda ikon:** · <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno · <span role="img" title="Evidence: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření." aria-label="Evidence: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření.">🟦</span> Evidence · <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno · <span role="img" title="Plánováno: Stav je plánovaný nebo pouze architektonický; značka není důkaz dokončení." aria-label="Plánováno: Stav je plánovaný nebo pouze architektonický; značka není důkaz dokončení.">⚪</span> Plánováno · <span role="img" title="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch." aria-label="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch.">⛔</span> Blokováno
 Ikona i popisek jsou viditelné přímo v README; po najetí kurzorem tooltip vysvětlí význam a nezaměňuje implementaci za živé ověření.
 
-**Změna od předchozího snapshotu: roadmapa položky +0 · hotovo +1 · ověřené důkazy +1**
+**Změna od předchozího snapshotu: roadmapa položky +0 · hotovo +11 · ověřené důkazy +1**
 
 ![Roadmapa a progress edic Jarvis](visuals/roadmap-editions.svg)
 
@@ -166,12 +166,12 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.5` | pure safe-resume classifier | `V1` |
 | <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.6` | verify-only resume without mutation replay | `V3` |
 | <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.7` | one tool-specific resume adapter per run | `V3` |
-| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.8` | production-complete model continuation enumerator | `V3` |
-| <span role="img" title="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Částečně | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.9` | long provider requeue live acceptance | `V4` |
-| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.10` | crash restart fault matrix | `V4` |
-| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.11` | recovery UI projects typed truth only | `V5` |
-| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.1` | canonical provider endpoint identity | `V1` |
-| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.2` | canonical model identity digest revision quantization | `V1` |
+| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.8` | Úplný enumerátor pokračování modelu | `V3` |
+| <span role="img" title="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Částečně | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.9` | Hranice requeue po odpojení providera | `V4` |
+| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.10` | Fault matrix přes hranici procesu | `V4` |
+| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.11` | Typovaná projekce recovery UI | `V5` |
+| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.1` | Kanonická identita endpointu providera | `V1` |
+| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.2` | Kanonická identita modelu, digest, revize a kvantizace | `V1` |
 | <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.3` | explicit model capability manifest | `V1` |
 | <span role="img" title="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření." aria-label="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření.">🟦</span> Implementováno; živé ověření čeká | Personal 1.0.0 · P2 — Model and provider reliability | `P2.4` | Typovaný stav health a readiness nad existujícími autoritami | `V2` |
 | <span role="img" title="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Částečně | Personal 1.0.0 · P2 — Model and provider reliability | `P2.5` | owner-facing local and LAN endpoint validation | `V4` |
@@ -201,23 +201,23 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.7` | Allow-listované build/test presety | `V3` |
 | <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.8` | Read-only Git pouze s přesnými hostitelskými argumenty | `V2` |
 | <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.9` | Potvrzený Git commit/push s identitními receipty | `V3` |
-| <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.10` | confirmed app-browser open boundaries | `V4` |
-| <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.11` | manifest-declared read-only extension HTTP | `V3` |
-| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.12` | typed general MCP-plugin-app transport with no side effects | `V2` |
-| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.13` | read-only extension invocation lifecycle | `V3` |
-| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.14` | one reversible mutating extension class | `V4` |
-| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.15` | result-known-unknown resume lifecycle | `V4` |
-| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.16` | workspace action fault matrix | `V4` |
+| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.10` | Potvrzená hranice otevření URL ve výchozím browseru | `V4` |
+| <span role="img" title="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření." aria-label="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření.">🟦</span> Implementováno; živé ověření čeká | Personal 1.0.0 · P4 — Workspace action reliability | `P4.11` | Manifestem deklarované read-only HTTP rozšíření | `V3` |
+| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.12` | Typovaný transport MCP/plugin/app bez vedlejších účinků | `V2` |
+| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.13` | Životní cyklus read-only invocation přes WorkerJournal | `V3` |
+| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.14` | Jedna vratná mutační třída extension | `V4` |
+| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.15` | Typovaný lifecycle výsledku executoru a bezpečné resume | `V4` |
+| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P4 — Workspace action reliability | `P4.16` | Matice vad workspace akcí | `V4` |
 | <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno | Personal 1.0.0 · P5 — Memory and continuity | `P5.1` | immutable memory event schema | `V1` |
-| <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno | Personal 1.0.0 · P5 — Memory and continuity | `P5.2` | fact derivation state machine | `V1` |
-| <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno | Personal 1.0.0 · P5 — Memory and continuity | `P5.3` | owner correction-retraction events | `V2` |
-| <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno | Personal 1.0.0 · P5 — Memory and continuity | `P5.4` | bounded retrieval index and context pack | `V2` |
-| <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno | Personal 1.0.0 · P5 — Memory and continuity | `P5.5` | current-state freshness gate | `V2` |
-| <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno | Personal 1.0.0 · P5 — Memory and continuity | `P5.6` | memory prompt projection cannot replay tasks | `V1` |
-| <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno | Personal 1.0.0 · P5 — Memory and continuity | `P5.7` | cross-chat SharedWork evidence integration | `V2` |
-| <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno | Personal 1.0.0 · P5 — Memory and continuity | `P5.8` | retention-delete-export semantics | `V2` |
-| <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno | Personal 1.0.0 · P5 — Memory and continuity | `P5.9` | private memory public-provider transfer gate | `V3` |
-| <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno | Personal 1.0.0 · P5 — Memory and continuity | `P5.10` | long-context restart continuity dogfood | `V4` |
+| <span role="img" title="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření." aria-label="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření.">🟦</span> Implementováno; živé ověření čeká | Personal 1.0.0 · P5 — Memory and continuity | `P5.2` | Stavovy automat odvozovani pametovych faktu | `V1` |
+| <span role="img" title="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření." aria-label="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření.">🟦</span> Implementováno; živé ověření čeká | Personal 1.0.0 · P5 — Memory and continuity | `P5.3` | Trvale udalosti opravy a odvolani faktu ownerem | `V2` |
+| <span role="img" title="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření." aria-label="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření.">🟦</span> Implementováno; živé ověření čeká | Personal 1.0.0 · P5 — Memory and continuity | `P5.4` | Omezený retrieval index a kontextový balíček | `V2` |
+| <span role="img" title="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření." aria-label="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření.">🟦</span> Implementováno; živé ověření čeká | Personal 1.0.0 · P5 — Memory and continuity | `P5.5` | Brána čerstvosti současného stavu | `V2` |
+| <span role="img" title="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření." aria-label="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření.">🟦</span> Implementováno; živé ověření čeká | Personal 1.0.0 · P5 — Memory and continuity | `P5.6` | Typovana projekce pameti do promptu bez replay ukolu | `V1` |
+| <span role="img" title="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření." aria-label="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření.">🟦</span> Implementováno; živé ověření čeká | Personal 1.0.0 · P5 — Memory and continuity | `P5.7` | Cross-chat projekce SharedWork nad typovanými důkazy | `V2` |
+| <span role="img" title="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření." aria-label="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření.">🟦</span> Implementováno; živé ověření čeká | Personal 1.0.0 · P5 — Memory and continuity | `P5.8` | Retention, ownerem autorizované tombstones a přenositelný export | `V2` |
+| <span role="img" title="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření." aria-label="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření.">🟦</span> Implementováno; živé ověření čeká | Personal 1.0.0 · P5 — Memory and continuity | `P5.9` | Brána přenosu soukromé paměti k veřejnému provideru | `V3` |
+| <span role="img" title="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření." aria-label="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření.">🟦</span> Implementováno; živé ověření čeká | Personal 1.0.0 · P5 — Memory and continuity | `P5.10` | Kontinuita dlouhého kontextu po restartu | `V4` |
 | <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P6 — Secure Support Ticket | `P6.1` | ticket typed state machine | `V1` |
 | <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P6 — Secure Support Ticket | `P6.2` | evidence candidate refs not raw workspace copy | `V1` |
 | <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P6 — Secure Support Ticket | `P6.3` | shared sanitizer integration | `V2` |
@@ -495,23 +495,23 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 1 106 | 405 588 | 25.09 |
-| JSON | 313 | 159 203 | 12.15 |
-| Markdown | 765 | 86 541 | 4.46 |
-| Python | 228 | 52 041 | 2.09 |
-| PowerShell | 55 | 25 785 | 1.35 |
+| C/C++ | 1 133 | 414 782 | 25.49 |
+| JSON | 313 | 159 466 | 12.21 |
+| Markdown | 783 | 89 931 | 4.66 |
+| Python | 252 | 56 404 | 2.27 |
+| PowerShell | 56 | 25 913 | 1.35 |
 | JSONL | 14 | 2 499 | 6.91 |
 | Plain text | 106 | 1 652 | 0.18 |
 | INI | 6 | 675 | 0.04 |
-| CMake | 1 | 20 | 0.00 |
-| Shell | 1 | 17 | 0.00 |
+| Shell | 2 | 501 | 0.02 |
+| CMake | 2 | 100 | 0.00 |
+| Other text | 11 | 77 | 0.00 |
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| Other text | 8 | 9 | 0.00 |
-| **Text/source celkem** | **2 621** | **734 072** | **52.33** |
-| Binární assety (mimo řádky) | 39 | — | 14.50 |
-| **Trackovaný strom celkem** | **2 660** | **734 072** | **66.83** |
+| **Text/source celkem** | **2 696** | **752 042** | **53.20** |
+| Binární assety (mimo řádky) | 40 | — | 14.65 |
+| **Trackovaný strom celkem** | **2 736** | **752 042** | **67.86** |
 
 ### Přírůstek od předchozí revize
 
@@ -519,9 +519,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +4 | +1231 | +0.06 |
+| Text/source celkem | +1 | +247 | +0.01 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +4 | +1231 | +0.06 |
+| Trackovaný strom celkem | +1 | +247 | +0.01 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -580,6 +580,7 @@ flowchart LR
 | Workspace/actions | Allow-listované build/test presety | `verified-build` | P4.7 má provider-free source guard, nativní self-test a build evidence pro uzavřený registr workspace build/test presetů.; mezera: Živý provider, model, workspace, dlouhý build/test běh a owner acceptance zůstávají samostatnými branami.; typy: runtime, self-test |
 | Workspace/actions | Read-only Git s přesnými hostitelskými argumenty | `verified-build` | P4.8 má provider-free source guard, nativní self-test a build evidence pro uzavřený registr read-only Git argumentů.; mezera: Provider, model, síť, živý workspace a owner acceptance zůstávají samostatnými branami; síťový fetch není povolen.; typy: runtime, self-test |
 | Workspace/actions | Potvrzený Git commit/push s identitními receipty | `verified-build` | P4.9 má provider-free source guard, nativní receipt self-test a build evidence pro hostitelem vázaný Git commit/push.; mezera: Credentialy, provider, živý repozitář, crash/restart a owner acceptance zůstávají samostatnými branami.; typy: runtime, self-test |
+| Workspace/actions | Potvrzená hranice otevření URL v browseru | `verified-build` | P4.10 má provider-free kontrolu URL, nativní receipt/self-test a build evidence pro hostitelem řízené předání URL výchozímu browseru.; mezera: WebView2 UI, skutečné síťové načtení, pozorování page-loadu a owner acceptance zůstávají samostatnými branami.; typy: runtime, self-test |
 | Extensions | Registry a discovery rozšíření | `partial` | Kontrakt discovery a capability boundary existují, ale P7 je owner-approved pouze early.; mezera: Chybí uzavřená registrace/discovery lifecycle evidence pro obecné extension typy.; typy: contract, release-gate |
 | Extensions | Capability center a permission profily | `contract-only` | Permission model je architektonicky popsaný; kompletní current runtime evidence chybí.; mezera: Dodat implementovaný UI/runtime flow, persistence a negative-path self-tests.; typy: documentation |
 | Extensions | Read-only connector preview | `contract-only` | Read-only preview je součástí roadmapového směru, ne uzavřený universal connector proof.; mezera: Dodat konkrétní connector fixture, source identity, permission review a ověřený render.; typy: roadmap |
@@ -641,42 +642,44 @@ flowchart TD
     G28M5 --> G28M6
     G28M7[Potvrzený Git commit/push s identitními receipty<br/>verified-build]
     G28M6 --> G28M7
-    G43[Extensions]
-    G43M1[Registry a discovery rozšíření<br/>partial]
-    G43 --> G43M1
-    G43M2[Capability center a permission profily<br/>contract-only]
-    G43M1 --> G43M2
-    G43M3[Read-only connector preview<br/>contract-only]
-    G43M2 --> G43M3
-    G43M4[Install/update/disable lifecycle rozšíření<br/>open]
-    G43M3 --> G43M4
-    G52[Executor]
-    G52M1[Typed executor scopes a stream lifecycle<br/>verified-contract]
-    G52 --> G52M1
-    G52M2[Policy, audit, resume a fail-closed executor<br/>partial]
-    G52M1 --> G52M2
-    G52M3[MCP/plugin/app result lifecycle<br/>partial]
-    G52M2 --> G52M3
-    G52M4[Live external integration a resume acceptance<br/>open]
-    G52M3 --> G52M4
-    G61[UX/support]
-    G61M1[First-run, setup a diagnostics<br/>partial]
-    G61 --> G61M1
-    G61M2[Failure/recovery a ticket UI<br/>partial]
-    G61M1 --> G61M2
-    G61M3[Jazyk, lokalizace a accessibility quality<br/>partial]
-    G61M2 --> G61M3
-    G61M4[Owner-facing live QA<br/>open]
-    G61M3 --> G61M4
-    G70[QA/dogfood]
-    G70M1[Contract/self-test gates<br/>verified-build]
-    G70 --> G70M1
-    G70M2[Deterministic dogfood a regression fixtures<br/>partial]
-    G70M1 --> G70M2
-    G70M3[Reálný hardware/configuration matrix<br/>open]
-    G70M2 --> G70M3
-    G70M4[Release acceptance pack a bezpečnostní audit<br/>open]
-    G70M3 --> G70M4
+    G28M8[Potvrzená hranice otevření URL v browseru<br/>verified-build]
+    G28M7 --> G28M8
+    G45[Extensions]
+    G45M1[Registry a discovery rozšíření<br/>partial]
+    G45 --> G45M1
+    G45M2[Capability center a permission profily<br/>contract-only]
+    G45M1 --> G45M2
+    G45M3[Read-only connector preview<br/>contract-only]
+    G45M2 --> G45M3
+    G45M4[Install/update/disable lifecycle rozšíření<br/>open]
+    G45M3 --> G45M4
+    G54[Executor]
+    G54M1[Typed executor scopes a stream lifecycle<br/>verified-contract]
+    G54 --> G54M1
+    G54M2[Policy, audit, resume a fail-closed executor<br/>partial]
+    G54M1 --> G54M2
+    G54M3[MCP/plugin/app result lifecycle<br/>partial]
+    G54M2 --> G54M3
+    G54M4[Live external integration a resume acceptance<br/>open]
+    G54M3 --> G54M4
+    G63[UX/support]
+    G63M1[First-run, setup a diagnostics<br/>partial]
+    G63 --> G63M1
+    G63M2[Failure/recovery a ticket UI<br/>partial]
+    G63M1 --> G63M2
+    G63M3[Jazyk, lokalizace a accessibility quality<br/>partial]
+    G63M2 --> G63M3
+    G63M4[Owner-facing live QA<br/>open]
+    G63M3 --> G63M4
+    G72[QA/dogfood]
+    G72M1[Contract/self-test gates<br/>verified-build]
+    G72 --> G72M1
+    G72M2[Deterministic dogfood a regression fixtures<br/>partial]
+    G72M1 --> G72M2
+    G72M3[Reálný hardware/configuration matrix<br/>open]
+    G72M2 --> G72M3
+    G72M4[Release acceptance pack a bezpečnostní audit<br/>open]
+    G72M3 --> G72M4
 ```
 
 Detailní privátní zdrojové cesty, receipts a owner-specific data zůstávají v CPM evidence manifestu.
@@ -687,7 +690,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `381c2ae960df` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `1a59e6d698c4` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `649f6b86ebbf` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `0af265525a47` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -705,13 +707,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `9907e7d7ee73` | 2026-08-31 | +0.35 | +0.00 | +0.35 | +0.35 | +0.00 | workspace-actions | 1: workspace-actions/policy-bound-build-test-presets |
 | `ab4f83f72c35` | 2026-08-31 | +0.35 | +0.00 | +0.35 | +0.35 | +0.00 | workspace-actions | 1: workspace-actions/policy-bound-readonly-git-exact-args |
 | `6ed157b03cc1` | 2026-08-31 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | workspace-actions | 1: workspace-actions/policy-bound-git-identity-receipts |
+| `a7ead34add88` | 2026-09-01 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | workspace-actions | 1: workspace-actions/policy-bound-browser-open-boundaries |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 24 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 25 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
