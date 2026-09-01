@@ -13,7 +13,7 @@ Aktuálně zde není žádný veřejný instalační balíček ke stažení. Dř
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `P2.2` je veřejně spojen se zdrojovým SHA `f269efa5d67fa1064124c832cab5331a26f8728a` a closeout SHA `f269efa5d67fa1064124c832cab5331a26f8728a`. Stav: **verified**.
+Řez `P2.3` je veřejně spojen se zdrojovým SHA `963575f9e44b5aa79bafce87f9d082a53d71e0ac` a closeout SHA `963575f9e44b5aa79bafce87f9d082a53d71e0ac`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -42,7 +42,7 @@ Nejde o instalační balíček ani o prohlášení, že je produkt hotový; při
 **Legenda ikon:** · <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno · <span role="img" title="Evidence: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření." aria-label="Evidence: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření.">🟦</span> Evidence · <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno · <span role="img" title="Plánováno: Stav je plánovaný nebo pouze architektonický; značka není důkaz dokončení." aria-label="Plánováno: Stav je plánovaný nebo pouze architektonický; značka není důkaz dokončení.">⚪</span> Plánováno · <span role="img" title="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch." aria-label="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch.">⛔</span> Blokováno
 Ikona i popisek jsou viditelné přímo v README; po najetí kurzorem tooltip vysvětlí význam a nezaměňuje implementaci za živé ověření.
 
-**Změna od předchozího snapshotu: roadmapa položky +0 · hotovo +11 · ověřené důkazy +1**
+**Změna od předchozího snapshotu: roadmapa položky +0 · hotovo +0 · ověřené důkazy +0**
 
 ![Roadmapa a progress edic Jarvis](visuals/roadmap-editions.svg)
 
@@ -172,7 +172,7 @@ Tato tabulka obsahuje všechny veřejné položky kanonické roadmapy. Barevné 
 | <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P1 — Recovery and durable execution | `P1.11` | Typovaná projekce recovery UI | `V5` |
 | <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.1` | Kanonická identita endpointu providera | `V1` |
 | <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.2` | Kanonická identita modelu, digest, revize a kvantizace | `V1` |
-| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.3` | explicit model capability manifest | `V1` |
+| <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno | Personal 1.0.0 · P2 — Model and provider reliability | `P2.3` | Explicitní manifest schopností modelu | `V1` |
 | <span role="img" title="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření." aria-label="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření.">🟦</span> Implementováno; živé ověření čeká | Personal 1.0.0 · P2 — Model and provider reliability | `P2.4` | Typovaný stav health a readiness nad existujícími autoritami | `V2` |
 | <span role="img" title="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Částečně: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Částečně | Personal 1.0.0 · P2 — Model and provider reliability | `P2.5` | owner-facing local and LAN endpoint validation | `V4` |
 | <span role="img" title="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření." aria-label="Implementováno; živé ověření čeká: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření.">🟦</span> Implementováno; živé ověření čeká | Personal 1.0.0 · P2 — Model and provider reliability | `P2.6` | download install readiness and durable cancel-resume | `V3` |
@@ -496,9 +496,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
 | C/C++ | 1 133 | 414 782 | 25.49 |
-| JSON | 313 | 159 466 | 12.21 |
-| Markdown | 783 | 89 931 | 4.66 |
-| Python | 252 | 56 404 | 2.27 |
+| JSON | 313 | 159 469 | 12.22 |
+| Markdown | 783 | 89 963 | 4.67 |
+| Python | 253 | 56 605 | 2.27 |
 | PowerShell | 56 | 25 913 | 1.35 |
 | JSONL | 14 | 2 499 | 6.91 |
 | Plain text | 106 | 1 652 | 0.18 |
@@ -509,9 +509,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **2 696** | **752 042** | **53.20** |
+| **Text/source celkem** | **2 697** | **752 278** | **53.22** |
 | Binární assety (mimo řádky) | 40 | — | 14.65 |
-| **Trackovaný strom celkem** | **2 736** | **752 042** | **67.86** |
+| **Trackovaný strom celkem** | **2 737** | **752 278** | **67.87** |
 
 ### Přírůstek od předchozí revize
 
@@ -519,9 +519,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +1 | +247 | +0.01 |
+| Text/source celkem | +1 | +236 | +0.01 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +1 | +247 | +0.01 |
+| Trackovaný strom celkem | +1 | +236 | +0.01 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -690,7 +690,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `1a59e6d698c4` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `649f6b86ebbf` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `0af265525a47` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `de33f44a06ff` | 2026-08-27 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -708,13 +707,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `ab4f83f72c35` | 2026-08-31 | +0.35 | +0.00 | +0.35 | +0.35 | +0.00 | workspace-actions | 1: workspace-actions/policy-bound-readonly-git-exact-args |
 | `6ed157b03cc1` | 2026-08-31 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | workspace-actions | 1: workspace-actions/policy-bound-git-identity-receipts |
 | `a7ead34add88` | 2026-09-01 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | workspace-actions | 1: workspace-actions/policy-bound-browser-open-boundaries |
+| `b328435fe17f` | 2026-09-01 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 25 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 26 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
