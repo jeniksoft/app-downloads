@@ -36,30 +36,30 @@
       {
         "language": "C/C++",
         "files": 1133,
-        "physical_lines": 414782,
-        "bytes": 25489968,
-        "megabytes": 25.489968
+        "physical_lines": 414285,
+        "bytes": 22897740,
+        "megabytes": 22.89774
       },
       {
         "language": "JSON",
         "files": 313,
-        "physical_lines": 159473,
-        "bytes": 12218236,
-        "megabytes": 12.218236
+        "physical_lines": 160197,
+        "bytes": 12362861,
+        "megabytes": 12.362861
       },
       {
         "language": "Markdown",
-        "files": 783,
-        "physical_lines": 90039,
-        "bytes": 4670836,
-        "megabytes": 4.670836
+        "files": 792,
+        "physical_lines": 92465,
+        "bytes": 4771637,
+        "megabytes": 4.771637
       },
       {
         "language": "Python",
-        "files": 255,
-        "physical_lines": 57129,
-        "bytes": 2295154,
-        "megabytes": 2.295154
+        "files": 259,
+        "physical_lines": 57912,
+        "bytes": 2331080,
+        "megabytes": 2.33108
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 2699,
-      "physical_lines": 752882,
-      "bytes": 53243707,
-      "megabytes": 53.243707
+      "files": 2712,
+      "physical_lines": 756318,
+      "bytes": 50932831,
+      "megabytes": 50.932831
     },
     "binary_assets": {
       "files": 40,
@@ -144,19 +144,19 @@
       "megabytes": 14.652514
     },
     "tracked_total": {
-      "files": 2739,
-      "physical_lines": 752882,
-      "bytes": 67896221,
-      "megabytes": 67.896221
+      "files": 2752,
+      "physical_lines": 756318,
+      "bytes": 65585345,
+      "megabytes": 65.585345
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 1,
-        "physical_lines": 338,
-        "bytes": 16249,
-        "megabytes": 0.016249
+        "files": 0,
+        "physical_lines": 16,
+        "bytes": 1268,
+        "megabytes": 0.001268
       },
       "binary_assets": {
         "files": 0,
@@ -165,10 +165,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 1,
-        "physical_lines": 338,
-        "bytes": 16249,
-        "megabytes": 0.016249
+        "files": 0,
+        "physical_lines": 16,
+        "bytes": 1268,
+        "megabytes": 0.001268
       }
     }
   },
@@ -3183,7 +3183,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "read-only durable state ownership map",
+        "description_cs": "Mapa vlastnictví trvalého stavu pouze pro čtení",
         "description_en": "read-only durable state ownership map",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -3202,7 +3202,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "typed resume phase vocabulary",
+        "description_cs": "Typovaný slovník fáze obnovení",
         "description_en": "typed resume phase vocabulary",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -3221,7 +3221,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "precondition snapshot before consequential step",
+        "description_cs": "Snapshot před podstatným krokem",
         "description_en": "precondition snapshot before consequential step",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -3240,7 +3240,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "post-mutation checkpoint with before-after digest",
+        "description_cs": "Checkpoint po mutaci s digesty před a po",
         "description_en": "post-mutation checkpoint with before-after digest",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -3259,7 +3259,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "pure safe-resume classifier",
+        "description_cs": "Čistý klasifikátor bezpečného obnovení",
         "description_en": "pure safe-resume classifier",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -3278,7 +3278,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "verify-only resume without mutation replay",
+        "description_cs": "Verify-only obnovení bez replaye mutace",
         "description_en": "verify-only resume without mutation replay",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -3297,7 +3297,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "one tool-specific resume adapter per run",
+        "description_cs": "Jeden nástrojový resume adaptér na běh",
         "description_en": "one tool-specific resume adapter per run",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -3487,7 +3487,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "download install readiness and durable cancel-resume",
+        "description_cs": "Připravenost instalace a trvalé pokračování stahování po zrušení",
         "description_en": "download install readiness and durable cancel-resume",
         "status": "implementation-complete",
         "status_label_cs": "Implementováno; živé ověření čeká",
@@ -3601,7 +3601,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "current request authority regression",
+        "description_cs": "Regresní ochrana autority aktuálního požadavku",
         "description_en": "current request authority regression",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -3791,7 +3791,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "multimedia and ambiguous input authority gate",
+        "description_cs": "Brána autority multimédií a nejasného vstupu",
         "description_en": "multimedia and ambiguous input authority gate",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -9114,7 +9114,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 28,
+    "incremental_closeout_points_since_full_baseline": 29,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -33352,6 +33352,40 @@
       },
       "verified_evidence_count": 102,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "70c1c4841cf3",
+      "date": "2026-09-01",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 418,
+        "completed_item_count": 154,
+        "chapter_count": 54
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 102,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -33363,8 +33397,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "P2.5",
-    "source_commit_sha": "1b1655a04964761a914e7140d98a54702936daf7",
-    "closeout_sha": "1b1655a04964761a914e7140d98a54702936daf7"
+    "roadmap_slice_id": "P8.8",
+    "source_commit_sha": "a7341c9b946be7b12315aed1849e4eb4b30f99cf",
+    "closeout_sha": "67947756e4b65d9a0f771aa906af08435beead5c"
   }
 }
