@@ -43,23 +43,23 @@
       {
         "language": "JSON",
         "files": 314,
-        "physical_lines": 164810,
-        "bytes": 12629914,
-        "megabytes": 12.629914
+        "physical_lines": 164816,
+        "bytes": 12634186,
+        "megabytes": 12.634186
       },
       {
         "language": "Markdown",
         "files": 800,
-        "physical_lines": 95345,
-        "bytes": 4913093,
-        "megabytes": 4.913093
+        "physical_lines": 95374,
+        "bytes": 4914899,
+        "megabytes": 4.914899
       },
       {
         "language": "Python",
         "files": 265,
-        "physical_lines": 59739,
-        "bytes": 2411176,
-        "megabytes": 2.411176
+        "physical_lines": 59752,
+        "bytes": 2411747,
+        "megabytes": 2.411747
       },
       {
         "language": "PowerShell",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 2741,
-      "physical_lines": 772469,
-      "bytes": 51733495,
-      "megabytes": 51.733495
+      "physical_lines": 772517,
+      "bytes": 51740144,
+      "megabytes": 51.740144
     },
     "binary_assets": {
       "files": 40,
@@ -145,18 +145,18 @@
     },
     "tracked_total": {
       "files": 2781,
-      "physical_lines": 772469,
-      "bytes": 66339797,
-      "megabytes": 66.339797
+      "physical_lines": 772517,
+      "bytes": 66346446,
+      "megabytes": 66.346446
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 4,
-        "physical_lines": 578,
-        "bytes": 28208,
-        "megabytes": 0.028208
+        "files": 0,
+        "physical_lines": 48,
+        "bytes": 6649,
+        "megabytes": 0.006649
       },
       "binary_assets": {
         "files": 0,
@@ -165,10 +165,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 4,
-        "physical_lines": 578,
-        "bytes": 28208,
-        "megabytes": 0.028208
+        "files": 0,
+        "physical_lines": 48,
+        "bytes": 6649,
+        "megabytes": 0.006649
       }
     }
   },
@@ -313,9 +313,9 @@
         "chapter_color": "optional",
         "chapter_count": 9,
         "item_count": 86,
-        "completed_item_count": 22,
-        "completion_percent": 25.58,
-        "status_percent": 31.98
+        "completed_item_count": 23,
+        "completion_percent": 26.74,
+        "status_percent": 32.85
       },
       {
         "id": "teams",
@@ -899,9 +899,9 @@
         "status_source": "child-items",
         "is_complete": false,
         "item_count": 21,
-        "completed_item_count": 15,
-        "completion_percent": 71.43,
-        "status_percent": 78.57
+        "completed_item_count": 16,
+        "completion_percent": 76.19,
+        "status_percent": 82.14
       },
       {
         "id": "OP5",
@@ -7002,13 +7002,13 @@
         "chapter_color": "optional",
         "description_cs": "Deterministický český předpřihlašovací poradce bez generativního modelu, autority intentu a Core handoffu",
         "description_en": "deterministic Czech pre-login advisor without generative model, intent authority or Core handoff",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "verify": "V3",
         "is_slice": true
       },
@@ -14679,10 +14679,10 @@
       }
     ],
     "item_count": 616,
-    "completed_item_count": 167,
+    "completed_item_count": 168,
     "chapter_count": 73,
-    "completion_percent": 27.11,
-    "status_percent": 31.94,
+    "completion_percent": 27.27,
+    "status_percent": 32.06,
     "status_percent_contract": {
       "kind": "categorical-state-display",
       "label_cs": "Stav položky",
@@ -14729,7 +14729,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 46,
+    "incremental_closeout_points_since_full_baseline": 47,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -39585,6 +39585,40 @@
       },
       "verified_evidence_count": 103,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "95d538f2a736",
+      "date": "2026-09-02",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 616,
+        "completed_item_count": 168,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 103,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -39596,8 +39630,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP4.13",
-    "source_commit_sha": "0c2a981feb41f5adf43f68d9fd58b23630381ee9",
-    "closeout_sha": "f1f778169a98ae43e1affd907b98ac344dc13de5"
+    "roadmap_slice_id": "OP4.14.2",
+    "source_commit_sha": "f1f778169a98ae43e1affd907b98ac344dc13de5",
+    "closeout_sha": "43a5a227a0dedcc13c8ccaf7d118c939180e061a"
   }
 }
