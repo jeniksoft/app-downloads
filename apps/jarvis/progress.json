@@ -43,9 +43,9 @@
       {
         "language": "JSON",
         "files": 314,
-        "physical_lines": 164735,
-        "bytes": 12601656,
-        "megabytes": 12.601656
+        "physical_lines": 164773,
+        "bytes": 12623718,
+        "megabytes": 12.623718
       },
       {
         "language": "Markdown",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 2735,
-      "physical_lines": 771471,
-      "bytes": 51661431,
-      "megabytes": 51.661431
+      "physical_lines": 771509,
+      "bytes": 51683493,
+      "megabytes": 51.683493
     },
     "binary_assets": {
       "files": 40,
@@ -145,18 +145,18 @@
     },
     "tracked_total": {
       "files": 2775,
-      "physical_lines": 771471,
-      "bytes": 66267733,
-      "megabytes": 66.267733
+      "physical_lines": 771509,
+      "bytes": 66289795,
+      "megabytes": 66.289795
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 448,
-        "bytes": 27238,
-        "megabytes": 0.027238
+        "physical_lines": 38,
+        "bytes": 22062,
+        "megabytes": 0.022062
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 448,
-        "bytes": 27238,
-        "megabytes": 0.027238
+        "physical_lines": 38,
+        "bytes": 22062,
+        "megabytes": 0.022062
       }
     }
   },
@@ -4598,7 +4598,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "ticket typed state machine",
+        "description_cs": "Typovaný stavový automat podpůrného ticketu",
         "description_en": "ticket typed state machine",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -4617,7 +4617,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "evidence candidate refs not raw workspace copy",
+        "description_cs": "Reference kandidátů evidence bez kopie workspace",
         "description_en": "evidence candidate refs not raw workspace copy",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -4636,7 +4636,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "shared sanitizer integration",
+        "description_cs": "Integrace sdílené sanitizační hranice",
         "description_en": "shared sanitizer integration",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -4655,7 +4655,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "local protected draft store",
+        "description_cs": "Chráněné lokální úložiště draftu",
         "description_en": "local protected draft store",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -4674,7 +4674,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "owner evidence selection review",
+        "description_cs": "Owner review výběru evidence",
         "description_en": "owner evidence selection review",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -4693,7 +4693,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "immutable prepared manifest digest",
+        "description_cs": "Immutable digest připraveného manifestu",
         "description_en": "immutable prepared manifest digest",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -4712,7 +4712,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "local export package without network",
+        "description_cs": "Lokální exportní balíček bez sítě",
         "description_en": "local export package without network",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -4731,7 +4731,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "untrusted ticket import reproduction intake",
+        "description_cs": "Quarantine příjmu nedůvěryhodné reprodukce ticketu",
         "description_en": "untrusted ticket import reproduction intake",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -4750,7 +4750,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "confirmed bug to regression lineage",
+        "description_cs": "Lineage od potvrzené chyby k regresi",
         "description_en": "confirmed bug to regression lineage",
         "status": "verified",
         "status_label_cs": "Ověřeno",
@@ -4769,7 +4769,7 @@
         "group_name_cs": "Personal 1.0.0",
         "group_name_en": "Personal 1.0.0",
         "chapter_color": "personal",
-        "description_cs": "network backend deferred separate capability",
+        "description_cs": "Síťový backend odložený jako oddělená capability",
         "description_en": "network backend deferred separate capability",
         "status": "in-progress",
         "status_label_cs": "Rozpracováno",
@@ -13170,7 +13170,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 41,
+    "incremental_closeout_points_since_full_baseline": 42,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -37856,6 +37856,40 @@
       },
       "verified_evidence_count": 103,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "faf18ba4fc7d",
+      "date": "2026-09-02",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 616,
+        "completed_item_count": 166,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 103,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -37867,8 +37901,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP1.4.2.queued-job-actions",
-    "source_commit_sha": "432d83c5557c533a86f9409a8cf22979d4348a77",
-    "closeout_sha": "d005cc50f2af8d88a609b1edc570f4017866f3a5"
+    "roadmap_slice_id": "P6.1",
+    "source_commit_sha": "256e5a9f17584c19eff28b9246c4b2b47daefdfb",
+    "closeout_sha": "1bdc5dd1021fcf363f250336b81b8c020413e620"
   }
 }
