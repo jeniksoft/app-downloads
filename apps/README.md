@@ -23,3 +23,5 @@ Tabulky zkracují SHA-256 kvůli čitelnosti. Plný hash je v app `update.json` 
 ## Ve Vývoji
 
 `Jarvis` je interní codename připravovaného projektu, nikoli finální produktový název. Cílem je bezplatná verze **Personal 1.0.0**, která bude zveřejněna pod jiným názvem. Aktuální stav je na stránce [Project codename: Jarvis](jarvis/README.md).
+
+`Planetopia` je interní označení nové verze pluginu ve vývoji pro Unreal Engine 5.8. Aktuální veřejný report s českou částí a anglickým fallbackem je na stránce [Planetopia – vývojový report](planetopia/README.md). Nejde o veřejný download ani o prohlášení, že je produkt hotový.

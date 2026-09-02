@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "project_codename": "Planetopia",
+  "report_locale": "cs-CZ",
+  "fallback_locale": "en",
+  "entries": [
+    {
+      "snapshot_date": "2026-09-02",
+      "status": "in-progress",
+      "release_ready": false,
+      "changed_areas": [
+        "first-generation-and-repeat-play",
+        "dynamic-mesh-collision-retry",
+        "fail-closed-async-shutdown",
+        "fab-safe-public-report"
+      ],
+      "evidence_summary": "UE 5.8 build and bounded RHI runs are clean of fatal/assert/GPU signatures, while WorldCurrent, PCG instances, visual quality and release packaging remain open."
+    }
+  ]
+}

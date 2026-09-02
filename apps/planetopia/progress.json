@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "project_codename": "Planetopia",
+  "codename_is_not_final_product_name": true,
+  "report_locale": "cs-CZ",
+  "fallback_locale": "en",
+  "snapshot_date": "2026-09-02",
+  "target_engine": "Unreal Engine 5.8",
+  "target_result": "plugin-only single-planet sample and full demo",
+  "download_available": false,
+  "release_ready": false,
+  "status": "in-progress",
+  "measurement": {
+    "mode": "evidence-gated",
+    "numeric_progress": null,
+    "reason": "No public weighted score is used until runtime, visual and packaging evidence share one reproducible acceptance contract.",
+    "rules": [
+      "A build does not prove live runtime behavior.",
+      "Implemented code does not prove visual or cooked acceptance.",
+      "A roadmap item cannot raise release readiness without its stated evidence.",
+      "Unknown or failed gates remain open rather than being converted into a percentage."
+    ]
+  },
+  "compatibility": {
+    "old_version": "Planetopia v3.1.4",
+    "old_engine": "Unreal Engine 5.4",
+    "old_version_status": "frozen-unsupported",
+    "old_version_in_release_scope": false
+  },
+  "roadmap": [
+    {"id":"R0","area":"first-generation-and-repeat-play","status":"in-progress","verification":"bootstrap and repeated RHI generation exist; PIE, collision-ready and PCG handoff remain open"},
+    {"id":"R1","area":"editable-sample","status":"in-progress","verification":"replacement slots and fake inputs exist; unified drag-and-drop UX remains open"},
+    {"id":"R2","area":"formats-projection-tiling-noise","status":"planned","verification":"import matrix and close-up seam/noise QA remain open"},
+    {"id":"R3","area":"sphere-map-ground-height-alignment","status":"planned","verification":"orbit-to-ground landmark regression remains open"},
+    {"id":"R4","area":"lod-streaming-multiple-planets-lighting","status":"evidence-open","verification":"stale collision retry exists; WorldCurrent and smooth transition gates remain open"},
+    {"id":"R5","area":"atmosphere-clouds-gas-planets","status":"partial","verification":"building blocks exist; integrated visual and cooked proof remains open"},
+    {"id":"R6","area":"water-buoyancy-wake","status":"planned","verification":"sampler, buoyancy, ripple/wake/foam and gameplay proof remain open"},
+    {"id":"R7","area":"snow-sand-gravel-lava-tracks","status":"planned","verification":"budgeted local interaction layers remain open"},
+    {"id":"R8","area":"foliage-and-biome-catalog","status":"scaffold-unverified","verification":"Fab-safe scaffold exists; runtime instances and visual review remain open"},
+    {"id":"R9","area":"packaging-and-release","status":"blocked-by-gates","verification":"cooked demo and final release evidence wait for R0, R4 and R8"}
+  ],
+  "evidence": {
+    "ue58_editor_build": "passed",
+    "targeted_rhi_run": "passed-with-open-gates",
+    "repeat_rhi_smoke": "passed-after-dynamic-mesh-guard",
+    "stale_collision_retry": "observed-but-world-current-not-accepted",
+    "pcg_instances": "not-demonstrated",
+    "fresh_visual_screenshot": "insufficient",
+    "fab_safe_texture_swatches": 63,
+    "fab_safe_texture_dimensions": "16x16",
+    "redistributable_demo_asset_boundary": "self-authored-mockups-and-replaceable-flat-textures-only"
+  },
+  "public_boundary": {
+    "contains_private_source_paths": false,
+    "contains_local_logs": false,
+    "contains_unreal_binary_assets": false,
+    "contains_restricted_demo_assets": false,
+    "is_download": false
+  }
+}

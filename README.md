@@ -24,6 +24,8 @@ Tabulky zkracují SHA-256 kvůli čitelnosti. Plný hash je vždy v `update.json
 
 Dřívější veřejné vývojové a beta buildy byly z aktuálního download kanálu odstraněny. Aktuální veřejný progress report je na stránce [Project codename: Jarvis](apps/jarvis/README.md).
 
+**Planetopia** je interní označení nové verze pluginu ve vývoji pro Unreal Engine 5.8. Aktuální veřejný, česky vedený report s anglickým fallbackem je na stránce [Planetopia – vývojový report](apps/planetopia/README.md). Nejde o instalační balíček ani o hotové vydání.
+
 ## Update Manifest
 
 Každá aplikace, která umí kontrolu aktualizací přímo v aplikaci, musí mít ve své složce `update.json`. Manifest je veřejný kontrakt pro aplikaci i uživatele a musí popisovat přesně poslední publikovaný setup.
