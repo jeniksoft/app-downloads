@@ -1,12 +1,12 @@
-# VeraCrypt Startup Mount
+# Codex VeraCrypt Startup Mount
 
 Malá Windows tray utilita pro lokální mount jednoho nebo více VeraCrypt svazků po přihlášení uživatele.
 
 ## Stažení
 
-* Verze: `1.0.181`
+* Verze: `1.0.182`
 * Setup: [VeraCryptStartupMountSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe)
-* SHA-256: `C59C9C208A3AEBD40E5B28375B443513BA070902FF12419A7A078256AB563C44`
+* SHA-256: `F795829C369026C28A81EB70893F6100FB75DB14586DA0545BA1801D374ADA9A`
 * Update manifest: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -63,3 +63,8 @@ Od verze `1.0.1` má appka srovnaný veřejný ADPU manifestový základ: build 
 ## Změny verze 1.0.181
 
 Aktualizovana integrace VC na aktualni skin-aware WDUi konstrukci a opraven release wrapper pro UI Automation a vizualizacni/media moduly; odstraneny zbyvajici legacy selection, chrome, popup, click a command wrappers; setup je sestaven z aktualniho CPM/WDUi zakladu.
+
+## ZmÄ›ny verze 1.0.182
+
+Opraveno chování okna VeraCrypt Startup Mount při výchozí velikosti, změně velikosti, maximalizaci a obnovení; layout zůstává konzistentní a ovládání maximalizace i výchozí velikosti je dostupné.
+
