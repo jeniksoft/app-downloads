@@ -36,37 +36,37 @@
       {
         "language": "C/C++",
         "files": 1147,
-        "physical_lines": 420896,
-        "bytes": 23199084,
-        "megabytes": 23.199084
+        "physical_lines": 421021,
+        "bytes": 22887972,
+        "megabytes": 22.887972
       },
       {
         "language": "JSON",
-        "files": 314,
-        "physical_lines": 164869,
-        "bytes": 12641568,
-        "megabytes": 12.641568
+        "files": 318,
+        "physical_lines": 165269,
+        "bytes": 12667290,
+        "megabytes": 12.66729
       },
       {
         "language": "Markdown",
-        "files": 800,
-        "physical_lines": 95455,
-        "bytes": 4919245,
-        "megabytes": 4.919245
+        "files": 804,
+        "physical_lines": 95812,
+        "bytes": 4938357,
+        "megabytes": 4.938357
       },
       {
         "language": "Python",
         "files": 265,
-        "physical_lines": 59871,
-        "bytes": 2417017,
-        "megabytes": 2.417017
+        "physical_lines": 60006,
+        "bytes": 2422776,
+        "megabytes": 2.422776
       },
       {
         "language": "PowerShell",
         "files": 56,
-        "physical_lines": 26136,
-        "bytes": 1365721,
-        "megabytes": 1.365721
+        "physical_lines": 26144,
+        "bytes": 1366552,
+        "megabytes": 1.366552
       },
       {
         "language": "JSONL",
@@ -77,10 +77,10 @@
       },
       {
         "language": "Plain text",
-        "files": 106,
-        "physical_lines": 1652,
-        "bytes": 179552,
-        "megabytes": 0.179552
+        "files": 110,
+        "physical_lines": 1681,
+        "bytes": 182012,
+        "megabytes": 0.182012
       },
       {
         "language": "INI",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 2741,
-      "physical_lines": 772786,
-      "bytes": 51758377,
-      "megabytes": 51.758377
+      "files": 2753,
+      "physical_lines": 773840,
+      "bytes": 51501149,
+      "megabytes": 51.501149
     },
     "binary_assets": {
       "files": 40,
@@ -144,19 +144,19 @@
       "megabytes": 14.606302
     },
     "tracked_total": {
-      "files": 2781,
-      "physical_lines": 772786,
-      "bytes": 66364679,
-      "megabytes": 66.364679
+      "files": 2793,
+      "physical_lines": 773840,
+      "bytes": 66107451,
+      "megabytes": 66.107451
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "physical_lines": 313,
+        "bytes": -101684,
+        "megabytes": -0.101684
       },
       "binary_assets": {
         "files": 0,
@@ -166,13 +166,13 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "physical_lines": 313,
+        "bytes": -101684,
+        "megabytes": -0.101684
       }
     }
   },
-  "updated_at": "2026-09-02",
+  "updated_at": "2026-09-03",
   "overall_percent": 33.2,
   "primary_percent": 33.2,
   "implementation_complete_percent": 43.75,
@@ -14729,7 +14729,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 50,
+    "incremental_closeout_points_since_full_baseline": 51,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -39721,6 +39721,40 @@
       },
       "verified_evidence_count": 103,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "4d3ecb252903",
+      "date": "2026-09-03",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 616,
+        "completed_item_count": 168,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 103,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -39732,8 +39766,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "VC-1.0.187-responsive-ui",
-    "source_commit_sha": "f8f300119b5d595fa8ee5370163ae1252617d103",
-    "closeout_sha": "f8f300119b5d595fa8ee5370163ae1252617d103"
+    "roadmap_slice_id": "OP1.4.2.tray-popup",
+    "source_commit_sha": "a0017c92248fa78ed1e91eb23833e6728860390a",
+    "closeout_sha": "a0017c92248fa78ed1e91eb23833e6728860390a"
   }
 }
