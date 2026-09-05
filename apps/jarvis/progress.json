@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 1147,
-        "physical_lines": 421021,
-        "bytes": 22887972,
-        "megabytes": 22.887972
+        "files": 1151,
+        "physical_lines": 426146,
+        "bytes": 22473278,
+        "megabytes": 22.473278
       },
       {
         "language": "JSON",
-        "files": 318,
-        "physical_lines": 165269,
-        "bytes": 12667290,
-        "megabytes": 12.66729
+        "files": 334,
+        "physical_lines": 166938,
+        "bytes": 12833364,
+        "megabytes": 12.833364
       },
       {
         "language": "Markdown",
-        "files": 804,
-        "physical_lines": 95812,
-        "bytes": 4938357,
-        "megabytes": 4.938357
+        "files": 822,
+        "physical_lines": 97770,
+        "bytes": 5054154,
+        "megabytes": 5.054154
       },
       {
         "language": "Python",
-        "files": 265,
-        "physical_lines": 60006,
-        "bytes": 2422776,
-        "megabytes": 2.422776
+        "files": 272,
+        "physical_lines": 62513,
+        "bytes": 2526118,
+        "megabytes": 2.526118
       },
       {
         "language": "PowerShell",
@@ -77,10 +77,10 @@
       },
       {
         "language": "Plain text",
-        "files": 110,
-        "physical_lines": 1681,
-        "bytes": 182012,
-        "megabytes": 0.182012
+        "files": 124,
+        "physical_lines": 1777,
+        "bytes": 189321,
+        "megabytes": 0.189321
       },
       {
         "language": "INI",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 2753,
-      "physical_lines": 773840,
-      "bytes": 51501149,
-      "megabytes": 51.501149
+      "files": 2812,
+      "physical_lines": 785195,
+      "bytes": 51478977,
+      "megabytes": 51.478977
     },
     "binary_assets": {
       "files": 40,
@@ -144,19 +144,19 @@
       "megabytes": 14.606302
     },
     "tracked_total": {
-      "files": 2793,
-      "physical_lines": 773840,
-      "bytes": 66107451,
-      "megabytes": 66.107451
+      "files": 2852,
+      "physical_lines": 785195,
+      "bytes": 66085279,
+      "megabytes": 66.085279
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 0,
-        "physical_lines": 313,
-        "bytes": -101684,
-        "megabytes": -0.101684
+        "files": 5,
+        "physical_lines": 990,
+        "bytes": 46989,
+        "megabytes": 0.046989
       },
       "binary_assets": {
         "files": 0,
@@ -165,14 +165,14 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 0,
-        "physical_lines": 313,
-        "bytes": -101684,
-        "megabytes": -0.101684
+        "files": 5,
+        "physical_lines": 990,
+        "bytes": 46989,
+        "megabytes": 0.046989
       }
     }
   },
-  "updated_at": "2026-09-03",
+  "updated_at": "2026-09-05",
   "overall_percent": 33.2,
   "primary_percent": 33.2,
   "implementation_complete_percent": 43.75,
@@ -181,7 +181,7 @@
   "roadmap": {
     "source": {
       "roadmap_id": "jarvis.master.worker.v2",
-      "updated_at": "2026-09-02",
+      "updated_at": "2026-09-05",
       "file": "canonical roadmap hierarchy and release-gate summary"
     },
     "gates": [
@@ -312,10 +312,10 @@
         "name_en": "Optional tracks",
         "chapter_color": "optional",
         "chapter_count": 9,
-        "item_count": 86,
-        "completed_item_count": 23,
-        "completion_percent": 26.74,
-        "status_percent": 32.85
+        "item_count": 92,
+        "completed_item_count": 30,
+        "completion_percent": 32.61,
+        "status_percent": 38.04
       },
       {
         "id": "teams",
@@ -841,10 +841,10 @@
         "status_label_en": "In progress",
         "status_source": "child-items",
         "is_complete": false,
-        "item_count": 10,
-        "completed_item_count": 3,
-        "completion_percent": 30.0,
-        "status_percent": 52.5
+        "item_count": 11,
+        "completed_item_count": 5,
+        "completion_percent": 45.45,
+        "status_percent": 63.64
       },
       {
         "id": "OP2",
@@ -879,10 +879,10 @@
         "status_label_en": "In progress",
         "status_source": "child-items",
         "is_complete": false,
-        "item_count": 9,
-        "completed_item_count": 4,
-        "completion_percent": 44.44,
-        "status_percent": 63.89
+        "item_count": 10,
+        "completed_item_count": 6,
+        "completion_percent": 60.0,
+        "status_percent": 75.0
       },
       {
         "id": "OP4",
@@ -898,10 +898,10 @@
         "status_label_en": "In progress",
         "status_source": "child-items",
         "is_complete": false,
-        "item_count": 21,
-        "completed_item_count": 16,
-        "completion_percent": 76.19,
-        "status_percent": 82.14
+        "item_count": 25,
+        "completed_item_count": 19,
+        "completion_percent": 76.0,
+        "status_percent": 82.0
       },
       {
         "id": "OP5",
@@ -6204,14 +6204,35 @@
         "chapter_color": "optional",
         "description_cs": "Mobilní klient a mini-panel",
         "description_en": "mobile client and mini-panel",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "verify": "V5",
+        "is_slice": true
+      },
+      {
+        "id": "OP1.5.1",
+        "chapter_id": "OP1",
+        "chapter_name_cs": "OP1 — Hermes local facade",
+        "chapter_name_en": "OP1 — Hermes local facade",
+        "group_id": "optional",
+        "group_name_cs": "Volitelné tratě",
+        "group_name_en": "Optional tracks",
+        "chapter_color": "optional",
+        "description_cs": "Provider-free přenositelná read-only projekce klienta Hermes",
+        "description_en": "provider-free portable read-only Hermes client projection",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "verify": "V3",
         "is_slice": true
       },
       {
@@ -6561,14 +6582,35 @@
         "chapter_color": "optional",
         "description_cs": "Další jazyky a modality s ověřenými jazykovými profily a lokálním enrollmentem z nahrávek uživatele",
         "description_en": "additional languages and modalities with verified language profiles and local user-recording enrollment",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "verify": "V5",
+        "is_slice": true
+      },
+      {
+        "id": "OP3.8.1",
+        "chapter_id": "OP3",
+        "chapter_name_cs": "OP3 — TTS STT audio",
+        "chapter_name_en": "OP3 — TTS STT audio",
+        "group_id": "optional",
+        "group_name_cs": "Volitelné tratě",
+        "group_name_en": "Optional tracks",
+        "chapter_color": "optional",
+        "description_cs": "Provider-free validace jazykového profilu a přesný routing modality",
+        "description_en": "provider-free language profile validation and exact modality routing",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "verify": "V3",
         "is_slice": true
       },
       {
@@ -6887,6 +6929,69 @@
         "is_slice": true
       },
       {
+        "id": "OP4.10.1",
+        "chapter_id": "OP4",
+        "chapter_name_cs": "OP4 — Ambient Presence Voice Mesh",
+        "chapter_name_en": "OP4 — Ambient Presence Voice Mesh",
+        "group_id": "optional",
+        "group_name_cs": "Volitelné tratě",
+        "group_name_en": "Optional tracks",
+        "chapter_color": "optional",
+        "description_cs": "Brána executable Core služby pro lokální stroj",
+        "description_en": "machine-local Core service executable admission",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "verify": "V3",
+        "is_slice": true
+      },
+      {
+        "id": "OP4.10.2",
+        "chapter_id": "OP4",
+        "chapter_name_cs": "OP4 — Ambient Presence Voice Mesh",
+        "chapter_name_en": "OP4 — Ambient Presence Voice Mesh",
+        "group_id": "optional",
+        "group_name_cs": "Volitelné tratě",
+        "group_name_en": "Optional tracks",
+        "chapter_color": "optional",
+        "description_cs": "Explicitní aktualizace a rollback lokálního obrazu Core služby",
+        "description_en": "explicit local Core service-image update and rollback",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "verify": "V3",
+        "is_slice": true
+      },
+      {
+        "id": "OP4.10.3",
+        "chapter_id": "OP4",
+        "chapter_name_cs": "OP4 — Ambient Presence Voice Mesh",
+        "chapter_name_en": "OP4 — Ambient Presence Voice Mesh",
+        "group_id": "optional",
+        "group_name_cs": "Volitelné tratě",
+        "group_name_en": "Optional tracks",
+        "chapter_color": "optional",
+        "description_cs": "Hranice lokálního obrazu Core služby pro každý zdroj",
+        "description_en": "all-source machine-local Core service image boundary",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "verify": "V3",
+        "is_slice": true
+      },
+      {
         "id": "OP4.11",
         "chapter_id": "OP4",
         "chapter_name_cs": "OP4 — Ambient Presence Voice Mesh",
@@ -7031,6 +7136,27 @@
         "status_percent": 25.0,
         "completion_percent": 0.0,
         "verify": "V4",
+        "is_slice": true
+      },
+      {
+        "id": "OP4.7.1",
+        "chapter_id": "OP4",
+        "chapter_name_cs": "OP4 — Ambient Presence Voice Mesh",
+        "chapter_name_en": "OP4 — Ambient Presence Voice Mesh",
+        "group_id": "optional",
+        "group_name_cs": "Volitelné tratě",
+        "group_name_en": "Optional tracks",
+        "chapter_color": "optional",
+        "description_cs": "Ohraničené znovupřipojení Core služby a idempotentní opakování typovaného intentu",
+        "description_en": "bounded Core service reconnect and idempotent typed intent replay",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
+        "status_source": "canonical-roadmap",
+        "is_complete": false,
+        "status_percent": 25.0,
+        "completion_percent": 0.0,
+        "verify": "V3",
         "is_slice": true
       },
       {
@@ -14678,11 +14804,11 @@
         "is_slice": true
       }
     ],
-    "item_count": 616,
-    "completed_item_count": 168,
+    "item_count": 622,
+    "completed_item_count": 175,
     "chapter_count": 73,
-    "completion_percent": 27.27,
-    "status_percent": 32.06,
+    "completion_percent": 28.14,
+    "status_percent": 32.84,
     "status_percent_contract": {
       "kind": "categorical-state-display",
       "label_cs": "Stav položky",
@@ -14706,9 +14832,9 @@
   },
   "change_summary": {
     "available": true,
-    "previous_date": "2026-09-02",
-    "roadmap_items_delta": 0,
-    "roadmap_completed_delta": 0,
+    "previous_date": "2026-09-03",
+    "roadmap_items_delta": 6,
+    "roadmap_completed_delta": 7,
     "roadmap_chapters_delta": 0,
     "verified_evidence_delta": 0,
     "metrics_delta": {
@@ -14729,7 +14855,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 51,
+    "incremental_closeout_points_since_full_baseline": 52,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -39755,6 +39881,40 @@
       },
       "verified_evidence_count": 103,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "4501309f33e1",
+      "date": "2026-09-05",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 622,
+        "completed_item_count": 175,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 6,
+        "completed_item_count": 7,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 103,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -39766,8 +39926,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP1.4.2.tray-popup",
-    "source_commit_sha": "a0017c92248fa78ed1e91eb23833e6728860390a",
-    "closeout_sha": "a0017c92248fa78ed1e91eb23833e6728860390a"
+    "roadmap_slice_id": "OP3.8.1",
+    "source_commit_sha": "4ebf7eddb49a3c23905c4711ddd8542b7f4dbabb",
+    "closeout_sha": "4ebf7eddb49a3c23905c4711ddd8542b7f4dbabb"
   }
 }
