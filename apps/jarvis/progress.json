@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 1151,
-        "physical_lines": 426146,
-        "bytes": 22473278,
-        "megabytes": 22.473278
+        "files": 1153,
+        "physical_lines": 426676,
+        "bytes": 22496695,
+        "megabytes": 22.496695
       },
       {
         "language": "JSON",
-        "files": 334,
-        "physical_lines": 166938,
-        "bytes": 12833364,
-        "megabytes": 12.833364
+        "files": 335,
+        "physical_lines": 166993,
+        "bytes": 12838429,
+        "megabytes": 12.838429
       },
       {
         "language": "Markdown",
-        "files": 822,
-        "physical_lines": 97770,
-        "bytes": 5054154,
-        "megabytes": 5.054154
+        "files": 823,
+        "physical_lines": 97861,
+        "bytes": 5059582,
+        "megabytes": 5.059582
       },
       {
         "language": "Python",
-        "files": 272,
-        "physical_lines": 62513,
-        "bytes": 2526118,
-        "megabytes": 2.526118
+        "files": 273,
+        "physical_lines": 62623,
+        "bytes": 2529845,
+        "megabytes": 2.529845
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 2812,
-      "physical_lines": 785195,
-      "bytes": 51478977,
-      "megabytes": 51.478977
+      "files": 2817,
+      "physical_lines": 785981,
+      "bytes": 51516614,
+      "megabytes": 51.516614
     },
     "binary_assets": {
       "files": 40,
@@ -144,19 +144,19 @@
       "megabytes": 14.606302
     },
     "tracked_total": {
-      "files": 2852,
-      "physical_lines": 785195,
-      "bytes": 66085279,
-      "megabytes": 66.085279
+      "files": 2857,
+      "physical_lines": 785981,
+      "bytes": 66122916,
+      "megabytes": 66.122916
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 5,
-        "physical_lines": 990,
-        "bytes": 46989,
-        "megabytes": 0.046989
+        "physical_lines": 786,
+        "bytes": 37637,
+        "megabytes": 0.037637
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 5,
-        "physical_lines": 990,
-        "bytes": 46989,
-        "megabytes": 0.046989
+        "physical_lines": 786,
+        "bytes": 37637,
+        "megabytes": 0.037637
       }
     }
   },
@@ -312,10 +312,10 @@
         "name_en": "Optional tracks",
         "chapter_color": "optional",
         "chapter_count": 9,
-        "item_count": 92,
-        "completed_item_count": 30,
-        "completion_percent": 32.61,
-        "status_percent": 38.04
+        "item_count": 93,
+        "completed_item_count": 31,
+        "completion_percent": 33.33,
+        "status_percent": 38.71
       },
       {
         "id": "teams",
@@ -879,10 +879,10 @@
         "status_label_en": "In progress",
         "status_source": "child-items",
         "is_complete": false,
-        "item_count": 10,
-        "completed_item_count": 6,
-        "completion_percent": 60.0,
-        "status_percent": 75.0
+        "item_count": 11,
+        "completed_item_count": 7,
+        "completion_percent": 63.64,
+        "status_percent": 77.27
       },
       {
         "id": "OP4",
@@ -6603,6 +6603,27 @@
         "chapter_color": "optional",
         "description_cs": "Provider-free validace jazykového profilu a přesný routing modality",
         "description_en": "provider-free language profile validation and exact modality routing",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "verify": "V3",
+        "is_slice": true
+      },
+      {
+        "id": "OP3.8.2",
+        "chapter_id": "OP3",
+        "chapter_name_cs": "OP3 — TTS STT audio",
+        "chapter_name_en": "OP3 — TTS STT audio",
+        "group_id": "optional",
+        "group_name_cs": "Volitelné tratě",
+        "group_name_en": "Optional tracks",
+        "chapter_color": "optional",
+        "description_cs": "Provider-free deterministický registr jazykových profilů řeči",
+        "description_en": "provider-free deterministic speech-language profile registry",
         "status": "implementation-complete",
         "status_label_cs": "Implementováno; živé ověření čeká",
         "status_label_en": "Implemented; live acceptance pending",
@@ -14804,11 +14825,11 @@
         "is_slice": true
       }
     ],
-    "item_count": 622,
-    "completed_item_count": 175,
+    "item_count": 623,
+    "completed_item_count": 176,
     "chapter_count": 73,
-    "completion_percent": 28.14,
-    "status_percent": 32.84,
+    "completion_percent": 28.25,
+    "status_percent": 32.95,
     "status_percent_contract": {
       "kind": "categorical-state-display",
       "label_cs": "Stav položky",
@@ -14832,9 +14853,9 @@
   },
   "change_summary": {
     "available": true,
-    "previous_date": "2026-09-03",
-    "roadmap_items_delta": 6,
-    "roadmap_completed_delta": 7,
+    "previous_date": "2026-09-05",
+    "roadmap_items_delta": 1,
+    "roadmap_completed_delta": 1,
     "roadmap_chapters_delta": 0,
     "verified_evidence_delta": 0,
     "metrics_delta": {
@@ -14855,7 +14876,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 52,
+    "incremental_closeout_points_since_full_baseline": 53,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -39915,6 +39936,40 @@
       },
       "verified_evidence_count": 103,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "fa6f3bc94403",
+      "date": "2026-09-05",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 623,
+        "completed_item_count": 176,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 1,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 103,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -39926,8 +39981,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP3.8.1",
-    "source_commit_sha": "4ebf7eddb49a3c23905c4711ddd8542b7f4dbabb",
-    "closeout_sha": "4ebf7eddb49a3c23905c4711ddd8542b7f4dbabb"
+    "roadmap_slice_id": "OP3.8.2",
+    "source_commit_sha": "dcaa08807d6a5a39d3c23de44e534fc9148e0923",
+    "closeout_sha": "dcaa08807d6a5a39d3c23de44e534fc9148e0923"
   }
 }

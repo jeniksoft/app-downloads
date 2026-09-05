@@ -23818,13 +23818,47 @@
       },
       "verified_evidence_count": 103,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "fa6f3bc94403",
+      "date": "2026-09-05",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 623,
+        "completed_item_count": 176,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 1,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 103,
+      "verified_evidence_delta": 0
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP3.8.1",
-    "source_commit_sha": "4ebf7eddb49a3c23905c4711ddd8542b7f4dbabb",
-    "closeout_sha": "4ebf7eddb49a3c23905c4711ddd8542b7f4dbabb"
+    "roadmap_slice_id": "OP3.8.2",
+    "source_commit_sha": "dcaa08807d6a5a39d3c23de44e534fc9148e0923",
+    "closeout_sha": "dcaa08807d6a5a39d3c23de44e534fc9148e0923"
   }
 }
