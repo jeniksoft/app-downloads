@@ -43,23 +43,23 @@
       {
         "language": "JSON",
         "files": 337,
-        "physical_lines": 167859,
-        "bytes": 12967339,
-        "megabytes": 12.967339
+        "physical_lines": 167866,
+        "bytes": 12970059,
+        "megabytes": 12.970059
       },
       {
         "language": "Markdown",
         "files": 826,
-        "physical_lines": 100607,
-        "bytes": 5222777,
-        "megabytes": 5.222777
+        "physical_lines": 100717,
+        "bytes": 5229185,
+        "megabytes": 5.229185
       },
       {
         "language": "Python",
-        "files": 290,
-        "physical_lines": 66056,
-        "bytes": 2670825,
-        "megabytes": 2.670825
+        "files": 291,
+        "physical_lines": 66176,
+        "bytes": 2676205,
+        "megabytes": 2.676205
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 2847,
-      "physical_lines": 802168,
-      "bytes": 52303263,
-      "megabytes": 52.303263
+      "files": 2848,
+      "physical_lines": 802405,
+      "bytes": 52317771,
+      "megabytes": 52.317771
     },
     "binary_assets": {
       "files": 40,
@@ -144,19 +144,19 @@
       "megabytes": 14.606302
     },
     "tracked_total": {
-      "files": 2887,
-      "physical_lines": 802168,
-      "bytes": 66909565,
-      "megabytes": 66.909565
+      "files": 2888,
+      "physical_lines": 802405,
+      "bytes": 66924073,
+      "megabytes": 66.924073
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 3,
-        "physical_lines": 962,
-        "bytes": 39752,
-        "megabytes": 0.039752
+        "files": 1,
+        "physical_lines": 237,
+        "bytes": 14508,
+        "megabytes": 0.014508
       },
       "binary_assets": {
         "files": 0,
@@ -165,10 +165,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 3,
-        "physical_lines": 962,
-        "bytes": 39752,
-        "megabytes": 0.039752
+        "files": 1,
+        "physical_lines": 237,
+        "bytes": 14508,
+        "megabytes": 0.014508
       }
     }
   },
@@ -379,7 +379,7 @@
         "chapter_color": "foundation",
         "name_cs": "PF1 — Schémata, persistence a migrace",
         "name_en": "PF1 — Schema persistence and migration",
-        "status": "architecture-only",
+        "status": "implemented-unverified",
         "display_status": "partial",
         "status_label_cs": "Částečně",
         "status_label_en": "Partial",
@@ -15044,7 +15044,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 69,
+    "incremental_closeout_points_since_full_baseline": 70,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -40682,6 +40682,40 @@
       },
       "verified_evidence_count": 103,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "94014c3a3ab1",
+      "date": "2026-09-07",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 631,
+        "completed_item_count": 192,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 103,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -40693,8 +40727,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "PF0.4.identity-lineage",
-    "source_commit_sha": "36efee3d724b55be36d3dac6b9588ed1c359bb09",
-    "closeout_sha": "a2c376acc0168100eff0e55811d1da5683685eaf"
+    "roadmap_slice_id": "PF1.1.durable-schema-inventory",
+    "source_commit_sha": "a2c376acc0168100eff0e55811d1da5683685eaf",
+    "closeout_sha": "d4f963dd766ddf1d85e998fa9079286f013d3507"
   }
 }
