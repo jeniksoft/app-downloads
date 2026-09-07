@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 1161,
-        "physical_lines": 435661,
-        "bytes": 22841637,
-        "megabytes": 22.841637
+        "files": 1163,
+        "physical_lines": 436519,
+        "bytes": 22877624,
+        "megabytes": 22.877624
       },
       {
         "language": "JSON",
-        "files": 338,
-        "physical_lines": 167896,
-        "bytes": 12986343,
-        "megabytes": 12.986343
+        "files": 339,
+        "physical_lines": 168081,
+        "bytes": 12992785,
+        "megabytes": 12.992785
       },
       {
         "language": "Markdown",
-        "files": 827,
-        "physical_lines": 102115,
-        "bytes": 5309900,
-        "megabytes": 5.3099
+        "files": 828,
+        "physical_lines": 102353,
+        "bytes": 5323340,
+        "megabytes": 5.32334
       },
       {
         "language": "Python",
-        "files": 301,
-        "physical_lines": 68088,
-        "bytes": 2759377,
-        "megabytes": 2.759377
+        "files": 302,
+        "physical_lines": 68216,
+        "bytes": 2764933,
+        "megabytes": 2.764933
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 2862,
-      "physical_lines": 806611,
-      "bytes": 52535785,
-      "megabytes": 52.535785
+      "files": 2867,
+      "physical_lines": 808020,
+      "bytes": 52597210,
+      "megabytes": 52.59721
     },
     "binary_assets": {
       "files": 40,
@@ -144,19 +144,19 @@
       "megabytes": 14.606302
     },
     "tracked_total": {
-      "files": 2902,
-      "physical_lines": 806611,
-      "bytes": 67142087,
-      "megabytes": 67.142087
+      "files": 2907,
+      "physical_lines": 808020,
+      "bytes": 67203512,
+      "megabytes": 67.203512
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 1,
-        "physical_lines": 365,
-        "bytes": 18894,
-        "megabytes": 0.018894
+        "files": 5,
+        "physical_lines": 1409,
+        "bytes": 61425,
+        "megabytes": 0.061425
       },
       "binary_assets": {
         "files": 0,
@@ -165,10 +165,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 1,
-        "physical_lines": 365,
-        "bytes": 18894,
-        "megabytes": 0.018894
+        "files": 5,
+        "physical_lines": 1409,
+        "bytes": 61425,
+        "megabytes": 0.061425
       }
     }
   },
@@ -279,10 +279,10 @@
         "name_en": "Platform foundations",
         "chapter_color": "foundation",
         "chapter_count": 9,
-        "item_count": 50,
-        "completed_item_count": 33,
-        "completion_percent": 66.0,
-        "status_percent": 72.0
+        "item_count": 51,
+        "completed_item_count": 34,
+        "completion_percent": 66.67,
+        "status_percent": 72.55
       },
       {
         "id": "core-runtime",
@@ -399,13 +399,13 @@
         "name_cs": "PF2 — Time epochs and leases",
         "name_en": "PF2 — Time epochs and leases",
         "status": "implemented-unverified",
-        "display_status": "verified",
-        "status_label_cs": "Ověřeno",
-        "status_label_en": "Verified",
+        "display_status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
         "status_source": "child-items",
         "is_complete": true,
-        "item_count": 5,
-        "completed_item_count": 5,
+        "item_count": 6,
+        "completed_item_count": 6,
         "completion_percent": 100.0,
         "status_percent": 100.0
       },
@@ -2050,6 +2050,27 @@
         "status_label_cs": "Ověřeno",
         "status_label_en": "Verified",
         "status_source": "current-evidence",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "verify": "V1",
+        "is_slice": true
+      },
+      {
+        "id": "PF2.6",
+        "chapter_id": "PF2",
+        "chapter_name_cs": "PF2 — Time epochs and leases",
+        "chapter_name_en": "PF2 — Time epochs and leases",
+        "group_id": "foundation",
+        "group_name_cs": "Platformní základy",
+        "group_name_en": "Platform foundations",
+        "chapter_color": "foundation",
+        "description_cs": "concrete local lease runtime",
+        "description_en": "concrete local lease runtime",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
@@ -14993,11 +15014,11 @@
         "is_slice": true
       }
     ],
-    "item_count": 631,
-    "completed_item_count": 192,
+    "item_count": 632,
+    "completed_item_count": 193,
     "chapter_count": 73,
-    "completion_percent": 30.43,
-    "status_percent": 34.9,
+    "completion_percent": 30.54,
+    "status_percent": 35.01,
     "status_percent_contract": {
       "kind": "categorical-state-display",
       "label_cs": "Stav položky",
@@ -15022,8 +15043,8 @@
   "change_summary": {
     "available": true,
     "previous_date": "2026-09-07",
-    "roadmap_items_delta": 0,
-    "roadmap_completed_delta": 0,
+    "roadmap_items_delta": 1,
+    "roadmap_completed_delta": 1,
     "roadmap_chapters_delta": 0,
     "verified_evidence_delta": 0,
     "metrics_delta": {
@@ -15044,7 +15065,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 80,
+    "incremental_closeout_points_since_full_baseline": 81,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -41056,6 +41077,40 @@
       },
       "verified_evidence_count": 103,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "ea136e90ce93",
+      "date": "2026-09-07",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 632,
+        "completed_item_count": 193,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 1,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 103,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -41067,8 +41122,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "PF2.5.authority-epoch-fixture",
-    "source_commit_sha": "aeb5e8a0e71d3226d25fd10f546b08bd9edeb4de",
-    "closeout_sha": "75603e1d842252d821cce8c585ec9798d745e352"
+    "roadmap_slice_id": "PF2.6.local-lease-runtime",
+    "source_commit_sha": "854df986eb124bc1125343f3ec32ae7e4d925e8d",
+    "closeout_sha": "854df986eb124bc1125343f3ec32ae7e4d925e8d"
   }
 }

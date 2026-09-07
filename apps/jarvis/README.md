@@ -13,7 +13,7 @@ Aktuálně zde není žádný veřejný instalační balíček ke stažení. Dř
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `PF2.5.authority-epoch-fixture` je veřejně spojen se zdrojovým SHA `aeb5e8a0e71d3226d25fd10f546b08bd9edeb4de` a closeout SHA `75603e1d842252d821cce8c585ec9798d745e352`. Stav: **verified**.
+Řez `PF2.6.local-lease-runtime` je veřejně spojen se zdrojovým SHA `854df986eb124bc1125343f3ec32ae7e4d925e8d` a closeout SHA `854df986eb124bc1125343f3ec32ae7e4d925e8d`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -42,7 +42,7 @@ Nejde o instalační balíček ani o prohlášení, že je produkt hotový; při
 **Legenda ikon:** · <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno · <span role="img" title="Evidence: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření." aria-label="Evidence: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření.">🟦</span> Evidence · <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno · <span role="img" title="Plánováno: Stav je plánovaný nebo pouze architektonický; značka není důkaz dokončení." aria-label="Plánováno: Stav je plánovaný nebo pouze architektonický; značka není důkaz dokončení.">⚪</span> Plánováno · <span role="img" title="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch." aria-label="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch.">⛔</span> Blokováno
 Ikona i popisek jsou viditelné přímo v README; po najetí kurzorem tooltip vysvětlí význam a nezaměňuje implementaci za živé ověření.
 
-**Změna od předchozího snapshotu: roadmapa položky +0 · hotovo +0 · ověřené důkazy +0**
+**Změna od předchozího snapshotu: roadmapa položky +1 · hotovo +1 · ověřené důkazy +0**
 
 ![Roadmapa a progress edic Jarvis](visuals/roadmap-editions.svg)
 
@@ -64,10 +64,10 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 1 161 | 435 661 | 22.84 |
-| JSON | 338 | 167 896 | 12.99 |
-| Markdown | 827 | 102 115 | 5.31 |
-| Python | 301 | 68 088 | 2.76 |
+| C/C++ | 1 163 | 436 519 | 22.88 |
+| JSON | 339 | 168 081 | 12.99 |
+| Markdown | 828 | 102 353 | 5.32 |
+| Python | 302 | 68 216 | 2.76 |
 | PowerShell | 58 | 27 167 | 1.41 |
 | JSONL | 14 | 2 499 | 6.91 |
 | Plain text | 124 | 1 777 | 0.19 |
@@ -78,9 +78,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **2 862** | **806 611** | **52.54** |
+| **Text/source celkem** | **2 867** | **808 020** | **52.60** |
 | Binární assety (mimo řádky) | 40 | — | 14.61 |
-| **Trackovaný strom celkem** | **2 902** | **806 611** | **67.14** |
+| **Trackovaný strom celkem** | **2 907** | **808 020** | **67.20** |
 
 ### Přírůstek od předchozí revize
 
@@ -88,9 +88,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +1 | +365 | +0.02 |
+| Text/source celkem | +5 | +1409 | +0.06 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +1 | +365 | +0.02 |
+| Trackovaný strom celkem | +5 | +1409 | +0.06 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -160,7 +160,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `f483bbadcd41` | 2026-09-06 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `5e91a90b3de5` | 2026-09-06 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `e21e0fc0c16d` | 2026-09-06 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `52b69a529498` | 2026-09-07 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -178,13 +177,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `68d320d366d0` | 2026-09-07 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `fbcdd8152921` | 2026-09-07 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `7c54217963c8` | 2026-09-07 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `ea136e90ce93` | 2026-09-07 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 80 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 81 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
