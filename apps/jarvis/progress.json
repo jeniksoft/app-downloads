@@ -44,22 +44,22 @@
         "language": "JSON",
         "files": 338,
         "physical_lines": 167896,
-        "bytes": 12985123,
-        "megabytes": 12.985123
+        "bytes": 12986343,
+        "megabytes": 12.986343
       },
       {
         "language": "Markdown",
         "files": 827,
-        "physical_lines": 101977,
-        "bytes": 5301824,
-        "megabytes": 5.301824
+        "physical_lines": 102115,
+        "bytes": 5309900,
+        "megabytes": 5.3099
       },
       {
         "language": "Python",
-        "files": 300,
-        "physical_lines": 67861,
-        "bytes": 2749779,
-        "megabytes": 2.749779
+        "files": 301,
+        "physical_lines": 68088,
+        "bytes": 2759377,
+        "megabytes": 2.759377
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 2861,
-      "physical_lines": 806246,
-      "bytes": 52516891,
-      "megabytes": 52.516891
+      "files": 2862,
+      "physical_lines": 806611,
+      "bytes": 52535785,
+      "megabytes": 52.535785
     },
     "binary_assets": {
       "files": 40,
@@ -144,19 +144,19 @@
       "megabytes": 14.606302
     },
     "tracked_total": {
-      "files": 2901,
-      "physical_lines": 806246,
-      "bytes": 67123193,
-      "megabytes": 67.123193
+      "files": 2902,
+      "physical_lines": 806611,
+      "bytes": 67142087,
+      "megabytes": 67.142087
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 1,
-        "physical_lines": 382,
-        "bytes": 19549,
-        "megabytes": 0.019549
+        "physical_lines": 365,
+        "bytes": 18894,
+        "megabytes": 0.018894
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 1,
-        "physical_lines": 382,
-        "bytes": 19549,
-        "megabytes": 0.019549
+        "physical_lines": 365,
+        "bytes": 18894,
+        "megabytes": 0.018894
       }
     }
   },
@@ -15044,7 +15044,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 79,
+    "incremental_closeout_points_since_full_baseline": 80,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -41022,6 +41022,40 @@
       },
       "verified_evidence_count": 103,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "7c54217963c8",
+      "date": "2026-09-07",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 631,
+        "completed_item_count": 192,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 103,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -41033,8 +41067,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "PF2.4.typed-local-lease-envelope",
-    "source_commit_sha": "3c6f11a62cdbcf396e517cd561da62381d728ac0",
-    "closeout_sha": "f6654c20644e275204904095dc139774cd3ed6e4"
+    "roadmap_slice_id": "PF2.5.authority-epoch-fixture",
+    "source_commit_sha": "aeb5e8a0e71d3226d25fd10f546b08bd9edeb4de",
+    "closeout_sha": "75603e1d842252d821cce8c585ec9798d745e352"
   }
 }
