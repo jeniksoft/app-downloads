@@ -24498,13 +24498,47 @@
       },
       "verified_evidence_count": 103,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "6c61a7d6bcc5",
+      "date": "2026-09-07",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 631,
+        "completed_item_count": 192,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 103,
+      "verified_evidence_delta": 0
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "PF1.3.atomic-file-write",
-    "source_commit_sha": "cedaa0c75d36eb943e96418758f321534cdd14de",
-    "closeout_sha": "e403b8dc48fb2f04e28cfd75a93c0ff7c4a1b5ce"
+    "roadmap_slice_id": "PF1.4.migration-plan",
+    "source_commit_sha": "b21090310e6a3a326e4d81a1c4171d14787f8881",
+    "closeout_sha": "3132e31327c677eb04157867413b46aa9c4149bf"
   }
 }
