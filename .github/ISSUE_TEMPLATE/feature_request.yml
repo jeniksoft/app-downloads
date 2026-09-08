@@ -1,0 +1,47 @@
+name: "Navrhnout zlepšení / Suggest an improvement"
+description: "Navrhni užitečné zlepšení reportu nebo Jarvisu. / Suggest a useful improvement for the report or Jarvis."
+title: "[Idea] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Návrh popiš věcně a bez tajných nebo osobních údajů.
+
+        Describe the proposal clearly and without secrets or personal data.
+  - type: textarea
+    id: need
+    attributes:
+      label: "Jaký problém řešíš? / What problem would this solve?"
+      placeholder: "Dnes je obtížné... / Today it is difficult to..."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "Návrh řešení / Proposed solution"
+      placeholder: "Navrhuji... / I suggest..."
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: "Oblast / Area"
+      options:
+        - "Veřejný report / Public report"
+        - "Jarvis Personal"
+        - "Dokumentace / Documentation"
+        - "Jiné / Other"
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: "Příklad použití / Example use case"
+      placeholder: "Uživatel by mohl... / A user could..."
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: "Kontrola soukromí / Privacy check"
+      options:
+        - label: "Potvrzuji, že návrh neobsahuje hesla, tokeny ani osobní údaje. / I confirm that the proposal contains no passwords, tokens, or personal data."
+          required: true

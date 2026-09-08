@@ -1,0 +1,66 @@
+name: "Nahlásit chybu / Report a bug"
+description: "Popiš reprodukovatelný problém v reportu nebo Jarvisu. / Describe a reproducible problem in the report or Jarvis."
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Děkujeme za hlášení. Neuváděj hesla, tokeny, osobní údaje ani neupravené soukromé logy.
+
+        Thank you for the report. Do not include passwords, tokens, personal data, or raw private logs.
+  - type: input
+    id: version
+    attributes:
+      label: "Verze nebo snapshot / Version or snapshot"
+      description: "Uveď verzi, datum reportu nebo veřejný commit. / Provide the version, report date, or public commit."
+      placeholder: "Personal 1.0.0, 2026-09-08"
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: "Jazyk / Language"
+      options:
+        - "Čeština / Czech"
+        - "English / Angličtina"
+        - "Jiný / Other"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Co se stalo? / What happened?"
+      description: "Popiš problém konkrétně a bez citlivých údajů. / Describe the problem concretely without sensitive data."
+      placeholder: "Po otevření reportu... / After opening the report..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Co se mělo stát? / What did you expect?"
+      placeholder: "Očekával jsem, že... / I expected..."
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: "Kroky k reprodukci / Steps to reproduce"
+      placeholder: |
+        1. Otevři...
+        2. Vyber...
+        3. Výsledek...
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Prostředí / Environment"
+      description: "Windows verze, prohlížeč, DPI nebo další relevantní údaje. / Windows version, browser, DPI, or other relevant details."
+      placeholder: "Windows 11, Chrome ..., 100% DPI"
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: "Kontrola soukromí / Privacy check"
+      options:
+        - label: "Potvrzuji, že jsem odstranil(a) hesla, tokeny, osobní údaje a citlivé části logů. / I confirm that passwords, tokens, personal data, and sensitive log content were removed."
+          required: true
