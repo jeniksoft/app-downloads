@@ -1,0 +1,67 @@
+name: IP legal evidence package
+on:
+  workflow_dispatch:
+    inputs:
+      milestone:
+        description: Protected public release or legal/IP milestone identifier
+        required: true
+        type: string
+permissions:
+  contents: read
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Create public distribution evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s IP_PROVENANCE.md
+          mkdir -p evidence
+          cp IP_PROVENANCE.md evidence/IP_PROVENANCE.md
+          git archive --format=tar.gz --output "evidence/public-tree-${GITHUB_SHA}.tar.gz" "${GITHUB_SHA}"
+          printf '%s\n' "$GITHUB_REPOSITORY" > evidence/repository.txt
+          printf '%s\n' "$GITHUB_REF_NAME" > evidence/branch.txt
+          printf '%s\n' "$GITHUB_SHA" > evidence/source-commit.txt
+          printf '%s\n' "${{ inputs.milestone }}" > evidence/milestone.txt
+      - name: Generate SPDX SBOM
+        uses: anchore/sbom-action@v0.24.0
+        with:
+          path: .
+          format: spdx-json
+          output-file: evidence/sbom.spdx.json
+          upload-artifact: false
+          dependency-snapshot: false
+      - name: Build evidence manifest
+        shell: bash
+        run: (cd evidence && find . -maxdepth 1 -type f ! -name evidence-manifest.sha256 -print0 | sort -z | xargs -0 sha256sum) > evidence/evidence-manifest.sha256
+      - name: Qualified RFC3161 timestamp
+        shell: bash
+        env:
+          TSA_USER: ${{ secrets.POSTSIGNUM_TSA_USERNAME }}
+          TSA_PASS: ${{ secrets.POSTSIGNUM_TSA_PASSWORD }}
+          TSA_URL: https://tsa.postsignum.eu:444/TSS-ECC/HttpTspServer/
+        run: |
+          set -euo pipefail
+          test -n "${TSA_USER:-}" && test -n "${TSA_PASS:-}" || { echo 'Qualified TSA credentials missing' >&2; exit 70; }
+          openssl ts -query -data evidence/evidence-manifest.sha256 -sha256 -cert -out evidence/evidence.tsq
+          curl --fail-with-body --silent --show-error --user "${TSA_USER}:${TSA_PASS}" -H 'Content-Type: application/timestamp-query' -H 'Accept: application/timestamp-reply' --data-binary @evidence/evidence.tsq "$TSA_URL" -o evidence/evidence.tsr
+          openssl ts -reply -in evidence/evidence.tsr -text > evidence/timestamp-reply.txt
+          grep -Eq 'Status: Granted\.|Status: Granted with mods\.' evidence/timestamp-reply.txt
+          openssl ts -verify -queryfile evidence/evidence.tsq -in evidence/evidence.tsr -CApath /etc/ssl/certs
+          printf 'qualified_timestamp_verification=PASS\ntsa_url=%s\nsource_commit=%s\n' "$TSA_URL" "$GITHUB_SHA" > evidence/timestamp-receipt.txt
+      - name: Final hashes
+        shell: bash
+        run: (cd evidence && find . -maxdepth 1 -type f ! -name final-sha256.txt -print0 | sort -z | xargs -0 sha256sum) > evidence/final-sha256.txt
+      - uses: actions/upload-artifact@v7.0.1
+        with:
+          name: public-ip-evidence-${{ github.sha }}-${{ inputs.milestone }}
+          path: evidence/
+          if-no-files-found: error
+          retention-days: 90
