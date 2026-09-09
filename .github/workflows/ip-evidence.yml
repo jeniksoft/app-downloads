@@ -38,6 +38,25 @@ jobs:
           output-file: evidence/sbom.spdx.json
           upload-artifact: false
           dependency-snapshot: false
+      - name: License and provenance gate
+        shell: python
+        run: |
+          import json, pathlib, re, sys
+          data=json.loads(pathlib.Path('evidence/sbom.spdx.json').read_text(encoding='utf-8'))
+          blocked=re.compile(r'(^|[^A-Z])(AGPL|GPL|SSPL|BUSL)(-|$|[^A-Z])',re.I)
+          findings=[]
+          for pkg in data.get('packages',[]):
+              name=pkg.get('name','<unknown>'); version=pkg.get('versionInfo','')
+              declared=str(pkg.get('licenseDeclared','NOASSERTION')); concluded=str(pkg.get('licenseConcluded','NOASSERTION'))
+              if declared in ('NOASSERTION','NONE','') or concluded in ('NOASSERTION','NONE',''):
+                  findings.append((name,version,'UNKNOWN',declared,concluded))
+              elif blocked.search(declared) or blocked.search(concluded):
+                  findings.append((name,version,'REVIEW',declared,concluded))
+          out=pathlib.Path('evidence/license-review.txt')
+          out.write_text('PASS: no configured high-risk or unknown license finding.\n' if not findings else '\n'.join('\t'.join(map(str,x)) for x in findings)+'\n',encoding='utf-8')
+          if findings:
+              print(out.read_text(encoding='utf-8'))
+              sys.exit('License/provenance review required; protected release is fail-closed.')
       - name: Build evidence manifest
         shell: bash
         run: (cd evidence && find . -maxdepth 1 -type f ! -name evidence-manifest.sha256 -print0 | sort -z | xargs -0 sha256sum) > evidence/evidence-manifest.sha256
