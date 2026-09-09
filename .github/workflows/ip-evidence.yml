@@ -1,9 +1,9 @@
-name: IP legal evidence package
+name: Public IP provenance evidence package
 on:
   workflow_dispatch:
     inputs:
       milestone:
-        description: Protected public release or legal/IP milestone identifier
+        description: Protected public release or IP milestone identifier
         required: true
         type: string
 permissions:
@@ -56,25 +56,18 @@ jobs:
           out.write_text('PASS: no configured high-risk or unknown license finding.\n' if not findings else '\n'.join('\t'.join(map(str,x)) for x in findings)+'\n',encoding='utf-8')
           if findings:
               print(out.read_text(encoding='utf-8'))
-              sys.exit('License/provenance review required; protected release is fail-closed.')
+              sys.exit('License/provenance review required; public IP evidence package is fail-closed.')
+      - name: Record timestamp scope
+        shell: bash
+        run: |
+          printf '%s\n' \
+            'qualified_timestamp=NOT_REQUESTED' \
+            'owner_policy=Paid qualified TSA timestamps are reserved for Jarvis / jeniksoft/codex-private-memory.' \
+            'exception=Use a qualified timestamp here only after explicit owner opt-in for this milestone.' \
+            > evidence/timestamp-scope.txt
       - name: Build evidence manifest
         shell: bash
         run: (cd evidence && find . -maxdepth 1 -type f ! -name evidence-manifest.sha256 -print0 | sort -z | xargs -0 sha256sum) > evidence/evidence-manifest.sha256
-      - name: Qualified RFC3161 timestamp
-        shell: bash
-        env:
-          TSA_USER: ${{ secrets.POSTSIGNUM_TSA_USERNAME }}
-          TSA_PASS: ${{ secrets.POSTSIGNUM_TSA_PASSWORD }}
-          TSA_URL: https://tsa.postsignum.eu:444/TSS-ECC/HttpTspServer/
-        run: |
-          set -euo pipefail
-          test -n "${TSA_USER:-}" && test -n "${TSA_PASS:-}" || { echo 'Qualified TSA credentials missing' >&2; exit 70; }
-          openssl ts -query -data evidence/evidence-manifest.sha256 -sha256 -cert -out evidence/evidence.tsq
-          curl --fail-with-body --silent --show-error --user "${TSA_USER}:${TSA_PASS}" -H 'Content-Type: application/timestamp-query' -H 'Accept: application/timestamp-reply' --data-binary @evidence/evidence.tsq "$TSA_URL" -o evidence/evidence.tsr
-          openssl ts -reply -in evidence/evidence.tsr -text > evidence/timestamp-reply.txt
-          grep -Eq 'Status: Granted\.|Status: Granted with mods\.' evidence/timestamp-reply.txt
-          openssl ts -verify -queryfile evidence/evidence.tsq -in evidence/evidence.tsr -CApath /etc/ssl/certs
-          printf 'qualified_timestamp_verification=PASS\ntsa_url=%s\nsource_commit=%s\n' "$TSA_URL" "$GITHUB_SHA" > evidence/timestamp-receipt.txt
       - name: Final hashes
         shell: bash
         run: (cd evidence && find . -maxdepth 1 -type f ! -name final-sha256.txt -print0 | sort -z | xargs -0 sha256sum) > evidence/final-sha256.txt
