@@ -35,45 +35,45 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 1209,
-        "physical_lines": 464994,
-        "bytes": 24157648,
-        "megabytes": 24.157648
+        "files": 1219,
+        "physical_lines": 471663,
+        "bytes": 24465072,
+        "megabytes": 24.465072
       },
       {
         "language": "JSON",
-        "files": 350,
-        "physical_lines": 169484,
-        "bytes": 13121001,
-        "megabytes": 13.121001
+        "files": 354,
+        "physical_lines": 170693,
+        "bytes": 13176385,
+        "megabytes": 13.176385
       },
       {
         "language": "Markdown",
-        "files": 856,
-        "physical_lines": 106430,
-        "bytes": 5565847,
-        "megabytes": 5.565847
+        "files": 863,
+        "physical_lines": 107736,
+        "bytes": 5643877,
+        "megabytes": 5.643877
       },
       {
         "language": "Python",
-        "files": 320,
-        "physical_lines": 71718,
-        "bytes": 2909265,
-        "megabytes": 2.909265
+        "files": 326,
+        "physical_lines": 73598,
+        "bytes": 2985852,
+        "megabytes": 2.985852
       },
       {
         "language": "PowerShell",
-        "files": 58,
-        "physical_lines": 27254,
-        "bytes": 1417010,
-        "megabytes": 1.41701
+        "files": 59,
+        "physical_lines": 27732,
+        "bytes": 1437928,
+        "megabytes": 1.437928
       },
       {
         "language": "JSONL",
-        "files": 14,
-        "physical_lines": 2499,
-        "bytes": 6910322,
-        "megabytes": 6.910322
+        "files": 16,
+        "physical_lines": 2515,
+        "bytes": 6928034,
+        "megabytes": 6.928034
       },
       {
         "language": "Plain text",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 2975,
-      "physical_lines": 846164,
-      "bytes": 54418924,
-      "megabytes": 54.418924
+      "files": 3005,
+      "physical_lines": 857722,
+      "bytes": 54974979,
+      "megabytes": 54.974979
     },
     "binary_assets": {
       "files": 40,
@@ -144,19 +144,19 @@
       "megabytes": 14.606302
     },
     "tracked_total": {
-      "files": 3015,
-      "physical_lines": 846164,
-      "bytes": 69025226,
-      "megabytes": 69.025226
+      "files": 3045,
+      "physical_lines": 857722,
+      "bytes": 69581281,
+      "megabytes": 69.581281
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "files": 5,
+        "physical_lines": 1389,
+        "bytes": 67485,
+        "megabytes": 0.067485
       },
       "binary_assets": {
         "files": 0,
@@ -165,14 +165,14 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "files": 5,
+        "physical_lines": 1389,
+        "bytes": 67485,
+        "megabytes": 0.067485
       }
     }
   },
-  "updated_at": "2026-09-10",
+  "updated_at": "2026-09-11",
   "overall_percent": 33.2,
   "primary_percent": 33.2,
   "implementation_complete_percent": 43.75,
@@ -301,10 +301,10 @@
         "name_en": "Personal 1.0.0",
         "chapter_color": "personal",
         "chapter_count": 9,
-        "item_count": 101,
-        "completed_item_count": 71,
-        "completion_percent": 70.3,
-        "status_percent": 84.65
+        "item_count": 102,
+        "completed_item_count": 72,
+        "completion_percent": 70.59,
+        "status_percent": 84.8
       },
       {
         "id": "optional",
@@ -746,8 +746,8 @@
         "status_label_en": "Implemented; live acceptance pending",
         "status_source": "child-items",
         "is_complete": true,
-        "item_count": 10,
-        "completed_item_count": 10,
+        "item_count": 11,
+        "completed_item_count": 11,
         "completion_percent": 100.0,
         "status_percent": 100.0
       },
@@ -5330,6 +5330,27 @@
         "status_percent": 100.0,
         "completion_percent": 100.0,
         "verify": "V4",
+        "is_slice": true
+      },
+      {
+        "id": "P5.11",
+        "chapter_id": "P5",
+        "chapter_name_cs": "P5 — Memory and continuity",
+        "chapter_name_en": "P5 — Memory and continuity",
+        "group_id": "personal",
+        "group_name_cs": "Personal 1.0.0",
+        "group_name_en": "Personal 1.0.0",
+        "chapter_color": "personal",
+        "description_cs": "Most projektovych pravidel do globalni pameti",
+        "description_en": "project rule memory bridge",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "verify": "V2",
         "is_slice": true
       },
       {
@@ -15119,11 +15140,11 @@
         "is_slice": true
       }
     ],
-    "item_count": 637,
-    "completed_item_count": 207,
+    "item_count": 638,
+    "completed_item_count": 208,
     "chapter_count": 73,
-    "completion_percent": 32.5,
-    "status_percent": 37.01,
+    "completion_percent": 32.6,
+    "status_percent": 37.11,
     "status_percent_contract": {
       "kind": "categorical-state-display",
       "label_cs": "Stav položky",
@@ -15147,9 +15168,9 @@
   },
   "change_summary": {
     "available": true,
-    "previous_date": "2026-09-07",
-    "roadmap_items_delta": 5,
-    "roadmap_completed_delta": 14,
+    "previous_date": "2026-09-10",
+    "roadmap_items_delta": 1,
+    "roadmap_completed_delta": 1,
     "roadmap_chapters_delta": 0,
     "verified_evidence_delta": 0,
     "metrics_delta": {
@@ -15170,7 +15191,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 82,
+    "incremental_closeout_points_since_full_baseline": 83,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -41250,6 +41271,40 @@
       },
       "verified_evidence_count": 103,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "64f389291dd8",
+      "date": "2026-09-11",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 638,
+        "completed_item_count": 208,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 1,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 103,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -41261,8 +41316,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "PF3.14.credential-native-host-registration-and-readback",
-    "source_commit_sha": "dfa96e2aac5eb4da898e9c745a825d91e7a06de5",
-    "closeout_sha": "d38e5088ff451c0b1d14ab24568f9b84a6194d89"
+    "roadmap_slice_id": "P5.11",
+    "source_commit_sha": "8603463e705d5dad251085baad5698c0fc4bfbc1",
+    "closeout_sha": "8603463e705d5dad251085baad5698c0fc4bfbc1"
   }
 }

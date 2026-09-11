@@ -25,11 +25,11 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_BEGIN -->
 ## Sledování implementace Personal 1.0.0
 
-**Synchronizovaný snapshot: 2026-09-10**
+**Synchronizovaný snapshot: 2026-09-11**
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `PF3.14.credential-native-host-registration-and-readback` je veřejně spojen se zdrojovým SHA `dfa96e2aac5eb4da898e9c745a825d91e7a06de5` a closeout SHA `d38e5088ff451c0b1d14ab24568f9b84a6194d89`. Stav: **verified**.
+Řez `P5.11` je veřejně spojen se zdrojovým SHA `8603463e705d5dad251085baad5698c0fc4bfbc1` a closeout SHA `8603463e705d5dad251085baad5698c0fc4bfbc1`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -58,7 +58,7 @@ Nejde o instalační balíček ani o prohlášení, že je produkt hotový; při
 **Legenda ikon:** · <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno · <span role="img" title="Evidence: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření." aria-label="Evidence: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření.">🟦</span> Evidence · <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno · <span role="img" title="Plánováno: Stav je plánovaný nebo pouze architektonický; značka není důkaz dokončení." aria-label="Plánováno: Stav je plánovaný nebo pouze architektonický; značka není důkaz dokončení.">⚪</span> Plánováno · <span role="img" title="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch." aria-label="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch.">⛔</span> Blokováno
 Ikona i popisek jsou viditelné přímo v README; po najetí kurzorem tooltip vysvětlí význam a nezaměňuje implementaci za živé ověření.
 
-**Změna od předchozího snapshotu: roadmapa položky +5 · hotovo +14 · ověřené důkazy +0**
+**Změna od předchozího snapshotu: roadmapa položky +1 · hotovo +1 · ověřené důkazy +0**
 
 ![Roadmapa a progress edic Jarvis](visuals/roadmap-editions.svg)
 
@@ -80,12 +80,12 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 1 209 | 464 994 | 24.16 |
-| JSON | 350 | 169 484 | 13.12 |
-| Markdown | 856 | 106 430 | 5.57 |
-| Python | 320 | 71 718 | 2.91 |
-| PowerShell | 58 | 27 254 | 1.42 |
-| JSONL | 14 | 2 499 | 6.91 |
+| C/C++ | 1 219 | 471 663 | 24.47 |
+| JSON | 354 | 170 693 | 13.18 |
+| Markdown | 863 | 107 736 | 5.64 |
+| Python | 326 | 73 598 | 2.99 |
+| PowerShell | 59 | 27 732 | 1.44 |
+| JSONL | 16 | 2 515 | 6.93 |
 | Plain text | 127 | 1 797 | 0.19 |
 | INI | 6 | 675 | 0.04 |
 | Other text | 13 | 657 | 0.02 |
@@ -94,9 +94,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **2 975** | **846 164** | **54.42** |
+| **Text/source celkem** | **3 005** | **857 722** | **54.97** |
 | Binární assety (mimo řádky) | 40 | — | 14.61 |
-| **Trackovaný strom celkem** | **3 015** | **846 164** | **69.03** |
+| **Trackovaný strom celkem** | **3 045** | **857 722** | **69.58** |
 
 ### Přírůstek od předchozí revize
 
@@ -104,9 +104,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +0 | +0 | +0.00 |
+| Text/source celkem | +5 | +1389 | +0.07 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +0 | +0 | +0.00 |
+| Trackovaný strom celkem | +5 | +1389 | +0.07 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -176,7 +176,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `e21e0fc0c16d` | 2026-09-06 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `52b69a529498` | 2026-09-07 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `68c6e84ae0b5` | 2026-09-07 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `7e4b094d2c87` | 2026-09-07 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -194,13 +193,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `7c54217963c8` | 2026-09-07 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `ea136e90ce93` | 2026-09-07 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `addcf82a238d` | 2026-09-10 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `64f389291dd8` | 2026-09-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 82 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 83 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
