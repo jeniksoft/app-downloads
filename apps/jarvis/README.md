@@ -25,11 +25,11 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_BEGIN -->
 ## Sledování implementace Personal 1.0.0
 
-**Synchronizovaný snapshot: 2026-09-11**
+**Synchronizovaný snapshot: 2026-09-15**
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `P5.11` je veřejně spojen se zdrojovým SHA `8603463e705d5dad251085baad5698c0fc4bfbc1` a closeout SHA `8603463e705d5dad251085baad5698c0fc4bfbc1`. Stav: **verified**.
+Řez `jarvis-demonolithization-43` je veřejně spojen se zdrojovým SHA `5cfc019b955040173d41d7dfd71b9ed42ace2675` a closeout SHA `5cfc019b955040173d41d7dfd71b9ed42ace2675`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -80,11 +80,11 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 1 219 | 471 663 | 24.47 |
-| JSON | 354 | 170 693 | 13.18 |
-| Markdown | 863 | 107 736 | 5.64 |
-| Python | 326 | 73 598 | 2.99 |
-| PowerShell | 59 | 27 732 | 1.44 |
+| C/C++ | 1 461 | 490 919 | 25.27 |
+| JSON | 359 | 168 663 | 29.95 |
+| Markdown | 874 | 110 382 | 5.77 |
+| Python | 335 | 75 570 | 3.08 |
+| PowerShell | 60 | 27 867 | 1.45 |
 | JSONL | 16 | 2 515 | 6.93 |
 | Plain text | 127 | 1 797 | 0.19 |
 | INI | 6 | 675 | 0.04 |
@@ -94,9 +94,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **3 005** | **857 722** | **54.97** |
+| **Text/source celkem** | **3 273** | **879 701** | **72.77** |
 | Binární assety (mimo řádky) | 40 | — | 14.61 |
-| **Trackovaný strom celkem** | **3 045** | **857 722** | **69.58** |
+| **Trackovaný strom celkem** | **3 313** | **879 701** | **87.38** |
 
 ### Přírůstek od předchozí revize
 
@@ -104,9 +104,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +5 | +1389 | +0.07 |
+| Text/source celkem | +2 | +92 | +0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +5 | +1389 | +0.07 |
+| Trackovaný strom celkem | +2 | +92 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -176,7 +176,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `52b69a529498` | 2026-09-07 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `68c6e84ae0b5` | 2026-09-07 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `7e4b094d2c87` | 2026-09-07 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `9f6709f92476` | 2026-09-07 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -194,13 +193,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `ea136e90ce93` | 2026-09-07 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `addcf82a238d` | 2026-09-10 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `64f389291dd8` | 2026-09-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `24c2a2044c49` | 2026-09-15 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 83 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 84 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
