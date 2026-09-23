@@ -43,16 +43,16 @@
       {
         "language": "JSON",
         "files": 362,
-        "physical_lines": 169290,
-        "bytes": 30204227,
-        "megabytes": 30.204227
+        "physical_lines": 169298,
+        "bytes": 30204560,
+        "megabytes": 30.20456
       },
       {
         "language": "Markdown",
         "files": 893,
-        "physical_lines": 118068,
-        "bytes": 6281759,
-        "megabytes": 6.281759
+        "physical_lines": 118112,
+        "bytes": 6284486,
+        "megabytes": 6.284486
       },
       {
         "language": "Python",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 3829,
-      "physical_lines": 948271,
-      "bytes": 76281199,
-      "megabytes": 76.281199
+      "physical_lines": 948323,
+      "bytes": 76284259,
+      "megabytes": 76.284259
     },
     "binary_assets": {
       "files": 40,
@@ -145,18 +145,18 @@
     },
     "tracked_total": {
       "files": 3869,
-      "physical_lines": 948271,
-      "bytes": 90887501,
-      "megabytes": 90.887501
+      "physical_lines": 948323,
+      "bytes": 90890561,
+      "megabytes": 90.890561
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 671,
-        "bytes": 38222,
-        "megabytes": 0.038222
+        "physical_lines": 52,
+        "bytes": 3060,
+        "megabytes": 0.00306
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 671,
-        "bytes": 38222,
-        "megabytes": 0.038222
+        "physical_lines": 52,
+        "bytes": 3060,
+        "megabytes": 0.00306
       }
     }
   },
@@ -15976,7 +15976,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 96,
+    "incremental_closeout_points_since_full_baseline": 97,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -42557,6 +42557,40 @@
       },
       "verified_evidence_count": 103,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "c4b6b18e2a1f",
+      "date": "2026-09-23",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 639,
+        "completed_item_count": 212,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 103,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -42568,8 +42602,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "M4-pohoda-backup-host-bridge",
-    "source_commit_sha": "806e9db0818f53eb284205f32fb7b7d5da36d7c6",
-    "closeout_sha": "806e9db0818f53eb284205f32fb7b7d5da36d7c6"
+    "roadmap_slice_id": "M1.5-company-expense-eligibility-skill-gates",
+    "source_commit_sha": "54c198111e0568c56b3ea35576267190bc24d16a",
+    "closeout_sha": "54c198111e0568c56b3ea35576267190bc24d16a"
   }
 }
