@@ -35,38 +35,45 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 1469,
-        "physical_lines": 492174,
-        "bytes": 25326669,
-        "megabytes": 25.326669
+        "files": 1778,
+        "physical_lines": 532402,
+        "bytes": 27076259,
+        "megabytes": 27.076259
       },
       {
         "language": "JSON",
-        "files": 361,
-        "physical_lines": 168949,
-        "bytes": 29999612,
-        "megabytes": 29.999612
+        "files": 362,
+        "physical_lines": 169289,
+        "bytes": 30204109,
+        "megabytes": 30.204109
       },
       {
         "language": "Markdown",
-        "files": 877,
-        "physical_lines": 110586,
-        "bytes": 5781461,
-        "megabytes": 5.781461
+        "files": 893,
+        "physical_lines": 118048,
+        "bytes": 6280450,
+        "megabytes": 6.28045
       },
       {
         "language": "Python",
-        "files": 336,
-        "physical_lines": 75867,
-        "bytes": 3088244,
-        "megabytes": 3.088244
+        "files": 483,
+        "physical_lines": 84472,
+        "bytes": 3493832,
+        "megabytes": 3.493832
       },
       {
         "language": "PowerShell",
-        "files": 60,
-        "physical_lines": 27918,
-        "bytes": 1448651,
-        "megabytes": 1.448651
+        "files": 61,
+        "physical_lines": 29457,
+        "bytes": 1536948,
+        "megabytes": 1.536948
+      },
+      {
+        "language": "Other text",
+        "files": 75,
+        "physical_lines": 5672,
+        "bytes": 282608,
+        "megabytes": 0.282608
       },
       {
         "language": "JSONL",
@@ -84,17 +91,10 @@
       },
       {
         "language": "INI",
-        "files": 6,
-        "physical_lines": 675,
-        "bytes": 40746,
-        "megabytes": 0.040746
-      },
-      {
-        "language": "Other text",
-        "files": 13,
-        "physical_lines": 657,
-        "bytes": 24208,
-        "megabytes": 0.024208
+        "files": 8,
+        "physical_lines": 703,
+        "bytes": 41767,
+        "megabytes": 0.041767
       },
       {
         "language": "Shell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 3287,
-      "physical_lines": 881794,
-      "bytes": 72910502,
-      "megabytes": 72.910502
+      "files": 3825,
+      "physical_lines": 945011,
+      "bytes": 76116884,
+      "megabytes": 76.116884
     },
     "binary_assets": {
       "files": 40,
@@ -144,19 +144,19 @@
       "megabytes": 14.606302
     },
     "tracked_total": {
-      "files": 3327,
-      "physical_lines": 881794,
-      "bytes": 87516804,
-      "megabytes": 87.516804
+      "files": 3865,
+      "physical_lines": 945011,
+      "bytes": 90723186,
+      "megabytes": 90.723186
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 2,
-        "physical_lines": 130,
-        "bytes": 5694,
-        "megabytes": 0.005694
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": -48,
+        "megabytes": -4.8e-05
       },
       "binary_assets": {
         "files": 0,
@@ -165,19 +165,144 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 2,
-        "physical_lines": 130,
-        "bytes": 5694,
-        "megabytes": 0.005694
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": -48,
+        "megabytes": -4.8e-05
       }
     }
   },
-  "updated_at": "2026-09-16",
+  "updated_at": "2026-09-23",
   "overall_percent": 33.2,
   "primary_percent": 33.2,
   "implementation_complete_percent": 43.75,
   "verified_percent": 33.2,
   "done_percent": 33.2,
+  "personal_progress": {
+    "profile_id": "jarvis-personal-1.0.0",
+    "edition": "Personal",
+    "version": "1.0.0",
+    "primary_percent": 33.2,
+    "implementation_percent": 43.75,
+    "verified_percent": 33.2,
+    "done_percent": 33.2,
+    "chapter_count": 8,
+    "chapters": [
+      {
+        "id": "app-shell-release",
+        "name_cs": "Aplikační shell, instalátor, update a veřejný kanál",
+        "name_en": "Application shell, installer, update and public channel",
+        "weight_percent": 10.0,
+        "implementation_percent": 50.0,
+        "verified_percent": 31.25,
+        "done_percent": 31.25,
+        "weighted_implementation_percent": 5.0,
+        "weighted_verified_percent": 3.13,
+        "weighted_done_percent": 3.13,
+        "status": "in-progress",
+        "evidence_source": "milestone-evidence-manifest"
+      },
+      {
+        "id": "worker-recovery",
+        "name_cs": "Worker core, konverzace, fronta a recovery",
+        "name_en": "Worker core, conversations, queue and recovery",
+        "weight_percent": 12.0,
+        "implementation_percent": 50.0,
+        "verified_percent": 37.5,
+        "done_percent": 37.5,
+        "weighted_implementation_percent": 6.0,
+        "weighted_verified_percent": 4.5,
+        "weighted_done_percent": 4.5,
+        "status": "in-progress",
+        "evidence_source": "milestone-evidence-manifest"
+      },
+      {
+        "id": "model-routing",
+        "name_cs": "Model providery, profily, routing a fallback",
+        "name_en": "Model providers, profiles, routing and fallback",
+        "weight_percent": 10.0,
+        "implementation_percent": 75.0,
+        "verified_percent": 62.5,
+        "done_percent": 62.5,
+        "weighted_implementation_percent": 7.5,
+        "weighted_verified_percent": 6.25,
+        "weighted_done_percent": 6.25,
+        "status": "in-progress",
+        "evidence_source": "milestone-evidence-manifest"
+      },
+      {
+        "id": "workspace-actions",
+        "name_cs": "Workspace, memory, source, patch, build, Git a web",
+        "name_en": "Workspace, memory, source, patch, build, Git and web",
+        "weight_percent": 14.0,
+        "implementation_percent": 75.0,
+        "verified_percent": 67.5,
+        "done_percent": 67.5,
+        "weighted_implementation_percent": 10.5,
+        "weighted_verified_percent": 9.45,
+        "weighted_done_percent": 9.45,
+        "status": "in-progress",
+        "evidence_source": "milestone-evidence-manifest"
+      },
+      {
+        "id": "extensions-permissions",
+        "name_cs": "Extension discovery, manager a permissions",
+        "name_en": "Extension discovery, manager and permissions",
+        "weight_percent": 16.0,
+        "implementation_percent": 25.0,
+        "verified_percent": 6.25,
+        "done_percent": 6.25,
+        "weighted_implementation_percent": 4.0,
+        "weighted_verified_percent": 1.0,
+        "weighted_done_percent": 1.0,
+        "status": "in-progress",
+        "evidence_source": "milestone-evidence-manifest"
+      },
+      {
+        "id": "executor-runtime",
+        "name_cs": "Policy-bound MCP, plugin a app executor runtime",
+        "name_en": "Policy-bound MCP, plugin and app executor runtime",
+        "weight_percent": 20.0,
+        "implementation_percent": 25.0,
+        "verified_percent": 25.0,
+        "done_percent": 25.0,
+        "weighted_implementation_percent": 5.0,
+        "weighted_verified_percent": 5.0,
+        "weighted_done_percent": 5.0,
+        "status": "in-progress",
+        "evidence_source": "milestone-evidence-manifest"
+      },
+      {
+        "id": "owner-ux",
+        "name_cs": "Owner-facing UX, diagnostika, support a lokalizace",
+        "name_en": "Owner-facing UX, diagnostics, support and localization",
+        "weight_percent": 10.0,
+        "implementation_percent": 37.5,
+        "verified_percent": 18.75,
+        "done_percent": 18.75,
+        "weighted_implementation_percent": 3.75,
+        "weighted_verified_percent": 1.88,
+        "weighted_done_percent": 1.88,
+        "status": "in-progress",
+        "evidence_source": "milestone-evidence-manifest"
+      },
+      {
+        "id": "qa-dogfood",
+        "name_cs": "End-to-end QA, dogfooding a bezpečnostní audity",
+        "name_en": "End-to-end QA, dogfooding and safety audits",
+        "weight_percent": 8.0,
+        "implementation_percent": 25.0,
+        "verified_percent": 25.0,
+        "done_percent": 25.0,
+        "weighted_implementation_percent": 2.0,
+        "weighted_verified_percent": 2.0,
+        "weighted_done_percent": 2.0,
+        "status": "in-progress",
+        "evidence_source": "milestone-evidence-manifest"
+      }
+    ],
+    "formula": "weighted chapter contribution = chapter weight * chapter completion / 100"
+  },
   "roadmap": {
     "source": {
       "roadmap_id": "jarvis.master.worker.v2",
@@ -281,7 +406,7 @@
         "chapter_count": 9,
         "item_count": 54,
         "completed_item_count": 46,
-        "completion_percent": 85.19,
+        "completion_percent": 91.67,
         "status_percent": 91.67
       },
       {
@@ -292,7 +417,7 @@
         "chapter_count": 7,
         "item_count": 57,
         "completed_item_count": 40,
-        "completion_percent": 70.18,
+        "completion_percent": 77.63,
         "status_percent": 77.63
       },
       {
@@ -303,7 +428,7 @@
         "chapter_count": 9,
         "item_count": 103,
         "completed_item_count": 73,
-        "completion_percent": 70.87,
+        "completion_percent": 84.95,
         "status_percent": 84.95
       },
       {
@@ -313,9 +438,9 @@
         "chapter_color": "optional",
         "chapter_count": 9,
         "item_count": 101,
-        "completed_item_count": 43,
-        "completion_percent": 42.57,
-        "status_percent": 46.53
+        "completed_item_count": 46,
+        "completion_percent": 48.76,
+        "status_percent": 48.76
       },
       {
         "id": "teams",
@@ -347,7 +472,7 @@
         "chapter_count": 19,
         "item_count": 191,
         "completed_item_count": 7,
-        "completion_percent": 3.66,
+        "completion_percent": 4.97,
         "status_percent": 4.97
       }
     ],
@@ -387,7 +512,7 @@
         "is_complete": false,
         "item_count": 6,
         "completed_item_count": 5,
-        "completion_percent": 83.33,
+        "completion_percent": 91.67,
         "status_percent": 91.67
       },
       {
@@ -425,7 +550,7 @@
         "is_complete": false,
         "item_count": 14,
         "completed_item_count": 12,
-        "completion_percent": 85.71,
+        "completion_percent": 89.29,
         "status_percent": 89.29
       },
       {
@@ -501,7 +626,7 @@
         "is_complete": false,
         "item_count": 5,
         "completed_item_count": 0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
         "status_percent": 50.0
       },
       {
@@ -558,7 +683,7 @@
         "is_complete": false,
         "item_count": 10,
         "completed_item_count": 0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
         "status_percent": 25.0
       },
       {
@@ -634,7 +759,7 @@
         "is_complete": false,
         "item_count": 7,
         "completed_item_count": 0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
         "status_percent": 25.0
       },
       {
@@ -672,7 +797,7 @@
         "is_complete": false,
         "item_count": 11,
         "completed_item_count": 10,
-        "completion_percent": 90.91,
+        "completion_percent": 95.45,
         "status_percent": 95.45
       },
       {
@@ -691,7 +816,7 @@
         "is_complete": false,
         "item_count": 12,
         "completed_item_count": 11,
-        "completion_percent": 91.67,
+        "completion_percent": 95.83,
         "status_percent": 95.83
       },
       {
@@ -710,7 +835,7 @@
         "is_complete": false,
         "item_count": 11,
         "completed_item_count": 10,
-        "completion_percent": 90.91,
+        "completion_percent": 93.18,
         "status_percent": 93.18
       },
       {
@@ -767,7 +892,7 @@
         "is_complete": false,
         "item_count": 10,
         "completed_item_count": 9,
-        "completion_percent": 90.0,
+        "completion_percent": 92.5,
         "status_percent": 92.5
       },
       {
@@ -786,7 +911,7 @@
         "is_complete": false,
         "item_count": 11,
         "completed_item_count": 4,
-        "completion_percent": 36.36,
+        "completion_percent": 68.18,
         "status_percent": 68.18
       },
       {
@@ -805,7 +930,7 @@
         "is_complete": false,
         "item_count": 15,
         "completed_item_count": 1,
-        "completion_percent": 6.67,
+        "completion_percent": 53.33,
         "status_percent": 53.33
       },
       {
@@ -824,7 +949,7 @@
         "is_complete": false,
         "item_count": 5,
         "completed_item_count": 0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
         "status_percent": 50.0
       },
       {
@@ -842,9 +967,9 @@
         "status_source": "child-items",
         "is_complete": false,
         "item_count": 11,
-        "completed_item_count": 5,
-        "completion_percent": 45.45,
-        "status_percent": 63.64
+        "completed_item_count": 6,
+        "completion_percent": 70.45,
+        "status_percent": 70.45
       },
       {
         "id": "OP2",
@@ -881,7 +1006,7 @@
         "is_complete": false,
         "item_count": 12,
         "completed_item_count": 9,
-        "completion_percent": 75.0,
+        "completion_percent": 85.42,
         "status_percent": 85.42
       },
       {
@@ -899,9 +1024,9 @@
         "status_source": "child-items",
         "is_complete": false,
         "item_count": 32,
-        "completed_item_count": 29,
-        "completion_percent": 90.63,
-        "status_percent": 92.97
+        "completed_item_count": 31,
+        "completion_percent": 97.66,
+        "status_percent": 97.66
       },
       {
         "id": "OP5",
@@ -1717,7 +1842,7 @@
         "is_complete": false,
         "item_count": 16,
         "completed_item_count": 6,
-        "completion_percent": 37.5,
+        "completion_percent": 53.13,
         "status_percent": 53.13
       },
       {
@@ -1759,6 +1884,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V1",
         "is_slice": true
       },
@@ -1780,6 +1906,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V1",
         "is_slice": true
       },
@@ -1801,6 +1928,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V1",
         "is_slice": true
       },
@@ -1822,6 +1950,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V1",
         "is_slice": true
       },
@@ -1843,6 +1972,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -1863,7 +1993,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -1885,6 +2016,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -1906,6 +2038,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -1927,6 +2060,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -1948,6 +2082,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -1969,6 +2104,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -1990,6 +2126,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -2011,6 +2148,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -2032,6 +2170,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -2053,6 +2192,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -2074,6 +2214,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V1",
         "is_slice": true
       },
@@ -2094,7 +2235,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -2116,6 +2258,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -2137,6 +2280,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -2158,6 +2302,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -2179,6 +2324,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -2200,6 +2346,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -2221,6 +2368,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -2242,6 +2390,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -2263,6 +2412,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -2284,6 +2434,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -2304,7 +2455,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -2326,6 +2478,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -2347,6 +2500,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -2368,6 +2522,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -2389,6 +2544,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -2410,6 +2566,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -2431,6 +2588,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -2452,6 +2610,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -2473,6 +2632,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -2494,6 +2654,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -2515,6 +2676,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -2536,6 +2698,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -2557,6 +2720,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -2578,6 +2742,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -2599,6 +2764,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -2620,6 +2786,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -2641,6 +2808,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -2662,6 +2830,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -2683,6 +2852,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -2703,7 +2873,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V2",
         "is_slice": true
       },
@@ -2724,7 +2895,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V2",
         "is_slice": true
       },
@@ -2745,7 +2917,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V2",
         "is_slice": true
       },
@@ -2766,7 +2939,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V2",
         "is_slice": true
       },
@@ -2787,7 +2961,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V2",
         "is_slice": true
       },
@@ -2809,6 +2984,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V2",
         "is_slice": true
       },
@@ -2830,6 +3006,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V2",
         "is_slice": true
       },
@@ -2851,6 +3028,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V2",
         "is_slice": true
       },
@@ -2872,6 +3050,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V2",
         "is_slice": true
       },
@@ -2893,6 +3072,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -2914,6 +3094,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -2935,6 +3116,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -2956,6 +3138,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -2977,6 +3160,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -2998,6 +3182,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -3019,6 +3204,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -3039,7 +3225,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3060,7 +3247,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3081,7 +3269,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3102,7 +3291,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3123,7 +3313,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3144,7 +3335,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3165,7 +3357,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3186,7 +3379,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3207,7 +3401,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3228,7 +3423,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3250,6 +3446,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -3271,6 +3468,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -3292,6 +3490,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -3313,6 +3512,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -3334,6 +3534,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -3355,6 +3556,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -3376,6 +3578,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -3397,6 +3600,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -3418,6 +3622,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3439,6 +3644,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3460,6 +3666,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3481,6 +3688,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3502,6 +3710,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3523,6 +3732,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3544,6 +3754,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3565,6 +3776,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3586,6 +3798,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3607,6 +3820,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3628,6 +3842,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -3649,6 +3864,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -3670,6 +3886,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -3691,6 +3908,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -3712,6 +3930,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -3733,6 +3952,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -3754,6 +3974,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -3775,6 +3996,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -3795,7 +4017,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3816,7 +4039,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3837,7 +4061,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3858,7 +4083,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3879,7 +4105,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3900,7 +4127,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3921,7 +4149,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3943,6 +4172,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3964,6 +4194,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -3985,6 +4216,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -4006,6 +4238,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -4027,6 +4260,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -4048,6 +4282,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -4069,6 +4304,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -4090,6 +4326,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V0",
         "is_slice": true
       },
@@ -4111,6 +4348,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -4132,6 +4370,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -4153,6 +4392,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -4174,6 +4414,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -4195,6 +4436,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -4216,6 +4458,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -4237,6 +4480,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -4257,7 +4501,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V4",
         "is_slice": true
       },
@@ -4279,6 +4524,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V4",
         "is_slice": true
       },
@@ -4300,6 +4546,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V5",
         "is_slice": true
       },
@@ -4321,6 +4568,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -4342,6 +4590,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -4363,6 +4612,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -4384,6 +4634,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -4404,7 +4655,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V4",
         "is_slice": true
       },
@@ -4426,6 +4678,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -4447,6 +4700,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V1",
         "is_slice": true
       },
@@ -4468,6 +4722,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V2",
         "is_slice": true
       },
@@ -4489,6 +4744,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -4510,6 +4766,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -4531,6 +4788,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V5",
         "is_slice": true
       },
@@ -4552,6 +4810,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -4573,6 +4832,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -4594,6 +4854,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -4615,6 +4876,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V1",
         "is_slice": true
       },
@@ -4636,6 +4898,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V1",
         "is_slice": true
       },
@@ -4657,6 +4920,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V1",
         "is_slice": true
       },
@@ -4678,6 +4942,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -4699,6 +4964,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -4720,6 +4986,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -4741,6 +5008,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -4761,7 +5029,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -4783,6 +5052,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V2",
         "is_slice": true
       },
@@ -4804,6 +5074,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V1",
         "is_slice": true
       },
@@ -4825,6 +5096,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -4846,6 +5118,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -4867,6 +5140,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -4888,6 +5162,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -4909,6 +5184,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -4930,6 +5206,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -4951,6 +5228,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V2",
         "is_slice": true
       },
@@ -4972,6 +5250,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -4993,6 +5272,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V4",
         "is_slice": true
       },
@@ -5014,6 +5294,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -5035,6 +5316,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V2",
         "is_slice": true
       },
@@ -5056,6 +5338,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -5077,6 +5360,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V4",
         "is_slice": true
       },
@@ -5098,6 +5382,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V4",
         "is_slice": true
       },
@@ -5119,6 +5404,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V4",
         "is_slice": true
       },
@@ -5140,6 +5426,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -5161,6 +5448,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V1",
         "is_slice": true
       },
@@ -5182,6 +5470,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -5203,6 +5492,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -5224,6 +5514,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -5245,6 +5536,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V1",
         "is_slice": true
       },
@@ -5266,6 +5558,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -5287,6 +5580,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -5308,6 +5602,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -5329,6 +5624,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V4",
         "is_slice": true
       },
@@ -5350,6 +5646,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -5371,6 +5668,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -5392,6 +5690,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -5413,6 +5712,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -5434,6 +5734,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V2",
         "is_slice": true
       },
@@ -5455,6 +5756,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V2",
         "is_slice": true
       },
@@ -5476,6 +5778,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V5",
         "is_slice": true
       },
@@ -5497,6 +5800,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V2",
         "is_slice": true
       },
@@ -5518,6 +5822,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -5539,6 +5844,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V4",
         "is_slice": true
       },
@@ -5560,6 +5866,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -5580,7 +5887,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V0",
         "is_slice": true
       },
@@ -5602,6 +5910,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V2",
         "is_slice": true
       },
@@ -5623,6 +5932,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -5644,6 +5954,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V2",
         "is_slice": true
       },
@@ -5665,6 +5976,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -5685,7 +5997,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -5706,7 +6019,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -5727,7 +6041,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -5748,7 +6063,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -5769,7 +6085,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V2",
         "is_slice": true
       },
@@ -5790,7 +6107,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V2",
         "is_slice": true
       },
@@ -5811,7 +6129,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V5",
         "is_slice": true
       },
@@ -5832,7 +6151,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V5",
         "is_slice": true
       },
@@ -5853,7 +6173,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V5",
         "is_slice": true
       },
@@ -5874,7 +6195,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V5",
         "is_slice": true
       },
@@ -5895,7 +6217,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V5",
         "is_slice": true
       },
@@ -5916,7 +6239,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V5",
         "is_slice": true
       },
@@ -5937,7 +6261,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V5",
         "is_slice": true
       },
@@ -5958,7 +6283,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V5",
         "is_slice": true
       },
@@ -5979,7 +6305,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -6000,7 +6327,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V6",
         "is_slice": true
       },
@@ -6021,7 +6349,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V6",
         "is_slice": true
       },
@@ -6042,7 +6371,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V6",
         "is_slice": true
       },
@@ -6063,7 +6393,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V6",
         "is_slice": true
       },
@@ -6084,7 +6415,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V5",
         "is_slice": true
       },
@@ -6105,7 +6437,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V5",
         "is_slice": true
       },
@@ -6127,6 +6460,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V6",
         "is_slice": true
       },
@@ -6147,7 +6481,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V1",
         "is_slice": true
       },
@@ -6168,7 +6503,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -6189,7 +6525,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V6",
         "is_slice": true
       },
@@ -6210,7 +6547,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -6231,7 +6569,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V6",
         "is_slice": true
       },
@@ -6253,6 +6592,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V1",
         "is_slice": true
       },
@@ -6274,6 +6614,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -6295,6 +6636,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -6315,7 +6657,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V5",
         "is_slice": true
       },
@@ -6330,13 +6673,14 @@
         "chapter_color": "optional",
         "description_cs": "Model-led typované akce s policy branou a read-backem",
         "description_en": "model-led typed actions with policy gate and read-back",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "canonical-roadmap-slice",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap-slice",
         "verify": "V3",
         "is_slice": true
       },
@@ -6357,7 +6701,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -6379,6 +6724,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V5",
         "is_slice": true
       },
@@ -6400,6 +6746,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -6420,7 +6767,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -6441,7 +6789,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -6462,7 +6811,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -6484,6 +6834,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V1",
         "is_slice": true
       },
@@ -6505,6 +6856,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -6526,6 +6878,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -6547,6 +6900,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -6568,6 +6922,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -6589,6 +6944,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -6610,6 +6966,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V1",
         "is_slice": true
       },
@@ -6631,6 +6988,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -6652,6 +7010,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -6673,6 +7032,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -6693,7 +7053,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -6714,7 +7075,8 @@
         "status_source": "current-evidence",
         "is_complete": false,
         "status_percent": 50.0,
-        "completion_percent": 0.0,
+        "completion_percent": 50.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V3",
         "is_slice": true
       },
@@ -6735,7 +7097,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -6757,6 +7120,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V5",
         "is_slice": true
       },
@@ -6778,6 +7142,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -6799,6 +7164,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -6820,6 +7186,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -6841,6 +7208,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -6862,6 +7230,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -6883,6 +7252,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -6904,6 +7274,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V4",
         "is_slice": true
       },
@@ -6925,6 +7296,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V4",
         "is_slice": true
       },
@@ -6946,6 +7318,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V4",
         "is_slice": true
       },
@@ -6967,6 +7340,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -6988,6 +7362,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -7009,6 +7384,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -7023,13 +7399,14 @@
         "chapter_color": "optional",
         "description_cs": "Ohraničená WASAPI loopback reference s lokálním potlačením ozvěny a RNNoise/nativním potlačením hluku před lokálním STT",
         "description_en": "bounded WASAPI loopback reference with local echo cancellation and RNNoise/native noise suppression before local STT",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "canonical-roadmap-slice",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap-slice",
         "verify": "V3",
         "is_slice": true
       },
@@ -7051,6 +7428,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -7072,6 +7450,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -7093,6 +7472,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -7114,6 +7494,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -7135,6 +7516,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -7156,6 +7538,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -7177,6 +7560,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -7198,6 +7582,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -7219,6 +7604,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -7240,6 +7626,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -7261,6 +7648,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V4",
         "is_slice": true
       },
@@ -7282,6 +7670,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -7303,6 +7692,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -7323,7 +7713,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -7345,6 +7736,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V4",
         "is_slice": true
       },
@@ -7366,6 +7758,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -7387,6 +7780,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V4",
         "is_slice": true
       },
@@ -7401,13 +7795,14 @@
         "chapter_color": "optional",
         "description_cs": "Ohraničené znovupřipojení Core služby a idempotentní opakování typovaného intentu",
         "description_en": "bounded Core service reconnect and idempotent typed intent replay",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "canonical-roadmap-slice",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap-slice",
         "verify": "V3",
         "is_slice": true
       },
@@ -7429,6 +7824,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -7450,6 +7846,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -7471,6 +7868,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -7492,6 +7890,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -7513,6 +7912,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -7534,6 +7934,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V1",
         "is_slice": true
       },
@@ -7555,6 +7956,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -7576,6 +7978,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -7597,6 +8000,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -7618,6 +8022,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -7639,6 +8044,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -7660,6 +8066,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -7681,6 +8088,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -7702,6 +8110,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V1",
         "is_slice": true
       },
@@ -7723,6 +8132,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V1",
         "is_slice": true
       },
@@ -7744,6 +8154,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -7765,6 +8176,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -7786,6 +8198,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -7807,6 +8220,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -7828,6 +8242,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -7849,6 +8264,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -7870,6 +8286,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -7891,6 +8308,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -7912,6 +8330,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -7933,6 +8352,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -7954,6 +8374,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -7975,6 +8396,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -7996,6 +8418,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -8017,6 +8440,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V1",
         "is_slice": true
       },
@@ -8038,6 +8462,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V1",
         "is_slice": true
       },
@@ -8059,6 +8484,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -8080,6 +8506,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -8101,6 +8528,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -8122,6 +8550,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -8143,6 +8572,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -8164,6 +8594,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -8185,6 +8616,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V1",
         "is_slice": true
       },
@@ -8206,6 +8638,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V1",
         "is_slice": true
       },
@@ -8227,6 +8660,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -8248,6 +8682,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -8269,6 +8704,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -8290,6 +8726,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -8311,6 +8748,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -8332,6 +8770,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -8353,6 +8792,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -8374,6 +8814,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -8395,6 +8836,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -8416,6 +8858,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -8437,6 +8880,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -8458,6 +8902,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -8479,6 +8924,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -8500,6 +8946,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -8521,6 +8968,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -8542,6 +8990,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -8563,6 +9012,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -8584,6 +9034,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -8605,6 +9056,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -8626,6 +9078,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -8647,6 +9100,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -8668,6 +9122,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -8689,6 +9144,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -8710,6 +9166,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -8731,6 +9188,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -8752,6 +9210,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -8773,6 +9232,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -8794,6 +9254,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -8815,6 +9276,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -8836,6 +9298,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -8857,6 +9320,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -8878,6 +9342,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -8899,6 +9364,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -8920,6 +9386,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -8941,6 +9408,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -8962,6 +9430,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -8983,6 +9452,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -9004,6 +9474,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -9025,6 +9496,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -9046,6 +9518,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -9067,6 +9540,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -9088,6 +9562,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -9109,6 +9584,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -9130,6 +9606,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -9151,6 +9628,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -9172,6 +9650,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -9193,6 +9672,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -9214,6 +9694,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -9235,6 +9716,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -9256,6 +9738,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -9277,6 +9760,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -9298,6 +9782,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -9319,6 +9804,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -9340,6 +9826,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -9361,6 +9848,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -9382,6 +9870,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -9403,6 +9892,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -9424,6 +9914,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -9445,6 +9936,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -9466,6 +9958,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -9487,6 +9980,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -9508,6 +10002,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -9529,6 +10024,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -9550,6 +10046,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -9571,6 +10068,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -9592,6 +10090,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -9613,6 +10112,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -9634,6 +10134,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -9655,6 +10156,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -9676,6 +10178,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -9697,6 +10200,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -9718,6 +10222,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -9739,6 +10244,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -9760,6 +10266,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -9781,6 +10288,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -9802,6 +10310,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -9823,6 +10332,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -9844,6 +10354,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -9865,6 +10376,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -9886,6 +10398,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -9907,6 +10420,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -9928,6 +10442,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -9949,6 +10464,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -9970,6 +10486,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -9991,6 +10508,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -10012,6 +10530,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -10033,6 +10552,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -10054,6 +10574,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -10075,6 +10596,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -10096,6 +10618,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -10117,6 +10640,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -10138,6 +10662,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -10159,6 +10684,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -10180,6 +10706,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -10201,6 +10728,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -10222,6 +10750,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -10243,6 +10772,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -10264,6 +10794,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -10285,6 +10816,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -10306,6 +10838,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -10327,6 +10860,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -10348,6 +10882,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10369,6 +10904,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10390,6 +10926,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -10411,6 +10948,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -10432,6 +10970,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -10453,6 +10992,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -10474,6 +11014,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10495,6 +11036,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10516,6 +11058,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10537,6 +11080,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10558,6 +11102,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10579,6 +11124,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10600,6 +11146,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10621,6 +11168,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10642,6 +11190,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10663,6 +11212,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10684,6 +11234,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10705,6 +11256,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10726,6 +11278,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10747,6 +11300,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10768,6 +11322,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10789,6 +11344,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10810,6 +11366,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10831,6 +11388,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10852,6 +11410,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10873,6 +11432,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10894,6 +11454,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10915,6 +11476,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -10936,6 +11498,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -10957,6 +11520,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -10978,6 +11542,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -10999,6 +11564,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -11020,6 +11586,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -11041,6 +11608,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -11062,6 +11630,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -11083,6 +11652,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -11104,6 +11674,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -11125,6 +11696,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -11146,6 +11718,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -11167,6 +11740,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V0",
         "is_slice": true
       },
@@ -11188,6 +11762,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -11209,6 +11784,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -11230,6 +11806,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -11251,6 +11828,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-evidence",
         "verify": "V4",
         "is_slice": true
       },
@@ -11272,6 +11850,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -11293,6 +11872,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -11314,6 +11894,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -11335,6 +11916,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -11356,6 +11938,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -11377,6 +11960,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -11398,6 +11982,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -11419,6 +12004,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -11440,6 +12026,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -11461,6 +12048,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -11482,6 +12070,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V0",
         "is_slice": true
       },
@@ -11503,6 +12092,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V1",
         "is_slice": true
       },
@@ -11524,6 +12114,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -11545,6 +12136,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -11566,6 +12158,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -11587,6 +12180,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -11608,6 +12202,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -11629,6 +12224,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -11650,6 +12246,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -11671,6 +12268,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V0",
         "is_slice": true
       },
@@ -11692,6 +12290,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -11713,6 +12312,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -11734,6 +12334,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -11755,6 +12356,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -11776,6 +12378,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -11797,6 +12400,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -11818,6 +12422,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -11839,6 +12444,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -11860,6 +12466,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -11881,6 +12488,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -11902,6 +12510,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -11923,6 +12532,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -11944,6 +12554,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V0",
         "is_slice": true
       },
@@ -11965,6 +12576,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -11986,6 +12598,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -12007,6 +12620,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -12028,6 +12642,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -12049,6 +12664,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -12070,6 +12686,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -12091,6 +12708,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -12112,6 +12730,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -12133,6 +12752,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -12154,6 +12774,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -12175,6 +12796,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -12196,6 +12818,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -12217,6 +12840,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -12238,6 +12862,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -12259,6 +12884,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -12280,6 +12906,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -12301,6 +12928,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -12322,6 +12950,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -12343,6 +12972,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -12364,6 +12994,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -12385,6 +13016,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V0",
         "is_slice": true
       },
@@ -12406,6 +13038,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V0",
         "is_slice": true
       },
@@ -12427,6 +13060,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V0",
         "is_slice": true
       },
@@ -12448,6 +13082,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V0",
         "is_slice": true
       },
@@ -12469,6 +13104,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V0",
         "is_slice": true
       },
@@ -12490,6 +13126,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V0",
         "is_slice": true
       },
@@ -12511,6 +13148,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V0",
         "is_slice": true
       },
@@ -12532,6 +13170,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -12553,6 +13192,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -12574,6 +13214,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -12595,6 +13236,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -12616,6 +13258,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -12637,6 +13280,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -12658,6 +13302,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -12679,6 +13324,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -12700,6 +13346,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -12721,6 +13368,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -12742,6 +13390,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -12763,6 +13412,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -12784,6 +13434,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -12805,6 +13456,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -12826,6 +13478,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -12847,6 +13500,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -12868,6 +13522,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -12889,6 +13544,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -12910,6 +13566,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -12931,6 +13588,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -12952,6 +13610,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -12973,6 +13632,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -12994,6 +13654,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -13015,6 +13676,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -13036,6 +13698,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -13057,6 +13720,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -13078,6 +13742,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -13099,6 +13764,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -13120,6 +13786,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -13141,6 +13808,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -13162,6 +13830,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -13183,6 +13852,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -13204,6 +13874,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -13225,6 +13896,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -13246,6 +13918,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -13267,6 +13940,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -13288,6 +13962,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -13309,6 +13984,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -13330,6 +14006,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -13351,6 +14028,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -13372,6 +14050,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -13393,6 +14072,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -13414,6 +14094,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13435,6 +14116,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13456,6 +14138,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13477,6 +14160,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13498,6 +14182,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13519,6 +14204,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13540,6 +14226,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13561,6 +14248,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13582,6 +14270,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13603,6 +14292,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13624,6 +14314,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13645,6 +14336,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13666,6 +14358,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13687,6 +14380,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13708,6 +14402,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13729,6 +14424,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13750,6 +14446,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13771,6 +14468,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13792,6 +14490,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13813,6 +14512,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13834,6 +14534,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13855,6 +14556,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13876,6 +14578,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13897,6 +14600,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13918,6 +14622,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13939,6 +14644,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13960,6 +14666,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -13981,6 +14688,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -14002,6 +14710,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -14023,6 +14732,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -14044,6 +14754,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -14065,6 +14776,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -14086,6 +14798,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -14107,6 +14820,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -14128,6 +14842,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -14149,6 +14864,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -14170,6 +14886,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -14191,6 +14908,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -14212,6 +14930,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -14233,6 +14952,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -14254,6 +14974,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -14275,6 +14996,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -14296,6 +15018,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -14317,6 +15040,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -14338,6 +15062,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -14359,6 +15084,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -14380,6 +15106,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -14401,6 +15128,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -14422,6 +15150,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -14443,6 +15172,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -14464,6 +15194,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -14485,6 +15216,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       },
@@ -14506,6 +15238,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V1",
         "is_slice": true
       },
@@ -14527,6 +15260,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -14548,6 +15282,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -14569,6 +15304,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -14590,6 +15326,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -14611,6 +15348,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -14632,6 +15370,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -14653,6 +15392,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -14674,6 +15414,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V0",
         "is_slice": true
       },
@@ -14695,6 +15436,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -14716,6 +15458,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -14737,6 +15480,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -14758,6 +15502,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V4",
         "is_slice": true
       },
@@ -14779,6 +15524,7 @@
         "is_complete": true,
         "status_percent": 100.0,
         "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V4",
         "is_slice": true
       },
@@ -14799,7 +15545,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -14820,7 +15567,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -14841,7 +15589,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -14862,7 +15611,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -14883,7 +15633,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -14904,7 +15655,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -14925,7 +15677,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -14946,7 +15699,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -14967,7 +15721,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -14988,7 +15743,8 @@
         "status_source": "canonical-roadmap",
         "is_complete": false,
         "status_percent": 25.0,
-        "completion_percent": 0.0,
+        "completion_percent": 25.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -15010,6 +15766,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
       },
@@ -15031,6 +15788,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -15052,6 +15810,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
       },
@@ -15073,6 +15832,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -15094,6 +15854,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
       },
@@ -15115,6 +15876,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -15136,6 +15898,7 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
       },
@@ -15157,15 +15920,16 @@
         "is_complete": false,
         "status_percent": 0.0,
         "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap",
         "verify": "V6",
         "is_slice": true
       }
     ],
     "item_count": 639,
-    "completed_item_count": 209,
+    "completed_item_count": 212,
     "chapter_count": 73,
-    "completion_percent": 32.71,
-    "status_percent": 37.21,
+    "completion_percent": 37.56,
+    "status_percent": 37.56,
     "status_percent_contract": {
       "kind": "categorical-state-display",
       "label_cs": "Stav položky",
@@ -15182,16 +15946,16 @@
         "planned": 0.0,
         "open": 0.0
       },
-      "description_cs": "Stavové procento řádku je pevná škála 0/25/50/100; procento hotova kapitoly a skupiny je podíl dokončených řádků.",
-      "description_en": "A row state percent is a fixed 0/25/50/100 scale; chapter and group done percent is the share of completed rows."
+      "description_cs": "Stavové procento řádku je pevná škála 0/25/50/100; procento hotova kapitoly a skupiny je průměr stavových procent řádků a zahrnuje i částečné řezy.",
+      "description_en": "A row state percent is a fixed 0/25/50/100 scale; chapter and group done percent is the average row state score and includes partial slices."
     },
-    "limitations": "Stavové procento řádku je dokumentovaná kategoriální škála, nikoli zdrojové řádky ani evidence-bound index. Procento hotova kapitoly/skupiny je pouze podíl dokončených položek; živé owner acceptance může zůstat otevřené. Teams a Enterprise nemají aktivní evidence-bound měření edice."
+    "limitations": "Stavové procento řádku je dokumentovaná kategoriální škála, nikoli zdrojové řádky ani evidence-bound index. Procento hotova kapitoly/skupiny je průměr stavových procent jejich řádků; počet úplně dokončených řádků zůstává samostatná metrika a živé owner acceptance může zůstat otevřené. Teams a Enterprise nemají aktivní evidence-bound měření edice."
   },
   "change_summary": {
     "available": true,
-    "previous_date": "2026-09-15",
+    "previous_date": "2026-09-16",
     "roadmap_items_delta": 0,
-    "roadmap_completed_delta": 0,
+    "roadmap_completed_delta": 3,
     "roadmap_chapters_delta": 0,
     "verified_evidence_delta": 0,
     "metrics_delta": {
@@ -15212,7 +15976,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 87,
+    "incremental_closeout_points_since_full_baseline": 88,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -15220,6 +15984,7 @@
   },
   "publication_state": {
     "history_update_mode": "incremental-closeout",
+    "working_tree_projection": false,
     "artifact_update_policy": "changed-target-files-only",
     "public_transport": "github-git-data-api",
     "public_checkout": "not-used",
@@ -15257,6 +16022,9 @@
       "implementation_percent": 50.0,
       "verified_percent": 31.25,
       "done_percent": 31.25,
+      "weighted_implementation_percent": 5.0,
+      "weighted_verified_percent": 3.13,
+      "weighted_done_percent": 3.13,
       "evidence_source": "milestone-evidence-manifest",
       "evidence_cap_percent": 50.0,
       "evidence_cap_basis": "Personal P8 release QA is partial; public release gate does not support a higher owner-facing completion claim.",
@@ -15378,6 +16146,9 @@
       "implementation_percent": 50.0,
       "verified_percent": 37.5,
       "done_percent": 37.5,
+      "weighted_implementation_percent": 6.0,
+      "weighted_verified_percent": 4.5,
+      "weighted_done_percent": 4.5,
       "evidence_source": "milestone-evidence-manifest",
       "evidence_cap_percent": 50.0,
       "evidence_cap_basis": "Personal P1 recovery and durable execution is partial; post-mutation resume and live continuity remain open.",
@@ -15505,6 +16276,9 @@
       "implementation_percent": 75.0,
       "verified_percent": 62.5,
       "done_percent": 62.5,
+      "weighted_implementation_percent": 7.5,
+      "weighted_verified_percent": 6.25,
+      "weighted_done_percent": 6.25,
       "evidence_source": "milestone-evidence-manifest",
       "evidence_cap_percent": 75.0,
       "evidence_cap_basis": "Personal P2 model/provider reliability is advanced, but long provider replay and complete enumeration remain open.",
@@ -15635,6 +16409,9 @@
       "implementation_percent": 75.0,
       "verified_percent": 67.5,
       "done_percent": 67.5,
+      "weighted_implementation_percent": 10.5,
+      "weighted_verified_percent": 9.45,
+      "weighted_done_percent": 9.45,
       "evidence_source": "milestone-evidence-manifest",
       "evidence_cap_percent": 75.0,
       "evidence_cap_basis": "Personal P4 workspace and safe actions is advanced, not release-accepted across every action path.",
@@ -15860,6 +16637,9 @@
       "implementation_percent": 25.0,
       "verified_percent": 6.25,
       "done_percent": 6.25,
+      "weighted_implementation_percent": 4.0,
+      "weighted_verified_percent": 1.0,
+      "weighted_done_percent": 1.0,
       "evidence_source": "milestone-evidence-manifest",
       "evidence_cap_percent": 25.0,
       "evidence_cap_basis": "Personal P7 supervised self-development is early; broad connector and self-development lifecycle evidence is absent.",
@@ -15973,6 +16753,9 @@
       "implementation_percent": 25.0,
       "verified_percent": 25.0,
       "done_percent": 25.0,
+      "weighted_implementation_percent": 5.0,
+      "weighted_verified_percent": 5.0,
+      "weighted_done_percent": 5.0,
       "evidence_source": "milestone-evidence-manifest",
       "evidence_cap_percent": 25.0,
       "evidence_cap_basis": "Personal P7 supervised self-development is early; generic MCP/plugin/app lifecycle remains incomplete.",
@@ -16095,6 +16878,9 @@
       "implementation_percent": 37.5,
       "verified_percent": 18.75,
       "done_percent": 18.75,
+      "weighted_implementation_percent": 3.75,
+      "weighted_verified_percent": 1.88,
+      "weighted_done_percent": 1.88,
       "evidence_source": "milestone-evidence-manifest",
       "evidence_cap_percent": 50.0,
       "evidence_cap_basis": "Personal P8 UX, installer, update and release QA is partial; owner-facing live QA remains open.",
@@ -16221,6 +17007,9 @@
       "implementation_percent": 25.0,
       "verified_percent": 25.0,
       "done_percent": 25.0,
+      "weighted_implementation_percent": 2.0,
+      "weighted_verified_percent": 2.0,
+      "weighted_done_percent": 2.0,
       "evidence_source": "milestone-evidence-manifest",
       "evidence_cap_percent": 25.0,
       "evidence_cap_basis": "Personal P9 real hardware/configuration matrix is early; broad live acceptance is not established.",
@@ -41462,6 +42251,40 @@
       },
       "verified_evidence_count": 103,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "6232d3f4076d",
+      "date": "2026-09-23",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 639,
+        "completed_item_count": 212,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 3,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 103,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -41473,8 +42296,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "jarvis-cpp-oop-p0-46",
-    "source_commit_sha": "a0855f5db66dd9cd632ea74e8d1ef4dab3e3f5cc",
-    "closeout_sha": "a0855f5db66dd9cd632ea74e8d1ef4dab3e3f5cc"
+    "roadmap_slice_id": "cifr-spion-m1.5-company-expense-eligibility-rzp-autoupdate",
+    "source_commit_sha": "8c3764a239e3cbd44eebcdbf7ac12c231cfb6134",
+    "closeout_sha": "8c3764a239e3cbd44eebcdbf7ac12c231cfb6134"
   }
 }
