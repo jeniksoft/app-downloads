@@ -29,7 +29,7 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `M1.5-activity-update-run-trigger` je veřejně spojen se zdrojovým SHA `42bf543cb20fbda8a7d0978a314010a0f981f787` a closeout SHA `42bf543cb20fbda8a7d0978a314010a0f981f787`. Stav: **verified**.
+Řez `M2-camt054-read-only-parser` je veřejně spojen se zdrojovým SHA `843adf3de55a3966f7e344449b544055ded5e87f` a closeout SHA `843adf3de55a3966f7e344449b544055ded5e87f`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -119,9 +119,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +0 | +299 | +0.02 |
+| Text/source celkem | +0 | +0 | +0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +0 | +299 | +0.02 |
+| Trackovaný strom celkem | +0 | +0 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -191,7 +191,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `63743b2569dc` | 2026-09-07 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `fe6ce6495cff` | 2026-09-07 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `68d320d366d0` | 2026-09-07 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `fbcdd8152921` | 2026-09-07 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -209,13 +208,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `fb25a7798cdf` | 2026-09-23 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `817a2530dd08` | 2026-09-23 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `1e01ecf0a248` | 2026-09-23 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `c6334d459ef7` | 2026-09-23 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 93 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 94 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
