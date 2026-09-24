@@ -29,7 +29,7 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `M3.1-Cifrspion-local-pohoda-xsd` je veřejně spojen se zdrojovým SHA `4b89c7ea279a898a0cb9c7150846bdf092dae8b9` a closeout SHA `4b89c7ea279a898a0cb9c7150846bdf092dae8b9`. Stav: **verified**.
+Řez `M1-archive-ustar` je veřejně spojen se zdrojovým SHA `d730c46f9e98281b42ab8c2267c2e4505310389a` a closeout SHA `d730c46f9e98281b42ab8c2267c2e4505310389a`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -95,9 +95,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 1 804 | 546 559 | 27.79 |
-| JSON | 374 | 174 894 | 30.60 |
-| Markdown | 904 | 118 989 | 6.35 |
+| C/C++ | 1 816 | 548 128 | 27.85 |
+| JSON | 375 | 174 971 | 30.61 |
+| Markdown | 905 | 119 127 | 6.36 |
 | Python | 492 | 87 057 | 3.63 |
 | PowerShell | 66 | 31 561 | 1.64 |
 | Other text | 79 | 5 794 | 0.29 |
@@ -109,9 +109,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **3 895** | **970 543** | **77.55** |
+| **Text/source celkem** | **3 909** | **972 327** | **77.62** |
 | Binární assety (mimo řádky) | 41 | — | 14.68 |
-| **Trackovaný strom celkem** | **3 936** | **970 543** | **92.23** |
+| **Trackovaný strom celkem** | **3 950** | **972 327** | **92.31** |
 
 ### Přírůstek od předchozí revize
 
@@ -191,7 +191,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `a5048eaaf40b` | 2026-09-23 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `e41f14d3877f` | 2026-09-23 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `fb25a7798cdf` | 2026-09-23 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `817a2530dd08` | 2026-09-23 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -209,13 +208,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `5aed61bf6d15` | 2026-09-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `14b238f237b4` | 2026-09-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `46b411958e1f` | 2026-09-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `cc0da22a18c6` | 2026-09-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 106 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 107 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
