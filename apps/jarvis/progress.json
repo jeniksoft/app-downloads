@@ -154,9 +154,9 @@
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 30,
-        "bytes": 1705,
-        "megabytes": 0.001705
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 30,
-        "bytes": 1705,
-        "megabytes": 0.001705
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       }
     }
   },
@@ -15976,7 +15976,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 128,
+    "incremental_closeout_points_since_full_baseline": 129,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -43645,6 +43645,40 @@
       },
       "verified_evidence_count": 103,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "c832c7de356c",
+      "date": "2026-09-25",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 639,
+        "completed_item_count": 212,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 103,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -43657,7 +43691,7 @@
   "closeout_verification": {
     "status": "verified",
     "roadmap_slice_id": "M5-7-pohoda-audit-chat",
-    "source_commit_sha": "71e9cfa1ac0308ba7a0ddc802e342000dbbfbe45",
-    "closeout_sha": "71e9cfa1ac0308ba7a0ddc802e342000dbbfbe45"
+    "source_commit_sha": "c35b65b6b90a2471bec0a2360411e1bf505feb4a",
+    "closeout_sha": "c35b65b6b90a2471bec0a2360411e1bf505feb4a"
   }
 }
