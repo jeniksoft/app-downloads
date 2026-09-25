@@ -35,24 +35,24 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 1874,
-        "physical_lines": 564306,
-        "bytes": 28562316,
-        "megabytes": 28.562316
+        "files": 1876,
+        "physical_lines": 564717,
+        "bytes": 28582643,
+        "megabytes": 28.582643
       },
       {
         "language": "JSON",
         "files": 375,
         "physical_lines": 174980,
-        "bytes": 30639773,
-        "megabytes": 30.639773
+        "bytes": 30640487,
+        "megabytes": 30.640487
       },
       {
         "language": "Markdown",
         "files": 908,
-        "physical_lines": 119685,
-        "bytes": 6397170,
-        "megabytes": 6.39717
+        "physical_lines": 119695,
+        "bytes": 6397874,
+        "megabytes": 6.397874
       },
       {
         "language": "Python",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 3974,
-      "physical_lines": 989382,
-      "bytes": 78410529,
-      "megabytes": 78.410529
+      "files": 3976,
+      "physical_lines": 989803,
+      "bytes": 78432274,
+      "megabytes": 78.432274
     },
     "binary_assets": {
       "files": 41,
@@ -144,10 +144,10 @@
       "megabytes": 14.682994
     },
     "tracked_total": {
-      "files": 4015,
-      "physical_lines": 989382,
-      "bytes": 93093523,
-      "megabytes": 93.093523
+      "files": 4017,
+      "physical_lines": 989803,
+      "bytes": 93115268,
+      "megabytes": 93.115268
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
@@ -15976,7 +15976,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 120,
+    "incremental_closeout_points_since_full_baseline": 121,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -43373,6 +43373,40 @@
       },
       "verified_evidence_count": 103,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "2f2d4e8fd5af",
+      "date": "2026-09-25",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 639,
+        "completed_item_count": 212,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 103,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -43384,8 +43418,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "M5-ipodnik-rdp-readonly-preflight",
-    "source_commit_sha": "fec2bacd614262a18c69805e9cde511f88021542",
-    "closeout_sha": "fec2bacd614262a18c69805e9cde511f88021542"
+    "roadmap_slice_id": "M5-ipodnik-portable-agent-preflight",
+    "source_commit_sha": "769d880afbe1e5ae2ae162974b6ca119022f166b",
+    "closeout_sha": "769d880afbe1e5ae2ae162974b6ca119022f166b"
   }
 }
