@@ -25,11 +25,11 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_BEGIN -->
 ## Sledování implementace Personal 1.0.0
 
-**Synchronizovaný snapshot: 2026-09-24**
+**Synchronizovaný snapshot: 2026-09-25**
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `M1-bounded-validator` je veřejně spojen se zdrojovým SHA `cc00df4afb11a6c1fddbce64ec782d13cbf86c1f` a closeout SHA `cc00df4afb11a6c1fddbce64ec782d13cbf86c1f`. Stav: **verified**.
+Řez `M5.8-transport-health` je veřejně spojen se zdrojovým SHA `b4a91ed155ca0e46766b0c21b27b8e6681d893d2` a closeout SHA `b4a91ed155ca0e46766b0c21b27b8e6681d893d2`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -95,12 +95,12 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 1 820 | 548 698 | 27.88 |
-| JSON | 375 | 174 980 | 30.62 |
-| Markdown | 905 | 119 171 | 6.36 |
-| Python | 492 | 87 057 | 3.63 |
+| C/C++ | 1 872 | 563 351 | 28.52 |
+| JSON | 375 | 174 980 | 30.64 |
+| Markdown | 908 | 119 636 | 6.39 |
+| Python | 496 | 87 362 | 3.64 |
 | PowerShell | 66 | 31 561 | 1.64 |
-| Other text | 79 | 5 794 | 0.29 |
+| Other text | 79 | 5 799 | 0.29 |
 | JSONL | 16 | 2 515 | 6.93 |
 | Plain text | 130 | 1 815 | 0.19 |
 | INI | 8 | 703 | 0.04 |
@@ -109,9 +109,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **3 913** | **972 950** | **77.65** |
+| **Text/source celkem** | **3 972** | **988 378** | **78.36** |
 | Binární assety (mimo řádky) | 41 | — | 14.68 |
-| **Trackovaný strom celkem** | **3 954** | **972 950** | **92.34** |
+| **Trackovaný strom celkem** | **4 013** | **988 378** | **93.04** |
 
 ### Přírůstek od předchozí revize
 
@@ -191,7 +191,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `1e01ecf0a248` | 2026-09-23 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `c6334d459ef7` | 2026-09-23 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `5d89eafce4df` | 2026-09-23 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `5a07ae45a252` | 2026-09-23 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -209,13 +208,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `0486f2dcfa57` | 2026-09-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `e10cc73dc237` | 2026-09-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `8a3162b3858f` | 2026-09-24 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `dbd0c45bdafd` | 2026-09-25 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 110 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 111 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness

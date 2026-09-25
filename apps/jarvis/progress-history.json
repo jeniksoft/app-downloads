@@ -2,7 +2,7 @@
   "schema_version": 8,
   "project_codename": "Jarvis",
   "report_locale": "cs-CZ",
-  "generated_at": "2026-09-24",
+  "generated_at": "2026-09-25",
   "measurement": {
     "mode": "milestone_evidence_rollup",
     "primary_metric": "primary_percent",
@@ -25790,13 +25790,47 @@
       },
       "verified_evidence_count": 103,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "dbd0c45bdafd",
+      "date": "2026-09-25",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 639,
+        "completed_item_count": 212,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 103,
+      "verified_evidence_delta": 0
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "M1-bounded-validator",
-    "source_commit_sha": "cc00df4afb11a6c1fddbce64ec782d13cbf86c1f",
-    "closeout_sha": "cc00df4afb11a6c1fddbce64ec782d13cbf86c1f"
+    "roadmap_slice_id": "M5.8-transport-health",
+    "source_commit_sha": "b4a91ed155ca0e46766b0c21b27b8e6681d893d2",
+    "closeout_sha": "b4a91ed155ca0e46766b0c21b27b8e6681d893d2"
   }
 }

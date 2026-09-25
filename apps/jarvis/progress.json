@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 1820,
-        "physical_lines": 548698,
-        "bytes": 27875014,
-        "megabytes": 27.875014
+        "files": 1872,
+        "physical_lines": 563351,
+        "bytes": 28517205,
+        "megabytes": 28.517205
       },
       {
         "language": "JSON",
         "files": 375,
         "physical_lines": 174980,
-        "bytes": 30615207,
-        "megabytes": 30.615207
+        "bytes": 30635809,
+        "megabytes": 30.635809
       },
       {
         "language": "Markdown",
-        "files": 905,
-        "physical_lines": 119171,
-        "bytes": 6361836,
-        "megabytes": 6.361836
+        "files": 908,
+        "physical_lines": 119636,
+        "bytes": 6393255,
+        "megabytes": 6.393255
       },
       {
         "language": "Python",
-        "files": 492,
-        "physical_lines": 87057,
-        "bytes": 3626953,
-        "megabytes": 3.626953
+        "files": 496,
+        "physical_lines": 87362,
+        "bytes": 3636367,
+        "megabytes": 3.636367
       },
       {
         "language": "PowerShell",
@@ -71,9 +71,9 @@
       {
         "language": "Other text",
         "files": 79,
-        "physical_lines": 5794,
-        "bytes": 287888,
-        "megabytes": 0.287888
+        "physical_lines": 5799,
+        "bytes": 288218,
+        "megabytes": 0.288218
       },
       {
         "language": "JSONL",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 3913,
-      "physical_lines": 972950,
-      "bytes": 77653583,
-      "megabytes": 77.653583
+      "files": 3972,
+      "physical_lines": 988378,
+      "bytes": 78357539,
+      "megabytes": 78.357539
     },
     "binary_assets": {
       "files": 41,
@@ -144,10 +144,10 @@
       "megabytes": 14.682994
     },
     "tracked_total": {
-      "files": 3954,
-      "physical_lines": 972950,
-      "bytes": 92336577,
-      "megabytes": 92.336577
+      "files": 4013,
+      "physical_lines": 988378,
+      "bytes": 93040533,
+      "megabytes": 93.040533
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
@@ -172,7 +172,7 @@
       }
     }
   },
-  "updated_at": "2026-09-24",
+  "updated_at": "2026-09-25",
   "overall_percent": 33.2,
   "primary_percent": 33.2,
   "implementation_complete_percent": 43.75,
@@ -15976,7 +15976,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 110,
+    "incremental_closeout_points_since_full_baseline": 111,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -43033,6 +43033,40 @@
       },
       "verified_evidence_count": 103,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "dbd0c45bdafd",
+      "date": "2026-09-25",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 639,
+        "completed_item_count": 212,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 103,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -43044,8 +43078,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "M1-bounded-validator",
-    "source_commit_sha": "cc00df4afb11a6c1fddbce64ec782d13cbf86c1f",
-    "closeout_sha": "cc00df4afb11a6c1fddbce64ec782d13cbf86c1f"
+    "roadmap_slice_id": "M5.8-transport-health",
+    "source_commit_sha": "b4a91ed155ca0e46766b0c21b27b8e6681d893d2",
+    "closeout_sha": "b4a91ed155ca0e46766b0c21b27b8e6681d893d2"
   }
 }
