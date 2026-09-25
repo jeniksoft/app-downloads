@@ -26368,13 +26368,47 @@
       },
       "verified_evidence_count": 103,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "42b9c8bc6c0e",
+      "date": "2026-09-25",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 639,
+        "completed_item_count": 212,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 103,
+      "verified_evidence_delta": 0
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
     "roadmap_slice_id": "M5-7-pohoda-audit-chat",
-    "source_commit_sha": "97da5ccfae7acd0ded02f775976db8f3681f9b88",
-    "closeout_sha": "97da5ccfae7acd0ded02f775976db8f3681f9b88"
+    "source_commit_sha": "71e9cfa1ac0308ba7a0ddc802e342000dbbfbe45",
+    "closeout_sha": "71e9cfa1ac0308ba7a0ddc802e342000dbbfbe45"
   }
 }
