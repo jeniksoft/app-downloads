@@ -25,12 +25,7 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_BEGIN -->
 ## Sledování implementace Personal 1.0.0
 
-**Synchronizovaný snapshot: 2026-09-26**
-
-### Ověření posledního roadmapového closeoutu
-
-Řez `K1.5-global-parallel-jobs-cap-8` je veřejně spojen se zdrojovým SHA `5f4a2fd2ef139c3b6256c52657d5968d11917013` a closeout SHA `5f4a2fd2ef139c3b6256c52657d5968d11917013`. Stav: **verified**.
-Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
+**Synchronizovaný snapshot: 2026-09-30**
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
 
@@ -95,23 +90,23 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 1 882 | 569 146 | 28.79 |
-| JSON | 375 | 175 022 | 30.65 |
-| Markdown | 908 | 119 791 | 6.40 |
-| Python | 498 | 87 547 | 3.64 |
-| PowerShell | 66 | 31 606 | 1.65 |
-| Other text | 79 | 5 870 | 0.29 |
+| C/C++ | 1 901 | 588 647 | 29.72 |
+| JSON | 376 | 175 242 | 30.74 |
+| Markdown | 914 | 122 335 | 6.59 |
+| Python | 519 | 89 567 | 3.75 |
+| PowerShell | 69 | 33 438 | 1.74 |
+| Other text | 80 | 5 933 | 0.30 |
 | JSONL | 16 | 2 515 | 6.93 |
 | Plain text | 130 | 1 815 | 0.19 |
 | INI | 8 | 703 | 0.04 |
 | Shell | 2 | 501 | 0.02 |
-| CMake | 2 | 113 | 0.01 |
+| CMake | 2 | 146 | 0.01 |
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **3 984** | **994 671** | **78.66** |
+| **Text/source celkem** | **4 035** | **1 020 884** | **80.08** |
 | Binární assety (mimo řádky) | 41 | — | 14.68 |
-| **Trackovaný strom celkem** | **4 025** | **994 671** | **93.35** |
+| **Trackovaný strom celkem** | **4 076** | **1 020 884** | **94.76** |
 
 ### Přírůstek od předchozí revize
 
@@ -119,9 +114,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +0 | +191 | +0.01 |
+| Text/source celkem | +0 | +0 | +0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +0 | +191 | +0.01 |
+| Trackovaný strom celkem | +0 | +0 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -176,7 +171,7 @@ Graf kapitol je v dashboardu výše jako statické SVG. Tato úplná textová ta
 | UX/support | Failure/recovery a ticket UI | `partial` | Failure/recovery a Secure Ticket kontrakty existují; P6.1 typovaný stavový automat, P6.2 read-only evidence candidate refs, P6.3 shared sensitive-data boundary, P6.4 protected local draft store, P6.5 owner evidence selection review, P6.6 immutable prepared manifest digest, P6.7 bounded local export package, P6.8 read-only untrusted reproduction intake a P6.9 confirmed-bug regression lineage mají build/self-test důkaz, ale P6 runtime a P8 QA zůstávají partial.; mezera: P6.7 local export, P6.8 untrusted import/reproduction a P6.9 regression lineage jsou ověřené bez sítě; otevřené zůstávají kompletní ticket UI path, P6 runtime a owner-facing V5 acceptance.; typy: contract, release-gate, self-test |
 | UX/support | Jazyk, lokalizace a accessibility quality | `partial` | Localization accounting a P8.8 read-only release gate existují; fallback backlog je explicitně otevřený a gate jej správně odmítá jako release blocker.; mezera: Uzavřít překladový backlog independently reviewed memory a projít accessibility/DPI acceptance na reálném UI.; typy: runtime, self-test |
 | UX/support | Owner-facing live QA | `open` | Žádný aktuální univerzální live owner acceptance receipt není v manifestu.; mezera: Dodat vizuální a interakční QA pack včetně accessibility, DPI a recovery scénářů.; typy: roadmap |
-| QA/dogfood | Contract/self-test gates | `verified-build` | Current capability matrix uvádí warning-free build a více self-test gates.; mezera: Self-test nenahrazuje dlouhý dogfood ani reálnou konfiguraci ownera.; typy: build, runtime, self-test |
+| QA/dogfood | Contract/self-test gates | `verified-build` | Provider-free autonomní Fly/interoception/contract self-testy prošly na přesném finálním QA hashi a je doložen jeden 30minutový headless soak; jde pouze o syntetický Core loop.; mezera: Důkaz nenahrazuje běh tray ani instalovaného Workeru, živou konfiguraci ownera nebo autonomní dispatch/recovery; R1, WAITING_CAPABILITY a production acceptance zůstávají neuzavřené.; typy: build, runtime, self-test |
 | QA/dogfood | Deterministic dogfood a regression fixtures | `partial` | Contract a dogfood řídicí rovina včetně P7.1-P7.9 mají deterministické důkazy, ale potvrzené ticket-driven regression closure, skutečná production Nanity, mentor finding/live repair execution a plný sémantický ASM graf nejsou uzavřené.; mezera: Doplnit skutečnou Jarvis-authored Nanity, end-to-end P7.6/live důkaz, reálný mentor finding pro živé P7.8 provedení a úplnou bug-to-regression closure; P7.9 je pouze bounded source-backed refresh a plná semantic discovery zůstává otevřená.; typy: contract, release-gate, self-test |
 | QA/dogfood | Reálný hardware/configuration matrix | `open` | Owner-approved release source označuje hardware/configuration matrix jako early.; mezera: Dodat opakovatelná měření na skutečných konfiguracích s identity a environment receipts.; typy: release-gate, self-test |
 | QA/dogfood | Release acceptance pack a bezpečnostní audit | `open` | P8.9 nyní obsahuje deterministický evaluator immutable clean-install receiptu, P8.10 evaluator přesné pre-1.0 upgrade matice a P8.11 evaluator LKG rollback receiptu nad existujícím build/setup tokem, ale samotný V6 live acceptance pack stále není dodaný.; mezera: Dodat current release candidate, signed artifacts, skutečný clean install/upgrade/rollback a safety audit receipts.; typy: release-gate, self-test |

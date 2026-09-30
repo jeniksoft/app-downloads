@@ -2,7 +2,7 @@
   "schema_version": 8,
   "project_codename": "Jarvis",
   "report_locale": "cs-CZ",
-  "generated_at": "2026-09-26",
+  "generated_at": "2026-09-30",
   "measurement": {
     "mode": "milestone_evidence_rollup",
     "primary_metric": "primary_percent",
@@ -26506,11 +26506,5 @@
       "verified_evidence_delta": 0
     }
   ],
-  "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
-  "closeout_verification": {
-    "status": "verified",
-    "roadmap_slice_id": "K1.5-global-parallel-jobs-cap-8",
-    "source_commit_sha": "5f4a2fd2ef139c3b6256c52657d5968d11917013",
-    "closeout_sha": "5f4a2fd2ef139c3b6256c52657d5968d11917013"
-  }
+  "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim."
 }
