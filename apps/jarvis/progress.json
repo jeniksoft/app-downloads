@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 2015,
-        "physical_lines": 627099,
-        "bytes": 31323924,
-        "megabytes": 31.323924
+        "files": 2017,
+        "physical_lines": 627667,
+        "bytes": 31343933,
+        "megabytes": 31.343933
       },
       {
         "language": "JSON",
-        "files": 398,
-        "physical_lines": 177895,
-        "bytes": 31042852,
-        "megabytes": 31.042852
+        "files": 399,
+        "physical_lines": 177959,
+        "bytes": 31048083,
+        "megabytes": 31.048083
       },
       {
         "language": "Markdown",
-        "files": 938,
-        "physical_lines": 126201,
-        "bytes": 6800996,
-        "megabytes": 6.800996
+        "files": 939,
+        "physical_lines": 126290,
+        "bytes": 6805976,
+        "megabytes": 6.805976
       },
       {
         "language": "Python",
-        "files": 587,
-        "physical_lines": 98066,
-        "bytes": 4086342,
-        "megabytes": 4.086342
+        "files": 588,
+        "physical_lines": 98174,
+        "bytes": 4091105,
+        "megabytes": 4.091105
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 4263,
-      "physical_lines": 1074894,
-      "bytes": 82567943,
-      "megabytes": 82.567943
+      "files": 4268,
+      "physical_lines": 1075723,
+      "bytes": 82602926,
+      "megabytes": 82.602926
     },
     "binary_assets": {
       "files": 41,
@@ -144,19 +144,19 @@
       "megabytes": 14.682994
     },
     "tracked_total": {
-      "files": 4304,
-      "physical_lines": 1074894,
-      "bytes": 97250937,
-      "megabytes": 97.250937
+      "files": 4309,
+      "physical_lines": 1075723,
+      "bytes": 97285920,
+      "megabytes": 97.28592
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "physical_lines": 22,
+        "bytes": 1281,
+        "megabytes": 0.001281
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "physical_lines": 22,
+        "bytes": 1281,
+        "megabytes": 0.001281
       }
     }
   },
@@ -471,9 +471,9 @@
         "chapter_color": "optional",
         "chapter_count": 19,
         "item_count": 191,
-        "completed_item_count": 7,
-        "completion_percent": 4.97,
-        "status_percent": 4.97
+        "completed_item_count": 8,
+        "completion_percent": 6.28,
+        "status_percent": 6.28
       }
     ],
     "chapters": [
@@ -1511,16 +1511,16 @@
         "chapter_color": "optional",
         "name_cs": "B — Browser and AI browser",
         "name_en": "B — Browser and AI browser",
-        "status": "architecture-only",
-        "display_status": "partial",
-        "status_label_cs": "Částečně",
-        "status_label_en": "Partial",
+        "status": "in-progress",
+        "display_status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
         "status_source": "child-items",
         "is_complete": false,
         "item_count": 8,
-        "completed_item_count": 1,
-        "completion_percent": 12.5,
-        "status_percent": 12.5
+        "completed_item_count": 2,
+        "completion_percent": 43.75,
+        "status_percent": 43.75
       },
       {
         "id": "LIC",
@@ -11865,14 +11865,14 @@
         "chapter_color": "optional",
         "description_cs": "Kontrakt a hranice",
         "description_en": "Contract and boundaries",
-        "status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
-        "completion_percent_source": "canonical-roadmap",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V0",
         "is_slice": true
       },
@@ -11887,13 +11887,13 @@
         "chapter_color": "optional",
         "description_cs": "UI-neutrální browserové kontrakty",
         "description_en": "UI-neutral browser contracts",
-        "status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
         "status_source": "canonical-roadmap",
         "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
+        "status_percent": 25.0,
+        "completion_percent": 25.0,
         "completion_percent_source": "canonical-roadmap",
         "verify": "V2",
         "is_slice": true
@@ -11909,13 +11909,13 @@
         "chapter_color": "optional",
         "description_cs": "Windows WebView2 host",
         "description_en": "Windows WebView2 host",
-        "status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
         "status_source": "canonical-roadmap",
         "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
+        "status_percent": 25.0,
+        "completion_percent": 25.0,
         "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
@@ -11931,13 +11931,13 @@
         "chapter_color": "optional",
         "description_cs": "Vlastní runtime addonů",
         "description_en": "First-party addon runtime",
-        "status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
         "status_source": "canonical-roadmap",
         "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
+        "status_percent": 25.0,
+        "completion_percent": 25.0,
         "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
@@ -11975,13 +11975,13 @@
         "chapter_color": "optional",
         "description_cs": "Kompatibilitní adaptéry",
         "description_en": "Compatibility adapters",
-        "status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
         "status_source": "canonical-roadmap",
         "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
+        "status_percent": 25.0,
+        "completion_percent": 25.0,
         "completion_percent_source": "canonical-roadmap",
         "verify": "V4",
         "is_slice": true
@@ -11997,13 +11997,13 @@
         "chapter_color": "optional",
         "description_cs": "Další platformy",
         "description_en": "Additional platforms",
-        "status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
         "status_source": "canonical-roadmap",
         "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
+        "status_percent": 25.0,
+        "completion_percent": 25.0,
         "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
@@ -12019,13 +12019,13 @@
         "chapter_color": "optional",
         "description_cs": "Výkon, bezpečnost a release",
         "description_en": "Performance, security and release",
-        "status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
         "status_source": "canonical-roadmap",
         "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
+        "status_percent": 25.0,
+        "completion_percent": 25.0,
         "completion_percent_source": "canonical-roadmap",
         "verify": "V5",
         "is_slice": true
@@ -16058,10 +16058,10 @@
       }
     ],
     "item_count": 645,
-    "completed_item_count": 269,
+    "completed_item_count": 270,
     "chapter_count": 73,
-    "completion_percent": 45.85,
-    "status_percent": 45.85,
+    "completion_percent": 46.24,
+    "status_percent": 46.24,
     "status_percent_contract": {
       "kind": "categorical-state-display",
       "label_cs": "Stav položky",
@@ -16086,10 +16086,10 @@
   "change_summary": {
     "available": true,
     "previous_date": "2026-10-06",
-    "roadmap_items_delta": 6,
-    "roadmap_completed_delta": 25,
+    "roadmap_items_delta": 0,
+    "roadmap_completed_delta": 1,
     "roadmap_chapters_delta": 0,
-    "verified_evidence_delta": 1,
+    "verified_evidence_delta": 0,
     "metrics_delta": {
       "primary_percent": 0.0,
       "implementation_percent": 0.0,
@@ -16108,7 +16108,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 147,
+    "incremental_closeout_points_since_full_baseline": 148,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -44426,6 +44426,40 @@
       },
       "verified_evidence_count": 106,
       "verified_evidence_delta": 1
+    },
+    {
+      "revision": "0ee89a75bedc",
+      "date": "2026-10-06",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 645,
+        "completed_item_count": 270,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 106,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -44437,8 +44471,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP6.8",
-    "source_commit_sha": "c5d6817159cbb4b9ee434bde89f8e7d03e0cd96f",
-    "closeout_sha": "c41ebbc512fd11f157ef401ef520909134f5b302"
+    "roadmap_slice_id": "B0",
+    "source_commit_sha": "a4167a5ed6f797be658b6d3b759a072bfc2de708",
+    "closeout_sha": "1198732f7320c7e093dbd7c12c887ae0f86dfe9b"
   }
 }
