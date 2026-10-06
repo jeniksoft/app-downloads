@@ -35,38 +35,38 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 1904,
-        "physical_lines": 594937,
-        "bytes": 30012393,
-        "megabytes": 30.012393
+        "files": 1921,
+        "physical_lines": 600249,
+        "bytes": 30237057,
+        "megabytes": 30.237057
       },
       {
         "language": "JSON",
         "files": 377,
-        "physical_lines": 175367,
-        "bytes": 30788636,
-        "megabytes": 30.788636
+        "physical_lines": 175388,
+        "bytes": 30791581,
+        "megabytes": 30.791581
       },
       {
         "language": "Markdown",
-        "files": 915,
-        "physical_lines": 123246,
-        "bytes": 6633373,
-        "megabytes": 6.633373
+        "files": 917,
+        "physical_lines": 123716,
+        "bytes": 6660728,
+        "megabytes": 6.660728
       },
       {
         "language": "Python",
-        "files": 533,
-        "physical_lines": 91629,
-        "bytes": 3847541,
-        "megabytes": 3.847541
+        "files": 542,
+        "physical_lines": 92551,
+        "bytes": 3887993,
+        "megabytes": 3.887993
       },
       {
         "language": "PowerShell",
         "files": 69,
-        "physical_lines": 33942,
-        "bytes": 1769603,
-        "megabytes": 1.769603
+        "physical_lines": 33955,
+        "bytes": 1770522,
+        "megabytes": 1.770522
       },
       {
         "language": "Other text",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 4054,
-      "physical_lines": 1030777,
-      "bytes": 80593463,
-      "megabytes": 80.593463
+      "files": 4082,
+      "physical_lines": 1037515,
+      "bytes": 80889798,
+      "megabytes": 80.889798
     },
     "binary_assets": {
       "files": 41,
@@ -144,19 +144,19 @@
       "megabytes": 14.682994
     },
     "tracked_total": {
-      "files": 4095,
-      "physical_lines": 1030777,
-      "bytes": 95276457,
-      "megabytes": 95.276457
+      "files": 4123,
+      "physical_lines": 1037515,
+      "bytes": 95572792,
+      "megabytes": 95.572792
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 3,
-        "physical_lines": 2526,
-        "bytes": 109098,
-        "megabytes": 0.109098
+        "files": 0,
+        "physical_lines": 34,
+        "bytes": 2125,
+        "megabytes": 0.002125
       },
       "binary_assets": {
         "files": 0,
@@ -165,14 +165,14 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 3,
-        "physical_lines": 2526,
-        "bytes": 109098,
-        "megabytes": 0.109098
+        "files": 0,
+        "physical_lines": 34,
+        "bytes": 2125,
+        "megabytes": 0.002125
       }
     }
   },
-  "updated_at": "2026-10-05",
+  "updated_at": "2026-10-06",
   "overall_percent": 33.2,
   "primary_percent": 33.2,
   "implementation_complete_percent": 43.75,
@@ -438,9 +438,9 @@
         "chapter_color": "optional",
         "chapter_count": 9,
         "item_count": 101,
-        "completed_item_count": 46,
-        "completion_percent": 48.76,
-        "status_percent": 48.76
+        "completed_item_count": 47,
+        "completion_percent": 49.75,
+        "status_percent": 49.75
       },
       {
         "id": "teams",
@@ -1056,15 +1056,15 @@
         "name_cs": "OP6 — Architecture Self Model",
         "name_en": "OP6 — Architecture Self Model",
         "status": "architecture-only",
-        "display_status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
+        "display_status": "partial",
+        "status_label_cs": "Částečně",
+        "status_label_en": "Partial",
         "status_source": "child-items",
         "is_complete": false,
         "item_count": 6,
-        "completed_item_count": 0,
-        "completion_percent": 0.0,
-        "status_percent": 0.0
+        "completed_item_count": 1,
+        "completion_percent": 16.67,
+        "status_percent": 16.67
       },
       {
         "id": "OP7",
@@ -8125,14 +8125,14 @@
         "chapter_color": "optional",
         "description_cs": "Fingerprint aktuálnosti buildu a zdrojů",
         "description_en": "build and source freshness fingerprint",
-        "status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
-        "completion_percent_source": "canonical-roadmap",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V1",
         "is_slice": true
       },
@@ -15926,10 +15926,10 @@
       }
     ],
     "item_count": 639,
-    "completed_item_count": 213,
+    "completed_item_count": 214,
     "chapter_count": 73,
-    "completion_percent": 37.68,
-    "status_percent": 37.68,
+    "completion_percent": 37.83,
+    "status_percent": 37.83,
     "status_percent_contract": {
       "kind": "categorical-state-display",
       "label_cs": "Stav položky",
@@ -15953,7 +15953,7 @@
   },
   "change_summary": {
     "available": true,
-    "previous_date": "2026-09-26",
+    "previous_date": "2026-10-05",
     "roadmap_items_delta": 0,
     "roadmap_completed_delta": 1,
     "roadmap_chapters_delta": 0,
@@ -15976,7 +15976,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 132,
+    "incremental_closeout_points_since_full_baseline": 133,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -43782,6 +43782,40 @@
       },
       "verified_evidence_count": 105,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "fe30044051c4",
+      "date": "2026-10-06",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 639,
+        "completed_item_count": 214,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 105,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -43793,8 +43827,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "P3.10.1-P3.10.6",
-    "source_commit_sha": "82ba3dc9a7c52166af78fd702626d0483f8042f7",
-    "closeout_sha": "82ba3dc9a7c52166af78fd702626d0483f8042f7"
+    "roadmap_slice_id": "cpm-jarvis.cpp.workspace-agents-bootstrap-verification",
+    "source_commit_sha": "28d205d18fe56047bc1caf57a6e6d570212d98ce",
+    "closeout_sha": "34d58f53c76eeaf91189d95d93ce8bfea66b6131"
   }
 }
