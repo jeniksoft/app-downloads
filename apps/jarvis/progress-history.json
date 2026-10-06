@@ -27014,13 +27014,49 @@
       },
       "verified_evidence_count": 105,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "508f07e510d7",
+      "date": "2026-10-06",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "owner-ux"
+      ],
+      "changed_milestones": [
+        "owner-ux/failure-recovery-ticket-ui"
+      ],
+      "roadmap": {
+        "item_count": 645,
+        "completed_item_count": 269,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 6,
+        "completed_item_count": 25,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 106,
+      "verified_evidence_delta": 1
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP9.9",
-    "source_commit_sha": "91a0ff1fc76f311d11d9366a80f2cc7c60df0afe",
-    "closeout_sha": "784083bd2cf303e5d9985758016fe9ff35f14567"
+    "roadmap_slice_id": "OP6.8",
+    "source_commit_sha": "c5d6817159cbb4b9ee434bde89f8e7d03e0cd96f",
+    "closeout_sha": "c41ebbc512fd11f157ef401ef520909134f5b302"
   }
 }
