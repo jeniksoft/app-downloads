@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 2057,
-        "physical_lines": 642799,
-        "bytes": 31921120,
-        "megabytes": 31.92112
+        "files": 2059,
+        "physical_lines": 643605,
+        "bytes": 31954286,
+        "megabytes": 31.954286
       },
       {
         "language": "JSON",
-        "files": 419,
-        "physical_lines": 180657,
-        "bytes": 31247094,
-        "megabytes": 31.247094
+        "files": 420,
+        "physical_lines": 180788,
+        "bytes": 31258481,
+        "megabytes": 31.258481
       },
       {
         "language": "Markdown",
-        "files": 952,
-        "physical_lines": 128783,
-        "bytes": 6943283,
-        "megabytes": 6.943283
+        "files": 953,
+        "physical_lines": 129008,
+        "bytes": 6955890,
+        "megabytes": 6.95589
       },
       {
         "language": "Python",
-        "files": 608,
-        "physical_lines": 100680,
-        "bytes": 4188387,
-        "megabytes": 4.188387
+        "files": 609,
+        "physical_lines": 100821,
+        "bytes": 4193339,
+        "megabytes": 4.193339
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 4361,
-      "physical_lines": 1098552,
-      "bytes": 83613713,
-      "megabytes": 83.613713
+      "files": 4366,
+      "physical_lines": 1099855,
+      "bytes": 83675825,
+      "megabytes": 83.675825
     },
     "binary_assets": {
       "files": 41,
@@ -144,19 +144,19 @@
       "megabytes": 14.682994
     },
     "tracked_total": {
-      "files": 4402,
-      "physical_lines": 1098552,
-      "bytes": 98296707,
-      "megabytes": 98.296707
+      "files": 4407,
+      "physical_lines": 1099855,
+      "bytes": 98358819,
+      "megabytes": 98.358819
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 5,
-        "physical_lines": 1157,
-        "bytes": 52742,
-        "megabytes": 0.052742
+        "files": 0,
+        "physical_lines": -14,
+        "bytes": -450,
+        "megabytes": -0.00045
       },
       "binary_assets": {
         "files": 0,
@@ -165,10 +165,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 5,
-        "physical_lines": 1157,
-        "bytes": 52742,
-        "megabytes": 0.052742
+        "files": 0,
+        "physical_lines": -14,
+        "bytes": -450,
+        "megabytes": -0.00045
       }
     }
   },
@@ -471,9 +471,9 @@
         "chapter_color": "optional",
         "chapter_count": 19,
         "item_count": 191,
-        "completed_item_count": 26,
-        "completion_percent": 17.02,
-        "status_percent": 17.02
+        "completed_item_count": 27,
+        "completion_percent": 17.41,
+        "status_percent": 17.41
       }
     ],
     "chapters": [
@@ -1575,9 +1575,9 @@
         "status_source": "child-items",
         "is_complete": false,
         "item_count": 13,
-        "completed_item_count": 3,
-        "completion_percent": 42.31,
-        "status_percent": 42.31
+        "completed_item_count": 4,
+        "completion_percent": 48.08,
+        "status_percent": 48.08
       },
       {
         "id": "ECM",
@@ -12493,6 +12493,28 @@
         "is_slice": true
       },
       {
+        "id": "ASA5",
+        "chapter_id": "ASA",
+        "chapter_name_cs": "ASA — Adversarial security audit",
+        "chapter_name_en": "ASA — Adversarial security audit",
+        "group_id": "capabilities",
+        "group_name_cs": "Průřezové capability tratě",
+        "group_name_en": "Cross-cutting capability tracks",
+        "chapter_color": "optional",
+        "description_cs": "Hranice oddělení rolí Red/Blue/Observer",
+        "description_en": "Red/Blue/Observer role-separation boundary",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
+        "verify": "V4",
+        "is_slice": true
+      },
+      {
         "id": "ASA4",
         "chapter_id": "ASA",
         "chapter_name_cs": "ASA — Adversarial security audit",
@@ -12503,28 +12525,6 @@
         "chapter_color": "optional",
         "description_cs": "Izolovaný Red Team",
         "description_en": "Isolated Red Team",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 25.0,
-        "completion_percent": 25.0,
-        "completion_percent_source": "canonical-roadmap",
-        "verify": "V4",
-        "is_slice": true
-      },
-      {
-        "id": "ASA5",
-        "chapter_id": "ASA",
-        "chapter_name_cs": "ASA — Adversarial security audit",
-        "chapter_name_en": "ASA — Adversarial security audit",
-        "group_id": "capabilities",
-        "group_name_cs": "Průřezové capability tratě",
-        "group_name_en": "Cross-cutting capability tracks",
-        "chapter_color": "optional",
-        "description_cs": "Orchestrace rolí Red/Blue/Observer",
-        "description_en": "Red/Blue/Observer orchestration",
         "status": "in-progress",
         "status_label_cs": "Rozpracováno",
         "status_label_en": "In progress",
@@ -16080,10 +16080,10 @@
       }
     ],
     "item_count": 646,
-    "completed_item_count": 289,
+    "completed_item_count": 290,
     "chapter_count": 73,
-    "completion_percent": 49.5,
-    "status_percent": 49.5,
+    "completion_percent": 49.61,
+    "status_percent": 49.61,
     "status_percent_contract": {
       "kind": "categorical-state-display",
       "label_cs": "Stav položky",
@@ -16130,7 +16130,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 155,
+    "incremental_closeout_points_since_full_baseline": 156,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -44720,6 +44720,40 @@
       },
       "verified_evidence_count": 106,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "b82e7d1eb9c5",
+      "date": "2026-10-07",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 646,
+        "completed_item_count": 290,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 106,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -44731,8 +44765,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "ASA3",
-    "source_commit_sha": "215412ff708311936ccb62388bae5d0b272a84ff",
-    "closeout_sha": "215412ff708311936ccb62388bae5d0b272a84ff"
+    "roadmap_slice_id": "ASA5",
+    "source_commit_sha": "e60d6c6953f7655c487edf389562535f04f2e4f5",
+    "closeout_sha": "e60d6c6953f7655c487edf389562535f04f2e4f5"
   }
 }
