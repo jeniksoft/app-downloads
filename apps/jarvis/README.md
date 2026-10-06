@@ -29,7 +29,7 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `ASA2` je veřejně spojen se zdrojovým SHA `5972a36c365eed0dbfc9064d77d17364bad42125` a closeout SHA `5972a36c365eed0dbfc9064d77d17364bad42125`. Stav: **verified**.
+Řez `ASA3` je veřejně spojen se zdrojovým SHA `215412ff708311936ccb62388bae5d0b272a84ff` a closeout SHA `215412ff708311936ccb62388bae5d0b272a84ff`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -95,10 +95,10 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 2 055 | 642 035 | 31.89 |
-| JSON | 418 | 180 586 | 31.24 |
-| Markdown | 951 | 128 590 | 6.93 |
-| Python | 607 | 100 551 | 4.18 |
+| C/C++ | 2 057 | 642 799 | 31.92 |
+| JSON | 419 | 180 657 | 31.25 |
+| Markdown | 952 | 128 783 | 6.94 |
+| Python | 608 | 100 680 | 4.19 |
 | PowerShell | 69 | 33 964 | 1.77 |
 | Other text | 80 | 5 947 | 0.30 |
 | JSONL | 16 | 2 515 | 6.93 |
@@ -109,9 +109,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **4 356** | **1 097 395** | **83.56** |
+| **Text/source celkem** | **4 361** | **1 098 552** | **83.61** |
 | Binární assety (mimo řádky) | 41 | — | 14.68 |
-| **Trackovaný strom celkem** | **4 397** | **1 097 395** | **98.24** |
+| **Trackovaný strom celkem** | **4 402** | **1 098 552** | **98.30** |
 
 ### Přírůstek od předchozí revize
 
@@ -119,9 +119,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +5 | +1413 | +0.06 |
+| Text/source celkem | +5 | +1157 | +0.05 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +5 | +1413 | +0.06 |
+| Trackovaný strom celkem | +5 | +1157 | +0.05 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -191,7 +191,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `b512aee4ab2f` | 2026-10-06 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `5220b90ec67f` | 2026-10-06 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `b4ded4ea5d78` | 2026-10-06 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `0922a351f655` | 2026-10-06 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -209,13 +208,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `a73a94970c36` | 2026-10-06 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `788805dab6ad` | 2026-10-06 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `54a304586676` | 2026-10-06 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `837a22ccc086` | 2026-10-06 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 154 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 155 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
