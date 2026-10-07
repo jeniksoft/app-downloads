@@ -44,15 +44,15 @@
         "language": "JSON",
         "files": 429,
         "physical_lines": 181881,
-        "bytes": 31361982,
-        "megabytes": 31.361982
+        "bytes": 31362092,
+        "megabytes": 31.362092
       },
       {
         "language": "Markdown",
         "files": 962,
-        "physical_lines": 130832,
-        "bytes": 7057573,
-        "megabytes": 7.057573
+        "physical_lines": 130835,
+        "bytes": 7057777,
+        "megabytes": 7.057777
       },
       {
         "language": "Python",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 4411,
-      "physical_lines": 1110453,
-      "bytes": 84184108,
-      "megabytes": 84.184108
+      "physical_lines": 1110456,
+      "bytes": 84184422,
+      "megabytes": 84.184422
     },
     "binary_assets": {
       "files": 41,
@@ -145,18 +145,18 @@
     },
     "tracked_total": {
       "files": 4452,
-      "physical_lines": 1110453,
-      "bytes": 98867102,
-      "megabytes": 98.867102
+      "physical_lines": 1110456,
+      "bytes": 98867416,
+      "megabytes": 98.867416
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 160,
-        "bytes": 14410,
-        "megabytes": 0.01441
+        "physical_lines": 3,
+        "bytes": 314,
+        "megabytes": 0.000314
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 160,
-        "bytes": 14410,
-        "megabytes": 0.01441
+        "physical_lines": 3,
+        "bytes": 314,
+        "megabytes": 0.000314
       }
     }
   },
@@ -16109,7 +16109,7 @@
     "available": true,
     "previous_date": "2026-10-07",
     "roadmap_items_delta": 0,
-    "roadmap_completed_delta": 7,
+    "roadmap_completed_delta": 0,
     "roadmap_chapters_delta": 0,
     "verified_evidence_delta": 0,
     "metrics_delta": {
@@ -16130,7 +16130,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 159,
+    "incremental_closeout_points_since_full_baseline": 160,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -44856,6 +44856,40 @@
       },
       "verified_evidence_count": 106,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "3ddfebf9b3cd",
+      "date": "2026-10-07",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 646,
+        "completed_item_count": 299,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 106,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -44869,6 +44903,6 @@
     "status": "verified",
     "roadmap_slice_id": "AG8",
     "source_commit_sha": "2344926bbae4c7b934dbc6a7c758a91ff7a3fc88",
-    "closeout_sha": "7454547ab28560895eaeddf20c7745f288451cd4"
+    "closeout_sha": "257b829016c043424371cf501aa5bd4812ba51ab"
   }
 }
