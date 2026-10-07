@@ -29,7 +29,7 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `LM3.9` je veřejně spojen se zdrojovým SHA `5fed4bccc569366478b99b52f58c0a97bef75e8a` a closeout SHA `f5e657ff0da48a6ec484df2ac72e63bb81a31b5d`. Stav: **verified**.
+Řez `OP7.10` je veřejně spojen se zdrojovým SHA `d1d87c30eb703a44b535b98b978da4e00b2865d6` a closeout SHA `f5e657ff0da48a6ec484df2ac72e63bb81a31b5d`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
