@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 2063,
-        "physical_lines": 644810,
-        "bytes": 32004907,
-        "megabytes": 32.004907
+        "files": 2077,
+        "physical_lines": 650081,
+        "bytes": 32210371,
+        "megabytes": 32.210371
       },
       {
         "language": "JSON",
-        "files": 422,
-        "physical_lines": 181104,
-        "bytes": 31284498,
-        "megabytes": 31.284498
+        "files": 429,
+        "physical_lines": 181881,
+        "bytes": 31361982,
+        "megabytes": 31.361982
       },
       {
         "language": "Markdown",
-        "files": 955,
-        "physical_lines": 129473,
-        "bytes": 6981271,
-        "megabytes": 6.981271
+        "files": 962,
+        "physical_lines": 130832,
+        "bytes": 7057573,
+        "megabytes": 7.057573
       },
       {
         "language": "Python",
-        "files": 611,
-        "physical_lines": 101115,
-        "bytes": 4203979,
-        "megabytes": 4.203979
+        "files": 618,
+        "physical_lines": 102026,
+        "bytes": 4240353,
+        "megabytes": 4.240353
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 4376,
-      "physical_lines": 1102135,
-      "bytes": 83788484,
-      "megabytes": 83.788484
+      "files": 4411,
+      "physical_lines": 1110453,
+      "bytes": 84184108,
+      "megabytes": 84.184108
     },
     "binary_assets": {
       "files": 41,
@@ -144,19 +144,19 @@
       "megabytes": 14.682994
     },
     "tracked_total": {
-      "files": 4417,
-      "physical_lines": 1102135,
-      "bytes": 98471478,
-      "megabytes": 98.471478
+      "files": 4452,
+      "physical_lines": 1110453,
+      "bytes": 98867102,
+      "megabytes": 98.867102
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 5,
-        "physical_lines": 996,
-        "bytes": 49894,
-        "megabytes": 0.049894
+        "files": 0,
+        "physical_lines": 160,
+        "bytes": 14410,
+        "megabytes": 0.01441
       },
       "binary_assets": {
         "files": 0,
@@ -165,14 +165,14 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 5,
-        "physical_lines": 996,
-        "bytes": 49894,
-        "megabytes": 0.049894
+        "files": 0,
+        "physical_lines": 160,
+        "bytes": 14410,
+        "megabytes": 0.01441
       }
     }
   },
-  "updated_at": "2026-10-06",
+  "updated_at": "2026-10-07",
   "overall_percent": 33.2,
   "primary_percent": 33.2,
   "implementation_complete_percent": 43.75,
@@ -306,7 +306,7 @@
   "roadmap": {
     "source": {
       "roadmap_id": "jarvis.master.worker.v2",
-      "updated_at": "2026-10-06",
+      "updated_at": "2026-10-07",
       "file": "canonical roadmap hierarchy and release-gate summary"
     },
     "gates": [
@@ -471,9 +471,9 @@
         "chapter_color": "optional",
         "chapter_count": 19,
         "item_count": 191,
-        "completed_item_count": 29,
-        "completion_percent": 18.19,
-        "status_percent": 18.19
+        "completed_item_count": 36,
+        "completion_percent": 22.12,
+        "status_percent": 22.12
       }
     ],
     "chapters": [
@@ -1549,16 +1549,16 @@
         "chapter_color": "optional",
         "name_cs": "AG — Adaptive user guidance",
         "name_en": "AG — Adaptive user guidance",
-        "status": "architecture-only",
-        "display_status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
+        "status": "in-progress",
+        "display_status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
         "status_source": "child-items",
         "is_complete": false,
         "item_count": 9,
-        "completed_item_count": 0,
-        "completion_percent": 0.0,
-        "status_percent": 0.0
+        "completed_item_count": 7,
+        "completion_percent": 83.33,
+        "status_percent": 83.33
       },
       {
         "id": "ASA",
@@ -12217,13 +12217,13 @@
         "chapter_color": "optional",
         "description_cs": "Audit existujících hranic",
         "description_en": "Existing-boundary audit",
-        "status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
         "status_source": "canonical-roadmap",
         "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
+        "status_percent": 25.0,
+        "completion_percent": 25.0,
         "completion_percent_source": "canonical-roadmap",
         "verify": "V0",
         "is_slice": true
@@ -12239,13 +12239,13 @@
         "chapter_color": "optional",
         "description_cs": "Výchozí priorita vedení při prvním spuštění",
         "description_en": "First-run guidance prior",
-        "status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
+        "status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
         "status_source": "canonical-roadmap",
         "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
+        "status_percent": 25.0,
+        "completion_percent": 25.0,
         "completion_percent_source": "canonical-roadmap",
         "verify": "V1",
         "is_slice": true
@@ -12261,14 +12261,14 @@
         "chapter_color": "optional",
         "description_cs": "Model obeznámenosti podle schopnosti",
         "description_en": "Per-capability familiarity model",
-        "status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
-        "completion_percent_source": "canonical-roadmap",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -12283,14 +12283,14 @@
         "chapter_color": "optional",
         "description_cs": "Model situačního tření",
         "description_en": "Situational friction model",
-        "status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
-        "completion_percent_source": "canonical-roadmap",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V2",
         "is_slice": true
       },
@@ -12305,14 +12305,14 @@
         "chapter_color": "optional",
         "description_cs": "Rozhodovací engine vedení",
         "description_en": "Guidance decision engine",
-        "status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
-        "completion_percent_source": "canonical-roadmap",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -12327,14 +12327,14 @@
         "chapter_color": "optional",
         "description_cs": "Doručení přes UI, chat a hlas",
         "description_en": "Cross-surface delivery",
-        "status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
-        "completion_percent_source": "canonical-roadmap",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -12349,14 +12349,14 @@
         "chapter_color": "optional",
         "description_cs": "Transparentnost a ovládání ownerem",
         "description_en": "Transparency and owner controls",
-        "status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
-        "completion_percent_source": "canonical-roadmap",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -12371,14 +12371,14 @@
         "chapter_color": "optional",
         "description_cs": "Persistence, aktualizace a přenositelnost",
         "description_en": "Persistence, update and portability",
-        "status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
-        "completion_percent_source": "canonical-roadmap",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V3",
         "is_slice": true
       },
@@ -12393,14 +12393,14 @@
         "chapter_color": "optional",
         "description_cs": "Akceptace různých úrovní zkušenosti",
         "description_en": "Mixed-skill acceptance",
-        "status": "architecture-only",
-        "status_label_cs": "Pouze architektura",
-        "status_label_en": "Architecture only",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
-        "completion_percent_source": "canonical-roadmap",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V5",
         "is_slice": true
       },
@@ -16080,10 +16080,10 @@
       }
     ],
     "item_count": 646,
-    "completed_item_count": 292,
+    "completed_item_count": 299,
     "chapter_count": 73,
-    "completion_percent": 49.85,
-    "status_percent": 49.85,
+    "completion_percent": 51.01,
+    "status_percent": 51.01,
     "status_percent_contract": {
       "kind": "categorical-state-display",
       "label_cs": "Stav položky",
@@ -16109,7 +16109,7 @@
     "available": true,
     "previous_date": "2026-10-07",
     "roadmap_items_delta": 0,
-    "roadmap_completed_delta": 1,
+    "roadmap_completed_delta": 7,
     "roadmap_chapters_delta": 0,
     "verified_evidence_delta": 0,
     "metrics_delta": {
@@ -16130,7 +16130,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 158,
+    "incremental_closeout_points_since_full_baseline": 159,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -44822,6 +44822,40 @@
       },
       "verified_evidence_count": 106,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "7934fc86002b",
+      "date": "2026-10-07",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 646,
+        "completed_item_count": 299,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 7,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 106,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -44833,8 +44867,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "ASA7",
-    "source_commit_sha": "a92ab950702b68d7f8576abcfb6325a5839077eb",
-    "closeout_sha": "a92ab950702b68d7f8576abcfb6325a5839077eb"
+    "roadmap_slice_id": "AG8",
+    "source_commit_sha": "2344926bbae4c7b934dbc6a7c758a91ff7a3fc88",
+    "closeout_sha": "7454547ab28560895eaeddf20c7745f288451cd4"
   }
 }
