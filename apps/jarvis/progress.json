@@ -43,16 +43,16 @@
       {
         "language": "JSON",
         "files": 430,
-        "physical_lines": 182009,
-        "bytes": 31376836,
-        "megabytes": 31.376836
+        "physical_lines": 182037,
+        "bytes": 31381100,
+        "megabytes": 31.3811
       },
       {
         "language": "Markdown",
         "files": 963,
-        "physical_lines": 131064,
-        "bytes": 7071184,
-        "megabytes": 7.071184
+        "physical_lines": 131103,
+        "bytes": 7073492,
+        "megabytes": 7.073492
       },
       {
         "language": "Python",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 4416,
-      "physical_lines": 1111296,
-      "bytes": 84230491,
-      "megabytes": 84.230491
+      "physical_lines": 1111363,
+      "bytes": 84237063,
+      "megabytes": 84.237063
     },
     "binary_assets": {
       "files": 41,
@@ -145,18 +145,18 @@
     },
     "tracked_total": {
       "files": 4457,
-      "physical_lines": 1111296,
-      "bytes": 98913485,
-      "megabytes": 98.913485
+      "physical_lines": 1111363,
+      "bytes": 98920057,
+      "megabytes": 98.920057
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 79,
-        "bytes": 8472,
-        "megabytes": 0.008472
+        "physical_lines": 67,
+        "bytes": 6572,
+        "megabytes": 0.006572
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 79,
-        "bytes": 8472,
-        "megabytes": 0.008472
+        "physical_lines": 67,
+        "bytes": 6572,
+        "megabytes": 0.006572
       }
     }
   },
@@ -471,9 +471,9 @@
         "chapter_color": "optional",
         "chapter_count": 19,
         "item_count": 191,
-        "completed_item_count": 38,
-        "completion_percent": 23.69,
-        "status_percent": 23.69
+        "completed_item_count": 39,
+        "completion_percent": 24.08,
+        "status_percent": 24.08
       }
     ],
     "chapters": [
@@ -1613,9 +1613,9 @@
         "status_source": "child-items",
         "is_complete": false,
         "item_count": 6,
-        "completed_item_count": 1,
-        "completion_percent": 37.5,
-        "status_percent": 37.5
+        "completed_item_count": 2,
+        "completion_percent": 50.0,
+        "status_percent": 50.0
       },
       {
         "id": "LM0",
@@ -13053,14 +13053,14 @@
         "chapter_color": "optional",
         "description_cs": "Abstrakce providera",
         "description_en": "Provider abstraction",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 25.0,
-        "completion_percent": 25.0,
-        "completion_percent_source": "canonical-roadmap",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "canonical-roadmap-slice",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "completion_percent_source": "canonical-roadmap-slice",
         "verify": "V3",
         "is_slice": true
       },
@@ -16080,10 +16080,10 @@
       }
     ],
     "item_count": 646,
-    "completed_item_count": 301,
+    "completed_item_count": 302,
     "chapter_count": 73,
-    "completion_percent": 51.47,
-    "status_percent": 51.47,
+    "completion_percent": 51.59,
+    "status_percent": 51.59,
     "status_percent_contract": {
       "kind": "categorical-state-display",
       "label_cs": "Stav položky",
@@ -16130,7 +16130,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 162,
+    "incremental_closeout_points_since_full_baseline": 163,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -44958,6 +44958,40 @@
       },
       "verified_evidence_count": 106,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "ce6ad8ae1fc9",
+      "date": "2026-10-07",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 646,
+        "completed_item_count": 302,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 106,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -44969,8 +45003,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "IG0",
-    "source_commit_sha": "a95c01d574ed190027ab22fbb3f463a9c3155521",
-    "closeout_sha": "4027415f5279a47736d95167524e15586aab73fe"
+    "roadmap_slice_id": "IG1",
+    "source_commit_sha": "cf8a950203d33b62dff6a179c2570ac192a1d1d1",
+    "closeout_sha": "3cf7dab7e8b86df96feb50efb28e08425a0eb12f"
   }
 }
