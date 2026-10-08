@@ -50,16 +50,16 @@
       {
         "language": "Markdown",
         "files": 1052,
-        "physical_lines": 140833,
-        "bytes": 7610642,
-        "megabytes": 7.610642
+        "physical_lines": 140859,
+        "bytes": 7612004,
+        "megabytes": 7.612004
       },
       {
         "language": "Python",
         "files": 708,
-        "physical_lines": 116054,
-        "bytes": 4799508,
-        "megabytes": 4.799508
+        "physical_lines": 116081,
+        "bytes": 4800689,
+        "megabytes": 4.800689
       },
       {
         "language": "PowerShell",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 4856,
-      "physical_lines": 1197377,
-      "bytes": 88239744,
-      "megabytes": 88.239744
+      "physical_lines": 1197430,
+      "bytes": 88242287,
+      "megabytes": 88.242287
     },
     "binary_assets": {
       "files": 41,
@@ -145,18 +145,18 @@
     },
     "tracked_total": {
       "files": 4897,
-      "physical_lines": 1197377,
-      "bytes": 102922738,
-      "megabytes": 102.922738
+      "physical_lines": 1197430,
+      "bytes": 102925281,
+      "megabytes": 102.925281
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "physical_lines": 26,
+        "bytes": 1362,
+        "megabytes": 0.001362
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "physical_lines": 26,
+        "bytes": 1362,
+        "megabytes": 0.001362
       }
     }
   },
@@ -16526,7 +16526,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 222,
+    "incremental_closeout_points_since_full_baseline": 223,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -47394,6 +47394,40 @@
       },
       "verified_evidence_count": 106,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "6a403b3ad633",
+      "date": "2026-10-08",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 664,
+        "completed_item_count": 473,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 106,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -47405,8 +47439,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP7.10",
-    "source_commit_sha": "2420d9a977b128c1b5389811170f76d3435b9b44",
-    "closeout_sha": "7505ea5d1388bb27869c030a4948b5a5f53e48f7"
+    "roadmap_slice_id": "PERSONAL-COVERAGE-53-531",
+    "source_commit_sha": "a3e000a4ff67b48d3c9d7dca25c78c6753e7b09c",
+    "closeout_sha": "512980e29e719702f1e662ce7eba7784a516572a"
   }
 }
