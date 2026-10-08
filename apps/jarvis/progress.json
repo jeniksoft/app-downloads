@@ -43,16 +43,16 @@
       {
         "language": "JSON",
         "files": 518,
-        "physical_lines": 192823,
-        "bytes": 32259913,
-        "megabytes": 32.259913
+        "physical_lines": 192841,
+        "bytes": 32265720,
+        "megabytes": 32.26572
       },
       {
         "language": "Markdown",
         "files": 1053,
-        "physical_lines": 141255,
-        "bytes": 7633781,
-        "megabytes": 7.633781
+        "physical_lines": 141286,
+        "bytes": 7635485,
+        "megabytes": 7.635485
       },
       {
         "language": "Python",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 4857,
-      "physical_lines": 1198215,
-      "bytes": 88292708,
-      "megabytes": 88.292708
+      "physical_lines": 1198264,
+      "bytes": 88300219,
+      "megabytes": 88.300219
     },
     "binary_assets": {
       "files": 41,
@@ -145,18 +145,18 @@
     },
     "tracked_total": {
       "files": 4898,
-      "physical_lines": 1198215,
-      "bytes": 102975702,
-      "megabytes": 102.975702
+      "physical_lines": 1198264,
+      "bytes": 102983213,
+      "megabytes": 102.983213
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 65,
-        "bytes": 7909,
-        "megabytes": 0.007909
+        "physical_lines": 49,
+        "bytes": 7511,
+        "megabytes": 0.007511
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 65,
-        "bytes": 7909,
-        "megabytes": 0.007909
+        "physical_lines": 49,
+        "bytes": 7511,
+        "megabytes": 0.007511
       }
     }
   },
@@ -416,9 +416,9 @@
         "chapter_color": "core",
         "chapter_count": 7,
         "item_count": 57,
-        "completed_item_count": 40,
-        "completion_percent": 77.63,
-        "status_percent": 77.63
+        "completed_item_count": 50,
+        "completion_percent": 90.79,
+        "status_percent": 90.79
       },
       {
         "id": "personal",
@@ -675,16 +675,16 @@
         "chapter_color": "core",
         "name_cs": "C1 — Ariadna Hydra Norn Nanity Mimir execution control plane",
         "name_en": "C1 — Ariadna Hydra Norn Nanity Mimir execution control plane",
-        "status": "in-progress",
-        "display_status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
+        "status": "implemented-unverified",
+        "display_status": "implemented-unverified",
+        "status_label_cs": "Implementováno; neověřeno",
+        "status_label_en": "Implemented; unverified",
         "status_source": "child-items",
-        "is_complete": false,
+        "is_complete": true,
         "item_count": 10,
-        "completed_item_count": 0,
-        "completion_percent": 25.0,
-        "status_percent": 25.0
+        "completed_item_count": 10,
+        "completion_percent": 100.0,
+        "status_percent": 100.0
       },
       {
         "id": "C2",
@@ -3219,13 +3219,13 @@
         "chapter_color": "core",
         "description_cs": "typed intent envelope",
         "description_en": "typed intent envelope",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno; neověřeno",
+        "status_label_en": "Implemented; unverified",
         "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 25.0,
-        "completion_percent": 25.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
@@ -3241,13 +3241,13 @@
         "chapter_color": "core",
         "description_cs": "bounded context envelope",
         "description_en": "bounded context envelope",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno; neověřeno",
+        "status_label_en": "Implemented; unverified",
         "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 25.0,
-        "completion_percent": 25.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
@@ -3263,13 +3263,13 @@
         "chapter_color": "core",
         "description_cs": "Hydra decomposition contract",
         "description_en": "Hydra decomposition contract",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno; neověřeno",
+        "status_label_en": "Implemented; unverified",
         "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 25.0,
-        "completion_percent": 25.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
@@ -3285,13 +3285,13 @@
         "chapter_color": "core",
         "description_cs": "Norn Nanity compilation",
         "description_en": "Norn Nanity compilation",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno; neověřeno",
+        "status_label_en": "Implemented; unverified",
         "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 25.0,
-        "completion_percent": 25.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
@@ -3307,13 +3307,13 @@
         "chapter_color": "core",
         "description_cs": "one atomic Nanity target",
         "description_en": "one atomic Nanity target",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno; neověřeno",
+        "status_label_en": "Implemented; unverified",
         "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 25.0,
-        "completion_percent": 25.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
@@ -3329,13 +3329,13 @@
         "chapter_color": "core",
         "description_cs": "immutable Ariadna receipt",
         "description_en": "immutable Ariadna receipt",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno; neověřeno",
+        "status_label_en": "Implemented; unverified",
         "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 25.0,
-        "completion_percent": 25.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
@@ -3351,13 +3351,13 @@
         "chapter_color": "core",
         "description_cs": "Mimir same-tier attempt memory",
         "description_en": "Mimir same-tier attempt memory",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno; neověřeno",
+        "status_label_en": "Implemented; unverified",
         "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 25.0,
-        "completion_percent": 25.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
@@ -3373,13 +3373,13 @@
         "chapter_color": "core",
         "description_cs": "Fragment-preserving repair",
         "description_en": "Fragment-preserving repair",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno; neověřeno",
+        "status_label_en": "Implemented; unverified",
         "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 25.0,
-        "completion_percent": 25.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
@@ -3395,13 +3395,13 @@
         "chapter_color": "core",
         "description_cs": "bottom-up receipt assembly",
         "description_en": "bottom-up receipt assembly",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno; neověřeno",
+        "status_label_en": "Implemented; unverified",
         "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 25.0,
-        "completion_percent": 25.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
@@ -3417,13 +3417,13 @@
         "chapter_color": "core",
         "description_cs": "restart graph restoration",
         "description_en": "restart graph restoration",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno; neověřeno",
+        "status_label_en": "Implemented; unverified",
         "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 25.0,
-        "completion_percent": 25.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap",
         "verify": "V3",
         "is_slice": true
@@ -16476,10 +16476,10 @@
       }
     ],
     "item_count": 664,
-    "completed_item_count": 473,
+    "completed_item_count": 483,
     "chapter_count": 73,
-    "completion_percent": 74.85,
-    "status_percent": 74.85,
+    "completion_percent": 75.98,
+    "status_percent": 75.98,
     "status_percent_contract": {
       "kind": "categorical-state-display",
       "label_cs": "Stav položky",
@@ -16505,7 +16505,7 @@
     "available": true,
     "previous_date": "2026-10-08",
     "roadmap_items_delta": 0,
-    "roadmap_completed_delta": 0,
+    "roadmap_completed_delta": 10,
     "roadmap_chapters_delta": 0,
     "verified_evidence_delta": 0,
     "metrics_delta": {
@@ -16526,7 +16526,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 238,
+    "incremental_closeout_points_since_full_baseline": 239,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -47938,6 +47938,40 @@
       },
       "verified_evidence_count": 106,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "9289b5a3beb0",
+      "date": "2026-10-08",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 664,
+        "completed_item_count": 483,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 10,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 106,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -47949,8 +47983,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "PF5",
-    "source_commit_sha": "6fb3800debd49442bf57187de94866197e5e7416",
-    "closeout_sha": "40bd3662a80ca947e88a80afa0977cb8873a946d"
+    "roadmap_slice_id": "C1",
+    "source_commit_sha": "b4c850d53aba2d280886726a06baa7dde7b5e238",
+    "closeout_sha": "394c8c096cb102f19e5a3104193bc968e8952933"
   }
 }
