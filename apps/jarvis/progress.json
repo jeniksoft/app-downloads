@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 2269,
-        "physical_lines": 706412,
-        "bytes": 34446036,
-        "megabytes": 34.446036
+        "files": 2271,
+        "physical_lines": 707075,
+        "bytes": 34473201,
+        "megabytes": 34.473201
       },
       {
         "language": "JSON",
-        "files": 523,
-        "physical_lines": 193180,
-        "bytes": 32294540,
-        "megabytes": 32.29454
+        "files": 524,
+        "physical_lines": 193258,
+        "bytes": 32298326,
+        "megabytes": 32.298326
       },
       {
         "language": "Markdown",
-        "files": 1058,
-        "physical_lines": 141785,
-        "bytes": 7668300,
-        "megabytes": 7.6683
+        "files": 1059,
+        "physical_lines": 141828,
+        "bytes": 7671281,
+        "megabytes": 7.671281
       },
       {
         "language": "Python",
-        "files": 715,
-        "physical_lines": 117552,
-        "bytes": 4863899,
-        "megabytes": 4.863899
+        "files": 716,
+        "physical_lines": 117715,
+        "bytes": 4869242,
+        "megabytes": 4.869242
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 4890,
-      "physical_lines": 1204670,
-      "bytes": 88593723,
-      "megabytes": 88.593723
+      "files": 4895,
+      "physical_lines": 1205617,
+      "bytes": 88632998,
+      "megabytes": 88.632998
     },
     "binary_assets": {
       "files": 41,
@@ -144,10 +144,10 @@
       "megabytes": 14.682994
     },
     "tracked_total": {
-      "files": 4931,
-      "physical_lines": 1204670,
-      "bytes": 103276717,
-      "megabytes": 103.276717
+      "files": 4936,
+      "physical_lines": 1205617,
+      "bytes": 103315992,
+      "megabytes": 103.315992
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
@@ -16507,12 +16507,12 @@
     "roadmap_items_delta": 0,
     "roadmap_completed_delta": 0,
     "roadmap_chapters_delta": 0,
-    "verified_evidence_delta": 7,
+    "verified_evidence_delta": 1,
     "metrics_delta": {
-      "primary_percent": 3.53,
+      "primary_percent": 0.0,
       "implementation_percent": 0.0,
-      "verified_percent": 3.53,
-      "done_percent": 3.53,
+      "verified_percent": 0.0,
+      "done_percent": 0.0,
       "release_readiness_percent": 0.0
     }
   },
@@ -16526,7 +16526,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 245,
+    "incremental_closeout_points_since_full_baseline": 246,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -16541,19 +16541,19 @@
     "max_public_commits_per_closeout": 1,
     "closeout_proof": "exact-slice-source-and-closeout-sha"
   },
-  "milestone_implementation_percent": 70.5,
-  "milestone_verified_percent": 41.98,
-  "milestone_done_percent": 41.98,
+  "milestone_implementation_percent": 73.0,
+  "milestone_verified_percent": 43.23,
+  "milestone_done_percent": 43.23,
   "evidence_summary": {
     "manifest_present": true,
     "milestone_count": 36,
-    "verified_milestone_count": 21,
-    "verified_evidence_count": 113,
+    "verified_milestone_count": 22,
+    "verified_evidence_count": 114,
     "state_counts": {
       "verified-build": 13,
-      "partial": 9,
+      "partial": 8,
       "open": 6,
-      "verified-contract": 8
+      "verified-contract": 9
     }
   },
   "release_readiness_percent": 50.0,
@@ -17309,9 +17309,9 @@
       "chart_label": "Executor",
       "architecture_group": "Integration boundary",
       "weight_percent": 20.0,
-      "milestone_implementation_percent": 62.5,
-      "milestone_verified_percent": 31.25,
-      "milestone_done_percent": 31.25,
+      "milestone_implementation_percent": 75.0,
+      "milestone_verified_percent": 37.5,
+      "milestone_done_percent": 37.5,
       "implementation_percent": 25.0,
       "verified_percent": 25.0,
       "done_percent": 25.0,
@@ -17358,12 +17358,12 @@
           "name_cs": "Policy, audit, resume a fail-closed executor",
           "name_en": "Policy, audit, resume and fail-closed executor",
           "weight_percent": 25.0,
-          "state": "partial",
-          "implementation_percent": 50.0,
-          "verified_percent": 25.0,
-          "done_percent": 25.0,
-          "evidence_count": 5,
-          "verified_evidence_count": 4,
+          "state": "verified-contract",
+          "implementation_percent": 100.0,
+          "verified_percent": 50.0,
+          "done_percent": 50.0,
+          "evidence_count": 6,
+          "verified_evidence_count": 5,
           "evidence_kinds": [
             "contract",
             "runtime",
@@ -17377,7 +17377,7 @@
             "open",
             "verified"
           ],
-          "evidence_summary_cs": "Auditní a fail-closed principy i deterministický policy-denied receipt jsou ověřené napříč přímými executor adaptery, ale cross-runtime proof je stále částečný.",
+          "evidence_summary_cs": "Provider-free evidence hranice nyní typově pokrývá generický, privilegovaný, mutující a resume adapter nad existující policy, auditem, WorkerJournalem a read-backem; cross-runtime proof je stále částečný.",
           "open_gap_cs": "Zbývá live a skutečný workflow důkaz pro generické, privilegované a mutující adaptery."
         },
         {
@@ -48199,6 +48199,42 @@
       },
       "verified_evidence_count": 113,
       "verified_evidence_delta": 7
+    },
+    {
+      "revision": "cf073d36348c",
+      "date": "2026-10-08",
+      "metrics": {
+        "primary_percent": 36.73,
+        "implementation_percent": 43.75,
+        "verified_percent": 36.73,
+        "done_percent": 36.73,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "executor-runtime"
+      ],
+      "changed_milestones": [
+        "executor-runtime/policy-audit-fail-closed"
+      ],
+      "roadmap": {
+        "item_count": 664,
+        "completed_item_count": 491,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 114,
+      "verified_evidence_delta": 1
     }
   ],
   "history_contract": {
@@ -48210,8 +48246,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP7.10",
-    "source_commit_sha": "a9bb2a82e6c1ef70dd104bb59f39d331ee9400e5",
-    "closeout_sha": "1b7d5bfebaf34da5c82c42a02cfed58b0890ff59"
+    "roadmap_slice_id": "P4.16",
+    "source_commit_sha": "bf2ace080c16e061c236635c2878bfad885eed10",
+    "closeout_sha": "5844bcdd153a5137fb1659b095a0a2681e2617e5"
   }
 }
