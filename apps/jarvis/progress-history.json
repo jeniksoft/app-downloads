@@ -29906,13 +29906,47 @@
       },
       "verified_evidence_count": 106,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "080173aa8d66",
+      "date": "2026-10-08",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 664,
+        "completed_item_count": 473,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 106,
+      "verified_evidence_delta": 0
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "GUARD-RECONCILIATION-21",
-    "source_commit_sha": "42ad444a581123217203c1c170e26603ae601ffa",
-    "closeout_sha": "1eafac70c7c4ed07e9564f2fdbe70aff9b27ec3d"
+    "roadmap_slice_id": "GUARD-RECONCILIATION-22",
+    "source_commit_sha": "e657e8f888bc7c199f14a7d79b9af020cfac6549",
+    "closeout_sha": "a392d7f3a61b5dab5db33e13134f5387a3a4a5c6"
   }
 }
