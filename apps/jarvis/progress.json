@@ -36,30 +36,30 @@
       {
         "language": "C/C++",
         "files": 2271,
-        "physical_lines": 707075,
-        "bytes": 34473201,
-        "megabytes": 34.473201
+        "physical_lines": 707087,
+        "bytes": 34473618,
+        "megabytes": 34.473618
       },
       {
         "language": "JSON",
         "files": 524,
         "physical_lines": 193258,
-        "bytes": 32298326,
-        "megabytes": 32.298326
+        "bytes": 32298337,
+        "megabytes": 32.298337
       },
       {
         "language": "Markdown",
         "files": 1059,
         "physical_lines": 141828,
-        "bytes": 7671281,
-        "megabytes": 7.671281
+        "bytes": 7671308,
+        "megabytes": 7.671308
       },
       {
         "language": "Python",
         "files": 716,
-        "physical_lines": 117715,
-        "bytes": 4869242,
-        "megabytes": 4.869242
+        "physical_lines": 117719,
+        "bytes": 4869326,
+        "megabytes": 4.869326
       },
       {
         "language": "PowerShell",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 4895,
-      "physical_lines": 1205617,
-      "bytes": 88632998,
-      "megabytes": 88.632998
+      "physical_lines": 1205633,
+      "bytes": 88633537,
+      "megabytes": 88.633537
     },
     "binary_assets": {
       "files": 41,
@@ -145,9 +145,9 @@
     },
     "tracked_total": {
       "files": 4936,
-      "physical_lines": 1205617,
-      "bytes": 103315992,
-      "megabytes": 103.315992
+      "physical_lines": 1205633,
+      "bytes": 103316531,
+      "megabytes": 103.316531
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
@@ -173,19 +173,19 @@
     }
   },
   "updated_at": "2026-10-08",
-  "overall_percent": 36.73,
-  "primary_percent": 36.73,
+  "overall_percent": 37.48,
+  "primary_percent": 37.48,
   "implementation_complete_percent": 43.75,
-  "verified_percent": 36.73,
-  "done_percent": 36.73,
+  "verified_percent": 37.48,
+  "done_percent": 37.48,
   "personal_progress": {
     "profile_id": "jarvis-personal-1.0.0",
     "edition": "Personal",
     "version": "1.0.0",
-    "primary_percent": 36.73,
+    "primary_percent": 37.48,
     "implementation_percent": 43.75,
-    "verified_percent": 36.73,
-    "done_percent": 36.73,
+    "verified_percent": 37.48,
+    "done_percent": 37.48,
     "chapter_count": 8,
     "chapters": [
       {
@@ -208,11 +208,11 @@
         "name_en": "Worker core, conversations, queue and recovery",
         "weight_percent": 12.0,
         "implementation_percent": 50.0,
-        "verified_percent": 37.5,
-        "done_percent": 37.5,
+        "verified_percent": 43.75,
+        "done_percent": 43.75,
         "weighted_implementation_percent": 6.0,
-        "weighted_verified_percent": 4.5,
-        "weighted_done_percent": 4.5,
+        "weighted_verified_percent": 5.25,
+        "weighted_done_percent": 5.25,
         "status": "in-progress",
         "evidence_source": "milestone-evidence-manifest"
       },
@@ -360,7 +360,7 @@
         "is_complete": false,
         "progress_available": true,
         "progress_kind": "evidence-bound",
-        "progress_percent": 36.73,
+        "progress_percent": 37.48,
         "measurement_cs": "Evidence-bound primary index",
         "measurement_en": "Evidence-bound primary index"
       },
@@ -16509,10 +16509,10 @@
     "roadmap_chapters_delta": 0,
     "verified_evidence_delta": 1,
     "metrics_delta": {
-      "primary_percent": 0.0,
+      "primary_percent": 0.75,
       "implementation_percent": 0.0,
-      "verified_percent": 0.0,
-      "done_percent": 0.0,
+      "verified_percent": 0.75,
+      "done_percent": 0.75,
       "release_readiness_percent": 0.0
     }
   },
@@ -16526,7 +16526,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 246,
+    "incremental_closeout_points_since_full_baseline": 247,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -16541,19 +16541,19 @@
     "max_public_commits_per_closeout": 1,
     "closeout_proof": "exact-slice-source-and-closeout-sha"
   },
-  "milestone_implementation_percent": 73.0,
-  "milestone_verified_percent": 43.23,
-  "milestone_done_percent": 43.23,
+  "milestone_implementation_percent": 74.5,
+  "milestone_verified_percent": 43.98,
+  "milestone_done_percent": 43.98,
   "evidence_summary": {
     "manifest_present": true,
     "milestone_count": 36,
-    "verified_milestone_count": 22,
-    "verified_evidence_count": 114,
+    "verified_milestone_count": 23,
+    "verified_evidence_count": 115,
     "state_counts": {
       "verified-build": 13,
-      "partial": 8,
+      "partial": 7,
       "open": 6,
-      "verified-contract": 9
+      "verified-contract": 10
     }
   },
   "release_readiness_percent": 50.0,
@@ -16691,15 +16691,15 @@
       "chart_label": "Worker/recovery",
       "architecture_group": "Durable runtime",
       "weight_percent": 12.0,
-      "milestone_implementation_percent": 62.5,
-      "milestone_verified_percent": 37.5,
-      "milestone_done_percent": 37.5,
+      "milestone_implementation_percent": 75.0,
+      "milestone_verified_percent": 43.75,
+      "milestone_done_percent": 43.75,
       "implementation_percent": 50.0,
-      "verified_percent": 37.5,
-      "done_percent": 37.5,
+      "verified_percent": 43.75,
+      "done_percent": 43.75,
       "weighted_implementation_percent": 6.0,
-      "weighted_verified_percent": 4.5,
-      "weighted_done_percent": 4.5,
+      "weighted_verified_percent": 5.25,
+      "weighted_done_percent": 5.25,
       "evidence_source": "milestone-evidence-manifest",
       "evidence_cap_percent": 50.0,
       "evidence_cap_basis": "Personal P1 recovery and durable execution is partial; post-mutation resume and live continuity remain open.",
@@ -16769,12 +16769,12 @@
           "name_cs": "Fail-closed review pro síťové a mutující replaye",
           "name_en": "Fail-closed review for network and mutating replays",
           "weight_percent": 25.0,
-          "state": "partial",
-          "implementation_percent": 50.0,
-          "verified_percent": 25.0,
-          "done_percent": 25.0,
-          "evidence_count": 3,
-          "verified_evidence_count": 2,
+          "state": "verified-contract",
+          "implementation_percent": 100.0,
+          "verified_percent": 50.0,
+          "done_percent": 50.0,
+          "evidence_count": 4,
+          "verified_evidence_count": 3,
           "evidence_kinds": [
             "contract",
             "runtime",
@@ -16788,7 +16788,7 @@
             "open",
             "verified"
           ],
-          "evidence_summary_cs": "Fail-closed hranice a typed receipt continuity jsou deterministicky ověřené v existujícím policy/WorkerJournal toku, ale jejich úplná Personal acceptance není uzavřená.",
+          "evidence_summary_cs": "Provider-free fail-closed hranice a typed receipt continuity jsou deterministicky ověřené pro síťové, privilegované, mutující a resume cesty; úplná Personal acceptance není uzavřená.",
           "open_gap_cs": "Zbývá live a skutečný workflow důkaz přes všechny privilegované a mutující replay cesty."
         },
         {
@@ -48235,6 +48235,42 @@
       },
       "verified_evidence_count": 114,
       "verified_evidence_delta": 1
+    },
+    {
+      "revision": "6bce9db93ede",
+      "date": "2026-10-09",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.75,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.75,
+        "done_percent": 0.75,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "worker-recovery"
+      ],
+      "changed_milestones": [
+        "worker-recovery/fail-closed-replay-review"
+      ],
+      "roadmap": {
+        "item_count": 664,
+        "completed_item_count": 491,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 115,
+      "verified_evidence_delta": 1
     }
   ],
   "history_contract": {
@@ -48246,8 +48282,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "P4.16",
-    "source_commit_sha": "bf2ace080c16e061c236635c2878bfad885eed10",
-    "closeout_sha": "5844bcdd153a5137fb1659b095a0a2681e2617e5"
+    "roadmap_slice_id": "P1.6",
+    "source_commit_sha": "3132e1dfe5d4b6a65698a3ecbf23d19bfc918f87",
+    "closeout_sha": "c512c7d9cc0bce9cb7e21a2d94e3034911ed48c8"
   }
 }

@@ -29,7 +29,7 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `P4.16` je veřejně spojen se zdrojovým SHA `bf2ace080c16e061c236635c2878bfad885eed10` a closeout SHA `5844bcdd153a5137fb1659b095a0a2681e2617e5`. Stav: **verified**.
+Řez `P1.6` je veřejně spojen se zdrojovým SHA `3132e1dfe5d4b6a65698a3ecbf23d19bfc918f87` a closeout SHA `c512c7d9cc0bce9cb7e21a2d94e3034911ed48c8`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -55,12 +55,12 @@ Nejde o instalační balíček ani o prohlášení, že je produkt hotový; při
 
 ### Osobní Jarvis — vážený průběh
 
-Personal 1.0.0 má celkový stav **36.73 %**. Hodnota uvnitř kapitoly zůstává oddělená od jejího globálního příspěvku; například 6% kapitola na 95% přidá 5,70 procentního bodu.
+Personal 1.0.0 má celkový stav **37.48 %**. Hodnota uvnitř kapitoly zůstává oddělená od jejího globálního příspěvku; například 6% kapitola na 95% přidá 5,70 procentního bodu.
 
 | Kapitola | Váha | Uvnitř kapitoly | Vážený příspěvek |
 | --- | ---: | ---: | ---: |
 | Aplikační shell, instalátor, update a veřejný kanál | 10.00 % | 31.25 % | 3.13 p. b. |
-| Worker core, konverzace, fronta a recovery | 12.00 % | 37.50 % | 4.50 p. b. |
+| Worker core, konverzace, fronta a recovery | 12.00 % | 43.75 % | 5.25 p. b. |
 | Model providery, profily, routing a fallback | 10.00 % | 62.50 % | 6.25 p. b. |
 | Workspace, memory, source, patch, build, Git a web | 14.00 % | 71.25 % | 9.98 p. b. |
 | Extension discovery, manager a permissions | 16.00 % | 25.00 % | 4.00 p. b. |
@@ -95,10 +95,10 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 2 271 | 707 075 | 34.47 |
+| C/C++ | 2 271 | 707 087 | 34.47 |
 | JSON | 524 | 193 258 | 32.30 |
 | Markdown | 1 059 | 141 828 | 7.67 |
-| Python | 716 | 117 715 | 4.87 |
+| Python | 716 | 117 719 | 4.87 |
 | PowerShell | 69 | 34 072 | 1.78 |
 | Other text | 80 | 5 947 | 0.30 |
 | JSONL | 16 | 2 515 | 6.93 |
@@ -109,9 +109,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **4 895** | **1 205 617** | **88.63** |
+| **Text/source celkem** | **4 895** | **1 205 633** | **88.63** |
 | Binární assety (mimo řádky) | 41 | — | 14.68 |
-| **Trackovaný strom celkem** | **4 936** | **1 205 617** | **103.32** |
+| **Trackovaný strom celkem** | **4 936** | **1 205 633** | **103.32** |
 
 ### Přírůstek od předchozí revize
 
@@ -150,7 +150,7 @@ Graf kapitol je v dashboardu výše jako statické SVG. Tato úplná textová ta
 | App shell | Čistá instalace, upgrade, podpis a rollback acceptance | `open` | Release milestone je deklarovaný jako požadavek, nikoli jako uzavřený důkaz.; mezera: Chybí aktuální acceptance pack navázaný na konkrétní release candidate.; typy: roadmap |
 | Worker/recovery | Queue, WorkerJournal a persistence | `verified-build` | Capability matrix a PF1.2 common durable envelope uvádějí queue, worker, typed recovery UI projection, durable evidence gates a skrytý parent/child process-restart self-test jako build/contract ověřené.; mezera: Skutečný crash/restart průchod reálného workflow, dlouhý providerový requeue a V5 owner-facing recovery workflow acceptance zůstávají samostatnými důkazy.; typy: runtime, self-test |
 | Worker/recovery | Mid-step resume a přesný Fragment | `verified-contract` | Typed phase, policy, target, digest a exact Fragment selection mají kontraktní self-test evidence; closed vocabulary navíc odmítá neznámé, částečné a nesouhlasné vazby, P1.3 váže request/efektivní policy identity před consequential krokem s verified-only gate a P1.4 váže before/after digest stejné množiny targetů bez replaye mutace.; mezera: Live provider replay a pokračování po skutečné mutaci nejsou tímto kontraktem prokázané.; typy: contract, runtime, self-test |
-| Worker/recovery | Fail-closed review pro síťové a mutující replaye | `partial` | Fail-closed hranice a typed receipt continuity jsou deterministicky ověřené v existujícím policy/WorkerJournal toku, ale jejich úplná Personal acceptance není uzavřená.; mezera: Zbývá live a skutečný workflow důkaz přes všechny privilegované a mutující replay cesty.; typy: contract, runtime, self-test |
+| Worker/recovery | Fail-closed review pro síťové a mutující replaye | `verified-contract` | Provider-free fail-closed hranice a typed receipt continuity jsou deterministicky ověřené pro síťové, privilegované, mutující a resume cesty; úplná Personal acceptance není uzavřená.; mezera: Zbývá live a skutečný workflow důkaz přes všechny privilegované a mutující replay cesty.; typy: contract, runtime, self-test |
 | Worker/recovery | Crash/restart dogfood skutečného workflow | `open` | Roadmap požadavek je známý, ale aktuální receipt není v registru.; mezera: Dodat opakovatelný crash/restart test s identity, journalem, resume a owner review.; typy: roadmap |
 | Models/routing | Provider health, capability a identity | `verified-build` | Current evidence covers provider/model identity, readiness and bounded routing contracts.; mezera: Živá dostupnost každého podporovaného endpointu není permanentně prokázaná.; typy: runtime, self-test |
 | Models/routing | Typed routing, fallback a blocked stav | `verified-build` | Evidence-driven first-attempt routing a fallback gates jsou v current build evidence.; mezera: Runtime kvalita provideru a 75% first-tier KPI zůstávají measurement target, nikoli hotový výsledek.; typy: build, runtime, self-test |
@@ -191,7 +191,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `7b38edbe006a` | 2026-10-08 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `0487a15468d8` | 2026-10-08 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `6dd6c2dd1af7` | 2026-10-08 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `080173aa8d66` | 2026-10-08 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -209,13 +208,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `0b5b172c972b` | 2026-10-08 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `07b5859e31ee` | 2026-10-08 | +3.53 | +0.00 | +3.53 | +3.53 | +0.00 | app-shell-release, workspace-actions, extensions-permissions, executor-runtime | 7: app-shell-release/installer-update-contract, workspace-actions/action-failure-recovery, extensions-permissions/extension-registry-discovery, extensions-permissions/capability-permission-center… |
 | `cf073d36348c` | 2026-10-08 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | executor-runtime | 1: executor-runtime/policy-audit-fail-closed |
+| `6bce9db93ede` | 2026-10-09 | +0.75 | +0.00 | +0.75 | +0.75 | +0.00 | worker-recovery | 1: worker-recovery/fail-closed-replay-review |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 246 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 247 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
