@@ -16439,7 +16439,7 @@
     "available": true,
     "previous_date": "2026-10-08",
     "roadmap_items_delta": 0,
-    "roadmap_completed_delta": 1,
+    "roadmap_completed_delta": 0,
     "roadmap_chapters_delta": 0,
     "verified_evidence_delta": 0,
     "metrics_delta": {
@@ -16460,7 +16460,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 198,
+    "incremental_closeout_points_since_full_baseline": 199,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -46512,6 +46512,40 @@
       },
       "verified_evidence_count": 106,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "582f4e74b55a",
+      "date": "2026-10-08",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 661,
+        "completed_item_count": 431,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 106,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -46525,6 +46559,6 @@
     "status": "verified",
     "roadmap_slice_id": "OP4.14",
     "source_commit_sha": "a0bc9bd26e89929e7e2553a5d3a2a68af3cb4802",
-    "closeout_sha": "fbe883bc5ce3a80e3d001e09baee89fc14dbc3c8"
+    "closeout_sha": "673be8e35a822358984be2f04a2eead1d68efb4b"
   }
 }
