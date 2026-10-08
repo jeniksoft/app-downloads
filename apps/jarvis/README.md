@@ -29,7 +29,7 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `OP7.10` je veřejně spojen se zdrojovým SHA `ca5dc17746781eeac438f795af0bcb1d4a93b805` a closeout SHA `ca5dc17746781eeac438f795af0bcb1d4a93b805`. Stav: **verified**.
+Řez `OP7.10` je veřejně spojen se zdrojovým SHA `a9bb2a82e6c1ef70dd104bb59f39d331ee9400e5` a closeout SHA `1b7d5bfebaf34da5c82c42a02cfed58b0890ff59`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -55,15 +55,15 @@ Nejde o instalační balíček ani o prohlášení, že je produkt hotový; při
 
 ### Osobní Jarvis — vážený průběh
 
-Personal 1.0.0 má celkový stav **33.20 %**. Hodnota uvnitř kapitoly zůstává oddělená od jejího globálního příspěvku; například 6% kapitola na 95% přidá 5,70 procentního bodu.
+Personal 1.0.0 má celkový stav **36.73 %**. Hodnota uvnitř kapitoly zůstává oddělená od jejího globálního příspěvku; například 6% kapitola na 95% přidá 5,70 procentního bodu.
 
 | Kapitola | Váha | Uvnitř kapitoly | Vážený příspěvek |
 | --- | ---: | ---: | ---: |
 | Aplikační shell, instalátor, update a veřejný kanál | 10.00 % | 31.25 % | 3.13 p. b. |
 | Worker core, konverzace, fronta a recovery | 12.00 % | 37.50 % | 4.50 p. b. |
 | Model providery, profily, routing a fallback | 10.00 % | 62.50 % | 6.25 p. b. |
-| Workspace, memory, source, patch, build, Git a web | 14.00 % | 67.50 % | 9.45 p. b. |
-| Extension discovery, manager a permissions | 16.00 % | 6.25 % | 1.00 p. b. |
+| Workspace, memory, source, patch, build, Git a web | 14.00 % | 71.25 % | 9.98 p. b. |
+| Extension discovery, manager a permissions | 16.00 % | 25.00 % | 4.00 p. b. |
 | Policy-bound MCP, plugin a app executor runtime | 20.00 % | 25.00 % | 5.00 p. b. |
 | Owner-facing UX, diagnostika, support a lokalizace | 10.00 % | 18.75 % | 1.88 p. b. |
 | End-to-end QA, dogfooding a bezpečnostní audity | 8.00 % | 25.00 % | 2.00 p. b. |
@@ -73,7 +73,7 @@ Personal 1.0.0 má celkový stav **33.20 %**. Hodnota uvnitř kapitoly zůstáv�
 **Legenda ikon:** · <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno · <span role="img" title="Evidence: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření." aria-label="Evidence: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření.">🟦</span> Evidence · <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno · <span role="img" title="Plánováno: Stav je plánovaný nebo pouze architektonický; značka není důkaz dokončení." aria-label="Plánováno: Stav je plánovaný nebo pouze architektonický; značka není důkaz dokončení.">⚪</span> Plánováno · <span role="img" title="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch." aria-label="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch.">⛔</span> Blokováno
 Ikona i popisek jsou viditelné přímo v README; po najetí kurzorem tooltip vysvětlí význam a nezaměňuje implementaci za živé ověření.
 
-**Změna od předchozího snapshotu: roadmapa položky +0 · hotovo +1 · ověřené důkazy +0**
+**Změna od předchozího snapshotu: roadmapa položky +0 · hotovo +0 · ověřené důkazy +7**
 
 ![Roadmapa a progress edic Jarvis](visuals/roadmap-editions.svg)
 
@@ -95,10 +95,10 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 2 261 | 703 936 | 34.34 |
-| JSON | 519 | 192 908 | 32.28 |
-| Markdown | 1 054 | 141 529 | 7.65 |
-| Python | 710 | 116 934 | 4.84 |
+| C/C++ | 2 269 | 706 412 | 34.45 |
+| JSON | 523 | 193 180 | 32.29 |
+| Markdown | 1 058 | 141 785 | 7.67 |
+| Python | 715 | 117 552 | 4.86 |
 | PowerShell | 69 | 34 072 | 1.78 |
 | Other text | 80 | 5 947 | 0.30 |
 | JSONL | 16 | 2 515 | 6.93 |
@@ -109,9 +109,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **4 869** | **1 201 048** | **88.44** |
+| **Text/source celkem** | **4 890** | **1 204 670** | **88.59** |
 | Binární assety (mimo řádky) | 41 | — | 14.68 |
-| **Trackovaný strom celkem** | **4 910** | **1 201 048** | **103.12** |
+| **Trackovaný strom celkem** | **4 931** | **1 204 670** | **103.28** |
 
 ### Přírůstek od předchozí revize
 
@@ -119,9 +119,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +0 | +27 | +0.00 |
+| Text/source celkem | +0 | +0 | +0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +0 | +27 | +0.00 |
+| Trackovaný strom celkem | +0 | +0 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -145,7 +145,7 @@ Graf kapitol je v dashboardu výše jako statické SVG. Tato úplná textová ta
 | Kapitola | Milestone | Stav | Důkaz / mezera |
 | --- | --- | --- | --- |
 | App shell | WDUi aplikační shell a základní navigace | `verified-build` | Aktuální capability evidence uvádí warning-free build a contract/self-test gates pro WDUi/Jarvis vrstvy.; mezera: Čerstvé owner-facing vizuální a multi-monitor QA není uzavřené jako runtime acceptance.; typy: build, runtime |
-| App shell | Instalátor, update a rollback kontrakt | `partial` | Instalační a update části jsou v architektuře a zdrojovém toku přítomné, ale veřejná P8 release QA je pouze partial.; mezera: Chybí uzavřený čistý install, upgrade a rollback acceptance pack pro Personal 1.0.0.; typy: contract, release-gate |
+| App shell | Instalátor, update a rollback kontrakt | `partial` | Instalační a update části mají provider-free P8.15.1-P8.15.13 evidence včetně host registry, signed-installer admission a bounded graph-registry publication; veřejná P8 release QA je stále pouze partial.; mezera: Chybí uzavřený čistý install, upgrade a rollback acceptance pack pro Personal 1.0.0 včetně živého installeru, nasazení služby, restartové orchestrace a owner workflow.; typy: contract, release-gate, self-test |
 | App shell | ADPU a veřejný kanál | `partial` | Veřejný kanál a synchronizační kontrakt existují, ale samotná distribuce není důkazem funkčního release.; mezera: Je nutné dokončit a opakovaně ověřit end-to-end publikaci artefaktu, integritu a rollback hranice.; typy: contract, release-gate |
 | App shell | Čistá instalace, upgrade, podpis a rollback acceptance | `open` | Release milestone je deklarovaný jako požadavek, nikoli jako uzavřený důkaz.; mezera: Chybí aktuální acceptance pack navázaný na konkrétní release candidate.; typy: roadmap |
 | Worker/recovery | Queue, WorkerJournal a persistence | `verified-build` | Capability matrix a PF1.2 common durable envelope uvádějí queue, worker, typed recovery UI projection, durable evidence gates a skrytý parent/child process-restart self-test jako build/contract ověřené.; mezera: Skutečný crash/restart průchod reálného workflow, dlouhý providerový requeue a V5 owner-facing recovery workflow acceptance zůstávají samostatnými důkazy.; typy: runtime, self-test |
@@ -159,18 +159,18 @@ Graf kapitol je v dashboardu výše jako statické SVG. Tato úplná textová ta
 | Workspace/actions | Workspace, source grounding a freshness | `verified-build` | Workspace helpers, source grounding a deterministic project workflow mají current build evidence.; mezera: Úplná kombinatorická action matrix pro každý podporovaný projekt není uzavřená.; typy: runtime, self-test |
 | Workspace/actions | Memory, provenance a continuity | `verified-build` | Global memory capture, retrieval, scope nodes, citations and owner review mají executable evidence.; mezera: Semantic inference, online sync a všechny current-state correction scénáře nejsou tímto důkazem uzavřené.; typy: contract, self-test |
 | Workspace/actions | Policy-bound file/build/test/Git/web akce | `verified-build` | Policy-bound helper and workspace command paths mají fail-closed selection, output capture a journal evidence.; mezera: Live owner acceptance všech mutujících a browser/app cest není doložená jedním kompletním packem.; typy: runtime, self-test |
-| Workspace/actions | Recovery po selhání nástroje a no-overwrite hranice | `partial` | Bezpečnostní guardy a recovery kontrakty existují, ale nejsou kompletně potvrzené napříč runtime cestami.; mezera: Dodat end-to-end receipts pro containment, no-overwrite, destructive guard a recovery po pádu procesu.; typy: contract, runtime |
+| Workspace/actions | Recovery po selhání nástroje a no-overwrite hranice | `verified-contract` | Existující containment, WorkerJournal, post-mutation verify a rollback guardy mají společný provider-free failure/recovery receipt s no-replay a no-overwrite hranicí.; mezera: Zbývá skutečný pád procesu, end-to-end journal/read-back, rollback provedení a owner-facing runtime acceptance.; typy: contract, self-test |
 | Workspace/actions | Allow-listované build/test presety | `verified-build` | P4.7 má provider-free source guard, nativní self-test a build evidence pro uzavřený registr workspace build/test presetů.; mezera: Živý provider, model, workspace, dlouhý build/test běh a owner acceptance zůstávají samostatnými branami.; typy: runtime, self-test |
 | Workspace/actions | Read-only Git s přesnými hostitelskými argumenty | `verified-build` | P4.8 má provider-free source guard, nativní self-test a build evidence pro uzavřený registr read-only Git argumentů.; mezera: Provider, model, síť, živý workspace a owner acceptance zůstávají samostatnými branami; síťový fetch není povolen.; typy: runtime, self-test |
 | Workspace/actions | Potvrzený Git commit/push s identitními receipty | `verified-build` | P4.9 má provider-free source guard, nativní receipt self-test a build evidence pro hostitelem vázaný Git commit/push.; mezera: Credentialy, provider, živý repozitář, crash/restart a owner acceptance zůstávají samostatnými branami.; typy: runtime, self-test |
 | Workspace/actions | Potvrzená hranice otevření URL v browseru | `verified-build` | P4.10 má provider-free kontrolu URL, nativní receipt/self-test a build evidence pro hostitelem řízené předání URL výchozímu browseru.; mezera: WebView2 UI, skutečné síťové načtení, pozorování page-loadu a owner acceptance zůstávají samostatnými branami.; typy: runtime, self-test |
-| Extensions | Registry a discovery rozšíření | `partial` | Kontrakt discovery a capability boundary existují, ale P7 je owner-approved pouze early.; mezera: Chybí uzavřená registrace/discovery lifecycle evidence pro obecné extension typy.; typy: contract, release-gate |
-| Extensions | Capability center a permission profily | `contract-only` | Permission model je architektonicky popsaný; kompletní current runtime evidence chybí.; mezera: Dodat implementovaný UI/runtime flow, persistence a negative-path self-tests.; typy: documentation |
-| Extensions | Read-only connector preview | `contract-only` | Read-only preview je součástí roadmapového směru, ne uzavřený universal connector proof.; mezera: Dodat konkrétní connector fixture, source identity, permission review a ověřený render.; typy: roadmap |
-| Extensions | Install/update/disable lifecycle rozšíření | `open` | Obecný lifecycle není v Personal evidence uzavřen.; mezera: Dodat safe install, update, disable, rollback, ownership a audit receipts.; typy: release-gate |
+| Extensions | Registry a discovery rozšíření | `verified-contract` | Hostem dodaný registr rozšíření má provider-free kanonikalizaci obecných typů, stabilní snapshot identity, bounded manifest metadata a fail-closed runtime hranici.; mezera: Zbývá skutečné filesystem discovery, loader/executor, persistence read-back, restart a owner-facing acceptance.; typy: contract, self-test |
+| Extensions | Capability center a permission profily | `verified-contract` | Capability Center a permission editor jsou napojené na existující WDUi, hostitelskou discovery/policy autoritu, persistence a audit; provider-free wiring a negativní policy testy prošly.; mezera: Zbývá owner-facing live UI acceptance, reálné extension execution a plná lifecycle acceptance.; typy: documentation, self-test |
+| Extensions | Read-only connector preview | `verified-contract` | Konkrétní local/private GET a HEAD connector fixture, preview, source identity a permission refusal jsou ověřené v deterministickém extension-policy self-testu.; mezera: Zbývá live connector transport, owner-facing render acceptance a širší universal connector lifecycle.; typy: roadmap, self-test |
+| Extensions | Install/update/disable lifecycle rozšíření | `verified-contract` | Provider-free evidence kontrakt uzavírá přesné přechody install/update/disable/rollback, vlastnictví, policy a auditní receipts bez udělení živé mutační autority.; mezera: Zbývá živý installer/executor, filesystem/process/network persistence, skutečný rollback/karanténa, crash recovery a owner-facing acceptance.; typy: release-gate, self-test |
 | Executor | Typed executor scopes a stream lifecycle | `verified-contract` | Typed executor scope contract a bounded result lifecycle mají current contract evidence.; mezera: Univerzální runtime acceptance pro každý MCP/plugin/app typ není uzavřená.; typy: contract, runtime |
 | Executor | Policy, audit, resume a fail-closed executor | `partial` | Auditní a fail-closed principy i deterministický policy-denied receipt jsou ověřené napříč přímými executor adaptery, ale cross-runtime proof je stále částečný.; mezera: Zbývá live a skutečný workflow důkaz pro generické, privilegované a mutující adaptery.; typy: contract, runtime, self-test |
-| Executor | MCP/plugin/app result lifecycle | `partial` | Existující read-only app connector nyní po skutečném PolicyExecutor runtime předá typed receipt do WorkerJournal před dispatch-done. P4.12 klasifikuje MCP/plugin/app entrypoint přes typovaný no-side-effect obal a P4.14 přidává jednu manifestem vázanou vratnou mutační extension třídu s explicitním rollbackem a Unknown gate; deterministické self-testy, source guardy a navazující lifecycle/receipt guardy prošly.; mezera: Dodat generic typed fixtures pro success, partial, failure, timeout, retry a owner review; skutečný MCP/plugin stdio/process runtime, další mutační extension třídy a owner-approved live acceptance nejsou uzavřené.; typy: documentation, self-test |
+| Executor | MCP/plugin/app result lifecycle | `verified-contract` | Existující read-only app connector, MCP/plugin/app transport a vratná mutace mají doplněnou obecnou provider-free matici výsledků success/partial/failure/timeout/retry/owner-review s lineage a fail-closed authority hranicí.; mezera: Zbývá skutečný MCP/plugin stdio/process runtime, síťový transport, další mutační extension třídy, durable runtime read-back a owner-approved live acceptance.; typy: documentation, self-test |
 | Executor | Live external integration a resume acceptance | `open` | Live MCP/plugin/app acceptance není doložena jako společný current receipt.; mezera: Dodat owner-approved, identity-bearing, reproducible live acceptance pack.; typy: release-gate |
 | UX/support | First-run, setup a diagnostics | `partial` | Provider-status vrstva má provider-free typed first-run readiness a chat/project composer má nyní společnou baseline pro trvalý chat, projekt a přílohy zprávy; P8 owner-facing QA je stále partial.; mezera: Dodat čerstvý owner walkthrough v podporovaných DPI/multi-monitor konfiguracích, V5 live setup acceptance a skutečné tray recovery pro chat/project/attachments.; typy: build, runtime, self-test |
 | UX/support | Failure/recovery a ticket UI | `partial` | Failure/recovery a Secure Ticket kontrakty existují; P6.1 typovaný stavový automat, P6.2 read-only evidence candidate refs, P6.3 shared sensitive-data boundary, P6.4 protected local draft store, P6.5 owner evidence selection review, P6.6 immutable prepared manifest digest, P6.7 bounded local export package, P6.8 read-only untrusted reproduction intake, P6.9 confirmed-bug regression lineage a P6.10 read-only runtime snapshot s diagnostickým read-backem mají build/self-test důkaz, ale P6.11 síťový backend, kompletní ticket UI a P8 QA zůstávají partial.; mezera: P6.7 local export, P6.8 untrusted import/reproduction, P6.9 regression lineage a P6.10 snapshot jsou ověřené bez sítě; P6.11 network backend, kompletní ticket UI path, live P6 runtime a owner-facing V5 acceptance zůstávají otevřené.; typy: contract, release-gate, self-test |
@@ -191,7 +191,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `d7863f4832ba` | 2026-10-08 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `b3b1503532b8` | 2026-10-08 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `7b38edbe006a` | 2026-10-08 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `0487a15468d8` | 2026-10-08 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -209,13 +208,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `72225ae16adb` | 2026-10-08 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `ce617a9ff41f` | 2026-10-08 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `0b5b172c972b` | 2026-10-08 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `07b5859e31ee` | 2026-10-08 | +3.53 | +0.00 | +3.53 | +3.53 | +0.00 | app-shell-release, workspace-actions, extensions-permissions, executor-runtime | 7: app-shell-release/installer-update-contract, workspace-actions/action-failure-recovery, extensions-permissions/extension-registry-discovery, extensions-permissions/capability-permission-center… |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 244 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 245 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness

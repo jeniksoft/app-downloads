@@ -30348,13 +30348,58 @@
       },
       "verified_evidence_count": 106,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "07b5859e31ee",
+      "date": "2026-10-08",
+      "metrics": {
+        "primary_percent": 36.73,
+        "implementation_percent": 43.75,
+        "verified_percent": 36.73,
+        "done_percent": 36.73,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 3.53,
+        "implementation_percent": 0.0,
+        "verified_percent": 3.53,
+        "done_percent": 3.53,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "app-shell-release",
+        "workspace-actions",
+        "extensions-permissions",
+        "executor-runtime"
+      ],
+      "changed_milestones": [
+        "app-shell-release/installer-update-contract",
+        "workspace-actions/action-failure-recovery",
+        "extensions-permissions/extension-registry-discovery",
+        "extensions-permissions/capability-permission-center",
+        "extensions-permissions/read-only-connector-preview",
+        "extensions-permissions/extension-full-lifecycle",
+        "executor-runtime/mcp-plugin-app-results"
+      ],
+      "roadmap": {
+        "item_count": 664,
+        "completed_item_count": 491,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 113,
+      "verified_evidence_delta": 7
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
     "roadmap_slice_id": "OP7.10",
-    "source_commit_sha": "ca5dc17746781eeac438f795af0bcb1d4a93b805",
-    "closeout_sha": "ca5dc17746781eeac438f795af0bcb1d4a93b805"
+    "source_commit_sha": "a9bb2a82e6c1ef70dd104bb59f39d331ee9400e5",
+    "closeout_sha": "1b7d5bfebaf34da5c82c42a02cfed58b0890ff59"
   }
 }
