@@ -50,9 +50,9 @@
       {
         "language": "Markdown",
         "files": 1052,
-        "physical_lines": 140828,
-        "bytes": 7610363,
-        "megabytes": 7.610363
+        "physical_lines": 140833,
+        "bytes": 7610642,
+        "megabytes": 7.610642
       },
       {
         "language": "Python",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 4856,
-      "physical_lines": 1197372,
-      "bytes": 88239465,
-      "megabytes": 88.239465
+      "physical_lines": 1197377,
+      "bytes": 88239744,
+      "megabytes": 88.239744
     },
     "binary_assets": {
       "files": 41,
@@ -145,18 +145,18 @@
     },
     "tracked_total": {
       "files": 4897,
-      "physical_lines": 1197372,
-      "bytes": 102922459,
-      "megabytes": 102.922459
+      "physical_lines": 1197377,
+      "bytes": 102922738,
+      "megabytes": 102.922738
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "physical_lines": 5,
+        "bytes": 279,
+        "megabytes": 0.000279
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "physical_lines": 5,
+        "bytes": 279,
+        "megabytes": 0.000279
       }
     }
   },
@@ -16526,7 +16526,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 220,
+    "incremental_closeout_points_since_full_baseline": 221,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -47326,6 +47326,40 @@
       },
       "verified_evidence_count": 106,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "1c6e2419167b",
+      "date": "2026-10-08",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 664,
+        "completed_item_count": 473,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 106,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -47339,6 +47373,6 @@
     "status": "verified",
     "roadmap_slice_id": "OP7.10",
     "source_commit_sha": "2420d9a977b128c1b5389811170f76d3435b9b44",
-    "closeout_sha": "118f05a1203753b175156e8a16c1790e321263da"
+    "closeout_sha": "8df433770c05460edf4a17bb3361ca3a7523740e"
   }
 }
