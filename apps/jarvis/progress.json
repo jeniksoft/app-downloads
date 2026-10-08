@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 2191,
-        "physical_lines": 685676,
-        "bytes": 33610490,
-        "megabytes": 33.61049
+        "files": 2193,
+        "physical_lines": 686708,
+        "bytes": 33650927,
+        "megabytes": 33.650927
       },
       {
         "language": "JSON",
-        "files": 485,
-        "physical_lines": 189447,
-        "bytes": 31966866,
-        "megabytes": 31.966866
+        "files": 486,
+        "physical_lines": 189649,
+        "bytes": 31980516,
+        "megabytes": 31.980516
       },
       {
         "language": "Markdown",
-        "files": 1019,
-        "physical_lines": 137428,
-        "bytes": 7423472,
-        "megabytes": 7.423472
+        "files": 1020,
+        "physical_lines": 137611,
+        "bytes": 7433953,
+        "megabytes": 7.433953
       },
       {
         "language": "Python",
-        "files": 673,
-        "physical_lines": 111513,
-        "bytes": 4614176,
-        "megabytes": 4.614176
+        "files": 674,
+        "physical_lines": 111638,
+        "bytes": 4618858,
+        "megabytes": 4.618858
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 4693,
-      "physical_lines": 1169742,
-      "bytes": 86931761,
-      "megabytes": 86.931761
+      "files": 4698,
+      "physical_lines": 1171284,
+      "bytes": 87001011,
+      "megabytes": 87.001011
     },
     "binary_assets": {
       "files": 41,
@@ -144,19 +144,19 @@
       "megabytes": 14.682994
     },
     "tracked_total": {
-      "files": 4734,
-      "physical_lines": 1169742,
-      "bytes": 101614755,
-      "megabytes": 101.614755
+      "files": 4739,
+      "physical_lines": 1171284,
+      "bytes": 101684005,
+      "megabytes": 101.684005
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 20,
-        "bytes": 3248,
-        "megabytes": 0.003248
+        "physical_lines": 51,
+        "bytes": 4608,
+        "megabytes": 0.004608
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 20,
-        "bytes": 3248,
-        "megabytes": 0.003248
+        "physical_lines": 51,
+        "bytes": 4608,
+        "megabytes": 0.004608
       }
     }
   },
@@ -471,9 +471,9 @@
         "chapter_color": "optional",
         "chapter_count": 19,
         "item_count": 205,
-        "completed_item_count": 169,
-        "completion_percent": 85.61,
-        "status_percent": 85.61
+        "completed_item_count": 170,
+        "completion_percent": 85.98,
+        "status_percent": 85.98
       }
     ],
     "chapters": [
@@ -1727,9 +1727,9 @@
         "status_source": "child-items",
         "is_complete": false,
         "item_count": 25,
-        "completed_item_count": 16,
-        "completion_percent": 73.0,
-        "status_percent": 73.0
+        "completed_item_count": 17,
+        "completion_percent": 76.0,
+        "status_percent": 76.0
       },
       {
         "id": "LM6",
@@ -14349,16 +14349,16 @@
         "group_name_cs": "Průřezové capability tratě",
         "group_name_en": "Cross-cutting capability tracks",
         "chapter_color": "optional",
-        "description_cs": "policy/capability/evidence sufficiency gate",
+        "description_cs": "Typovaná dostatečnost policy, capability a nezávislých důkazů",
         "description_en": "policy/capability/evidence sufficiency gate",
-        "status": "in-progress",
-        "status_label_cs": "Rozpracováno",
-        "status_label_en": "In progress",
-        "status_source": "canonical-roadmap",
-        "is_complete": false,
-        "status_percent": 25.0,
-        "completion_percent": 25.0,
-        "completion_percent_source": "canonical-roadmap",
+        "status": "implementation-complete",
+        "status_label_cs": "Implementováno; živé ověření čeká",
+        "status_label_en": "Implemented; live acceptance pending",
+        "status_source": "current-task-board",
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
+        "completion_percent_source": "current-task-board",
         "verify": "V5",
         "is_slice": true
       },
@@ -16410,10 +16410,10 @@
       }
     ],
     "item_count": 661,
-    "completed_item_count": 434,
+    "completed_item_count": 435,
     "chapter_count": 73,
-    "completion_percent": 70.27,
-    "status_percent": 70.27,
+    "completion_percent": 70.39,
+    "status_percent": 70.39,
     "status_percent_contract": {
       "kind": "categorical-state-display",
       "label_cs": "Stav položky",
@@ -16460,7 +16460,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 206,
+    "incremental_closeout_points_since_full_baseline": 207,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -46784,6 +46784,40 @@
       },
       "verified_evidence_count": 106,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "b521787333c4",
+      "date": "2026-10-08",
+      "metrics": {
+        "primary_percent": 33.2,
+        "implementation_percent": 43.75,
+        "verified_percent": 33.2,
+        "done_percent": 33.2,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 661,
+        "completed_item_count": 435,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 106,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -46795,8 +46829,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "LM5.3",
-    "source_commit_sha": "bcea9653de877df19fa56fa88f22b3c80f4976ee",
-    "closeout_sha": "24533a09674051eb11bb73844d56820479583cb2"
+    "roadmap_slice_id": "LM5.4",
+    "source_commit_sha": "2bcf2b7a8837bedf408c83e24c88919edfcd3aee",
+    "closeout_sha": "7b09896e3d2a02aa380c95971e870e04c786b200"
   }
 }
