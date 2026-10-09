@@ -65,10 +65,10 @@ Personal 1.0.0 má celkový stav **37.48 %**. Hodnota uvnitř kapitoly zůstáv�
 
 ### Roadmapa produktu
 
-**Legenda ikon:** · <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno · <span role="img" title="Evidence: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření." aria-label="Evidence: Implementace nebo evidence existuje, ale sama o sobě nemusí znamenat živé ověření.">🟦</span> Evidence · <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno · <span role="img" title="Plánováno: Stav je plánovaný nebo pouze architektonický; značka není důkaz dokončení." aria-label="Plánováno: Stav je plánovaný nebo pouze architektonický; značka není důkaz dokončení.">⚪</span> Plánováno · <span role="img" title="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch." aria-label="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch.">⛔</span> Blokováno
-Ikona i popisek jsou viditelné přímo v README; po najetí kurzorem tooltip vysvětlí význam a nezaměňuje implementaci za živé ověření.
+**Legenda ikon:** · <span role="img" title="Ověřeno: Kanonický stav řezu je Ověřeno." aria-label="Ověřeno: Kanonický stav řezu je Ověřeno.">✅</span> Ověřeno · <span role="img" title="Implementováno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený." aria-label="Implementováno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený.">🟦</span> Implementováno · <span role="img" title="Rozpracováno: Kanonický stav řezu je Rozpracováno." aria-label="Rozpracováno: Kanonický stav řezu je Rozpracováno.">🟠</span> Rozpracováno · <span role="img" title="Architektura: Kanonický stav řezu je Architektura; implementace ještě není deklarovaná." aria-label="Architektura: Kanonický stav řezu je Architektura; implementace ještě není deklarovaná.">⚪</span> Architektura · <span role="img" title="Blokováno: Řez je blokovaný nebo odmítnutý." aria-label="Blokováno: Řez je blokovaný nebo odmítnutý.">⛔</span> Blokováno
+Ikona i popisek jsou viditelné přímo v README. Zelená je vyhrazena pouze kanonickému stavu Ověřeno; jednotlivý self-test, build nebo jiný verified evidence záznam sám řez nepovyšuje.
 
-**Změna od předchozího snapshotu: roadmapa položky +0 · hotovo +0 · ověřené důkazy +0**
+**Změna od předchozího snapshotu: roadmapa položky +24 · implementováno +40 · ověřené důkazy +0**
 
 ![Roadmapa a progress edic Jarvis](visuals/roadmap-editions.svg)
 
@@ -79,8 +79,8 @@ Všechny podřezy a karty edic jsou v grafu výše; duplicitní textové tabulky
 | Stav | Edice | Stručný popis | Ověření | Závislosti |
 | --- | --- | --- | --- | ---: |
 | <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno | `personal-1.0.0` | Bezplatný local-first Jarvis pro jednoho člověka. | `V6` | 9 |
-| <span role="img" title="Pouze architektura: Stav je plánovaný nebo pouze architektonický; značka není důkaz dokončení." aria-label="Pouze architektura: Stav je plánovaný nebo pouze architektonický; značka není důkaz dokončení.">⚪</span> Pouze architektura | `teams` | Spolupráce v jednom zákaznicky vlastněném TeamRealmu. | `V6` | 12 |
-| <span role="img" title="Pouze architektura: Stav je plánovaný nebo pouze architektonický; značka není důkaz dokončení." aria-label="Pouze architektura: Stav je plánovaný nebo pouze architektonický; značka není důkaz dokončení.">⚪</span> Pouze architektura | `enterprise` | Rekurzivní zákaznicky vlastněná organizace a Konstelace. | `V6` | 10 |
+| <span role="img" title="Architektura: Kanonický stav řezu je Architektura; implementace ještě není deklarovaná." aria-label="Architektura: Kanonický stav řezu je Architektura; implementace ještě není deklarovaná.">⚪</span> Architektura | `teams` | Spolupráce v jednom zákaznicky vlastněném TeamRealmu. | `V6` | 12 |
+| <span role="img" title="Architektura: Kanonický stav řezu je Architektura; implementace ještě není deklarovaná." aria-label="Architektura: Kanonický stav řezu je Architektura; implementace ještě není deklarovaná.">⚪</span> Architektura | `enterprise` | Rekurzivní zákaznicky vlastněná organizace a Konstelace. | `V6` | 10 |
 
 Personal je měřený evidence-bound index. Teams a Enterprise jsou zatím roadmap-only a nemají aktivní procentní měření; veřejný report proto nezobrazuje falešnou nulu.
 
