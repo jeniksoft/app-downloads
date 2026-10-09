@@ -43,23 +43,23 @@
       {
         "language": "JSON",
         "files": 526,
-        "physical_lines": 193457,
-        "bytes": 32315752,
-        "megabytes": 32.315752
+        "physical_lines": 193468,
+        "bytes": 32320110,
+        "megabytes": 32.32011
       },
       {
         "language": "Markdown",
         "files": 1062,
-        "physical_lines": 142204,
-        "bytes": 7692688,
-        "megabytes": 7.692688
+        "physical_lines": 142206,
+        "bytes": 7692790,
+        "megabytes": 7.69279
       },
       {
         "language": "Python",
         "files": 719,
-        "physical_lines": 118048,
-        "bytes": 4882725,
-        "megabytes": 4.882725
+        "physical_lines": 118044,
+        "bytes": 4882445,
+        "megabytes": 4.882445
       },
       {
         "language": "PowerShell",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 4909,
-      "physical_lines": 1208900,
-      "bytes": 88782858,
-      "megabytes": 88.782858
+      "physical_lines": 1208909,
+      "bytes": 88787038,
+      "megabytes": 88.787038
     },
     "binary_assets": {
       "files": 41,
@@ -145,18 +145,18 @@
     },
     "tracked_total": {
       "files": 4950,
-      "physical_lines": 1208900,
-      "bytes": 103465852,
-      "megabytes": 103.465852
+      "physical_lines": 1208909,
+      "bytes": 103470032,
+      "megabytes": 103.470032
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "physical_lines": 9,
+        "bytes": 4180,
+        "megabytes": 0.00418
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "physical_lines": 9,
+        "bytes": 4180,
+        "megabytes": 0.00418
       }
     }
   },
@@ -16570,7 +16570,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 255,
+    "incremental_closeout_points_since_full_baseline": 256,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -48587,6 +48587,40 @@
       },
       "verified_evidence_count": 115,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "dcf6fd5f7bb6",
+      "date": "2026-10-09",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 666,
+        "completed_item_count": 493,
+        "chapter_count": 73
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 115,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -48598,8 +48632,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "P8.15",
+    "roadmap_slice_id": "P8.15.14",
     "source_commit_sha": "a26491ae47a845aba15889d4914bf50aad206627",
-    "closeout_sha": "ddd31709c2455b218a9b8b3306af175b6e19f313"
+    "closeout_sha": "70862daa6106d50e2c66e4bfbf11f4e1fba0eab2"
   }
 }
