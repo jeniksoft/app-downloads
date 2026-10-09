@@ -29,7 +29,7 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `P7.1-P7.11` je veřejně spojen se zdrojovým SHA `a9fb685d89ed5ac368ed4c03f63cb952caa32071` a closeout SHA `233aba8b7d4ecb7e9ee62d11b51c9c6f883775a6`. Stav: **verified**.
+Řez `P8.15.14` je veřejně spojen se zdrojovým SHA `81d4318ce6a3b29278345aa1cd84fa78df25b25a` a closeout SHA `6f2badd1355fae0ec333d48f27eee3ee1c6a3166`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
