@@ -29,7 +29,7 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `P8.15` je veřejně spojen se zdrojovým SHA `a26491ae47a845aba15889d4914bf50aad206627` a closeout SHA `1eaddc96e27ccadc0dd0e07d56b80ff1fedbe29a`. Stav: **verified**.
+Řez `P8.15` je veřejně spojen se zdrojovým SHA `a26491ae47a845aba15889d4914bf50aad206627` a closeout SHA `ddd31709c2455b218a9b8b3306af175b6e19f313`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -191,7 +191,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `86f9c979b3b2` | 2026-10-08 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `aaea46cd2d30` | 2026-10-08 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `9289b5a3beb0` | 2026-10-08 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `b3a1b46fd85b` | 2026-10-08 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -209,13 +208,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `2094348f1d15` | 2026-10-09 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `a8c8eb4146c2` | 2026-10-09 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `21990a7a19f9` | 2026-10-09 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `0b4dc72edb88` | 2026-10-09 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 254 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 255 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
