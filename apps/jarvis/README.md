@@ -66,6 +66,7 @@ Personal 1.0.0 má celkový stav **37.48 %**. Hodnota uvnitř kapitoly zůstáv�
 ### Roadmapa produktu
 
 **Legenda ikon:** · <span role="img" title="Ověřeno: Kanonický stav řezu je Ověřeno." aria-label="Ověřeno: Kanonický stav řezu je Ověřeno.">✅</span> Ověřeno · <span role="img" title="Implementováno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený." aria-label="Implementováno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený.">🟦</span> Implementováno · <span role="img" title="Rozpracováno: Kanonický stav řezu je Rozpracováno." aria-label="Rozpracováno: Kanonický stav řezu je Rozpracováno.">🟠</span> Rozpracováno · <span role="img" title="Architektura: Kanonický stav řezu je Architektura; implementace ještě není deklarovaná." aria-label="Architektura: Kanonický stav řezu je Architektura; implementace ještě není deklarovaná.">⚪</span> Architektura · <span role="img" title="Blokováno: Řez je blokovaný nebo odmítnutý." aria-label="Blokováno: Řez je blokovaný nebo odmítnutý.">⛔</span> Blokováno
+Počty stavů v grafu se nepřekrývají: Implementováno znamená implementované, ale dosud neověřené řezy; Ověřeno se počítá zvlášť. Jejich součet tvoří implementační pokrytí roadmapy, nikoli vážený evidence-bound index Personal 1.0.0.
 Ikona i popisek jsou viditelné přímo v README. Zelená je vyhrazena pouze kanonickému stavu Ověřeno; jednotlivý self-test, build nebo jiný verified evidence záznam sám řez nepovyšuje.
 
 **Změna od předchozího snapshotu: roadmapa položky +24 · implementováno +40 · ověřené důkazy +0**
