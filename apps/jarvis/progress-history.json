@@ -31181,11 +31181,5 @@
       "verified_evidence_delta": 0
     }
   ],
-  "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
-  "closeout_verification": {
-    "status": "verified",
-    "roadmap_slice_id": "P8.15.12",
-    "source_commit_sha": "1577208c0f0e45320399b3aacf43128ae3276853",
-    "closeout_sha": "1577208c0f0e45320399b3aacf43128ae3276853"
-  }
+  "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim."
 }

@@ -27,11 +27,6 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 
 **Synchronizovaný snapshot: 2026-10-09**
 
-### Ověření posledního roadmapového closeoutu
-
-Řez `P8.15.12` je veřejně spojen se zdrojovým SHA `1577208c0f0e45320399b3aacf43128ae3276853` a closeout SHA `1577208c0f0e45320399b3aacf43128ae3276853`. Stav: **verified**.
-Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
-
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
 
 **Jazyk reportu:** čeština pro `cs*`; jiné locale používá anglický fallback. GitHub README je statický a jazyk se určuje při generování.
@@ -95,10 +90,10 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 2 284 | 713 042 | 34.73 |
-| JSON | 528 | 193 633 | 32.34 |
-| Markdown | 1 065 | 142 815 | 7.73 |
-| Python | 725 | 118 686 | 4.91 |
+| C/C++ | 2 288 | 713 359 | 34.74 |
+| JSON | 528 | 193 608 | 32.34 |
+| Markdown | 1 065 | 143 137 | 7.75 |
+| Python | 726 | 118 766 | 4.91 |
 | PowerShell | 69 | 34 094 | 1.78 |
 | Other text | 80 | 5 947 | 0.30 |
 | JSONL | 16 | 2 515 | 6.93 |
@@ -109,9 +104,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **4 927** | **1 213 939** | **89.04** |
+| **Text/source celkem** | **4 932** | **1 214 633** | **89.07** |
 | Binární assety (mimo řádky) | 41 | — | 14.68 |
-| **Trackovaný strom celkem** | **4 968** | **1 213 939** | **103.72** |
+| **Trackovaný strom celkem** | **4 973** | **1 214 633** | **103.76** |
 
 ### Přírůstek od předchozí revize
 
@@ -119,9 +114,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +0 | +5 | +0.00 |
+| Text/source celkem | +0 | +4 | +0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +0 | +5 | +0.00 |
+| Trackovaný strom celkem | +0 | +4 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -145,7 +140,7 @@ Graf kapitol je v dashboardu výše jako statické SVG. Tato úplná textová ta
 | Kapitola | Milestone | Stav | Důkaz / mezera |
 | --- | --- | --- | --- |
 | App shell | WDUi aplikační shell a základní navigace | `verified-build` | Aktuální capability evidence uvádí warning-free build a contract/self-test gates pro WDUi/Jarvis vrstvy.; mezera: Čerstvé owner-facing vizuální a multi-monitor QA není uzavřené jako runtime acceptance.; typy: build, runtime |
-| App shell | Instalátor, update a rollback kontrakt | `partial` | Instalační a update části mají provider-free P8.15.1-P8.15.13 evidence včetně host registry, signed-installer admission a bounded graph-registry publication; veřejná P8 release QA je stále pouze partial.; mezera: Chybí uzavřený čistý install, upgrade a rollback acceptance pack pro Personal 1.0.0 včetně živého installeru, nasazení služby, restartové orchestrace a owner workflow.; typy: contract, release-gate, self-test |
+| App shell | Instalátor, update a rollback kontrakt | `partial` | Instalační a update části mají provider-free P8.15.1-P8.15.15 evidence včetně host registry, signed-installer admission, bounded graph-registry publication a source-matched Debug/QA read-back; veřejná P8 release QA je stále pouze partial.; mezera: Chybí uzavřený čistý install, upgrade a rollback acceptance pack pro Personal 1.0.0 včetně živého installeru, nasazení služby, restartové orchestrace a owner workflow.; typy: build, contract, release-gate, self-test |
 | App shell | ADPU a veřejný kanál | `partial` | Veřejný kanál a synchronizační kontrakt existují, ale samotná distribuce není důkazem funkčního release.; mezera: Je nutné dokončit a opakovaně ověřit end-to-end publikaci artefaktu, integritu a rollback hranice.; typy: contract, release-gate |
 | App shell | Čistá instalace, upgrade, podpis a rollback acceptance | `open` | Release milestone je deklarovaný jako požadavek, nikoli jako uzavřený důkaz.; mezera: Chybí aktuální acceptance pack navázaný na konkrétní release candidate.; typy: roadmap |
 | Worker/recovery | Queue, WorkerJournal a persistence | `verified-build` | Capability matrix a PF1.2 common durable envelope uvádějí queue, worker, typed recovery UI projection, durable evidence gates a skrytý parent/child process-restart self-test jako build/contract ověřené.; mezera: Skutečný crash/restart průchod reálného workflow, dlouhý providerový requeue a V5 owner-facing recovery workflow acceptance zůstávají samostatnými důkazy.; typy: runtime, self-test |

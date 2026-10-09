@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 2284,
-        "physical_lines": 713042,
-        "bytes": 34731440,
-        "megabytes": 34.73144
+        "files": 2288,
+        "physical_lines": 713359,
+        "bytes": 34744177,
+        "megabytes": 34.744177
       },
       {
         "language": "JSON",
         "files": 528,
-        "physical_lines": 193633,
-        "bytes": 32342600,
-        "megabytes": 32.3426
+        "physical_lines": 193608,
+        "bytes": 32344347,
+        "megabytes": 32.344347
       },
       {
         "language": "Markdown",
         "files": 1065,
-        "physical_lines": 142815,
-        "bytes": 7730319,
-        "megabytes": 7.730319
+        "physical_lines": 143137,
+        "bytes": 7749138,
+        "megabytes": 7.749138
       },
       {
         "language": "Python",
-        "files": 725,
-        "physical_lines": 118686,
-        "bytes": 4910154,
-        "megabytes": 4.910154
+        "files": 726,
+        "physical_lines": 118766,
+        "bytes": 4913970,
+        "megabytes": 4.91397
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 4927,
-      "physical_lines": 1213939,
-      "bytes": 89036405,
-      "megabytes": 89.036405
+      "files": 4932,
+      "physical_lines": 1214633,
+      "bytes": 89073524,
+      "megabytes": 89.073524
     },
     "binary_assets": {
       "files": 41,
@@ -144,19 +144,19 @@
       "megabytes": 14.682994
     },
     "tracked_total": {
-      "files": 4968,
-      "physical_lines": 1213939,
-      "bytes": 103719399,
-      "megabytes": 103.719399
+      "files": 4973,
+      "physical_lines": 1214633,
+      "bytes": 103756518,
+      "megabytes": 103.756518
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 5,
-        "bytes": 371,
-        "megabytes": 0.000371
+        "physical_lines": 4,
+        "bytes": 272,
+        "megabytes": 0.000272
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 5,
-        "bytes": 371,
-        "megabytes": 0.000371
+        "physical_lines": 4,
+        "bytes": 272,
+        "megabytes": 0.000272
       }
     }
   },
@@ -306,7 +306,7 @@
   "roadmap": {
     "source": {
       "roadmap_id": "jarvis.master.worker.v2",
-      "updated_at": "2026-10-07",
+      "updated_at": "2026-10-09",
       "file": "canonical roadmap hierarchy and release-gate summary"
     },
     "gates": [
@@ -16621,10 +16621,10 @@
     "artifact_update_policy": "changed-target-files-only"
   },
   "publication_state": {
-    "history_update_mode": "incremental-closeout",
-    "working_tree_projection": false,
+    "history_update_mode": "baseline-projection",
+    "working_tree_projection": true,
     "artifact_update_policy": "changed-target-files-only",
-    "public_transport": "github-git-data-api",
+    "public_transport": "publisher-selected",
     "public_checkout": "not-used",
     "max_public_commits_per_closeout": 1,
     "closeout_proof": "exact-slice-source-and-closeout-sha"
@@ -16636,7 +16636,7 @@
     "manifest_present": true,
     "milestone_count": 36,
     "verified_milestone_count": 23,
-    "verified_evidence_count": 115,
+    "verified_evidence_count": 116,
     "state_counts": {
       "verified-build": 13,
       "partial": 7,
@@ -16706,14 +16706,16 @@
           "implementation_percent": 50.0,
           "verified_percent": 25.0,
           "done_percent": 25.0,
-          "evidence_count": 3,
-          "verified_evidence_count": 2,
+          "evidence_count": 4,
+          "verified_evidence_count": 3,
           "evidence_kinds": [
+            "build",
             "contract",
             "release-gate",
             "self-test"
           ],
           "verified_evidence_kinds": [
+            "build",
             "contract",
             "self-test"
           ],
@@ -16721,7 +16723,7 @@
             "open",
             "verified"
           ],
-          "evidence_summary_cs": "Instalační a update části mají provider-free P8.15.1-P8.15.13 evidence včetně host registry, signed-installer admission a bounded graph-registry publication; veřejná P8 release QA je stále pouze partial.",
+          "evidence_summary_cs": "Instalační a update části mají provider-free P8.15.1-P8.15.15 evidence včetně host registry, signed-installer admission, bounded graph-registry publication a source-matched Debug/QA read-back; veřejná P8 release QA je stále pouze partial.",
           "open_gap_cs": "Chybí uzavřený čistý install, upgrade a rollback acceptance pack pro Personal 1.0.0 včetně živého installeru, nasazení služby, restartové orchestrace a owner workflow."
         },
         {
@@ -49081,11 +49083,5 @@
     "closeout_verification_policy": "The top-level closeout_verification envelope is the public exception: it contains exact slice, source and closeout SHAs for the explicitly dispatched closeout; ordinary history entries remain opaque.",
     "incremental_closeout_policy": "A successful closeout appends one opaque current point to the synchronized public baseline; a missing or split baseline fails closed."
   },
-  "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
-  "closeout_verification": {
-    "status": "verified",
-    "roadmap_slice_id": "P8.15.12",
-    "source_commit_sha": "1577208c0f0e45320399b3aacf43128ae3276853",
-    "closeout_sha": "1577208c0f0e45320399b3aacf43128ae3276853"
-  }
+  "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim."
 }
