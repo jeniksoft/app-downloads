@@ -44,22 +44,22 @@
         "language": "JSON",
         "files": 537,
         "physical_lines": 193874,
-        "bytes": 32513142,
-        "megabytes": 32.513142
+        "bytes": 32513213,
+        "megabytes": 32.513213
       },
       {
         "language": "Markdown",
         "files": 1088,
-        "physical_lines": 145986,
-        "bytes": 7894893,
-        "megabytes": 7.894893
+        "physical_lines": 146051,
+        "bytes": 7898714,
+        "megabytes": 7.898714
       },
       {
         "language": "Python",
         "files": 747,
-        "physical_lines": 120948,
-        "bytes": 5008036,
-        "megabytes": 5.008036
+        "physical_lines": 120954,
+        "bytes": 5008106,
+        "megabytes": 5.008106
       },
       {
         "language": "PowerShell",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 5021,
-      "physical_lines": 1231384,
-      "bytes": 89963258,
-      "megabytes": 89.963258
+      "physical_lines": 1231455,
+      "bytes": 89967220,
+      "megabytes": 89.96722
     },
     "binary_assets": {
       "files": 41,
@@ -145,18 +145,18 @@
     },
     "tracked_total": {
       "files": 5062,
-      "physical_lines": 1231384,
-      "bytes": 104646252,
-      "megabytes": 104.646252
+      "physical_lines": 1231455,
+      "bytes": 104650214,
+      "megabytes": 104.650214
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 1,
-        "physical_lines": 114,
-        "bytes": 8311,
-        "megabytes": 0.008311
+        "files": 0,
+        "physical_lines": 71,
+        "bytes": 3962,
+        "megabytes": 0.003962
       },
       "binary_assets": {
         "files": 0,
@@ -165,10 +165,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 1,
-        "physical_lines": 114,
-        "bytes": 8311,
-        "megabytes": 0.008311
+        "files": 0,
+        "physical_lines": 71,
+        "bytes": 3962,
+        "megabytes": 0.003962
       }
     }
   },
@@ -407,7 +407,7 @@
         "item_count": 54,
         "completed_item_count": 54,
         "implemented_item_count": 54,
-        "verified_item_count": 0,
+        "verified_item_count": 4,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -520,16 +520,16 @@
         "chapter_color": "foundation",
         "name_cs": "PF0 — Stable identities and namespaces",
         "name_en": "PF0 — Stable identities and namespaces",
-        "status": "implemented-unverified",
-        "display_status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "display_status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-child-items",
         "is_complete": true,
         "item_count": 4,
         "completed_item_count": 4,
         "implemented_item_count": 4,
-        "verified_item_count": 0,
+        "verified_item_count": 4,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -2303,9 +2303,9 @@
         "chapter_color": "foundation",
         "description_cs": "identity-types inventory",
         "description_en": "identity-types inventory",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -2327,9 +2327,9 @@
         "chapter_color": "foundation",
         "description_cs": "identity normalization",
         "description_en": "identity normalization",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -2351,9 +2351,9 @@
         "chapter_color": "foundation",
         "description_cs": "identity negative fixtures",
         "description_en": "identity negative fixtures",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -2375,9 +2375,9 @@
         "chapter_color": "foundation",
         "description_cs": "lineage contract",
         "description_en": "lineage contract",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -18902,15 +18902,15 @@
     "item_count": 692,
     "completed_item_count": 691,
     "implemented_item_count": 691,
-    "verified_item_count": 46,
+    "verified_item_count": 50,
     "in_progress_item_count": 1,
     "architecture_item_count": 0,
     "blocked_item_count": 0,
     "status_counts": {
       "architecture-only": 0,
       "in-progress": 1,
-      "implemented-unverified": 645,
-      "verified": 46,
+      "implemented-unverified": 641,
+      "verified": 50,
       "blocked": 0
     },
     "chapter_count": 74,
@@ -18957,7 +18957,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 269,
+    "incremental_closeout_points_since_full_baseline": 270,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -22587,6 +22587,40 @@
       },
       "verified_evidence_count": 116,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "751abec95e21",
+      "date": "2026-10-10",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 692,
+        "completed_item_count": 691,
+        "chapter_count": 74
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 116,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -22598,8 +22632,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "P8.15",
-    "source_commit_sha": "c33f5d4791ed9d055554fc0f2ab8e48651c47041",
-    "closeout_sha": "c33f5d4791ed9d055554fc0f2ab8e48651c47041"
+    "roadmap_slice_id": "PF0",
+    "source_commit_sha": "90c2e365556518d3cdbeabbfa61ceb7f7a62f359",
+    "closeout_sha": "90c2e365556518d3cdbeabbfa61ceb7f7a62f359"
   }
 }
