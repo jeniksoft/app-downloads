@@ -44,22 +44,22 @@
         "language": "JSON",
         "files": 537,
         "physical_lines": 193874,
-        "bytes": 32513213,
-        "megabytes": 32.513213
+        "bytes": 32513263,
+        "megabytes": 32.513263
       },
       {
         "language": "Markdown",
         "files": 1088,
-        "physical_lines": 146051,
-        "bytes": 7898714,
-        "megabytes": 7.898714
+        "physical_lines": 146095,
+        "bytes": 7901249,
+        "megabytes": 7.901249
       },
       {
         "language": "Python",
         "files": 747,
-        "physical_lines": 120954,
-        "bytes": 5008106,
-        "megabytes": 5.008106
+        "physical_lines": 120994,
+        "bytes": 5009592,
+        "megabytes": 5.009592
       },
       {
         "language": "PowerShell",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 5021,
-      "physical_lines": 1231455,
-      "bytes": 89967220,
-      "megabytes": 89.96722
+      "physical_lines": 1231539,
+      "bytes": 89971291,
+      "megabytes": 89.971291
     },
     "binary_assets": {
       "files": 41,
@@ -145,18 +145,18 @@
     },
     "tracked_total": {
       "files": 5062,
-      "physical_lines": 1231455,
-      "bytes": 104650214,
-      "megabytes": 104.650214
+      "physical_lines": 1231539,
+      "bytes": 104654285,
+      "megabytes": 104.654285
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 71,
-        "bytes": 3962,
-        "megabytes": 0.003962
+        "physical_lines": 84,
+        "bytes": 4071,
+        "megabytes": 0.004071
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 71,
-        "bytes": 3962,
-        "megabytes": 0.003962
+        "physical_lines": 84,
+        "bytes": 4071,
+        "megabytes": 0.004071
       }
     }
   },
@@ -503,7 +503,7 @@
         "item_count": 214,
         "completed_item_count": 214,
         "implemented_item_count": 214,
-        "verified_item_count": 2,
+        "verified_item_count": 3,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -1873,7 +1873,7 @@
         "item_count": 9,
         "completed_item_count": 9,
         "implemented_item_count": 9,
-        "verified_item_count": 0,
+        "verified_item_count": 1,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -14135,9 +14135,9 @@
         "chapter_color": "optional",
         "description_cs": "Audit existujících hranic",
         "description_en": "Existing-boundary audit",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -18902,15 +18902,15 @@
     "item_count": 692,
     "completed_item_count": 691,
     "implemented_item_count": 691,
-    "verified_item_count": 50,
+    "verified_item_count": 51,
     "in_progress_item_count": 1,
     "architecture_item_count": 0,
     "blocked_item_count": 0,
     "status_counts": {
       "architecture-only": 0,
       "in-progress": 1,
-      "implemented-unverified": 641,
-      "verified": 50,
+      "implemented-unverified": 640,
+      "verified": 51,
       "blocked": 0
     },
     "chapter_count": 74,
@@ -18957,7 +18957,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 270,
+    "incremental_closeout_points_since_full_baseline": 271,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -22621,6 +22621,40 @@
       },
       "verified_evidence_count": 116,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "d46b2772649a",
+      "date": "2026-10-10",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 692,
+        "completed_item_count": 691,
+        "chapter_count": 74
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 116,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -22632,8 +22666,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "PF0",
-    "source_commit_sha": "90c2e365556518d3cdbeabbfa61ceb7f7a62f359",
-    "closeout_sha": "90c2e365556518d3cdbeabbfa61ceb7f7a62f359"
+    "roadmap_slice_id": "AG0",
+    "source_commit_sha": "8fbf0a664c046a016d267de2cb0020bbe799cc4a",
+    "closeout_sha": "8fbf0a664c046a016d267de2cb0020bbe799cc4a"
   }
 }
