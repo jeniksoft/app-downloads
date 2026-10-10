@@ -29,7 +29,7 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `P8.15` je veřejně spojen se zdrojovým SHA `00d28b1b70a90d01daf5f26930e6d8408d78b257` a closeout SHA `00d28b1b70a90d01daf5f26930e6d8408d78b257`. Stav: **verified**.
+Řez `P8.15` je veřejně spojen se zdrojovým SHA `00d28b1b70a90d01daf5f26930e6d8408d78b257` a closeout SHA `31607eec9dffb0900c6d801946ca5d973a025a63`. Ověřené jsou kontraktní řezy `P8.15.1`, `P8.15.2` a `P8.15.10`; agregát P8.15 zůstává **in-progress**, dokud neproběhne živý installer/UAC/SCM/restart a owner acceptance gate.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
