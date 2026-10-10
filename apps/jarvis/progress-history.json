@@ -2280,13 +2280,47 @@
       },
       "verified_evidence_count": 116,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "2055cd23a21b",
+      "date": "2026-10-10",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 692,
+        "completed_item_count": 691,
+        "chapter_count": 74
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 116,
+      "verified_evidence_delta": 0
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
     "roadmap_slice_id": "PF3.14.credential-native-host-registration-and-readback",
-    "source_commit_sha": "90d55f1e6a25ecb6f5544303a2c06b72b8b32c81",
-    "closeout_sha": "90d55f1e6a25ecb6f5544303a2c06b72b8b32c81"
+    "source_commit_sha": "f8ef8a08db79b7eabcc9bb78b2d071eda406adfc",
+    "closeout_sha": "f8ef8a08db79b7eabcc9bb78b2d071eda406adfc"
   }
 }
