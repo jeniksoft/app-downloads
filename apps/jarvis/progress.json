@@ -43,23 +43,23 @@
       {
         "language": "JSON",
         "files": 543,
-        "physical_lines": 196865,
-        "bytes": 32685304,
-        "megabytes": 32.685304
+        "physical_lines": 196868,
+        "bytes": 32685494,
+        "megabytes": 32.685494
       },
       {
         "language": "Markdown",
         "files": 1102,
-        "physical_lines": 150986,
-        "bytes": 8307303,
-        "megabytes": 8.307303
+        "physical_lines": 151035,
+        "bytes": 8310178,
+        "megabytes": 8.310178
       },
       {
         "language": "Python",
         "files": 755,
-        "physical_lines": 123550,
-        "bytes": 5140501,
-        "megabytes": 5.140501
+        "physical_lines": 123575,
+        "bytes": 5142046,
+        "megabytes": 5.142046
       },
       {
         "language": "PowerShell",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 5054,
-      "physical_lines": 1243325,
-      "bytes": 90741833,
-      "megabytes": 90.741833
+      "physical_lines": 1243402,
+      "bytes": 90746443,
+      "megabytes": 90.746443
     },
     "binary_assets": {
       "files": 41,
@@ -145,18 +145,18 @@
     },
     "tracked_total": {
       "files": 5095,
-      "physical_lines": 1243325,
-      "bytes": 105424827,
-      "megabytes": 105.424827
+      "physical_lines": 1243402,
+      "bytes": 105429437,
+      "megabytes": 105.429437
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 80,
-        "bytes": 5048,
-        "megabytes": 0.005048
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 80,
-        "bytes": 5048,
-        "megabytes": 0.005048
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       }
     }
   },
@@ -439,7 +439,7 @@
         "item_count": 127,
         "completed_item_count": 126,
         "implemented_item_count": 126,
-        "verified_item_count": 64,
+        "verified_item_count": 65,
         "in_progress_item_count": 1,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -977,15 +977,15 @@
         "name_cs": "P4 — Workspace action reliability",
         "name_en": "P4 — Workspace action reliability",
         "status": "in-progress",
-        "display_status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "display_status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-child-items",
         "is_complete": true,
         "item_count": 16,
         "completed_item_count": 16,
         "implemented_item_count": 16,
-        "verified_item_count": 15,
+        "verified_item_count": 16,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -6239,9 +6239,9 @@
         "chapter_color": "personal",
         "description_cs": "Matice vad workspace akcí",
         "description_en": "workspace action fault matrix",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -19934,15 +19934,15 @@
     "item_count": 731,
     "completed_item_count": 691,
     "implemented_item_count": 691,
-    "verified_item_count": 131,
+    "verified_item_count": 132,
     "in_progress_item_count": 1,
     "architecture_item_count": 39,
     "blocked_item_count": 0,
     "status_counts": {
       "architecture-only": 39,
       "in-progress": 1,
-      "implemented-unverified": 560,
-      "verified": 131,
+      "implemented-unverified": 559,
+      "verified": 132,
       "blocked": 0
     },
     "chapter_count": 78,
@@ -19989,7 +19989,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 333,
+    "incremental_closeout_points_since_full_baseline": 334,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -25795,6 +25795,40 @@
       },
       "verified_evidence_count": 116,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "e4760be9b112",
+      "date": "2026-10-11",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 731,
+        "completed_item_count": 691,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 116,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -25806,8 +25840,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "P4.15",
-    "source_commit_sha": "6262443d855ceab64d5cf9878dbbeb44b121c9e2",
-    "closeout_sha": "6262443d855ceab64d5cf9878dbbeb44b121c9e2"
+    "roadmap_slice_id": "P4.16",
+    "source_commit_sha": "70f5eff27277ff73ab4215b5f2a5698c07424a11",
+    "closeout_sha": "70f5eff27277ff73ab4215b5f2a5698c07424a11"
   }
 }
