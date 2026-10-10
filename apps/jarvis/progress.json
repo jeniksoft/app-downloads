@@ -43,23 +43,23 @@
       {
         "language": "JSON",
         "files": 537,
-        "physical_lines": 193876,
-        "bytes": 32514256,
-        "megabytes": 32.514256
+        "physical_lines": 193890,
+        "bytes": 32515454,
+        "megabytes": 32.515454
       },
       {
         "language": "Markdown",
         "files": 1088,
-        "physical_lines": 146115,
-        "bytes": 7902512,
-        "megabytes": 7.902512
+        "physical_lines": 146121,
+        "bytes": 7902919,
+        "megabytes": 7.902919
       },
       {
         "language": "Python",
         "files": 747,
-        "physical_lines": 121003,
-        "bytes": 5010126,
-        "megabytes": 5.010126
+        "physical_lines": 121014,
+        "bytes": 5010717,
+        "megabytes": 5.010717
       },
       {
         "language": "PowerShell",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 5021,
-      "physical_lines": 1231570,
-      "bytes": 89974081,
-      "megabytes": 89.974081
+      "physical_lines": 1231601,
+      "bytes": 89976277,
+      "megabytes": 89.976277
     },
     "binary_assets": {
       "files": 41,
@@ -145,18 +145,18 @@
     },
     "tracked_total": {
       "files": 5062,
-      "physical_lines": 1231570,
-      "bytes": 104657075,
-      "megabytes": 104.657075
+      "physical_lines": 1231601,
+      "bytes": 104659271,
+      "megabytes": 104.659271
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 18,
-        "bytes": 1307,
-        "megabytes": 0.001307
+        "physical_lines": 31,
+        "bytes": 2196,
+        "megabytes": 0.002196
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 18,
-        "bytes": 1307,
-        "megabytes": 0.001307
+        "physical_lines": 31,
+        "bytes": 2196,
+        "megabytes": 0.002196
       }
     }
   },
@@ -503,7 +503,7 @@
         "item_count": 214,
         "completed_item_count": 214,
         "implemented_item_count": 214,
-        "verified_item_count": 6,
+        "verified_item_count": 13,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -1960,16 +1960,16 @@
         "chapter_color": "optional",
         "name_cs": "LM0 — Architecture/source inventory and contract map",
         "name_en": "LM0 — Architecture/source inventory and contract map",
-        "status": "implemented-unverified",
-        "display_status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "display_status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-child-items",
         "is_complete": true,
         "item_count": 7,
         "completed_item_count": 7,
         "implemented_item_count": 7,
-        "verified_item_count": 0,
+        "verified_item_count": 7,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -15167,9 +15167,9 @@
         "chapter_color": "optional",
         "description_cs": "inventory existing event buses / Core event contracts",
         "description_en": "inventory existing event buses / Core event contracts",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -15191,9 +15191,9 @@
         "chapter_color": "optional",
         "description_cs": "inventory existing capability/provider abstractions",
         "description_en": "inventory existing capability/provider abstractions",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -15215,9 +15215,9 @@
         "chapter_color": "optional",
         "description_cs": "inventory Ambient Presence / Environment / Sentinel classes",
         "description_en": "inventory Ambient Presence / Environment / Sentinel classes",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -15239,9 +15239,9 @@
         "chapter_color": "optional",
         "description_cs": "inventory Global Memory event/retrieval contracts",
         "description_en": "inventory Global Memory event/retrieval contracts",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -15263,9 +15263,9 @@
         "chapter_color": "optional",
         "description_cs": "inventory Constellation identity/capability/compute contracts",
         "description_en": "inventory Constellation identity/capability/compute contracts",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -15287,9 +15287,9 @@
         "chapter_color": "optional",
         "description_cs": "inventory Polaris/Hydra/Nanity/Pyramid/WorkerJournal handoff points",
         "description_en": "inventory Polaris/Hydra/Nanity/Pyramid/WorkerJournal handoff points",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -15311,9 +15311,9 @@
         "chapter_color": "optional",
         "description_cs": "produce one canonical dependency map and duplicate-risk report",
         "description_en": "produce one canonical dependency map and duplicate-risk report",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -18902,15 +18902,15 @@
     "item_count": 692,
     "completed_item_count": 691,
     "implemented_item_count": 691,
-    "verified_item_count": 54,
+    "verified_item_count": 61,
     "in_progress_item_count": 1,
     "architecture_item_count": 0,
     "blocked_item_count": 0,
     "status_counts": {
       "architecture-only": 0,
       "in-progress": 1,
-      "implemented-unverified": 637,
-      "verified": 54,
+      "implemented-unverified": 630,
+      "verified": 61,
       "blocked": 0
     },
     "chapter_count": 74,
@@ -18957,7 +18957,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 273,
+    "incremental_closeout_points_since_full_baseline": 274,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -22723,6 +22723,40 @@
       },
       "verified_evidence_count": 116,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "4569b2070fe1",
+      "date": "2026-10-10",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 692,
+        "completed_item_count": 691,
+        "chapter_count": 74
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 116,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -22734,8 +22768,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "B0",
-    "source_commit_sha": "3e8f0b0e07e3d0c4504b48dd76df8937b1308ecb",
-    "closeout_sha": "3e8f0b0e07e3d0c4504b48dd76df8937b1308ecb"
+    "roadmap_slice_id": "LM0.1-LM0.7",
+    "source_commit_sha": "9ab533e7b9aeacc1ce7a7e6f83d64795ede8f942",
+    "closeout_sha": "9ab533e7b9aeacc1ce7a7e6f83d64795ede8f942"
   }
 }
