@@ -43,23 +43,23 @@
       {
         "language": "JSON",
         "files": 537,
-        "physical_lines": 193866,
-        "bytes": 32511004,
-        "megabytes": 32.511004
+        "physical_lines": 193874,
+        "bytes": 32513142,
+        "megabytes": 32.513142
       },
       {
         "language": "Markdown",
-        "files": 1087,
-        "physical_lines": 145900,
-        "bytes": 7889606,
-        "megabytes": 7.889606
+        "files": 1088,
+        "physical_lines": 145986,
+        "bytes": 7894893,
+        "megabytes": 7.894893
       },
       {
         "language": "Python",
         "files": 747,
-        "physical_lines": 120928,
-        "bytes": 5007150,
-        "megabytes": 5.00715
+        "physical_lines": 120948,
+        "bytes": 5008036,
+        "megabytes": 5.008036
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 5020,
-      "physical_lines": 1231270,
-      "bytes": 89954947,
-      "megabytes": 89.954947
+      "files": 5021,
+      "physical_lines": 1231384,
+      "bytes": 89963258,
+      "megabytes": 89.963258
     },
     "binary_assets": {
       "files": 41,
@@ -144,19 +144,19 @@
       "megabytes": 14.682994
     },
     "tracked_total": {
-      "files": 5061,
-      "physical_lines": 1231270,
-      "bytes": 104637941,
-      "megabytes": 104.637941
+      "files": 5062,
+      "physical_lines": 1231384,
+      "bytes": 104646252,
+      "megabytes": 104.646252
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 1,
-        "physical_lines": 246,
-        "bytes": 16260,
-        "megabytes": 0.01626
+        "physical_lines": 114,
+        "bytes": 8311,
+        "megabytes": 0.008311
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 1,
-        "physical_lines": 246,
-        "bytes": 16260,
-        "megabytes": 0.01626
+        "physical_lines": 114,
+        "bytes": 8311,
+        "megabytes": 0.008311
       }
     }
   },
@@ -439,7 +439,7 @@
         "item_count": 127,
         "completed_item_count": 126,
         "implemented_item_count": 126,
-        "verified_item_count": 0,
+        "verified_item_count": 11,
         "in_progress_item_count": 1,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -503,7 +503,7 @@
         "item_count": 214,
         "completed_item_count": 214,
         "implemented_item_count": 214,
-        "verified_item_count": 0,
+        "verified_item_count": 2,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -913,7 +913,7 @@
         "item_count": 11,
         "completed_item_count": 11,
         "implemented_item_count": 11,
-        "verified_item_count": 0,
+        "verified_item_count": 8,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -1081,7 +1081,7 @@
         "item_count": 30,
         "completed_item_count": 29,
         "implemented_item_count": 29,
-        "verified_item_count": 0,
+        "verified_item_count": 3,
         "in_progress_item_count": 1,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -2281,7 +2281,7 @@
         "item_count": 9,
         "completed_item_count": 9,
         "implemented_item_count": 9,
-        "verified_item_count": 0,
+        "verified_item_count": 2,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -4967,9 +4967,9 @@
         "chapter_color": "personal",
         "description_cs": "Mapa vlastnictví trvalého stavu pouze pro čtení",
         "description_en": "read-only durable state ownership map",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -4991,9 +4991,9 @@
         "chapter_color": "personal",
         "description_cs": "Typovaný slovník fáze obnovení",
         "description_en": "typed resume phase vocabulary",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -5015,9 +5015,9 @@
         "chapter_color": "personal",
         "description_cs": "Snapshot před podstatným krokem",
         "description_en": "precondition snapshot before consequential step",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -5039,9 +5039,9 @@
         "chapter_color": "personal",
         "description_cs": "Checkpoint po mutaci s digesty před a po",
         "description_en": "post-mutation checkpoint with before-after digest",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -5063,9 +5063,9 @@
         "chapter_color": "personal",
         "description_cs": "Čistý klasifikátor bezpečného obnovení",
         "description_en": "pure safe-resume classifier",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -5087,9 +5087,9 @@
         "chapter_color": "personal",
         "description_cs": "Verify-only obnovení bez replaye mutace",
         "description_en": "verify-only resume without mutation replay",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -5111,9 +5111,9 @@
         "chapter_color": "personal",
         "description_cs": "Jeden nástrojový resume adaptér na běh",
         "description_en": "one tool-specific resume adapter per run",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -5135,9 +5135,9 @@
         "chapter_color": "personal",
         "description_cs": "Úplný enumerátor pokračování modelu",
         "description_en": "production-complete model continuation enumerator",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -7535,9 +7535,9 @@
         "chapter_color": "personal",
         "description_cs": "Immutable schéma stromu komponent a identita migrace",
         "description_en": "immutable component-tree schema and migration identity",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -7559,9 +7559,9 @@
         "chapter_color": "personal",
         "description_cs": "Čistý validátor DAGu, rozsahů verzí, konfliktů a zasaženého closure",
         "description_en": "pure DAG, version-range, conflict and affected-closure validator",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -7751,9 +7751,9 @@
         "chapter_color": "personal",
         "description_cs": "Read-only loader hostitelského registru komponent",
         "description_en": "read-only host component registry loader",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -18695,9 +18695,9 @@
         "chapter_color": "optional",
         "description_cs": "Každá sémantická trasa nese typovaný původ a assurance; lexical/model candidate není autorita.",
         "description_en": "Route provenance and semantic-authority invariant",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -18719,9 +18719,9 @@
         "chapter_color": "optional",
         "description_cs": "Původní Unicode, normalizovaná lineage a literal/path/identifier identity zůstávají oddělené a ověřitelné.",
         "description_en": "Unicode and opaque-literal input envelope",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -18902,15 +18902,15 @@
     "item_count": 692,
     "completed_item_count": 691,
     "implemented_item_count": 691,
-    "verified_item_count": 33,
+    "verified_item_count": 46,
     "in_progress_item_count": 1,
     "architecture_item_count": 0,
     "blocked_item_count": 0,
     "status_counts": {
       "architecture-only": 0,
       "in-progress": 1,
-      "implemented-unverified": 658,
-      "verified": 33,
+      "implemented-unverified": 645,
+      "verified": 46,
       "blocked": 0
     },
     "chapter_count": 74,
@@ -18957,7 +18957,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 268,
+    "incremental_closeout_points_since_full_baseline": 269,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -22553,6 +22553,40 @@
       },
       "verified_evidence_count": 116,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "faf72437944f",
+      "date": "2026-10-10",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 692,
+        "completed_item_count": 691,
+        "chapter_count": 74
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 116,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -22564,8 +22598,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "PF3.14.credential-native-host-registration-and-readback",
-    "source_commit_sha": "f8ef8a08db79b7eabcc9bb78b2d071eda406adfc",
-    "closeout_sha": "f8ef8a08db79b7eabcc9bb78b2d071eda406adfc"
+    "roadmap_slice_id": "P8.15",
+    "source_commit_sha": "c33f5d4791ed9d055554fc0f2ab8e48651c47041",
+    "closeout_sha": "c33f5d4791ed9d055554fc0f2ab8e48651c47041"
   }
 }
