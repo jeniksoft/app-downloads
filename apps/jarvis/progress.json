@@ -20570,7 +20570,7 @@
     "roadmap_items_delta": 0,
     "roadmap_completed_delta": 0,
     "roadmap_chapters_delta": 0,
-    "verified_evidence_delta": 0,
+    "verified_evidence_delta": 1,
     "metrics_delta": {
       "primary_percent": 0.0,
       "implementation_percent": 0.0,
@@ -20589,7 +20589,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 395,
+    "incremental_closeout_points_since_full_baseline": 394,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -28534,40 +28534,6 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 1
-    },
-    {
-      "revision": "f52fcc5c33ae",
-      "date": "2026-10-11",
-      "metrics": {
-        "primary_percent": 37.48,
-        "implementation_percent": 43.75,
-        "verified_percent": 37.48,
-        "done_percent": 37.48,
-        "release_readiness_percent": 50.0
-      },
-      "delta": {
-        "primary_percent": 0.0,
-        "implementation_percent": 0.0,
-        "verified_percent": 0.0,
-        "done_percent": 0.0,
-        "release_readiness_percent": 0.0
-      },
-      "changed_chapters": [
-        "evidence-only"
-      ],
-      "changed_milestones": [],
-      "roadmap": {
-        "item_count": 731,
-        "completed_item_count": 691,
-        "chapter_count": 78
-      },
-      "roadmap_delta": {
-        "item_count": 0,
-        "completed_item_count": 0,
-        "chapter_count": 0
-      },
-      "verified_evidence_count": 155,
-      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
