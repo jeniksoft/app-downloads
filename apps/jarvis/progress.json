@@ -18,7 +18,7 @@
       "release_readiness": "optional roadmap-weighted release gate metric"
     },
     "commit_history": "Tracked history records configured input revisions; public deltas compare successive records using opaque fingerprints.",
-    "automatic_regeneration": "The public sync is explicitly dispatched after a completed roadmap closeout; ordinary main commits do not trigger it.",
+    "automatic_regeneration": "Model-free roadmap projection on authoritative machine-graph changes; no acceptance or history point without independently evidenced closeout.",
     "history_update": "Incremental closeout mode reuses the previous public history and appends one current closeout point; full-history mode is a deterministic fallback.",
     "artifact_publication": "The publisher compares target bytes and commits only changed JSON, README, history or SVG artifact paths; unchanged tables and visuals remain untouched.",
     "closeout_verification": "The latest closeout envelope exposes exact roadmap_slice_id, source_commit_sha and closeout_sha; ordinary history entries retain opaque revisions.",
@@ -44,36 +44,36 @@
         "language": "JSON",
         "files": 544,
         "physical_lines": 197735,
-        "bytes": 32926667,
-        "megabytes": 32.926667
+        "bytes": 32927551,
+        "megabytes": 32.927551
       },
       {
         "language": "Markdown",
         "files": 1104,
-        "physical_lines": 153765,
-        "bytes": 8522532,
-        "megabytes": 8.522532
+        "physical_lines": 153762,
+        "bytes": 8522358,
+        "megabytes": 8.522358
       },
       {
         "language": "Python",
         "files": 755,
         "physical_lines": 124802,
-        "bytes": 5212573,
-        "megabytes": 5.212573
+        "bytes": 5212405,
+        "megabytes": 5.212405
       },
       {
         "language": "PowerShell",
-        "files": 72,
-        "physical_lines": 34544,
-        "bytes": 1806727,
-        "megabytes": 1.806727
+        "files": 73,
+        "physical_lines": 34632,
+        "bytes": 1812156,
+        "megabytes": 1.812156
       },
       {
         "language": "Other text",
         "files": 81,
         "physical_lines": 5975,
-        "bytes": 298501,
-        "megabytes": 0.298501
+        "bytes": 298448,
+        "megabytes": 0.298448
       },
       {
         "language": "JSONL",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 5060,
-      "physical_lines": 1248990,
-      "bytes": 91308135,
-      "megabytes": 91.308135
+      "files": 5061,
+      "physical_lines": 1249075,
+      "bytes": 91314053,
+      "megabytes": 91.314053
     },
     "binary_assets": {
       "files": 41,
@@ -144,19 +144,19 @@
       "megabytes": 14.682994
     },
     "tracked_total": {
-      "files": 5101,
-      "physical_lines": 1248990,
-      "bytes": 105991129,
-      "megabytes": 105.991129
+      "files": 5102,
+      "physical_lines": 1249075,
+      "bytes": 105997047,
+      "megabytes": 105.997047
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 1,
-        "bytes": -18,
-        "megabytes": -1.8e-05
+        "physical_lines": -3,
+        "bytes": 542,
+        "megabytes": 0.000542
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 1,
-        "bytes": -18,
-        "megabytes": -1.8e-05
+        "physical_lines": -3,
+        "bytes": 542,
+        "megabytes": 0.000542
       }
     }
   },
@@ -455,7 +455,7 @@
         "item_count": 132,
         "completed_item_count": 107,
         "implemented_item_count": 107,
-        "verified_item_count": 39,
+        "verified_item_count": 43,
         "in_progress_item_count": 0,
         "architecture_item_count": 25,
         "blocked_item_count": 0,
@@ -1217,15 +1217,15 @@
         "name_cs": "OP5 — Repair Capsules",
         "name_en": "OP5 — Repair Capsules",
         "status": "in-progress",
-        "display_status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "display_status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-child-items",
         "is_complete": true,
         "item_count": 8,
         "completed_item_count": 8,
         "implemented_item_count": 8,
-        "verified_item_count": 4,
+        "verified_item_count": 8,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -10343,9 +10343,9 @@
         "chapter_color": "optional",
         "description_cs": "Sémantická akceptace ve stínu a canary režimu",
         "description_en": "shadow and canary semantic acceptance",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -10367,9 +10367,9 @@
         "chapter_color": "optional",
         "description_cs": "Rollback na poslední známý dobrý stav a jistič crash smyčky",
         "description_en": "last-known-good rollback and crash-loop breaker",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -10391,9 +10391,9 @@
         "chapter_color": "optional",
         "description_cs": "Trvalý stav a obnova po offline restartu",
         "description_en": "persistent state and offline restart recovery",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -10415,9 +10415,9 @@
         "chapter_color": "optional",
         "description_cs": "Akceptace ownerem a hranice samogenerované kapsle",
         "description_en": "owner acceptance and self-generated capsule boundary",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -20534,15 +20534,15 @@
     "item_count": 756,
     "completed_item_count": 691,
     "implemented_item_count": 691,
-    "verified_item_count": 231,
+    "verified_item_count": 235,
     "in_progress_item_count": 1,
     "architecture_item_count": 64,
     "blocked_item_count": 0,
     "status_counts": {
       "architecture-only": 64,
       "in-progress": 1,
-      "implemented-unverified": 460,
-      "verified": 231,
+      "implemented-unverified": 456,
+      "verified": 235,
       "blocked": 0
     },
     "chapter_count": 78,
@@ -20596,13 +20596,14 @@
     "artifact_update_policy": "changed-target-files-only"
   },
   "publication_state": {
-    "history_update_mode": "incremental-closeout",
-    "working_tree_projection": false,
+    "history_update_mode": "baseline-projection",
+    "working_tree_projection": true,
     "artifact_update_policy": "changed-target-files-only",
     "public_transport": "github-git-data-api",
     "public_checkout": "not-used",
     "max_public_commits_per_closeout": 1,
-    "closeout_proof": "exact-slice-source-and-closeout-sha"
+    "closeout_proof": "exact-slice-source-and-closeout-sha",
+    "projection_only": true
   },
   "milestone_implementation_percent": 74.5,
   "milestone_verified_percent": 43.98,

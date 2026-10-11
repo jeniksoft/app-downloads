@@ -130,9 +130,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | --- | ---: | ---: | ---: |
 | C/C++ | 2 328 | 726 439 | 35.29 |
 | JSON | 544 | 197 735 | 32.93 |
-| Markdown | 1 104 | 153 765 | 8.52 |
+| Markdown | 1 104 | 153 762 | 8.52 |
 | Python | 755 | 124 802 | 5.21 |
-| PowerShell | 72 | 34 544 | 1.81 |
+| PowerShell | 73 | 34 632 | 1.81 |
 | Other text | 81 | 5 975 | 0.30 |
 | JSONL | 16 | 2 515 | 6.93 |
 | Plain text | 130 | 1 815 | 0.19 |
@@ -142,9 +142,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **5 060** | **1 248 990** | **91.31** |
+| **Text/source celkem** | **5 061** | **1 249 075** | **91.31** |
 | Binární assety (mimo řádky) | 41 | — | 14.68 |
-| **Trackovaný strom celkem** | **5 101** | **1 248 990** | **105.99** |
+| **Trackovaný strom celkem** | **5 102** | **1 249 075** | **106.00** |
 
 ### Přírůstek od předchozí revize
 
@@ -152,9 +152,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +0 | +1 | -0.00 |
+| Text/source celkem | +0 | -3 | +0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +0 | +1 | -0.00 |
+| Trackovaný strom celkem | +0 | -3 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
