@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 2343,
-        "physical_lines": 729747,
-        "bytes": 35420210,
-        "megabytes": 35.42021
+        "files": 2345,
+        "physical_lines": 730385,
+        "bytes": 35445329,
+        "megabytes": 35.445329
       },
       {
         "language": "JSON",
         "files": 549,
         "physical_lines": 198076,
-        "bytes": 32963158,
-        "megabytes": 32.963158
+        "bytes": 32963002,
+        "megabytes": 32.963002
       },
       {
         "language": "Markdown",
-        "files": 1110,
-        "physical_lines": 154743,
-        "bytes": 8592791,
-        "megabytes": 8.592791
+        "files": 1111,
+        "physical_lines": 154813,
+        "bytes": 8596514,
+        "megabytes": 8.596514
       },
       {
         "language": "Python",
-        "files": 762,
-        "physical_lines": 125553,
-        "bytes": 5250601,
-        "megabytes": 5.250601
+        "files": 763,
+        "physical_lines": 125607,
+        "bytes": 5252450,
+        "megabytes": 5.25245
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 5094,
-      "physical_lines": 1254462,
-      "bytes": 91584551,
-      "megabytes": 91.584551
+      "files": 5098,
+      "physical_lines": 1255224,
+      "bytes": 91615086,
+      "megabytes": 91.615086
     },
     "binary_assets": {
       "files": 41,
@@ -144,19 +144,19 @@
       "megabytes": 14.682994
     },
     "tracked_total": {
-      "files": 5135,
-      "physical_lines": 1254462,
-      "bytes": 106267545,
-      "megabytes": 106.267545
+      "files": 5139,
+      "physical_lines": 1255224,
+      "bytes": 106298080,
+      "megabytes": 106.29808
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 5,
-        "physical_lines": 960,
-        "bytes": 38934,
-        "megabytes": 0.038934
+        "files": 4,
+        "physical_lines": 731,
+        "bytes": 29021,
+        "megabytes": 0.029021
       },
       "binary_assets": {
         "files": 0,
@@ -165,10 +165,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 5,
-        "physical_lines": 960,
-        "bytes": 38934,
-        "megabytes": 0.038934
+        "files": 4,
+        "physical_lines": 731,
+        "bytes": 29021,
+        "megabytes": 0.029021
       }
     }
   },
@@ -503,7 +503,7 @@
         "item_count": 253,
         "completed_item_count": 214,
         "implemented_item_count": 214,
-        "verified_item_count": 30,
+        "verified_item_count": 35,
         "in_progress_item_count": 0,
         "architecture_item_count": 39,
         "blocked_item_count": 0,
@@ -2089,7 +2089,7 @@
         "item_count": 25,
         "completed_item_count": 25,
         "implemented_item_count": 25,
-        "verified_item_count": 0,
+        "verified_item_count": 5,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -17087,9 +17087,9 @@
         "chapter_color": "optional",
         "description_cs": "Ověřená aktivní situace vytvoří pouze bounded kandidáta záměru práce",
         "description_en": "situation -> candidate goal/work intent",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -17111,9 +17111,9 @@
         "chapter_color": "optional",
         "description_cs": "Přesná vazba bounded kandidáta na aktivní cíl Polaris",
         "description_en": "active Polaris goal compatibility gate",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -17135,9 +17135,9 @@
         "chapter_color": "optional",
         "description_cs": "Typovaná dostatečnost policy, capability a nezávislých důkazů",
         "description_en": "policy/capability/evidence sufficiency gate",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -17159,9 +17159,9 @@
         "chapter_color": "optional",
         "description_cs": "bounded self-generated work candidate",
         "description_en": "bounded self-generated work candidate",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -17519,9 +17519,9 @@
         "chapter_color": "optional",
         "description_cs": "Více interních tahů jedné owner-autorizované úlohy přes chybu, opravu, restart a verifikaci bez authority amplification",
         "description_en": "end-to-end continuous-work acceptance",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -20534,15 +20534,15 @@
     "item_count": 756,
     "completed_item_count": 694,
     "implemented_item_count": 694,
-    "verified_item_count": 334,
+    "verified_item_count": 339,
     "in_progress_item_count": 1,
     "architecture_item_count": 61,
     "blocked_item_count": 0,
     "status_counts": {
       "architecture-only": 61,
       "in-progress": 1,
-      "implemented-unverified": 360,
-      "verified": 334,
+      "implemented-unverified": 355,
+      "verified": 339,
       "blocked": 0
     },
     "chapter_count": 78,
@@ -21894,7 +21894,7 @@
   },
   "history": [
     {
-      "revision": "5ef03d993332",
+      "revision": "51c1ad3044b1",
       "date": "2026-10-11",
       "metrics": {
         "primary_percent": 37.48,
@@ -21966,74 +21966,6 @@
       "roadmap_delta": null,
       "verified_evidence_count": 147,
       "verified_evidence_delta": null
-    },
-    {
-      "revision": "e02d082db54a",
-      "date": "2026-10-11",
-      "metrics": {
-        "primary_percent": 37.48,
-        "implementation_percent": 43.75,
-        "verified_percent": 37.48,
-        "done_percent": 37.48,
-        "release_readiness_percent": 50.0
-      },
-      "delta": {
-        "primary_percent": 0.0,
-        "implementation_percent": 0.0,
-        "verified_percent": 0.0,
-        "done_percent": 0.0,
-        "release_readiness_percent": 0.0
-      },
-      "changed_chapters": [
-        "evidence-only"
-      ],
-      "changed_milestones": [],
-      "roadmap": {
-        "item_count": 731,
-        "completed_item_count": 691,
-        "chapter_count": 78
-      },
-      "roadmap_delta": {
-        "item_count": 0,
-        "completed_item_count": 0,
-        "chapter_count": 0
-      },
-      "verified_evidence_count": 147,
-      "verified_evidence_delta": 0
-    },
-    {
-      "revision": "51c1ad3044b1",
-      "date": "2026-10-11",
-      "metrics": {
-        "primary_percent": 37.48,
-        "implementation_percent": 43.75,
-        "verified_percent": 37.48,
-        "done_percent": 37.48,
-        "release_readiness_percent": 50.0
-      },
-      "delta": {
-        "primary_percent": 0.0,
-        "implementation_percent": 0.0,
-        "verified_percent": 0.0,
-        "done_percent": 0.0,
-        "release_readiness_percent": 0.0
-      },
-      "changed_chapters": [
-        "evidence-only"
-      ],
-      "changed_milestones": [],
-      "roadmap": {
-        "item_count": 731,
-        "completed_item_count": 691,
-        "chapter_count": 78
-      },
-      "roadmap_delta": {
-        "item_count": 0,
-        "completed_item_count": 0,
-        "chapter_count": 0
-      },
-      "verified_evidence_count": 147,
-      "verified_evidence_delta": 0
     },
     {
       "revision": "d1230662dcb9",
@@ -24024,7 +23956,75 @@
       "verified_evidence_delta": 0
     },
     {
-      "revision": "0ff45b24e690",
+      "revision": "7e775c53a9f1",
+      "date": "2026-10-11",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 756,
+        "completed_item_count": 694,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
+    },
+    {
+      "revision": "2ccefb3bd755",
+      "date": "2026-10-11",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 756,
+        "completed_item_count": 694,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
+    },
+    {
+      "revision": "d711a9391ba2",
       "date": "2026-10-11",
       "metrics": {
         "primary_percent": 37.48,
