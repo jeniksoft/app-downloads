@@ -15,7 +15,7 @@
       "release_readiness": "optional roadmap-weighted release gate metric"
     },
     "commit_history": "Tracked history records configured input revisions; public deltas compare successive records using opaque fingerprints.",
-    "automatic_regeneration": "The public sync is explicitly dispatched after a completed roadmap closeout; ordinary main commits do not trigger it.",
+    "automatic_regeneration": "Model-free roadmap projection on authoritative machine-graph changes; no acceptance or history point without independently evidenced closeout.",
     "history_update": "Incremental closeout mode reuses the previous public history and appends one current closeout point; full-history mode is a deterministic fallback.",
     "artifact_publication": "The publisher compares target bytes and commits only changed JSON, README, history or SVG artifact paths; unchanged tables and visuals remain untouched.",
     "closeout_verification": "The latest closeout envelope exposes exact roadmap_slice_id, source_commit_sha and closeout_sha; ordinary history entries retain opaque revisions.",
