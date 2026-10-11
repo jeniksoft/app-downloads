@@ -43,23 +43,23 @@
       {
         "language": "JSON",
         "files": 543,
-        "physical_lines": 197016,
-        "bytes": 32722464,
-        "megabytes": 32.722464
+        "physical_lines": 197017,
+        "bytes": 32722687,
+        "megabytes": 32.722687
       },
       {
         "language": "Markdown",
         "files": 1102,
-        "physical_lines": 153027,
-        "bytes": 8427806,
-        "megabytes": 8.427806
+        "physical_lines": 153038,
+        "bytes": 8428884,
+        "megabytes": 8.428884
       },
       {
         "language": "Python",
         "files": 755,
-        "physical_lines": 124709,
-        "bytes": 5208183,
-        "megabytes": 5.208183
+        "physical_lines": 124720,
+        "bytes": 5208782,
+        "megabytes": 5.208782
       },
       {
         "language": "PowerShell",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 5055,
-      "physical_lines": 1246879,
-      "bytes": 90976132,
-      "megabytes": 90.976132
+      "physical_lines": 1246902,
+      "bytes": 90978032,
+      "megabytes": 90.978032
     },
     "binary_assets": {
       "files": 41,
@@ -145,18 +145,18 @@
     },
     "tracked_total": {
       "files": 5096,
-      "physical_lines": 1246879,
-      "bytes": 105659126,
-      "megabytes": 105.659126
+      "physical_lines": 1246902,
+      "bytes": 105661026,
+      "megabytes": 105.661026
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 28,
-        "bytes": 2446,
-        "megabytes": 0.002446
+        "physical_lines": 23,
+        "bytes": 1900,
+        "megabytes": 0.0019
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 28,
-        "bytes": 2446,
-        "megabytes": 0.002446
+        "physical_lines": 23,
+        "bytes": 1900,
+        "megabytes": 0.0019
       }
     }
   },
@@ -455,7 +455,7 @@
         "item_count": 107,
         "completed_item_count": 107,
         "implemented_item_count": 107,
-        "verified_item_count": 8,
+        "verified_item_count": 9,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -1129,7 +1129,7 @@
         "item_count": 13,
         "completed_item_count": 13,
         "implemented_item_count": 13,
-        "verified_item_count": 8,
+        "verified_item_count": 9,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -8351,9 +8351,9 @@
         "chapter_color": "optional",
         "description_cs": "Párovací režim LAN",
         "description_en": "paired LAN mode",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -19934,15 +19934,15 @@
     "item_count": 731,
     "completed_item_count": 691,
     "implemented_item_count": 691,
-    "verified_item_count": 200,
+    "verified_item_count": 201,
     "in_progress_item_count": 1,
     "architecture_item_count": 39,
     "blocked_item_count": 0,
     "status_counts": {
       "architecture-only": 39,
       "in-progress": 1,
-      "implemented-unverified": 491,
-      "verified": 200,
+      "implemented-unverified": 490,
+      "verified": 201,
       "blocked": 0
     },
     "chapter_count": 78,
@@ -19989,7 +19989,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 367,
+    "incremental_closeout_points_since_full_baseline": 368,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -20011,7 +20011,7 @@
     "manifest_present": true,
     "milestone_count": 36,
     "verified_milestone_count": 23,
-    "verified_evidence_count": 129,
+    "verified_evidence_count": 130,
     "state_counts": {
       "verified-build": 13,
       "partial": 7,
@@ -21056,8 +21056,8 @@
           "implementation_percent": 100.0,
           "verified_percent": 75.0,
           "done_percent": 75.0,
-          "evidence_count": 16,
-          "verified_evidence_count": 15,
+          "evidence_count": 17,
+          "verified_evidence_count": 16,
           "evidence_kinds": [
             "build",
             "runtime",
@@ -26965,6 +26965,42 @@
       },
       "verified_evidence_count": 129,
       "verified_evidence_delta": 1
+    },
+    {
+      "revision": "ed236d740db5",
+      "date": "2026-10-11",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "qa-dogfood"
+      ],
+      "changed_milestones": [
+        "qa-dogfood/contract-self-test-gates"
+      ],
+      "roadmap": {
+        "item_count": 731,
+        "completed_item_count": 691,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 130,
+      "verified_evidence_delta": 1
     }
   ],
   "history_contract": {
@@ -26977,7 +27013,7 @@
   "closeout_verification": {
     "status": "verified",
     "roadmap_slice_id": "OP1",
-    "source_commit_sha": "b6c95259846dcc211954adbff6c0e8b37f447af8",
-    "closeout_sha": "b6c95259846dcc211954adbff6c0e8b37f447af8"
+    "source_commit_sha": "dc17965a4d8c26f8daf7ae9ad83d10d75cbddf2d",
+    "closeout_sha": "dc17965a4d8c26f8daf7ae9ad83d10d75cbddf2d"
   }
 }
