@@ -23,7 +23,7 @@
   },
   "entries": [
     {
-      "revision": "5ed55d7ff1bf",
+      "revision": "3bf6a071a027",
       "date": "2026-10-11",
       "metrics": {
         "primary_percent": 37.48,
@@ -93,44 +93,8 @@
         "chapter_count": 78
       },
       "roadmap_delta": null,
-      "verified_evidence_count": 150,
-      "verified_evidence_delta": null
-    },
-    {
-      "revision": "3bf6a071a027",
-      "date": "2026-10-11",
-      "metrics": {
-        "primary_percent": 37.48,
-        "implementation_percent": 43.75,
-        "verified_percent": 37.48,
-        "done_percent": 37.48,
-        "release_readiness_percent": 50.0
-      },
-      "delta": {
-        "primary_percent": 0.0,
-        "implementation_percent": 0.0,
-        "verified_percent": 0.0,
-        "done_percent": 0.0,
-        "release_readiness_percent": 0.0
-      },
-      "changed_chapters": [
-        "qa-dogfood"
-      ],
-      "changed_milestones": [
-        "qa-dogfood/contract-self-test-gates"
-      ],
-      "roadmap": {
-        "item_count": 731,
-        "completed_item_count": 691,
-        "chapter_count": 78
-      },
-      "roadmap_delta": {
-        "item_count": 0,
-        "completed_item_count": 0,
-        "chapter_count": 0
-      },
       "verified_evidence_count": 151,
-      "verified_evidence_delta": 1
+      "verified_evidence_delta": null
     },
     {
       "revision": "f4c9d8eb13a9",
@@ -2136,6 +2100,108 @@
       "roadmap": {
         "item_count": 756,
         "completed_item_count": 699,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
+    },
+    {
+      "revision": "691dc2436676",
+      "date": "2026-10-11",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 756,
+        "completed_item_count": 699,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
+    },
+    {
+      "revision": "3a8f93c29212",
+      "date": "2026-10-11",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 756,
+        "completed_item_count": 700,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
+    },
+    {
+      "revision": "07a629b10adf",
+      "date": "2026-10-11",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 756,
+        "completed_item_count": 700,
         "chapter_count": 78
       },
       "roadmap_delta": {
