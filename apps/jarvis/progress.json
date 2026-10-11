@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 2328,
-        "physical_lines": 726439,
-        "bytes": 34567890,
-        "megabytes": 34.56789
+        "files": 2330,
+        "physical_lines": 726878,
+        "bytes": 34584155,
+        "megabytes": 34.584155
       },
       {
         "language": "JSON",
         "files": 544,
-        "physical_lines": 197797,
-        "bytes": 32936268,
-        "megabytes": 32.936268
+        "physical_lines": 197805,
+        "bytes": 32939065,
+        "megabytes": 32.939065
       },
       {
         "language": "Markdown",
-        "files": 1105,
-        "physical_lines": 154386,
-        "bytes": 8569871,
-        "megabytes": 8.569871
+        "files": 1106,
+        "physical_lines": 154455,
+        "bytes": 8573794,
+        "megabytes": 8.573794
       },
       {
         "language": "Python",
-        "files": 755,
-        "physical_lines": 124939,
-        "bytes": 5222182,
-        "megabytes": 5.222182
+        "files": 756,
+        "physical_lines": 125037,
+        "bytes": 5227982,
+        "megabytes": 5.227982
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 5062,
-      "physical_lines": 1249904,
-      "bytes": 90608279,
-      "megabytes": 90.608279
+      "files": 5066,
+      "physical_lines": 1250518,
+      "bytes": 90637064,
+      "megabytes": 90.637064
     },
     "binary_assets": {
       "files": 41,
@@ -144,19 +144,19 @@
       "megabytes": 14.682994
     },
     "tracked_total": {
-      "files": 5103,
-      "physical_lines": 1249904,
-      "bytes": 105291273,
-      "megabytes": 105.291273
+      "files": 5107,
+      "physical_lines": 1250518,
+      "bytes": 105320058,
+      "megabytes": 105.320058
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 48,
-        "bytes": 3050,
-        "megabytes": 0.00305
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 48,
-        "bytes": 3050,
-        "megabytes": 0.00305
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       }
     }
   },
@@ -455,7 +455,7 @@
         "item_count": 132,
         "completed_item_count": 107,
         "implemented_item_count": 107,
-        "verified_item_count": 74,
+        "verified_item_count": 82,
         "in_progress_item_count": 0,
         "architecture_item_count": 25,
         "blocked_item_count": 0,
@@ -1289,15 +1289,15 @@
         "name_cs": "OP8 — Defensive Security Lab",
         "name_en": "OP8 — Defensive Security Lab",
         "status": "in-progress",
-        "display_status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "display_status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-child-items",
         "is_complete": true,
         "item_count": 8,
         "completed_item_count": 8,
         "implemented_item_count": 8,
-        "verified_item_count": 0,
+        "verified_item_count": 8,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -10871,9 +10871,9 @@
         "chapter_color": "optional",
         "description_cs": "Typovaný scope a policy fixtures",
         "description_en": "typed scope and policy fixtures",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -10895,9 +10895,9 @@
         "chapter_color": "optional",
         "description_cs": "Statické reverse engineering analýzy",
         "description_en": "static reverse engineering",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -10919,9 +10919,9 @@
         "chapter_color": "optional",
         "description_cs": "Jednorázová izolovaná laboratoř",
         "description_en": "disposable isolated lab",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -10943,9 +10943,9 @@
         "chapter_color": "optional",
         "description_cs": "Trajektorie agentů pouze pro monitoring",
         "description_en": "monitor-only agent trajectories",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -10967,9 +10967,9 @@
         "chapter_color": "optional",
         "description_cs": "Omezené containment playbooky",
         "description_en": "bounded containment playbooks",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -10991,9 +10991,9 @@
         "chapter_color": "optional",
         "description_cs": "Containment endpointu zapsaného ownerem",
         "description_en": "owner-enrolled endpoint containment",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -11015,9 +11015,9 @@
         "chapter_color": "optional",
         "description_cs": "Ověření autorizovaného vlastního cíle",
         "description_en": "authorized owned-target validation",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -11039,9 +11039,9 @@
         "chapter_color": "optional",
         "description_cs": "Organizační a enterprise integrace",
         "description_en": "organization and enterprise integration evidence",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -20534,15 +20534,15 @@
     "item_count": 756,
     "completed_item_count": 691,
     "implemented_item_count": 691,
-    "verified_item_count": 316,
+    "verified_item_count": 324,
     "in_progress_item_count": 1,
     "architecture_item_count": 64,
     "blocked_item_count": 0,
     "status_counts": {
       "architecture-only": 64,
       "in-progress": 1,
-      "implemented-unverified": 375,
-      "verified": 316,
+      "implemented-unverified": 367,
+      "verified": 324,
       "blocked": 0
     },
     "chapter_count": 78,
