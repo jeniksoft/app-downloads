@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 2345,
-        "physical_lines": 730385,
-        "bytes": 35445329,
-        "megabytes": 35.445329
+        "files": 2347,
+        "physical_lines": 731227,
+        "bytes": 35474276,
+        "megabytes": 35.474276
       },
       {
         "language": "JSON",
-        "files": 549,
-        "physical_lines": 198076,
-        "bytes": 32963002,
-        "megabytes": 32.963002
+        "files": 550,
+        "physical_lines": 198119,
+        "bytes": 32968693,
+        "megabytes": 32.968693
       },
       {
         "language": "Markdown",
-        "files": 1111,
-        "physical_lines": 154813,
-        "bytes": 8596514,
-        "megabytes": 8.596514
+        "files": 1112,
+        "physical_lines": 154862,
+        "bytes": 8599102,
+        "megabytes": 8.599102
       },
       {
         "language": "Python",
-        "files": 763,
-        "physical_lines": 125607,
-        "bytes": 5252450,
-        "megabytes": 5.25245
+        "files": 764,
+        "physical_lines": 125693,
+        "bytes": 5255651,
+        "megabytes": 5.255651
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 5098,
-      "physical_lines": 1255224,
-      "bytes": 91615086,
-      "megabytes": 91.615086
+      "files": 5103,
+      "physical_lines": 1256244,
+      "bytes": 91655513,
+      "megabytes": 91.655513
     },
     "binary_assets": {
       "files": 41,
@@ -144,19 +144,19 @@
       "megabytes": 14.682994
     },
     "tracked_total": {
-      "files": 5139,
-      "physical_lines": 1255224,
-      "bytes": 106298080,
-      "megabytes": 106.29808
+      "files": 5144,
+      "physical_lines": 1256244,
+      "bytes": 106338507,
+      "megabytes": 106.338507
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 4,
-        "physical_lines": 731,
-        "bytes": 29021,
-        "megabytes": 0.029021
+        "files": 0,
+        "physical_lines": 3,
+        "bytes": 694,
+        "megabytes": 0.000694
       },
       "binary_assets": {
         "files": 0,
@@ -165,10 +165,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 4,
-        "physical_lines": 731,
-        "bytes": 29021,
-        "megabytes": 0.029021
+        "files": 0,
+        "physical_lines": 3,
+        "bytes": 694,
+        "megabytes": 0.000694
       }
     }
   },
@@ -453,14 +453,14 @@
         "chapter_color": "optional",
         "chapter_count": 9,
         "item_count": 132,
-        "completed_item_count": 110,
-        "implemented_item_count": 110,
+        "completed_item_count": 111,
+        "implemented_item_count": 111,
         "verified_item_count": 92,
         "in_progress_item_count": 0,
-        "architecture_item_count": 22,
+        "architecture_item_count": 21,
         "blocked_item_count": 0,
-        "completion_percent": 83.33,
-        "status_percent": 83.33
+        "completion_percent": 84.09,
+        "status_percent": 84.09
       },
       {
         "id": "teams",
@@ -1175,14 +1175,14 @@
         "status_source": "canonical-child-items",
         "is_complete": false,
         "item_count": 38,
-        "completed_item_count": 16,
-        "implemented_item_count": 16,
+        "completed_item_count": 17,
+        "implemented_item_count": 17,
         "verified_item_count": 14,
         "in_progress_item_count": 0,
-        "architecture_item_count": 22,
+        "architecture_item_count": 21,
         "blocked_item_count": 0,
-        "completion_percent": 42.11,
-        "status_percent": 42.11
+        "completion_percent": 44.74,
+        "status_percent": 44.74
       },
       {
         "id": "OP4",
@@ -8975,13 +8975,13 @@
         "chapter_color": "optional",
         "description_cs": "Normalizace do mluveného češtiny, oddíly/kapitoly, výslovnostní profily, zlomky, čísla a transparentní přepis. Segmenter bez ztracených/zdvojených vět.",
         "description_en": "Normalizace do mluveného češtiny, oddíly/kapitoly, výslovnostní profily, zlomky, čísla a transparentní přepis. Segmenter bez ztracených/zdvojených vět.",
-        "status": "architecture-only",
-        "status_label_cs": "Architektura",
-        "status_label_en": "Architecture",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno",
+        "status_label_en": "Implemented",
         "status_source": "canonical-roadmap-slice",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap-slice",
         "verify": "V5",
         "is_slice": true
@@ -20532,22 +20532,22 @@
       }
     ],
     "item_count": 756,
-    "completed_item_count": 694,
-    "implemented_item_count": 694,
+    "completed_item_count": 695,
+    "implemented_item_count": 695,
     "verified_item_count": 339,
     "in_progress_item_count": 1,
-    "architecture_item_count": 61,
+    "architecture_item_count": 60,
     "blocked_item_count": 0,
     "status_counts": {
-      "architecture-only": 61,
+      "architecture-only": 60,
       "in-progress": 1,
-      "implemented-unverified": 355,
+      "implemented-unverified": 356,
       "verified": 339,
       "blocked": 0
     },
     "chapter_count": 78,
-    "completion_percent": 91.83,
-    "status_percent": 91.83,
+    "completion_percent": 91.96,
+    "status_percent": 91.96,
     "status_percent_contract": {
       "kind": "canonical-implementation-coverage-compatibility",
       "label_cs": "Implementační pokrytí",
@@ -20582,10 +20582,10 @@
   "publication_savings": {
     "measurement": "estimated_workflow_runs_avoided",
     "measurement_scope": "full-history",
-    "tracked_main_commits": 62,
-    "relevant_closeout_snapshots": 62,
-    "legacy_runs_estimate": 62,
-    "closeout_runs_estimate": 62,
+    "tracked_main_commits": 61,
+    "relevant_closeout_snapshots": 61,
+    "legacy_runs_estimate": 61,
+    "closeout_runs_estimate": 61,
     "avoided_runs_estimate": 0,
     "avoided_percent": 0.0,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
@@ -21894,7 +21894,7 @@
   },
   "history": [
     {
-      "revision": "51c1ad3044b1",
+      "revision": "64424d258423",
       "date": "2026-10-11",
       "metrics": {
         "primary_percent": 37.48,
@@ -21964,78 +21964,8 @@
         "chapter_count": 78
       },
       "roadmap_delta": null,
-      "verified_evidence_count": 147,
+      "verified_evidence_count": 148,
       "verified_evidence_delta": null
-    },
-    {
-      "revision": "d1230662dcb9",
-      "date": "2026-10-11",
-      "metrics": {
-        "primary_percent": 37.48,
-        "implementation_percent": 43.75,
-        "verified_percent": 37.48,
-        "done_percent": 37.48,
-        "release_readiness_percent": 50.0
-      },
-      "delta": {
-        "primary_percent": 0.0,
-        "implementation_percent": 0.0,
-        "verified_percent": 0.0,
-        "done_percent": 0.0,
-        "release_readiness_percent": 0.0
-      },
-      "changed_chapters": [
-        "qa-dogfood"
-      ],
-      "changed_milestones": [
-        "qa-dogfood/contract-self-test-gates"
-      ],
-      "roadmap": {
-        "item_count": 731,
-        "completed_item_count": 691,
-        "chapter_count": 78
-      },
-      "roadmap_delta": {
-        "item_count": 0,
-        "completed_item_count": 0,
-        "chapter_count": 0
-      },
-      "verified_evidence_count": 148,
-      "verified_evidence_delta": 1
-    },
-    {
-      "revision": "64424d258423",
-      "date": "2026-10-11",
-      "metrics": {
-        "primary_percent": 37.48,
-        "implementation_percent": 43.75,
-        "verified_percent": 37.48,
-        "done_percent": 37.48,
-        "release_readiness_percent": 50.0
-      },
-      "delta": {
-        "primary_percent": 0.0,
-        "implementation_percent": 0.0,
-        "verified_percent": 0.0,
-        "done_percent": 0.0,
-        "release_readiness_percent": 0.0
-      },
-      "changed_chapters": [
-        "evidence-only"
-      ],
-      "changed_milestones": [],
-      "roadmap": {
-        "item_count": 731,
-        "completed_item_count": 691,
-        "chapter_count": 78
-      },
-      "roadmap_delta": {
-        "item_count": 0,
-        "completed_item_count": 0,
-        "chapter_count": 0
-      },
-      "verified_evidence_count": 148,
-      "verified_evidence_delta": 0
     },
     {
       "revision": "55f1c1567b7e",
@@ -24024,7 +23954,7 @@
       "verified_evidence_delta": 0
     },
     {
-      "revision": "d711a9391ba2",
+      "revision": "82c146d86d49",
       "date": "2026-10-11",
       "metrics": {
         "primary_percent": 37.48,
@@ -24046,7 +23976,41 @@
       "changed_milestones": [],
       "roadmap": {
         "item_count": 756,
-        "completed_item_count": 694,
+        "completed_item_count": 695,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
+    },
+    {
+      "revision": "957f043c2185",
+      "date": "2026-10-11",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 756,
+        "completed_item_count": 695,
         "chapter_count": 78
       },
       "roadmap_delta": {

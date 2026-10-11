@@ -94,7 +94,7 @@ Tento přehled se generuje automaticky ze strojové roadmapy, bez modelového ro
 | `AUDN0` (`OP3.10.0`) | `implemented-unverified` | Fresh audit OP3.1–3.9, současného Piper runtime, text preparation, OP3.6/3.7, Worker/Policy, CPU dostupnosti, všech reálně možných GPU TTS backendů (AMD/NVIDIA) |
 | `AUDN1` (`OP3.10.1`) | `verified` | Provider-free typovaný LongFormSpeechJob s identitou ownera a zdroje, jazykem, providerem, hlasovým profilem, rozsahem, formátem, resource budgetem a persistovaný... |
 | `AUDN2` (`OP3.10.2`) | `implemented-unverified` | Owner-authorized import/export s bezpečným výběrem souboru a scope. TXT/Markdown first; PDF/DOCX/EPUB jen s legitimním extractor adaptérem. Kontrola významových |
-| `AUDN3` (`OP3.10.3`) | `architecture-only` | Normalizace do mluveného češtiny, oddíly/kapitoly, výslovnostní profily, zlomky, čísla a transparentní přepis. Segmenter bez ztracených/zdvojených vět. |
+| `AUDN3` (`OP3.10.3`) | `implemented-unverified` | Normalizace do mluveného češtiny, oddíly/kapitoly, výslovnostní profily, zlomky, čísla a transparentní přepis. Segmenter bez ztracených/zdvojených vět. |
 | `AUDN4` (`OP3.10.4`) | `architecture-only` | Hlasový picker, explicitní volba Automaticky/CPU/Preferovat GPU/Pouze GPU s per-model dostupností a 20–60s lokální preview přes existující ověřený Piper; audit |
 | `AUDN5` (`OP3.10.5`) | `architecture-only` | Zabezpečené batch synthesis ve vlastní job scope (nikoliv notifikační fronta), skutečné WAV části, explicitní CPU i ověřenou GPU routing policy podle podpory ba |
 | `AUDN6` (`OP3.10.6`) | `architecture-only` | Dlouhé dokumenty, evidence cache včetně backend/device/runtime identity a checkpoint+resume přes existující WorkerJournal/owner workspace, atomický output commi |
@@ -123,10 +123,10 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 2 345 | 730 385 | 35.45 |
-| JSON | 549 | 198 076 | 32.96 |
-| Markdown | 1 111 | 154 813 | 8.60 |
-| Python | 763 | 125 607 | 5.25 |
+| C/C++ | 2 347 | 731 227 | 35.47 |
+| JSON | 550 | 198 119 | 32.97 |
+| Markdown | 1 112 | 154 862 | 8.60 |
+| Python | 764 | 125 693 | 5.26 |
 | PowerShell | 73 | 34 638 | 1.81 |
 | Other text | 81 | 5 975 | 0.30 |
 | JSONL | 16 | 2 515 | 6.93 |
@@ -137,9 +137,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **5 098** | **1 255 224** | **91.62** |
+| **Text/source celkem** | **5 103** | **1 256 244** | **91.66** |
 | Binární assety (mimo řádky) | 41 | — | 14.68 |
-| **Trackovaný strom celkem** | **5 139** | **1 255 224** | **106.30** |
+| **Trackovaný strom celkem** | **5 144** | **1 256 244** | **106.34** |
 
 ### Přírůstek od předchozí revize
 
@@ -147,9 +147,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +4 | +731 | +0.03 |
+| Text/source celkem | +0 | +3 | +0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +4 | +731 | +0.03 |
+| Trackovaný strom celkem | +0 | +3 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -219,7 +219,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `044154da365b` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `976d8d559a70` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `409da08cce02` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `e066260ced65` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -236,13 +235,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `44f1be314295` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `7e775c53a9f1` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `2ccefb3bd755` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `d711a9391ba2` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `82c146d86d49` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `957f043c2185` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
-Historický baseline: starý režim by spustil **62** běhů, closeout režim **62**; odhadovaná úspora je **0** běhů (**0.00 %**).
+Historický baseline: starý režim by spustil **61** běhů, closeout režim **61**; odhadovaná úspora je **0** běhů (**0.00 %**).
 Optimalizace běhu: 0 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
