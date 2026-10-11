@@ -44,22 +44,22 @@
         "language": "JSON",
         "files": 543,
         "physical_lines": 197075,
-        "bytes": 32751287,
-        "megabytes": 32.751287
+        "bytes": 32752459,
+        "megabytes": 32.752459
       },
       {
         "language": "Markdown",
         "files": 1102,
-        "physical_lines": 153317,
-        "bytes": 8451392,
-        "megabytes": 8.451392
+        "physical_lines": 153342,
+        "bytes": 8453820,
+        "megabytes": 8.45382
       },
       {
         "language": "Python",
         "files": 755,
         "physical_lines": 124758,
-        "bytes": 5210511,
-        "megabytes": 5.210511
+        "bytes": 5210406,
+        "megabytes": 5.210406
       },
       {
         "language": "PowerShell",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 5055,
-      "physical_lines": 1247277,
-      "bytes": 91030869,
-      "megabytes": 91.030869
+      "physical_lines": 1247302,
+      "bytes": 91034364,
+      "megabytes": 91.034364
     },
     "binary_assets": {
       "files": 41,
@@ -145,18 +145,18 @@
     },
     "tracked_total": {
       "files": 5096,
-      "physical_lines": 1247277,
-      "bytes": 105713863,
-      "megabytes": 105.713863
+      "physical_lines": 1247302,
+      "bytes": 105717358,
+      "megabytes": 105.717358
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 23,
-        "bytes": 2613,
-        "megabytes": 0.002613
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 23,
-        "bytes": 2613,
-        "megabytes": 0.002613
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       }
     }
   },
@@ -455,7 +455,7 @@
         "item_count": 107,
         "completed_item_count": 107,
         "implemented_item_count": 107,
-        "verified_item_count": 23,
+        "verified_item_count": 24,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -1169,15 +1169,15 @@
         "name_cs": "OP3 — TTS STT audio",
         "name_en": "OP3 — TTS STT audio",
         "status": "in-progress",
-        "display_status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "display_status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-child-items",
         "is_complete": true,
         "item_count": 13,
         "completed_item_count": 13,
         "implemented_item_count": 13,
-        "verified_item_count": 12,
+        "verified_item_count": 13,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -8855,9 +8855,9 @@
         "chapter_color": "optional",
         "description_cs": "Lokálně profilované STT routování podle jazyka pro tray a kontrakt integrace se secure desktopem",
         "description_en": "language-profiled local STT routing for tray and secure-desktop integration contract",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -19934,15 +19934,15 @@
     "item_count": 731,
     "completed_item_count": 691,
     "implemented_item_count": 691,
-    "verified_item_count": 215,
+    "verified_item_count": 216,
     "in_progress_item_count": 1,
     "architecture_item_count": 39,
     "blocked_item_count": 0,
     "status_counts": {
       "architecture-only": 39,
       "in-progress": 1,
-      "implemented-unverified": 476,
-      "verified": 215,
+      "implemented-unverified": 475,
+      "verified": 216,
       "blocked": 0
     },
     "chapter_count": 78,
@@ -19989,7 +19989,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 383,
+    "incremental_closeout_points_since_full_baseline": 384,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -20011,7 +20011,7 @@
     "manifest_present": true,
     "milestone_count": 36,
     "verified_milestone_count": 23,
-    "verified_evidence_count": 144,
+    "verified_evidence_count": 145,
     "state_counts": {
       "verified-build": 13,
       "partial": 7,
@@ -21056,8 +21056,8 @@
           "implementation_percent": 100.0,
           "verified_percent": 75.0,
           "done_percent": 75.0,
-          "evidence_count": 31,
-          "verified_evidence_count": 30,
+          "evidence_count": 32,
+          "verified_evidence_count": 31,
           "evidence_kinds": [
             "build",
             "runtime",
@@ -27537,6 +27537,42 @@
       },
       "verified_evidence_count": 144,
       "verified_evidence_delta": 1
+    },
+    {
+      "revision": "4d8deab8f773",
+      "date": "2026-10-11",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "qa-dogfood"
+      ],
+      "changed_milestones": [
+        "qa-dogfood/contract-self-test-gates"
+      ],
+      "roadmap": {
+        "item_count": 731,
+        "completed_item_count": 691,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 145,
+      "verified_evidence_delta": 1
     }
   ],
   "history_contract": {
@@ -27548,8 +27584,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP3.8",
+    "roadmap_slice_id": "OP3.9",
     "source_commit_sha": "25fed4d8f18f6e142b459f3963b631de79a7e040",
-    "closeout_sha": "e2b8b28e7f0795d9bc7c4287f2ecf6f3261d796b"
+    "closeout_sha": "2a88c790795a6bbd2e50f360f6441d504ded2e37"
   }
 }
