@@ -90,6 +90,38 @@ Všechny podřezy a karty edic jsou v grafu výše; duplicitní textové tabulky
 
 Personal je měřený evidence-bound index. Teams a Enterprise jsou zatím roadmap-only a nemají aktivní procentní měření; veřejný report proto nezobrazuje falešnou nulu.
 
+### MAUNDER: audioknihy a CPU/GPU (automatický stav)
+
+Tento přehled se generuje automaticky ze strojové roadmapy, bez modelového rozhodování. Stav `verified` u starších OP3 řeší jen výslovně uvedený dílčí kontrakt; neznamená hotovou audioknihu, GPU hlas ani schválenou kvalitu přednesu. Zde uvedené nové řezy mají vlastní stav a důkazní brány.
+
+| Úkol | Stav | Požadovaná práce |
+| --- | --- | --- |
+| `AUDN0` (`OP3.10.0`) | `architecture-only` | Fresh audit OP3.1–3.9, současného Piper runtime, text preparation, OP3.6/3.7, Worker/Policy, CPU dostupnosti, všech reálně možných GPU TTS backendů (AMD/NVIDIA) |
+| `AUDN1` (`OP3.10.1`) | `architecture-only` | Typovaný `LongFormSpeechJob`, identita ownera+zdroje, jazyk, zvolený provider, vozový profil, rozsah, formát, resource budget a persistované nastavení; žádná mo |
+| `AUDN2` (`OP3.10.2`) | `architecture-only` | Owner-authorized import/export s bezpečným výběrem souboru a scope. TXT/Markdown first; PDF/DOCX/EPUB jen s legitimním extractor adaptérem. Kontrola významových |
+| `AUDN3` (`OP3.10.3`) | `architecture-only` | Normalizace do mluveného češtiny, oddíly/kapitoly, výslovnostní profily, zlomky, čísla a transparentní přepis. Segmenter bez ztracených/zdvojených vět. |
+| `AUDN4` (`OP3.10.4`) | `architecture-only` | Hlasový picker, explicitní volba Automaticky/CPU/Preferovat GPU/Pouze GPU s per-model dostupností a 20–60s lokální preview přes existující ověřený Piper; audit |
+| `AUDN5` (`OP3.10.5`) | `architecture-only` | Zabezpečené batch synthesis ve vlastní job scope (nikoliv notifikační fronta), skutečné WAV části, explicitní CPU i ověřenou GPU routing policy podle podpory ba |
+| `AUDN6` (`OP3.10.6`) | `architecture-only` | Dlouhé dokumenty, evidence cache včetně backend/device/runtime identity a checkpoint+resume přes existující WorkerJournal/owner workspace, atomický output commi |
+| `AUDN7` (`OP3.10.7`) | `architecture-only` | Lokální spojení se správnými pauzami, konzistentní úroveň a finální MP3/WAV přes prověřený FFmpeg/encoder; `ffprobe`, SHA-256, duration, chybovost a real file r |
+| `AUDN8` (`OP3.10.8`) | `architecture-only` | V hlavním WDUi/Skalda UI kontextové „Vytvořit MP3 / audioknihu“, dialog parametrů s přehlednou volbou Auto/CPU/Preferovat GPU/Pouze GPU, dostupnými zařízeními a |
+| `AUDN9` (`OP3.10.9`) | `architecture-only` | Kvalitativní poslechový gate OP3.7: české názvy, tempo, intonace a návaznosti; oddělit automatickou validitu souboru od lidské srozumitelnosti. |
+| `AUDN10` (`OP3.10.10`) | `architecture-only` | Volitelný další lokální Czech TTS provider, např. Chatterbox pouze po licenčním a gated-download souhlasu, sandboxu, zvláštním benchmarku CPU a kompatibilního G |
+| `AUDN11` (`OP3.10.11`) | `architecture-only` | Formátové presety („Technický výklad“, „Audiokniha“, „Krátké shrnutí“), uložené datově, oprávněný CLI/API/skills entry point, jazyky jen pokud má registry profi |
+| `AUDN12` (`OP3.10.12`) | `architecture-only` | Long-form/offline QA na reálné české nahrávce včetně restartu, privacy audit, volby a skutečné inference CPU/GPU na podporovaných modelech, negative fallback te |
+| `AUDR0` (`OP3.11.0`) | `architecture-only` | Ověřit současné P2.10, PF4.5, OP3.5/3.6/3.7, Worker/cancel, procesové hranice a aktuální CPU/GPU backend probe. \| Source-matched audit bez falešné deklarace TTS |
+| `AUDR1` (`OP3.11.1`) | `architecture-only` | Provider-neutral bounded hardware capability a memory estimate, CPU/GPU/Auto/GPU-only request, typed decision, provenance. \| Provider-free matrix valid/invalid/ |
+| `AUDR2` (`OP3.11.2`) | `architecture-only` | TTS admission do existující P2.10 GPU resource owner bez druhého governoru. \| Simulovaný Ollama+TTS GPU souběh nemůže držet dvě lease, test timeout/cancel/relea |
+| `AUDR3` (`OP3.11.3`) | `architecture-only` | Omezený CPU TTS/encoding worker pool a RAM/VRAM host budget s prioritami ostatních úloh. \| CPU audio + GPU model skutečně probíhají současně bez vyhladovění hla |
+| `AUDR4` (`OP3.11.4`) | `architecture-only` | Čekání, priority, aging/fair queue a host-controlled admission mezi chunky, přes existing Worker lifecycle. \| Deterministické závodní testy, bounded cancellatio |
+| `AUDR5` (`OP3.11.5`) | `architecture-only` | Restart/cancel/cross-backend checkpoint evidence + soukromý izolovaný chunk cache. \| Kill/restart mezi chunky, dokončení přesně jednou a oddělení workspace/tena |
+| `AUDR6` (`OP3.11.6`) | `architecture-only` | Přehled vytížení CPU/GPU/RAM/VRAM, režim Auto/CPU/Prefer GPU/GPU only, status a owner preference přímo ve stávajícím UI. \| UI read-back identické s host admissi |
+| `AUDR7` (`OP3.11.7`) | `architecture-only` | Reálný 15-25min český MP3 dogfood a concurrent workload měření včetně času syntézy i audio QA. \| Jedna ověřená offline MP3; skutečná současná interaktivní infer |
+| `AUDR8` (`OP3.11.8`) | `architecture-only` | Po samostatném reálném GPU TTS backend probe optimalizace GPU speech a případně bezpečná multi-GPU admission. \| Doklad skutečné GPU allocation, memory residency |
+| `AUDR9` (`OP3.11.9`) | `architecture-only` | Zátěžové testy restart, zaplnění VRAM, memory pressure, dlouhá práce, power-saving, tenant isolation, licence a release gates. \| Nezávisle ověřené V0–V6/PG1 rel |
+
+Architektura se nezapočítává jako hotová implementace. Přesné informace o každém řezu a jeho důkazech jsou v [progress.json](progress.json).
+
 ### Zdrojový inventář Jarvise
 
 Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnují i prázdné a komentářové řádky. Velikost je uvedená v desítkových MB (1 MB = 1 000 000 bajtů).
@@ -120,9 +152,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +0 | +14 | +0.00 |
+| Text/source celkem | +0 | +0 | +0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +0 | +14 | +0.00 |
+| Trackovaný strom celkem | +0 | +0 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
