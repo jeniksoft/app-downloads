@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 2347,
-        "physical_lines": 731227,
-        "bytes": 35474276,
-        "megabytes": 35.474276
+        "files": 2349,
+        "physical_lines": 732088,
+        "bytes": 35510950,
+        "megabytes": 35.51095
       },
       {
         "language": "JSON",
-        "files": 550,
-        "physical_lines": 198119,
-        "bytes": 32968693,
-        "megabytes": 32.968693
+        "files": 551,
+        "physical_lines": 198192,
+        "bytes": 32976058,
+        "megabytes": 32.976058
       },
       {
         "language": "Markdown",
-        "files": 1112,
-        "physical_lines": 154862,
-        "bytes": 8599102,
-        "megabytes": 8.599102
+        "files": 1113,
+        "physical_lines": 154903,
+        "bytes": 8601754,
+        "megabytes": 8.601754
       },
       {
         "language": "Python",
-        "files": 764,
-        "physical_lines": 125693,
-        "bytes": 5255651,
-        "megabytes": 5.255651
+        "files": 765,
+        "physical_lines": 125847,
+        "bytes": 5261561,
+        "megabytes": 5.261561
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 5103,
-      "physical_lines": 1256244,
-      "bytes": 91655513,
-      "megabytes": 91.655513
+      "files": 5108,
+      "physical_lines": 1257373,
+      "bytes": 91708114,
+      "megabytes": 91.708114
     },
     "binary_assets": {
       "files": 41,
@@ -144,10 +144,10 @@
       "megabytes": 14.682994
     },
     "tracked_total": {
-      "files": 5144,
-      "physical_lines": 1256244,
-      "bytes": 106338507,
-      "megabytes": 106.338507
+      "files": 5149,
+      "physical_lines": 1257373,
+      "bytes": 106391108,
+      "megabytes": 106.391108
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
@@ -155,8 +155,8 @@
       "source_text": {
         "files": 0,
         "physical_lines": 3,
-        "bytes": 694,
-        "megabytes": 0.000694
+        "bytes": 4874,
+        "megabytes": 0.004874
       },
       "binary_assets": {
         "files": 0,
@@ -167,8 +167,8 @@
       "tracked_total": {
         "files": 0,
         "physical_lines": 3,
-        "bytes": 694,
-        "megabytes": 0.000694
+        "bytes": 4874,
+        "megabytes": 0.004874
       }
     }
   },
@@ -453,14 +453,14 @@
         "chapter_color": "optional",
         "chapter_count": 9,
         "item_count": 132,
-        "completed_item_count": 111,
-        "implemented_item_count": 111,
+        "completed_item_count": 112,
+        "implemented_item_count": 112,
         "verified_item_count": 92,
         "in_progress_item_count": 0,
-        "architecture_item_count": 21,
+        "architecture_item_count": 20,
         "blocked_item_count": 0,
-        "completion_percent": 84.09,
-        "status_percent": 84.09
+        "completion_percent": 84.85,
+        "status_percent": 84.85
       },
       {
         "id": "teams",
@@ -1175,14 +1175,14 @@
         "status_source": "canonical-child-items",
         "is_complete": false,
         "item_count": 38,
-        "completed_item_count": 17,
-        "implemented_item_count": 17,
+        "completed_item_count": 18,
+        "implemented_item_count": 18,
         "verified_item_count": 14,
         "in_progress_item_count": 0,
-        "architecture_item_count": 21,
+        "architecture_item_count": 20,
         "blocked_item_count": 0,
-        "completion_percent": 44.74,
-        "status_percent": 44.74
+        "completion_percent": 47.37,
+        "status_percent": 47.37
       },
       {
         "id": "OP4",
@@ -8997,15 +8997,15 @@
         "group_name_cs": "Volitelné tratě",
         "group_name_en": "Optional tracks",
         "chapter_color": "optional",
-        "description_cs": "Hlasový picker, explicitní volba Automaticky/CPU/Preferovat GPU/Pouze GPU s per-model dostupností a 20–60s lokální preview přes existující ověřený Piper; audit",
-        "description_en": "Hlasový picker, explicitní volba Automaticky/CPU/Preferovat GPU/Pouze GPU s per-model dostupností a 20–60s lokální preview přes existující ověřený Piper; audit",
-        "status": "architecture-only",
-        "status_label_cs": "Architektura",
-        "status_label_en": "Architecture",
+        "description_cs": "Hlasový picker, explicitní volba Automaticky/CPU/Preferovat GPU/Pouze GPU s per-model dostupností a 20–60s lokální preview přes existující ověřený Piper; audit skutečného výstupu a model/revision/backend.",
+        "description_en": "Hlasový picker, explicitní volba Automaticky/CPU/Preferovat GPU/Pouze GPU s per-model dostupností a 20–60s lokální preview přes existující ověřený Piper; audit skutečného výstupu a model/revision/backend.",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno",
+        "status_label_en": "Implemented",
         "status_source": "canonical-roadmap-slice",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap-slice",
         "verify": "V5",
         "is_slice": true
@@ -20532,22 +20532,22 @@
       }
     ],
     "item_count": 756,
-    "completed_item_count": 695,
-    "implemented_item_count": 695,
+    "completed_item_count": 696,
+    "implemented_item_count": 696,
     "verified_item_count": 339,
     "in_progress_item_count": 1,
-    "architecture_item_count": 60,
+    "architecture_item_count": 59,
     "blocked_item_count": 0,
     "status_counts": {
-      "architecture-only": 60,
+      "architecture-only": 59,
       "in-progress": 1,
-      "implemented-unverified": 356,
+      "implemented-unverified": 357,
       "verified": 339,
       "blocked": 0
     },
     "chapter_count": 78,
-    "completion_percent": 91.96,
-    "status_percent": 91.96,
+    "completion_percent": 92.1,
+    "status_percent": 92.1,
     "status_percent_contract": {
       "kind": "canonical-implementation-coverage-compatibility",
       "label_cs": "Implementační pokrytí",
@@ -20568,7 +20568,7 @@
     "available": true,
     "previous_date": "2026-10-11",
     "roadmap_items_delta": 0,
-    "roadmap_completed_delta": 0,
+    "roadmap_completed_delta": 1,
     "roadmap_chapters_delta": 0,
     "verified_evidence_delta": 0,
     "metrics_delta": {
@@ -21894,7 +21894,7 @@
   },
   "history": [
     {
-      "revision": "64424d258423",
+      "revision": "55f1c1567b7e",
       "date": "2026-10-11",
       "metrics": {
         "primary_percent": 37.48,
@@ -21966,40 +21966,6 @@
       "roadmap_delta": null,
       "verified_evidence_count": 148,
       "verified_evidence_delta": null
-    },
-    {
-      "revision": "55f1c1567b7e",
-      "date": "2026-10-11",
-      "metrics": {
-        "primary_percent": 37.48,
-        "implementation_percent": 43.75,
-        "verified_percent": 37.48,
-        "done_percent": 37.48,
-        "release_readiness_percent": 50.0
-      },
-      "delta": {
-        "primary_percent": 0.0,
-        "implementation_percent": 0.0,
-        "verified_percent": 0.0,
-        "done_percent": 0.0,
-        "release_readiness_percent": 0.0
-      },
-      "changed_chapters": [
-        "evidence-only"
-      ],
-      "changed_milestones": [],
-      "roadmap": {
-        "item_count": 731,
-        "completed_item_count": 691,
-        "chapter_count": 78
-      },
-      "roadmap_delta": {
-        "item_count": 0,
-        "completed_item_count": 0,
-        "chapter_count": 0
-      },
-      "verified_evidence_count": 148,
-      "verified_evidence_delta": 0
     },
     {
       "revision": "36070b525d93",
@@ -24016,6 +23982,40 @@
       "roadmap_delta": {
         "item_count": 0,
         "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
+    },
+    {
+      "revision": "02b716153414",
+      "date": "2026-10-11",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 756,
+        "completed_item_count": 696,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
         "chapter_count": 0
       },
       "verified_evidence_count": 155,
