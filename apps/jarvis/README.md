@@ -69,7 +69,7 @@ Personal 1.0.0 má celkový stav **37.48 %**. Hodnota uvnitř kapitoly zůstáv�
 Počty stavů v grafu se nepřekrývají: Implementováno znamená implementované, ale dosud neověřené řezy; Ověřeno se počítá zvlášť. Jejich součet tvoří implementační pokrytí roadmapy, nikoli vážený evidence-bound index Personal 1.0.0.
 Ikona i popisek jsou viditelné přímo v README; po najetí kurzorem tooltip vysvětlí význam a nezaměňuje implementaci za živé ověření.
 
-**Změna od předchozího snapshotu: roadmapa položky +0 · implementováno +1 · ověřené důkazy +0**
+**Změna od předchozího snapshotu: roadmapa položky +0 · implementováno +0 · ověřené důkazy +0**
 
 ![Roadmapa a progress edic Jarvis](visuals/roadmap-editions.svg)
 
@@ -98,7 +98,7 @@ Tento přehled se generuje automaticky ze strojové roadmapy, bez modelového ro
 | `AUDN4` (`OP3.10.4`) | `implemented-unverified` | Hlasový picker, explicitní volba Automaticky/CPU/Preferovat GPU/Pouze GPU s per-model dostupností a 20–60s lokální preview přes existující ověřený Piper; audit sk... |
 | `AUDN5` (`OP3.10.5`) | `implemented-unverified` | Zabezpečené batch synthesis ve vlastní job scope (nikoliv notifikační fronta), skutečné WAV části, explicitní CPU i ověřenou GPU routing policy podle podpory back... |
 | `AUDN6` (`OP3.10.6`) | `implemented-unverified` | Dlouhé dokumenty, evidence cache včetně backend/device/runtime identity, checkpoint+resume, atomický output commit, idempotentní opakování, oprava konkrétního vad... |
-| `AUDN7` (`OP3.10.7`) | `architecture-only` | Lokální spojení se správnými pauzami, konzistentní úroveň a finální MP3/WAV přes prověřený FFmpeg/encoder; `ffprobe`, SHA-256, duration, chybovost a real file r |
+| `AUDN7` (`OP3.10.7`) | `implemented-unverified` | Lokální spojení se správnými pauzami, konzistentní úroveň a finální MP3/WAV přes prověřený FFmpeg/encoder; `ffprobe`, SHA-256, duration, chybovost a real file r |
 | `AUDN8` (`OP3.10.8`) | `architecture-only` | V hlavním WDUi/Skalda UI kontextové „Vytvořit MP3 / audioknihu“, dialog parametrů s přehlednou volbou Auto/CPU/Preferovat GPU/Pouze GPU, dostupnými zařízeními a |
 | `AUDN9` (`OP3.10.9`) | `architecture-only` | Kvalitativní poslechový gate OP3.7: české názvy, tempo, intonace a návaznosti; oddělit automatickou validitu souboru od lidské srozumitelnosti. |
 | `AUDN10` (`OP3.10.10`) | `architecture-only` | Volitelný další lokální Czech TTS provider, např. Chatterbox pouze po licenčním a gated-download souhlasu, sandboxu, zvláštním benchmarku CPU a kompatibilního G |
@@ -123,10 +123,10 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 2 355 | 734 452 | 35.61 |
-| JSON | 553 | 198 427 | 33.00 |
-| Markdown | 1 116 | 155 101 | 8.61 |
-| Python | 768 | 126 070 | 5.27 |
+| C/C++ | 2 357 | 735 251 | 35.65 |
+| JSON | 554 | 198 519 | 33.01 |
+| Markdown | 1 117 | 155 157 | 8.62 |
+| Python | 769 | 126 167 | 5.27 |
 | PowerShell | 73 | 34 638 | 1.81 |
 | Other text | 81 | 5 975 | 0.30 |
 | JSONL | 16 | 2 515 | 6.93 |
@@ -137,9 +137,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **5 122** | **1 260 393** | **91.85** |
+| **Text/source celkem** | **5 127** | **1 261 437** | **91.90** |
 | Binární assety (mimo řádky) | 41 | — | 14.68 |
-| **Trackovaný strom celkem** | **5 163** | **1 260 393** | **106.53** |
+| **Trackovaný strom celkem** | **5 168** | **1 261 437** | **106.58** |
 
 ### Přírůstek od předchozí revize
 
@@ -147,9 +147,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +0 | +3 | +0.01 |
+| Text/source celkem | +0 | +0 | -0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +0 | +3 | +0.01 |
+| Trackovaný strom celkem | +0 | +0 | -0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -219,8 +219,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `11ae65abf1f7` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `4470cdcd6d6a` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `a17c4b6be239` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `de884774dcc1` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `b410fc82362b` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -237,6 +235,8 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `02b716153414` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `d6f992e91604` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `994402b34ddf` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `9c512487818a` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `7e301acbd15f` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
