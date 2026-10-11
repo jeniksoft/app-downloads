@@ -24601,7 +24601,7 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP3.10",
+    "roadmap_slice_id": "OP3.11",
     "source_commit_sha": "8de94904a4c138b58a5db75e84685047de040a8a",
     "closeout_sha": "efee359a3c6e06a1de2c1784bfe69bcd3c62d7ee"
   }
