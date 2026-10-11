@@ -96,7 +96,7 @@ Tento přehled se generuje automaticky ze strojové roadmapy, bez modelového ro
 | `AUDN2` (`OP3.10.2`) | `implemented-unverified` | Owner-authorized import/export s bezpečným výběrem souboru a scope. TXT/Markdown first; PDF/DOCX/EPUB jen s legitimním extractor adaptérem. Kontrola významových |
 | `AUDN3` (`OP3.10.3`) | `implemented-unverified` | Normalizace do mluveného češtiny, oddíly/kapitoly, výslovnostní profily, zlomky, čísla a transparentní přepis. Segmenter bez ztracených/zdvojených vět. |
 | `AUDN4` (`OP3.10.4`) | `implemented-unverified` | Hlasový picker, explicitní volba Automaticky/CPU/Preferovat GPU/Pouze GPU s per-model dostupností a 20–60s lokální preview přes existující ověřený Piper; audit sk... |
-| `AUDN5` (`OP3.10.5`) | `architecture-only` | Zabezpečené batch synthesis ve vlastní job scope (nikoliv notifikační fronta), skutečné WAV části, explicitní CPU i ověřenou GPU routing policy podle podpory ba |
+| `AUDN5` (`OP3.10.5`) | `implemented-unverified` | Zabezpečené batch synthesis ve vlastní job scope (nikoliv notifikační fronta), skutečné WAV části, explicitní CPU i ověřenou GPU routing policy podle podpory back... |
 | `AUDN6` (`OP3.10.6`) | `architecture-only` | Dlouhé dokumenty, evidence cache včetně backend/device/runtime identity a checkpoint+resume přes existující WorkerJournal/owner workspace, atomický output commi |
 | `AUDN7` (`OP3.10.7`) | `architecture-only` | Lokální spojení se správnými pauzami, konzistentní úroveň a finální MP3/WAV přes prověřený FFmpeg/encoder; `ffprobe`, SHA-256, duration, chybovost a real file r |
 | `AUDN8` (`OP3.10.8`) | `architecture-only` | V hlavním WDUi/Skalda UI kontextové „Vytvořit MP3 / audioknihu“, dialog parametrů s přehlednou volbou Auto/CPU/Preferovat GPU/Pouze GPU, dostupnými zařízeními a |
@@ -123,10 +123,10 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 2 349 | 732 088 | 35.51 |
-| JSON | 551 | 198 192 | 32.98 |
-| Markdown | 1 113 | 154 903 | 8.60 |
-| Python | 765 | 125 847 | 5.26 |
+| C/C++ | 2 351 | 733 073 | 35.55 |
+| JSON | 552 | 198 301 | 32.99 |
+| Markdown | 1 114 | 154 981 | 8.61 |
+| Python | 766 | 125 928 | 5.26 |
 | PowerShell | 73 | 34 638 | 1.81 |
 | Other text | 81 | 5 975 | 0.30 |
 | JSONL | 16 | 2 515 | 6.93 |
@@ -137,9 +137,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **5 108** | **1 257 373** | **91.71** |
+| **Text/source celkem** | **5 113** | **1 258 626** | **91.77** |
 | Binární assety (mimo řádky) | 41 | — | 14.68 |
-| **Trackovaný strom celkem** | **5 149** | **1 257 373** | **106.39** |
+| **Trackovaný strom celkem** | **5 154** | **1 258 626** | **106.45** |
 
 ### Přírůstek od předchozí revize
 
@@ -147,9 +147,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +0 | +3 | +0.00 |
+| Text/source celkem | +0 | +3 | +0.01 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +0 | +3 | +0.00 |
+| Trackovaný strom celkem | +0 | +3 | +0.01 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -219,7 +219,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `409da08cce02` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `e066260ced65` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `11ae65abf1f7` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `4470cdcd6d6a` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -237,6 +236,7 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `82c146d86d49` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `957f043c2185` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `02b716153414` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `d6f992e91604` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 

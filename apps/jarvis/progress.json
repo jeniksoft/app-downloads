@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 2349,
-        "physical_lines": 732088,
-        "bytes": 35510950,
-        "megabytes": 35.51095
+        "files": 2351,
+        "physical_lines": 733073,
+        "bytes": 35553791,
+        "megabytes": 35.553791
       },
       {
         "language": "JSON",
-        "files": 551,
-        "physical_lines": 198192,
-        "bytes": 32976058,
-        "megabytes": 32.976058
+        "files": 552,
+        "physical_lines": 198301,
+        "bytes": 32986298,
+        "megabytes": 32.986298
       },
       {
         "language": "Markdown",
-        "files": 1113,
-        "physical_lines": 154903,
-        "bytes": 8601754,
-        "megabytes": 8.601754
+        "files": 1114,
+        "physical_lines": 154981,
+        "bytes": 8606074,
+        "megabytes": 8.606074
       },
       {
         "language": "Python",
-        "files": 765,
-        "physical_lines": 125847,
-        "bytes": 5261561,
-        "megabytes": 5.261561
+        "files": 766,
+        "physical_lines": 125928,
+        "bytes": 5264957,
+        "megabytes": 5.264957
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 5108,
-      "physical_lines": 1257373,
-      "bytes": 91708114,
-      "megabytes": 91.708114
+      "files": 5113,
+      "physical_lines": 1258626,
+      "bytes": 91768911,
+      "megabytes": 91.768911
     },
     "binary_assets": {
       "files": 41,
@@ -144,10 +144,10 @@
       "megabytes": 14.682994
     },
     "tracked_total": {
-      "files": 5149,
-      "physical_lines": 1257373,
-      "bytes": 106391108,
-      "megabytes": 106.391108
+      "files": 5154,
+      "physical_lines": 1258626,
+      "bytes": 106451905,
+      "megabytes": 106.451905
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
@@ -155,8 +155,8 @@
       "source_text": {
         "files": 0,
         "physical_lines": 3,
-        "bytes": 4874,
-        "megabytes": 0.004874
+        "bytes": 5755,
+        "megabytes": 0.005755
       },
       "binary_assets": {
         "files": 0,
@@ -167,8 +167,8 @@
       "tracked_total": {
         "files": 0,
         "physical_lines": 3,
-        "bytes": 4874,
-        "megabytes": 0.004874
+        "bytes": 5755,
+        "megabytes": 0.005755
       }
     }
   },
@@ -453,14 +453,14 @@
         "chapter_color": "optional",
         "chapter_count": 9,
         "item_count": 132,
-        "completed_item_count": 112,
-        "implemented_item_count": 112,
+        "completed_item_count": 113,
+        "implemented_item_count": 113,
         "verified_item_count": 92,
         "in_progress_item_count": 0,
-        "architecture_item_count": 20,
+        "architecture_item_count": 19,
         "blocked_item_count": 0,
-        "completion_percent": 84.85,
-        "status_percent": 84.85
+        "completion_percent": 85.61,
+        "status_percent": 85.61
       },
       {
         "id": "teams",
@@ -1175,14 +1175,14 @@
         "status_source": "canonical-child-items",
         "is_complete": false,
         "item_count": 38,
-        "completed_item_count": 18,
-        "implemented_item_count": 18,
+        "completed_item_count": 19,
+        "implemented_item_count": 19,
         "verified_item_count": 14,
         "in_progress_item_count": 0,
-        "architecture_item_count": 20,
+        "architecture_item_count": 19,
         "blocked_item_count": 0,
-        "completion_percent": 47.37,
-        "status_percent": 47.37
+        "completion_percent": 50.0,
+        "status_percent": 50.0
       },
       {
         "id": "OP4",
@@ -9021,15 +9021,15 @@
         "group_name_cs": "Volitelné tratě",
         "group_name_en": "Optional tracks",
         "chapter_color": "optional",
-        "description_cs": "Zabezpečené batch synthesis ve vlastní job scope (nikoliv notifikační fronta), skutečné WAV části, explicitní CPU i ověřenou GPU routing policy podle podpory ba",
-        "description_en": "Zabezpečené batch synthesis ve vlastní job scope (nikoliv notifikační fronta), skutečné WAV části, explicitní CPU i ověřenou GPU routing policy podle podpory ba",
-        "status": "architecture-only",
-        "status_label_cs": "Architektura",
-        "status_label_en": "Architecture",
+        "description_cs": "Zabezpečené batch synthesis ve vlastní job scope (nikoliv notifikační fronta), skutečné WAV části, explicitní CPU i ověřenou GPU routing policy podle podpory backendu, RAM/VRAM/governor budgets, timeout, cancellation a receipts s identitou runtime.",
+        "description_en": "Zabezpečené batch synthesis ve vlastní job scope (nikoliv notifikační fronta), skutečné WAV části, explicitní CPU i ověřenou GPU routing policy podle podpory backendu, RAM/VRAM/governor budgets, timeout, cancellation a receipts s identitou runtime.",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno",
+        "status_label_en": "Implemented",
         "status_source": "canonical-roadmap-slice",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap-slice",
         "verify": "V5",
         "is_slice": true
@@ -20532,22 +20532,22 @@
       }
     ],
     "item_count": 756,
-    "completed_item_count": 696,
-    "implemented_item_count": 696,
+    "completed_item_count": 697,
+    "implemented_item_count": 697,
     "verified_item_count": 339,
     "in_progress_item_count": 1,
-    "architecture_item_count": 59,
+    "architecture_item_count": 58,
     "blocked_item_count": 0,
     "status_counts": {
-      "architecture-only": 59,
+      "architecture-only": 58,
       "in-progress": 1,
-      "implemented-unverified": 357,
+      "implemented-unverified": 358,
       "verified": 339,
       "blocked": 0
     },
     "chapter_count": 78,
-    "completion_percent": 92.1,
-    "status_percent": 92.1,
+    "completion_percent": 92.23,
+    "status_percent": 92.23,
     "status_percent_contract": {
       "kind": "canonical-implementation-coverage-compatibility",
       "label_cs": "Implementační pokrytí",
@@ -21894,7 +21894,7 @@
   },
   "history": [
     {
-      "revision": "55f1c1567b7e",
+      "revision": "36070b525d93",
       "date": "2026-10-11",
       "metrics": {
         "primary_percent": 37.48,
@@ -21964,44 +21964,8 @@
         "chapter_count": 78
       },
       "roadmap_delta": null,
-      "verified_evidence_count": 148,
-      "verified_evidence_delta": null
-    },
-    {
-      "revision": "36070b525d93",
-      "date": "2026-10-11",
-      "metrics": {
-        "primary_percent": 37.48,
-        "implementation_percent": 43.75,
-        "verified_percent": 37.48,
-        "done_percent": 37.48,
-        "release_readiness_percent": 50.0
-      },
-      "delta": {
-        "primary_percent": 0.0,
-        "implementation_percent": 0.0,
-        "verified_percent": 0.0,
-        "done_percent": 0.0,
-        "release_readiness_percent": 0.0
-      },
-      "changed_chapters": [
-        "qa-dogfood"
-      ],
-      "changed_milestones": [
-        "qa-dogfood/contract-self-test-gates"
-      ],
-      "roadmap": {
-        "item_count": 731,
-        "completed_item_count": 691,
-        "chapter_count": 78
-      },
-      "roadmap_delta": {
-        "item_count": 0,
-        "completed_item_count": 0,
-        "chapter_count": 0
-      },
       "verified_evidence_count": 149,
-      "verified_evidence_delta": 1
+      "verified_evidence_delta": null
     },
     {
       "revision": "492b57a8ee9a",
@@ -24011,6 +23975,40 @@
       "roadmap": {
         "item_count": 756,
         "completed_item_count": 696,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
+    },
+    {
+      "revision": "d6f992e91604",
+      "date": "2026-10-11",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 756,
+        "completed_item_count": 697,
         "chapter_count": 78
       },
       "roadmap_delta": {
