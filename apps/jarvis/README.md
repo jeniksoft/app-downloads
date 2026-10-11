@@ -97,7 +97,7 @@ Tento přehled se generuje automaticky ze strojové roadmapy, bez modelového ro
 | `AUDN3` (`OP3.10.3`) | `implemented-unverified` | Normalizace do mluveného češtiny, oddíly/kapitoly, výslovnostní profily, zlomky, čísla a transparentní přepis. Segmenter bez ztracených/zdvojených vět. |
 | `AUDN4` (`OP3.10.4`) | `implemented-unverified` | Hlasový picker, explicitní volba Automaticky/CPU/Preferovat GPU/Pouze GPU s per-model dostupností a 20–60s lokální preview přes existující ověřený Piper; audit sk... |
 | `AUDN5` (`OP3.10.5`) | `implemented-unverified` | Zabezpečené batch synthesis ve vlastní job scope (nikoliv notifikační fronta), skutečné WAV části, explicitní CPU i ověřenou GPU routing policy podle podpory back... |
-| `AUDN6` (`OP3.10.6`) | `architecture-only` | Dlouhé dokumenty, evidence cache včetně backend/device/runtime identity a checkpoint+resume přes existující WorkerJournal/owner workspace, atomický output commi |
+| `AUDN6` (`OP3.10.6`) | `implemented-unverified` | Dlouhé dokumenty, evidence cache včetně backend/device/runtime identity, checkpoint+resume, atomický output commit, idempotentní opakování, oprava konkrétního vad... |
 | `AUDN7` (`OP3.10.7`) | `architecture-only` | Lokální spojení se správnými pauzami, konzistentní úroveň a finální MP3/WAV přes prověřený FFmpeg/encoder; `ffprobe`, SHA-256, duration, chybovost a real file r |
 | `AUDN8` (`OP3.10.8`) | `architecture-only` | V hlavním WDUi/Skalda UI kontextové „Vytvořit MP3 / audioknihu“, dialog parametrů s přehlednou volbou Auto/CPU/Preferovat GPU/Pouze GPU, dostupnými zařízeními a |
 | `AUDN9` (`OP3.10.9`) | `architecture-only` | Kvalitativní poslechový gate OP3.7: české názvy, tempo, intonace a návaznosti; oddělit automatickou validitu souboru od lidské srozumitelnosti. |
@@ -123,10 +123,10 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 2 351 | 733 073 | 35.55 |
-| JSON | 552 | 198 301 | 32.99 |
-| Markdown | 1 114 | 154 981 | 8.61 |
-| Python | 766 | 125 928 | 5.26 |
+| C/C++ | 2 355 | 734 452 | 35.61 |
+| JSON | 553 | 198 427 | 33.00 |
+| Markdown | 1 116 | 155 101 | 8.61 |
+| Python | 768 | 126 070 | 5.27 |
 | PowerShell | 73 | 34 638 | 1.81 |
 | Other text | 81 | 5 975 | 0.30 |
 | JSONL | 16 | 2 515 | 6.93 |
@@ -137,9 +137,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **5 113** | **1 258 626** | **91.77** |
+| **Text/source celkem** | **5 122** | **1 260 393** | **91.85** |
 | Binární assety (mimo řádky) | 41 | — | 14.68 |
-| **Trackovaný strom celkem** | **5 154** | **1 258 626** | **106.45** |
+| **Trackovaný strom celkem** | **5 163** | **1 260 393** | **106.53** |
 
 ### Přírůstek od předchozí revize
 
@@ -219,7 +219,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `e066260ced65` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `11ae65abf1f7` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `4470cdcd6d6a` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `a17c4b6be239` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -237,6 +236,7 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `957f043c2185` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `02b716153414` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `d6f992e91604` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `994402b34ddf` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
