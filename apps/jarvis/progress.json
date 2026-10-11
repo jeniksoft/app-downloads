@@ -43,23 +43,23 @@
       {
         "language": "JSON",
         "files": 543,
-        "physical_lines": 196877,
-        "bytes": 32686082,
-        "megabytes": 32.686082
+        "physical_lines": 196880,
+        "bytes": 32686276,
+        "megabytes": 32.686276
       },
       {
         "language": "Markdown",
         "files": 1102,
-        "physical_lines": 151173,
-        "bytes": 8317889,
-        "megabytes": 8.317889
+        "physical_lines": 151218,
+        "bytes": 8320479,
+        "megabytes": 8.320479
       },
       {
         "language": "Python",
         "files": 755,
-        "physical_lines": 123705,
-        "bytes": 5149936,
-        "megabytes": 5.149936
+        "physical_lines": 123743,
+        "bytes": 5152346,
+        "megabytes": 5.152346
       },
       {
         "language": "PowerShell",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 5054,
-      "physical_lines": 1243679,
-      "bytes": 90762632,
-      "megabytes": 90.762632
+      "physical_lines": 1243765,
+      "bytes": 90767826,
+      "megabytes": 90.767826
     },
     "binary_assets": {
       "files": 41,
@@ -145,18 +145,18 @@
     },
     "tracked_total": {
       "files": 5095,
-      "physical_lines": 1243679,
-      "bytes": 105445626,
-      "megabytes": 105.445626
+      "physical_lines": 1243765,
+      "bytes": 105450820,
+      "megabytes": 105.45082
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 88,
-        "bytes": 5247,
-        "megabytes": 0.005247
+        "physical_lines": 86,
+        "bytes": 5194,
+        "megabytes": 0.005194
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 88,
-        "bytes": 5247,
-        "megabytes": 0.005247
+        "physical_lines": 86,
+        "bytes": 5194,
+        "megabytes": 0.005194
       }
     }
   },
@@ -439,7 +439,7 @@
         "item_count": 127,
         "completed_item_count": 126,
         "implemented_item_count": 126,
-        "verified_item_count": 68,
+        "verified_item_count": 69,
         "in_progress_item_count": 1,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -1009,7 +1009,7 @@
         "item_count": 20,
         "completed_item_count": 20,
         "implemented_item_count": 20,
-        "verified_item_count": 3,
+        "verified_item_count": 4,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -6335,9 +6335,9 @@
         "chapter_color": "personal",
         "description_cs": "Omezený retrieval index a kontextový balíček",
         "description_en": "bounded retrieval index and context pack",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -19934,15 +19934,15 @@
     "item_count": 731,
     "completed_item_count": 691,
     "implemented_item_count": 691,
-    "verified_item_count": 135,
+    "verified_item_count": 136,
     "in_progress_item_count": 1,
     "architecture_item_count": 39,
     "blocked_item_count": 0,
     "status_counts": {
       "architecture-only": 39,
       "in-progress": 1,
-      "implemented-unverified": 556,
-      "verified": 135,
+      "implemented-unverified": 555,
+      "verified": 136,
       "blocked": 0
     },
     "chapter_count": 78,
@@ -19989,7 +19989,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 337,
+    "incremental_closeout_points_since_full_baseline": 338,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -25931,6 +25931,40 @@
       },
       "verified_evidence_count": 116,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "1557d9fd3e0c",
+      "date": "2026-10-11",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 731,
+        "completed_item_count": 691,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 116,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -25942,8 +25976,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "P5.3",
-    "source_commit_sha": "56db2c7740ae2b951291ccef2def022ceecab2af",
-    "closeout_sha": "56db2c7740ae2b951291ccef2def022ceecab2af"
+    "roadmap_slice_id": "P5.4",
+    "source_commit_sha": "a718192f528387e1f8d91536be5e24525b2848ae",
+    "closeout_sha": "a718192f528387e1f8d91536be5e24525b2848ae"
   }
 }
