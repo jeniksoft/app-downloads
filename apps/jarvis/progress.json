@@ -43,23 +43,23 @@
       {
         "language": "JSON",
         "files": 544,
-        "physical_lines": 197805,
-        "bytes": 32939065,
-        "megabytes": 32.939065
+        "physical_lines": 197814,
+        "bytes": 32942539,
+        "megabytes": 32.942539
       },
       {
         "language": "Markdown",
         "files": 1106,
-        "physical_lines": 154455,
-        "bytes": 8573794,
-        "megabytes": 8.573794
+        "physical_lines": 154489,
+        "bytes": 8575832,
+        "megabytes": 8.575832
       },
       {
         "language": "Python",
         "files": 756,
-        "physical_lines": 125037,
-        "bytes": 5227982,
-        "megabytes": 5.227982
+        "physical_lines": 125080,
+        "bytes": 5230638,
+        "megabytes": 5.230638
       },
       {
         "language": "PowerShell",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 5066,
-      "physical_lines": 1250518,
-      "bytes": 91409663,
-      "megabytes": 91.409663
+      "physical_lines": 1250604,
+      "bytes": 91417831,
+      "megabytes": 91.417831
     },
     "binary_assets": {
       "files": 41,
@@ -145,18 +145,18 @@
     },
     "tracked_total": {
       "files": 5107,
-      "physical_lines": 1250518,
-      "bytes": 106092657,
-      "megabytes": 106.092657
+      "physical_lines": 1250604,
+      "bytes": 106100825,
+      "megabytes": 106.100825
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "physical_lines": 86,
+        "bytes": 8168,
+        "megabytes": 0.008168
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "physical_lines": 86,
+        "bytes": 8168,
+        "megabytes": 0.008168
       }
     }
   },
@@ -455,7 +455,7 @@
         "item_count": 132,
         "completed_item_count": 107,
         "implemented_item_count": 107,
-        "verified_item_count": 82,
+        "verified_item_count": 91,
         "in_progress_item_count": 0,
         "architecture_item_count": 25,
         "blocked_item_count": 0,
@@ -1313,15 +1313,15 @@
         "name_cs": "OP9 — Research tutoring Strata Trace",
         "name_en": "OP9 — Research tutoring Strata Trace",
         "status": "in-progress",
-        "display_status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "display_status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-child-items",
         "is_complete": true,
         "item_count": 9,
         "completed_item_count": 9,
         "implemented_item_count": 9,
-        "verified_item_count": 0,
+        "verified_item_count": 9,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -11063,9 +11063,9 @@
         "chapter_color": "optional",
         "description_cs": "Kanonické tutoring kontrakty",
         "description_en": "canonical tutoring contracts",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -11087,9 +11087,9 @@
         "chapter_color": "optional",
         "description_cs": "Lokální dry-run planner",
         "description_en": "local dry-run planner",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -11111,9 +11111,9 @@
         "chapter_color": "optional",
         "description_cs": "Lokální pilot tutoring baseline",
         "description_en": "local baseline tutoring pilot",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -11135,9 +11135,9 @@
         "chapter_color": "optional",
         "description_cs": "Benchmark tutoring metod",
         "description_en": "tutoring method benchmark",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -11159,9 +11159,9 @@
         "chapter_color": "optional",
         "description_cs": "Privátní runtime adaptace",
         "description_en": "private adaptation runtime",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -11183,9 +11183,9 @@
         "chapter_color": "optional",
         "description_cs": "Chráněná a týmová adaptace",
         "description_en": "protected and team adaptation",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -11207,9 +11207,9 @@
         "chapter_color": "optional",
         "description_cs": "Tréninkový broker Konstelace",
         "description_en": "Konstelace training broker",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -11231,9 +11231,9 @@
         "chapter_color": "optional",
         "description_cs": "Organizační adaptace",
         "description_en": "organization adaptation",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -11255,9 +11255,9 @@
         "chapter_color": "optional",
         "description_cs": "Volitelný distribuovaný trénink a produkční backend Strata Trace",
         "description_en": "optional distributed training and Strata Trace production backend",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -20534,15 +20534,15 @@
     "item_count": 756,
     "completed_item_count": 691,
     "implemented_item_count": 691,
-    "verified_item_count": 324,
+    "verified_item_count": 333,
     "in_progress_item_count": 1,
     "architecture_item_count": 64,
     "blocked_item_count": 0,
     "status_counts": {
       "architecture-only": 64,
       "in-progress": 1,
-      "implemented-unverified": 367,
-      "verified": 324,
+      "implemented-unverified": 358,
+      "verified": 333,
       "blocked": 0
     },
     "chapter_count": 78,
@@ -20589,7 +20589,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 407,
+    "incremental_closeout_points_since_full_baseline": 408,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -28975,6 +28975,40 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "a17c4b6be239",
+      "date": "2026-10-11",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 756,
+        "completed_item_count": 691,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -28986,8 +29020,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP8",
-    "source_commit_sha": "bfa334592d221f9fe4b3d2cf6408cb5a726c4b97",
-    "closeout_sha": "bfa334592d221f9fe4b3d2cf6408cb5a726c4b97"
+    "roadmap_slice_id": "OP9",
+    "source_commit_sha": "836c190ab6acac626bf31da8052f53dc5b9a0c41",
+    "closeout_sha": "836c190ab6acac626bf31da8052f53dc5b9a0c41"
   }
 }
