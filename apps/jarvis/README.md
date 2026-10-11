@@ -29,7 +29,7 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `OP3.11.0` je veřejně spojen se zdrojovým SHA `70ecdbc132fb4366cb89dc4920bca46e2b9d2863` a closeout SHA `a1c0c135309524b4b9041075814a6e99e265acb8`. Stav: **verified**.
+Řez `OP3.11.1` je veřejně spojen se zdrojovým SHA `17142338f034845c0f354dd8b03723b016317a60` a closeout SHA `64a3918614af0907a0315654e721ec15a090745d`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -110,7 +110,7 @@ Tento přehled se generuje automaticky ze strojové roadmapy, bez modelového ro
 | `AUDN11` (`OP3.10.11`) | `implemented-unverified` | Datově uložené formátové presety („Technický výklad“, „Audiokniha“, „Krátké shrnutí“), oprávněný CLI/API/skills entry point a jazyky pouze s přesným profilem z re... |
 | `AUDN12` (`OP3.10.12`) | `implemented-unverified` | Long-form/offline QA na reálné české nahrávce včetně restartu, privacy audit, volby a skutečné inference CPU/GPU na podporovaných modelech, negative fallback test... |
 | `AUDR0` (`OP3.11.0`) | `implemented-unverified` | Source-matched audit současných P2.10, PF4.5, OP3.5/3.6/3.7, Worker/cancel, procesových hranic a CPU/GPU backend matrix bez falešné deklarace TTS GPU. |
-| `AUDR1` (`OP3.11.1`) | `architecture-only` | Provider-neutral bounded hardware capability a memory estimate, CPU/GPU/Auto/GPU-only request, typed decision, provenance. \| Provider-free matrix valid/invalid/ |
+| `AUDR1` (`OP3.11.1`) | `implemented-unverified` | Provider-neutral bounded hardware capability, memory estimate, CPU/GPU/Auto/GPU-only request, typed decision and provenance without false GPU readiness. |
 | `AUDR2` (`OP3.11.2`) | `architecture-only` | TTS admission do existující P2.10 GPU resource owner bez druhého governoru. \| Simulovaný Ollama+TTS GPU souběh nemůže držet dvě lease, test timeout/cancel/relea |
 | `AUDR3` (`OP3.11.3`) | `architecture-only` | Omezený CPU TTS/encoding worker pool a RAM/VRAM host budget s prioritami ostatních úloh. \| CPU audio + GPU model skutečně probíhají současně bez vyhladovění hla |
 | `AUDR4` (`OP3.11.4`) | `architecture-only` | Čekání, priority, aging/fair queue a host-controlled admission mezi chunky, přes existing Worker lifecycle. \| Deterministické závodní testy, bounded cancellatio |
@@ -128,10 +128,10 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 2 369 | 738 930 | 35.05 |
-| JSON | 560 | 198 958 | 33.05 |
-| Markdown | 1 123 | 155 536 | 8.64 |
-| Python | 775 | 126 816 | 5.30 |
+| C/C++ | 2 371 | 739 567 | 35.08 |
+| JSON | 561 | 199 079 | 33.06 |
+| Markdown | 1 124 | 155 602 | 8.64 |
+| Python | 776 | 126 925 | 5.30 |
 | PowerShell | 73 | 34 638 | 1.78 |
 | Other text | 81 | 5 975 | 0.29 |
 | JSONL | 16 | 2 515 | 6.93 |
@@ -142,9 +142,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **5 157** | **1 266 583** | **91.35** |
+| **Text/source celkem** | **5 162** | **1 267 516** | **91.39** |
 | Binární assety (mimo řádky) | 41 | — | 14.68 |
-| **Trackovaný strom celkem** | **5 198** | **1 266 583** | **106.03** |
+| **Trackovaný strom celkem** | **5 203** | **1 267 516** | **106.07** |
 
 ### Přírůstek od předchozí revize
 
@@ -224,7 +224,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `82c146d86d49` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `957f043c2185` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `02b716153414` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `d6f992e91604` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -242,13 +241,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `5cd3a824d93f` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `4e81ead358f4` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `e36b704328b8` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `75b93f0d9c8d` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **63** běhů, closeout režim **63**; odhadovaná úspora je **0** běhů (**0.00 %**).
-Optimalizace běhu: 5 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 6 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
