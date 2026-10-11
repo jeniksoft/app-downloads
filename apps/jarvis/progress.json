@@ -154,9 +154,9 @@
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 80,
-        "bytes": 4747,
-        "megabytes": 0.004747
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 80,
-        "bytes": 4747,
-        "megabytes": 0.004747
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       }
     }
   },
