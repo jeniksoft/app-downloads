@@ -29,7 +29,7 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `OP4.4` je veřejně spojen se zdrojovým SHA `25fed4d8f18f6e142b459f3963b631de79a7e040` a closeout SHA `7003451d16c9f148a403ffbcd0c4b89c0e0af88a`. Stav: **verified**.
+Řez `OP4.5` je veřejně spojen se zdrojovým SHA `25fed4d8f18f6e142b459f3963b631de79a7e040` a closeout SHA `cce0ff004b217c666b39e0d7c6940a76867b3fde`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -97,8 +97,8 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
 | C/C++ | 2 326 | 725 886 | 35.27 |
-| JSON | 543 | 197 115 | 32.77 |
-| Markdown | 1 102 | 153 372 | 8.46 |
+| JSON | 543 | 197 123 | 32.78 |
+| Markdown | 1 102 | 153 380 | 8.46 |
 | Python | 755 | 124 776 | 5.21 |
 | PowerShell | 72 | 34 544 | 1.81 |
 | Other text | 81 | 5 975 | 0.30 |
@@ -110,9 +110,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **5 055** | **1 247 390** | **91.06** |
+| **Text/source celkem** | **5 055** | **1 247 406** | **91.07** |
 | Binární assety (mimo řádky) | 41 | — | 14.68 |
-| **Trackovaný strom celkem** | **5 096** | **1 247 390** | **105.74** |
+| **Trackovaný strom celkem** | **5 096** | **1 247 406** | **105.75** |
 
 ### Přírůstek od předchozí revize
 
@@ -192,7 +192,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `641d752ad7fa` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
 | `c18ccea154b0` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
 | `43b14a8fcd0e` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `79440f5ed012` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
@@ -210,13 +209,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `e02d082db54a` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
 | `64424d258423` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
 | `492b57a8ee9a` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
+| `bd4c9328fe29` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 388 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 389 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
