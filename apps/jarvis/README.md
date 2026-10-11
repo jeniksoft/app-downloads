@@ -29,7 +29,7 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `OP6.1` je veřejně spojen se zdrojovým SHA `aad7dca42b849713b599ac1b98d643540bdca77a` a closeout SHA `aad7dca42b849713b599ac1b98d643540bdca77a`. Stav: **verified**.
+Řez `OP8` je veřejně spojen se zdrojovým SHA `bfa334592d221f9fe4b3d2cf6408cb5a726c4b97` a closeout SHA `bfa334592d221f9fe4b3d2cf6408cb5a726c4b97`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -128,12 +128,12 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 2 330 | 726 878 | 34.58 |
+| C/C++ | 2 330 | 726 878 | 35.31 |
 | JSON | 544 | 197 805 | 32.94 |
 | Markdown | 1 106 | 154 455 | 8.57 |
 | Python | 756 | 125 037 | 5.23 |
-| PowerShell | 73 | 34 638 | 1.78 |
-| Other text | 81 | 5 975 | 0.29 |
+| PowerShell | 73 | 34 638 | 1.81 |
+| Other text | 81 | 5 975 | 0.30 |
 | JSONL | 16 | 2 515 | 6.93 |
 | Plain text | 130 | 1 815 | 0.19 |
 | INI | 8 | 703 | 0.04 |
@@ -142,9 +142,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **5 066** | **1 250 518** | **90.64** |
+| **Text/source celkem** | **5 066** | **1 250 518** | **91.41** |
 | Binární assety (mimo řádky) | 41 | — | 14.68 |
-| **Trackovaný strom celkem** | **5 107** | **1 250 518** | **105.32** |
+| **Trackovaný strom celkem** | **5 107** | **1 250 518** | **106.09** |
 
 ### Přírůstek od předchozí revize
 
@@ -224,7 +224,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `bd4c9328fe29` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
 | `f4c9d8eb13a9` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
 | `7c1a545bbfe1` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
 | `2e454db2f03f` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
@@ -242,13 +241,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `044154da365b` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `976d8d559a70` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `409da08cce02` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `4470cdcd6d6a` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 406 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 407 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
