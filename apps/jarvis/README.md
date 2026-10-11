@@ -130,7 +130,7 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | --- | ---: | ---: | ---: |
 | C/C++ | 2 328 | 726 439 | 34.57 |
 | JSON | 544 | 197 750 | 32.93 |
-| Markdown | 1 105 | 154 215 | 8.56 |
+| Markdown | 1 105 | 154 261 | 8.56 |
 | Python | 755 | 124 823 | 5.21 |
 | PowerShell | 73 | 34 638 | 1.78 |
 | Other text | 81 | 5 975 | 0.29 |
@@ -142,9 +142,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **5 062** | **1 249 570** | **90.58** |
+| **Text/source celkem** | **5 062** | **1 249 616** | **90.59** |
 | Binární assety (mimo řádky) | 41 | — | 14.68 |
-| **Trackovaný strom celkem** | **5 103** | **1 249 570** | **105.27** |
+| **Trackovaný strom celkem** | **5 103** | **1 249 616** | **105.27** |
 
 ### Přírůstek od předchozí revize
 
