@@ -44,22 +44,22 @@
         "language": "JSON",
         "files": 543,
         "physical_lines": 197074,
-        "bytes": 32750507,
-        "megabytes": 32.750507
+        "bytes": 32750696,
+        "megabytes": 32.750696
       },
       {
         "language": "Markdown",
         "files": 1102,
-        "physical_lines": 153274,
-        "bytes": 8447453,
-        "megabytes": 8.447453
+        "physical_lines": 153295,
+        "bytes": 8449370,
+        "megabytes": 8.44937
       },
       {
         "language": "Python",
         "files": 755,
-        "physical_lines": 124743,
-        "bytes": 5209844,
-        "megabytes": 5.209844
+        "physical_lines": 124758,
+        "bytes": 5210511,
+        "megabytes": 5.210511
       },
       {
         "language": "PowerShell",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 5055,
-      "physical_lines": 1247218,
-      "bytes": 91025483,
-      "megabytes": 91.025483
+      "physical_lines": 1247254,
+      "bytes": 91028256,
+      "megabytes": 91.028256
     },
     "binary_assets": {
       "files": 41,
@@ -145,18 +145,18 @@
     },
     "tracked_total": {
       "files": 5096,
-      "physical_lines": 1247218,
-      "bytes": 105708477,
-      "megabytes": 105.708477
+      "physical_lines": 1247254,
+      "bytes": 105711250,
+      "megabytes": 105.71125
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 29,
-        "bytes": 3594,
-        "megabytes": 0.003594
+        "physical_lines": 36,
+        "bytes": 2773,
+        "megabytes": 0.002773
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 29,
-        "bytes": 3594,
-        "megabytes": 0.003594
+        "physical_lines": 36,
+        "bytes": 2773,
+        "megabytes": 0.002773
       }
     }
   },
@@ -455,7 +455,7 @@
         "item_count": 107,
         "completed_item_count": 107,
         "implemented_item_count": 107,
-        "verified_item_count": 21,
+        "verified_item_count": 22,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -1177,7 +1177,7 @@
         "item_count": 13,
         "completed_item_count": 13,
         "implemented_item_count": 13,
-        "verified_item_count": 10,
+        "verified_item_count": 11,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -8831,9 +8831,9 @@
         "chapter_color": "optional",
         "description_cs": "Jazykově nezávislý kontrakt lokálního enrollmentu mluvčího",
         "description_en": "language-independent local speaker enrollment contract",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -19934,15 +19934,15 @@
     "item_count": 731,
     "completed_item_count": 691,
     "implemented_item_count": 691,
-    "verified_item_count": 213,
+    "verified_item_count": 214,
     "in_progress_item_count": 1,
     "architecture_item_count": 39,
     "blocked_item_count": 0,
     "status_counts": {
       "architecture-only": 39,
       "in-progress": 1,
-      "implemented-unverified": 478,
-      "verified": 213,
+      "implemented-unverified": 477,
+      "verified": 214,
       "blocked": 0
     },
     "chapter_count": 78,
@@ -19970,7 +19970,7 @@
     "roadmap_items_delta": 0,
     "roadmap_completed_delta": 0,
     "roadmap_chapters_delta": 0,
-    "verified_evidence_delta": 2,
+    "verified_evidence_delta": 1,
     "metrics_delta": {
       "primary_percent": 0.0,
       "implementation_percent": 0.0,
@@ -19989,7 +19989,7 @@
     "avoided_percent": 80.38,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
-    "incremental_closeout_points_since_full_baseline": 381,
+    "incremental_closeout_points_since_full_baseline": 382,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -20011,7 +20011,7 @@
     "manifest_present": true,
     "milestone_count": 36,
     "verified_milestone_count": 23,
-    "verified_evidence_count": 142,
+    "verified_evidence_count": 143,
     "state_counts": {
       "verified-build": 13,
       "partial": 7,
@@ -21056,8 +21056,8 @@
           "implementation_percent": 100.0,
           "verified_percent": 75.0,
           "done_percent": 75.0,
-          "evidence_count": 29,
-          "verified_evidence_count": 28,
+          "evidence_count": 30,
+          "verified_evidence_count": 29,
           "evidence_kinds": [
             "build",
             "runtime",
@@ -27465,6 +27465,42 @@
       },
       "verified_evidence_count": 142,
       "verified_evidence_delta": 2
+    },
+    {
+      "revision": "0c8f0eb06142",
+      "date": "2026-10-11",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "qa-dogfood"
+      ],
+      "changed_milestones": [
+        "qa-dogfood/contract-self-test-gates"
+      ],
+      "roadmap": {
+        "item_count": 731,
+        "completed_item_count": 691,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 143,
+      "verified_evidence_delta": 1
     }
   ],
   "history_contract": {
@@ -27476,8 +27512,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP3.8.2",
+    "roadmap_slice_id": "OP3.8.4",
     "source_commit_sha": "25fed4d8f18f6e142b459f3963b631de79a7e040",
-    "closeout_sha": "54519a5c333ebbf5e969be97ddbe7f772a687bb6"
+    "closeout_sha": "7befa30b40a6895f60b6aeeb0e04c2e631c61c2b"
   }
 }
