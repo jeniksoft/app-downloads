@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 2361,
-        "physical_lines": 736549,
-        "bytes": 34963141,
-        "megabytes": 34.963141
+        "files": 2363,
+        "physical_lines": 737188,
+        "bytes": 34988196,
+        "megabytes": 34.988196
       },
       {
         "language": "JSON",
-        "files": 556,
-        "physical_lines": 198654,
-        "bytes": 33019261,
-        "megabytes": 33.019261
+        "files": 557,
+        "physical_lines": 198762,
+        "bytes": 33027414,
+        "megabytes": 33.027414
       },
       {
         "language": "Markdown",
-        "files": 1119,
-        "physical_lines": 155271,
-        "bytes": 8622109,
-        "megabytes": 8.622109
+        "files": 1120,
+        "physical_lines": 155340,
+        "bytes": 8625997,
+        "megabytes": 8.625997
       },
       {
         "language": "Python",
-        "files": 771,
-        "physical_lines": 126403,
-        "bytes": 5282440,
-        "megabytes": 5.28244
+        "files": 772,
+        "physical_lines": 126506,
+        "bytes": 5286127,
+        "megabytes": 5.286127
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 5137,
-      "physical_lines": 1263220,
-      "bytes": 91199019,
-      "megabytes": 91.199019
+      "files": 5142,
+      "physical_lines": 1264139,
+      "bytes": 91239802,
+      "megabytes": 91.239802
     },
     "binary_assets": {
       "files": 41,
@@ -144,10 +144,10 @@
       "megabytes": 14.682994
     },
     "tracked_total": {
-      "files": 5178,
-      "physical_lines": 1263220,
-      "bytes": 105882013,
-      "megabytes": 105.882013
+      "files": 5183,
+      "physical_lines": 1264139,
+      "bytes": 105922796,
+      "megabytes": 105.922796
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
@@ -453,14 +453,14 @@
         "chapter_color": "optional",
         "chapter_count": 9,
         "item_count": 132,
-        "completed_item_count": 117,
-        "implemented_item_count": 117,
+        "completed_item_count": 118,
+        "implemented_item_count": 118,
         "verified_item_count": 92,
         "in_progress_item_count": 0,
-        "architecture_item_count": 15,
+        "architecture_item_count": 14,
         "blocked_item_count": 0,
-        "completion_percent": 88.64,
-        "status_percent": 88.64
+        "completion_percent": 89.39,
+        "status_percent": 89.39
       },
       {
         "id": "teams",
@@ -1175,14 +1175,14 @@
         "status_source": "canonical-child-items",
         "is_complete": false,
         "item_count": 38,
-        "completed_item_count": 23,
-        "implemented_item_count": 23,
+        "completed_item_count": 24,
+        "implemented_item_count": 24,
         "verified_item_count": 14,
         "in_progress_item_count": 0,
-        "architecture_item_count": 15,
+        "architecture_item_count": 14,
         "blocked_item_count": 0,
-        "completion_percent": 60.53,
-        "status_percent": 60.53
+        "completion_percent": 63.16,
+        "status_percent": 63.16
       },
       {
         "id": "OP4",
@@ -9141,15 +9141,15 @@
         "group_name_cs": "Volitelné tratě",
         "group_name_en": "Optional tracks",
         "chapter_color": "optional",
-        "description_cs": "Volitelný další lokální Czech TTS provider, např. Chatterbox pouze po licenčním a gated-download souhlasu, sandboxu, zvláštním benchmarku CPU a kompatibilního G",
-        "description_en": "Volitelný další lokální Czech TTS provider, např. Chatterbox pouze po licenčním a gated-download souhlasu, sandboxu, zvláštním benchmarku CPU a kompatibilního G",
-        "status": "architecture-only",
-        "status_label_cs": "Architektura",
-        "status_label_en": "Architecture",
+        "description_cs": "Volitelný další lokální Czech TTS provider, např. Chatterbox pouze po licenčním a gated-download souhlasu, sandboxu, zvláštním benchmarku CPU a kompatibilního GPU; Piper CPU fallback zůstává povinný.",
+        "description_en": "Volitelný další lokální Czech TTS provider, např. Chatterbox pouze po licenčním a gated-download souhlasu, sandboxu, zvláštním benchmarku CPU a kompatibilního GPU; Piper CPU fallback zůstává povinný.",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno",
+        "status_label_en": "Implemented",
         "status_source": "canonical-roadmap-slice",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap-slice",
         "verify": "V5",
         "is_slice": true
@@ -20532,22 +20532,22 @@
       }
     ],
     "item_count": 756,
-    "completed_item_count": 701,
-    "implemented_item_count": 701,
+    "completed_item_count": 702,
+    "implemented_item_count": 702,
     "verified_item_count": 339,
     "in_progress_item_count": 1,
-    "architecture_item_count": 54,
+    "architecture_item_count": 53,
     "blocked_item_count": 0,
     "status_counts": {
-      "architecture-only": 54,
+      "architecture-only": 53,
       "in-progress": 1,
-      "implemented-unverified": 362,
+      "implemented-unverified": 363,
       "verified": 339,
       "blocked": 0
     },
     "chapter_count": 78,
-    "completion_percent": 92.76,
-    "status_percent": 92.76,
+    "completion_percent": 92.89,
+    "status_percent": 92.89,
     "status_percent_contract": {
       "kind": "canonical-implementation-coverage-compatibility",
       "label_cs": "Implementační pokrytí",
@@ -20589,7 +20589,7 @@
     "avoided_runs_estimate": 0,
     "avoided_percent": 0.0,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
-    "incremental_closeout_points_since_full_baseline": 1,
+    "incremental_closeout_points_since_full_baseline": 2,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -24114,6 +24114,40 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "b08ab689c5eb",
+      "date": "2026-10-11",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 756,
+        "completed_item_count": 702,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -24125,8 +24159,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP3.10.9",
-    "source_commit_sha": "296442eee8298992847326e0da46e54a83359bc2",
-    "closeout_sha": "99671f7a6ce4bb1864380ef9ac8ffddb5154c919"
+    "roadmap_slice_id": "OP3.10.10",
+    "source_commit_sha": "2ddec3773522a3ce078c638b01203a77b468bc10",
+    "closeout_sha": "41ca85c76b609af2a8e471254f3836d7e790302a"
   }
 }

@@ -29,7 +29,7 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `OP3.10.9` je veřejně spojen se zdrojovým SHA `296442eee8298992847326e0da46e54a83359bc2` a closeout SHA `99671f7a6ce4bb1864380ef9ac8ffddb5154c919`. Stav: **verified**.
+Řez `OP3.10.10` je veřejně spojen se zdrojovým SHA `2ddec3773522a3ce078c638b01203a77b468bc10` a closeout SHA `41ca85c76b609af2a8e471254f3836d7e790302a`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -106,7 +106,7 @@ Tento přehled se generuje automaticky ze strojové roadmapy, bez modelového ro
 | `AUDN7` (`OP3.10.7`) | `implemented-unverified` | Lokální spojení se správnými pauzami, konzistentní úroveň a finální MP3/WAV přes prověřený FFmpeg/encoder; `ffprobe`, SHA-256, duration, chybovost a real file r |
 | `AUDN8` (`OP3.10.8`) | `implemented-unverified` | V hlavním WDUi/Skalda UI kontextové „Vytvořit MP3 / audioknihu“, dialog parametrů s přehlednou volbou Auto/CPU/Preferovat GPU/Pouze GPU, dostupnými zařízeními a |
 | `AUDN9` (`OP3.10.9`) | `implemented-unverified` | Kvalitativní poslechový gate OP3.7: české názvy, tempo, intonace a návaznosti; oddělit automatickou validitu souboru od lidské srozumitelnosti. |
-| `AUDN10` (`OP3.10.10`) | `architecture-only` | Volitelný další lokální Czech TTS provider, např. Chatterbox pouze po licenčním a gated-download souhlasu, sandboxu, zvláštním benchmarku CPU a kompatibilního G |
+| `AUDN10` (`OP3.10.10`) | `implemented-unverified` | Volitelný další lokální Czech TTS provider, např. Chatterbox pouze po licenčním a gated-download souhlasu, sandboxu, zvláštním benchmarku CPU a kompatibilního GPU... |
 | `AUDN11` (`OP3.10.11`) | `architecture-only` | Formátové presety („Technický výklad“, „Audiokniha“, „Krátké shrnutí“), uložené datově, oprávněný CLI/API/skills entry point, jazyky jen pokud má registry profi |
 | `AUDN12` (`OP3.10.12`) | `architecture-only` | Long-form/offline QA na reálné české nahrávce včetně restartu, privacy audit, volby a skutečné inference CPU/GPU na podporovaných modelech, negative fallback te |
 | `AUDR0` (`OP3.11.0`) | `architecture-only` | Ověřit současné P2.10, PF4.5, OP3.5/3.6/3.7, Worker/cancel, procesové hranice a aktuální CPU/GPU backend probe. \| Source-matched audit bez falešné deklarace TTS |
@@ -128,10 +128,10 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 2 361 | 736 549 | 34.96 |
-| JSON | 556 | 198 654 | 33.02 |
-| Markdown | 1 119 | 155 271 | 8.62 |
-| Python | 771 | 126 403 | 5.28 |
+| C/C++ | 2 363 | 737 188 | 34.99 |
+| JSON | 557 | 198 762 | 33.03 |
+| Markdown | 1 120 | 155 340 | 8.63 |
+| Python | 772 | 126 506 | 5.29 |
 | PowerShell | 73 | 34 638 | 1.78 |
 | Other text | 81 | 5 975 | 0.29 |
 | JSONL | 16 | 2 515 | 6.93 |
@@ -142,9 +142,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **5 137** | **1 263 220** | **91.20** |
+| **Text/source celkem** | **5 142** | **1 264 139** | **91.24** |
 | Binární assety (mimo řádky) | 41 | — | 14.68 |
-| **Trackovaný strom celkem** | **5 178** | **1 263 220** | **105.88** |
+| **Trackovaný strom celkem** | **5 183** | **1 264 139** | **105.92** |
 
 ### Přírůstek od předchozí revize
 
@@ -224,7 +224,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `e09a053c0346` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `44f1be314295` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `7e775c53a9f1` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `2ccefb3bd755` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -242,13 +241,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `df42ef675f89` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `74a2b2617684` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `a1472f2845a3` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `b08ab689c5eb` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **63** běhů, closeout režim **63**; odhadovaná úspora je **0** běhů (**0.00 %**).
-Optimalizace běhu: 1 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 2 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
