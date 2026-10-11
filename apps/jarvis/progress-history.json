@@ -6554,13 +6554,49 @@
       },
       "verified_evidence_count": 152,
       "verified_evidence_delta": 1
+    },
+    {
+      "revision": "2e454db2f03f",
+      "date": "2026-10-11",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "qa-dogfood"
+      ],
+      "changed_milestones": [
+        "qa-dogfood/contract-self-test-gates"
+      ],
+      "roadmap": {
+        "item_count": 731,
+        "completed_item_count": 691,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 153,
+      "verified_evidence_delta": 1
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP4.6.1",
-    "source_commit_sha": "25fed4d8f18f6e142b459f3963b631de79a7e040",
-    "closeout_sha": "36da6781c0905fadf19808ae954e53181f7d40e2"
+    "roadmap_slice_id": "OP4.6.2",
+    "source_commit_sha": "d130595c1345e43f6c7b354fc3660abc8d1d47b3",
+    "closeout_sha": "3e6c7a7dec8e72d5df6499fd02837f093acec7ac"
   }
 }

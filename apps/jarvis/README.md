@@ -29,7 +29,7 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `OP4.6.1` je veřejně spojen se zdrojovým SHA `25fed4d8f18f6e142b459f3963b631de79a7e040` a closeout SHA `36da6781c0905fadf19808ae954e53181f7d40e2`. Stav: **verified**.
+Řez `OP4.6.2` je veřejně spojen se zdrojovým SHA `d130595c1345e43f6c7b354fc3660abc8d1d47b3` a closeout SHA `3e6c7a7dec8e72d5df6499fd02837f093acec7ac`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -97,9 +97,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
 | C/C++ | 2 326 | 725 886 | 35.27 |
-| JSON | 543 | 197 139 | 32.79 |
-| Markdown | 1 102 | 153 421 | 8.47 |
-| Python | 755 | 124 780 | 5.21 |
+| JSON | 543 | 197 147 | 32.79 |
+| Markdown | 1 102 | 153 451 | 8.47 |
+| Python | 755 | 124 779 | 5.21 |
 | PowerShell | 72 | 34 544 | 1.81 |
 | Other text | 81 | 5 975 | 0.30 |
 | JSONL | 16 | 2 515 | 6.93 |
@@ -110,9 +110,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **5 055** | **1 247 467** | **91.08** |
+| **Text/source celkem** | **5 055** | **1 247 504** | **91.09** |
 | Binární assety (mimo řádky) | 41 | — | 14.68 |
-| **Trackovaný strom celkem** | **5 096** | **1 247 467** | **105.77** |
+| **Trackovaný strom celkem** | **5 096** | **1 247 504** | **105.77** |
 
 ### Přírůstek od předchozí revize
 
@@ -192,7 +192,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `79440f5ed012` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
 | `65d6c69f491e` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
 | `72867f496884` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
 | `bcf054ec62c6` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
@@ -210,13 +209,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `bd4c9328fe29` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
 | `f4c9d8eb13a9` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
 | `7c1a545bbfe1` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
+| `2e454db2f03f` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | qa-dogfood | 1: qa-dogfood/contract-self-test-gates |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **790** běhů, closeout režim **155**; odhadovaná úspora je **635** běhů (**80.38 %**).
-Optimalizace běhu: 391 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 392 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
