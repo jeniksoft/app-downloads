@@ -43,23 +43,23 @@
       {
         "language": "JSON",
         "files": 580,
-        "physical_lines": 200769,
-        "bytes": 33212315,
-        "megabytes": 33.212315
+        "physical_lines": 200771,
+        "bytes": 33212534,
+        "megabytes": 33.212534
       },
       {
         "language": "Markdown",
         "files": 1143,
-        "physical_lines": 158022,
-        "bytes": 8783786,
-        "megabytes": 8.783786
+        "physical_lines": 158053,
+        "bytes": 8785822,
+        "megabytes": 8.785822
       },
       {
         "language": "Python",
         "files": 795,
         "physical_lines": 128858,
-        "bytes": 5375167,
-        "megabytes": 5.375167
+        "bytes": 5375027,
+        "megabytes": 5.375027
       },
       {
         "language": "PowerShell",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 5257,
-      "physical_lines": 1286916,
-      "bytes": 92294118,
-      "megabytes": 92.294118
+      "physical_lines": 1286949,
+      "bytes": 92296233,
+      "megabytes": 92.296233
     },
     "binary_assets": {
       "files": 41,
@@ -145,18 +145,18 @@
     },
     "tracked_total": {
       "files": 5298,
-      "physical_lines": 1286916,
-      "bytes": 106977112,
-      "megabytes": 106.977112
+      "physical_lines": 1286949,
+      "bytes": 106979227,
+      "megabytes": 106.979227
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 53,
-        "bytes": 4763,
-        "megabytes": 0.004763
+        "physical_lines": 33,
+        "bytes": 2115,
+        "megabytes": 0.002115
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 53,
-        "bytes": 4763,
-        "megabytes": 0.004763
+        "physical_lines": 33,
+        "bytes": 2115,
+        "megabytes": 0.002115
       }
     }
   },
@@ -503,7 +503,7 @@
         "item_count": 253,
         "completed_item_count": 230,
         "implemented_item_count": 230,
-        "verified_item_count": 97,
+        "verified_item_count": 107,
         "in_progress_item_count": 0,
         "architecture_item_count": 23,
         "blocked_item_count": 0,
@@ -2057,15 +2057,15 @@
         "name_cs": "LM4 — Significance Evaluator and Attention Scheduler",
         "name_en": "LM4 — Significance Evaluator and Attention Scheduler",
         "status": "in-progress",
-        "display_status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "display_status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-child-items",
         "is_complete": true,
         "item_count": 10,
         "completed_item_count": 10,
         "implemented_item_count": 10,
-        "verified_item_count": 0,
+        "verified_item_count": 10,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -16823,9 +16823,9 @@
         "chapter_color": "optional",
         "description_cs": "significance input schema",
         "description_en": "significance input schema",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -16847,9 +16847,9 @@
         "chapter_color": "optional",
         "description_cs": "deterministic severity/urgency/confidence/freshness gates",
         "description_en": "deterministic severity/urgency/confidence/freshness gates",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -16871,9 +16871,9 @@
         "chapter_color": "optional",
         "description_cs": "owner/goal relevance scoring hook",
         "description_en": "owner/goal relevance scoring hook",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -16895,9 +16895,9 @@
         "chapter_color": "optional",
         "description_cs": "attention queue with bounded priority",
         "description_en": "attention queue with bounded priority",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -16919,9 +16919,9 @@
         "chapter_color": "optional",
         "description_cs": "preemption eligibility classifier",
         "description_en": "preemption eligibility classifier",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -16943,9 +16943,9 @@
         "chapter_color": "optional",
         "description_cs": "checkpoint-before-preempt integration",
         "description_en": "checkpoint-before-preempt integration",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -16967,9 +16967,9 @@
         "chapter_color": "optional",
         "description_cs": "resume-after-preempt integration",
         "description_en": "resume-after-preempt integration",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -16991,9 +16991,9 @@
         "chapter_color": "optional",
         "description_cs": "starvation prevention / aging",
         "description_en": "starvation prevention / aging",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -17015,9 +17015,9 @@
         "chapter_color": "optional",
         "description_cs": "quiet-hours/notification separation from execution priority",
         "description_en": "quiet-hours/notification separation from execution priority",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -17039,9 +17039,9 @@
         "chapter_color": "optional",
         "description_cs": "critical-situation fixture without authority bypass",
         "description_en": "critical-situation fixture without authority bypass",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -20534,15 +20534,15 @@
     "item_count": 756,
     "completed_item_count": 732,
     "implemented_item_count": 732,
-    "verified_item_count": 432,
+    "verified_item_count": 442,
     "in_progress_item_count": 1,
     "architecture_item_count": 23,
     "blocked_item_count": 0,
     "status_counts": {
       "architecture-only": 23,
       "in-progress": 1,
-      "implemented-unverified": 300,
-      "verified": 432,
+      "implemented-unverified": 290,
+      "verified": 442,
       "blocked": 0
     },
     "chapter_count": 78,
@@ -20589,7 +20589,7 @@
     "avoided_runs_estimate": 0,
     "avoided_percent": 0.0,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
-    "incremental_closeout_points_since_full_baseline": 44,
+    "incremental_closeout_points_since_full_baseline": 45,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -25576,6 +25576,40 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "0161796d317c",
+      "date": "2026-10-12",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 756,
+        "completed_item_count": 732,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -25587,8 +25621,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "B1-B3",
+    "roadmap_slice_id": "LM4",
     "source_commit_sha": "082f00a08190d78df65652dc84f0ecc07801cfa8",
-    "closeout_sha": "119288da9168b7266db104c0abc2d3ad9a35c8fa"
+    "closeout_sha": "8a0f4f24452db5c09cb739555884b3540dcdc9ac"
   }
 }
