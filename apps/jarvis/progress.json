@@ -43,16 +43,16 @@
       {
         "language": "JSON",
         "files": 580,
-        "physical_lines": 200749,
-        "bytes": 33198185,
-        "megabytes": 33.198185
+        "physical_lines": 200756,
+        "bytes": 33200405,
+        "megabytes": 33.200405
       },
       {
         "language": "Markdown",
         "files": 1143,
-        "physical_lines": 157558,
-        "bytes": 8758694,
-        "megabytes": 8.758694
+        "physical_lines": 157605,
+        "bytes": 8761393,
+        "megabytes": 8.761393
       },
       {
         "language": "Python",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 5257,
-      "physical_lines": 1286387,
-      "bytes": 92253606,
-      "megabytes": 92.253606
+      "physical_lines": 1286441,
+      "bytes": 92258525,
+      "megabytes": 92.258525
     },
     "binary_assets": {
       "files": 41,
@@ -145,18 +145,18 @@
     },
     "tracked_total": {
       "files": 5298,
-      "physical_lines": 1286387,
-      "bytes": 106936600,
-      "megabytes": 106.9366
+      "physical_lines": 1286441,
+      "bytes": 106941519,
+      "megabytes": 106.941519
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 25,
-        "bytes": 2489,
-        "megabytes": 0.002489
+        "physical_lines": 0,
+        "bytes": -7,
+        "megabytes": -7e-06
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 25,
-        "bytes": 2489,
-        "megabytes": 0.002489
+        "physical_lines": 0,
+        "bytes": -7,
+        "megabytes": -7e-06
       }
     }
   },
@@ -455,7 +455,7 @@
         "item_count": 132,
         "completed_item_count": 132,
         "implemented_item_count": 132,
-        "verified_item_count": 93,
+        "verified_item_count": 100,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -1273,7 +1273,7 @@
         "item_count": 10,
         "completed_item_count": 10,
         "implemented_item_count": 10,
-        "verified_item_count": 1,
+        "verified_item_count": 8,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -10631,9 +10631,9 @@
         "chapter_color": "optional",
         "description_cs": "Základ typovaného protokolu",
         "description_en": "typed protocol foundation",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -10655,9 +10655,9 @@
         "chapter_color": "optional",
         "description_cs": "Prověření identity a izolace",
         "description_en": "identity and isolation feasibility",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -10679,9 +10679,9 @@
         "chapter_color": "optional",
         "description_cs": "Policy broker",
         "description_en": "policy broker",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -10703,9 +10703,9 @@
         "chapter_color": "optional",
         "description_cs": "Harness sémantických akcí",
         "description_en": "semantic action harness",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -10727,9 +10727,9 @@
         "chapter_color": "optional",
         "description_cs": "Izolovaný fallback fyzického vstupu",
         "description_en": "isolated physical-input fallback",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -10751,9 +10751,9 @@
         "chapter_color": "optional",
         "description_cs": "Adaptér Codexu",
         "description_en": "Codex adapter",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -10775,9 +10775,9 @@
         "chapter_color": "optional",
         "description_cs": "Adaptér Jarvise",
         "description_en": "Jarvis adapter",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -20534,15 +20534,15 @@
     "item_count": 756,
     "completed_item_count": 732,
     "implemented_item_count": 732,
-    "verified_item_count": 345,
+    "verified_item_count": 352,
     "in_progress_item_count": 1,
     "architecture_item_count": 23,
     "blocked_item_count": 0,
     "status_counts": {
       "architecture-only": 23,
       "in-progress": 1,
-      "implemented-unverified": 387,
-      "verified": 345,
+      "implemented-unverified": 380,
+      "verified": 352,
       "blocked": 0
     },
     "chapter_count": 78,
@@ -20589,7 +20589,7 @@
     "avoided_runs_estimate": 0,
     "avoided_percent": 0.0,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
-    "incremental_closeout_points_since_full_baseline": 32,
+    "incremental_closeout_points_since_full_baseline": 33,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -25168,6 +25168,40 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "025a67a9b504",
+      "date": "2026-10-12",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 756,
+        "completed_item_count": 732,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -25179,8 +25213,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP4.10",
-    "source_commit_sha": "082f00a08190d78df65652dc84f0ecc07801cfa8",
-    "closeout_sha": "996adc580470ace0ef1091d20577a917e6e59923"
+    "roadmap_slice_id": "OP7.1-OP7.7",
+    "source_commit_sha": "798e11adb99a66f7d4708c7923dcebc65d000fcb",
+    "closeout_sha": "a5f472161d9f5f8722526b4f35a6689f674b3512"
   }
 }
