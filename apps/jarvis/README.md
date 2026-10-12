@@ -156,9 +156,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +3 | +806 | +0.07 |
+| Text/source celkem | +0 | +0 | +0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +3 | +806 | +0.07 |
+| Trackovaný strom celkem | +0 | +0 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -253,7 +253,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ implementace roadmapy | Δ ověřené řezy | Δ implementované řezy včetně ověřených | Δ rozpracované řezy | Δ architektura | Změněné řezy |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| `248caa34a542` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
 | `0161796d317c` | 2026-10-12 | +0.00 | +1.33 | +0.00 | +0.00 | +0.00 | 10: LM4.1, LM4.10, LM4.2, LM4.3, LM4.4, LM4.5… |
 | `eb648357dec3` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
 | `e32710ef81ef` | 2026-10-12 | +0.00 | -1.33 | +0.00 | +0.00 | +0.00 | 10: LM4.1, LM4.10, LM4.2, LM4.3, LM4.4, LM4.5… |
@@ -271,12 +270,13 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `e37ec33baa0c` | 2026-10-12 | +0.01 | +4.52 | +0.01 | +0.00 | -0.01 | 36: B4, B5, B6, B7, ECM10, ECM11… |
 | `2efcd695d904` | 2026-10-12 | +0.00 | +0.40 | +0.00 | +0.00 | +0.00 | 3: ASA10, ASA11, ASA9 |
 | `0c00d804058d` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
+| `57fdceb3f5bf` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
-Historický baseline: starý režim by spustil **64** běhů, closeout režim **63**; odhadovaná úspora je **1** běhů (**1.56 %**).
+Historický baseline: starý režim by spustil **65** běhů, closeout režim **64**; odhadovaná úspora je **1** běhů (**1.54 %**).
 Optimalizace běhu: 0 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
