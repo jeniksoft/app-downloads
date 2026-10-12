@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 2389,
-        "physical_lines": 745035,
-        "bytes": 35281897,
-        "megabytes": 35.281897
+        "files": 2391,
+        "physical_lines": 745954,
+        "bytes": 35318170,
+        "megabytes": 35.31817
       },
       {
         "language": "JSON",
-        "files": 570,
-        "physical_lines": 199482,
-        "bytes": 33114528,
-        "megabytes": 33.114528
+        "files": 571,
+        "physical_lines": 199553,
+        "bytes": 33122550,
+        "megabytes": 33.12255
       },
       {
         "language": "Markdown",
-        "files": 1133,
-        "physical_lines": 156153,
-        "bytes": 8672930,
-        "megabytes": 8.67293
+        "files": 1134,
+        "physical_lines": 156250,
+        "bytes": 8680398,
+        "megabytes": 8.680398
       },
       {
         "language": "Python",
-        "files": 785,
-        "physical_lines": 127781,
-        "bytes": 5333630,
-        "megabytes": 5.33363
+        "files": 786,
+        "physical_lines": 127875,
+        "bytes": 5336818,
+        "megabytes": 5.336818
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 5207,
-      "physical_lines": 1274794,
-      "bytes": 91715053,
-      "megabytes": 91.715053
+      "files": 5212,
+      "physical_lines": 1275975,
+      "bytes": 91770004,
+      "megabytes": 91.770004
     },
     "binary_assets": {
       "files": 41,
@@ -144,19 +144,19 @@
       "megabytes": 14.682994
     },
     "tracked_total": {
-      "files": 5248,
-      "physical_lines": 1274794,
-      "bytes": 106398047,
-      "megabytes": 106.398047
+      "files": 5253,
+      "physical_lines": 1275975,
+      "bytes": 106452998,
+      "megabytes": 106.452998
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 1,
-        "physical_lines": 88,
-        "bytes": 12192,
-        "megabytes": 0.012192
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       },
       "binary_assets": {
         "files": 0,
@@ -165,14 +165,14 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 1,
-        "physical_lines": 88,
-        "bytes": 12192,
-        "megabytes": 0.012192
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       }
     }
   },
-  "updated_at": "2026-10-11",
+  "updated_at": "2026-10-12",
   "overall_percent": 37.48,
   "primary_percent": 37.48,
   "implementation_complete_percent": 43.75,
@@ -501,14 +501,14 @@
         "chapter_color": "optional",
         "chapter_count": 24,
         "item_count": 253,
-        "completed_item_count": 214,
-        "implemented_item_count": 214,
+        "completed_item_count": 221,
+        "implemented_item_count": 221,
         "verified_item_count": 35,
         "in_progress_item_count": 0,
-        "architecture_item_count": 39,
+        "architecture_item_count": 32,
         "blocked_item_count": 0,
-        "completion_percent": 84.58,
-        "status_percent": 84.58
+        "completion_percent": 87.35,
+        "status_percent": 87.35
       }
     ],
     "chapters": [
@@ -2296,21 +2296,21 @@
         "chapter_color": "optional",
         "name_cs": "MDOC — Complete versioned documentation available to models",
         "name_en": "MDOC — Complete versioned documentation available to models",
-        "status": "architecture-only",
-        "display_status": "architecture-only",
-        "status_label_cs": "Architektura",
-        "status_label_en": "Architecture",
+        "status": "implemented-unverified",
+        "display_status": "implemented-unverified",
+        "status_label_cs": "Implementováno",
+        "status_label_en": "Implemented",
         "status_source": "canonical-child-items",
-        "is_complete": false,
+        "is_complete": true,
         "item_count": 7,
-        "completed_item_count": 0,
-        "implemented_item_count": 0,
+        "completed_item_count": 7,
+        "implemented_item_count": 7,
         "verified_item_count": 0,
         "in_progress_item_count": 0,
-        "architecture_item_count": 7,
+        "architecture_item_count": 0,
         "blocked_item_count": 0,
-        "completion_percent": 0.0,
-        "status_percent": 0.0
+        "completion_percent": 100.0,
+        "status_percent": 100.0
       },
       {
         "id": "MUI",
@@ -19607,13 +19607,13 @@
         "chapter_color": "optional",
         "description_cs": "Inventář dokumentace a autorit, včetně všech povolených zdrojů, úplnosti a hranic přístupu",
         "description_en": "Documentation source and authority inventory",
-        "status": "architecture-only",
-        "status_label_cs": "Architektura",
-        "status_label_en": "Architecture",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno",
+        "status_label_en": "Implemented",
         "status_source": "canonical-roadmap-slice",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap-slice",
         "verify": "V0",
         "is_slice": true
@@ -19631,13 +19631,13 @@
         "chapter_color": "optional",
         "description_cs": "Kanonický manifest všech dokumentů, verzí, revizí, hashů, oprávnění a jazyků",
         "description_en": "Canonical content manifest and integrity binding",
-        "status": "architecture-only",
-        "status_label_cs": "Architektura",
-        "status_label_en": "Architecture",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno",
+        "status_label_en": "Implemented",
         "status_source": "canonical-roadmap-slice",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap-slice",
         "verify": "V2",
         "is_slice": true
@@ -19655,13 +19655,13 @@
         "chapter_color": "optional",
         "description_cs": "Kompletní inkrementální ingest dokumentace, schémat, manuálů, modulů, symbolů a odkazů",
         "description_en": "Complete ingestion and reference resolver",
-        "status": "architecture-only",
-        "status_label_cs": "Architektura",
-        "status_label_en": "Architecture",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno",
+        "status_label_en": "Implemented",
         "status_source": "canonical-roadmap-slice",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap-slice",
         "verify": "V3",
         "is_slice": true
@@ -19679,13 +19679,13 @@
         "chapter_color": "optional",
         "description_cs": "Deterministické vyhledání exact ID/cesty a sémantické hledání se zdrojovými citacemi",
         "description_en": "Deterministic exact and semantic document retrieval",
-        "status": "architecture-only",
-        "status_label_cs": "Architektura",
-        "status_label_en": "Architecture",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno",
+        "status_label_en": "Implemented",
         "status_source": "canonical-roadmap-slice",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap-slice",
         "verify": "V4",
         "is_slice": true
@@ -19703,13 +19703,13 @@
         "chapter_color": "optional",
         "description_cs": "Modelové read-only nástroje list/search/open/follow/explain s verzovanými receipts a omezeným kontextem",
         "description_en": "Read-only model documentation tools",
-        "status": "architecture-only",
-        "status_label_cs": "Architektura",
-        "status_label_en": "Architecture",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno",
+        "status_label_en": "Implemented",
         "status_source": "canonical-roadmap-slice",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap-slice",
         "verify": "V4",
         "is_slice": true
@@ -19727,13 +19727,13 @@
         "chapter_color": "optional",
         "description_cs": "Izolace owner/team/Constellation, redakce tajemství, prompt injection, stale-revision gate",
         "description_en": "Permission isolation and untrusted-document defenses",
-        "status": "architecture-only",
-        "status_label_cs": "Architektura",
-        "status_label_en": "Architecture",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno",
+        "status_label_en": "Implemented",
         "status_source": "canonical-roadmap-slice",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap-slice",
         "verify": "V5",
         "is_slice": true
@@ -19751,13 +19751,13 @@
         "chapter_color": "optional",
         "description_cs": "Synchronizace s instalovanou verzí, moduly a revizemi; nezávislý test úplnosti a živé acceptance",
         "description_en": "Update consistency and live corpus-completeness acceptance",
-        "status": "architecture-only",
-        "status_label_cs": "Architektura",
-        "status_label_en": "Architecture",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno",
+        "status_label_en": "Implemented",
         "status_source": "canonical-roadmap-slice",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap-slice",
         "verify": "V6",
         "is_slice": true
@@ -20532,22 +20532,22 @@
       }
     ],
     "item_count": 756,
-    "completed_item_count": 716,
-    "implemented_item_count": 716,
+    "completed_item_count": 723,
+    "implemented_item_count": 723,
     "verified_item_count": 339,
     "in_progress_item_count": 1,
-    "architecture_item_count": 39,
+    "architecture_item_count": 32,
     "blocked_item_count": 0,
     "status_counts": {
-      "architecture-only": 39,
+      "architecture-only": 32,
       "in-progress": 1,
-      "implemented-unverified": 377,
+      "implemented-unverified": 384,
       "verified": 339,
       "blocked": 0
     },
     "chapter_count": 78,
-    "completion_percent": 94.74,
-    "status_percent": 94.74,
+    "completion_percent": 95.67,
+    "status_percent": 95.67,
     "status_percent_contract": {
       "kind": "canonical-implementation-coverage-compatibility",
       "label_cs": "Implementační pokrytí",
@@ -20568,7 +20568,7 @@
     "available": true,
     "previous_date": "2026-10-12",
     "roadmap_items_delta": 0,
-    "roadmap_completed_delta": 2,
+    "roadmap_completed_delta": 7,
     "roadmap_chapters_delta": 0,
     "verified_evidence_delta": 0,
     "metrics_delta": {
@@ -20589,7 +20589,7 @@
     "avoided_runs_estimate": 0,
     "avoided_percent": 0.0,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
-    "incremental_closeout_points_since_full_baseline": 15,
+    "incremental_closeout_points_since_full_baseline": 16,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -24590,6 +24590,40 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "a83482cf367c",
+      "date": "2026-10-12",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 756,
+        "completed_item_count": 723,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 7,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -24601,8 +24635,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "OP3.11",
-    "source_commit_sha": "8de94904a4c138b58a5db75e84685047de040a8a",
-    "closeout_sha": "efee359a3c6e06a1de2c1784bfe69bcd3c62d7ee"
+    "roadmap_slice_id": "MDOC0",
+    "source_commit_sha": "1b36f5e6b44ebf3d5037c1d7ea3f47330cd49e66",
+    "closeout_sha": "3a84712b47825311a9a8c9ae15815339822825ad"
   }
 }
