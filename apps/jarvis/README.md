@@ -29,7 +29,7 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `MDOC0` je veřejně spojen se zdrojovým SHA `1b36f5e6b44ebf3d5037c1d7ea3f47330cd49e66` a closeout SHA `3a84712b47825311a9a8c9ae15815339822825ad`. Stav: **verified**.
+Řez `MDOC6` je veřejně spojen se zdrojovým SHA `1b36f5e6b44ebf3d5037c1d7ea3f47330cd49e66` a closeout SHA `3a84712b47825311a9a8c9ae15815339822825ad`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
