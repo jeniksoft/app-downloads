@@ -28,7 +28,9 @@ Registruje zejména:
   `C:\Tools\WiXToolset`;
 - .NET Framework SDK nástroje (`ildasm`, `gacutil`, `resgen`, `sn` a další),
   AMD Ryzen Master CLI, 7-Zip z registrované instalace, VeraCrypt CLI,
-  ZeroTier CLI a Git Bash (`bash`/`sh`);
+  ZeroTier CLI a Git Bash (`bash`/`sh`); dále nativní CLI kořen Git for
+  Windows (`curl`, OpenSSL, `pdftotext`, `docx2txt`, `xmlwf`, Scalar a další
+  pomocné nástroje), pokud je instalace obsahuje;
 - pomocné JDK příkazy (`jconsole`, `jpackage`, `jwebserver`, `keytool`) a
   Ollama runtime helper `llama-server`, pokud jsou součástí nalezené instalace;
 - GitHub CLI z WinGetu nebo jako přesný fallback z instalace Codex Task Boardu;

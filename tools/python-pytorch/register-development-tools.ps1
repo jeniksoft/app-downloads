@@ -225,6 +225,12 @@ function Add-AdditionalDeveloperToolDirectories {
         if (Test-Path -LiteralPath $gitRoot -PathType Container) {
             Add-ToolDirectory (Join-Path $gitRoot 'cmd')
             Add-ToolDirectory (Join-Path $gitRoot 'bin')
+            # Git for Windows also ships native CLI utilities in its UCRT
+            # toolchain. Keep the supported native roots above first, but
+            # expose this installed tool directory as well (curl, OpenSSL,
+            # XML/PDF/text helpers and Git Scalar). The Unix compatibility
+            # tree under usr\bin remains intentionally excluded.
+            Add-ToolDirectory (Join-Path $gitRoot 'ucrt64\bin')
         }
     }
 
@@ -566,7 +572,8 @@ $commandsToCheck = @(
     'dxc', 'fxc', 'makeappx', 'makecat', 'makepri', 'mc', 'midl', 'pvk2pfx',
     'tracefmt', 'tracelog', 'traceview', 'vshadow', 'WinAppDeployCmd', 'wsdcodegen',
     'TE', 'TE.ProcessHost', 'Wex.Services', 'Conduit.Broker.Host',
-    '7z', 'git', 'bash', 'sh',
+    '7z', 'git', 'git-lfs', 'git-gui', 'gitk', 'scalar', 'bash', 'sh',
+    'curl', 'openssl', 'pdftotext', 'docx2txt', 'xmlwf', 'WhoUses',
     'AMDRyzenMasterCLI', 'zerotier-cli', 'zerotier-idtool', 'VeraCrypt',
     'VMCreate', 'VMImport', 'InspectVhdDialog',
     'UnrealEditor', 'UnrealEditor-Cmd', 'UnrealPak', 'UnrealLightmass',
