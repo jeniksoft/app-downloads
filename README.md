@@ -53,7 +53,7 @@ Volitelné pole `changes` může obsahovat obecný fallback text. Pole `history`
 
 ## Vývojářské nástroje
 
-Pomocný skript pro registraci existujících instalací Pythonu, PyTorch/DirectML, Gradle, JDK, Ollama, Android SDK a dalších vývojářských nástrojů do uživatelského `PATH` je v [tools/python-pytorch](tools/python-pytorch/README.md). Skript neinstaluje software ani nevyžaduje administrátorská práva; před trvalým použitím podporuje dry-run.
+Pomocný skript pro registraci existujících instalací Pythonu, PyTorch/DirectML, Gradle, JDK, Ollama, Android SDK, VeraCrypt CLI, ZeroTier CLI a dalších vývojářských nástrojů do uživatelského `PATH` je v [tools/python-pytorch](tools/python-pytorch/README.md). Skript neinstaluje software ani nevyžaduje administrátorská práva; před trvalým použitím podporuje dry-run.
 
 ## Bezpečnost A Důvěryhodnost
 

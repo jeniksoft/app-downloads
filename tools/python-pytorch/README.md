@@ -12,6 +12,8 @@ Registruje zejména:
   případné nainstalované WinDbg aliasy; skutečné instalace Pythonu mají
   přednost před Store aliasem);
 - Android SDK (`platform-tools`, emulator, qemu, command-line tools a build-tools).
+- Hyper-V host/QA utilities (`VMCreate`, `VMImport` a `InspectVhdDialog`), pokud
+  je hostitelská instalace Hyper-V přítomná;
 - Visual Studio Build Tools (MSBuild, CMake, Ninja, MSVC/LLVM, `vswhere` a
   inicializační skripty), Roslyn (`csc`/`vbc`), VSTest, NuGet build task a
   Code Coverage CLI;
@@ -19,7 +21,9 @@ Registruje zejména:
 - WiX 3.x i novější WiX CLI, včetně manuálně nainstalovaných verzí pod
   `C:\Tools\WiXToolset`;
 - .NET Framework SDK nástroje (`ildasm`, `gacutil`, `resgen`, `sn` a další),
-  AMD Ryzen Master CLI, 7-Zip z registrované instalace a Git Bash (`bash`/`sh`);
+  AMD Ryzen Master CLI, 7-Zip z registrované instalace, VeraCrypt CLI,
+  ZeroTier CLI a Git Bash (`bash`/`sh`);
+- GitHub CLI z WinGetu nebo jako přesný fallback z instalace Codex Task Boardu;
 - `dotnet` a Git CLI z jejich standardních instalačních umístění.
 
 Stávající uživatelské položky `PATH` zachovává. Do systémového `PATH` ani do registru aplikací nezasahuje. Skript nic nestahuje ani neinstaluje; pouze registruje existující nástroje.
@@ -29,6 +33,11 @@ kompilaci, která vyžaduje `INCLUDE`/`LIB`, použij Developer PowerShell nebo
 Git `usr\bin` se globálně neregistruje schválně, protože obsahuje Unixové
 kompatibilní příkazy, které by mohly zastínit stejnojmenné Windows nástroje;
 Git Bash si tento interní adresář nastaví samo při spuštění.
+Stejně se záměrně nepřidávají interní GUI aplikace, duplicitní 7-Zip z ovladačů
+ani alternativní `adb` z BlueStacks, protože by mohly zastínit oficiální SDK
+verze. Registrují se pouze přesné adresáře ověřených CLI/developer nástrojů.
+Kořen Hyper-V je výjimka pro tři konkrétní hostitelské VM/VHD QA nástroje;
+registruje se pouze tehdy, když obsahuje skutečné spustitelné soubory.
 
 ## Použití
 
