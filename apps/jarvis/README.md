@@ -27,7 +27,7 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 
 **Synchronizovaný snapshot: 2026-10-12**
 
-Implementační pokrytí roadmapy je **96.86 %** z kanonických řezů. Souhrn níže ukazuje podíly stavů Ověřeno, Implementováno, Rozpracováno a Architektura.
+Implementační pokrytí roadmapy je **96.86 %** z kanonických řezů. Souhrn níže ukazuje Ověřeno, kumulativní Implementováno včetně Ověřeno, Rozpracováno a Architekturu.
 
 **Jazyk reportu:** čeština pro `cs*`; jiné locale používá anglický fallback. GitHub README je statický a jazyk se určuje při generování.
 
@@ -37,7 +37,7 @@ Implementační pokrytí roadmapy je **96.86 %** z kanonických řezů. Souhrn n
 | --- | ---: | --- |
 | `implementation_complete_percent` | 96.86 % | Kanonické implementační pokrytí roadmapových řezů. |
 | `roadmap_verified_percent` | 57.14 % | Podíl kanonických řezů ve stavu Ověřeno. |
-| `roadmap_implemented_percent` | 39.68 % | Podíl kanonických řezů ve stavu Implementováno. |
+| `roadmap_implemented_percent` | 96.83 % | Kumulativní podíl kanonických řezů implementovaných včetně ověřených; vždy je větší nebo roven Ověřeno. |
 | `roadmap_in_progress_percent` | 0.13 % | Podíl kanonických řezů ve stavu Rozpracováno. |
 | `roadmap_architecture_percent` | 3.04 % | Podíl kanonických řezů ve stavu Architektura. |
 
@@ -62,20 +62,20 @@ Nejde o instalační balíček ani o prohlášení, že je produkt hotový; při
 
 Tato tabulka používá stejné kanonické řezy jako roadmapa a historie; při změně stavu řezu se změní příslušný řádek i souhrnný graf.
 
-| Roadmapová skupina | Řezy | Implementace | Ověřeno | Implementováno | Rozpracováno | Architektura |
+| Roadmapová skupina | Řezy | Implementace | Ověřeno | Implementováno včetně ověřených | Rozpracováno | Architektura |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Platformní základy | 54 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| Jádro runtime | 57 | 100.00 % | 57.89 % | 42.11 % | 0.00 % | 0.00 % |
-| Personal 1.0.0 | 127 | 99.41 % | 98.43 % | 0.79 % | 0.79 % | 0.00 % |
-| Volitelné tratě | 132 | 100.00 % | 75.76 % | 24.24 % | 0.00 % | 0.00 % |
-| Teams | 70 | 100.00 % | 20.00 % | 80.00 % | 0.00 % | 0.00 % |
-| Enterprise | 63 | 100.00 % | 14.29 % | 85.71 % | 0.00 % | 0.00 % |
-| Průřezové capability tratě | 253 | 90.91 % | 38.34 % | 52.57 % | 0.00 % | 9.09 % |
+| Platformní základy | 54 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| Jádro runtime | 57 | 100.00 % | 57.89 % | 100.00 % | 0.00 % | 0.00 % |
+| Personal 1.0.0 | 127 | 99.41 % | 98.43 % | 99.21 % | 0.79 % | 0.00 % |
+| Volitelné tratě | 132 | 100.00 % | 75.76 % | 100.00 % | 0.00 % | 0.00 % |
+| Teams | 70 | 100.00 % | 20.00 % | 100.00 % | 0.00 % | 0.00 % |
+| Enterprise | 63 | 100.00 % | 14.29 % | 100.00 % | 0.00 % | 0.00 % |
+| Průřezové capability tratě | 253 | 90.91 % | 38.34 % | 90.91 % | 0.00 % | 9.09 % |
 
 ### Roadmapa produktu
 
 **Legenda ikon:** · <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že stav splnil ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že stav splnil ověřovací bránu.">✅</span> Ověřeno · <span role="img" title="Implementováno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený." aria-label="Implementováno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený.">🟦</span> Implementováno · <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno · <span role="img" title="Architektura: Kanonický stav řezu je Architektura; implementace ještě není deklarovaná." aria-label="Architektura: Kanonický stav řezu je Architektura; implementace ještě není deklarovaná.">⚪</span> Architektura · <span role="img" title="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch." aria-label="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch.">⛔</span> Blokováno
-Počty stavů v grafu se nepřekrývají: Implementováno znamená implementované, ale dosud neověřené řezy; Ověřeno se počítá zvlášť. Rozpracováno a Architektura zůstávají samostatné kanonické stavy.
+Implementováno je kumulativní stav a zahrnuje všechny ověřené řezy; Ověřeno je jeho podmnožina. Rozpracováno a Architektura zůstávají samostatné kanonické stavy. Disjunktní raw počty jsou pouze ve strojovém JSON.
 Ikona i popisek jsou viditelné přímo v README; po najetí kurzorem tooltip vysvětlí význam a nezaměňuje implementaci za živé ověření.
 
 **Změna od předchozího snapshotu: roadmapa položky +0 · implementováno +0**
@@ -164,45 +164,45 @@ Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovac�
 
 ### Kanonické kapitoly
 
-| Kanonická kapitola | Řezy | Implementace | Ověřeno | Implementováno | Rozpracováno | Architektura |
+| Kanonická kapitola | Řezy | Implementace | Ověřeno | Implementováno včetně ověřených | Rozpracováno | Architektura |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| PF0 — Stable identities and namespaces | 4 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| PF1 — Schémata, persistence a migrace | 6 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| PF2 — Time epochs and leases | 6 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| PF3 — Secrets and credential boundary | 14 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| PF4 — Resource budgets cancellation and cleanup | 5 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| PF5 — Artifact evidence and provenance | 5 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| PF6 — Capability health degraded and quarantine states | 5 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| PF7 — Configuration ownership precedence and portability | 5 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| PF8 — Architecture Self-Model integration | 4 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| PF0 — Stable identities and namespaces | 4 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| PF1 — Schémata, persistence a migrace | 6 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| PF2 — Time epochs and leases | 6 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| PF3 — Secrets and credential boundary | 14 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| PF4 — Resource budgets cancellation and cleanup | 5 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| PF5 — Artifact evidence and provenance | 5 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| PF6 — Capability health degraded and quarantine states | 5 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| PF7 — Configuration ownership precedence and portability | 5 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| PF8 — Architecture Self-Model integration | 4 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
 | C0 — Polaris durable owner goal authority | 7 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
 | C1 — Ariadna Hydra Norn Nanity Mimir execution control plane | 10 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
-| C2 — Kormidlo benchmark Work Report and deployment decision | 8 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| C3 — Typed executor scope source authority and structured edit boundary | 10 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| C4 — Pulse and Saga truthful owner observability | 8 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| C2 — Kormidlo benchmark Work Report and deployment decision | 8 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| C3 — Typed executor scope source authority and structured edit boundary | 10 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| C4 — Pulse and Saga truthful owner observability | 8 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
 | C5 — Independent Aegis verification and acceptance authority | 7 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
-| C6 — CoreService Bifrost and typed same-user process boundary | 7 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| P1 — Recovery and durable execution | 11 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| P2 — Model and provider reliability | 12 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| P3 — Intake Research and source quality | 11 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| P4 — Workspace action reliability | 16 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| P5 — Memory and continuity | 20 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| P6 — Secure Support Ticket | 11 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| P7 — Supervised self development | 11 | 100.00 % | 90.91 % | 9.09 % | 0.00 % | 0.00 % |
-| P8 — Owner UX observability and release QA | 30 | 97.50 % | 96.67 % | 0.00 % | 3.33 % | 0.00 % |
-| P9 — Real world configuration matrix | 5 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| OP1 — Hermes local facade | 13 | 100.00 % | 84.62 % | 15.38 % | 0.00 % | 0.00 % |
-| OP2 — Image generation | 6 | 100.00 % | 66.67 % | 33.33 % | 0.00 % | 0.00 % |
-| OP3 — TTS STT audio | 38 | 100.00 % | 36.84 % | 63.16 % | 0.00 % | 0.00 % |
-| OP4 — Ambient Presence Voice Mesh | 32 | 100.00 % | 93.75 % | 6.25 % | 0.00 % | 0.00 % |
-| OP5 — Repair Capsules | 8 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| OP6 — Architecture Self Model | 8 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| OP7 — Tyr isolated computer control | 10 | 100.00 % | 80.00 % | 20.00 % | 0.00 % | 0.00 % |
-| OP8 — Defensive Security Lab | 8 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| OP9 — Research tutoring Strata Trace | 9 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| TR0 — Realm identity and local topology | 4 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| TR1 — Principals devices membership | 5 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| TR2 — Roles capabilities policy | 5 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| C6 — CoreService Bifrost and typed same-user process boundary | 7 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| P1 — Recovery and durable execution | 11 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| P2 — Model and provider reliability | 12 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| P3 — Intake Research and source quality | 11 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| P4 — Workspace action reliability | 16 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| P5 — Memory and continuity | 20 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| P6 — Secure Support Ticket | 11 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| P7 — Supervised self development | 11 | 100.00 % | 90.91 % | 100.00 % | 0.00 % | 0.00 % |
+| P8 — Owner UX observability and release QA | 30 | 97.50 % | 96.67 % | 96.67 % | 3.33 % | 0.00 % |
+| P9 — Real world configuration matrix | 5 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| OP1 — Hermes local facade | 13 | 100.00 % | 84.62 % | 100.00 % | 0.00 % | 0.00 % |
+| OP2 — Image generation | 6 | 100.00 % | 66.67 % | 100.00 % | 0.00 % | 0.00 % |
+| OP3 — TTS STT audio | 38 | 100.00 % | 36.84 % | 100.00 % | 0.00 % | 0.00 % |
+| OP4 — Ambient Presence Voice Mesh | 32 | 100.00 % | 93.75 % | 100.00 % | 0.00 % | 0.00 % |
+| OP5 — Repair Capsules | 8 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| OP6 — Architecture Self Model | 8 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| OP7 — Tyr isolated computer control | 10 | 100.00 % | 80.00 % | 100.00 % | 0.00 % | 0.00 % |
+| OP8 — Defensive Security Lab | 8 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| OP9 — Research tutoring Strata Trace | 9 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| TR0 — Realm identity and local topology | 4 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| TR1 — Principals devices membership | 5 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| TR2 — Roles capabilities policy | 5 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
 | TR3 — Shared project registry | 6 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
 | TR4 — Realm event log and offline sync | 6 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
 | TR5 — Shared Global Memory | 7 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
@@ -211,8 +211,8 @@ Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovac�
 | TR8 — Customer hosted LAN transport | 7 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
 | TR9 — Backup recovery admin audit | 8 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
 | TR10 — Offline licensing expiry release | 10 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
-| RC0 — Recursive topology foundation | 6 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| RC1 — Delegated policy and authority | 7 | 100.00 % | 42.86 % | 57.14 % | 0.00 % | 0.00 % |
+| RC0 — Recursive topology foundation | 6 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| RC1 — Delegated policy and authority | 7 | 100.00 % | 42.86 % | 100.00 % | 0.00 % | 0.00 % |
 | RC2 — Recursive memory and data scopes | 6 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
 | RC3 — Hierarchical capability aggregation and scheduling | 7 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
 | RC4 — Explicit cross-scope compute artifacts collaboration | 6 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
@@ -220,28 +220,28 @@ Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovac�
 | RC6 — Reconciliation hostile partition partial reintegration | 7 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
 | RC7 — Scale administration operability | 8 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
 | RC8 — Enterprise licensing migration release acceptance | 10 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
-| B — Browser and AI browser | 8 | 100.00 % | 50.00 % | 50.00 % | 0.00 % | 0.00 % |
+| B — Browser and AI browser | 8 | 100.00 % | 50.00 % | 100.00 % | 0.00 % | 0.00 % |
 | LIC — License liability and EULA | 7 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
-| AG — Adaptive user guidance | 9 | 100.00 % | 88.89 % | 11.11 % | 0.00 % | 0.00 % |
-| ASA — Adversarial security audit | 13 | 100.00 % | 61.54 % | 38.46 % | 0.00 % | 0.00 % |
-| ECM — Execution continuity and maintenance | 15 | 100.00 % | 46.67 % | 53.33 % | 0.00 % | 0.00 % |
-| IG — Image generation capability | 6 | 100.00 % | 66.67 % | 33.33 % | 0.00 % | 0.00 % |
-| LM0 — Architecture/source inventory and contract map | 7 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| LM1 — Module contracts Module Host and Capability Registry | 10 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| LM2 — Observation Bus normalized evidence input and source adapters | 13 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
-| LM3 — Evidence Fusion and Local World Situation Model | 10 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| AG — Adaptive user guidance | 9 | 100.00 % | 88.89 % | 100.00 % | 0.00 % | 0.00 % |
+| ASA — Adversarial security audit | 13 | 100.00 % | 61.54 % | 100.00 % | 0.00 % | 0.00 % |
+| ECM — Execution continuity and maintenance | 15 | 100.00 % | 46.67 % | 100.00 % | 0.00 % | 0.00 % |
+| IG — Image generation capability | 6 | 100.00 % | 66.67 % | 100.00 % | 0.00 % | 0.00 % |
+| LM0 — Architecture/source inventory and contract map | 7 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| LM1 — Module contracts Module Host and Capability Registry | 10 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| LM2 — Observation Bus normalized evidence input and source adapters | 13 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| LM3 — Evidence Fusion and Local World Situation Model | 10 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
 | LM4 — Significance Evaluator and Attention Scheduler | 10 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
-| LM5 — Persistent autonomous loop and bounded self-generated work | 25 | 100.00 % | 36.00 % | 64.00 % | 0.00 % | 0.00 % |
+| LM5 — Persistent autonomous loop and bounded self-generated work | 25 | 100.00 % | 36.00 % | 100.00 % | 0.00 % | 0.00 % |
 | LM6 — Inter-Jarvis Protocol and Capability Federation | 10 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
 | LM7 — Federated Situation Projections and Global Memory bridge | 10 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
 | LM8 — Physical sensors machines and robot safety adapters | 10 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
 | LM9 — Hierarchical Constellation attention delegation and reintegration | 10 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
-| MS — Model Space 3D | 8 | 100.00 % | 12.50 % | 87.50 % | 0.00 % | 0.00 % |
-| PORT — Platform independence | 16 | 100.00 % | 6.25 % | 93.75 % | 0.00 % | 0.00 % |
+| MS — Model Space 3D | 8 | 100.00 % | 12.50 % | 100.00 % | 0.00 % | 0.00 % |
+| PORT — Platform independence | 16 | 100.00 % | 6.25 % | 100.00 % | 0.00 % | 0.00 % |
 | VG — Video generation capability | 8 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
-| LN — Language-neutral intent and multilingual interaction | 9 | 100.00 % | 88.89 % | 11.11 % | 0.00 % | 0.00 % |
-| MDOC — Complete versioned documentation available to models | 7 | 100.00 % | 42.86 % | 57.14 % | 0.00 % | 0.00 % |
-| MUI — Model-guided Jarvis UI navigation and visual spotlight | 9 | 100.00 % | 44.44 % | 55.56 % | 0.00 % | 0.00 % |
+| LN — Language-neutral intent and multilingual interaction | 9 | 100.00 % | 88.89 % | 100.00 % | 0.00 % | 0.00 % |
+| MDOC — Complete versioned documentation available to models | 7 | 100.00 % | 42.86 % | 100.00 % | 0.00 % | 0.00 % |
+| MUI — Model-guided Jarvis UI navigation and visual spotlight | 9 | 100.00 % | 44.44 % | 100.00 % | 0.00 % | 0.00 % |
 | SRH — Incident-triggered service recovery and support handoff | 9 | 0.00 % | 0.00 % | 0.00 % | 0.00 % | 100.00 % |
 | PAC — Pre-authorized post-task autonomous follow-up | 14 | 0.00 % | 0.00 % | 0.00 % | 0.00 % | 100.00 % |
 
@@ -251,26 +251,26 @@ Tato tabulka je odvozena z kanonických řezů roadmapy; změna řezu mění odp
 
 Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí přírůstky všech hlavních metrik oproti předchozímu bodu a každý anonymizovaný záznam zůstává i ve strojově čitelném JSON. Raw private source commit, subject ani interní cesta se do veřejného repa nekopírují; přesný identifikátor posledního closeoutu je pouze v samostatném ověřovacím obalu.
 
-| Veřejná revize | Datum | Δ implementace roadmapy | Δ ověřené řezy | Δ implementované řezy | Δ rozpracované řezy | Δ architektura | Změněné řezy |
+| Veřejná revize | Datum | Δ implementace roadmapy | Δ ověřené řezy | Δ implementované řezy včetně ověřených | Δ rozpracované řezy | Δ architektura | Změněné řezy |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| `a9a4f29af529` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
-| `37436ac44ffe` | 2026-10-12 | +0.00 | +1.32 | -1.32 | +0.00 | +0.00 | 10: LM1.1, LM1.10, LM1.2, LM1.3, LM1.4, LM1.5… |
 | `052b6d5b9af8` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
-| `d985b80d106a` | 2026-10-12 | +0.00 | +0.40 | -0.40 | +0.00 | +0.00 | 3: MDOC0, MDOC1, MDOC2 |
+| `d985b80d106a` | 2026-10-12 | +0.00 | +0.40 | +0.00 | +0.00 | +0.00 | 3: MDOC0, MDOC1, MDOC2 |
 | `17e03b13df8b` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
-| `0046ad766a2b` | 2026-10-12 | +0.00 | +0.52 | -0.53 | +0.00 | +0.00 | 4: MUI0, MUI1, MUI2, MUI3 |
+| `0046ad766a2b` | 2026-10-12 | +0.00 | +0.52 | +0.00 | +0.00 | +0.00 | 4: MUI0, MUI1, MUI2, MUI3 |
 | `ed07335d8b3e` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
-| `70117824f424` | 2026-10-12 | +0.00 | +1.72 | -1.72 | +0.00 | +0.00 | 13: LM2.1, LM2.10, LM2.11, LM2.12, LM2.13, LM2.2… |
+| `70117824f424` | 2026-10-12 | +0.00 | +1.72 | +0.00 | +0.00 | +0.00 | 13: LM2.1, LM2.10, LM2.11, LM2.12, LM2.13, LM2.2… |
 | `8a3382ecd274` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
-| `cbfaf1fddd96` | 2026-10-12 | +0.00 | +1.33 | -1.32 | +0.00 | +0.00 | 10: LM3.1, LM3.10, LM3.2, LM3.3, LM3.4, LM3.5… |
+| `cbfaf1fddd96` | 2026-10-12 | +0.00 | +1.33 | +0.00 | +0.00 | +0.00 | 10: LM3.1, LM3.10, LM3.2, LM3.3, LM3.4, LM3.5… |
 | `d34ab32de3f1` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
-| `7f762dd7e8d2` | 2026-10-12 | +0.00 | +0.53 | -0.53 | +0.00 | +0.00 | 4: LM5.13, LM5.14, LM5.15, LM5.17 |
+| `7f762dd7e8d2` | 2026-10-12 | +0.00 | +0.53 | +0.00 | +0.00 | +0.00 | 4: LM5.13, LM5.14, LM5.15, LM5.17 |
 | `881daf1f391a` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
-| `52c86931d241` | 2026-10-12 | +0.00 | +0.39 | -0.40 | +0.00 | +0.00 | 3: B1, B2, B3 |
-| `2a69c084e020` | 2026-10-12 | -3.18 | -12.30 | +9.13 | +0.00 | +3.18 | 110: AG3, AG4, AG5, AG6, AG7, B1… |
-| `cf2e5aeaa554` | 2026-10-12 | +3.18 | +12.30 | -9.13 | +0.00 | -3.18 | 110: AG3, AG4, AG5, AG6, AG7, B1… |
+| `52c86931d241` | 2026-10-12 | +0.00 | +0.39 | +0.00 | +0.00 | +0.00 | 3: B1, B2, B3 |
+| `2a69c084e020` | 2026-10-12 | -3.18 | -12.30 | -3.18 | +0.00 | +3.18 | 110: AG3, AG4, AG5, AG6, AG7, B1… |
+| `cf2e5aeaa554` | 2026-10-12 | +3.18 | +12.30 | +3.18 | +0.00 | -3.18 | 110: AG3, AG4, AG5, AG6, AG7, B1… |
 | `5a826a445d9d` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
 | `248caa34a542` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
+| `e32710ef81ef` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
+| `3accc1584a93` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
@@ -297,7 +297,9 @@ Historický baseline je oddělený od aktuálního inkrementálního výpočtu, 
 ### Měřicí kontrakt
 
 - `implementation_complete_percent`: jediná veřejná implementační hodnota; deterministické kanonické pokrytí všech roadmapových řezů.
-- `roadmap_*_percent`: podíly vzájemně výlučných kanonických stavů řezů, které se mění při přechodu řezu mezi stavy.
+- `roadmap_verified_percent`: podíl kanonických řezů ve stavu Ověřeno.
+- `roadmap_implemented_percent`: kumulativní podíl kanonických řezů ve stavu Implementováno včetně Ověřeno; vždy je větší nebo roven Ověřeno.
+- `roadmap_in_progress_percent` a `roadmap_architecture_percent`: samostatné disjunktní raw stavy roadmapy.
 - `history`: každá revize obsahuje změněné kanonické řezy a bounded historický pás podle jejich stabilních ID.
 - `Task Board`: slouží k mapování kapitol a synchronizaci podpůrných dat; neřídí veřejné implementační procento.
 - Starší interní pole zůstávají pouze ve strojovém JSON kvůli kompatibilitě; veřejné tabulky a grafy je nepoužívají jako implementaci.
