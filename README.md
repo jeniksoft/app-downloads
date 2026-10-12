@@ -51,6 +51,10 @@ Volitelné pole `changes` může obsahovat obecný fallback text. Pole `history`
 3. Spusť setup ve Windows.
 4. Aplikaci můžeš později odebrat přes Windows Nastavení > Aplikace > Nainstalované aplikace.
 
+## Vývojářské nástroje
+
+Pomocný skript pro registraci existujících instalací Pythonu, PyTorch/DirectML, Gradle, JDK, Ollama, Android SDK a dalších vývojářských nástrojů do uživatelského `PATH` je v [tools/python-pytorch](tools/python-pytorch/README.md). Skript neinstaluje software ani nevyžaduje administrátorská práva; před trvalým použitím podporuje dry-run.
+
 ## Bezpečnost A Důvěryhodnost
 
 Instalátory jsou běžné Windows EXE soubory. Pokud ještě nejsou podepsané certifikátem s reputací, Windows SmartScreen nebo antivirus můžou zobrazit varování. Pro kontrolu integrity porovnej SHA-256 se souborem [checksums/SHA256SUMS.txt](checksums/SHA256SUMS.txt).
