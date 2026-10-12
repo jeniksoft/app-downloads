@@ -230,6 +230,12 @@ function Add-AdditionalDeveloperToolDirectories {
     # AMD ships a supported command-line diagnostic utility with Ryzen Master.
     Add-ToolDirectory (Join-Path ${env:ProgramFiles} 'AMD\RyzenMasterSDK\AMDRyzenMasterCLI\bin-prebuilt')
 
+    # These installed command-line utilities are useful for development and
+    # diagnostics, but are not covered by the SDK/IDE roots above. Keep the
+    # paths exact; do not expose the surrounding application trees.
+    Add-ToolDirectory (Join-Path ${env:ProgramFiles} 'VeraCrypt')
+    Add-ToolDirectory (Join-Path ${env:ProgramFiles(x86)} 'ZeroTier\One')
+
     # 7-Zip is often installed outside Program Files. Use only the registered
     # 7-Zip uninstall location rather than scanning arbitrary user directories.
     $uninstallRoots = @(
@@ -302,6 +308,9 @@ if (Test-Path -LiteralPath $jdkRoot -PathType Container) {
 Add-ToolDirectory (Join-Path $localPrograms 'Ollama')
 Add-ToolDirectory (Join-Path $localPrograms 'Ollama\lib\ollama')
 Add-ToolDirectory (Join-Path $env:LOCALAPPDATA 'Microsoft\WinGet\Links')
+# Codex Task Board bundles a GitHub CLI copy. Prefer the WinGet link above,
+# but retain this exact fallback when that link is not installed.
+Add-ToolDirectory (Join-Path ${env:ProgramFiles} 'Codex Task Board\github-cli')
 # Windows keeps package-manager and debugger application aliases in this
 # per-user directory. Add it only when winget is actually installed; the
 # concrete Python installations above stay first and therefore cannot be
@@ -394,12 +403,14 @@ $env:Path = $newUserPath + ';' + [Environment]::GetEnvironmentVariable('Path', '
 $commandsToCheck = @(
     'python', 'py', 'pip', 'torchrun', 'gradle', 'java', 'javac', 'ollama', 'gh',
     'winget', 'WinDbgX', 'cdbX64', 'kdX64', 'ntsdX64',
-    'adb', 'emulator', 'sdkmanager', 'avdmanager', 'android', 'cmake', 'ninja',
+    'adb', 'emulator', 'sdkmanager', 'avdmanager', 'android', 'sqlite3',
+    'cmake', 'cpack', 'ctest', 'ninja',
     'msbuild', 'cl', 'clang-cl', 'rc', 'mt', 'signtool', 'vswhere', 'dotnet',
-    'wix', 'candle', 'light', 'dark', 'heat', 'ildasm', 'gacutil', 'resgen',
-    'sn', 'csc', 'vbc', 'vstest.console', 'NuGet.Build.Tasks.Console',
-    'Microsoft.CodeCoverage.Console', '7z', 'git', 'bash', 'sh',
-    'AMDRyzenMasterCLI'
+    'wix', 'wixnative', 'candle', 'light', 'dark', 'heat', 'insignia', 'WixCop',
+    'DocCompiler', 'MakeSfxCA', 'ildasm', 'gacutil', 'resgen', 'sn', 'csc', 'vbc',
+    'vstest.console', 'NuGet.Build.Tasks.Console', 'Microsoft.CodeCoverage.Console',
+    'MSBuildTaskHost', 'SvcTraceViewer', '7z', 'git', 'bash', 'sh',
+    'AMDRyzenMasterCLI', 'zerotier-cli', 'zerotier-idtool', 'VeraCrypt'
 )
 foreach ($commandName in $commandsToCheck) {
     $command = Get-Command $commandName -ErrorAction SilentlyContinue | Select-Object -First 1
