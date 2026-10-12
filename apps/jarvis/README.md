@@ -53,10 +53,9 @@ Nejde o instalační balíček ani o prohlášení, že je produkt hotový; při
 ![Přehled implementace roadmapy](visuals/implementation-overview.svg)
 ![Mapa závislostí architektury](visuals/architecture-map.svg)
 ![Graf architektonických kapitol](visuals/architecture-chapters.svg)
-![Matice kanonických řezů](visuals/milestone-evidence.svg)
 ![Časový graf sledovaného pokroku](visuals/progress-history.svg)
 
-Čísla jsou záměrně kreslená přímo na sloupcích, bodech, uzlech a tilech. Každý řez má v roadmapě i historii deterministický pás starší → novější; pořadí, ID a Unknown fallback určuje runtime, ne modelová paměť. Tabulky níže ukazují kanonický stav, implementaci a změny řezů.
+Čísla jsou záměrně kreslená přímo na sloupcích, bodech, uzlech a tilech. Historická data řezů zůstávají ve strojově čitelném progress-history.json; veřejný dashboard zobrazuje souhrnné křivky a kanonické stavy. Pořadí, ID a Unknown fallback určuje runtime, ne modelová paměť. Tabulky níže ukazují kanonický stav, implementaci a změny řezů.
 
 ### Kanonický stav roadmapových skupin
 
