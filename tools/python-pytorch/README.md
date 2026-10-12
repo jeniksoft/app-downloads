@@ -9,8 +9,14 @@ Registruje zejména:
 - Gradle, JDK, Ollama a jeho pomocné binárky;
 - WinGet Links, npm, Cargo, `.NET tools`, Scoop a Node.js;
 - Android SDK (`platform-tools`, emulator, qemu, command-line tools a build-tools).
+- Visual Studio Build Tools (MSBuild, CMake, Ninja, MSVC/LLVM, `vswhere` a
+  inicializační skripty);
+- Windows SDK (x64/x86/ARM64 build, resource, signing a shader nástroje).
 
 Stávající uživatelské položky `PATH` zachovává. Do systémového `PATH` ani do registru aplikací nezasahuje. Skript nic nestahuje ani neinstaluje; pouze registruje existující nástroje.
+U Visual Studio toolchainu registrace zpřístupní binárky přes `PATH`; pro
+kompilaci, která vyžaduje `INCLUDE`/`LIB`, použij Developer PowerShell nebo
+`VsDevCmd.bat`, protože samotný `PATH` tyto SDK proměnné nenastavuje.
 
 ## Použití
 

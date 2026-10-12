@@ -65,6 +65,89 @@ function Add-AndroidToolDirectories {
     }
 }
 
+function Add-VisualStudioToolDirectories {
+    param([string]$VisualStudioRoot)
+
+    if ([string]::IsNullOrWhiteSpace($VisualStudioRoot) -or
+        -not (Test-Path -LiteralPath $VisualStudioRoot -PathType Container)) {
+        return
+    }
+
+    # Keep discovery scoped to installed VS instances. Do not expose the whole
+    # Program Files tree or arbitrary application directories through PATH.
+    $instances = @()
+    foreach ($year in @(Get-ChildItem -LiteralPath $VisualStudioRoot -Directory -ErrorAction SilentlyContinue)) {
+        $instances += @(Get-ChildItem -LiteralPath $year.FullName -Directory -ErrorAction SilentlyContinue |
+            Where-Object { $_.Name -notin @('Installer', 'Shared') })
+    }
+
+    foreach ($instance in @($instances | Sort-Object FullName -Descending)) {
+        Add-ToolDirectory (Join-Path $instance.FullName 'Common7\Tools')
+        Add-ToolDirectory (Join-Path $instance.FullName 'Common7\IDE')
+        Add-ToolDirectory (Join-Path $instance.FullName 'Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin')
+        Add-ToolDirectory (Join-Path $instance.FullName 'Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja')
+        Add-ToolDirectory (Join-Path $instance.FullName 'MSBuild\Current\Bin\amd64')
+        Add-ToolDirectory (Join-Path $instance.FullName 'MSBuild\Current\Bin')
+        Add-ToolDirectory (Join-Path $instance.FullName 'VC\Auxiliary\Build')
+        Add-ToolDirectory (Join-Path $instance.FullName 'VC\Tools\Llvm\bin')
+        Add-ToolDirectory (Join-Path $instance.FullName 'VC\Tools\Llvm\x64\bin')
+
+        $msvcRoot = Join-Path $instance.FullName 'VC\Tools\MSVC'
+        if (Test-Path -LiteralPath $msvcRoot -PathType Container) {
+            foreach ($version in @(Get-ChildItem -LiteralPath $msvcRoot -Directory -ErrorAction SilentlyContinue |
+                Sort-Object Name -Descending)) {
+                # x64 is first so ordinary lookup selects the native compiler;
+                # other supported host/target pairs remain discoverable later.
+                foreach ($toolPath in @(
+                    (Join-Path $version.FullName 'bin\Hostx64\x64'),
+                    (Join-Path $version.FullName 'bin\Hostx64\x86'),
+                    (Join-Path $version.FullName 'bin\Hostx64\arm64'),
+                    (Join-Path $version.FullName 'bin\Hostx86\x86'),
+                    (Join-Path $version.FullName 'bin\Hostx86\x64')
+                )) {
+                    Add-ToolDirectory $toolPath
+                }
+            }
+        }
+    }
+
+    Add-ToolDirectory (Join-Path $VisualStudioRoot 'Installer')
+}
+
+function Add-WindowsSdkToolDirectories {
+    param([string]$WindowsKitsRoot)
+
+    if ([string]::IsNullOrWhiteSpace($WindowsKitsRoot) -or
+        -not (Test-Path -LiteralPath $WindowsKitsRoot -PathType Container)) {
+        return
+    }
+
+    foreach ($kit in @(Get-ChildItem -LiteralPath $WindowsKitsRoot -Directory -ErrorAction SilentlyContinue |
+        Where-Object { $_.Name -match '^(10|8\.1)$' } | Sort-Object Name -Descending)) {
+        Add-ToolDirectory (Join-Path $kit.FullName 'App Certification Kit')
+        $binRoot = Join-Path $kit.FullName 'bin'
+        if (-not (Test-Path -LiteralPath $binRoot -PathType Container)) {
+            continue
+        }
+
+        $versionDirectories = @(Get-ChildItem -LiteralPath $binRoot -Directory -ErrorAction SilentlyContinue |
+            Where-Object { $_.Name -match '^\d+\.\d+\.\d+\.\d+$' } |
+            Sort-Object Name -Descending)
+        if ($versionDirectories.Count -gt 0) {
+            foreach ($version in $versionDirectories) {
+                foreach ($architecture in @('x64', 'x86', 'arm64')) {
+                    Add-ToolDirectory (Join-Path $version.FullName $architecture)
+                }
+            }
+        }
+        else {
+            foreach ($architecture in @('x64', 'x86', 'arm64')) {
+                Add-ToolDirectory (Join-Path $binRoot $architecture)
+            }
+        }
+    }
+}
+
 $script:candidates = New-Object 'System.Collections.Generic.List[string]'
 $script:seenCandidates = @{}
 $localPrograms = Join-Path $env:LOCALAPPDATA 'Programs'
@@ -121,6 +204,20 @@ Add-ToolDirectory (Join-Path $env:USERPROFILE '.dotnet\tools')
 Add-ToolDirectory (Join-Path $env:USERPROFILE 'scoop\shims')
 Add-ToolDirectory (Join-Path $localPrograms 'nodejs')
 Add-ToolDirectory (Join-Path ${env:ProgramFiles} 'nodejs')
+
+foreach ($visualStudioRoot in @(
+        (Join-Path ${env:ProgramFiles(x86)} 'Microsoft Visual Studio'),
+        (Join-Path ${env:ProgramFiles} 'Microsoft Visual Studio')
+    )) {
+    Add-VisualStudioToolDirectories $visualStudioRoot
+}
+
+foreach ($windowsKitsRoot in @(
+        (Join-Path ${env:ProgramFiles(x86)} 'Windows Kits'),
+        (Join-Path ${env:ProgramFiles} 'Windows Kits')
+    )) {
+    Add-WindowsSdkToolDirectories $windowsKitsRoot
+}
 
 $androidRoots = New-Object 'System.Collections.Generic.List[string]'
 foreach ($root in @(
@@ -180,7 +277,11 @@ else {
 
 # Refresh only this process so the optional verification does not require a new shell.
 $env:Path = $newUserPath + ';' + [Environment]::GetEnvironmentVariable('Path', 'Machine')
-$commandsToCheck = @('python', 'py', 'pip', 'torchrun', 'gradle', 'java', 'ollama', 'gh', 'adb', 'emulator', 'android')
+$commandsToCheck = @(
+    'python', 'py', 'pip', 'torchrun', 'gradle', 'java', 'javac', 'ollama', 'gh',
+    'adb', 'emulator', 'sdkmanager', 'avdmanager', 'android', 'cmake', 'ninja',
+    'msbuild', 'cl', 'clang-cl', 'rc', 'mt', 'signtool', 'vswhere'
+)
 foreach ($commandName in $commandsToCheck) {
     $command = Get-Command $commandName -ErrorAction SilentlyContinue | Select-Object -First 1
     if ($null -ne $command) {
