@@ -16,12 +16,14 @@ Registruje zejména:
   je hostitelská instalace Hyper-V přítomná;
 - Visual Studio Build Tools (MSBuild, CMake, Ninja, MSVC/LLVM, `vswhere` a
   inicializační skripty), Roslyn (`csc`/`vbc`), VSTest, NuGet build task,
-  Code Coverage CLI, coverage instrumentaci a testovací dump utility;
+  Code Coverage CLI, coverage instrumentaci, VSDiagnostics, FxCopCmd, vcpkg,
+  ARM64 LLVM/clang-format a testovací dump utility;
 - Windows SDK (x64/x86/ARM64 build, resource, signing, shader, package,
-  deployment, tracing a accessibility/UI verification nástroje), včetně
+  deployment, tracing, `cppwinrt` a accessibility/UI verification nástroje), včetně
   explicitních podadresářů `AccChecker` a `UIAVerify`; dále TAEF testovací
   runtime (`TE`, `TE.ProcessHost`, `Wex.Services` a broker) v nativní x64 a
-  MinTe variantě;
+  MinTe variantě. Volitelně se přidají také přesné kořeny Windows Debuggers a
+  Windows Performance Toolkit, pokud jsou skutečně nainstalované;
 - WiX 3.x i novější WiX CLI, včetně manuálně nainstalovaných verzí pod
   `C:\Tools\WiXToolset`;
 - .NET Framework SDK nástroje (`ildasm`, `gacutil`, `resgen`, `sn` a další),
@@ -57,6 +59,9 @@ verze. Registrují se pouze přesné adresáře ověřených CLI/developer nást
 Audit záměrně vynechává i interní `ffmpeg`/7-Zip z BlueStacks/AMD, Git
 `usr\bin` a GUI/launcher binárky; jejich nalezení samo o sobě neznamená, že
 patří do globálního vývojového PATH.
+Stejným pravidlem se vynechávají CPU-Z GUI, DirectX instalátory, AMD OpenVR
+registrátory a Codex/cache kopie nástrojů; registrují se jen přesně vymezené
+vývojové nebo QA CLI kořeny.
 U Unreal Engine se prohledávají pouze přesné `Epic Games` kořeny a standardní
 engine tool adresáře; projektové `Binaries`, `Intermediate`, `Saved`,
 `DerivedDataCache` ani launcher se globálně nepřidávají.

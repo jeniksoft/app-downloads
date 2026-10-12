@@ -95,10 +95,23 @@ function Add-VisualStudioToolDirectories {
         Add-ToolDirectory (Join-Path $instance.FullName 'Team Tools\Dynamic Code Coverage Tools')
         Add-ToolDirectory (Join-Path $instance.FullName 'MSBuild\Current\Bin\amd64')
         Add-ToolDirectory (Join-Path $instance.FullName 'MSBuild\Current\Bin')
+        # Keep the native x64 MSBuild directories above first, but expose the
+        # ARM64 host tools when the Build Tools workload installed them.
+        Add-ToolDirectory (Join-Path $instance.FullName 'MSBuild\Current\Bin\arm64')
         Add-ToolDirectory (Join-Path $instance.FullName 'MSBuild\Current\Bin\Roslyn')
         Add-ToolDirectory (Join-Path $instance.FullName 'VC\Auxiliary\Build')
         Add-ToolDirectory (Join-Path $instance.FullName 'VC\Tools\Llvm\bin')
         Add-ToolDirectory (Join-Path $instance.FullName 'VC\Tools\Llvm\x64\bin')
+        Add-ToolDirectory (Join-Path $instance.FullName 'VC\Tools\Llvm\ARM64\bin')
+
+        # These are installed developer/QA tools outside the ordinary IDE and
+        # compiler roots. Keep the paths exact so ServiceHub/private extension
+        # internals are not exposed globally.
+        Add-ToolDirectory (Join-Path $instance.FullName 'Team Tools\DiagnosticsHub\Collector')
+        Add-ToolDirectory (Join-Path $instance.FullName 'Team Tools\Static Analysis Tools\FxCop')
+        Add-ToolDirectory (Join-Path $instance.FullName 'Team Tools\Dynamic Code Coverage Tools\amd64')
+        Add-ToolDirectory (Join-Path $instance.FullName 'Team Tools\Dynamic Code Coverage Tools\arm64')
+        Add-ToolDirectory (Join-Path $instance.FullName 'VC\vcpkg')
 
         $msvcRoot = Join-Path $instance.FullName 'VC\Tools\MSVC'
         if (Test-Path -LiteralPath $msvcRoot -PathType Container) {
@@ -142,9 +155,9 @@ function Add-WindowsSdkToolDirectories {
             Where-Object { $_.Name -match '^\d+\.\d+\.\d+\.\d+$' } |
             Sort-Object Name -Descending)
         if ($versionDirectories.Count -gt 0) {
-            foreach ($version in $versionDirectories) {
+            foreach ($versionDirectory in $versionDirectories) {
                 foreach ($architecture in @('x64', 'x86', 'arm64')) {
-                    $architectureRoot = Join-Path $version.FullName $architecture
+                    $architectureRoot = Join-Path $versionDirectory.FullName $architecture
                     Add-ToolDirectory $architectureRoot
                     # These SDK subdirectories contain callable accessibility/UI
                     # verification tools, but are not searched recursively. Keep
@@ -155,6 +168,11 @@ function Add-WindowsSdkToolDirectories {
                     }
                 }
             }
+            # cppwinrt is shipped in the architecture-neutral CHPE directory,
+            # outside the x64/x86/ARM64 roots above.
+            foreach ($versionDirectory in $versionDirectories) {
+                Add-ToolDirectory (Join-Path $versionDirectory.FullName 'chpe')
+            }
         }
         else {
             foreach ($architecture in @('x64', 'x86', 'arm64')) {
@@ -164,7 +182,18 @@ function Add-WindowsSdkToolDirectories {
                     Add-ToolDirectory (Join-Path $architectureRoot $toolSubdirectory)
                 }
             }
+            Add-ToolDirectory (Join-Path $binRoot 'chpe')
         }
+
+        # Optional Windows debugging/performance workloads are installed next
+        # to the SDK rather than under bin. Register only their callable
+        # architecture-specific tool roots when present.
+        $debuggersRoot = Join-Path $kit.FullName 'Debuggers'
+        foreach ($debuggerArchitecture in @('x64', 'x86', 'arm64')) {
+            Add-ToolDirectory (Join-Path $debuggersRoot $debuggerArchitecture)
+        }
+        $performanceToolkitRoot = Join-Path $kit.FullName 'Assessment and Deployment Kit\Windows Performance Toolkit'
+        Add-ToolDirectory $performanceToolkitRoot
 
         # The Windows SDK Test Authoring and Execution Framework (TAEF) lives
         # outside bin and is therefore not covered by the SDK architecture
@@ -525,7 +554,8 @@ $commandsToCheck = @(
     'ntsdARM64', 'ntsdX64', 'ntsdX86',
     'adb', 'emulator', 'sdkmanager', 'avdmanager', 'android', 'sqlite3',
     'cmake', 'cpack', 'ctest', 'ninja', 'nmake',
-    'msbuild', 'cl', 'clang-cl', 'rc', 'mt', 'signtool', 'vswhere', 'dotnet',
+    'msbuild', 'cl', 'clang-cl', 'clang-format', 'clang-tidy', 'cppwinrt', 'vcpkg',
+    'VSDiagnostics', 'FxCopCmd', 'rc', 'mt', 'signtool', 'vswhere', 'dotnet',
     'wix', 'wixnative', 'candle', 'light', 'dark', 'heat', 'insignia', 'WixCop',
     'DocCompiler', 'MakeSfxCA', 'ildasm', 'gacutil', 'resgen', 'sn', 'csc', 'vbc',
     'vstest.console', 'NuGet.Build.Tasks.Console', 'Microsoft.CodeCoverage.Console',
