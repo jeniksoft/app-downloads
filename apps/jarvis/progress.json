@@ -43,23 +43,23 @@
       {
         "language": "JSON",
         "files": 580,
-        "physical_lines": 200757,
-        "bytes": 33206598,
-        "megabytes": 33.206598
+        "physical_lines": 200761,
+        "bytes": 33209431,
+        "megabytes": 33.209431
       },
       {
         "language": "Markdown",
         "files": 1143,
-        "physical_lines": 157922,
-        "bytes": 8778411,
-        "megabytes": 8.778411
+        "physical_lines": 157998,
+        "bytes": 8782686,
+        "megabytes": 8.782686
       },
       {
         "language": "Python",
         "files": 795,
-        "physical_lines": 128831,
-        "bytes": 5374279,
-        "megabytes": 5.374279
+        "physical_lines": 128837,
+        "bytes": 5374388,
+        "megabytes": 5.374388
       },
       {
         "language": "PowerShell",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 5257,
-      "physical_lines": 1286777,
-      "bytes": 92282138,
-      "megabytes": 92.282138
+      "physical_lines": 1286863,
+      "bytes": 92289355,
+      "megabytes": 92.289355
     },
     "binary_assets": {
       "files": 41,
@@ -145,18 +145,18 @@
     },
     "tracked_total": {
       "files": 5298,
-      "physical_lines": 1286777,
-      "bytes": 106965132,
-      "megabytes": 106.965132
+      "physical_lines": 1286863,
+      "bytes": 106972349,
+      "megabytes": 106.972349
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 74,
-        "bytes": 5037,
-        "megabytes": 0.005037
+        "physical_lines": 86,
+        "bytes": 7217,
+        "megabytes": 0.007217
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 74,
-        "bytes": 5037,
-        "megabytes": 0.005037
+        "physical_lines": 86,
+        "bytes": 7217,
+        "megabytes": 0.007217
       }
     }
   },
@@ -503,7 +503,7 @@
         "item_count": 253,
         "completed_item_count": 230,
         "implemented_item_count": 230,
-        "verified_item_count": 90,
+        "verified_item_count": 94,
         "in_progress_item_count": 0,
         "architecture_item_count": 23,
         "blocked_item_count": 0,
@@ -2089,7 +2089,7 @@
         "item_count": 25,
         "completed_item_count": 25,
         "implemented_item_count": 25,
-        "verified_item_count": 5,
+        "verified_item_count": 9,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -17351,9 +17351,9 @@
         "chapter_color": "optional",
         "description_cs": "Typovaná hodnota interního pokračovacího tahu bez exekuční autority",
         "description_en": "typed continuation-turn value",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -17375,9 +17375,9 @@
         "chapter_color": "optional",
         "description_cs": "Deterministický důkaz child authority <= parent task authority",
         "description_en": "authority monotonicity evaluator",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -17399,9 +17399,9 @@
         "chapter_color": "optional",
         "description_cs": "Hostitelem sestavený bounded modelový kontext bez syntetické owner autority",
         "description_en": "host-composed continuation context",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -17447,9 +17447,9 @@
         "chapter_color": "optional",
         "description_cs": "Deterministický progress/no-progress klasifikátor a bounded loop breaker",
         "description_en": "progress proof and loop breaker",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -20534,15 +20534,15 @@
     "item_count": 756,
     "completed_item_count": 732,
     "implemented_item_count": 732,
-    "verified_item_count": 425,
+    "verified_item_count": 429,
     "in_progress_item_count": 1,
     "architecture_item_count": 23,
     "blocked_item_count": 0,
     "status_counts": {
       "architecture-only": 23,
       "in-progress": 1,
-      "implemented-unverified": 307,
-      "verified": 425,
+      "implemented-unverified": 303,
+      "verified": 429,
       "blocked": 0
     },
     "chapter_count": 78,
@@ -20589,7 +20589,7 @@
     "avoided_runs_estimate": 0,
     "avoided_percent": 0.0,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
-    "incremental_closeout_points_since_full_baseline": 42,
+    "incremental_closeout_points_since_full_baseline": 43,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -25508,6 +25508,40 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "7f762dd7e8d2",
+      "date": "2026-10-12",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 756,
+        "completed_item_count": 732,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -25519,8 +25553,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "LM3.1-LM3.10",
+    "roadmap_slice_id": "LM5.13-LM5.15-LM5.17",
     "source_commit_sha": "082f00a08190d78df65652dc84f0ecc07801cfa8",
-    "closeout_sha": "e8cb54445643119b7e7036eb9160bbac4831755c"
+    "closeout_sha": "ab60978843325b4b7f6f769fe01f65b3446122a4"
   }
 }
