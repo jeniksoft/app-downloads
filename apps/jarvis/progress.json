@@ -376,11 +376,11 @@
         "status_label_cs": "Rozpracováno",
         "status_label_en": "In progress",
         "is_complete": false,
-        "progress_available": true,
-        "progress_kind": "evidence-bound",
-        "progress_percent": 37.48,
-        "measurement_cs": "Evidence-bound primary index",
-        "measurement_en": "Evidence-bound primary index"
+        "progress_available": false,
+        "progress_kind": "canonical-release-gate",
+        "progress_percent": null,
+        "measurement_cs": "Postup řezů se zobrazuje přímo v kanonické roadmapě.",
+        "measurement_en": "Slice progress is shown directly in the canonical roadmap."
       },
       {
         "edition": "teams",
@@ -393,10 +393,10 @@
         "status_label_en": "Open",
         "is_complete": false,
         "progress_available": false,
-        "progress_kind": "roadmap-only",
+        "progress_kind": "canonical-release-gate",
         "progress_percent": null,
-        "measurement_cs": "Měření není aktivní",
-        "measurement_en": "Measurement not active"
+        "measurement_cs": "Postup řezů se zobrazuje přímo v kanonické roadmapě.",
+        "measurement_en": "Slice progress is shown directly in the canonical roadmap."
       },
       {
         "edition": "enterprise",
@@ -409,10 +409,10 @@
         "status_label_en": "Open",
         "is_complete": false,
         "progress_available": false,
-        "progress_kind": "roadmap-only",
+        "progress_kind": "canonical-release-gate",
         "progress_percent": null,
-        "measurement_cs": "Měření není aktivní",
-        "measurement_en": "Measurement not active"
+        "measurement_cs": "Postup řezů se zobrazuje přímo v kanonické roadmapě.",
+        "measurement_en": "Slice progress is shown directly in the canonical roadmap."
       }
     ],
     "groups": [
