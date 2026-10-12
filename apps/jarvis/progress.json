@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 2397,
-        "physical_lines": 748035,
-        "bytes": 35402135,
-        "megabytes": 35.402135
+        "files": 2399,
+        "physical_lines": 748657,
+        "bytes": 35426817,
+        "megabytes": 35.426817
       },
       {
         "language": "JSON",
-        "files": 574,
-        "physical_lines": 199811,
-        "bytes": 33138718,
-        "megabytes": 33.138718
+        "files": 575,
+        "physical_lines": 199961,
+        "bytes": 33147626,
+        "megabytes": 33.147626
       },
       {
         "language": "Markdown",
-        "files": 1137,
-        "physical_lines": 156554,
-        "bytes": 8698391,
-        "megabytes": 8.698391
+        "files": 1138,
+        "physical_lines": 156664,
+        "bytes": 8704991,
+        "megabytes": 8.704991
       },
       {
         "language": "Python",
-        "files": 789,
-        "physical_lines": 128163,
-        "bytes": 5347807,
-        "megabytes": 5.347807
+        "files": 790,
+        "physical_lines": 128269,
+        "bytes": 5351961,
+        "megabytes": 5.351961
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 5227,
-      "physical_lines": 1278906,
-      "bytes": 91899119,
-      "megabytes": 91.899119
+      "files": 5232,
+      "physical_lines": 1279894,
+      "bytes": 91943463,
+      "megabytes": 91.943463
     },
     "binary_assets": {
       "files": 41,
@@ -144,10 +144,10 @@
       "megabytes": 14.682994
     },
     "tracked_total": {
-      "files": 5268,
-      "physical_lines": 1278906,
-      "bytes": 106582113,
-      "megabytes": 106.582113
+      "files": 5273,
+      "physical_lines": 1279894,
+      "bytes": 106626457,
+      "megabytes": 106.626457
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
@@ -501,14 +501,14 @@
         "chapter_color": "optional",
         "chapter_count": 24,
         "item_count": 253,
-        "completed_item_count": 224,
-        "implemented_item_count": 224,
+        "completed_item_count": 225,
+        "implemented_item_count": 225,
         "verified_item_count": 35,
         "in_progress_item_count": 0,
-        "architecture_item_count": 29,
+        "architecture_item_count": 28,
         "blocked_item_count": 0,
-        "completion_percent": 88.54,
-        "status_percent": 88.54
+        "completion_percent": 88.93,
+        "status_percent": 88.93
       }
     ],
     "chapters": [
@@ -2327,14 +2327,14 @@
         "status_source": "canonical-child-items",
         "is_complete": false,
         "item_count": 9,
-        "completed_item_count": 3,
-        "implemented_item_count": 3,
+        "completed_item_count": 4,
+        "implemented_item_count": 4,
         "verified_item_count": 0,
         "in_progress_item_count": 0,
-        "architecture_item_count": 6,
+        "architecture_item_count": 5,
         "blocked_item_count": 0,
-        "completion_percent": 33.33,
-        "status_percent": 33.33
+        "completion_percent": 44.44,
+        "status_percent": 44.44
       },
       {
         "id": "SRH",
@@ -19847,13 +19847,13 @@
         "chapter_color": "optional",
         "description_cs": "Přesné neblokující zvýraznění libovolného prvku podle skutečné geometrie, DPI, theme a accessibility",
         "description_en": "Control spotlight overlay and accessibility",
-        "status": "architecture-only",
-        "status_label_cs": "Architektura",
-        "status_label_en": "Architecture",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno",
+        "status_label_en": "Implemented",
         "status_source": "canonical-roadmap-slice",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap-slice",
         "verify": "V3",
         "is_slice": true
@@ -20532,22 +20532,22 @@
       }
     ],
     "item_count": 756,
-    "completed_item_count": 726,
-    "implemented_item_count": 726,
+    "completed_item_count": 727,
+    "implemented_item_count": 727,
     "verified_item_count": 339,
     "in_progress_item_count": 1,
-    "architecture_item_count": 29,
+    "architecture_item_count": 28,
     "blocked_item_count": 0,
     "status_counts": {
-      "architecture-only": 29,
+      "architecture-only": 28,
       "in-progress": 1,
-      "implemented-unverified": 387,
+      "implemented-unverified": 388,
       "verified": 339,
       "blocked": 0
     },
     "chapter_count": 78,
-    "completion_percent": 96.06,
-    "status_percent": 96.06,
+    "completion_percent": 96.2,
+    "status_percent": 96.2,
     "status_percent_contract": {
       "kind": "canonical-implementation-coverage-compatibility",
       "label_cs": "Implementační pokrytí",
@@ -20589,7 +20589,7 @@
     "avoided_runs_estimate": 0,
     "avoided_percent": 0.0,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
-    "incremental_closeout_points_since_full_baseline": 19,
+    "incremental_closeout_points_since_full_baseline": 20,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -24726,6 +24726,40 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "5429eeb48d73",
+      "date": "2026-10-12",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 756,
+        "completed_item_count": 727,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -24737,8 +24771,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "MUI2",
-    "source_commit_sha": "5d96727ccf1625f59c128ff4dda4171b2cd4c601",
-    "closeout_sha": "613e54613888b506f5e2f2941cc3cf7a0bb11015"
+    "roadmap_slice_id": "MUI3",
+    "source_commit_sha": "cef77f8717ea7b2fc8df07a79325696f799adfe9",
+    "closeout_sha": "56b30e7f7012890b8ea4bc4b95f8827938ec26f0"
   }
 }
