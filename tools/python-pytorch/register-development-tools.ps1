@@ -88,8 +88,11 @@ function Add-VisualStudioToolDirectories {
         Add-ToolDirectory (Join-Path $instance.FullName 'Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja')
         Add-ToolDirectory (Join-Path $instance.FullName 'Common7\IDE\CommonExtensions\Microsoft\NuGet')
         Add-ToolDirectory (Join-Path $instance.FullName 'Common7\IDE\CommonExtensions\Microsoft\TestWindow')
+        Add-ToolDirectory (Join-Path $instance.FullName 'Common7\IDE\CommonExtensions\Microsoft\TestWindow\VsTest\Extensions\dump')
         Add-ToolDirectory (Join-Path $instance.FullName 'Common7\IDE\Extensions\Microsoft\CodeCoverage.Console')
         Add-ToolDirectory (Join-Path $instance.FullName 'Common7\IDE\Extensions\TestPlatform')
+        Add-ToolDirectory (Join-Path $instance.FullName 'Common7\IDE\Extensions\TestPlatform\Extensions\dump')
+        Add-ToolDirectory (Join-Path $instance.FullName 'Team Tools\Dynamic Code Coverage Tools')
         Add-ToolDirectory (Join-Path $instance.FullName 'MSBuild\Current\Bin\amd64')
         Add-ToolDirectory (Join-Path $instance.FullName 'MSBuild\Current\Bin')
         Add-ToolDirectory (Join-Path $instance.FullName 'MSBuild\Current\Bin\Roslyn')
@@ -141,13 +144,25 @@ function Add-WindowsSdkToolDirectories {
         if ($versionDirectories.Count -gt 0) {
             foreach ($version in $versionDirectories) {
                 foreach ($architecture in @('x64', 'x86', 'arm64')) {
-                    Add-ToolDirectory (Join-Path $version.FullName $architecture)
+                    $architectureRoot = Join-Path $version.FullName $architecture
+                    Add-ToolDirectory $architectureRoot
+                    # These SDK subdirectories contain callable accessibility/UI
+                    # verification tools, but are not searched recursively. Keep
+                    # the list explicit so DLL/resource folders never leak into
+                    # the user's PATH.
+                    foreach ($toolSubdirectory in @('AccChecker', 'UIAVerify')) {
+                        Add-ToolDirectory (Join-Path $architectureRoot $toolSubdirectory)
+                    }
                 }
             }
         }
         else {
             foreach ($architecture in @('x64', 'x86', 'arm64')) {
-                Add-ToolDirectory (Join-Path $binRoot $architecture)
+                $architectureRoot = Join-Path $binRoot $architecture
+                Add-ToolDirectory $architectureRoot
+                foreach ($toolSubdirectory in @('AccChecker', 'UIAVerify')) {
+                    Add-ToolDirectory (Join-Path $architectureRoot $toolSubdirectory)
+                }
             }
         }
     }
@@ -405,15 +420,23 @@ else {
 # Refresh only this process so the optional verification does not require a new shell.
 $env:Path = $newUserPath + ';' + [Environment]::GetEnvironmentVariable('Path', 'Machine')
 $commandsToCheck = @(
-    'python', 'py', 'pip', 'torchrun', 'gradle', 'java', 'javac', 'ollama', 'gh',
-    'winget', 'WinDbgX', 'cdbX64', 'kdX64', 'ntsdX64',
+    'python', 'python3', 'py', 'pip', 'pip3', 'torchrun', 'gradle', 'java', 'javac',
+    'jconsole', 'jpackage', 'jwebserver', 'keytool', 'ollama', 'llama-server', 'gh',
+    'winget', 'WinDbgX', 'cdbARM64', 'cdbX64', 'cdbX86',
+    'dbgsrvARM64', 'dbgsrvX64', 'dbgsrvX86', 'kdARM64', 'kdX64', 'kdX86', 'kdnet',
+    'ntsdARM64', 'ntsdX64', 'ntsdX86',
     'adb', 'emulator', 'sdkmanager', 'avdmanager', 'android', 'sqlite3',
     'cmake', 'cpack', 'ctest', 'ninja',
     'msbuild', 'cl', 'clang-cl', 'rc', 'mt', 'signtool', 'vswhere', 'dotnet',
     'wix', 'wixnative', 'candle', 'light', 'dark', 'heat', 'insignia', 'WixCop',
     'DocCompiler', 'MakeSfxCA', 'ildasm', 'gacutil', 'resgen', 'sn', 'csc', 'vbc',
     'vstest.console', 'NuGet.Build.Tasks.Console', 'Microsoft.CodeCoverage.Console',
-    'MSBuildTaskHost', 'SvcTraceViewer', '7z', 'git', 'bash', 'sh',
+    'CodeCoverage', 'covinstrc32', 'DumpMinitool', 'MSBuildTaskHost', 'SvcTraceViewer',
+    'AccCheckConsole', 'acccheckui', 'VisualUIAVerifyNative', 'cameraprofiletool',
+    'ComparePackage', 'PackageEditor', 'SkTool', 'wsddebug_client', 'wsddebug_host',
+    'dxc', 'fxc', 'makeappx', 'makecat', 'makepri', 'mc', 'midl', 'pvk2pfx',
+    'tracefmt', 'tracelog', 'traceview', 'vshadow', 'WinAppDeployCmd', 'wsdcodegen',
+    '7z', 'git', 'bash', 'sh',
     'AMDRyzenMasterCLI', 'zerotier-cli', 'zerotier-idtool', 'VeraCrypt',
     'VMCreate', 'VMImport', 'InspectVhdDialog'
 )

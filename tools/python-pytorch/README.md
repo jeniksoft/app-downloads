@@ -8,21 +8,25 @@ Registruje zejména:
 - PyTorch/DirectML virtualenv, pokud existuje;
 - Gradle, JDK, Ollama a jeho pomocné binárky;
 - WinGet Links, npm, Cargo, `.NET tools`, Scoop a Node.js;
-- Windows App Execution Aliases, pokud je přítomen `winget.exe` (WinGet a
-  případné nainstalované WinDbg aliasy; skutečné instalace Pythonu mají
-  přednost před Store aliasem);
+- Windows App Execution Aliases, pokud je přítomen `winget.exe` (WinGet,
+  WinDbg a všechny dostupné architektury `cdb`/`dbgsrv`/`kd`/`ntsd`; skutečné
+  instalace Pythonu mají přednost před Store aliasem);
 - Android SDK (`platform-tools`, emulator, qemu, command-line tools a build-tools).
 - Hyper-V host/QA utilities (`VMCreate`, `VMImport` a `InspectVhdDialog`), pokud
   je hostitelská instalace Hyper-V přítomná;
 - Visual Studio Build Tools (MSBuild, CMake, Ninja, MSVC/LLVM, `vswhere` a
-  inicializační skripty), Roslyn (`csc`/`vbc`), VSTest, NuGet build task a
-  Code Coverage CLI;
-- Windows SDK (x64/x86/ARM64 build, resource, signing a shader nástroje).
+  inicializační skripty), Roslyn (`csc`/`vbc`), VSTest, NuGet build task,
+  Code Coverage CLI, coverage instrumentaci a testovací dump utility;
+- Windows SDK (x64/x86/ARM64 build, resource, signing, shader, package,
+  deployment, tracing a accessibility/UI verification nástroje), včetně
+  explicitních podadresářů `AccChecker` a `UIAVerify`;
 - WiX 3.x i novější WiX CLI, včetně manuálně nainstalovaných verzí pod
   `C:\Tools\WiXToolset`;
 - .NET Framework SDK nástroje (`ildasm`, `gacutil`, `resgen`, `sn` a další),
   AMD Ryzen Master CLI, 7-Zip z registrované instalace, VeraCrypt CLI,
   ZeroTier CLI a Git Bash (`bash`/`sh`);
+- pomocné JDK příkazy (`jconsole`, `jpackage`, `jwebserver`, `keytool`) a
+  Ollama runtime helper `llama-server`, pokud jsou součástí nalezené instalace;
 - GitHub CLI z WinGetu nebo jako přesný fallback z instalace Codex Task Boardu;
 - `dotnet` a Git CLI z jejich standardních instalačních umístění.
 
@@ -36,6 +40,9 @@ Git Bash si tento interní adresář nastaví samo při spuštění.
 Stejně se záměrně nepřidávají interní GUI aplikace, duplicitní 7-Zip z ovladačů
 ani alternativní `adb` z BlueStacks, protože by mohly zastínit oficiální SDK
 verze. Registrují se pouze přesné adresáře ověřených CLI/developer nástrojů.
+Audit záměrně vynechává i interní `ffmpeg`/7-Zip z BlueStacks/AMD, Git
+`usr\bin` a GUI/launcher binárky; jejich nalezení samo o sobě neznamená, že
+patří do globálního vývojového PATH.
 Kořen Hyper-V je výjimka pro tři konkrétní hostitelské VM/VHD QA nástroje;
 registruje se pouze tehdy, když obsahuje skutečné spustitelné soubory.
 
