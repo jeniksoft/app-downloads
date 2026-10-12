@@ -35,31 +35,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 2391,
-        "physical_lines": 745954,
-        "bytes": 35318170,
-        "megabytes": 35.31817
+        "files": 2393,
+        "physical_lines": 746559,
+        "bytes": 35342434,
+        "megabytes": 35.342434
       },
       {
         "language": "JSON",
-        "files": 571,
-        "physical_lines": 199553,
-        "bytes": 33122550,
-        "megabytes": 33.12255
+        "files": 572,
+        "physical_lines": 199604,
+        "bytes": 33126269,
+        "megabytes": 33.126269
       },
       {
         "language": "Markdown",
-        "files": 1134,
-        "physical_lines": 156250,
-        "bytes": 8680398,
-        "megabytes": 8.680398
+        "files": 1135,
+        "physical_lines": 156331,
+        "bytes": 8685547,
+        "megabytes": 8.685547
       },
       {
         "language": "Python",
-        "files": 786,
-        "physical_lines": 127875,
-        "bytes": 5336818,
-        "megabytes": 5.336818
+        "files": 787,
+        "physical_lines": 127962,
+        "bytes": 5339883,
+        "megabytes": 5.339883
       },
       {
         "language": "PowerShell",
@@ -133,10 +133,10 @@
       }
     ],
     "source_text": {
-      "files": 5212,
-      "physical_lines": 1275975,
-      "bytes": 91770004,
-      "megabytes": 91.770004
+      "files": 5217,
+      "physical_lines": 1276799,
+      "bytes": 91806201,
+      "megabytes": 91.806201
     },
     "binary_assets": {
       "files": 41,
@@ -144,19 +144,19 @@
       "megabytes": 14.682994
     },
     "tracked_total": {
-      "files": 5253,
-      "physical_lines": 1275975,
-      "bytes": 106452998,
-      "megabytes": 106.452998
+      "files": 5258,
+      "physical_lines": 1276799,
+      "bytes": 106489195,
+      "megabytes": 106.489195
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "physical_lines": -7,
+        "bytes": -414,
+        "megabytes": -0.000414
       },
       "binary_assets": {
         "files": 0,
@@ -166,9 +166,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "physical_lines": -7,
+        "bytes": -414,
+        "megabytes": -0.000414
       }
     }
   },
@@ -501,14 +501,14 @@
         "chapter_color": "optional",
         "chapter_count": 24,
         "item_count": 253,
-        "completed_item_count": 221,
-        "implemented_item_count": 221,
+        "completed_item_count": 222,
+        "implemented_item_count": 222,
         "verified_item_count": 35,
         "in_progress_item_count": 0,
-        "architecture_item_count": 32,
+        "architecture_item_count": 31,
         "blocked_item_count": 0,
-        "completion_percent": 87.35,
-        "status_percent": 87.35
+        "completion_percent": 87.75,
+        "status_percent": 87.75
       }
     ],
     "chapters": [
@@ -2321,20 +2321,20 @@
         "name_cs": "MUI — Model-guided Jarvis UI navigation and visual spotlight",
         "name_en": "MUI — Model-guided Jarvis UI navigation and visual spotlight",
         "status": "architecture-only",
-        "display_status": "architecture-only",
-        "status_label_cs": "Architektura",
-        "status_label_en": "Architecture",
+        "display_status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
         "status_source": "canonical-child-items",
         "is_complete": false,
         "item_count": 9,
-        "completed_item_count": 0,
-        "implemented_item_count": 0,
+        "completed_item_count": 1,
+        "implemented_item_count": 1,
         "verified_item_count": 0,
         "in_progress_item_count": 0,
-        "architecture_item_count": 9,
+        "architecture_item_count": 8,
         "blocked_item_count": 0,
-        "completion_percent": 0.0,
-        "status_percent": 0.0
+        "completion_percent": 11.11,
+        "status_percent": 11.11
       },
       {
         "id": "SRH",
@@ -19775,13 +19775,13 @@
         "chapter_color": "optional",
         "description_cs": "Inventář všech oken, dialogů, ovládacích prvků, menu, pluginů a Skalda overlay",
         "description_en": "Complete Jarvis UI surface/control coverage inventory",
-        "status": "architecture-only",
-        "status_label_cs": "Architektura",
-        "status_label_en": "Architecture",
+        "status": "implemented-unverified",
+        "status_label_cs": "Implementováno",
+        "status_label_en": "Implemented",
         "status_source": "canonical-roadmap-slice",
-        "is_complete": false,
-        "status_percent": 0.0,
-        "completion_percent": 0.0,
+        "is_complete": true,
+        "status_percent": 100.0,
+        "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap-slice",
         "verify": "V0",
         "is_slice": true
@@ -20532,22 +20532,22 @@
       }
     ],
     "item_count": 756,
-    "completed_item_count": 723,
-    "implemented_item_count": 723,
+    "completed_item_count": 724,
+    "implemented_item_count": 724,
     "verified_item_count": 339,
     "in_progress_item_count": 1,
-    "architecture_item_count": 32,
+    "architecture_item_count": 31,
     "blocked_item_count": 0,
     "status_counts": {
-      "architecture-only": 32,
+      "architecture-only": 31,
       "in-progress": 1,
-      "implemented-unverified": 384,
+      "implemented-unverified": 385,
       "verified": 339,
       "blocked": 0
     },
     "chapter_count": 78,
-    "completion_percent": 95.67,
-    "status_percent": 95.67,
+    "completion_percent": 95.8,
+    "status_percent": 95.8,
     "status_percent_contract": {
       "kind": "canonical-implementation-coverage-compatibility",
       "label_cs": "Implementační pokrytí",
@@ -20568,7 +20568,7 @@
     "available": true,
     "previous_date": "2026-10-12",
     "roadmap_items_delta": 0,
-    "roadmap_completed_delta": 7,
+    "roadmap_completed_delta": 1,
     "roadmap_chapters_delta": 0,
     "verified_evidence_delta": 0,
     "metrics_delta": {
@@ -20589,7 +20589,7 @@
     "avoided_runs_estimate": 0,
     "avoided_percent": 0.0,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
-    "incremental_closeout_points_since_full_baseline": 16,
+    "incremental_closeout_points_since_full_baseline": 17,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -24624,6 +24624,40 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "756320811c5b",
+      "date": "2026-10-12",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 756,
+        "completed_item_count": 724,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 1,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -24635,8 +24669,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "MDOC6",
-    "source_commit_sha": "1b36f5e6b44ebf3d5037c1d7ea3f47330cd49e66",
-    "closeout_sha": "3a84712b47825311a9a8c9ae15815339822825ad"
+    "roadmap_slice_id": "MUI0",
+    "source_commit_sha": "f160f12826e85d702c64f4f20dc614b3a0a13a51",
+    "closeout_sha": "a2a7180e55875acde9b1c3d7eaeafac56e2b7617"
   }
 }

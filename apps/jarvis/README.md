@@ -29,7 +29,7 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 
 ### Ověření posledního roadmapového closeoutu
 
-Řez `MDOC6` je veřejně spojen se zdrojovým SHA `1b36f5e6b44ebf3d5037c1d7ea3f47330cd49e66` a closeout SHA `3a84712b47825311a9a8c9ae15815339822825ad`. Stav: **verified**.
+Řez `MUI0` je veřejně spojen se zdrojovým SHA `f160f12826e85d702c64f4f20dc614b3a0a13a51` a closeout SHA `a2a7180e55875acde9b1c3d7eaeafac56e2b7617`. Stav: **verified**.
 Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
 
 Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
@@ -74,7 +74,7 @@ Personal 1.0.0 má celkový stav **37.48 %**. Hodnota uvnitř kapitoly zůstáv�
 Počty stavů v grafu se nepřekrývají: Implementováno znamená implementované, ale dosud neověřené řezy; Ověřeno se počítá zvlášť. Jejich součet tvoří implementační pokrytí roadmapy, nikoli vážený evidence-bound index Personal 1.0.0.
 Ikona i popisek jsou viditelné přímo v README; po najetí kurzorem tooltip vysvětlí význam a nezaměňuje implementaci za živé ověření.
 
-**Změna od předchozího snapshotu: roadmapa položky +0 · implementováno +7 · ověřené důkazy +0**
+**Změna od předchozího snapshotu: roadmapa položky +0 · implementováno +1 · ověřené důkazy +0**
 
 ![Roadmapa a progress edic Jarvis](visuals/roadmap-editions.svg)
 
@@ -128,10 +128,10 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 2 391 | 745 954 | 35.32 |
-| JSON | 571 | 199 553 | 33.12 |
-| Markdown | 1 134 | 156 250 | 8.68 |
-| Python | 786 | 127 875 | 5.34 |
+| C/C++ | 2 393 | 746 559 | 35.34 |
+| JSON | 572 | 199 604 | 33.13 |
+| Markdown | 1 135 | 156 331 | 8.69 |
+| Python | 787 | 127 962 | 5.34 |
 | PowerShell | 73 | 34 638 | 1.78 |
 | Other text | 81 | 5 975 | 0.29 |
 | JSONL | 16 | 2 515 | 6.93 |
@@ -142,9 +142,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **5 212** | **1 275 975** | **91.77** |
+| **Text/source celkem** | **5 217** | **1 276 799** | **91.81** |
 | Binární assety (mimo řádky) | 41 | — | 14.68 |
-| **Trackovaný strom celkem** | **5 253** | **1 275 975** | **106.45** |
+| **Trackovaný strom celkem** | **5 258** | **1 276 799** | **106.49** |
 
 ### Přírůstek od předchozí revize
 
@@ -152,9 +152,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +0 | +0 | +0.00 |
+| Text/source celkem | +0 | -7 | -0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +0 | +0 | +0.00 |
+| Trackovaný strom celkem | +0 | -7 | -0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -224,7 +224,6 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `df42ef675f89` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `74a2b2617684` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `a1472f2845a3` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `b08ab689c5eb` | 2026-10-11 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
@@ -242,13 +241,14 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 | `8a5ad93ef776` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `5f1f1f010e62` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 | `a83482cf367c` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| `756320811c5b` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
 Historický baseline: starý režim by spustil **63** běhů, closeout režim **63**; odhadovaná úspora je **0** běhů (**0.00 %**).
-Optimalizace běhu: 16 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Optimalizace běhu: 17 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
