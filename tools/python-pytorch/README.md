@@ -12,11 +12,19 @@ Registruje zejména:
 - Visual Studio Build Tools (MSBuild, CMake, Ninja, MSVC/LLVM, `vswhere` a
   inicializační skripty);
 - Windows SDK (x64/x86/ARM64 build, resource, signing a shader nástroje).
+- WiX 3.x i novější WiX CLI, včetně manuálně nainstalovaných verzí pod
+  `C:\Tools\WiXToolset`;
+- .NET Framework SDK nástroje (`ildasm`, `gacutil`, `resgen`, `sn` a další),
+  AMD Ryzen Master CLI, 7-Zip z registrované instalace a Git Bash (`bash`/`sh`);
+- `dotnet` a Git CLI z jejich standardních instalačních umístění.
 
 Stávající uživatelské položky `PATH` zachovává. Do systémového `PATH` ani do registru aplikací nezasahuje. Skript nic nestahuje ani neinstaluje; pouze registruje existující nástroje.
 U Visual Studio toolchainu registrace zpřístupní binárky přes `PATH`; pro
 kompilaci, která vyžaduje `INCLUDE`/`LIB`, použij Developer PowerShell nebo
 `VsDevCmd.bat`, protože samotný `PATH` tyto SDK proměnné nenastavuje.
+Git `usr\bin` se globálně neregistruje schválně, protože obsahuje Unixové
+kompatibilní příkazy, které by mohly zastínit stejnojmenné Windows nástroje;
+Git Bash si tento interní adresář nastaví samo při spuštění.
 
 ## Použití
 

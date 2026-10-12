@@ -148,6 +148,105 @@ function Add-WindowsSdkToolDirectories {
     }
 }
 
+function Add-AdditionalDeveloperToolDirectories {
+    # These are deliberately narrow, well-known developer/QA tool locations.
+    # Do not add whole application trees or Git's usr\bin globally: the latter
+    # contains Unix compatibility commands which can shadow Windows commands.
+    Add-ToolDirectory (Join-Path ${env:ProgramFiles} 'dotnet')
+
+    foreach ($gitRoot in @(
+            (Join-Path ${env:ProgramFiles} 'Git'),
+            (Join-Path ${env:ProgramFiles(x86)} 'Git')
+        )) {
+        if (Test-Path -LiteralPath $gitRoot -PathType Container) {
+            Add-ToolDirectory (Join-Path $gitRoot 'cmd')
+            Add-ToolDirectory (Join-Path $gitRoot 'bin')
+        }
+    }
+
+    # WiX 3.x and 4+/7 installations use different command names and layouts.
+    # Register the versioned roots that are actually present, including the
+    # manually provisioned C:\Tools tree used by local packaging workflows.
+    foreach ($wixParent in @(
+            ${env:ProgramFiles},
+            ${env:ProgramFiles(x86)},
+            (Join-Path ${env:SystemDrive} 'Tools\WiXToolset')
+        )) {
+        if (-not (Test-Path -LiteralPath $wixParent -PathType Container)) {
+            continue
+        }
+
+        $wixRoots = @()
+        if ((Split-Path -Leaf $wixParent) -eq 'WiXToolset') {
+            $wixRoots = @(Get-ChildItem -LiteralPath $wixParent -Directory -ErrorAction SilentlyContinue |
+                Where-Object { $_.Name -match '^v\d' } |
+                Sort-Object Name -Descending)
+        }
+        elseif ((Split-Path -Leaf $wixParent) -match '^WiX Toolset v') {
+            $wixRoots = @(Get-Item -LiteralPath $wixParent -ErrorAction SilentlyContinue)
+        }
+        else {
+            $wixRoots = @(Get-ChildItem -LiteralPath $wixParent -Directory -ErrorAction SilentlyContinue |
+                Where-Object { $_.Name -match '^WiX Toolset v' } |
+                Sort-Object Name -Descending)
+        }
+
+        foreach ($wixRoot in $wixRoots) {
+            foreach ($toolPath in @(
+                    (Join-Path $wixRoot.FullName 'bin'),
+                    (Join-Path $wixRoot.FullName 'SDK'),
+                    (Join-Path $wixRoot.FullName 'sdk'),
+                    (Join-Path $wixRoot.FullName 'x86'),
+                    (Join-Path $wixRoot.FullName 'x64')
+                )) {
+                Add-ToolDirectory $toolPath
+            }
+            # A manually extracted WiX 3.x tree keeps its CLI directly in the
+            # version directory, while installed WiX keeps it under bin.
+            Add-ToolDirectory $wixRoot.FullName
+        }
+    }
+
+    # .NET Framework SDK utilities are separate from dotnet.exe and are not
+    # included in the modern Windows SDK bin directories.
+    $legacyWindowsSdkRoot = Join-Path ${env:ProgramFiles(x86)} 'Microsoft SDKs\Windows'
+    if (Test-Path -LiteralPath $legacyWindowsSdkRoot -PathType Container) {
+        foreach ($windowsSdk in @(Get-ChildItem -LiteralPath $legacyWindowsSdkRoot -Directory -ErrorAction SilentlyContinue |
+                Where-Object { $_.Name -match '^v\d' })) {
+            $sdkBin = Join-Path $windowsSdk.FullName 'bin'
+            foreach ($toolDirectory in @(Get-ChildItem -LiteralPath $sdkBin -Directory -ErrorAction SilentlyContinue |
+                    Where-Object { $_.Name -match '(?i)tools$' })) {
+                Add-ToolDirectory $toolDirectory.FullName
+                Add-ToolDirectory (Join-Path $toolDirectory.FullName 'x64')
+            }
+        }
+    }
+
+    # AMD ships a supported command-line diagnostic utility with Ryzen Master.
+    Add-ToolDirectory (Join-Path ${env:ProgramFiles} 'AMD\RyzenMasterSDK\AMDRyzenMasterCLI\bin-prebuilt')
+
+    # 7-Zip is often installed outside Program Files. Use only the registered
+    # 7-Zip uninstall location rather than scanning arbitrary user directories.
+    $uninstallRoots = @(
+        'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*',
+        'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*',
+        'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*'
+    )
+    foreach ($installedTool in @(Get-ItemProperty -Path $uninstallRoots -ErrorAction SilentlyContinue |
+            Where-Object {
+                $displayName = $_.PSObject.Properties['DisplayName']
+                $installLocation = $_.PSObject.Properties['InstallLocation']
+                $null -ne $displayName -and
+                    $null -ne $installLocation -and
+                    $displayName.Value -match '(?i)^7-Zip\b' -and
+                    -not [string]::IsNullOrWhiteSpace([string]$installLocation.Value)
+            })) {
+        Add-ToolDirectory ([string]$installedTool.InstallLocation)
+    }
+    Add-ToolDirectory (Join-Path ${env:ProgramFiles} '7-Zip')
+    Add-ToolDirectory (Join-Path ${env:ProgramFiles(x86)} '7-Zip')
+}
+
 $script:candidates = New-Object 'System.Collections.Generic.List[string]'
 $script:seenCandidates = @{}
 $localPrograms = Join-Path $env:LOCALAPPDATA 'Programs'
@@ -219,6 +318,8 @@ foreach ($windowsKitsRoot in @(
     Add-WindowsSdkToolDirectories $windowsKitsRoot
 }
 
+Add-AdditionalDeveloperToolDirectories
+
 $androidRoots = New-Object 'System.Collections.Generic.List[string]'
 foreach ($root in @(
         $AndroidSdkRoot,
@@ -280,7 +381,9 @@ $env:Path = $newUserPath + ';' + [Environment]::GetEnvironmentVariable('Path', '
 $commandsToCheck = @(
     'python', 'py', 'pip', 'torchrun', 'gradle', 'java', 'javac', 'ollama', 'gh',
     'adb', 'emulator', 'sdkmanager', 'avdmanager', 'android', 'cmake', 'ninja',
-    'msbuild', 'cl', 'clang-cl', 'rc', 'mt', 'signtool', 'vswhere'
+    'msbuild', 'cl', 'clang-cl', 'rc', 'mt', 'signtool', 'vswhere', 'dotnet',
+    'wix', 'candle', 'light', 'dark', 'heat', 'ildasm', 'gacutil', 'resgen',
+    'sn', '7z', 'git', 'bash', 'sh', 'AMDRyzenMasterCLI'
 )
 foreach ($commandName in $commandsToCheck) {
     $command = Get-Command $commandName -ErrorAction SilentlyContinue | Select-Object -First 1
