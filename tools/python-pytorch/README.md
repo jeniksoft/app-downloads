@@ -8,6 +8,9 @@ Registruje zejména:
 - PyTorch/DirectML virtualenv, pokud existuje;
 - Gradle, JDK, Ollama a jeho pomocné binárky;
 - WinGet Links, npm, Cargo, `.NET tools`, Scoop a Node.js;
+- Windows App Execution Aliases, pokud je přítomen `winget.exe` (WinGet a
+  případné nainstalované WinDbg aliasy; skutečné instalace Pythonu mají
+  přednost před Store aliasem);
 - Android SDK (`platform-tools`, emulator, qemu, command-line tools a build-tools).
 - Visual Studio Build Tools (MSBuild, CMake, Ninja, MSVC/LLVM, `vswhere` a
   inicializační skripty), Roslyn (`csc`/`vbc`), VSTest, NuGet build task a

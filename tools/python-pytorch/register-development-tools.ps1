@@ -302,6 +302,14 @@ if (Test-Path -LiteralPath $jdkRoot -PathType Container) {
 Add-ToolDirectory (Join-Path $localPrograms 'Ollama')
 Add-ToolDirectory (Join-Path $localPrograms 'Ollama\lib\ollama')
 Add-ToolDirectory (Join-Path $env:LOCALAPPDATA 'Microsoft\WinGet\Links')
+# Windows keeps package-manager and debugger application aliases in this
+# per-user directory. Add it only when winget is actually installed; the
+# concrete Python installations above stay first and therefore cannot be
+# shadowed by the Store's python.exe alias.
+$windowsAppsRoot = Join-Path $env:LOCALAPPDATA 'Microsoft\WindowsApps'
+if (Test-Path -LiteralPath (Join-Path $windowsAppsRoot 'winget.exe') -PathType Leaf) {
+    Add-ToolDirectory $windowsAppsRoot
+}
 Add-ToolDirectory (Join-Path $env:APPDATA 'npm')
 Add-ToolDirectory (Join-Path $env:USERPROFILE '.cargo\bin')
 Add-ToolDirectory (Join-Path $env:USERPROFILE '.dotnet\tools')
@@ -385,6 +393,7 @@ else {
 $env:Path = $newUserPath + ';' + [Environment]::GetEnvironmentVariable('Path', 'Machine')
 $commandsToCheck = @(
     'python', 'py', 'pip', 'torchrun', 'gradle', 'java', 'javac', 'ollama', 'gh',
+    'winget', 'WinDbgX', 'cdbX64', 'kdX64', 'ntsdX64',
     'adb', 'emulator', 'sdkmanager', 'avdmanager', 'android', 'cmake', 'ninja',
     'msbuild', 'cl', 'clang-cl', 'rc', 'mt', 'signtool', 'vswhere', 'dotnet',
     'wix', 'candle', 'light', 'dark', 'heat', 'ildasm', 'gacutil', 'resgen',
