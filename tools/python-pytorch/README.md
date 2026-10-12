@@ -31,6 +31,13 @@ Registruje zejména:
   Ollama runtime helper `llama-server`, pokud jsou součástí nalezené instalace;
 - GitHub CLI z WinGetu nebo jako přesný fallback z instalace Codex Task Boardu;
 - `dotnet` a Git CLI z jejich standardních instalačních umístění.
+- Unreal Engine z nainstalovaných Epic Games kořenů na připojených discích
+  (Editor/Cmd, UnrealPak, UnrealBuildTool, RunUAT, AutomationTool, Insights,
+  Frontend, trace server a další build/test binárky); přidává se jen konkrétní
+  engine/tool adresář, nikoli projekt, cache nebo celý disk;
+- UnrealTraceServer z verzovaných per-user Epic/UnrealTrace umístění a
+  volitelné Epic UnrealBuildAccelerator/Zen nástroje, pokud skutečně obsahují
+  spustitelné soubory.
 
 Součástí kontroly jsou také systémové vývojářské/QA nástroje, které už Windows
 zpřístupňuje přes systémový PATH, například `appverif`, `wpr`, `appcert`,
@@ -50,6 +57,9 @@ verze. Registrují se pouze přesné adresáře ověřených CLI/developer nást
 Audit záměrně vynechává i interní `ffmpeg`/7-Zip z BlueStacks/AMD, Git
 `usr\bin` a GUI/launcher binárky; jejich nalezení samo o sobě neznamená, že
 patří do globálního vývojového PATH.
+U Unreal Engine se prohledávají pouze přesné `Epic Games` kořeny a standardní
+engine tool adresáře; projektové `Binaries`, `Intermediate`, `Saved`,
+`DerivedDataCache` ani launcher se globálně nepřidávají.
 Kořen Hyper-V je výjimka pro tři konkrétní hostitelské VM/VHD QA nástroje;
 registruje se pouze tehdy, když obsahuje skutečné spustitelné soubory.
 

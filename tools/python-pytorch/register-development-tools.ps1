@@ -292,6 +292,88 @@ function Add-AdditionalDeveloperToolDirectories {
     Add-ToolDirectory (Join-Path ${env:ProgramFiles(x86)} '7-Zip')
 }
 
+function Add-UnrealToolDirectories {
+    # Discover installed Unreal Engine tool roots without exposing an entire
+    # drive or a project tree. Epic installs are commonly under Program Files
+    # on C:, while this machine also uses a mapped Z: Program Files root, so
+    # inspect only exact "Program Files\Epic Games" locations on mounted
+    # file-system drives.
+    $engineParents = New-Object 'System.Collections.Generic.List[string]'
+    foreach ($root in @(
+            $env:UNREAL_ENGINE_ROOT,
+            $env:UE_ROOT,
+            (Join-Path ${env:ProgramFiles} 'Epic Games'),
+            (Join-Path ${env:ProgramFiles(x86)} 'Epic Games'),
+            (Join-Path $env:LOCALAPPDATA 'UnrealEngine'),
+            (Join-Path $env:ProgramData 'Epic\UnrealEngine')
+        )) {
+        if (-not [string]::IsNullOrWhiteSpace($root) -and
+            -not $engineParents.Contains($root)) {
+            [void]$engineParents.Add($root)
+        }
+    }
+
+    foreach ($drive in @(Get-PSDrive -PSProvider FileSystem -ErrorAction SilentlyContinue)) {
+        if ([string]::IsNullOrWhiteSpace($drive.Root)) {
+            continue
+        }
+        foreach ($relativeRoot in @('Program Files\Epic Games', 'Program Files (x86)\Epic Games')) {
+            $candidateRoot = Join-Path $drive.Root $relativeRoot
+            if (-not $engineParents.Contains($candidateRoot)) {
+                [void]$engineParents.Add($candidateRoot)
+            }
+        }
+    }
+
+    foreach ($engineParent in @($engineParents)) {
+        if (-not (Test-Path -LiteralPath $engineParent -PathType Container)) {
+            continue
+        }
+
+        $engineRoots = @()
+        if (Test-Path -LiteralPath (Join-Path $engineParent 'Engine') -PathType Container) {
+            $engineRoots = @(Get-Item -LiteralPath $engineParent -ErrorAction SilentlyContinue)
+        }
+        else {
+            $engineRoots = @(Get-ChildItem -LiteralPath $engineParent -Directory -ErrorAction SilentlyContinue |
+                Where-Object { $_.Name -match '^UE_\d+(\.\d+)*$' -and
+                    (Test-Path -LiteralPath (Join-Path $_.FullName 'Engine') -PathType Container) })
+        }
+
+        foreach ($engineRoot in @($engineRoots)) {
+            foreach ($toolPath in @(
+                    (Join-Path $engineRoot.FullName 'Engine\Binaries\Win64'),
+                    (Join-Path $engineRoot.FullName 'Engine\Binaries\DotNET'),
+                    (Join-Path $engineRoot.FullName 'Engine\Build\BatchFiles'),
+                    (Join-Path $engineRoot.FullName 'Engine\Programs\AutomationTool'),
+                    (Join-Path $engineRoot.FullName 'Engine\Programs\UnrealBuildAccelerator'),
+                    (Join-Path $engineRoot.FullName 'Engine\Programs\UnrealTraceServer')
+                )) {
+                Add-ToolDirectory $toolPath
+            }
+        }
+    }
+
+    # UnrealTraceServer is versioned under the per-user Common cache rather
+    # than under a particular engine version. Register only its versioned
+    # executable directories, never the cache or Saved/DerivedDataCache roots.
+    foreach ($traceRoot in @(
+            (Join-Path $env:LOCALAPPDATA 'UnrealEngine\Common\UnrealTrace\Bin'),
+            (Join-Path $env:ProgramData 'Epic\UnrealTrace\Bin')
+        )) {
+        if (Test-Path -LiteralPath $traceRoot -PathType Container) {
+            foreach ($traceVersion in @(Get-ChildItem -LiteralPath $traceRoot -Directory -ErrorAction SilentlyContinue)) {
+                Add-ToolDirectory $traceVersion.FullName
+            }
+        }
+    }
+
+    # These optional components may be installed separately from the engine.
+    # A directory is added only when it contains real executables.
+    Add-ToolDirectory (Join-Path $env:ProgramData 'Epic\UnrealBuildAccelerator')
+    Add-ToolDirectory (Join-Path $env:ProgramData 'Epic\Zen')
+}
+
 $script:candidates = New-Object 'System.Collections.Generic.List[string]'
 $script:seenCandidates = @{}
 $localPrograms = Join-Path $env:LOCALAPPDATA 'Programs'
@@ -375,6 +457,7 @@ foreach ($windowsKitsRoot in @(
 }
 
 Add-AdditionalDeveloperToolDirectories
+Add-UnrealToolDirectories
 
 $androidRoots = New-Object 'System.Collections.Generic.List[string]'
 foreach ($root in @(
@@ -455,7 +538,11 @@ $commandsToCheck = @(
     'TE', 'TE.ProcessHost', 'Wex.Services', 'Conduit.Broker.Host',
     '7z', 'git', 'bash', 'sh',
     'AMDRyzenMasterCLI', 'zerotier-cli', 'zerotier-idtool', 'VeraCrypt',
-    'VMCreate', 'VMImport', 'InspectVhdDialog'
+    'VMCreate', 'VMImport', 'InspectVhdDialog',
+    'UnrealEditor', 'UnrealEditor-Cmd', 'UnrealPak', 'UnrealLightmass',
+    'UnrealInsights', 'UnrealFrontend', 'UnrealBuildTool', 'UnrealTraceServer',
+    'RunUAT', 'AutomationTool', 'ShaderCompileWorker', 'CrashReportClient',
+    'UnrealCEFSubProcess'
 )
 foreach ($commandName in $commandsToCheck) {
     $command = Get-Command $commandName -ErrorAction SilentlyContinue | Select-Object -First 1
