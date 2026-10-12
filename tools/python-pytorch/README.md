@@ -27,7 +27,8 @@ Registruje zejména:
 - WiX 3.x i novější WiX CLI, včetně manuálně nainstalovaných verzí pod
   `C:\Tools\WiXToolset`;
 - .NET Framework SDK nástroje (`ildasm`, `gacutil`, `resgen`, `sn` a další),
-  AMD Ryzen Master CLI, 7-Zip z registrované instalace, VeraCrypt CLI,
+  AMD Ryzen Master CLI, 7-Zip z registrované instalace, Codex Task Board,
+  VeraCrypt CLI,
   ZeroTier CLI a Git Bash (`bash`/`sh`); dále nativní CLI kořen Git for
   Windows (`curl`, OpenSSL, `pdftotext`, `docx2txt`, `xmlwf`, Scalar a další
   pomocné nástroje), pokud je instalace obsahuje;

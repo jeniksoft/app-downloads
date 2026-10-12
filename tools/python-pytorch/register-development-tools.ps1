@@ -302,6 +302,10 @@ function Add-AdditionalDeveloperToolDirectories {
     # These installed command-line utilities are useful for development and
     # diagnostics, but are not covered by the SDK/IDE roots above. Keep the
     # paths exact; do not expose the surrounding application trees.
+    # Codex Task Board is the installed desktop tool used to inspect and drive
+    # our development/QA task board. Register its exact root so it is
+    # available from a new shell without exposing its assets or skins.
+    Add-ToolDirectory (Join-Path ${env:ProgramFiles} 'Codex Task Board')
     Add-ToolDirectory (Join-Path ${env:ProgramFiles} 'VeraCrypt')
     Add-ToolDirectory (Join-Path ${env:ProgramFiles(x86)} 'ZeroTier\One')
 
@@ -573,7 +577,10 @@ $commandsToCheck = @(
     'tracefmt', 'tracelog', 'traceview', 'vshadow', 'WinAppDeployCmd', 'wsdcodegen',
     'TE', 'TE.ProcessHost', 'Wex.Services', 'Conduit.Broker.Host',
     '7z', 'git', 'git-lfs', 'git-gui', 'gitk', 'scalar', 'bash', 'sh',
-    'curl', 'openssl', 'pdftotext', 'docx2txt', 'xmlwf', 'WhoUses',
+    'CodexTaskBoard',
+    # Use curl.exe explicitly because Windows PowerShell exposes a curl alias
+    # for Invoke-WebRequest; the executable check must prove the native tool.
+    'curl.exe', 'openssl', 'pdftotext', 'docx2txt', 'xmlwf', 'WhoUses',
     'AMDRyzenMasterCLI', 'zerotier-cli', 'zerotier-idtool', 'VeraCrypt',
     'VMCreate', 'VMImport', 'InspectVhdDialog',
     'UnrealEditor', 'UnrealEditor-Cmd', 'UnrealPak', 'UnrealLightmass',
