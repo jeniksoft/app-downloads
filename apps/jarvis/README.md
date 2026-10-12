@@ -27,54 +27,58 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 
 **Synchronizovaný snapshot: 2026-10-12**
 
-### Ověření posledního roadmapového closeoutu
-
-Řez `B1-B3` je veřejně spojen se zdrojovým SHA `082f00a08190d78df65652dc84f0ecc07801cfa8` a closeout SHA `119288da9168b7266db104c0abc2d3ad9a35c8fa`. Stav: **verified**.
-Tento přesný obal slouží k ověření uzavřeného řezu; běžné historické body zůstávají záměrně anonymizované.
-
-Hlavní číslo je konzervativní index z explicitních milestone evidence. Task Board dodává pouze strukturu kapitol a synchronizaci evidence.
+Implementační pokrytí roadmapy je **96.86 %** z kanonických řezů. Souhrn níže ukazuje podíly stavů Ověřeno, Implementováno, Rozpracováno a Architektura.
 
 **Jazyk reportu:** čeština pro `cs*`; jiné locale používá anglický fallback. GitHub README je statický a jazyk se určuje při generování.
 
+### Souhrn metrik
+
+| Metrika | Hodnota | Zdroj a význam |
+| --- | ---: | --- |
+| `implementation_complete_percent` | 96.86 % | Kanonické implementační pokrytí roadmapových řezů. |
+| `roadmap_verified_percent` | 57.14 % | Podíl kanonických řezů ve stavu Ověřeno. |
+| `roadmap_implemented_percent` | 39.68 % | Podíl kanonických řezů ve stavu Implementováno. |
+| `roadmap_in_progress_percent` | 0.13 % | Podíl kanonických řezů ve stavu Rozpracováno. |
+| `roadmap_architecture_percent` | 3.04 % | Podíl kanonických řezů ve stavu Architektura. |
+
 ### Jarvis report
 
-![Grafický cover veřejného reportu Jarvis Personal 1.0.0 vázaného na důkazy](visuals/report-cover.svg)
+![Grafický cover veřejného reportu Jarvis Personal 1.0.0](visuals/report-cover.svg)
 
-Tato stránka je veřejný report o stavu vývoje Jarvis Personal 1.0.0 vázaný na důkazy: ukazuje ověřenou implementaci, stav milestone a otevřené důkazní mezery.
+Tato stránka ukazuje kanonické implementační pokrytí roadmapy (96.86 %), stav každého řezu a jeho skutečný vývoj v čase.
 Nejde o instalační balíček ani o prohlášení, že je produkt hotový; připravenost vydání je samostatná roadmapová brána.
 
 ### Grafický dashboard
 
-![Přehled vázaný na důkazy](visuals/implementation-overview.svg)
+![Přehled implementace roadmapy](visuals/implementation-overview.svg)
 ![Mapa závislostí architektury](visuals/architecture-map.svg)
 ![Graf architektonických kapitol](visuals/architecture-chapters.svg)
-![Matice evidence milestone](visuals/milestone-evidence.svg)
+![Matice kanonických řezů](visuals/milestone-evidence.svg)
 ![Časový graf sledovaného pokroku](visuals/progress-history.svg)
 
-Čísla jsou záměrně kreslená přímo na sloupcích, bodech, uzlech a milestone tiles. Časový graf sledovaného pokroku má na vodorovné ose anonymizované relevantní revize a delta anotace ukazují přírůstky mezi body. Tabulky níže drží stav, kontext a důkazní mezeru.
+Čísla jsou záměrně kreslená přímo na sloupcích, bodech, uzlech a tilech. Každý řez má v roadmapě i historii deterministický pás starší → novější; pořadí, ID a Unknown fallback určuje runtime, ne modelová paměť. Tabulky níže ukazují kanonický stav, implementaci a změny řezů.
 
-### Osobní Jarvis — vážený průběh
+### Kanonický stav roadmapových skupin
 
-Personal 1.0.0 má celkový stav **37.48 %**. Hodnota uvnitř kapitoly zůstává oddělená od jejího globálního příspěvku; například 6% kapitola na 95% přidá 5,70 procentního bodu.
+Tato tabulka používá stejné kanonické řezy jako roadmapa a historie; při změně stavu řezu se změní příslušný řádek i souhrnný graf.
 
-| Kapitola | Váha | Uvnitř kapitoly | Vážený příspěvek |
-| --- | ---: | ---: | ---: |
-| Aplikační shell, instalátor, update a veřejný kanál | 10.00 % | 31.25 % | 3.13 p. b. |
-| Worker core, konverzace, fronta a recovery | 12.00 % | 43.75 % | 5.25 p. b. |
-| Model providery, profily, routing a fallback | 10.00 % | 62.50 % | 6.25 p. b. |
-| Workspace, memory, source, patch, build, Git a web | 14.00 % | 71.25 % | 9.98 p. b. |
-| Extension discovery, manager a permissions | 16.00 % | 25.00 % | 4.00 p. b. |
-| Policy-bound MCP, plugin a app executor runtime | 20.00 % | 25.00 % | 5.00 p. b. |
-| Owner-facing UX, diagnostika, support a lokalizace | 10.00 % | 18.75 % | 1.88 p. b. |
-| End-to-end QA, dogfooding a bezpečnostní audity | 8.00 % | 25.00 % | 2.00 p. b. |
+| Roadmapová skupina | Řezy | Implementace | Ověřeno | Implementováno | Rozpracováno | Architektura |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Platformní základy | 54 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| Jádro runtime | 57 | 100.00 % | 57.89 % | 42.11 % | 0.00 % | 0.00 % |
+| Personal 1.0.0 | 127 | 99.41 % | 98.43 % | 0.79 % | 0.79 % | 0.00 % |
+| Volitelné tratě | 132 | 100.00 % | 75.76 % | 24.24 % | 0.00 % | 0.00 % |
+| Teams | 70 | 100.00 % | 20.00 % | 80.00 % | 0.00 % | 0.00 % |
+| Enterprise | 63 | 100.00 % | 14.29 % | 85.71 % | 0.00 % | 0.00 % |
+| Průřezové capability tratě | 253 | 90.91 % | 38.34 % | 52.57 % | 0.00 % | 9.09 % |
 
 ### Roadmapa produktu
 
-**Legenda ikon:** · <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že evidence splnila ověřovací bránu.">✅</span> Ověřeno · <span role="img" title="Implementováno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený." aria-label="Implementováno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený.">🟦</span> Implementováno · <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno · <span role="img" title="Architektura: Kanonický stav řezu je Architektura; implementace ještě není deklarovaná." aria-label="Architektura: Kanonický stav řezu je Architektura; implementace ještě není deklarovaná.">⚪</span> Architektura · <span role="img" title="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch." aria-label="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch.">⛔</span> Blokováno
-Počty stavů v grafu se nepřekrývají: Implementováno znamená implementované, ale dosud neověřené řezy; Ověřeno se počítá zvlášť. Jejich součet tvoří implementační pokrytí roadmapy, nikoli vážený evidence-bound index Personal 1.0.0.
+**Legenda ikon:** · <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že stav splnil ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že stav splnil ověřovací bránu.">✅</span> Ověřeno · <span role="img" title="Implementováno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený." aria-label="Implementováno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený.">🟦</span> Implementováno · <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno · <span role="img" title="Architektura: Kanonický stav řezu je Architektura; implementace ještě není deklarovaná." aria-label="Architektura: Kanonický stav řezu je Architektura; implementace ještě není deklarovaná.">⚪</span> Architektura · <span role="img" title="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch." aria-label="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch.">⛔</span> Blokováno
+Počty stavů v grafu se nepřekrývají: Implementováno znamená implementované, ale dosud neověřené řezy; Ověřeno se počítá zvlášť. Rozpracováno a Architektura zůstávají samostatné kanonické stavy.
 Ikona i popisek jsou viditelné přímo v README; po najetí kurzorem tooltip vysvětlí význam a nezaměňuje implementaci za živé ověření.
 
-**Změna od předchozího snapshotu: roadmapa položky +0 · implementováno +0 · ověřené důkazy +0**
+**Změna od předchozího snapshotu: roadmapa položky +0 · implementováno +0**
 
 ![Roadmapa a progress edic Jarvis](visuals/roadmap-editions.svg)
 
@@ -88,11 +92,11 @@ Všechny podřezy a karty edic jsou v grafu výše; duplicitní textové tabulky
 | <span role="img" title="Otevřeno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený." aria-label="Otevřeno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený.">🟦</span> Otevřeno | `teams` | Spolupráce v jednom zákaznicky vlastněném TeamRealmu. | `V6` | 12 |
 | <span role="img" title="Otevřeno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený." aria-label="Otevřeno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený.">🟦</span> Otevřeno | `enterprise` | Rekurzivní zákaznicky vlastněná organizace a Konstelace. | `V6` | 10 |
 
-Personal je měřený evidence-bound index. Teams a Enterprise jsou zatím roadmap-only a nemají aktivní procentní měření; veřejný report proto nezobrazuje falešnou nulu.
+Personal, Teams i Enterprise zde používají kanonickou roadmapu; edice bez aktivního průběhu nezobrazují falešnou nulu.
 
 ### MAUNDER: audioknihy a CPU/GPU (automatický stav)
 
-Tento přehled se generuje automaticky ze strojové roadmapy, bez modelového rozhodování. Stav `verified` u starších OP3 řeší jen výslovně uvedený dílčí kontrakt; neznamená hotovou audioknihu, GPU hlas ani schválenou kvalitu přednesu. Zde uvedené nové řezy mají vlastní stav a důkazní brány.
+Tento přehled se generuje automaticky ze strojové roadmapy, bez modelového rozhodování. Stav `verified` u starších OP3 řeší jen výslovně uvedený dílčí kontrakt; neznamená hotovou audioknihu, GPU hlas ani schválenou kvalitu přednesu. Zde uvedené nové řezy mají vlastní kanonický stav a historii.
 
 | Úkol | Stav | Požadovaná práce |
 | --- | --- | --- |
@@ -120,7 +124,7 @@ Tento přehled se generuje automaticky ze strojové roadmapy, bez modelového ro
 | `AUDR8` (`OP3.11.8`) | `implemented-unverified` | Po samostatném reálném GPU TTS backend probe optimalizace GPU speech a případně bezpečná multi-GPU admission. \| Doklad skutečné GPU allocation, memory residency |
 | `AUDR9` (`OP3.11.9`) | `implemented-unverified` | Zátěžové testy restart, zaplnění VRAM, memory pressure, dlouhá práce, power-saving, tenant isolation, licence a release gates. \| Nezávisle ověřené V0–V6/PG1 relev... |
 
-Architektura se nezapočítává jako hotová implementace. Přesné informace o každém řezu a jeho důkazech jsou v [progress.json](progress.json).
+Architektura se nezapočítává jako hotová implementace. Přesný stav, implementační hodnota a historie každého řezu jsou v [progress.json](progress.json).
 
 ### Zdrojový inventář Jarvise
 
@@ -128,12 +132,12 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
-| C/C++ | 2 409 | 752 924 | 35.61 |
+| C/C++ | 2 409 | 753 370 | 36.39 |
 | JSON | 580 | 200 769 | 33.21 |
-| Markdown | 1 143 | 158 022 | 8.78 |
-| Python | 795 | 128 858 | 5.38 |
-| PowerShell | 73 | 34 638 | 1.78 |
-| Other text | 81 | 5 975 | 0.29 |
+| Markdown | 1 143 | 158 024 | 8.78 |
+| Python | 795 | 128 870 | 5.38 |
+| PowerShell | 73 | 34 697 | 1.82 |
+| Other text | 81 | 5 975 | 0.30 |
 | JSONL | 16 | 2 515 | 6.93 |
 | Plain text | 130 | 1 815 | 0.19 |
 | INI | 8 | 703 | 0.04 |
@@ -142,9 +146,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **5 257** | **1 286 916** | **92.29** |
+| **Text/source celkem** | **5 257** | **1 287 435** | **93.12** |
 | Binární assety (mimo řádky) | 41 | — | 14.68 |
-| **Trackovaný strom celkem** | **5 298** | **1 286 916** | **106.98** |
+| **Trackovaný strom celkem** | **5 298** | **1 287 435** | **107.80** |
 
 ### Přírůstek od předchozí revize
 
@@ -152,103 +156,128 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +0 | +53 | +0.00 |
+| Text/source celkem | +0 | +0 | +0.00 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +0 | +53 | +0.00 |
+| Trackovaný strom celkem | +0 | +0 | +0.00 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
-### Architektonické kapitoly
+### Kanonické kapitoly
 
-| Architektonická kapitola | Stav | Scope |
-| --- | --- | --- |
-| Aplikační shell, instalátor, update a veřejný kanál | `in-progress` | WDUi application shell; WiX/setup and update contract; ADPU/public-channel integrity |
-| Worker core, konverzace, fronta a recovery | `in-progress` | worker queue and journal; durable execution and resume; model-continuity lifecycle |
-| Model providery, profily, routing a fallback | `in-progress` | provider readiness and model catalog; role/task routing and fallback; benchmark and liveness evidence |
-| Workspace, memory, source, patch, build, Git a web | `in-progress` | workspace/source grounding; memory and provenance; policy-bound file, build, Git and web actions |
-| Extension discovery, manager a permissions | `in-progress` | registry and discovery; capability center and permission profiles; read-only connector preview |
-| Policy-bound MCP, plugin a app executor runtime | `in-progress` | typed executor scopes; MCP/plugin/app result lifecycle; audit, resume and fail-closed policy |
-| Owner-facing UX, diagnostika, support a lokalizace | `in-progress` | chat/project-first UX; diagnostics and support evidence; language and accessibility quality |
-| End-to-end QA, dogfooding a bezpečnostní audity | `in-progress` | contract and self-test gates; long dogfood and live acceptance; hardware/configuration and safety evidence |
+| Kanonická kapitola | Řezy | Implementace | Ověřeno | Implementováno | Rozpracováno | Architektura |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| PF0 — Stable identities and namespaces | 4 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| PF1 — Schémata, persistence a migrace | 6 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| PF2 — Time epochs and leases | 6 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| PF3 — Secrets and credential boundary | 14 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| PF4 — Resource budgets cancellation and cleanup | 5 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| PF5 — Artifact evidence and provenance | 5 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| PF6 — Capability health degraded and quarantine states | 5 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| PF7 — Configuration ownership precedence and portability | 5 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| PF8 — Architecture Self-Model integration | 4 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| C0 — Polaris durable owner goal authority | 7 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| C1 — Ariadna Hydra Norn Nanity Mimir execution control plane | 10 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| C2 — Kormidlo benchmark Work Report and deployment decision | 8 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| C3 — Typed executor scope source authority and structured edit boundary | 10 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| C4 — Pulse and Saga truthful owner observability | 8 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| C5 — Independent Aegis verification and acceptance authority | 7 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| C6 — CoreService Bifrost and typed same-user process boundary | 7 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| P1 — Recovery and durable execution | 11 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| P2 — Model and provider reliability | 12 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| P3 — Intake Research and source quality | 11 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| P4 — Workspace action reliability | 16 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| P5 — Memory and continuity | 20 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| P6 — Secure Support Ticket | 11 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| P7 — Supervised self development | 11 | 100.00 % | 90.91 % | 9.09 % | 0.00 % | 0.00 % |
+| P8 — Owner UX observability and release QA | 30 | 97.50 % | 96.67 % | 0.00 % | 3.33 % | 0.00 % |
+| P9 — Real world configuration matrix | 5 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| OP1 — Hermes local facade | 13 | 100.00 % | 84.62 % | 15.38 % | 0.00 % | 0.00 % |
+| OP2 — Image generation | 6 | 100.00 % | 66.67 % | 33.33 % | 0.00 % | 0.00 % |
+| OP3 — TTS STT audio | 38 | 100.00 % | 36.84 % | 63.16 % | 0.00 % | 0.00 % |
+| OP4 — Ambient Presence Voice Mesh | 32 | 100.00 % | 93.75 % | 6.25 % | 0.00 % | 0.00 % |
+| OP5 — Repair Capsules | 8 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| OP6 — Architecture Self Model | 8 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| OP7 — Tyr isolated computer control | 10 | 100.00 % | 80.00 % | 20.00 % | 0.00 % | 0.00 % |
+| OP8 — Defensive Security Lab | 8 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| OP9 — Research tutoring Strata Trace | 9 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| TR0 — Realm identity and local topology | 4 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| TR1 — Principals devices membership | 5 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| TR2 — Roles capabilities policy | 5 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| TR3 — Shared project registry | 6 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| TR4 — Realm event log and offline sync | 6 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| TR5 — Shared Global Memory | 7 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| TR6 — Shared skills pipelines model profiles | 6 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| TR7 — Approvals collaborative workflows | 6 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| TR8 — Customer hosted LAN transport | 7 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| TR9 — Backup recovery admin audit | 8 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| TR10 — Offline licensing expiry release | 10 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| RC0 — Recursive topology foundation | 6 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| RC1 — Delegated policy and authority | 7 | 100.00 % | 42.86 % | 57.14 % | 0.00 % | 0.00 % |
+| RC2 — Recursive memory and data scopes | 6 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| RC3 — Hierarchical capability aggregation and scheduling | 7 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| RC4 — Explicit cross-scope compute artifacts collaboration | 6 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| RC5 — Offline subtree autonomy | 6 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| RC6 — Reconciliation hostile partition partial reintegration | 7 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| RC7 — Scale administration operability | 8 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| RC8 — Enterprise licensing migration release acceptance | 10 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| B — Browser and AI browser | 8 | 100.00 % | 50.00 % | 50.00 % | 0.00 % | 0.00 % |
+| LIC — License liability and EULA | 7 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| AG — Adaptive user guidance | 9 | 100.00 % | 88.89 % | 11.11 % | 0.00 % | 0.00 % |
+| ASA — Adversarial security audit | 13 | 100.00 % | 61.54 % | 38.46 % | 0.00 % | 0.00 % |
+| ECM — Execution continuity and maintenance | 15 | 100.00 % | 46.67 % | 53.33 % | 0.00 % | 0.00 % |
+| IG — Image generation capability | 6 | 100.00 % | 66.67 % | 33.33 % | 0.00 % | 0.00 % |
+| LM0 — Architecture/source inventory and contract map | 7 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| LM1 — Module contracts Module Host and Capability Registry | 10 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| LM2 — Observation Bus normalized evidence input and source adapters | 13 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| LM3 — Evidence Fusion and Local World Situation Model | 10 | 100.00 % | 100.00 % | 0.00 % | 0.00 % | 0.00 % |
+| LM4 — Significance Evaluator and Attention Scheduler | 10 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| LM5 — Persistent autonomous loop and bounded self-generated work | 25 | 100.00 % | 36.00 % | 64.00 % | 0.00 % | 0.00 % |
+| LM6 — Inter-Jarvis Protocol and Capability Federation | 10 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| LM7 — Federated Situation Projections and Global Memory bridge | 10 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| LM8 — Physical sensors machines and robot safety adapters | 10 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| LM9 — Hierarchical Constellation attention delegation and reintegration | 10 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| MS — Model Space 3D | 8 | 100.00 % | 12.50 % | 87.50 % | 0.00 % | 0.00 % |
+| PORT — Platform independence | 16 | 100.00 % | 6.25 % | 93.75 % | 0.00 % | 0.00 % |
+| VG — Video generation capability | 8 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
+| LN — Language-neutral intent and multilingual interaction | 9 | 100.00 % | 88.89 % | 11.11 % | 0.00 % | 0.00 % |
+| MDOC — Complete versioned documentation available to models | 7 | 100.00 % | 42.86 % | 57.14 % | 0.00 % | 0.00 % |
+| MUI — Model-guided Jarvis UI navigation and visual spotlight | 9 | 100.00 % | 44.44 % | 55.56 % | 0.00 % | 0.00 % |
+| SRH — Incident-triggered service recovery and support handoff | 9 | 0.00 % | 0.00 % | 0.00 % | 0.00 % | 100.00 % |
+| PAC — Pre-authorized post-task autonomous follow-up | 14 | 0.00 % | 0.00 % | 0.00 % | 0.00 % | 100.00 % |
 
-Graf kapitol je v dashboardu výše jako statické SVG. Tato úplná textová tabulka je jeho přístupný fallback a nevyžaduje další renderer.
-
-### Milestone evidence
-
-| Kapitola | Milestone | Stav | Důkaz / mezera |
-| --- | --- | --- | --- |
-| App shell | WDUi aplikační shell a základní navigace | `verified-build` | Aktuální capability evidence uvádí warning-free build a contract/self-test gates pro WDUi/Jarvis vrstvy.; mezera: Čerstvé owner-facing vizuální a multi-monitor QA není uzavřené jako runtime acceptance.; typy: build, runtime |
-| App shell | Instalátor, update a rollback kontrakt | `partial` | Instalační a update části mají provider-free P8.15.1-P8.15.15 evidence včetně host registry, signed-installer admission, bounded graph-registry publication a source-matched Debug/QA read-back; veřejná P8 release QA je stále pouze partial.; mezera: Chybí uzavřený čistý install, upgrade a rollback acceptance pack pro Personal 1.0.0 včetně živého installeru, nasazení služby, restartové orchestrace a owner workflow.; typy: build, contract, release-gate, self-test |
-| App shell | ADPU a veřejný kanál | `partial` | Veřejný kanál a synchronizační kontrakt existují, ale samotná distribuce není důkazem funkčního release.; mezera: Je nutné dokončit a opakovaně ověřit end-to-end publikaci artefaktu, integritu a rollback hranice.; typy: contract, release-gate |
-| App shell | Čistá instalace, upgrade, podpis a rollback acceptance | `open` | Release milestone je deklarovaný jako požadavek, nikoli jako uzavřený důkaz.; mezera: Chybí aktuální acceptance pack navázaný na konkrétní release candidate.; typy: roadmap |
-| Worker/recovery | Queue, WorkerJournal a persistence | `verified-build` | Capability matrix a PF1.2 common durable envelope uvádějí queue, worker, typed recovery UI projection, durable evidence gates a skrytý parent/child process-restart self-test jako build/contract ověřené.; mezera: Skutečný crash/restart průchod reálného workflow, dlouhý providerový requeue a V5 owner-facing recovery workflow acceptance zůstávají samostatnými důkazy.; typy: runtime, self-test |
-| Worker/recovery | Mid-step resume a přesný Fragment | `verified-contract` | Typed phase, policy, target, digest a exact Fragment selection mají kontraktní self-test evidence; closed vocabulary navíc odmítá neznámé, částečné a nesouhlasné vazby, P1.3 váže request/efektivní policy identity před consequential krokem s verified-only gate a P1.4 váže before/after digest stejné množiny targetů bez replaye mutace.; mezera: Live provider replay a pokračování po skutečné mutaci nejsou tímto kontraktem prokázané.; typy: contract, runtime, self-test |
-| Worker/recovery | Fail-closed review pro síťové a mutující replaye | `verified-contract` | Provider-free fail-closed hranice a typed receipt continuity jsou deterministicky ověřené pro síťové, privilegované, mutující a resume cesty; úplná Personal acceptance není uzavřená.; mezera: Zbývá live a skutečný workflow důkaz přes všechny privilegované a mutující replay cesty.; typy: contract, runtime, self-test |
-| Worker/recovery | Crash/restart dogfood skutečného workflow | `open` | Roadmap požadavek je známý, ale aktuální receipt není v registru.; mezera: Dodat opakovatelný crash/restart test s identity, journalem, resume a owner review.; typy: roadmap |
-| Models/routing | Provider health, capability a identity | `verified-build` | Current evidence covers provider/model identity, readiness and bounded routing contracts.; mezera: Živá dostupnost každého podporovaného endpointu není permanentně prokázaná.; typy: runtime, self-test |
-| Models/routing | Typed routing, fallback a blocked stav | `verified-build` | Evidence-driven first-attempt routing a fallback gates jsou v current build evidence.; mezera: Runtime kvalita provideru a 75% first-tier KPI zůstávají measurement target, nikoli hotový výsledek.; typy: build, runtime, self-test |
-| Models/routing | Benchmark, idle gate a Work Report evidence | `verified-build` | Registry, scenario validation, idle resource gate, executor a Work Report summary mají build/self-test důkaz.; mezera: Skutečný idle model run a nahromaděné live owner Work Reports nejsou nahrazeny self-testem.; typy: runtime, self-test |
-| Models/routing | Živá provider reliability a hardware-aware recommendation | `partial` | Jeden čerstvý localhost Ollama receipt prokazuje průchod konkrétního benchmarkového scénáře; širší provider a hardware matrix zůstává otevřená.; mezera: Dodat opakované live replaye s exact-route, více endpointy/modely, truthful downgrade/blocked receipts a skutečnou hardware matrix.; typy: roadmap, runtime, self-test |
-| Workspace/actions | Workspace, source grounding a freshness | `verified-build` | Workspace helpers, source grounding a deterministic project workflow mají current build evidence.; mezera: Úplná kombinatorická action matrix pro každý podporovaný projekt není uzavřená.; typy: runtime, self-test |
-| Workspace/actions | Memory, provenance a continuity | `verified-build` | Global memory capture, retrieval, scope nodes, citations and owner review mají executable evidence.; mezera: Semantic inference, online sync a všechny current-state correction scénáře nejsou tímto důkazem uzavřené.; typy: contract, self-test |
-| Workspace/actions | Policy-bound file/build/test/Git/web akce | `verified-build` | Policy-bound helper and workspace command paths mají fail-closed selection, output capture a journal evidence.; mezera: Live owner acceptance všech mutujících a browser/app cest není doložená jedním kompletním packem.; typy: runtime, self-test |
-| Workspace/actions | Recovery po selhání nástroje a no-overwrite hranice | `verified-contract` | Existující containment, WorkerJournal, post-mutation verify a rollback guardy mají společný provider-free failure/recovery receipt s no-replay a no-overwrite hranicí.; mezera: Zbývá skutečný pád procesu, end-to-end journal/read-back, rollback provedení a owner-facing runtime acceptance.; typy: contract, self-test |
-| Workspace/actions | Allow-listované build/test presety | `verified-build` | P4.7 má provider-free source guard, nativní self-test a build evidence pro uzavřený registr workspace build/test presetů.; mezera: Živý provider, model, workspace, dlouhý build/test běh a owner acceptance zůstávají samostatnými branami.; typy: runtime, self-test |
-| Workspace/actions | Read-only Git s přesnými hostitelskými argumenty | `verified-build` | P4.8 má provider-free source guard, nativní self-test a build evidence pro uzavřený registr read-only Git argumentů.; mezera: Provider, model, síť, živý workspace a owner acceptance zůstávají samostatnými branami; síťový fetch není povolen.; typy: runtime, self-test |
-| Workspace/actions | Potvrzený Git commit/push s identitními receipty | `verified-build` | P4.9 má provider-free source guard, nativní receipt self-test a build evidence pro hostitelem vázaný Git commit/push.; mezera: Credentialy, provider, živý repozitář, crash/restart a owner acceptance zůstávají samostatnými branami.; typy: runtime, self-test |
-| Workspace/actions | Potvrzená hranice otevření URL v browseru | `verified-build` | P4.10 má provider-free kontrolu URL, nativní receipt/self-test a build evidence pro hostitelem řízené předání URL výchozímu browseru.; mezera: WebView2 UI, skutečné síťové načtení, pozorování page-loadu a owner acceptance zůstávají samostatnými branami.; typy: runtime, self-test |
-| Extensions | Registry a discovery rozšíření | `verified-contract` | Hostem dodaný registr rozšíření má provider-free kanonikalizaci obecných typů, stabilní snapshot identity, bounded manifest metadata a fail-closed runtime hranici.; mezera: Zbývá skutečné filesystem discovery, loader/executor, persistence read-back, restart a owner-facing acceptance.; typy: contract, self-test |
-| Extensions | Capability center a permission profily | `verified-contract` | Capability Center a permission editor jsou napojené na existující WDUi, hostitelskou discovery/policy autoritu, persistence a audit; provider-free wiring a negativní policy testy prošly.; mezera: Zbývá owner-facing live UI acceptance, reálné extension execution a plná lifecycle acceptance.; typy: documentation, self-test |
-| Extensions | Read-only connector preview | `verified-contract` | Konkrétní local/private GET a HEAD connector fixture, preview, source identity a permission refusal jsou ověřené v deterministickém extension-policy self-testu.; mezera: Zbývá live connector transport, owner-facing render acceptance a širší universal connector lifecycle.; typy: roadmap, self-test |
-| Extensions | Install/update/disable lifecycle rozšíření | `verified-contract` | Provider-free evidence kontrakt uzavírá přesné přechody install/update/disable/rollback, vlastnictví, policy a auditní receipts bez udělení živé mutační autority.; mezera: Zbývá živý installer/executor, filesystem/process/network persistence, skutečný rollback/karanténa, crash recovery a owner-facing acceptance.; typy: release-gate, self-test |
-| Executor | Typed executor scopes a stream lifecycle | `verified-contract` | Typed executor scope contract a bounded result lifecycle mají current contract evidence.; mezera: Univerzální runtime acceptance pro každý MCP/plugin/app typ není uzavřená.; typy: contract, runtime |
-| Executor | Policy, audit, resume a fail-closed executor | `verified-contract` | Provider-free evidence hranice nyní typově pokrývá generický, privilegovaný, mutující a resume adapter nad existující policy, auditem, WorkerJournalem a read-backem; cross-runtime proof je stále částečný.; mezera: Zbývá live a skutečný workflow důkaz pro generické, privilegované a mutující adaptery.; typy: contract, runtime, self-test |
-| Executor | MCP/plugin/app result lifecycle | `verified-contract` | Existující read-only app connector, MCP/plugin/app transport a vratná mutace mají doplněnou obecnou provider-free matici výsledků success/partial/failure/timeout/retry/owner-review s lineage a fail-closed authority hranicí.; mezera: Zbývá skutečný MCP/plugin stdio/process runtime, síťový transport, další mutační extension třídy, durable runtime read-back a owner-approved live acceptance.; typy: documentation, self-test |
-| Executor | Live external integration a resume acceptance | `open` | Live MCP/plugin/app acceptance není doložena jako společný current receipt.; mezera: Dodat owner-approved, identity-bearing, reproducible live acceptance pack.; typy: release-gate |
-| UX/support | First-run, setup a diagnostics | `partial` | Provider-status vrstva má provider-free typed first-run readiness a chat/project composer má nyní společnou baseline pro trvalý chat, projekt a přílohy zprávy; P8 owner-facing QA je stále partial.; mezera: Dodat čerstvý owner walkthrough v podporovaných DPI/multi-monitor konfiguracích, V5 live setup acceptance a skutečné tray recovery pro chat/project/attachments.; typy: build, runtime, self-test |
-| UX/support | Failure/recovery a ticket UI | `partial` | Failure/recovery a Secure Ticket kontrakty existují; P6.1 typovaný stavový automat, P6.2 read-only evidence candidate refs, P6.3 shared sensitive-data boundary, P6.4 protected local draft store, P6.5 owner evidence selection review, P6.6 immutable prepared manifest digest, P6.7 bounded local export package, P6.8 read-only untrusted reproduction intake, P6.9 confirmed-bug regression lineage a P6.10 read-only runtime snapshot s diagnostickým read-backem mají build/self-test důkaz, ale P6.11 síťový backend, kompletní ticket UI a P8 QA zůstávají partial.; mezera: P6.7 local export, P6.8 untrusted import/reproduction, P6.9 regression lineage a P6.10 snapshot jsou ověřené bez sítě; P6.11 network backend, kompletní ticket UI path, live P6 runtime a owner-facing V5 acceptance zůstávají otevřené.; typy: contract, release-gate, self-test |
-| UX/support | Jazyk, lokalizace a accessibility quality | `partial` | Localization accounting a P8.8 read-only release gate existují; fallback backlog je explicitně otevřený a gate jej správně odmítá jako release blocker.; mezera: Uzavřít překladový backlog independently reviewed memory a projít accessibility/DPI acceptance na reálném UI.; typy: runtime, self-test |
-| UX/support | Owner-facing live QA | `open` | Žádný aktuální univerzální live owner acceptance receipt není v manifestu.; mezera: Dodat vizuální a interakční QA pack včetně accessibility, DPI a recovery scénářů.; typy: roadmap |
-| QA/dogfood | Contract/self-test gates | `verified-build` | Provider-free autonomní Fly/interoception/contract self-testy prošly na přesném finálním QA hashi a je doložen jeden 30minutový headless soak; jde pouze o syntetický Core loop.; mezera: Důkaz nenahrazuje běh tray ani instalovaného Workeru, živou konfiguraci ownera nebo autonomní dispatch/recovery; R1, WAITING_CAPABILITY a production acceptance zůstávají neuzavřené.; typy: build, runtime, self-test |
-| QA/dogfood | Deterministic dogfood a regression fixtures | `partial` | P7.1-P7.10 mají ověřené deterministické provider-free hranice; P7.11 zůstává otevřenou V5 cohort bránou. Potvrzené ticket-driven regression closure, skutečná production Nanity, live mentor finding/repair execution a plný sémantický ASM graf nejsou uzavřené.; mezera: Doplnit V5 owner acceptance P7.11, skutečnou Jarvis-authored Nanity, end-to-end/live hranici P7.6, reálný mentor finding pro živé P7.8 provedení a úplnou bug-to-regression closure; P7.9 zůstává bounded source-backed refresh a plná semantic discovery je otevřená.; typy: contract, release-gate, self-test |
-| QA/dogfood | Reálný hardware/configuration matrix | `open` | Owner-approved release source označuje hardware/configuration matrix jako early.; mezera: Dodat opakovatelná měření na skutečných konfiguracích s identity a environment receipts.; typy: release-gate, self-test |
-| QA/dogfood | Release acceptance pack a bezpečnostní audit | `open` | P8.9 nyní obsahuje deterministický evaluator immutable clean-install receiptu, P8.10 evaluator přesné pre-1.0 upgrade matice a P8.11 evaluator LKG rollback receiptu nad existujícím build/setup tokem, ale samotný V6 live acceptance pack stále není dodaný.; mezera: Dodat current release candidate, signed artifacts, skutečný clean install/upgrade/rollback a safety audit receipts.; typy: release-gate, self-test |
-
-Graf milestone je v dashboardu výše jako statické SVG. Tabulka zachovává úplný stav, důkaz a mezeru i při nedostupném rich-display rendereru GitHubu.
-
-Detailní privátní zdrojové cesty, receipts a owner-specific data zůstávají v CPM evidence manifestu.
+Tato tabulka je odvozena z kanonických řezů roadmapy; změna řezu mění odpovídající řádek i podíly stavů.
 
 ### Vývoj v relevantních revizích
 
 Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí přírůstky všech hlavních metrik oproti předchozímu bodu a každý anonymizovaný záznam zůstává i ve strojově čitelném JSON. Raw private source commit, subject ani interní cesta se do veřejného repa nekopírují; přesný identifikátor posledního closeoutu je pouze v samostatném ověřovacím obalu.
 
-| Veřejná revize | Datum | Δ primary | Δ implementace | Δ ověření | Δ hotovo | Δ release readiness | Změněné kapitoly | Milestone evidence events |
-| --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `f70fe9895485` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `26dd3440e333` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `3a7c9951ff3d` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `fda1d8f69642` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `cefc19e19330` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `1e59021b436e` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `025a67a9b504` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `a753bcb120d6` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `93cbb91c8b53` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `caacfcf8b25f` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `0d08c2a4b906` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `37436ac44ffe` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `d985b80d106a` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `0046ad766a2b` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `70117824f424` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `cbfaf1fddd96` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `7f762dd7e8d2` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
-| `52c86931d241` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | evidence-only | — |
+| Veřejná revize | Datum | Δ implementace roadmapy | Δ ověřené řezy | Δ implementované řezy | Δ rozpracované řezy | Δ architektura | Změněné řezy |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | --- |
+| `a9a4f29af529` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
+| `37436ac44ffe` | 2026-10-12 | +0.00 | +1.32 | -1.32 | +0.00 | +0.00 | 10: LM1.1, LM1.10, LM1.2, LM1.3, LM1.4, LM1.5… |
+| `052b6d5b9af8` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
+| `d985b80d106a` | 2026-10-12 | +0.00 | +0.40 | -0.40 | +0.00 | +0.00 | 3: MDOC0, MDOC1, MDOC2 |
+| `17e03b13df8b` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
+| `0046ad766a2b` | 2026-10-12 | +0.00 | +0.52 | -0.53 | +0.00 | +0.00 | 4: MUI0, MUI1, MUI2, MUI3 |
+| `ed07335d8b3e` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
+| `70117824f424` | 2026-10-12 | +0.00 | +1.72 | -1.72 | +0.00 | +0.00 | 13: LM2.1, LM2.10, LM2.11, LM2.12, LM2.13, LM2.2… |
+| `8a3382ecd274` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
+| `cbfaf1fddd96` | 2026-10-12 | +0.00 | +1.33 | -1.32 | +0.00 | +0.00 | 10: LM3.1, LM3.10, LM3.2, LM3.3, LM3.4, LM3.5… |
+| `d34ab32de3f1` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
+| `7f762dd7e8d2` | 2026-10-12 | +0.00 | +0.53 | -0.53 | +0.00 | +0.00 | 4: LM5.13, LM5.14, LM5.15, LM5.17 |
+| `881daf1f391a` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
+| `52c86931d241` | 2026-10-12 | +0.00 | +0.39 | -0.40 | +0.00 | +0.00 | 3: B1, B2, B3 |
+| `2a69c084e020` | 2026-10-12 | -3.18 | -12.30 | +9.13 | +0.00 | +3.18 | 110: AG3, AG4, AG5, AG6, AG7, B1… |
+| `cf2e5aeaa554` | 2026-10-12 | +3.18 | +12.30 | -9.13 | +0.00 | -3.18 | 110: AG3, AG4, AG5, AG6, AG7, B1… |
+| `5a826a445d9d` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
+| `248caa34a542` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
 ### Úspora GitHub Actions
 
-Historický baseline: starý režim by spustil **63** běhů, closeout režim **63**; odhadovaná úspora je **0** běhů (**0.00 %**).
-Optimalizace běhu: 44 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
+Historický baseline: starý režim by spustil **64** běhů, closeout režim **63**; odhadovaná úspora je **1** běhů (**1.56 %**).
+Optimalizace běhu: 0 inkrementálních closeout bodů od posledního úplného baseline, žádný klon `app-downloads`, žádný úplný průchod soukromou historií a nejvýše jeden veřejný commit; bajtově se publikují jen změněné JSON, README, historické a SVG artefakty.
 Historický baseline je oddělený od aktuálního inkrementálního výpočtu, aby se úspora nepředstírala z neúplné mělké historie.
 
 ### Release readiness
@@ -267,13 +296,11 @@ Historický baseline je oddělený od aktuálního inkrementálního výpočtu, 
 
 ### Měřicí kontrakt
 
-- `primary`: vážené minimum implementace a ověření po jednotlivých milnících; milník bez ověřeného důkazu nemůže vytvořit hotovo.
-- `implementation`: explicitní milestone state s horními stropy; architektura, source-size ani plán číslo nezvyšují.
-- `verification`: explicitní evidence; kontrakt nebo build není totéž co live runtime nebo owner acceptance.
-- `done`: vážené minimum na každém milníku, potom vážený roll-up kapitol a jejich evidence cap.
-- `Task Board`: slouží k mapování kapitol, vah a synchronizaci odvozené evidence; není samostatnou skórovanou osou.
-- Relevantní revize vzniká při změně nakonfigurovaných vstupů měření; commit bez změny evidence zůstává jako `evidence-only`.
-- Plánovaný stav, historická dokumentace, source-size, počet řádků ani samotný commit nemohou zvýšit primary bez evidence manifestu; source inventory je pouze informativní.
+- `implementation_complete_percent`: jediná veřejná implementační hodnota; deterministické kanonické pokrytí všech roadmapových řezů.
+- `roadmap_*_percent`: podíly vzájemně výlučných kanonických stavů řezů, které se mění při přechodu řezu mezi stavy.
+- `history`: každá revize obsahuje změněné kanonické řezy a bounded historický pás podle jejich stabilních ID.
+- `Task Board`: slouží k mapování kapitol a synchronizaci podpůrných dat; neřídí veřejné implementační procento.
+- Starší interní pole zůstávají pouze ve strojovém JSON kvůli kompatibilitě; veřejné tabulky a grafy je nepoužívají jako implementaci.
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_END -->
 
 ## Co se připravuje
