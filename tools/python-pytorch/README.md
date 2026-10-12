@@ -19,7 +19,9 @@ Registruje zejména:
   Code Coverage CLI, coverage instrumentaci a testovací dump utility;
 - Windows SDK (x64/x86/ARM64 build, resource, signing, shader, package,
   deployment, tracing a accessibility/UI verification nástroje), včetně
-  explicitních podadresářů `AccChecker` a `UIAVerify`;
+  explicitních podadresářů `AccChecker` a `UIAVerify`; dále TAEF testovací
+  runtime (`TE`, `TE.ProcessHost`, `Wex.Services` a broker) v nativní x64 a
+  MinTe variantě;
 - WiX 3.x i novější WiX CLI, včetně manuálně nainstalovaných verzí pod
   `C:\Tools\WiXToolset`;
 - .NET Framework SDK nástroje (`ildasm`, `gacutil`, `resgen`, `sn` a další),
@@ -29,6 +31,11 @@ Registruje zejména:
   Ollama runtime helper `llama-server`, pokud jsou součástí nalezené instalace;
 - GitHub CLI z WinGetu nebo jako přesný fallback z instalace Codex Task Boardu;
 - `dotnet` a Git CLI z jejich standardních instalačních umístění.
+
+Součástí kontroly jsou také systémové vývojářské/QA nástroje, které už Windows
+zpřístupňuje přes systémový PATH, například `appverif`, `wpr`, `appcert`,
+`appcertui` a `nmake`; skript je pouze ověří a nepřidává podruhé systémové
+adresáře.
 
 Stávající uživatelské položky `PATH` zachovává. Do systémového `PATH` ani do registru aplikací nezasahuje. Skript nic nestahuje ani neinstaluje; pouze registruje existující nástroje.
 U Visual Studio toolchainu registrace zpřístupní binárky přes `PATH`; pro

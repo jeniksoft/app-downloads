@@ -165,6 +165,21 @@ function Add-WindowsSdkToolDirectories {
                 }
             }
         }
+
+        # The Windows SDK Test Authoring and Execution Framework (TAEF) lives
+        # outside bin and is therefore not covered by the SDK architecture
+        # roots above. Register the native host first, followed by the
+        # compatibility/minimal host variants. These directories contain
+        # callable test runners and broker utilities, not arbitrary SDK data.
+        $taefRoot = Join-Path $kit.FullName 'Testing\Runtimes\TAEF'
+        foreach ($taefDirectory in @(
+                (Join-Path $taefRoot 'x64'),
+                (Join-Path $taefRoot 'x64\MinTe'),
+                $taefRoot,
+                (Join-Path $taefRoot 'MinTe')
+            )) {
+            Add-ToolDirectory $taefDirectory
+        }
     }
 }
 
@@ -426,16 +441,18 @@ $commandsToCheck = @(
     'dbgsrvARM64', 'dbgsrvX64', 'dbgsrvX86', 'kdARM64', 'kdX64', 'kdX86', 'kdnet',
     'ntsdARM64', 'ntsdX64', 'ntsdX86',
     'adb', 'emulator', 'sdkmanager', 'avdmanager', 'android', 'sqlite3',
-    'cmake', 'cpack', 'ctest', 'ninja',
+    'cmake', 'cpack', 'ctest', 'ninja', 'nmake',
     'msbuild', 'cl', 'clang-cl', 'rc', 'mt', 'signtool', 'vswhere', 'dotnet',
     'wix', 'wixnative', 'candle', 'light', 'dark', 'heat', 'insignia', 'WixCop',
     'DocCompiler', 'MakeSfxCA', 'ildasm', 'gacutil', 'resgen', 'sn', 'csc', 'vbc',
     'vstest.console', 'NuGet.Build.Tasks.Console', 'Microsoft.CodeCoverage.Console',
     'CodeCoverage', 'covinstrc32', 'DumpMinitool', 'MSBuildTaskHost', 'SvcTraceViewer',
     'AccCheckConsole', 'acccheckui', 'VisualUIAVerifyNative', 'cameraprofiletool',
+    'appcert', 'appcertui', 'appverif', 'wpr',
     'ComparePackage', 'PackageEditor', 'SkTool', 'wsddebug_client', 'wsddebug_host',
     'dxc', 'fxc', 'makeappx', 'makecat', 'makepri', 'mc', 'midl', 'pvk2pfx',
     'tracefmt', 'tracelog', 'traceview', 'vshadow', 'WinAppDeployCmd', 'wsdcodegen',
+    'TE', 'TE.ProcessHost', 'Wex.Services', 'Conduit.Broker.Host',
     '7z', 'git', 'bash', 'sh',
     'AMDRyzenMasterCLI', 'zerotier-cli', 'zerotier-idtool', 'VeraCrypt',
     'VMCreate', 'VMImport', 'InspectVhdDialog'
