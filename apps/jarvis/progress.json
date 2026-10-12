@@ -44,22 +44,22 @@
         "language": "JSON",
         "files": 580,
         "physical_lines": 200745,
-        "bytes": 33199118,
-        "megabytes": 33.199118
+        "bytes": 33198716,
+        "megabytes": 33.198716
       },
       {
         "language": "Markdown",
         "files": 1143,
-        "physical_lines": 157308,
-        "bytes": 8743036,
-        "megabytes": 8.743036
+        "physical_lines": 157338,
+        "bytes": 8745004,
+        "megabytes": 8.745004
       },
       {
         "language": "Python",
         "files": 795,
         "physical_lines": 128813,
-        "bytes": 5374039,
-        "megabytes": 5.374039
+        "bytes": 5373995,
+        "megabytes": 5.373995
       },
       {
         "language": "PowerShell",
@@ -134,9 +134,9 @@
     ],
     "source_text": {
       "files": 5257,
-      "physical_lines": 1286133,
-      "bytes": 92239043,
-      "megabytes": 92.239043
+      "physical_lines": 1286163,
+      "bytes": 92240565,
+      "megabytes": 92.240565
     },
     "binary_assets": {
       "files": 41,
@@ -145,9 +145,9 @@
     },
     "tracked_total": {
       "files": 5298,
-      "physical_lines": 1286133,
-      "bytes": 106922037,
-      "megabytes": 106.922037
+      "physical_lines": 1286163,
+      "bytes": 106923559,
+      "megabytes": 106.923559
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
@@ -155,8 +155,8 @@
       "source_text": {
         "files": 0,
         "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "bytes": 112,
+        "megabytes": 0.000112
       },
       "binary_assets": {
         "files": 0,
@@ -167,8 +167,8 @@
       "tracked_total": {
         "files": 0,
         "physical_lines": 0,
-        "bytes": 0,
-        "megabytes": 0.0
+        "bytes": 112,
+        "megabytes": 0.000112
       }
     }
   },
@@ -503,7 +503,7 @@
         "item_count": 253,
         "completed_item_count": 230,
         "implemented_item_count": 230,
-        "verified_item_count": 35,
+        "verified_item_count": 36,
         "in_progress_item_count": 0,
         "architecture_item_count": 23,
         "blocked_item_count": 0,
@@ -1873,7 +1873,7 @@
         "item_count": 9,
         "completed_item_count": 9,
         "implemented_item_count": 9,
-        "verified_item_count": 3,
+        "verified_item_count": 4,
         "in_progress_item_count": 0,
         "architecture_item_count": 0,
         "blocked_item_count": 0,
@@ -14903,9 +14903,9 @@
         "chapter_color": "optional",
         "description_cs": "Model situačního tření",
         "description_en": "Situational friction model",
-        "status": "implemented-unverified",
-        "status_label_cs": "Implementováno",
-        "status_label_en": "Implemented",
+        "status": "verified",
+        "status_label_cs": "Ověřeno",
+        "status_label_en": "Verified",
         "status_source": "canonical-roadmap-slice",
         "is_complete": true,
         "status_percent": 100.0,
@@ -20534,15 +20534,15 @@
     "item_count": 756,
     "completed_item_count": 732,
     "implemented_item_count": 732,
-    "verified_item_count": 339,
+    "verified_item_count": 340,
     "in_progress_item_count": 1,
     "architecture_item_count": 23,
     "blocked_item_count": 0,
     "status_counts": {
       "architecture-only": 23,
       "in-progress": 1,
-      "implemented-unverified": 393,
-      "verified": 339,
+      "implemented-unverified": 392,
+      "verified": 340,
       "blocked": 0
     },
     "chapter_count": 78,
@@ -20568,7 +20568,7 @@
     "available": true,
     "previous_date": "2026-10-12",
     "roadmap_items_delta": 0,
-    "roadmap_completed_delta": 1,
+    "roadmap_completed_delta": 0,
     "roadmap_chapters_delta": 0,
     "verified_evidence_delta": 0,
     "metrics_delta": {
@@ -20589,7 +20589,7 @@
     "avoided_runs_estimate": 0,
     "avoided_percent": 0.0,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
-    "incremental_closeout_points_since_full_baseline": 25,
+    "incremental_closeout_points_since_full_baseline": 26,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -24930,6 +24930,40 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "a541f625098c",
+      "date": "2026-10-12",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": 0.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "evidence-only"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 756,
+        "completed_item_count": 732,
+        "chapter_count": 78
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -24941,8 +24975,8 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "MUI8",
+    "roadmap_slice_id": "AG3",
     "source_commit_sha": "082f00a08190d78df65652dc84f0ecc07801cfa8",
-    "closeout_sha": "05894a36e87941ee327c60e742eb162d6a28bcff"
+    "closeout_sha": "1915f5736ab94cbd0aa72e0b24bd86e8a2c43ccc"
   }
 }
