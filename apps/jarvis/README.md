@@ -27,7 +27,7 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 
 **Synchronizovaný snapshot: 2026-10-12**
 
-Implementační pokrytí roadmapy je **96.86 %** z kanonických řezů. Souhrn níže ukazuje Ověřeno, kumulativní Implementováno včetně Ověřeno, Rozpracováno a Architekturu.
+Implementační pokrytí roadmapy je **96.87 %** z kanonických řezů. Souhrn níže ukazuje Ověřeno, kumulativní Implementováno včetně Ověřeno, Rozpracováno a Architekturu.
 
 **Jazyk reportu:** čeština pro `cs*`; jiné locale používá anglický fallback. GitHub README je statický a jazyk se určuje při generování.
 
@@ -35,17 +35,17 @@ Implementační pokrytí roadmapy je **96.86 %** z kanonických řezů. Souhrn n
 
 | Metrika | Hodnota | Zdroj a význam |
 | --- | ---: | --- |
-| `implementation_complete_percent` | 96.86 % | Kanonické implementační pokrytí roadmapových řezů. |
-| `roadmap_verified_percent` | 57.14 % | Podíl kanonických řezů ve stavu Ověřeno. |
-| `roadmap_implemented_percent` | 96.83 % | Kumulativní podíl kanonických řezů implementovaných včetně ověřených; vždy je větší nebo roven Ověřeno. |
+| `implementation_complete_percent` | 96.87 % | Kanonické implementační pokrytí roadmapových řezů. |
+| `roadmap_verified_percent` | 62.06 % | Podíl kanonických řezů ve stavu Ověřeno. |
+| `roadmap_implemented_percent` | 96.84 % | Kumulativní podíl kanonických řezů implementovaných včetně ověřených; vždy je větší nebo roven Ověřeno. |
 | `roadmap_in_progress_percent` | 0.13 % | Podíl kanonických řezů ve stavu Rozpracováno. |
-| `roadmap_architecture_percent` | 3.04 % | Podíl kanonických řezů ve stavu Architektura. |
+| `roadmap_architecture_percent` | 3.03 % | Podíl kanonických řezů ve stavu Architektura. |
 
 ### Jarvis report
 
 ![Grafický cover veřejného reportu Jarvis Personal 1.0.0](visuals/report-cover.svg)
 
-Tato stránka ukazuje kanonické implementační pokrytí roadmapy (96.86 %), stav každého řezu a jeho skutečný vývoj v čase.
+Tato stránka ukazuje kanonické implementační pokrytí roadmapy (96.87 %), stav každého řezu a jeho skutečný vývoj v čase.
 Nejde o instalační balíček ani o prohlášení, že je produkt hotový; připravenost vydání je samostatná roadmapová brána.
 
 ### Grafický dashboard
@@ -70,7 +70,7 @@ Tato tabulka používá stejné kanonické řezy jako roadmapa a historie; při 
 | Volitelné tratě | 132 | 100.00 % | 75.76 % | 100.00 % | 0.00 % | 0.00 % |
 | Teams | 70 | 100.00 % | 20.00 % | 100.00 % | 0.00 % | 0.00 % |
 | Enterprise | 63 | 100.00 % | 14.29 % | 100.00 % | 0.00 % | 0.00 % |
-| Průřezové capability tratě | 253 | 90.91 % | 38.34 % | 90.91 % | 0.00 % | 9.09 % |
+| Průřezové capability tratě | 256 | 91.02 % | 53.13 % | 91.02 % | 0.00 % | 8.98 % |
 
 ### Roadmapa produktu
 
@@ -133,9 +133,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | Jazyk / obsah | Soubory | Fyzické řádky | Velikost (MB) |
 | --- | ---: | ---: | ---: |
 | C/C++ | 2 409 | 753 370 | 36.39 |
-| JSON | 580 | 200 769 | 33.21 |
-| Markdown | 1 143 | 158 024 | 8.78 |
-| Python | 795 | 128 870 | 5.38 |
+| JSON | 581 | 201 142 | 33.26 |
+| Markdown | 1 145 | 158 387 | 8.81 |
+| Python | 795 | 128 940 | 5.38 |
 | PowerShell | 73 | 34 697 | 1.82 |
 | Other text | 81 | 5 975 | 0.30 |
 | JSONL | 16 | 2 515 | 6.93 |
@@ -146,9 +146,9 @@ Rozsah `tools/jarvis` je čtený z `git archive HEAD`; fyzické řádky zahrnuj�
 | YAML | 3 | 16 | 0.00 |
 | Encoded text | 13 | 13 | 0.06 |
 | Nanity pseudocode | 2 | 13 | 0.00 |
-| **Text/source celkem** | **5 257** | **1 287 435** | **93.12** |
+| **Text/source celkem** | **5 260** | **1 288 241** | **93.19** |
 | Binární assety (mimo řádky) | 41 | — | 14.68 |
-| **Trackovaný strom celkem** | **5 298** | **1 287 435** | **107.80** |
+| **Trackovaný strom celkem** | **5 301** | **1 288 241** | **107.88** |
 
 ### Přírůstek od předchozí revize
 
@@ -156,9 +156,9 @@ Delta je vůči předchozímu commitnutému snapshotu (`HEAD^`); kladná hodnota
 
 | Oblast | Δ soubory | Δ fyzické řádky | Δ velikost (MB) |
 | --- | ---: | ---: | ---: |
-| Text/source celkem | +0 | +0 | +0.00 |
+| Text/source celkem | +3 | +806 | +0.07 |
 | Binární assety | +0 | — | +0.00 |
-| Trackovaný strom celkem | +0 | +0 | +0.00 |
+| Trackovaný strom celkem | +3 | +806 | +0.07 |
 
 Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovací jazyk. Tento inventář je informativní a nemění žádné procento dokončení, ověření, hotova ani release readiness.
 
@@ -220,18 +220,18 @@ Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovac�
 | RC6 — Reconciliation hostile partition partial reintegration | 7 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
 | RC7 — Scale administration operability | 8 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
 | RC8 — Enterprise licensing migration release acceptance | 10 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
-| B — Browser and AI browser | 8 | 100.00 % | 50.00 % | 100.00 % | 0.00 % | 0.00 % |
+| B — Browser and AI browser | 8 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
 | LIC — License liability and EULA | 7 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
 | AG — Adaptive user guidance | 9 | 100.00 % | 88.89 % | 100.00 % | 0.00 % | 0.00 % |
-| ASA — Adversarial security audit | 13 | 100.00 % | 61.54 % | 100.00 % | 0.00 % | 0.00 % |
-| ECM — Execution continuity and maintenance | 15 | 100.00 % | 46.67 % | 100.00 % | 0.00 % | 0.00 % |
+| ASA — Adversarial security audit | 13 | 100.00 % | 84.62 % | 100.00 % | 0.00 % | 0.00 % |
+| ECM — Execution continuity and maintenance | 15 | 100.00 % | 86.67 % | 100.00 % | 0.00 % | 0.00 % |
 | IG — Image generation capability | 6 | 100.00 % | 66.67 % | 100.00 % | 0.00 % | 0.00 % |
 | LM0 — Architecture/source inventory and contract map | 7 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
 | LM1 — Module contracts Module Host and Capability Registry | 10 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
 | LM2 — Observation Bus normalized evidence input and source adapters | 13 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
 | LM3 — Evidence Fusion and Local World Situation Model | 10 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
-| LM4 — Significance Evaluator and Attention Scheduler | 10 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
-| LM5 — Persistent autonomous loop and bounded self-generated work | 25 | 100.00 % | 36.00 % | 100.00 % | 0.00 % | 0.00 % |
+| LM4 — Significance Evaluator and Attention Scheduler | 13 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
+| LM5 — Persistent autonomous loop and bounded self-generated work | 25 | 100.00 % | 72.00 % | 100.00 % | 0.00 % | 0.00 % |
 | LM6 — Inter-Jarvis Protocol and Capability Federation | 10 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
 | LM7 — Federated Situation Projections and Global Memory bridge | 10 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
 | LM8 — Physical sensors machines and robot safety adapters | 10 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
@@ -241,7 +241,7 @@ Binární assety jsou uvedené zvlášť, aby nebyly zaměněné za programovac�
 | VG — Video generation capability | 8 | 100.00 % | 0.00 % | 100.00 % | 0.00 % | 0.00 % |
 | LN — Language-neutral intent and multilingual interaction | 9 | 100.00 % | 88.89 % | 100.00 % | 0.00 % | 0.00 % |
 | MDOC — Complete versioned documentation available to models | 7 | 100.00 % | 42.86 % | 100.00 % | 0.00 % | 0.00 % |
-| MUI — Model-guided Jarvis UI navigation and visual spotlight | 9 | 100.00 % | 44.44 % | 100.00 % | 0.00 % | 0.00 % |
+| MUI — Model-guided Jarvis UI navigation and visual spotlight | 9 | 100.00 % | 88.89 % | 100.00 % | 0.00 % | 0.00 % |
 | SRH — Incident-triggered service recovery and support handoff | 9 | 0.00 % | 0.00 % | 0.00 % | 0.00 % | 100.00 % |
 | PAC — Pre-authorized post-task autonomous follow-up | 14 | 0.00 % | 0.00 % | 0.00 % | 0.00 % | 100.00 % |
 
@@ -253,24 +253,24 @@ Každý bod a změnová anotace jsou v časovém grafu historie; tabulka uvádí
 
 | Veřejná revize | Datum | Δ implementace roadmapy | Δ ověřené řezy | Δ implementované řezy včetně ověřených | Δ rozpracované řezy | Δ architektura | Změněné řezy |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| `052b6d5b9af8` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
-| `d985b80d106a` | 2026-10-12 | +0.00 | +0.40 | +0.00 | +0.00 | +0.00 | 3: MDOC0, MDOC1, MDOC2 |
-| `17e03b13df8b` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
-| `0046ad766a2b` | 2026-10-12 | +0.00 | +0.52 | +0.00 | +0.00 | +0.00 | 4: MUI0, MUI1, MUI2, MUI3 |
-| `ed07335d8b3e` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
-| `70117824f424` | 2026-10-12 | +0.00 | +1.72 | +0.00 | +0.00 | +0.00 | 13: LM2.1, LM2.10, LM2.11, LM2.12, LM2.13, LM2.2… |
-| `8a3382ecd274` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
-| `cbfaf1fddd96` | 2026-10-12 | +0.00 | +1.33 | +0.00 | +0.00 | +0.00 | 10: LM3.1, LM3.10, LM3.2, LM3.3, LM3.4, LM3.5… |
-| `d34ab32de3f1` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
-| `7f762dd7e8d2` | 2026-10-12 | +0.00 | +0.53 | +0.00 | +0.00 | +0.00 | 4: LM5.13, LM5.14, LM5.15, LM5.17 |
-| `881daf1f391a` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
-| `52c86931d241` | 2026-10-12 | +0.00 | +0.39 | +0.00 | +0.00 | +0.00 | 3: B1, B2, B3 |
-| `2a69c084e020` | 2026-10-12 | -3.18 | -12.30 | -3.18 | +0.00 | +3.18 | 110: AG3, AG4, AG5, AG6, AG7, B1… |
-| `cf2e5aeaa554` | 2026-10-12 | +3.18 | +12.30 | +3.18 | +0.00 | -3.18 | 110: AG3, AG4, AG5, AG6, AG7, B1… |
-| `5a826a445d9d` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
 | `248caa34a542` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
-| `e32710ef81ef` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
-| `3accc1584a93` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
+| `0161796d317c` | 2026-10-12 | +0.00 | +1.33 | +0.00 | +0.00 | +0.00 | 10: LM4.1, LM4.10, LM4.2, LM4.3, LM4.4, LM4.5… |
+| `eb648357dec3` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
+| `e32710ef81ef` | 2026-10-12 | +0.00 | -1.33 | +0.00 | +0.00 | +0.00 | 10: LM4.1, LM4.10, LM4.2, LM4.3, LM4.4, LM4.5… |
+| `6767826c8e49` | 2026-10-12 | +0.01 | +1.49 | +0.01 | +0.00 | -0.01 | 13: LM4.1, LM4.10, LM4.11, LM4.12, LM4.13, LM4.2… |
+| `5646dcd1d049` | 2026-10-12 | +0.00 | +0.53 | +0.00 | +0.00 | +0.00 | 4: B4, B5, B6, B7 |
+| `19c34a596abf` | 2026-10-12 | +0.00 | +0.39 | +0.00 | +0.00 | +0.00 | 3: ECM10, ECM7, ECM9 |
+| `83291aa6d8f8` | 2026-10-12 | +0.00 | +0.40 | +0.00 | +0.00 | +0.00 | 3: LM5.16, LM5.19, LM5.21 |
+| `3adc20caf065` | 2026-10-12 | +0.00 | +0.13 | +0.00 | +0.00 | +0.00 | 1: MUI4 |
+| `28269eb815b3` | 2026-10-12 | +0.00 | +0.13 | +0.00 | +0.00 | +0.00 | 1: MUI5 |
+| `842b32753d61` | 2026-10-12 | +0.00 | +0.13 | +0.00 | +0.00 | +0.00 | 1: MUI6 |
+| `dd6929391e87` | 2026-10-12 | +0.00 | +0.13 | +0.00 | +0.00 | +0.00 | 1: MUI7 |
+| `bf700938dce7` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
+| `14968e387813` | 2026-10-12 | +0.00 | +0.40 | +0.00 | +0.00 | +0.00 | 3: ECM11, ECM12, ECM13 |
+| `3accc1584a93` | 2026-10-12 | -0.01 | -3.73 | -0.01 | +0.00 | +0.01 | 27: B4, B5, B6, B7, ECM10, ECM11… |
+| `e37ec33baa0c` | 2026-10-12 | +0.01 | +4.52 | +0.01 | +0.00 | -0.01 | 36: B4, B5, B6, B7, ECM10, ECM11… |
+| `2efcd695d904` | 2026-10-12 | +0.00 | +0.40 | +0.00 | +0.00 | +0.00 | 3: ASA10, ASA11, ASA9 |
+| `0c00d804058d` | 2026-10-12 | +0.00 | +0.00 | +0.00 | +0.00 | +0.00 | — |
 
 Úplná strojově čitelná historie: [progress-history.json](progress-history.json). Snapshot: [progress.json](progress.json).
 
