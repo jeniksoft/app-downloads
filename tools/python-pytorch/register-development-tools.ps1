@@ -230,6 +230,10 @@ function Add-AdditionalDeveloperToolDirectories {
     # AMD ships a supported command-line diagnostic utility with Ryzen Master.
     Add-ToolDirectory (Join-Path ${env:ProgramFiles} 'AMD\RyzenMasterSDK\AMDRyzenMasterCLI\bin-prebuilt')
 
+    # Hyper-V installs three host-side VM/VHD QA utilities in a stable root.
+    # Keep this exact root narrow; do not expose unrelated Windows components.
+    Add-ToolDirectory (Join-Path ${env:ProgramFiles} 'Hyper-V')
+
     # These installed command-line utilities are useful for development and
     # diagnostics, but are not covered by the SDK/IDE roots above. Keep the
     # paths exact; do not expose the surrounding application trees.
@@ -410,7 +414,8 @@ $commandsToCheck = @(
     'DocCompiler', 'MakeSfxCA', 'ildasm', 'gacutil', 'resgen', 'sn', 'csc', 'vbc',
     'vstest.console', 'NuGet.Build.Tasks.Console', 'Microsoft.CodeCoverage.Console',
     'MSBuildTaskHost', 'SvcTraceViewer', '7z', 'git', 'bash', 'sh',
-    'AMDRyzenMasterCLI', 'zerotier-cli', 'zerotier-idtool', 'VeraCrypt'
+    'AMDRyzenMasterCLI', 'zerotier-cli', 'zerotier-idtool', 'VeraCrypt',
+    'VMCreate', 'VMImport', 'InspectVhdDialog'
 )
 foreach ($commandName in $commandsToCheck) {
     $command = Get-Command $commandName -ErrorAction SilentlyContinue | Select-Object -First 1

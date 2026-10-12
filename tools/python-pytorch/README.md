@@ -12,6 +12,8 @@ Registruje zejména:
   případné nainstalované WinDbg aliasy; skutečné instalace Pythonu mají
   přednost před Store aliasem);
 - Android SDK (`platform-tools`, emulator, qemu, command-line tools a build-tools).
+- Hyper-V host/QA utilities (`VMCreate`, `VMImport` a `InspectVhdDialog`), pokud
+  je hostitelská instalace Hyper-V přítomná;
 - Visual Studio Build Tools (MSBuild, CMake, Ninja, MSVC/LLVM, `vswhere` a
   inicializační skripty), Roslyn (`csc`/`vbc`), VSTest, NuGet build task a
   Code Coverage CLI;
@@ -34,6 +36,8 @@ Git Bash si tento interní adresář nastaví samo při spuštění.
 Stejně se záměrně nepřidávají interní GUI aplikace, duplicitní 7-Zip z ovladačů
 ani alternativní `adb` z BlueStacks, protože by mohly zastínit oficiální SDK
 verze. Registrují se pouze přesné adresáře ověřených CLI/developer nástrojů.
+Kořen Hyper-V je výjimka pro tři konkrétní hostitelské VM/VHD QA nástroje;
+registruje se pouze tehdy, když obsahuje skutečné spustitelné soubory.
 
 ## Použití
 
