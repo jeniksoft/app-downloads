@@ -10,7 +10,8 @@ Registruje zejména:
 - WinGet Links, npm, Cargo, `.NET tools`, Scoop a Node.js;
 - Android SDK (`platform-tools`, emulator, qemu, command-line tools a build-tools).
 - Visual Studio Build Tools (MSBuild, CMake, Ninja, MSVC/LLVM, `vswhere` a
-  inicializační skripty);
+  inicializační skripty), Roslyn (`csc`/`vbc`), VSTest, NuGet build task a
+  Code Coverage CLI;
 - Windows SDK (x64/x86/ARM64 build, resource, signing a shader nástroje).
 - WiX 3.x i novější WiX CLI, včetně manuálně nainstalovaných verzí pod
   `C:\Tools\WiXToolset`;

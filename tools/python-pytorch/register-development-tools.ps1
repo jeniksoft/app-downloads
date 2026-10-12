@@ -86,8 +86,13 @@ function Add-VisualStudioToolDirectories {
         Add-ToolDirectory (Join-Path $instance.FullName 'Common7\IDE')
         Add-ToolDirectory (Join-Path $instance.FullName 'Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin')
         Add-ToolDirectory (Join-Path $instance.FullName 'Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja')
+        Add-ToolDirectory (Join-Path $instance.FullName 'Common7\IDE\CommonExtensions\Microsoft\NuGet')
+        Add-ToolDirectory (Join-Path $instance.FullName 'Common7\IDE\CommonExtensions\Microsoft\TestWindow')
+        Add-ToolDirectory (Join-Path $instance.FullName 'Common7\IDE\Extensions\Microsoft\CodeCoverage.Console')
+        Add-ToolDirectory (Join-Path $instance.FullName 'Common7\IDE\Extensions\TestPlatform')
         Add-ToolDirectory (Join-Path $instance.FullName 'MSBuild\Current\Bin\amd64')
         Add-ToolDirectory (Join-Path $instance.FullName 'MSBuild\Current\Bin')
+        Add-ToolDirectory (Join-Path $instance.FullName 'MSBuild\Current\Bin\Roslyn')
         Add-ToolDirectory (Join-Path $instance.FullName 'VC\Auxiliary\Build')
         Add-ToolDirectory (Join-Path $instance.FullName 'VC\Tools\Llvm\bin')
         Add-ToolDirectory (Join-Path $instance.FullName 'VC\Tools\Llvm\x64\bin')
@@ -383,7 +388,9 @@ $commandsToCheck = @(
     'adb', 'emulator', 'sdkmanager', 'avdmanager', 'android', 'cmake', 'ninja',
     'msbuild', 'cl', 'clang-cl', 'rc', 'mt', 'signtool', 'vswhere', 'dotnet',
     'wix', 'candle', 'light', 'dark', 'heat', 'ildasm', 'gacutil', 'resgen',
-    'sn', '7z', 'git', 'bash', 'sh', 'AMDRyzenMasterCLI'
+    'sn', 'csc', 'vbc', 'vstest.console', 'NuGet.Build.Tasks.Console',
+    'Microsoft.CodeCoverage.Console', '7z', 'git', 'bash', 'sh',
+    'AMDRyzenMasterCLI'
 )
 foreach ($commandName in $commandsToCheck) {
     $command = Get-Command $commandName -ErrorAction SilentlyContinue | Select-Object -First 1
