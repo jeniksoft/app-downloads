@@ -25,42 +25,28 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_BEGIN -->
 ## Jarvis Personal 1.0.0: implementace podle kanonické roadmapy
 
-**Aktualizováno 13. října 2026.**
+**Aktuální zdrojový přepočet: 13. 10. 2026 | 766 řezů.**
 
-**Implementováno je 765 z 766 kanonických řezů, tedy 99,87 %.** Jde o stav **napsané implementace** podle počtu roadmapových řezů, nikoliv o procento bezchybně fungujícího produktu ani podíl řádků zdrojového kódu.
+### 99,87 % zdrojově deklarované implementace
 
-Výpočet je deterministický: každý vrcholový i vnořený řez se počítá právě jednou; stav `verified` a `implemented-unverified` znamená implementováno. Ostatní stavy se za hotové nezapočítávají.
+**765 z 766** implementačních řezů master roadmapy má stav `verified` (502) nebo `implemented-unverified` (263). Jeden řez je `in-progress`. Počítají se také vnořené podřezy; všechny mají stejnou váhu. Žádná částečná procenta ani zastaralý vážený evidenční odhad.
 
-| Kanonický stav | Řezů | Podíl |
-| --- | ---: | ---: |
-| Implementováno, z toho stavově ověřeno | 765 (502) | 99,87 % (65,54 %) |
-| Rozpracováno | 1 | 0,13 % |
-| Pouze architektura | 0 | 0 % |
-| **Celková roadmapa** | **766** | **100 %** |
+Toto číslo **neznamená, že je Jarvis produkčně funkční z 99,87 %**, ani že prošel koncovými testy, uživatelskou akceptací nebo schváleným releasem.
 
-| Oblast | Implementováno |
+| Rodina roadmapy | Implementováno / celkem |
 | --- | ---: |
 | Platformní základy | 54 / 54 |
 | Jádro runtime | 64 / 64 |
-| Personal | 126 / 127 |
+| Personal 1.0.0 | 126 / 127 |
 | Volitelné schopnosti | 132 / 132 |
 | Teams | 70 / 70 |
 | Enterprise | 63 / 63 |
 | Průřezové schopnosti | 256 / 256 |
+| **Celkem** | **765 / 766 = 99,87 %** |
 
-Jediným souhrnným rozpracovaným řezem zůstává **P8.15: komponentové aktualizace a vratný rollback**. Jeho podčásti již mají rozsáhlou implementaci, ale rodičovský řez není uzavřen jako celek. Všem položkám se ponechává jejich přesný kanonický stav.
+**Zdrojová aktuální agregace:** [implementation-slices.json](implementation-slices.json).
 
-### Aktuální strojový report a graf
-
-![Aktuální přehled implementace Jarvise podle kanonických řezů](visuals/implementation-overview.svg)
-
-[**Aktuální kompletní přehled počtů a stavů kapitol**](roadmap-implementation.v1.json) je odvozen z aktuálního master JSON v CPM, se SHA-256 otiskem zdroje. Neobsahuje soukromé pracovní logy.
-
-Původní vážený **evidenční přehled 37,48 % byl odstraněn z hlavního zobrazení**: měřil jinou veličinu a nebyl procentem napsané implementace. Archivní soubor [`progress.json`](progress.json) a starý rozsáhlý graf `visuals/roadmap-editions.svg` se teprve musí v plném publikačním běhu znovu přegenerovat; **nepoužívejte jejich stará procenta pro současný stav**.
-
-### Důležité rozlišení
-
-Stavy typu `verified` v roadmapě znamenají **ověření příslušného deklarovaného rozsahu**, často izolovaného kontraktu či provider-free testu. Neprokazují automaticky produkční propojení modelu, UI, Workeru, instalace, periferií, spolupráce více počítačů ani připravenost veřejného vydání. Tyto brány jsou samostatné.
+**Stav zveřejnění:** veřejný instalační balíček Personal 1.0.0 zatím není dostupný. Personal, Teams a Enterprise mají vlastní neuzavřené release a runtime brány. Záznam `progress.json` je rozsáhlá historická/detailní projekce, která může do dokončení další synchronizované regenerace obsahovat starší stav či původní vážené evidence; pro aktuální počet napsaných řezů použijte výše uvedený nový strojový souhrn. Staré důkazní grafy nejsou aktuálním ukazatelem implementace.
 
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_END -->
 
