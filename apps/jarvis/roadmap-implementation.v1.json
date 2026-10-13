@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "kind": "jarvis-public-roadmap-slice-implementation",
+  "updated_at": "2026-10-13",
+  "project": "Jarvis",
+  "source_roadmap_id": "jarvis.master.worker.v2",
+  "source_sha256": "a48b9842c547466384a6ab0f3f9e7f71488752fb396f0741db3c6f05a1af1d7d",
+  "total_slices": 766,
+  "implemented_slices": 765,
+  "verified_status_slices": 502,
+  "implementation_percent": 99.87,
+  "verified_roadmap_status_percent": 65.54,
+  "status_counts": {
+    "architecture-only": 0,
+    "blocked": 0,
+    "implemented-unverified": 263,
+    "in-progress": 1,
+    "verified": 502
+  },
+  "chapters": [
+    {
+      "id": "foundation_nodes",
+      "name_cs": "Platformní základy",
+      "slices": 54,
+      "implemented_slices": 54,
+      "implemented_percent": 100,
+      "verified_roadmap_slices": 54
+    },
+    {
+      "id": "core_runtime_nodes",
+      "name_cs": "Jádro runtime",
+      "slices": 64,
+      "implemented_slices": 64,
+      "implemented_percent": 100,
+      "verified_roadmap_slices": 33
+    },
+    {
+      "id": "personal_nodes",
+      "name_cs": "Personal 1.0.0",
+      "slices": 127,
+      "implemented_slices": 126,
+      "implemented_percent": 99.21,
+      "verified_roadmap_slices": 125
+    },
+    {
+      "id": "personal_optional_tracks",
+      "name_cs": "Volitelné tratě Personal",
+      "slices": 132,
+      "implemented_slices": 132,
+      "implemented_percent": 100,
+      "verified_roadmap_slices": 102
+    },
+    {
+      "id": "teams_nodes",
+      "name_cs": "Teams",
+      "slices": 70,
+      "implemented_slices": 70,
+      "implemented_percent": 100,
+      "verified_roadmap_slices": 14
+    },
+    {
+      "id": "enterprise_nodes",
+      "name_cs": "Enterprise",
+      "slices": 63,
+      "implemented_slices": 63,
+      "implemented_percent": 100,
+      "verified_roadmap_slices": 9
+    },
+    {
+      "id": "capability_nodes",
+      "name_cs": "Průřezové schopnosti",
+      "slices": 256,
+      "implemented_slices": 256,
+      "implemented_percent": 100,
+      "verified_roadmap_slices": 165
+    }
+  ],
+  "open_implementation": [
+    {
+      "chapter": "P8",
+      "id": "P8.15",
+      "status": "in-progress"
+    }
+  ],
+  "method": "Počet řezů ve stavu verified či implemented-unverified dělený počtem všech kanonických včetně vnořených řezů. Nejde o produkční přijetí ani o odhad řádků kódu.",
+  "release_status": "not inferred from roadmap-slice implementation",
+  "historical_evidence_weighted_overview": "retired from current public headline",
+  "large_legacy_progress_file": "apps/jarvis/progress.json is a separate older generated snapshot pending full deterministic regeneration."
+}
