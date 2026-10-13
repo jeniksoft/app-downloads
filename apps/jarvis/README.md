@@ -50,11 +50,13 @@ Výpočet je deterministický: každý vrcholový i vnořený řez se počítá 
 
 Jediným souhrnným rozpracovaným řezem zůstává **P8.15: komponentové aktualizace a vratný rollback**. Jeho podčásti již mají rozsáhlou implementaci, ale rodičovský řez není uzavřen jako celek. Všem položkám se ponechává jejich přesný kanonický stav.
 
-### Aktuální strojový report
+### Aktuální strojový report a graf
+
+![Aktuální přehled implementace Jarvise podle kanonických řezů](visuals/implementation-overview.svg)
 
 [**Aktuální kompletní přehled počtů a stavů kapitol**](roadmap-implementation.v1.json) je odvozen z aktuálního master JSON v CPM, se SHA-256 otiskem zdroje. Neobsahuje soukromé pracovní logy.
 
-Původní vážený **evidenční přehled 37,48 % byl odstraněn z hlavního zobrazení**: měřil jinou veličinu a nebyl procentem napsané implementace. Archivní soubor [`progress.json`](progress.json) a dříve vygenerované velké SVG grafy se teprve musí v plném publikačním běhu znovu přegenerovat; **nepoužívejte jejich stará procenta pro současný stav**.
+Původní vážený **evidenční přehled 37,48 % byl odstraněn z hlavního zobrazení**: měřil jinou veličinu a nebyl procentem napsané implementace. Archivní soubor [`progress.json`](progress.json) a starý rozsáhlý graf `visuals/roadmap-editions.svg` se teprve musí v plném publikačním běhu znovu přegenerovat; **nepoužívejte jejich stará procenta pro současný stav**.
 
 ### Důležité rozlišení
 
