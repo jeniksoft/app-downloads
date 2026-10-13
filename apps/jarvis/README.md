@@ -69,7 +69,7 @@ Implementováno je kumulativní a vždy zahrnuje ověřené řezy. Ostatní stav
 **Legenda ikon:** · <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že řez splnil ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že řez splnil ověřovací bránu.">✅</span> Ověřeno · <span role="img" title="Implementováno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený." aria-label="Implementováno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený.">🟦</span> Implementováno · <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno · <span role="img" title="Architektura: Kanonický stav řezu je Architektura; implementace ještě není deklarovaná." aria-label="Architektura: Kanonický stav řezu je Architektura; implementace ještě není deklarovaná.">⚪</span> Architektura · <span role="img" title="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch." aria-label="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch.">⛔</span> Blokováno
 V grafu jsou všechny roadmapové kapitoly, uzly a řezy; textové kopie jsou v češtině a popisují, co Jarvis díky dané části umí.
 
-**Synchronizace s kanonickou roadmapou: opraveno stavů 4 · popisů 5 · přidáno 0 · odebráno 0**
+**Změna od předchozího snapshotu: roadmapa položky +0 · implementováno +0 · ověřené důkazy +0**
 
 ![Kanonická roadmapa Jarvis](visuals/roadmap-editions.svg)
 

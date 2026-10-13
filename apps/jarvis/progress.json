@@ -13,12 +13,10 @@
     "axes": {
       "primary": "weighted milestone min(implementation, verification), bounded by the chapter evidence cap",
       "implementation": "average canonical roadmap progress; verified and implemented slices count as implemented",
-      "roadmap_statuses": "canonical raw counts by verified, implemented-unverified, in-progress and architecture-only slice state",
-      "roadmap_implementation": "cumulative share of canonical verified and implemented-unverified slices; verified is included",
-      "evidence_implementation": "weighted implementation score from explicitly declared milestone states and evidence; this is a conservative evidence-confidence axis, not source implementation coverage",
       "verification": "weighted current build/contract/runtime evidence score; architecture-only text cannot increase it",
       "done": "weighted milestone minimum after the chapter cap; open milestones contribute zero",
       "release_readiness": "optional roadmap-weighted release gate metric",
+      "roadmap_implementation": "cumulative share of canonical verified and implemented-unverified slices; verified is included",
       "roadmap_verification": "share of canonical slices in verified state",
       "roadmap_in_progress": "share of canonical slices in in-progress state",
       "roadmap_architecture": "share of canonical slices in architecture-only state"
@@ -26,7 +24,6 @@
     "commit_history": "Tracked history records configured input revisions; public deltas compare successive records using opaque fingerprints.",
     "automatic_regeneration": "The public sync is explicitly dispatched after a completed roadmap closeout; ordinary main commits do not trigger it.",
     "history_update": "Incremental closeout mode reuses the previous public history and appends one current closeout point; full-history mode is a deterministic fallback.",
-    "slice_history": "Runtime deterministically keys every public slice by canonical roadmap ID, orders snapshots by the recorded history sequence, and renders the bounded last 12 visual points; missing historical fields are unknown and no model memory or inference participates in the split.",
     "artifact_publication": "The publisher compares target bytes and commits only changed JSON, README, history or SVG artifact paths; unchanged tables and visuals remain untouched.",
     "closeout_verification": "The latest closeout envelope exposes exact roadmap_slice_id, source_commit_sha and closeout_sha; ordinary history entries retain opaque revisions.",
     "limitations": "The public implementation overview is generated only from canonical roadmap rows. Legacy evidence metrics are retained for compatibility and history, but are not used as the implementation value or displayed in the roadmap dashboard."
@@ -42,45 +39,45 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 2409,
-        "physical_lines": 753370,
-        "bytes": 36385203,
-        "megabytes": 36.385203
+        "files": 2429,
+        "physical_lines": 760233,
+        "bytes": 36697200,
+        "megabytes": 36.6972
       },
       {
         "language": "JSON",
-        "files": 581,
-        "physical_lines": 201142,
-        "bytes": 33259299,
-        "megabytes": 33.259299
+        "files": 592,
+        "physical_lines": 202234,
+        "bytes": 33418267,
+        "megabytes": 33.418267
       },
       {
         "language": "Markdown",
-        "files": 1145,
-        "physical_lines": 158387,
-        "bytes": 8807004,
-        "megabytes": 8.807004
+        "files": 1156,
+        "physical_lines": 159272,
+        "bytes": 8878846,
+        "megabytes": 8.878846
       },
       {
         "language": "Python",
-        "files": 795,
-        "physical_lines": 128940,
-        "bytes": 5379682,
-        "megabytes": 5.379682
+        "files": 807,
+        "physical_lines": 130619,
+        "bytes": 5462602,
+        "megabytes": 5.462602
       },
       {
         "language": "PowerShell",
         "files": 73,
-        "physical_lines": 34697,
-        "bytes": 1816082,
-        "megabytes": 1.816082
+        "physical_lines": 34679,
+        "bytes": 1815070,
+        "megabytes": 1.81507
       },
       {
         "language": "Other text",
         "files": 81,
-        "physical_lines": 5975,
-        "bytes": 298448,
-        "megabytes": 0.298448
+        "physical_lines": 6013,
+        "bytes": 301755,
+        "megabytes": 0.301755
       },
       {
         "language": "JSONL",
@@ -140,21 +137,21 @@
       }
     ],
     "source_text": {
-      "files": 5260,
-      "physical_lines": 1288241,
-      "bytes": 93192526,
-      "megabytes": 93.192526
+      "files": 5314,
+      "physical_lines": 1298780,
+      "bytes": 93820548,
+      "megabytes": 93.820548
     },
     "binary_assets": {
-      "files": 41,
-      "bytes": 14682994,
-      "megabytes": 14.682994
+      "files": 101,
+      "bytes": 41613397,
+      "megabytes": 41.613397
     },
     "tracked_total": {
-      "files": 5301,
-      "physical_lines": 1288241,
-      "bytes": 107875520,
-      "megabytes": 107.87552
+      "files": 5415,
+      "physical_lines": 1298780,
+      "bytes": 135433945,
+      "megabytes": 135.433945
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
@@ -183,14 +180,6 @@
   "overall_percent": 37.48,
   "primary_percent": 37.48,
   "implementation_complete_percent": 99.51,
-  "implementation_source": "canonical roadmap completion_percent",
-  "roadmap_verified_percent": 65.54,
-  "roadmap_implemented_percent": 99.48,
-  "roadmap_in_progress_percent": 0.13,
-  "roadmap_architecture_percent": 0.39,
-  "evidence_implementation_percent": 43.75,
-  "evidence_verified_percent": 37.48,
-  "evidence_done_percent": 37.48,
   "verified_percent": 37.48,
   "done_percent": 37.48,
   "personal_progress": {
@@ -198,8 +187,7 @@
     "edition": "Personal",
     "version": "1.0.0",
     "primary_percent": 37.48,
-    "implementation_percent": 96.87,
-    "evidence_implementation_percent": 43.75,
+    "implementation_percent": 43.75,
     "verified_percent": 37.48,
     "done_percent": 37.48,
     "chapter_count": 8,
@@ -317,9 +305,7 @@
         "evidence_source": "milestone-evidence-manifest"
       }
     ],
-    "implementation_source": "canonical roadmap completion_percent over public slices",
-    "evidence_formula": "weighted milestone implementation score bounded by declared evidence state",
-    "formula": "roadmap implementation is canonical slice coverage; chapter contribution = chapter weight * chapter completion / 100"
+    "formula": "weighted chapter contribution = chapter weight * chapter completion / 100"
   },
   "roadmap": {
     "source": {
@@ -20828,7 +20814,6 @@
     "roadmap_items_delta": 0,
     "roadmap_completed_delta": 0,
     "roadmap_chapters_delta": 0,
-    "roadmap_slices_changed": 0,
     "verified_evidence_delta": 0,
     "metrics_delta": {
       "primary_percent": 0.0,
@@ -20845,7 +20830,7 @@
   },
   "publication_savings": {
     "measurement": "estimated_workflow_runs_avoided",
-    "measurement_scope": "full-history",
+    "measurement_scope": "full-history-baseline-plus-incremental-closeouts",
     "tracked_main_commits": 65,
     "relevant_closeout_snapshots": 64,
     "legacy_runs_estimate": 65,
@@ -20854,21 +20839,20 @@
     "avoided_percent": 1.54,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
     "incremental_closeout_points_since_full_baseline": 0,
-    "full_private_history_scans_per_closeout": 1,
-    "public_checkout_clones_per_closeout": 1,
+    "full_private_history_scans_per_closeout": 0,
+    "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
     "artifact_update_policy": "changed-target-files-only"
   },
   "publication_state": {
     "history_update_mode": "baseline-projection",
-    "working_tree_projection": false,
+    "working_tree_projection": true,
     "artifact_update_policy": "changed-target-files-only",
     "public_transport": "publisher-selected",
     "public_checkout": "not-used",
     "max_public_commits_per_closeout": 1,
     "closeout_proof": "exact-slice-source-and-closeout-sha",
-    "public_measurement_source": "canonical-roadmap",
-    "projection_only": true
+    "public_measurement_source": "canonical-roadmap"
   },
   "milestone_implementation_percent": 74.5,
   "milestone_verified_percent": 43.98,
@@ -531206,10 +531190,14 @@
     "closeout_verification_policy": "The top-level closeout_verification envelope is the public exception: it contains exact slice, source and closeout SHAs for the explicitly dispatched closeout; ordinary history entries remain opaque.",
     "incremental_closeout_policy": "A successful closeout appends one opaque current point to the synchronized public baseline; a missing or split baseline fails closed."
   },
-  "disclaimer": "Implementation is canonical roadmap slice coverage, not a percentage of source lines and not a release-complete claim. Evidence implementation is a separate conservative milestone-confidence axis; primary, verification and done remain evidence-bound. Task Board area estimates are not published as a completion claim.",
+  "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
+  "roadmap_implemented_percent": 99.48,
+  "roadmap_verified_percent": 65.54,
+  "roadmap_in_progress_percent": 0.13,
+  "roadmap_architecture_percent": 0.39,
   "roadmap_projection_delta": {
-    "changed_statuses": 4,
-    "changed_descriptions": 5,
+    "changed_statuses": 0,
+    "changed_descriptions": 0,
     "added_items": 0,
     "removed_items": 0
   }

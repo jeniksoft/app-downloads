@@ -2,28 +2,28 @@
   "schema_version": 9,
   "project_codename": "Jarvis",
   "report_locale": "cs-CZ",
-  "generated_at": "2026-10-12",
+  "generated_at": "2026-10-13",
   "measurement": {
-    "mode": "canonical_roadmap_plus_evidence_rollup",
-    "primary_metric": "primary_percent",
+    "mode": "canonical-roadmap-current-view",
+    "primary_metric": "implementation_complete_percent",
     "precision_decimal_places": 2,
     "axes": {
       "primary": "weighted milestone min(implementation, verification), bounded by the chapter evidence cap",
-      "implementation": "canonical roadmap completion_percent averaged over every public roadmap slice; implemented-unverified and verified slices count as implemented, while in-progress and architecture-only slices retain their bounded canonical progress",
-      "roadmap_statuses": "canonical raw counts by verified, implemented-unverified, in-progress and architecture-only slice state",
-      "roadmap_implementation": "cumulative canonical share of verified and implemented-unverified slices; verified is a subset of implemented",
-      "evidence_implementation": "weighted implementation score from explicitly declared milestone states and evidence; this is a conservative evidence-confidence axis, not source implementation coverage",
+      "implementation": "average canonical roadmap progress; verified and implemented slices count as implemented",
       "verification": "weighted current build/contract/runtime evidence score; architecture-only text cannot increase it",
       "done": "weighted milestone minimum after the chapter cap; open milestones contribute zero",
-      "release_readiness": "optional roadmap-weighted release gate metric"
+      "release_readiness": "optional roadmap-weighted release gate metric",
+      "roadmap_implementation": "cumulative share of canonical verified and implemented-unverified slices; verified is included",
+      "roadmap_verification": "share of canonical slices in verified state",
+      "roadmap_in_progress": "share of canonical slices in in-progress state",
+      "roadmap_architecture": "share of canonical slices in architecture-only state"
     },
     "commit_history": "Tracked history records configured input revisions; public deltas compare successive records using opaque fingerprints.",
     "automatic_regeneration": "The public sync is explicitly dispatched after a completed roadmap closeout; ordinary main commits do not trigger it.",
     "history_update": "Incremental closeout mode reuses the previous public history and appends one current closeout point; full-history mode is a deterministic fallback.",
-    "slice_history": "Runtime deterministically keys every public slice by canonical roadmap ID, orders snapshots by the recorded history sequence, and renders the bounded last 12 visual points; missing historical fields are unknown and no model memory or inference participates in the split.",
     "artifact_publication": "The publisher compares target bytes and commits only changed JSON, README, history or SVG artifact paths; unchanged tables and visuals remain untouched.",
     "closeout_verification": "The latest closeout envelope exposes exact roadmap_slice_id, source_commit_sha and closeout_sha; ordinary history entries retain opaque revisions.",
-    "limitations": "Implementation coverage is computed only from canonical roadmap slice status/progress; source size, source lines, a plan, or a contract-only document never increases it. Primary, evidence implementation, verification and done remain separate evidence-bound axes. Task Board area estimates are structural inputs, not a scored axis."
+    "limitations": "The public implementation overview is generated only from canonical roadmap rows. Legacy evidence metrics are retained for compatibility and history, but are not used as the implementation value or displayed in the roadmap dashboard."
   },
   "entries": [
     {
@@ -509067,5 +509067,5 @@
       "verified_evidence_delta": 0
     }
   ],
-  "disclaimer": "Implementation is canonical roadmap slice coverage, not a percentage of source lines and not a release-complete claim. Evidence implementation is a separate conservative milestone-confidence axis; primary, verification and done remain evidence-bound. Task Board area estimates are not published as a completion claim."
+  "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim."
 }
