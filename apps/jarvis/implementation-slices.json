@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "kind": "jarvis-master-roadmap-slice-implementation",
+  "updated_at": "2026-10-13",
+  "source": "canonical Jarvis master architecture/worker roadmap, as read on 2026-10-13",
+  "measurement": "one top-level or nested roadmap slice; all weights exactly one",
+  "slice_count": 766,
+  "implemented_slices": 765,
+  "implementation_percent": 99.87,
+  "states": {
+    "verified": 502,
+    "implemented-unverified": 263,
+    "in-progress": 1,
+    "architecture-only": 0,
+    "blocked": 0
+  },
+  "groups": [
+    {
+      "name": "Platformní základy",
+      "total": 54,
+      "implemented": 54
+    },
+    {
+      "name": "Jádro runtime",
+      "total": 64,
+      "implemented": 64
+    },
+    {
+      "name": "Personal 1.0.0",
+      "total": 127,
+      "implemented": 126
+    },
+    {
+      "name": "Volitelné schopnosti",
+      "total": 132,
+      "implemented": 132
+    },
+    {
+      "name": "Teams",
+      "total": 70,
+      "implemented": 70
+    },
+    {
+      "name": "Enterprise",
+      "total": 63,
+      "implemented": 63
+    },
+    {
+      "name": "Průřezové schopnosti",
+      "total": 256,
+      "implemented": 256
+    }
+  ],
+  "meaning": "Status-based source implementation coverage only; not a runtime acceptance, host QA proof, product readiness or release approval.",
+  "release_ready": false,
+  "download_available": false,
+  "legacy_public_progress_json_note": "Existing large progress.json may reflect an older snapshot until the generator completes its next synchronized publication; do not mix its old weighted fields with these counts."
+}
