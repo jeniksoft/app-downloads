@@ -27,17 +27,17 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 
 **Aktualizováno: 2026-10-13 · 766 řezů**
 
-Implementační pokrytí podle master roadmapy je **98.99 %**. Zobrazené stavy kapitol se odvozují ze stavů jejich řezů, takže zastaralý stav rodiče nezastíní skutečný postup.
+Implementační pokrytí podle master roadmapy je **99.51 %**. Zobrazené stavy kapitol se odvozují ze stavů jejich řezů, takže zastaralý stav rodiče nezastíní skutečný postup.
 
 ### Souhrn kanonických stavů
 
 | Metrika | Hodnota | Význam |
 | --- | ---: | --- |
-| `implementation_complete_percent` | 98.99 % | Průměrný postup podle kanonických řezů roadmapy. |
-| `roadmap_implemented_percent` | 98.96 % | Implementované řezy včetně všech ověřených. |
+| `implementation_complete_percent` | 99.51 % | Průměrný postup podle kanonických řezů roadmapy. |
+| `roadmap_implemented_percent` | 99.48 % | Implementované řezy včetně všech ověřených. |
 | `roadmap_verified_percent` | 65.54 % | Řezy, které jsou v master roadmapě ověřené. |
 | `roadmap_in_progress_percent` | 0.13 % | Řezy, na kterých se podle master roadmapy pracuje. |
-| `roadmap_architecture_percent` | 0.91 % | Řezy, které jsou zatím jen navržené. |
+| `roadmap_architecture_percent` | 0.39 % | Řezy, které jsou zatím jen navržené. |
 
 ### Jarvis report
 
@@ -57,7 +57,7 @@ Implementováno je kumulativní a vždy zahrnuje ověřené řezy. Ostatní stav
 | Roadmapová skupina | Řezů | Pokrytí | Implementováno včetně ověřených | Ověřeno | Rozpracováno | Architektura |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Platformní základy | 54 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
-| Jádro runtime | 64 | 89.06 % | 89.06 % | 51.56 % | 0.00 % | 10.94 % |
+| Jádro runtime | 64 | 95.31 % | 95.31 % | 51.56 % | 0.00 % | 4.69 % |
 | Personal 1.0.0 | 127 | 99.41 % | 99.21 % | 98.43 % | 0.79 % | 0.00 % |
 | Volitelné tratě | 132 | 100.00 % | 100.00 % | 77.27 % | 0.00 % | 0.00 % |
 | Teams | 70 | 100.00 % | 100.00 % | 20.00 % | 0.00 % | 0.00 % |
@@ -69,7 +69,7 @@ Implementováno je kumulativní a vždy zahrnuje ověřené řezy. Ostatní stav
 **Legenda ikon:** · <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že řez splnil ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že řez splnil ověřovací bránu.">✅</span> Ověřeno · <span role="img" title="Implementováno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený." aria-label="Implementováno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený.">🟦</span> Implementováno · <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno · <span role="img" title="Architektura: Kanonický stav řezu je Architektura; implementace ještě není deklarovaná." aria-label="Architektura: Kanonický stav řezu je Architektura; implementace ještě není deklarovaná.">⚪</span> Architektura · <span role="img" title="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch." aria-label="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch.">⛔</span> Blokováno
 V grafu jsou všechny roadmapové kapitoly, uzly a řezy; textové kopie jsou v češtině a popisují, co Jarvis díky dané části umí.
 
-**Synchronizace s kanonickou roadmapou: opraveno stavů 0 · popisů 7 · přidáno 0 · odebráno 0**
+**Synchronizace s kanonickou roadmapou: opraveno stavů 4 · popisů 5 · přidáno 0 · odebráno 0**
 
 ![Kanonická roadmapa Jarvis](visuals/roadmap-editions.svg)
 
