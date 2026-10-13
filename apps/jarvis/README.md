@@ -23,67 +23,42 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 **EN:** Jarvis is intended exclusively for adults aged 18 and over. If you are under 18, do not use Jarvis.
 
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_BEGIN -->
-## Jarvis Personal 1.0.0 — skutečný stav roadmapy
+## Jarvis Personal 1.0.0: implementace podle kanonické roadmapy
 
-**Aktualizováno: 2026-10-13 · 766 řezů**
+**Aktualizováno 13. října 2026.**
 
-Implementační pokrytí podle master roadmapy je **99.51 %**. Zobrazené stavy kapitol se odvozují ze stavů jejich řezů, takže zastaralý stav rodiče nezastíní skutečný postup.
+**Implementováno je 765 z 766 kanonických řezů, tedy 99,87 %.** Jde o stav **napsané implementace** podle počtu roadmapových řezů, nikoliv o procento bezchybně fungujícího produktu ani podíl řádků zdrojového kódu.
 
-### Souhrn kanonických stavů
+Výpočet je deterministický: každý vrcholový i vnořený řez se počítá právě jednou; stav `verified` a `implemented-unverified` znamená implementováno. Ostatní stavy se za hotové nezapočítávají.
 
-| Metrika | Hodnota | Význam |
-| --- | ---: | --- |
-| `implementation_complete_percent` | 99.51 % | Průměrný postup podle kanonických řezů roadmapy. |
-| `roadmap_implemented_percent` | 99.48 % | Implementované řezy včetně všech ověřených. |
-| `roadmap_verified_percent` | 65.54 % | Řezy, které jsou v master roadmapě ověřené. |
-| `roadmap_in_progress_percent` | 0.13 % | Řezy, na kterých se podle master roadmapy pracuje. |
-| `roadmap_architecture_percent` | 0.39 % | Řezy, které jsou zatím jen navržené. |
+| Kanonický stav | Řezů | Podíl |
+| --- | ---: | ---: |
+| Implementováno, z toho stavově ověřeno | 765 (502) | 99,87 % (65,54 %) |
+| Rozpracováno | 1 | 0,13 % |
+| Pouze architektura | 0 | 0 % |
+| **Celková roadmapa** | **766** | **100 %** |
 
-### Jarvis report
+| Oblast | Implementováno |
+| --- | ---: |
+| Platformní základy | 54 / 54 |
+| Jádro runtime | 64 / 64 |
+| Personal | 126 / 127 |
+| Volitelné schopnosti | 132 / 132 |
+| Teams | 70 / 70 |
+| Enterprise | 63 / 63 |
+| Průřezové schopnosti | 256 / 256 |
 
-![Kanonický roadmap report Jarvis Personal 1.0.0](visuals/report-cover.svg)
+Jediným souhrnným rozpracovaným řezem zůstává **P8.15: komponentové aktualizace a vratný rollback**. Jeho podčásti již mají rozsáhlou implementaci, ale rodičovský řez není uzavřen jako celek. Všem položkám se ponechává jejich přesný kanonický stav.
 
-### Grafický dashboard
+### Aktuální strojový report
 
-![Souhrn kanonických stavů roadmapy](visuals/implementation-overview.svg)
-![Roadmapa a postup řezů Jarvis](visuals/roadmap-editions.svg)
+[**Aktuální kompletní přehled počtů a stavů kapitol**](roadmap-implementation.v1.json) je odvozen z aktuálního master JSON v CPM, se SHA-256 otiskem zdroje. Neobsahuje soukromé pracovní logy.
 
-Grafy a tabulky vycházejí ze stejné kanonické roadmapy. Implementováno zahrnuje Ověřeno; Rozpracováno a Architektura jsou samostatné stavy. Staré důkazní a historické grafy zůstávají odpojené.
+Původní vážený **evidenční přehled 37,48 % byl odstraněn z hlavního zobrazení**: měřil jinou veličinu a nebyl procentem napsané implementace. Archivní soubor [`progress.json`](progress.json) a dříve vygenerované velké SVG grafy se teprve musí v plném publikačním běhu znovu přegenerovat; **nepoužívejte jejich stará procenta pro současný stav**.
 
-### Kanonický stav roadmapových skupin
+### Důležité rozlišení
 
-Implementováno je kumulativní a vždy zahrnuje ověřené řezy. Ostatní stavové podíly jsou oddělené.
-
-| Roadmapová skupina | Řezů | Pokrytí | Implementováno včetně ověřených | Ověřeno | Rozpracováno | Architektura |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Platformní základy | 54 | 100.00 % | 100.00 % | 100.00 % | 0.00 % | 0.00 % |
-| Jádro runtime | 64 | 95.31 % | 95.31 % | 51.56 % | 0.00 % | 4.69 % |
-| Personal 1.0.0 | 127 | 99.41 % | 99.21 % | 98.43 % | 0.79 % | 0.00 % |
-| Volitelné tratě | 132 | 100.00 % | 100.00 % | 77.27 % | 0.00 % | 0.00 % |
-| Teams | 70 | 100.00 % | 100.00 % | 20.00 % | 0.00 % | 0.00 % |
-| Enterprise | 63 | 100.00 % | 100.00 % | 14.29 % | 0.00 % | 0.00 % |
-| Průřezové capability tratě | 256 | 100.00 % | 100.00 % | 64.45 % | 0.00 % | 0.00 % |
-
-### Roadmapa produktu
-
-**Legenda ikon:** · <span role="img" title="Ověřeno: Ověřený stav; zelená fajfka znamená, že řez splnil ověřovací bránu." aria-label="Ověřeno: Ověřený stav; zelená fajfka znamená, že řez splnil ověřovací bránu.">✅</span> Ověřeno · <span role="img" title="Implementováno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený." aria-label="Implementováno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený.">🟦</span> Implementováno · <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno · <span role="img" title="Architektura: Kanonický stav řezu je Architektura; implementace ještě není deklarovaná." aria-label="Architektura: Kanonický stav řezu je Architektura; implementace ještě není deklarovaná.">⚪</span> Architektura · <span role="img" title="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch." aria-label="Blokováno: Stav je odmítnutý nebo blokovaný; červená značka není úspěch.">⛔</span> Blokováno
-V grafu jsou všechny roadmapové kapitoly, uzly a řezy; textové kopie jsou v češtině a popisují, co Jarvis díky dané části umí.
-
-**Změna od předchozího snapshotu: roadmapa položky +0 · implementováno +0 · ověřené důkazy +0**
-
-![Kanonická roadmapa Jarvis](visuals/roadmap-editions.svg)
-
-Duplicitní tabulky řezů se nezobrazují. Úplné aktuální stavy a popisy jsou v [progress.json](progress.json). Historický záznam zůstává oddělený v [progress-history.json](progress-history.json).
-
-### Release gates
-
-| Stav | Edice | Popis | Ověření | Závislosti |
-| --- | --- | --- | --- | ---: |
-| <span role="img" title="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav." aria-label="Rozpracováno: Práce pokračuje; oranžová značka označuje rozpracovaný stav.">🟠</span> Rozpracováno | `personal-1.0.0` | Bezplatný local-first Jarvis pro jednoho člověka. | `V6` | 9 |
-| <span role="img" title="Otevřeno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený." aria-label="Otevřeno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený.">🟦</span> Otevřeno | `teams` | Spolupráce v jednom zákaznicky vlastněném TeamRealmu. | `V6` | 12 |
-| <span role="img" title="Otevřeno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený." aria-label="Otevřeno: Kanonický stav řezu je Implementováno; stav Ověřeno ještě není uzavřený.">🟦</span> Otevřeno | `enterprise` | Rekurzivní zákaznicky vlastněná organizace a Konstelace. | `V6` | 10 |
-
-Roadmapový postup není prohlášením, že je produkt hotový nebo připravený k vydání; rozhoduje stav samostatné release brány.
+Stavy typu `verified` v roadmapě znamenají **ověření příslušného deklarovaného rozsahu**, často izolovaného kontraktu či provider-free testu. Neprokazují automaticky produkční propojení modelu, UI, Workeru, instalace, periferií, spolupráce více počítačů ani připravenost veřejného vydání. Tyto brány jsou samostatné.
 
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_END -->
 
