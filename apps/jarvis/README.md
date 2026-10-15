@@ -23,30 +23,25 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 **EN:** Jarvis is intended exclusively for adults aged 18 and over. If you are under 18, do not use Jarvis.
 
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_BEGIN -->
-## Jarvis Personal 1.0.0: implementace podle kanonické roadmapy
+## Jarvis Personal: skutečná implementace z roadmapy
 
-**Aktuální zdrojový přepočet: 13. 10. 2026 | 766 řezů.**
+**766 / 818 = 93.64 %**
 
-### 99,87 % zdrojově deklarované implementace
+Všechny vrcholové i vnořené řezy mají stejnou váhu. Počítají se jen stavy verified a implemented-unverified. Staré vážené evidenční přehledy se nezobrazují.
 
-**765 z 766** implementačních řezů master roadmapy má stav `verified` (502) nebo `implemented-unverified` (263). Jeden řez je `in-progress`. Počítají se také vnořené podřezy; všechny mají stejnou váhu. Žádná částečná procenta ani zastaralý vážený evidenční odhad.
-
-Toto číslo **neznamená, že je Jarvis produkčně funkční z 99,87 %**, ani že prošel koncovými testy, uživatelskou akceptací nebo schváleným releasem.
-
-| Rodina roadmapy | Implementováno / celkem |
+| Roadmapová skupina | Implementováno / celkem |
 | --- | ---: |
-| Platformní základy | 54 / 54 |
+| Platformní základy | 55 / 55 |
 | Jádro runtime | 64 / 64 |
 | Personal 1.0.0 | 126 / 127 |
-| Volitelné schopnosti | 132 / 132 |
+| Volitelné tratě | 132 / 161 |
 | Teams | 70 / 70 |
 | Enterprise | 63 / 63 |
-| Průřezové schopnosti | 256 / 256 |
-| **Celkem** | **765 / 766 = 99,87 %** |
+| Průřezové capability tratě | 256 / 278 |
 
-**Zdrojová aktuální agregace:** [implementation-slices.json](implementation-slices.json).
+Stav: 503 verified, 263 implemented-unverified, 3 in-progress, 49 architecture-only.
 
-**Stav zveřejnění:** veřejný instalační balíček Personal 1.0.0 zatím není dostupný. Personal, Teams a Enterprise mají vlastní neuzavřené release a runtime brány. Záznam `progress.json` je rozsáhlá historická/detailní projekce, která může do dokončení další synchronizované regenerace obsahovat starší stav či původní vážené evidence; pro aktuální počet napsaných řezů použijte výše uvedený nový strojový souhrn. Staré důkazní grafy nejsou aktuálním ukazatelem implementace.
+Toto číslo NENÍ produkční připravenost, živé QA ani release akceptace. [Detailní snapshot](progress.json) může obsahovat historická QA pole s jinou metodikou.
 
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_END -->
 

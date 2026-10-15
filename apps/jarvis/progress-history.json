@@ -2,14 +2,14 @@
   "schema_version": 9,
   "project_codename": "Jarvis",
   "report_locale": "cs-CZ",
-  "generated_at": "2026-10-13",
+  "generated_at": "2026-10-15",
   "measurement": {
     "mode": "canonical-roadmap-current-view",
-    "primary_metric": "implementation_complete_percent",
+    "primary_metric": "roadmap_implemented_percent",
     "precision_decimal_places": 2,
     "axes": {
-      "primary": "weighted milestone min(implementation, verification), bounded by the chapter evidence cap",
-      "implementation": "average canonical roadmap progress; verified and implemented slices count as implemented",
+      "primary": "share of canonical roadmap slices with verified or implemented-unverified status; not runtime acceptance",
+      "implementation": "count of canonical implemented or verified slices divided by all slices",
       "verification": "weighted current build/contract/runtime evidence score; architecture-only text cannot increase it",
       "done": "weighted milestone minimum after the chapter cap; open milestones contribute zero",
       "release_readiness": "optional roadmap-weighted release gate metric",
@@ -509065,7 +509065,47 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "63a54eabcf26",
+      "date": "2026-10-16",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": 0.0,
+        "implementation_percent": -55.76,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 818,
+        "completed_item_count": 766,
+        "chapter_count": 80
+      },
+      "roadmap_delta": {
+        "item_count": 52,
+        "completed_item_count": 4,
+        "chapter_count": 2
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
-  "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim."
+  "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
+  "closeout_verification": {
+    "status": "verified",
+    "roadmap_slice_id": "tyr-manifest-bound-action-execution-20261015",
+    "source_commit_sha": "dca233c9bdd501ff60580a3b215cf6f97b9643e4",
+    "closeout_sha": "15a0102f12278cf24b2aa35c5e8eb7054e703686"
+  }
 }
