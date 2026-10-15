@@ -14,7 +14,7 @@ The Setup contains the application, not project task data or a copy of a project
 
 Downloading this installer does not make private project data public. Public access to the installer and access to project data are separate.
 
-## ZmÄ›ny verze 1.1.141
+## Změny verze 1.1.141
 
 Nový Setup se nyní publikuje do soukromého ADPR i veřejného katalogu ADPU se shodným ověřeným SHA-256.
 
