@@ -40,9 +40,9 @@
       {
         "language": "C/C++",
         "files": 2473,
-        "physical_lines": 793199,
-        "bytes": 37445920,
-        "megabytes": 37.44592
+        "physical_lines": 793868,
+        "bytes": 37476188,
+        "megabytes": 37.476188
       },
       {
         "language": "JSON",
@@ -54,9 +54,9 @@
       {
         "language": "Markdown",
         "files": 1167,
-        "physical_lines": 161710,
-        "bytes": 9104456,
-        "megabytes": 9.104456
+        "physical_lines": 161723,
+        "bytes": 9105461,
+        "megabytes": 9.105461
       },
       {
         "language": "Python",
@@ -138,9 +138,9 @@
     ],
     "source_text": {
       "files": 5385,
-      "physical_lines": 1354003,
-      "bytes": 95900998,
-      "megabytes": 95.900998
+      "physical_lines": 1354685,
+      "bytes": 95932271,
+      "megabytes": 95.932271
     },
     "binary_assets": {
       "files": 101,
@@ -149,18 +149,18 @@
     },
     "tracked_total": {
       "files": 5486,
-      "physical_lines": 1354003,
-      "bytes": 137514395,
-      "megabytes": 137.514395
+      "physical_lines": 1354685,
+      "bytes": 137545668,
+      "megabytes": 137.545668
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
         "files": 0,
-        "physical_lines": 22,
-        "bytes": 1397,
-        "megabytes": 0.001397
+        "physical_lines": 682,
+        "bytes": 31273,
+        "megabytes": 0.031273
       },
       "binary_assets": {
         "files": 0,
@@ -170,9 +170,9 @@
       },
       "tracked_total": {
         "files": 0,
-        "physical_lines": 22,
-        "bytes": 1397,
-        "megabytes": 0.001397
+        "physical_lines": 682,
+        "bytes": 31273,
+        "megabytes": 0.031273
       }
     }
   },
@@ -22129,7 +22129,7 @@
     "avoided_runs_estimate": 1,
     "avoided_percent": 1.54,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
-    "incremental_closeout_points_since_full_baseline": 4,
+    "incremental_closeout_points_since_full_baseline": 5,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -532609,6 +532609,40 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "382e80d75d7a",
+      "date": "2026-10-16",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": -56.16,
+        "implementation_percent": -49.89,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 818,
+        "completed_item_count": 766,
+        "chapter_count": 80
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -532620,9 +532654,9 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "tyr.m4.codex-session-turn",
-    "source_commit_sha": "750b452ebed93f69b8f9dee0e71287bf252c67ea",
-    "closeout_sha": "750b452ebed93f69b8f9dee0e71287bf252c67ea"
+    "roadmap_slice_id": "tyr.m4.codex-session-turn-materializer",
+    "source_commit_sha": "ede63846e2a0f9c24646428ae1b924ccf40666f7",
+    "closeout_sha": "ede63846e2a0f9c24646428ae1b924ccf40666f7"
   },
   "roadmap_implemented_percent": 93.64,
   "roadmap_verified_percent": 61.49,
