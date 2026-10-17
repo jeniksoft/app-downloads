@@ -39,45 +39,45 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 2473,
-        "physical_lines": 794474,
-        "bytes": 37505608,
-        "megabytes": 37.505608
+        "files": 2479,
+        "physical_lines": 799055,
+        "bytes": 37699546,
+        "megabytes": 37.699546
       },
       {
         "language": "JSON",
         "files": 600,
-        "physical_lines": 220401,
-        "bytes": 34490375,
-        "megabytes": 34.490375
+        "physical_lines": 220426,
+        "bytes": 34609857,
+        "megabytes": 34.609857
       },
       {
         "language": "Markdown",
-        "files": 1168,
-        "physical_lines": 161855,
-        "bytes": 9125200,
-        "megabytes": 9.1252
+        "files": 1171,
+        "physical_lines": 162416,
+        "bytes": 9156011,
+        "megabytes": 9.156011
       },
       {
         "language": "Python",
-        "files": 812,
-        "physical_lines": 131812,
-        "bytes": 5519250,
-        "megabytes": 5.51925
+        "files": 813,
+        "physical_lines": 131977,
+        "bytes": 5529147,
+        "megabytes": 5.529147
       },
       {
         "language": "PowerShell",
-        "files": 74,
-        "physical_lines": 35031,
-        "bytes": 1798230,
-        "megabytes": 1.79823
+        "files": 76,
+        "physical_lines": 35585,
+        "bytes": 1823778,
+        "megabytes": 1.823778
       },
       {
         "language": "Other text",
         "files": 82,
         "physical_lines": 5986,
-        "bytes": 294701,
-        "megabytes": 0.294701
+        "bytes": 294768,
+        "megabytes": 0.294768
       },
       {
         "language": "JSONL",
@@ -110,9 +110,9 @@
       {
         "language": "CMake",
         "files": 2,
-        "physical_lines": 298,
-        "bytes": 15362,
-        "megabytes": 0.015362
+        "physical_lines": 302,
+        "bytes": 15530,
+        "megabytes": 0.01553
       },
       {
         "language": "YAML",
@@ -137,10 +137,10 @@
       }
     ],
     "source_text": {
-      "files": 5386,
-      "physical_lines": 1355436,
-      "bytes": 95982086,
-      "megabytes": 95.982086
+      "files": 5398,
+      "physical_lines": 1361326,
+      "bytes": 96361997,
+      "megabytes": 96.361997
     },
     "binary_assets": {
       "files": 101,
@@ -148,19 +148,19 @@
       "megabytes": 41.613397
     },
     "tracked_total": {
-      "files": 5487,
-      "physical_lines": 1355436,
-      "bytes": 137595483,
-      "megabytes": 137.595483
+      "files": 5499,
+      "physical_lines": 1361326,
+      "bytes": 137975394,
+      "megabytes": 137.975394
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 0,
-        "physical_lines": 82,
-        "bytes": 4422,
-        "megabytes": 0.004422
+        "files": 3,
+        "physical_lines": 926,
+        "bytes": 36812,
+        "megabytes": 0.036812
       },
       "binary_assets": {
         "files": 0,
@@ -169,14 +169,14 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 0,
-        "physical_lines": 82,
-        "bytes": 4422,
-        "megabytes": 0.004422
+        "files": 3,
+        "physical_lines": 926,
+        "bytes": 36812,
+        "megabytes": 0.036812
       }
     }
   },
-  "updated_at": "2026-10-16",
+  "updated_at": "2026-10-17",
   "overall_percent": 93.64,
   "primary_percent": 93.64,
   "implementation_complete_percent": 93.64,
@@ -22106,7 +22106,7 @@
   },
   "change_summary": {
     "available": true,
-    "previous_date": "2026-10-16",
+    "previous_date": "2026-10-17",
     "roadmap_items_delta": 0,
     "roadmap_completed_delta": 0,
     "roadmap_chapters_delta": 0,
@@ -22129,7 +22129,7 @@
     "avoided_runs_estimate": 1,
     "avoided_percent": 1.54,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
-    "incremental_closeout_points_since_full_baseline": 8,
+    "incremental_closeout_points_since_full_baseline": 9,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -532745,6 +532745,40 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "8855b4197d70",
+      "date": "2026-10-17",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": -56.16,
+        "implementation_percent": -49.89,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 818,
+        "completed_item_count": 766,
+        "chapter_count": 80
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -532756,9 +532790,9 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "tyr.interactive-desktop-lifecycle",
-    "source_commit_sha": "f7dde178b09b50c32719feef0705261ef5f628cb",
-    "closeout_sha": "f7dde178b09b50c32719feef0705261ef5f628cb"
+    "roadmap_slice_id": "section-0053",
+    "source_commit_sha": "a3fe8fa7a74bb75c1e4b9d78eadde5bc3d123380",
+    "closeout_sha": "a3fe8fa7a74bb75c1e4b9d78eadde5bc3d123380"
   },
   "roadmap_implemented_percent": 93.64,
   "roadmap_verified_percent": 61.49,
