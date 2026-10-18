@@ -54,9 +54,9 @@
       {
         "language": "Markdown",
         "files": 1180,
-        "physical_lines": 162950,
-        "bytes": 9231384,
-        "megabytes": 9.231384
+        "physical_lines": 162952,
+        "bytes": 9233086,
+        "megabytes": 9.233086
       },
       {
         "language": "Python",
@@ -138,9 +138,9 @@
     ],
     "source_text": {
       "files": 5409,
-      "physical_lines": 1362742,
-      "bytes": 96477004,
-      "megabytes": 96.477004
+      "physical_lines": 1362744,
+      "bytes": 96478706,
+      "megabytes": 96.478706
     },
     "binary_assets": {
       "files": 101,
@@ -149,9 +149,9 @@
     },
     "tracked_total": {
       "files": 5510,
-      "physical_lines": 1362742,
-      "bytes": 138090401,
-      "megabytes": 138.090401
+      "physical_lines": 1362744,
+      "bytes": 138092103,
+      "megabytes": 138.092103
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
@@ -22129,7 +22129,7 @@
     "avoided_runs_estimate": 1,
     "avoided_percent": 1.54,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
-    "incremental_closeout_points_since_full_baseline": 22,
+    "incremental_closeout_points_since_full_baseline": 23,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -533221,6 +533221,40 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "bd2e3907134c",
+      "date": "2026-10-18",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": -56.16,
+        "implementation_percent": -49.89,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 818,
+        "completed_item_count": 766,
+        "chapter_count": 80
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -533232,9 +533266,9 @@
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "TYR-STELLARIS-WORKFLOW-VALIDATION-20261018-0234",
-    "source_commit_sha": "00fca5d14c674c3cd6026894d43ce519a678192b",
-    "closeout_sha": "bddc75616206310f7428acfd87d9ee094624b862"
+    "roadmap_slice_id": "TYR-CODEX-DYNAMIC-ITEMID-20261018-0250",
+    "source_commit_sha": "3c46ca9235a036c4f31e29e2fb0557ace0a4196d",
+    "closeout_sha": "3c46ca9235a036c4f31e29e2fb0557ace0a4196d"
   },
   "roadmap_implemented_percent": 93.64,
   "roadmap_verified_percent": 61.49,
