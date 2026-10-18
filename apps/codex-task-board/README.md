@@ -5,8 +5,8 @@ Codex Task Board is a Windows desktop app for viewing tasks, reports, suggestion
 ## Package
 
 * Setup: [CodexTaskBoardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/codex-task-board/CodexTaskBoardSetup.exe)
-* Verze: `1.1.167`
-* SHA-256: `B219EF91B73395C3434674B4E3EF66739D3E92E499A98F2551F92D13C622B5F7`
+* Verze: `1.1.168`
+* SHA-256: `CAD5EA7D4A4812B9F510410D65D3F63CEF03A1BAA7D8717A8F1987DC9CEDE5DD`
 
 ## Project data
 
@@ -14,9 +14,9 @@ The Setup contains the application, not project task data or a copy of a project
 
 Downloading this installer does not make private project data public. Public access to the installer and access to project data are separate.
 
-## Změny verze 1.1.167
+## Změny verze 1.1.168
 
-Oprava padu SkinComboBoxu pri asynchronnim renderovani nahledu; Starlance Rift lazy preview a lifecycle regresni test.
+Oprava orezani textu ve Starlance konture; zabaleni textu podle nejuzsi pasy a regresni test.
 
 ## Změny verze 1.0.0
 
