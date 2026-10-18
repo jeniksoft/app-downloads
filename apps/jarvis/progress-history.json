@@ -510017,13 +510017,47 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "fe3a510f4c1e",
+      "date": "2026-10-18",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": -56.16,
+        "implementation_percent": -49.89,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 818,
+        "completed_item_count": 766,
+        "chapter_count": 80
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "TYR-SOURCE-MATCHED-QA-STARTUP-HANG-20261018-0328",
-    "source_commit_sha": "14bb9cf036dba27aa3de52aa5c80ea92609476ee",
-    "closeout_sha": "09233420fd27d4d25115b90c8c034517c365d8b9"
+    "roadmap_slice_id": "TYR-SOURCE-MATCHED-QA-STARTUP-FIX-20261018-0456",
+    "source_commit_sha": "a272827a8c2e58bee1f8c99e6df2f12b22c3ecc6",
+    "closeout_sha": "2b75c31bb560efcd72446b8a512a4b4fdf35feed"
   }
 }
