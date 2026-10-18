@@ -510357,13 +510357,47 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "7900d61664f1",
+      "date": "2026-10-18",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": -56.16,
+        "implementation_percent": -49.89,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 818,
+        "completed_item_count": 766,
+        "chapter_count": 80
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "TYR-AGENT-SESSION-SERVICE-SPEC-20261018-1011",
-    "source_commit_sha": "72f573eb1bf2b29966f2c1deee3c0c72064dda67",
-    "closeout_sha": "2e1fc2c70e356bd739f4905c680812bb0b9885da"
+    "roadmap_slice_id": "TYR-PROVIDER-FREE-REGRESSION-DESKTOP-INPUT-20261018-1025",
+    "source_commit_sha": "2e1fc2c70e356bd739f4905c680812bb0b9885da",
+    "closeout_sha": "d00e9a8f219f04c708e5e6c7cef69e3d6df620f3"
   }
 }
