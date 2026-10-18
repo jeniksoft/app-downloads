@@ -157,10 +157,10 @@
     "delta_from_parent": {
       "base_revision": "HEAD^",
       "source_text": {
-        "files": 5,
-        "physical_lines": 2554,
-        "bytes": 104927,
-        "megabytes": 0.104927
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       },
       "binary_assets": {
         "files": 0,
@@ -169,10 +169,10 @@
         "megabytes": 0.0
       },
       "tracked_total": {
-        "files": 5,
-        "physical_lines": 2554,
-        "bytes": 104927,
-        "megabytes": 0.104927
+        "files": 0,
+        "physical_lines": 0,
+        "bytes": 0,
+        "megabytes": 0.0
       }
     }
   },
@@ -22129,7 +22129,7 @@
     "avoided_runs_estimate": 1,
     "avoided_percent": 1.54,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
-    "incremental_closeout_points_since_full_baseline": 29,
+    "incremental_closeout_points_since_full_baseline": 30,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -533459,6 +533459,40 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "ffa676627844",
+      "date": "2026-10-18",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": -56.16,
+        "implementation_percent": -49.89,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 818,
+        "completed_item_count": 766,
+        "chapter_count": 80
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -533472,7 +533506,7 @@
     "status": "verified",
     "roadmap_slice_id": "TYR-SOURCE-MATCHED-QA-STARTUP-FIX-20261018-0456",
     "source_commit_sha": "a272827a8c2e58bee1f8c99e6df2f12b22c3ecc6",
-    "closeout_sha": "2b75c31bb560efcd72446b8a512a4b4fdf35feed"
+    "closeout_sha": "fd66c4bfbb825e8eefc82a5d6f13e5473cd1dedd"
   },
   "roadmap_implemented_percent": 93.64,
   "roadmap_verified_percent": 61.49,
