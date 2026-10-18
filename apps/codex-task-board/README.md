@@ -5,8 +5,8 @@ Codex Task Board is a Windows desktop app for viewing tasks, reports, suggestion
 ## Package
 
 * Setup: [CodexTaskBoardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/codex-task-board/CodexTaskBoardSetup.exe)
-* Verze: `1.0.0`
-* SHA-256: `6483F48D87821704E20BA59EAC99E914E236F3EBF11C0C7236F2F0D11CF3E76C`
+* Verze: `1.1.142`
+* SHA-256: `B0368349A59BA7A0EE89068F4B8AEEEA7C859ACE7C9EF7D3991BAA87F49AE344`
 
 ## Project data
 
@@ -21,4 +21,8 @@ Nový Setup se nyní publikuje do soukromého ADPR i veřejného katalogu ADPU s
 ## Změny verze 1.0.0
 
 Opraveno zobrazování částečně implementovaných a dosud neověřených řezů roadmapy; Task Board nyní neoznačí otevřené ověření jako Ověřeno.
+
+## Změny verze 1.1.142
+
+Opraveno publikovani aktualizacniho manifestu Task Boardu: ADPR i ADPU nyni dostanou stejny overeny Setup, verzi, historii a SHA-256; tim se obnovuje kontrola aktualizaci v aplikaci.
 
