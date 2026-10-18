@@ -39,31 +39,31 @@
     "languages": [
       {
         "language": "C/C++",
-        "files": 2479,
-        "physical_lines": 799233,
-        "bytes": 37708170,
-        "megabytes": 37.70817
+        "files": 2481,
+        "physical_lines": 799976,
+        "bytes": 37736958,
+        "megabytes": 37.736958
       },
       {
         "language": "JSON",
         "files": 604,
-        "physical_lines": 223392,
-        "bytes": 34713034,
-        "megabytes": 34.713034
+        "physical_lines": 223401,
+        "bytes": 34715204,
+        "megabytes": 34.715204
       },
       {
         "language": "Markdown",
         "files": 1182,
-        "physical_lines": 163241,
-        "bytes": 9277627,
-        "megabytes": 9.277627
+        "physical_lines": 163247,
+        "bytes": 9279638,
+        "megabytes": 9.279638
       },
       {
         "language": "Python",
-        "files": 814,
-        "physical_lines": 132135,
-        "bytes": 5535127,
-        "megabytes": 5.535127
+        "files": 815,
+        "physical_lines": 132220,
+        "bytes": 5538049,
+        "megabytes": 5.538049
       },
       {
         "language": "PowerShell",
@@ -137,10 +137,10 @@
       }
     ],
     "source_text": {
-      "files": 5414,
-      "physical_lines": 1365453,
-      "bytes": 96601394,
-      "megabytes": 96.601394
+      "files": 5417,
+      "physical_lines": 1366296,
+      "bytes": 96637285,
+      "megabytes": 96.637285
     },
     "binary_assets": {
       "files": 101,
@@ -148,10 +148,10 @@
       "megabytes": 41.613397
     },
     "tracked_total": {
-      "files": 5515,
-      "physical_lines": 1365453,
-      "bytes": 138214791,
-      "megabytes": 138.214791
+      "files": 5518,
+      "physical_lines": 1366296,
+      "bytes": 138250682,
+      "megabytes": 138.250682
     },
     "limitations": "Physical lines include blank and comment lines; binary assets are excluded from language rows; these informational values never change implementation, verification, done, primary or release-readiness percentages.",
     "delta_from_parent": {
@@ -22129,7 +22129,7 @@
     "avoided_runs_estimate": 1,
     "avoided_percent": 1.54,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
-    "incremental_closeout_points_since_full_baseline": 43,
+    "incremental_closeout_points_since_full_baseline": 44,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -533935,6 +533935,40 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "58ca561f6343",
+      "date": "2026-10-18",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": -56.16,
+        "implementation_percent": -49.89,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 818,
+        "completed_item_count": 766,
+        "chapter_count": 80
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -533947,8 +533981,8 @@
   "closeout_verification": {
     "status": "verified",
     "roadmap_slice_id": "TYR-RUNTIME-CONFIG-MIGRATION-20261018-1107",
-    "source_commit_sha": "1e58b43464f4ebb4eec8135e6a16fb031c01c1e9",
-    "closeout_sha": "60c9689272b1ed70a593adcfe7c3486e7b867070"
+    "source_commit_sha": "e822090fb09567b1716de8715ab2022f7d450347",
+    "closeout_sha": "4d670c7727abf346edcd7c7a1a2fac0982908f15"
   },
   "roadmap_implemented_percent": 93.64,
   "roadmap_verified_percent": 61.49,
