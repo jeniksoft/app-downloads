@@ -22129,7 +22129,7 @@
     "avoided_runs_estimate": 1,
     "avoided_percent": 1.54,
     "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
-    "incremental_closeout_points_since_full_baseline": 25,
+    "incremental_closeout_points_since_full_baseline": 26,
     "full_private_history_scans_per_closeout": 0,
     "public_checkout_clones_per_closeout": 0,
     "max_public_commits_per_closeout": 1,
@@ -533323,6 +533323,40 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "ac3d004a566b",
+      "date": "2026-10-18",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": -56.16,
+        "implementation_percent": -49.89,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 818,
+        "completed_item_count": 766,
+        "chapter_count": 80
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
   "history_contract": {
@@ -533336,7 +533370,7 @@
     "status": "verified",
     "roadmap_slice_id": "TYR-SOURCE-MATCHED-QA-INSTALL-PREFLIGHT-20261018-0323",
     "source_commit_sha": "14bb9cf036dba27aa3de52aa5c80ea92609476ee",
-    "closeout_sha": "822fd12528af22fffbf85c89ed978149e02a26a4"
+    "closeout_sha": "0d81340b5de650383c78740fade01ea84d0e62be"
   },
   "roadmap_implemented_percent": 93.64,
   "roadmap_verified_percent": 61.49,

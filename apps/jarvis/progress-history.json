@@ -509915,6 +509915,40 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "ac3d004a566b",
+      "date": "2026-10-18",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": -56.16,
+        "implementation_percent": -49.89,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 818,
+        "completed_item_count": 766,
+        "chapter_count": 80
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
@@ -509922,6 +509956,6 @@
     "status": "verified",
     "roadmap_slice_id": "TYR-SOURCE-MATCHED-QA-INSTALL-PREFLIGHT-20261018-0323",
     "source_commit_sha": "14bb9cf036dba27aa3de52aa5c80ea92609476ee",
-    "closeout_sha": "822fd12528af22fffbf85c89ed978149e02a26a4"
+    "closeout_sha": "0d81340b5de650383c78740fade01ea84d0e62be"
   }
 }
