@@ -2,7 +2,7 @@
   "schema_version": 9,
   "project_codename": "Jarvis",
   "report_locale": "cs-CZ",
-  "generated_at": "2026-10-17",
+  "generated_at": "2026-10-18",
   "measurement": {
     "mode": "canonical-roadmap-current-view",
     "primary_metric": "roadmap_implemented_percent",
@@ -509609,13 +509609,47 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "3056a9175675",
+      "date": "2026-10-18",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": -56.16,
+        "implementation_percent": -49.89,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 818,
+        "completed_item_count": 766,
+        "chapter_count": 80
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "TCC.SKY.WIRE.JSON.2026-10-17",
-    "source_commit_sha": "bb5f086b0e376e172e608d6f0a11cdc85fae90c8",
-    "closeout_sha": "bb5f086b0e376e172e608d6f0a11cdc85fae90c8"
+    "roadmap_slice_id": "TYR-TASK-BOARD-UPDATE-MANIFEST-20261018",
+    "source_commit_sha": "c4f1989b16dc4773a3810d60453bd2f868b56a82",
+    "closeout_sha": "c4f1989b16dc4773a3810d60453bd2f868b56a82"
   }
 }
