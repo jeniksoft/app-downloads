@@ -510255,13 +510255,47 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "61ff0d640425",
+      "date": "2026-10-18",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": -56.16,
+        "implementation_percent": -49.89,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 818,
+        "completed_item_count": 766,
+        "chapter_count": 80
+      },
+      "roadmap_delta": {
+        "item_count": 0,
+        "completed_item_count": 0,
+        "chapter_count": 0
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "TYR-CODEX-USER-VERIFICATION-20261018-0608",
-    "source_commit_sha": "9132b4de56654a7f530ad0f9d85e0261aaa51c47",
-    "closeout_sha": "b9a66e0c044fd5576a37636e1fd7f554cc5a5bbd"
+    "roadmap_slice_id": "TYR-JARVIS-CODEX-APPROVAL-BRIDGE-AUDIT-20261018-0615",
+    "source_commit_sha": "ef823ace3a3735d09c227cf32eb14417e1f17d6d",
+    "closeout_sha": "226587c7b2e9e276aba46508ddb2600eb8371370"
   }
 }
