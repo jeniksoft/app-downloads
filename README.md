@@ -13,7 +13,7 @@ Toto repo je určené pro hotové instalační balíčky, SDK balíky, popis apl
 | Windows Update Restart Guard | 1.0.143 | [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe) | [Popis a návod](apps/windows-update-restart-guard/README.md) | [`21EB9734...3C2DAF4C`](checksums/SHA256SUMS.txt) |
 | WDUi Framework SDK | 1.0.0 | [WduiFrameworkSdk-1.0.0.zip](https://github.com/jeniksoft/app-downloads/raw/main/apps/wdui-framework/WduiFrameworkSdk-1.0.0.zip) | [Popis a návod](apps/wdui-framework/README.md) | [`25E88E95...76427CD1`](checksums/SHA256SUMS.txt) |
 | WDUi Durable App Template | 1.0.41 | [WduiDurableAppTemplateSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/wdui-durable-app-template/WduiDurableAppTemplateSetup.exe) | [Popis a návod](apps/wdui-durable-app-template/README.md) | [`D984C1C7...C472988C`](checksums/SHA256SUMS.txt) |
-| Codex Task Board | 1.1.177 | [CodexTaskBoardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/codex-task-board/CodexTaskBoardSetup.exe) | [Dokumentace](apps/codex-task-board/README.md) | [`8D61CA65...2AC0EDF6`](checksums/SHA256SUMS.txt) |
+| Codex Task Board | 1.1.178 | [CodexTaskBoardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/codex-task-board/CodexTaskBoardSetup.exe) | [Dokumentace](apps/codex-task-board/README.md) | [`9D5A9461...EB12B72D`](checksums/SHA256SUMS.txt) |
 
 Setup odkazy v tabulce vedou přímo na GitHub raw download endpoint, aby kliknutí stáhlo instalační EXE místo otevření stránky binárního souboru.
 
