@@ -17,7 +17,7 @@ Složka aplikace obsahuje veřejný setup nebo SDK balík, popis, návod k použ
 | Windows Update Restart Guard | 1.0.143 | [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe) | [Popis a návod](windows-update-restart-guard/README.md) | [`21EB9734...3C2DAF4C`](../checksums/SHA256SUMS.txt) |
 | WDUi Framework SDK | 1.0.0 | [WduiFrameworkSdk-1.0.0.zip](https://github.com/jeniksoft/app-downloads/raw/main/apps/wdui-framework/WduiFrameworkSdk-1.0.0.zip) | [Popis a návod](wdui-framework/README.md) | [`25E88E95...76427CD1`](../checksums/SHA256SUMS.txt) |
 | WDUi Durable App Template | 1.0.41 | [WduiDurableAppTemplateSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/wdui-durable-app-template/WduiDurableAppTemplateSetup.exe) | [Popis a návod](wdui-durable-app-template/README.md) | [`D984C1C7...C472988C`](../checksums/SHA256SUMS.txt) |
-| Codex Task Board | 1.1.181 | [CodexTaskBoardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/codex-task-board/CodexTaskBoardSetup.exe) | [Dokumentace](codex-task-board/README.md) | [`F6BBF36C...DE419B8D`](../checksums/SHA256SUMS.txt) |
+| Codex Task Board | 1.1.181 | [CodexTaskBoardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/codex-task-board/CodexTaskBoardSetup.exe) | [Dokumentace](codex-task-board/README.md) | [`9D6FBE94...15E0CD30`](../checksums/SHA256SUMS.txt) |
 
 Tabulky zkracují SHA-256 kvůli čitelnosti. Plný hash je v app `update.json` a `checksums/SHA256SUMS.txt`.
 
