@@ -25,7 +25,7 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_BEGIN -->
 ## Jarvis Personal: skutečná implementace z roadmapy
 
-**766 / 818 = 93.64 %**
+**766 / 874 = 87.64 %**
 
 Všechny vrcholové i vnořené řezy mají stejnou váhu. Počítají se jen stavy verified a implemented-unverified. Staré vážené evidenční přehledy se nezobrazují.
 
@@ -37,9 +37,9 @@ Všechny vrcholové i vnořené řezy mají stejnou váhu. Počítají se jen st
 | Volitelné tratě | 132 / 161 |
 | Teams | 70 / 70 |
 | Enterprise | 63 / 63 |
-| Průřezové capability tratě | 256 / 278 |
+| Průřezové capability tratě | 256 / 334 |
 
-Stav: 503 verified, 263 implemented-unverified, 3 in-progress, 49 architecture-only.
+Stav: 503 verified, 263 implemented-unverified, 3 in-progress, 105 architecture-only.
 
 Toto číslo NENÍ produkční připravenost, živé QA ani release akceptace. [Detailní snapshot](progress.json) může obsahovat historická QA pole s jinou metodikou.
 
