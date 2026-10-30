@@ -23,23 +23,23 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 **EN:** Jarvis is intended exclusively for adults aged 18 and over. If you are under 18, do not use Jarvis.
 
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_BEGIN -->
-## Jarvis Personal: skutečná implementace z roadmapy
+## Jarvis Personal: stav implementace z roadmapy
 
-**766 / 874 = 87.64 %**
+**776 / 925 = 83.89 % s implementační evidencí**
 
-Všechny vrcholové i vnořené řezy mají stejnou váhu. Počítají se jen stavy verified a implemented-unverified. Staré vážené evidenční přehledy se nezobrazují.
+Všechny vrcholové i vnořené řezy mají stejnou váhu. Implementační evidence počítá stavy verified, implemented-unverified a release-ready; implemented-unverified není ověření ani release acceptance. Staré vážené evidenční přehledy se nezobrazují.
 
-| Roadmapová skupina | Implementováno / celkem |
+| Roadmapová skupina | S implementační evidencí / celkem |
 | --- | ---: |
 | Platformní základy | 55 / 55 |
 | Jádro runtime | 64 / 64 |
-| Personal 1.0.0 | 126 / 127 |
-| Volitelné tratě | 132 / 161 |
+| Personal 1.0.0 | 126 / 148 |
+| Volitelné tratě | 137 / 165 |
 | Teams | 70 / 70 |
 | Enterprise | 63 / 63 |
-| Průřezové capability tratě | 256 / 334 |
+| Průřezové capability tratě | 261 / 360 |
 
-Stav: 503 verified, 263 implemented-unverified, 3 in-progress, 105 architecture-only.
+Stav: 499 verified, 277 implemented-unverified, 0 release-ready, 4 in-progress, 143 architecture-only, 2 deferred.
 
 Toto číslo NENÍ produkční připravenost, živé QA ani release akceptace. [Detailní snapshot](progress.json) může obsahovat historická QA pole s jinou metodikou.
 

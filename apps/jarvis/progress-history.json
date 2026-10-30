@@ -2,19 +2,20 @@
   "schema_version": 9,
   "project_codename": "Jarvis",
   "report_locale": "cs-CZ",
-  "generated_at": "2026-10-20",
+  "generated_at": "2026-10-30",
   "measurement": {
     "mode": "canonical-roadmap-current-view",
     "primary_metric": "roadmap_implemented_percent",
     "precision_decimal_places": 2,
     "axes": {
-      "primary": "share of canonical roadmap slices with verified or implemented-unverified status; not runtime acceptance",
-      "implementation": "count of canonical implemented or verified slices divided by all slices",
+      "primary": "share of canonical roadmap slices with verified, implemented-unverified or release-ready status; not runtime acceptance",
+      "implementation": "count of canonical implemented, verified or release-ready slices divided by all slices",
       "verification": "weighted current build/contract/runtime evidence score; architecture-only text cannot increase it",
       "done": "weighted milestone minimum after the chapter cap; open milestones contribute zero",
       "release_readiness": "optional roadmap-weighted release gate metric",
-      "roadmap_implementation": "cumulative share of canonical verified and implemented-unverified slices; verified is included",
-      "roadmap_verification": "share of canonical slices in verified state",
+      "roadmap_implementation": "cumulative share of canonical verified, implemented-unverified and release-ready slices",
+      "roadmap_verification": "share of canonical slices in verified or release-ready state",
+      "roadmap_implemented_unverified": "share of canonical slices in implemented-unverified state; not verification",
       "roadmap_in_progress": "share of canonical slices in in-progress state",
       "roadmap_architecture": "share of canonical slices in architecture-only state"
     },
@@ -510663,13 +510664,47 @@
       },
       "verified_evidence_count": 155,
       "verified_evidence_delta": 0
+    },
+    {
+      "revision": "f61e9f1d58d6",
+      "date": "2026-10-30",
+      "metrics": {
+        "primary_percent": 37.48,
+        "implementation_percent": 43.75,
+        "verified_percent": 37.48,
+        "done_percent": 37.48,
+        "release_readiness_percent": 50.0
+      },
+      "delta": {
+        "primary_percent": -50.16,
+        "implementation_percent": -43.89,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": 0.0
+      },
+      "changed_chapters": [
+        "rollup-correction"
+      ],
+      "changed_milestones": [],
+      "roadmap": {
+        "item_count": 925,
+        "completed_item_count": 499,
+        "chapter_count": 84
+      },
+      "roadmap_delta": {
+        "item_count": 51,
+        "completed_item_count": -267,
+        "chapter_count": 1
+      },
+      "verified_evidence_count": 155,
+      "verified_evidence_delta": 0
     }
   ],
   "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
   "closeout_verification": {
     "status": "verified",
-    "roadmap_slice_id": "section-0011",
-    "source_commit_sha": "8c98bab75544c373c8def875208ffaa53ea98482",
-    "closeout_sha": "54872389457d1fd93bdc60955dc944a799d8b658"
+    "roadmap_slice_id": "V0.1.1",
+    "source_commit_sha": "129f5850f0ec9b8c4db1cf6c521180e1427a8944",
+    "closeout_sha": "67df629cd7f1f4df72868e050c18eac0345ea1d4"
   }
 }
