@@ -5,8 +5,8 @@ Codex Task Board is a Windows desktop app for viewing tasks, reports, suggestion
 ## Package
 
 * Setup: [CodexTaskBoardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/codex-task-board/CodexTaskBoardSetup.exe)
-* Verze: `1.1.190`
-* SHA-256: `2AF3AC9536003359A5AE39A2BCFC98C67E01B5DDEA36B068CDA769EC8D4D4984`
+* Verze: `1.1.191`
+* SHA-256: `31EAC490F35EDE3C2A29DF709D2C95BEC8CC88483595DC8165B6F4A6F8ABF768`
 
 ## Project data
 
@@ -14,9 +14,9 @@ The Setup contains the application, not project task data or a copy of a project
 
 Downloading this installer does not make private project data public. Public access to the installer and access to project data are separate.
 
-## Změny verze 1.1.190
+## Změny verze 1.1.191
 
-Monitor runnerů zobrazuje datumy a časy v místním časovém pásmu Windows.
+Monitor akci zobrazuje místní datum a čas, zahrnuje poslední neúspěšné a zrušené běhy a jeho okno lze přesouvat. Seznamy úkolů, reportů a návrhů lze řadit podle sloupců. Kliknutí na job pouze vybere řádek; dvojklik otevře běh na GitHubu a tooltip zobrazí podrobné informace o jobu.
 
 ## Změny verze 1.0.0
 
