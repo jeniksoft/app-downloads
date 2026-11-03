@@ -6,7 +6,7 @@ Codex Task Board is a Windows desktop app for viewing tasks, reports, suggestion
 
 * Setup: [CodexTaskBoardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/codex-task-board/CodexTaskBoardSetup.exe)
 * Verze: `1.1.199`
-* SHA-256: `47EEC70AC3722E5475F56D013DC752EB2658BFA3730134BA380F4A1DE9D8669C`
+* SHA-256: `D079EAEA553D1CFD91C6C84BE16875B3BD84F8093ADE577CC7794DA2C9D6213A`
 
 ## Project data
 
@@ -16,7 +16,7 @@ Downloading this installer does not make private project data public. Public acc
 
 ## Změny verze 1.1.199
 
-Oprava vykreslení Task Boardu po připojení nebo změně rozlišení RDP; horní karty se přizpůsobí klientské oblasti.
+Oprava rozložení po změně rozlišení přes RDP; rozšíření horních panelů a detail commitu v monitoru runnerů.
 
 ## Změny verze 1.0.0
 
