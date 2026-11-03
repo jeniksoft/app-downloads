@@ -177,7 +177,7 @@
       }
     }
   },
-  "updated_at": "2026-10-30",
+  "updated_at": "2026-11-03",
   "overall_percent": 83.89,
   "primary_percent": 83.89,
   "implementation_complete_percent": 83.89,
@@ -24897,14 +24897,15 @@
     "artifact_update_policy": "changed-target-files-only"
   },
   "publication_state": {
-    "history_update_mode": "incremental-closeout",
+    "history_update_mode": "baseline-projection",
     "working_tree_projection": false,
     "artifact_update_policy": "changed-target-files-only",
     "public_transport": "github-git-data-api",
     "public_checkout": "not-used",
     "max_public_commits_per_closeout": 1,
     "closeout_proof": "exact-slice-source-and-closeout-sha",
-    "public_measurement_source": "canonical-roadmap"
+    "public_measurement_source": "canonical-roadmap",
+    "projection_only": true
   },
   "milestone_implementation_percent": 74.5,
   "milestone_verified_percent": 43.98,
