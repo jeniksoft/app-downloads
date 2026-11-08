@@ -2,7 +2,7 @@
   "schema_version": 9,
   "project_codename": "Jarvis",
   "report_locale": "cs-CZ",
-  "generated_at": "2026-10-30",
+  "generated_at": "2026-11-08",
   "measurement": {
     "mode": "canonical-roadmap-current-view",
     "primary_metric": "roadmap_implemented_percent",
@@ -20,8 +20,8 @@
       "roadmap_architecture": "share of canonical slices in architecture-only state"
     },
     "commit_history": "Tracked history records configured input revisions; public deltas compare successive records using opaque fingerprints.",
-    "automatic_regeneration": "The public sync is explicitly dispatched after a completed roadmap closeout; ordinary main commits do not trigger it.",
-    "history_update": "Incremental closeout mode reuses the previous public history and appends one current closeout point; full-history mode is a deterministic fallback.",
+    "automatic_regeneration": "Canonical roadmap inputs trigger the self-hosted public projection workflow. An exact baseline correction requires its repository manifest and an explicit workflow dispatch; completed-slice closeouts remain separately dispatched.",
+    "history_update": "Roadmap projections preserve completion-history entries. Exact public baseline corrections append one separately audited projection_corrections record, while completed-slice closeouts append one history point.",
     "artifact_publication": "The publisher compares target bytes and commits only changed JSON, README, history or SVG artifact paths; unchanged tables and visuals remain untouched.",
     "closeout_verification": "The latest closeout envelope exposes exact roadmap_slice_id, source_commit_sha and closeout_sha; ordinary history entries retain opaque revisions.",
     "limitations": "The public implementation overview is generated only from canonical roadmap rows. Legacy evidence metrics are retained for compatibility and history, but are not used as the implementation value or displayed in the roadmap dashboard."
@@ -510706,5 +510706,79 @@
     "roadmap_slice_id": "V0.1.1",
     "source_commit_sha": "129f5850f0ec9b8c4db1cf6c521180e1427a8944",
     "closeout_sha": "67df629cd7f1f4df72868e050c18eac0345ea1d4"
-  }
+  },
+  "projection_corrections": [
+    {
+      "correction_id": "jarvis-roadmap-2026-11-08-950-796",
+      "event_type": "canonical-roadmap-projection-correction",
+      "recorded_at": "2026-11-08",
+      "reason_cs": "Veřejný přehled zůstal na 925 položkách a 776 implementovaných řezech, zatímco aktuální kanonická roadmapa po postupu zdroje obsahuje 950 položek a 796 implementovaných řezů (83,79 %). Tento nový manifest nahrazuje zastaralou jednorázovou korekci beze změny jejího původního manifestu; nevytváří nový closeout ani bod historie dokončení.",
+      "reason_en": "The public report remained at 925 items and 776 implemented slices while the advanced canonical roadmap now contains 950 items and 796 implemented slices (83.79%). This new manifest supersedes the stale one-shot correction without changing its original manifest; it creates no new closeout or completion-history point.",
+      "canonical_source": {
+        "relative_path": "tools/jarvis/docs/jarvis_master_worker_roadmap.json",
+        "sha256": "a17ce72d7310e016ebf9697a03be7513454f02e4fbee7194788d5f796c04496a",
+        "roadmap_id": "jarvis.master.worker.v2",
+        "updated_at": "2026-11-08"
+      },
+      "from": {
+        "metrics": {
+          "primary_percent": 83.89,
+          "overall_percent": 83.89,
+          "implementation_complete_percent": 83.89,
+          "verified_percent": 37.48,
+          "done_percent": 37.48,
+          "release_readiness_percent": 50.0,
+          "roadmap_completed_percent": 53.95,
+          "roadmap_implemented_percent": 83.89,
+          "roadmap_verified_percent": 53.95,
+          "roadmap_implemented_unverified_percent": 29.95,
+          "roadmap_in_progress_percent": 0.43,
+          "roadmap_architecture_percent": 15.46
+        },
+        "roadmap": {
+          "source": {
+            "roadmap_id": "jarvis.master.worker.v2",
+            "updated_at": "2026-10-29"
+          },
+          "item_count": 925,
+          "implemented_item_count": 776,
+          "completed_item_count": 499,
+          "status_counts": {
+            "architecture-only": 143,
+            "in-progress": 4,
+            "implemented-unverified": 277,
+            "release-ready": 0,
+            "verified": 499,
+            "blocked": 0,
+            "deferred": 2
+          }
+        }
+      },
+      "to": {
+        "metrics": {
+          "primary_percent": 83.79,
+          "overall_percent": 83.79,
+          "implementation_complete_percent": 83.79
+        },
+        "roadmap": {
+          "source": {
+            "roadmap_id": "jarvis.master.worker.v2",
+            "updated_at": "2026-11-08"
+          },
+          "item_count": 950,
+          "implemented_item_count": 796,
+          "completed_item_count": 499,
+          "status_counts": {
+            "architecture-only": 148,
+            "blocked": 0,
+            "deferred": 2,
+            "implemented-unverified": 297,
+            "in-progress": 4,
+            "release-ready": 0,
+            "verified": 499
+          }
+        }
+      }
+    }
+  ]
 }
