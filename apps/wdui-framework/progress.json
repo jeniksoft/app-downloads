@@ -1,0 +1,249 @@
+{
+  "schema_version": 8,
+  "report_locale": "cs-CZ",
+  "project_codename": "WDUi Framework",
+  "codename_is_not_final_product_name": false,
+  "target_edition": "Omezený closeout řezů PF-00 a PF-01",
+  "target_version": "2026-11-07",
+  "price": "",
+  "measurement": {
+    "mode": "milestone_evidence_rollup",
+    "primary_metric": "primary_percent",
+    "precision_decimal_places": 2,
+    "axes": {
+      "primary": "weighted milestone min(implementation, verification), bounded by the chapter evidence cap",
+      "implementation": "weighted implementation score from explicitly declared milestone states and evidence",
+      "verification": "weighted current build/contract/runtime evidence score; architecture-only text cannot increase it",
+      "done": "weighted milestone minimum after the chapter cap; open milestones contribute zero",
+      "release_readiness": "optional roadmap-weighted release gate metric"
+    },
+    "commit_history": "Tracked history records configured input revisions; public deltas compare successive records using opaque fingerprints.",
+    "automatic_regeneration": "The public sync is explicitly dispatched after a completed roadmap closeout; ordinary main commits do not trigger it.",
+    "history_update": "First-profile initialization records only the exact current closeout; incremental closeouts append one point to the synchronized public history; full-history mode is a deterministic fallback.",
+    "artifact_publication": "The publisher compares target bytes and commits only changed JSON, README, history or SVG artifact paths; unchanged tables and visuals remain untouched.",
+    "closeout_verification": "The latest closeout envelope exposes exact roadmap_slice_id, source_commit_sha and closeout_sha; ordinary history entries retain opaque revisions.",
+    "limitations": "A commit is visible as evidence history, but source size, source lines, a plan, or a contract-only document never increases the primary score without declared milestone evidence. Task Board area estimates are structural inputs, not a scored axis."
+  },
+  "source_inventory": null,
+  "updated_at": "2026-11-08",
+  "overall_percent": 0.0,
+  "primary_percent": 0.0,
+  "implementation_complete_percent": 100.0,
+  "verified_percent": 0.0,
+  "done_percent": 0.0,
+  "personal_progress": {
+    "profile_id": "wdui-framework-pf-00-pf-01-2026-11-07",
+    "edition": "Omezený closeout řezů PF-00 a PF-01",
+    "version": "2026-11-07",
+    "primary_percent": 0.0,
+    "implementation_percent": 100.0,
+    "verified_percent": 0.0,
+    "done_percent": 0.0,
+    "chapter_count": 1,
+    "chapters": [
+      {
+        "id": "pf-foundation",
+        "name_cs": "PF-00 a PF-01 — typovaná parametrická geometrie",
+        "name_en": "PF-00 and PF-01 — typed parametric geometry",
+        "weight_percent": 100.0,
+        "implementation_percent": 100.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "weighted_implementation_percent": 100.0,
+        "weighted_verified_percent": 0.0,
+        "weighted_done_percent": 0.0,
+        "status": "implemented-unverified",
+        "evidence_source": "milestone-evidence-manifest"
+      }
+    ],
+    "formula": "weighted chapter contribution = chapter weight * chapter completion / 100"
+  },
+  "roadmap": {
+    "source": null,
+    "gates": [],
+    "editions": [],
+    "limitations": "No roadmap contract is configured for this profile."
+  },
+  "change_summary": {
+    "available": false,
+    "previous_date": null,
+    "roadmap_items_delta": null,
+    "roadmap_completed_delta": null,
+    "roadmap_chapters_delta": null,
+    "verified_evidence_delta": null,
+    "metrics_delta": {
+      "primary_percent": null,
+      "implementation_percent": null,
+      "verified_percent": null,
+      "done_percent": null,
+      "release_readiness_percent": null
+    }
+  },
+  "publication_savings": {
+    "measurement": "estimated_workflow_runs_avoided",
+    "measurement_scope": "full-history",
+    "tracked_main_commits": 1,
+    "relevant_closeout_snapshots": 1,
+    "legacy_runs_estimate": 1,
+    "closeout_runs_estimate": 1,
+    "avoided_runs_estimate": 0,
+    "avoided_percent": 0.0,
+    "basis": "One legacy run per tracked main commit versus one run per relevant roadmap/evidence closeout snapshot.",
+    "incremental_closeout_points_since_full_baseline": 0,
+    "full_private_history_scans_per_closeout": 1,
+    "public_checkout_clones_per_closeout": 1,
+    "max_public_commits_per_closeout": 1,
+    "artifact_update_policy": "changed-target-files-only"
+  },
+  "publication_state": {
+    "history_update_mode": "single-current-snapshot",
+    "working_tree_projection": false,
+    "artifact_update_policy": "changed-target-files-only",
+    "public_transport": "github-git-data-api",
+    "public_checkout": "not-used",
+    "max_public_commits_per_closeout": 1,
+    "closeout_proof": "exact-slice-source-and-closeout-sha"
+  },
+  "milestone_implementation_percent": 100.0,
+  "milestone_verified_percent": 0.0,
+  "milestone_done_percent": 0.0,
+  "evidence_summary": {
+    "manifest_present": true,
+    "milestone_count": 2,
+    "verified_milestone_count": 0,
+    "verified_evidence_count": 2,
+    "state_counts": {
+      "implemented-unverified": 2
+    }
+  },
+  "release_readiness_percent": null,
+  "chapters": [
+    {
+      "id": "pf-foundation",
+      "name_cs": "PF-00 a PF-01 — typovaná parametrická geometrie",
+      "name_en": "PF-00 and PF-01 — typed parametric geometry",
+      "chart_label": "PF-00 / PF-01",
+      "architecture_group": "Parametrická geometrie",
+      "weight_percent": 100.0,
+      "milestone_implementation_percent": 100.0,
+      "milestone_verified_percent": 0.0,
+      "milestone_done_percent": 0.0,
+      "implementation_percent": 100.0,
+      "verified_percent": 0.0,
+      "done_percent": 0.0,
+      "weighted_implementation_percent": 100.0,
+      "weighted_verified_percent": 0.0,
+      "weighted_done_percent": 0.0,
+      "evidence_source": "milestone-evidence-manifest",
+      "evidence_cap_percent": 100.0,
+      "evidence_cap_basis": "No additional cap configured.",
+      "status": "implemented-unverified",
+      "scope": [
+        "PF-00: reference 108 presetů a 216 stavových záznamů",
+        "PF-01: ShapeSpec, geometrické role, authoring invariants a focused fixtures"
+      ],
+      "milestones": [
+        {
+          "id": "PF-00",
+          "name_cs": "PF-00 — sjednocení reference 108 presetů a 216 záznamů",
+          "name_en": "PF-00 — reconcile the 108-preset and 216-record reference",
+          "weight_percent": 50.0,
+          "state": "implemented-unverified",
+          "implementation_percent": 100.0,
+          "verified_percent": 0.0,
+          "done_percent": 0.0,
+          "evidence_count": 1,
+          "verified_evidence_count": 1,
+          "evidence_kinds": [
+            "build"
+          ],
+          "verified_evidence_kinds": [
+            "build"
+          ],
+          "evidence_statuses": [
+            "verified"
+          ],
+          "evidence_summary_cs": "Inventář 108 presetů a 216 záznamů v 108 párech je zdokumentovaný. Odchylka proti referenci je 216 změněných hashů, 0 chybějících a 0 nových záznamů; reference nebyla přepsána.",
+          "open_gap_cs": "Všech 216 vizuálních rozdílů čeká na posouzení; AAA a výslovné owner schválení se netvrdí."
+        },
+        {
+          "id": "PF-01",
+          "name_cs": "PF-01 — typovaná ShapeSpec a geometrické invariants",
+          "name_en": "PF-01 — typed ShapeSpec and geometry invariants",
+          "weight_percent": 50.0,
+          "state": "implemented-unverified",
+          "implementation_percent": 100.0,
+          "verified_percent": 0.0,
+          "done_percent": 0.0,
+          "evidence_count": 1,
+          "verified_evidence_count": 1,
+          "evidence_kinds": [
+            "build"
+          ],
+          "verified_evidence_kinds": [
+            "build"
+          ],
+          "evidence_statuses": [
+            "verified"
+          ],
+          "evidence_summary_cs": "Implementace ShapeSpec, path compiler fixture a fuzz validátor mají zdrojově připnuté testy s exit 0; fuzz ověřil 2 048 případů.",
+          "open_gap_cs": "Živá nezávislá vizuální kontrola, Direct2DNative presented read-back, UIA/screen-reader, downstream a Release acceptance zůstávají otevřené."
+        }
+      ]
+    }
+  ],
+  "release_areas": [],
+  "architecture_graph": {
+    "nodes": [
+      {
+        "id": "pf-foundation",
+        "label": "PF-00 and PF-01 — typed parametric geometry"
+      }
+    ],
+    "edges": []
+  },
+  "history": [
+    {
+      "revision": "06cfe1875a2a",
+      "date": "2026-11-08",
+      "metrics": {
+        "primary_percent": 0.0,
+        "implementation_percent": 100.0,
+        "verified_percent": 0.0,
+        "done_percent": 0.0,
+        "release_readiness_percent": null
+      },
+      "delta": {
+        "primary_percent": null,
+        "implementation_percent": null,
+        "verified_percent": null,
+        "done_percent": null,
+        "release_readiness_percent": null
+      },
+      "changed_chapters": [
+        "pf-foundation"
+      ],
+      "changed_milestones": [
+        "pf-foundation/PF-00",
+        "pf-foundation/PF-01"
+      ],
+      "roadmap": null,
+      "roadmap_delta": null,
+      "verified_evidence_count": 2,
+      "verified_evidence_delta": null
+    }
+  ],
+  "history_contract": {
+    "full_history_file": "progress-history.json",
+    "public_source_commit_policy": "Raw private source commit IDs, subjects, paths and Task Board internals are intentionally omitted; only evidence-bound aggregates and opaque revision fingerprints are public.",
+    "closeout_verification_policy": "The top-level closeout_verification envelope is the public exception: it contains exact slice, source and closeout SHAs for the explicitly dispatched closeout; ordinary history entries remain opaque.",
+    "incremental_closeout_policy": "A successful closeout appends one opaque current point to the synchronized public baseline; a missing or split baseline fails closed."
+  },
+  "disclaimer": "Primary is a conservative milestone-evidence index, not a percentage of source lines written or a claim that the product is release-complete. Task Board area estimates are not published as a completion claim.",
+  "closeout_verification": {
+    "status": "verified",
+    "roadmap_slice_id": "PF-00-PF-01",
+    "source_commit_sha": "1fb68308311a66e1511c02f812ce33082cf60562",
+    "closeout_sha": "b11d3f2dc55cb3f262f4522d7d74fb81846c3059"
+  }
+}
