@@ -37,7 +37,7 @@ Tento veřejný přehled zahrnuje pouze řezy PF-00 a PF-01, nikoli celou roadma
 
 ### Identita zveřejněného closeoutu
 
-Řez `PF-00-PF-01` je svázán se zdrojovým SHA `1fb68308311a66e1511c02f812ce33082cf60562` a closeout SHA `b11d3f2dc55cb3f262f4522d7d74fb81846c3059`. Stav: **verified**.
+Řez `PF-00-PF-01` je svázán se zdrojovým SHA `1fb68308311a66e1511c02f812ce33082cf60562` a closeout SHA `a133300c8ef3085ad57cea587f1948ec49417dba`. Stav: **verified**.
 
 ### Metriky řezu
 
