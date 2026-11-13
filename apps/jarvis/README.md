@@ -25,7 +25,7 @@ Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé 
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_BEGIN -->
 ## Jarvis Personal: stav implementace z roadmapy
 
-**796 / 950 = 83.79 % s implementační evidencí**
+**796 / 951 = 83.70 % s implementační evidencí**
 
 Všechny vrcholové i vnořené řezy mají stejnou váhu. Implementační evidence počítá stavy verified, implemented-unverified a release-ready; implemented-unverified není ověření ani release acceptance. Staré vážené evidenční přehledy se nezobrazují.
 
@@ -33,13 +33,13 @@ Všechny vrcholové i vnořené řezy mají stejnou váhu. Implementační evide
 | --- | ---: |
 | Platformní základy | 55 / 55 |
 | Jádro runtime | 64 / 64 |
-| Personal 1.0.0 | 144 / 148 |
+| Personal 1.0.0 | 144 / 149 |
 | Volitelné tratě | 138 / 166 |
 | Teams | 70 / 70 |
 | Enterprise | 63 / 63 |
 | Průřezové capability tratě | 262 / 384 |
 
-Stav: 499 verified, 297 implemented-unverified, 0 release-ready, 4 in-progress, 148 architecture-only, 2 deferred.
+Stav: 499 verified, 297 implemented-unverified, 0 release-ready, 4 in-progress, 149 architecture-only, 2 deferred.
 
 Toto číslo NENÍ produkční připravenost, živé QA ani release akceptace. [Detailní snapshot](progress.json) může obsahovat historická QA pole s jinou metodikou.
 

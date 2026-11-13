@@ -177,10 +177,10 @@
       }
     }
   },
-  "updated_at": "2026-11-08",
-  "overall_percent": 83.79,
-  "primary_percent": 83.79,
-  "implementation_complete_percent": 83.79,
+  "updated_at": "2026-11-13",
+  "overall_percent": 83.7,
+  "primary_percent": 83.7,
+  "implementation_complete_percent": 83.7,
   "verified_percent": 37.48,
   "done_percent": 37.48,
   "personal_progress": {
@@ -311,7 +311,7 @@
   "roadmap": {
     "source": {
       "roadmap_id": "jarvis.master.worker.v2",
-      "updated_at": "2026-11-08",
+      "updated_at": "2026-11-13",
       "file": "canonical roadmap hierarchy and release-gate summary"
     },
     "gates": [
@@ -443,16 +443,16 @@
         "name_en": "Personal 1.0.0",
         "chapter_color": "personal",
         "chapter_count": 9,
-        "item_count": 148,
+        "item_count": 149,
         "completed_item_count": 121,
         "implemented_item_count": 144,
         "implemented_unverified_item_count": 23,
         "verified_item_count": 121,
         "in_progress_item_count": 2,
-        "architecture_item_count": 2,
+        "architecture_item_count": 3,
         "blocked_item_count": 0,
-        "completion_percent": 97.3,
-        "status_percent": 97.64
+        "completion_percent": 96.64,
+        "status_percent": 96.98
       },
       {
         "id": "optional",
@@ -1008,21 +1008,21 @@
         "name_cs": "P4 — Workspace action reliability",
         "name_en": "P4 — Workspace action reliability",
         "status": "in-progress",
-        "display_status": "verified",
-        "status_label_cs": "Ověřeno",
-        "status_label_en": "Verified",
+        "display_status": "in-progress",
+        "status_label_cs": "Rozpracováno",
+        "status_label_en": "In progress",
         "status_source": "canonical-child-items",
-        "is_complete": true,
-        "item_count": 16,
+        "is_complete": false,
+        "item_count": 17,
         "completed_item_count": 16,
         "implemented_item_count": 16,
         "implemented_unverified_item_count": 0,
         "verified_item_count": 16,
         "in_progress_item_count": 0,
-        "architecture_item_count": 0,
+        "architecture_item_count": 1,
         "blocked_item_count": 0,
-        "completion_percent": 100.0,
-        "status_percent": 100.0
+        "completion_percent": 94.12,
+        "status_percent": 94.12
       },
       {
         "id": "P5",
@@ -6945,6 +6945,30 @@
         "completion_percent": 100.0,
         "completion_percent_source": "canonical-roadmap-slice",
         "verify": "V4",
+        "is_slice": true
+      },
+      {
+        "id": "P4.17",
+        "parent_item_id": null,
+        "slice_depth": 0,
+        "chapter_id": "P4",
+        "chapter_name_cs": "P4 — Workspace action reliability",
+        "chapter_name_en": "P4 — Workspace action reliability",
+        "group_id": "personal",
+        "group_name_cs": "Personal 1.0.0",
+        "group_name_en": "Personal 1.0.0",
+        "chapter_color": "personal",
+        "description_cs": "Úplná evidence původu a bezpečný úklid souborů vytvořených Jarvisem",
+        "description_en": "Complete provenance inventory and safe cleanup of Jarvis-created files",
+        "status": "architecture-only",
+        "status_label_cs": "Architektura",
+        "status_label_en": "Architecture",
+        "status_source": "canonical-roadmap-slice",
+        "is_complete": false,
+        "status_percent": 0.0,
+        "completion_percent": 0.0,
+        "completion_percent_source": "canonical-roadmap-slice",
+        "verify": "V0",
         "is_slice": true
       },
       {
@@ -25452,16 +25476,16 @@
         "is_slice": true
       }
     ],
-    "item_count": 950,
+    "item_count": 951,
     "completed_item_count": 499,
     "implemented_item_count": 796,
     "implemented_unverified_item_count": 297,
     "verified_item_count": 499,
     "in_progress_item_count": 4,
-    "architecture_item_count": 148,
+    "architecture_item_count": 149,
     "blocked_item_count": 0,
     "status_counts": {
-      "architecture-only": 148,
+      "architecture-only": 149,
       "in-progress": 4,
       "implemented-unverified": 297,
       "release-ready": 0,
@@ -25470,8 +25494,8 @@
       "deferred": 2
     },
     "chapter_count": 85,
-    "completion_percent": 83.79,
-    "status_percent": 83.89,
+    "completion_percent": 83.7,
+    "status_percent": 83.81,
     "status_percent_contract": {
       "kind": "canonical-implementation-coverage-compatibility",
       "label_cs": "Implementační pokrytí",
@@ -25531,7 +25555,7 @@
     "closeout_proof": "exact-slice-source-and-closeout-sha",
     "public_measurement_source": "canonical-roadmap",
     "projection_only": true,
-    "projection_correction_id": "jarvis-roadmap-2026-11-08-950-796"
+    "projection_correction_id": "jarvis-artifact-provenance-2026-11-13"
   },
   "milestone_implementation_percent": 74.5,
   "milestone_verified_percent": 43.98,
@@ -537508,16 +537532,16 @@
     "source_commit_sha": "129f5850f0ec9b8c4db1cf6c521180e1427a8944",
     "closeout_sha": "67df629cd7f1f4df72868e050c18eac0345ea1d4"
   },
-  "roadmap_completed_percent": 52.53,
-  "roadmap_implemented_percent": 83.79,
-  "roadmap_verified_percent": 52.53,
-  "roadmap_implemented_unverified_percent": 31.26,
+  "roadmap_completed_percent": 52.47,
+  "roadmap_implemented_percent": 83.7,
+  "roadmap_verified_percent": 52.47,
+  "roadmap_implemented_unverified_percent": 31.23,
   "roadmap_in_progress_percent": 0.42,
-  "roadmap_architecture_percent": 15.58,
+  "roadmap_architecture_percent": 15.67,
   "roadmap_projection_delta": {
-    "changed_statuses": 19,
-    "changed_descriptions": 1,
-    "added_items": 25,
+    "changed_statuses": 0,
+    "changed_descriptions": 0,
+    "added_items": 1,
     "removed_items": 0
   }
 }

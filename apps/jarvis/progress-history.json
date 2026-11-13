@@ -2,7 +2,7 @@
   "schema_version": 9,
   "project_codename": "Jarvis",
   "report_locale": "cs-CZ",
-  "generated_at": "2026-11-08",
+  "generated_at": "2026-11-13",
   "measurement": {
     "mode": "canonical-roadmap-current-view",
     "primary_metric": "roadmap_implemented_percent",
@@ -510770,6 +510770,78 @@
           "completed_item_count": 499,
           "status_counts": {
             "architecture-only": 148,
+            "blocked": 0,
+            "deferred": 2,
+            "implemented-unverified": 297,
+            "in-progress": 4,
+            "release-ready": 0,
+            "verified": 499
+          }
+        }
+      }
+    },
+    {
+      "correction_id": "jarvis-artifact-provenance-2026-11-13",
+      "event_type": "canonical-roadmap-projection-correction",
+      "recorded_at": "2026-11-13",
+      "reason_cs": "Přidání architektonického řezu P4.17 rozšířilo kanonickou roadmapu o jeden otevřený řez bez implementační evidence. Source-bound projekce se aktualizuje na 951 řezů, z toho 796 s implementační evidencí a 499 stavově ověřených (83,70 %); historie dokončení i původní closeout proof zůstávají beze změny.",
+      "reason_en": "Adding architecture-only slice P4.17 expands the canonical roadmap by one open slice without implementation evidence. The source-bound projection is updated to 951 slices, including 796 with implementation evidence and 499 status-verified (83.70%); completion history and the original closeout proof remain unchanged.",
+      "canonical_source": {
+        "relative_path": "tools/jarvis/docs/jarvis_master_worker_roadmap.json",
+        "sha256": "73c2226acf199596325611ee6f5081dee57a3d357470d0acaf797e89328b0a1f",
+        "roadmap_id": "jarvis.master.worker.v2",
+        "updated_at": "2026-11-13"
+      },
+      "from": {
+        "metrics": {
+          "primary_percent": 83.79,
+          "overall_percent": 83.79,
+          "implementation_complete_percent": 83.79,
+          "verified_percent": 37.48,
+          "done_percent": 37.48,
+          "release_readiness_percent": 50.0,
+          "roadmap_completed_percent": 52.53,
+          "roadmap_implemented_percent": 83.79,
+          "roadmap_verified_percent": 52.53,
+          "roadmap_implemented_unverified_percent": 31.26,
+          "roadmap_in_progress_percent": 0.42,
+          "roadmap_architecture_percent": 15.58
+        },
+        "roadmap": {
+          "source": {
+            "roadmap_id": "jarvis.master.worker.v2",
+            "updated_at": "2026-11-08"
+          },
+          "item_count": 950,
+          "implemented_item_count": 796,
+          "completed_item_count": 499,
+          "status_counts": {
+            "architecture-only": 148,
+            "in-progress": 4,
+            "implemented-unverified": 297,
+            "release-ready": 0,
+            "verified": 499,
+            "blocked": 0,
+            "deferred": 2
+          }
+        }
+      },
+      "to": {
+        "metrics": {
+          "primary_percent": 83.7,
+          "overall_percent": 83.7,
+          "implementation_complete_percent": 83.7
+        },
+        "roadmap": {
+          "source": {
+            "roadmap_id": "jarvis.master.worker.v2",
+            "updated_at": "2026-11-13"
+          },
+          "item_count": 951,
+          "implemented_item_count": 796,
+          "completed_item_count": 499,
+          "status_counts": {
+            "architecture-only": 149,
             "blocked": 0,
             "deferred": 2,
             "implemented-unverified": 297,
