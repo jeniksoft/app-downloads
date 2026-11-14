@@ -12,7 +12,7 @@ Složka aplikace obsahuje veřejný setup nebo SDK balík, popis, návod k použ
 
 | Aplikace | Verze | Setup / Balík | Dokumentace | SHA-256 |
 | --- | --- | --- | --- | --- |
-| Codex VeraCrypt Startup Mount | 1.0.188 | [VeraCryptStartupMountSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe) | [Popis a návod](veracrypt-startup-mount/README.md) | [`4E1E5F13...735A1BFA`](../checksums/SHA256SUMS.txt) |
+| Codex VeraCrypt Startup Mount | 1.0.213 | [VeraCryptStartupMountSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe) | [Popis a návod](veracrypt-startup-mount/README.md) | [`0B2090CA...58C9B1AC`](../checksums/SHA256SUMS.txt) |
 | Strategic Nexus Companion | 0.16.0 | [StrategicNexusCompanionSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/strategic-nexus-companion/StrategicNexusCompanionSetup.exe) | [Popis a návod](strategic-nexus-companion/README.md) | [`5AC5E5AB...239C8EB0`](../checksums/SHA256SUMS.txt) |
 | Windows Update Restart Guard | 1.0.143 | [WindowsUpdateRestartGuardSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/windows-update-restart-guard/WindowsUpdateRestartGuardSetup.exe) | [Popis a návod](windows-update-restart-guard/README.md) | [`21EB9734...3C2DAF4C`](../checksums/SHA256SUMS.txt) |
 | WDUi Framework SDK | 1.0.0 | [WduiFrameworkSdk-1.0.0.zip](https://github.com/jeniksoft/app-downloads/raw/main/apps/wdui-framework/WduiFrameworkSdk-1.0.0.zip) | [Popis a návod](wdui-framework/README.md) | [`25E88E95...76427CD1`](../checksums/SHA256SUMS.txt) |

@@ -4,9 +4,9 @@ Malá Windows tray utilita pro lokální mount jednoho nebo více VeraCrypt svaz
 
 ## Stažení
 
-* Verze: `1.0.188`
+* Verze: `1.0.213`
 * Setup: [VeraCryptStartupMountSetup.exe](https://github.com/jeniksoft/app-downloads/raw/main/apps/veracrypt-startup-mount/VeraCryptStartupMountSetup.exe)
-* SHA-256: `4E1E5F1349E7594BBAE1124EDE02967319DF02926988685917D5E396735A1BFA`
+* SHA-256: `0B2090CAAC91182CB99CA9F5FEF4BC87023D7331529C40FB6544504C58C9B1AC`
 * Update manifest: [update.json](update.json)
 
 ## Co Aplikace Dělá
@@ -60,9 +60,9 @@ Od verze `1.0.2` má appka i společný durable WDUi headless probe `VeraCryptSt
 
 Od verze `1.0.1` má appka srovnaný veřejný ADPU manifestový základ: build používá jednu runtime verzi z `VERSION`, setup se publikuje do ADPU, Start Menu se uklízí pod `Jeniksoft` a v menu `O aplikaci` lze otevřít historii změn z veřejného `update.json`.
 
-## Změny verze 1.0.187
+## Změny verze 1.0.213
 
-Opraven responzivní layout okna VeraCrypt Startup Mount: tlačítka Otevřít log, Nápověda a Zavřít zůstávají v jedné spodní linii po resetu na výchozí velikost, maximalizaci i obnovení; spodní obrys záhlaví zůstává viditelný nad menu.
+Oprava instalace a opravy odstraňuje po ověření úspěšné verze aplikace přesné čekající záznamy smazání vlastních souborů, aby je Windows nesmazal po restartu.
 
 ## ZmÄ›ny verze 1.0.188
 
