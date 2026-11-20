@@ -2,7 +2,7 @@
   "schema_version": 9,
   "project_codename": "Jarvis",
   "report_locale": "cs-CZ",
-  "generated_at": "2026-11-13",
+  "generated_at": "2026-11-20",
   "measurement": {
     "mode": "canonical-roadmap-current-view",
     "primary_metric": "roadmap_implemented_percent",
@@ -510836,6 +510836,69 @@
           "source": {
             "roadmap_id": "jarvis.master.worker.v2",
             "updated_at": "2026-11-13"
+          },
+          "item_count": 951,
+          "implemented_item_count": 796,
+          "completed_item_count": 499,
+          "status_counts": {
+            "architecture-only": 149,
+            "blocked": 0,
+            "deferred": 2,
+            "implemented-unverified": 297,
+            "in-progress": 4,
+            "release-ready": 0,
+            "verified": 499
+          }
+        }
+      }
+    },
+    {
+      "correction_id": "jarvis-roadmap-canonical-newlines-baseline-2026-11-13",
+      "event_type": "canonical-roadmap-projection-correction",
+      "recorded_at": "2026-11-20",
+      "reason_cs": "Kanonická roadmapa Jarvisu používá platformově nezávislé LF otisky textových zdrojů. Po ověření veřejného baseline 2026-11-13 nový neměnný manifest zachovává stejné veřejné metriky, počty, historii i closeout důkaz.",
+      "reason_en": "The canonical Jarvis roadmap uses platform-independent LF fingerprints for text sources. After verifying the 2026-11-13 public baseline, this immutable manifest preserves the same public metrics, counts, history, and closeout proof.",
+      "canonical_source": {
+        "relative_path": "tools/jarvis/docs/jarvis_master_worker_roadmap.json",
+        "sha256": "cbbd282b8ac6aa949d13c16b12c3c9185a1f5748d8a2668a2ad85615c9e1ecbd",
+        "roadmap_id": "jarvis.master.worker.v2",
+        "updated_at": "2026-11-15"
+      },
+      "from": {
+        "metrics": {
+          "primary_percent": 83.7,
+          "overall_percent": 83.7,
+          "implementation_complete_percent": 83.7
+        },
+        "roadmap": {
+          "source": {
+            "roadmap_id": "jarvis.master.worker.v2",
+            "updated_at": "2026-11-13"
+          },
+          "item_count": 951,
+          "implemented_item_count": 796,
+          "completed_item_count": 499,
+          "status_counts": {
+            "architecture-only": 149,
+            "blocked": 0,
+            "deferred": 2,
+            "implemented-unverified": 297,
+            "in-progress": 4,
+            "release-ready": 0,
+            "verified": 499
+          }
+        }
+      },
+      "to": {
+        "metrics": {
+          "primary_percent": 83.7,
+          "overall_percent": 83.7,
+          "implementation_complete_percent": 83.7
+        },
+        "roadmap": {
+          "source": {
+            "roadmap_id": "jarvis.master.worker.v2",
+            "updated_at": "2026-11-15"
           },
           "item_count": 951,
           "implemented_item_count": 796,

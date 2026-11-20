@@ -177,7 +177,7 @@
       }
     }
   },
-  "updated_at": "2026-11-13",
+  "updated_at": "2026-11-20",
   "overall_percent": 83.7,
   "primary_percent": 83.7,
   "implementation_complete_percent": 83.7,
@@ -311,7 +311,7 @@
   "roadmap": {
     "source": {
       "roadmap_id": "jarvis.master.worker.v2",
-      "updated_at": "2026-11-13",
+      "updated_at": "2026-11-15",
       "file": "canonical roadmap hierarchy and release-gate summary"
     },
     "gates": [
@@ -9646,8 +9646,8 @@
         "group_name_cs": "Volitelné tratě",
         "group_name_en": "Optional tracks",
         "chapter_color": "optional",
-        "description_cs": "Sdílený model s prioritou kapacity a kombinací NVIDIA, AMD, Intel, RAM a CPU",
-        "description_en": "Capacity-first shared single model across NVIDIA AMD Intel and CPU RAM",
+        "description_cs": "Kapacitní běh modelu přes kompatibilní GPU VRAM a sdílenou paměť hostitele",
+        "description_en": "Capacity-first local hybrid model fit across compatible GPU VRAM and shared host memory",
         "status": "architecture-only",
         "status_label_cs": "Architektura",
         "status_label_en": "Architecture",
@@ -25555,7 +25555,7 @@
     "closeout_proof": "exact-slice-source-and-closeout-sha",
     "public_measurement_source": "canonical-roadmap",
     "projection_only": true,
-    "projection_correction_id": "jarvis-artifact-provenance-2026-11-13"
+    "projection_correction_id": "jarvis-roadmap-canonical-newlines-baseline-2026-11-13"
   },
   "milestone_implementation_percent": 74.5,
   "milestone_verified_percent": 43.98,
@@ -537540,8 +537540,8 @@
   "roadmap_architecture_percent": 15.67,
   "roadmap_projection_delta": {
     "changed_statuses": 0,
-    "changed_descriptions": 0,
-    "added_items": 1,
+    "changed_descriptions": 1,
+    "added_items": 0,
     "removed_items": 0
   }
 }
