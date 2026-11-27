@@ -156,13 +156,13 @@
 <text x="1339.59" y="476" fill="#ff5f8f" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">NEIMPLEMENTOVÁNO</text>
 <text x="1498" y="476" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">0/0 QA</text>
 </g>
-<text x="80" y="906" fill="#728ebd" font-family="Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="2">LEGENDA STAVŮ</text>
-<circle cx="87" cy="930" r="6" fill="#35f2b4" filter="url(#glow)"/>
-<text x="103" y="935" fill="#cfe0ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">OVĚŘENO</text>
-<circle cx="347" cy="930" r="6" fill="#ffc857" filter="url(#glow)"/>
-<text x="363" y="935" fill="#cfe0ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">TESTUJE SE</text>
-<circle cx="607" cy="930" r="6" fill="#6ca8ff" filter="url(#glow)"/>
-<text x="623" y="935" fill="#cfe0ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">NEOTESTOVÁNO</text>
-<circle cx="867" cy="930" r="6" fill="#ff5f8f" filter="url(#glow)"/>
-<text x="883" y="935" fill="#cfe0ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">NEIMPLEMENTOVÁNO</text>
+<text x="80" y="936" fill="#728ebd" font-family="Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="2">LEGENDA STAVŮ</text>
+<circle cx="87" cy="960" r="6" fill="#35f2b4" filter="url(#glow)"/>
+<text x="103" y="965" fill="#cfe0ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">OVĚŘENO</text>
+<circle cx="347" cy="960" r="6" fill="#ffc857" filter="url(#glow)"/>
+<text x="363" y="965" fill="#cfe0ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">TESTUJE SE</text>
+<circle cx="607" cy="960" r="6" fill="#6ca8ff" filter="url(#glow)"/>
+<text x="623" y="965" fill="#cfe0ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">NEOTESTOVÁNO</text>
+<circle cx="867" cy="960" r="6" fill="#ff5f8f" filter="url(#glow)"/>
+<text x="883" y="965" fill="#cfe0ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">NEIMPLEMENTOVÁNO</text>
 </svg>
