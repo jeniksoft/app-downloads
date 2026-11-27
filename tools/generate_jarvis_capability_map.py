@@ -32,6 +32,12 @@ STATUS_LABELS_EN = {
     "NOT_TESTED": "NOT TESTED",
     "NOT_IMPLEMENTED": "NOT IMPLEMENTED",
 }
+STATUS_TABLE_LABELS_CS = {
+    "TESTED": "Ověřeno",
+    "TESTING": "Testuje se",
+    "NOT_TESTED": "Neotestováno",
+    "NOT_IMPLEMENTED": "Neimplementováno",
+}
 STATUS_COLORS = {
     "TESTED": "#35f2b4",
     "TESTING": "#ffc857",
@@ -143,9 +149,9 @@ def build_snapshot(definition: dict[str, Any], inventory_path: Path | None) -> d
         "node_count": len(nodes),
         "nodes": nodes,
         "note_cs": (
-            "Stav TESTED je evidence-bound a neznamená release akceptaci."
+            "Stav TESTED je podložený důkazy a neznamená přijetí vydání."
             if live
-            else "Výchozí mapa používá pouze sanitizovaný baseline z dokumentované evidence; pro živý stav předejte inventory ze scénářového runtime."
+            else "Výchozí mapa používá pouze očištěný výchozí stav z dokumentované evidence; pro živý stav předejte seznam stavů ze scénářového běhu."
         ),
     }
 
@@ -184,8 +190,8 @@ def render_svg(definition: dict[str, Any], snapshot: dict[str, Any], language: s
 
     summary = snapshot["status_counts"]
     total = snapshot["node_count"]
-    live = ("LIVE INVENTORY" if snapshot["live_inventory_used"] else "DOCUMENTED BASELINE") if english else ("ŽIVÉ INVENTORY" if snapshot["live_inventory_used"] else "DOKUMENTOVANÝ BASELINE")
-    title = "Maunder Jarvis capability constellation" if english else "Maunder Jarvis mapa schopností"
+    live = ("LIVE INVENTORY" if snapshot["live_inventory_used"] else "DOCUMENTED BASELINE") if english else ("ŽIVÝ SEZNAM STAVŮ" if snapshot["live_inventory_used"] else "DOKUMENTOVANÝ VÝCHOZÍ STAV")
+    title = "Maunder Jarvis capability constellation" if english else "Mapa schopností Maunder Jarvis"
     description = (
         "Sci-fi dependency map of Jarvis capabilities with tested, testing, not tested and not implemented states."
         if english
@@ -195,6 +201,9 @@ def render_svg(definition: dict[str, Any], snapshot: dict[str, Any], language: s
     node_caption = "CAPABILITY NODES" if english else "UZLŮ SCHOPNOSTÍ"
     tested_caption = "TESTED" if english else "OVĚŘENO"
     testing_caption = "TESTING" if english else "TESTUJE SE"
+    source_revision = snapshot["source_revision"][:16]
+    if not english and snapshot["source_revision"] == "documented-baseline":
+        source_revision = "dokumentovaný-výchozí-stav"
     svg: list[str] = [
         '<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 1580 1000" width="1580" height="1000">',
         f'<title id="title">{xml_text(title)}</title>',
@@ -211,7 +220,7 @@ def render_svg(definition: dict[str, Any], snapshot: dict[str, Any], language: s
         '<circle cx="1470" cy="80" r="240" fill="#1d62a8" opacity=".08" filter="url(#glow)"/>',
         '<text x="70" y="78" fill="#8fbaff" font-family="Segoe UI,Arial,sans-serif" font-size="18" letter-spacing="4">MAUNDER / JARVIS</text>',
         f'<text x="70" y="125" fill="#f4f8ff" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="700" letter-spacing="2">{heading}</text>',
-        f'<text x="70" y="157" fill="#93a9ce" font-family="Segoe UI,Arial,sans-serif" font-size="16">DEPENDENCY GRAPH · {xml_text(live)} · {xml_text(snapshot["source_revision"][:16])}</text>',
+        f'<text x="70" y="157" fill="#93a9ce" font-family="Segoe UI,Arial,sans-serif" font-size="16">{"DEPENDENCY GRAPH" if english else "GRAF ZÁVISLOSTÍ"} · {xml_text(live)} · {xml_text(source_revision)}</text>',
         f'<text x="1390" y="90" fill="#d9e7ff" font-family="Segoe UI,Arial,sans-serif" font-size="18" text-anchor="end">{total} {node_caption}</text>',
         f'<text x="1390" y="120" fill="#35f2b4" font-family="Segoe UI,Arial,sans-serif" font-size="17" text-anchor="end">{summary["TESTED"]} {tested_caption}</text>',
         f'<text x="1390" y="148" fill="#ffc857" font-family="Segoe UI,Arial,sans-serif" font-size="17" text-anchor="end">{summary["TESTING"]} {testing_caption}</text>',
@@ -258,37 +267,40 @@ def render_svg(definition: dict[str, Any], snapshot: dict[str, Any], language: s
 
 def render_readme_section(snapshot: dict[str, Any]) -> str:
     counts = snapshot["status_counts"]
-    live = "živého scénářového inventory" if snapshot["live_inventory_used"] else "doloženého baseline"
+    live = "živého seznamu stavů scénářů" if snapshot["live_inventory_used"] else "doloženého výchozího stavu"
+    source_revision = snapshot["source_revision"][:16]
+    if snapshot["source_revision"] == "documented-baseline":
+        source_revision = "dokumentovaný-výchozí-stav"
     rows = "\n".join(
-        f"| {STATUS_LABELS[status].title()} | {counts[status]} |"
+        f"| {STATUS_TABLE_LABELS_CS[status]} | {counts[status]} |"
         for status in STATUS_ORDER
     )
     return f"""<!-- JARVIS_CAPABILITY_MAP_BEGIN -->
-## Mapa schopností: sci-fi constellation
+## Sci-fi mapa schopností
 
-![Maunder Jarvis capability constellation](visuals/capability-map.svg)
+![Mapa schopností Maunder Jarvis](visuals/capability-map.svg)
 
 Mapa je graf schopností a závislostí, ne seznam intervalů scénářů. Každý uzel
 ukazuje implementační stav, QA stav a počet přidružených scénářů; šipky vedou od
 nutných předpokladů k navazující schopnosti.
 
-**Snapshot:** {live} · zdrojová revize `{snapshot["source_revision"][:16]}` ·
-{snapshot["node_count"]} capability uzlů
+**Snímek:** {live} · zdrojová revize `{source_revision}` ·
+{snapshot["node_count"]} uzlů schopností
 
 | Stav | Uzly |
 | --- | ---: |
 {rows}
 
-`TESTED` znamená evidence-bound PASS, nikoli release akceptaci. `TESTING` je
+`TESTED` znamená PASS podložený důkazy, nikoli přijetí vydání. `TESTING` je
 částečně doložená nebo právě ověřovaná schopnost. `NOT_TESTED` nemá aktuální
-QA důkaz a `NOT_IMPLEMENTED` zůstává architecture-only. Graf záměrně ukazuje
+důkaz QA a `NOT_IMPLEMENTED` zůstává pouze architekturou. Graf záměrně ukazuje
 i závislosti na schopnostech, které ještě nejsou implementované.
 
 ### Aktualizace bez GitHub Actions
 
-Mapa se aktualizuje lokálně ze scénářového runtime. Jedním příkazem se z kořene
-tohoto repozitáře načte sanitizované inventory z CPM (bez promptů, tajemství a
-raw výstupů) a přegeneruje se graf:
+Mapa se aktualizuje místně ze scénářového běhu. Jedním příkazem se z kořene
+tohoto repozitáře načte očištěný seznam stavů z CPM (bez zadání, tajemství a
+surových výstupů) a znovu se vytvoří graf:
 
 ```powershell
 python tools/update_jarvis_capability_map.py --cpm-root Z:\\Codex\\CPM --state Z:\\Codex\\CPM\\qa\\scenario-state.json
@@ -296,8 +308,8 @@ python tools/generate_jarvis_capability_map.py --check
 ```
 
 Generátor je deterministický a mění pouze `capability-status.json`, českou a
-anglickou SVG mapu a tuto označenou README sekci. Neexistuje workflow, placený
-runner ani síťové volání; změna se publikuje běžným chráněným PR.
+anglickou SVG mapu a tuto označenou část dokumentace. Neexistuje automatizace,
+placený spouštěč ani síťové volání; změna se publikuje běžným chráněným PR.
 <!-- JARVIS_CAPABILITY_MAP_END -->"""
 
 

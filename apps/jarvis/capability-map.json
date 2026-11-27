@@ -1,181 +1,182 @@
 {
   "schema": "maunder.jarvis.capability-map.v1",
   "title": "Maunder / Jarvis capability constellation",
-  "description_cs": "Veřejná mapa schopností a jejich závislostí. Stav TESTED znamená evidence-bound ověření, nikoli automatickou release akceptaci.",
+  "title_cs": "Maunder / Jarvis mapa schopností",
+  "description_cs": "Veřejná mapa schopností a jejich závislostí. Stav TESTED znamená ověření podložené důkazy, nikoli automatické přijetí vydání.",
   "status_vocabulary": {
     "TESTED": "doložené PASS scénáře pro všechny aktuálně mapované uzly",
     "TESTING": "část uzlů má důkaz nebo probíhá ověřování",
     "NOT_TESTED": "schopnost je navržená/implementačně sledovaná, ale nemá aktuální QA důkaz",
-    "NOT_IMPLEMENTED": "architecture-only nebo budoucí schopnost bez implementace"
+    "NOT_IMPLEMENTED": "pouze architektura nebo budoucí schopnost bez implementace"
   },
   "layers": [
-    { "id": "foundation", "label": "FOUNDATION", "label_en": "FOUNDATION", "subtitle": "jádro a autorita", "subtitle_en": "core and authority", "order": 0 },
+    { "id": "foundation", "label": "ZÁKLAD", "label_en": "FOUNDATION", "subtitle": "jádro a autorita", "subtitle_en": "core and authority", "order": 0 },
     { "id": "agent", "label": "AGENT", "label_en": "AGENT", "subtitle": "vývojová práce", "subtitle_en": "development work", "order": 1 },
-    { "id": "operations", "label": "OPERATIONS", "label_en": "OPERATIONS", "subtitle": "obnova a integrace", "subtitle_en": "recovery and integration", "order": 2 },
-    { "id": "frontier", "label": "FRONTIER", "label_en": "FRONTIER", "subtitle": "pokročilé schopnosti", "subtitle_en": "advanced capabilities", "order": 3 }
+    { "id": "operations", "label": "PROVOZ", "label_en": "OPERATIONS", "subtitle": "obnova a integrace", "subtitle_en": "recovery and integration", "order": 2 },
+    { "id": "frontier", "label": "ROZŠÍŘENÍ", "label_en": "FRONTIER", "subtitle": "pokročilé schopnosti", "subtitle_en": "advanced capabilities", "order": 3 }
   ],
   "nodes": [
     {
       "id": "core-runtime",
       "layer": "foundation",
       "order": 0,
-      "label_cs": "Core runtime",
+      "label_cs": "Běhové jádro",
       "label_en": "Core runtime",
-      "subtitle_cs": "chat · route · Worker · důkazy",
+      "subtitle_cs": "chat · trasa · Worker · důkazy",
       "subtitle_en": "chat · route · Worker · evidence",
       "scenario_blocks": ["F00-F09", "F10-F19"],
       "dependencies": [],
       "implementation": "implemented",
       "baseline_scenarios": ["F00-F01", "F02-F19"],
-      "baseline_note_cs": "Historicky doložené F00–F19; nový host musí receipt znovu vytvořit."
+      "baseline_note_cs": "Historicky doložené F00–F19; nový host musí potvrzení znovu vytvořit."
     },
     {
       "id": "policy-safety",
       "layer": "foundation",
       "order": 1,
-      "label_cs": "Policy & safety",
+      "label_cs": "Zásady a bezpečnost",
       "label_en": "Policy & safety",
-      "subtitle_cs": "authority · deny · confirmation",
+      "subtitle_cs": "autorita · zamítnutí · potvrzení",
       "subtitle_en": "authority · denial · confirmation",
       "scenario_blocks": ["F30-F39", "F76-F85", "F120-F139"],
       "dependencies": ["core-runtime"],
       "implementation": "implemented",
       "baseline_scenarios": ["F09", "F10", "F18"],
-      "baseline_note_cs": "Evidence je rozprostřená přes starší dogfood a čeká na blokové sjednocení."
+      "baseline_note_cs": "Důkazy jsou rozprostřené přes starší zkoušky skutečného klienta a čekají na blokové sjednocení."
     },
     {
       "id": "developer-agent",
       "layer": "agent",
       "order": 0,
-      "label_cs": "Developer agent",
+      "label_cs": "Vývojový agent",
       "label_en": "Developer agent",
-      "subtitle_cs": "workspace · edit · build · read-back",
+      "subtitle_cs": "pracovní prostor · úpravy · sestavení · zpětné načtení",
       "subtitle_en": "workspace · edit · build · read-back",
       "scenario_blocks": ["F20-F29", "F30-F39", "F40-F49"],
       "dependencies": ["core-runtime", "policy-safety"],
       "implementation": "implemented",
       "baseline_scenarios": ["F20-F23"],
-      "baseline_note_cs": "Základní read/search/write/build scénáře doložené, rozšířený blok se doplňuje."
+      "baseline_note_cs": "Základní scénáře čtení, hledání, zápisu a sestavení jsou doložené, rozšířený blok se doplňuje."
     },
     {
       "id": "model-inference",
       "layer": "agent",
       "order": 1,
-      "label_cs": "Model inference",
+      "label_cs": "Běh modelu",
       "label_en": "Model inference",
-      "subtitle_cs": "role · catalog · local-first",
+      "subtitle_cs": "role · katalog · místní přednost",
       "subtitle_en": "role · catalog · local-first",
       "scenario_blocks": ["F55-F64", "F170-F179", "F560-F579"],
       "dependencies": ["core-runtime", "policy-safety"],
       "implementation": "implemented",
       "baseline_scenarios": ["F55-F64"],
-      "baseline_note_cs": "F57–F64 mají čerstvý evidence-bound PASS na aktuálním QA kandidátu."
+      "baseline_note_cs": "F57–F64 mají čerstvý PASS podložený důkazy na aktuálním QA kandidátu."
     },
     {
       "id": "recovery-ops",
       "layer": "operations",
       "order": 0,
-      "label_cs": "Recovery & operations",
+      "label_cs": "Obnova a provoz",
       "label_en": "Recovery & operations",
-      "subtitle_cs": "pause · resume · restart · journal",
+      "subtitle_cs": "pozastavení · pokračování · restart · deník",
       "subtitle_en": "pause · resume · restart · journal",
       "scenario_blocks": ["F44-F54", "F50-F59", "F60-F69", "F150-F159"],
       "dependencies": ["core-runtime", "developer-agent"],
       "implementation": "implemented",
       "baseline_scenarios": ["F51-F64"],
-      "baseline_note_cs": "Část recovery a provider hranic je ověřená; celý capability gate ještě ne."
+      "baseline_note_cs": "Část hranic obnovy a poskytovatelů je ověřená; celá brána schopnosti ještě ne."
     },
     {
       "id": "workspace-git",
       "layer": "agent",
       "order": 2,
-      "label_cs": "Workspace & Git",
+      "label_cs": "Pracovní prostor a Git",
       "label_en": "Workspace & Git",
-      "subtitle_cs": "scope · worktree · commit · migration",
+      "subtitle_cs": "rozsah · pracovní strom · commit · migrace",
       "subtitle_en": "scope · worktree · commit · migration",
       "scenario_blocks": ["F190-F199", "F470-F479"],
       "dependencies": ["developer-agent"],
       "implementation": "implemented",
       "baseline_scenarios": [],
-      "baseline_note_cs": "Čeká na explicitní blokový QA ledger, ne na odhad ze zdrojové přítomnosti."
+      "baseline_note_cs": "Čeká na explicitní blokový evidenční deník QA, ne na odhad ze zdrojové přítomnosti."
     },
     {
       "id": "ui-desktop",
       "layer": "operations",
       "order": 1,
-      "label_cs": "UI & desktop control",
+      "label_cs": "Ovládání UI a plochy",
       "label_en": "UI & desktop control",
-      "subtitle_cs": "WDUi · UIA · Tyr · target effect",
+      "subtitle_cs": "WDUi · UIA · Tyr · účinek cíle",
       "subtitle_en": "WDUi · UIA · Tyr · target effect",
       "scenario_blocks": ["F70-F79", "F230-F239", "F300-F329", "F400-F459", "F590-F639"],
       "dependencies": ["core-runtime", "policy-safety"],
       "implementation": "implemented",
       "baseline_scenarios": [],
-      "baseline_note_cs": "UI lane je oddělená acceptance brána; bez vizuálního read-backu není TESTED."
+      "baseline_note_cs": "Trať UI je oddělená přejímací brána; bez vizuálního zpětného načtení není TESTED."
     },
     {
       "id": "credentials-providers",
       "layer": "operations",
       "order": 2,
-      "label_cs": "Credentials & providers",
+      "label_cs": "Pověření a poskytovatelé",
       "label_en": "Credentials & providers",
-      "subtitle_cs": "allowlist · cost · privacy · fallback",
+      "subtitle_cs": "seznam povolených · cena · soukromí · záložní trasa",
       "subtitle_en": "allowlist · cost · privacy · fallback",
       "scenario_blocks": ["F80-F89", "F110-F119", "F170-F179", "F580-F589"],
       "dependencies": ["model-inference", "policy-safety"],
       "implementation": "implemented",
       "baseline_scenarios": [],
-      "baseline_note_cs": "Cloud i local-only hranice se ověřují odděleně; klíče a tajemství se nezobrazují."
+      "baseline_note_cs": "Cloudové i pouze místní hranice se ověřují odděleně; klíče a tajemství se nezobrazují."
     },
     {
       "id": "setup-migration",
       "layer": "operations",
       "order": 3,
-      "label_cs": "Setup & migration",
+      "label_cs": "Instalace a migrace",
       "label_en": "Setup & migration",
-      "subtitle_cs": "pairing · rollback · service hand-off",
+      "subtitle_cs": "párování · návrat · předání služby",
       "subtitle_en": "pairing · rollback · service hand-off",
       "scenario_blocks": ["F98-F99", "F240-F249", "F380-F389", "F500-F529", "F620-F629"],
       "dependencies": ["core-runtime", "recovery-ops"],
       "implementation": "implemented",
       "baseline_scenarios": [],
-      "baseline_note_cs": "Instalační a CoreReady identity jsou samostatné od runtime PASS."
+      "baseline_note_cs": "Instalační identita a identita CoreReady jsou samostatné od PASS běhového jádra."
     },
     {
       "id": "evidence-closeout",
       "layer": "operations",
       "order": 4,
-      "label_cs": "Evidence & closeout",
+      "label_cs": "Důkazy a uzavření",
       "label_en": "Evidence & closeout",
-      "subtitle_cs": "receipt · semantic oracle · publication",
+      "subtitle_cs": "potvrzení · sémantický test · zveřejnění",
       "subtitle_en": "receipt · semantic oracle · publication",
       "scenario_blocks": ["F260-F269", "F390-F399", "F640-F649"],
       "dependencies": ["core-runtime", "developer-agent", "recovery-ops"],
       "implementation": "implemented",
       "baseline_scenarios": [],
-      "baseline_note_cs": "Bez route/result/durable/read-back/sémantiky je stav Unknown."
+      "baseline_note_cs": "Bez route/result/durable/read-back a sémantické kontroly je stav Unknown (neznámý)."
     },
     {
       "id": "plugin-extensions",
       "layer": "frontier",
       "order": 0,
-      "label_cs": "Plugins & extensions",
+      "label_cs": "Doplňky a rozšíření",
       "label_en": "Plugins & extensions",
-      "subtitle_cs": "admission · MCP · isolation",
+      "subtitle_cs": "přijetí · MCP · izolace",
       "subtitle_en": "admission · MCP · isolation",
       "scenario_blocks": ["F200-F209"],
       "dependencies": ["policy-safety", "workspace-git"],
       "implementation": "implemented",
       "baseline_scenarios": [],
-      "baseline_note_cs": "Rozšíření nesmí získat capability jen registrací nebo zaplacením licence."
+      "baseline_note_cs": "Rozšíření nesmí získat schopnost jen registrací nebo zaplacením licence."
     },
     {
       "id": "cad-3d",
       "layer": "frontier",
       "order": 1,
-      "label_cs": "Creative 3D & CAD",
+      "label_cs": "Tvořivé 3D a CAD",
       "label_en": "Creative 3D & CAD",
-      "subtitle_cs": "G3D0–G3D14 · architecture-only",
+      "subtitle_cs": "G3D0–G3D14 · pouze architektura",
       "subtitle_en": "G3D0–G3D14 · architecture-only",
       "scenario_blocks": [],
       "dependencies": ["developer-agent", "ui-desktop", "plugin-extensions"],
@@ -188,6 +189,6 @@
     "source": "documented-evidence-and-current-qa-summary",
     "current_qa_pass": ["F57", "F58", "F59", "F60", "F61", "F62", "F63", "F64"],
     "historical_pass": ["F00", "F01", "F02", "F03", "F04", "F05", "F06", "F07", "F08", "F09", "F10", "F11", "F12", "F13", "F14", "F15", "F16", "F17", "F18", "F19", "F20", "F21", "F22", "F23"],
-    "note_cs": "Výchozí veřejná mapa nepřenáší lokální receipt ani tajemství. Při dodání runtime inventory se baseline nahradí aktuálními sanitizovanými stavy."
+    "note_cs": "Výchozí veřejná mapa nepřenáší lokální potvrzení ani tajemství. Při dodání seznamu stavů ze scénářového běhu se výchozí stav nahradí aktuálními očištěnými stavy."
   }
 }
