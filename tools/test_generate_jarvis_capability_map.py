@@ -56,10 +56,31 @@ class CapabilityMapGeneratorTests(unittest.TestCase):
         ET.fromstring(first)
         ET.fromstring(english)
         self.assertIn("MAPA SCHOPNOSTÍ", first)
+        self.assertIn("Běhové jádro", first)
+        self.assertNotIn("Core runtime", first)
+        self.assertNotIn("documented-basel", first)
         self.assertIn("CAPABILITY CONSTELLATION", english)
         self.assertIn("core and authority", english)
         self.assertNotIn("jádro a autorita", english)
         self.assertIn("TESTED", english)
+
+    def test_czech_labels_are_localized_and_english_labels_remain_separate(self) -> None:
+        expected_czech = {
+            "Běhové jádro",
+            "Zásady a bezpečnost",
+            "Vývojový agent",
+            "Běh modelu",
+            "Obnova a provoz",
+            "Pracovní prostor a Git",
+            "Ovládání UI a plochy",
+            "Pověření a poskytovatelé",
+            "Instalace a migrace",
+            "Důkazy a uzavření",
+            "Doplňky a rozšíření",
+            "Tvořivé 3D a CAD",
+        }
+        self.assertEqual({node["label_cs"] for node in self.definition["nodes"]}, expected_czech)
+        self.assertTrue(all(node["label_en"] for node in self.definition["nodes"]))
 
 
 if __name__ == "__main__":

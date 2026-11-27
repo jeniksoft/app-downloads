@@ -1,83 +1,81 @@
-# Project codename: Jarvis
+# Projektové kódové označení: Jarvis
 
-**Jazyk / Language:** **Čeština (výchozí)** · [English fallback](README.en.md)
+**Jazyk:** **Čeština (výchozí)** · [Anglická verze](README.en.md)
 
-<p><a href="README.en.md">🇬🇧 <strong>Open English fallback</strong></a></p>
+<p><a href="README.en.md">🇬🇧 <strong>Otevřít anglickou verzi</strong></a></p>
 
-**Jarvis je interní codename projektu ve vývoji, nikoli finální produktový název.**
+**Jarvis je interní kódové označení projektu ve vývoji, nikoli finální název produktu.**
 
 Cílem je bezplatná edice **Personal 1.0.0**. Až bude připravená k veřejnému vydání, bude zde zveřejněna pod jiným produktovým názvem.
 
-Aktuálně zde není žádný veřejný instalační balíček ke stažení. Dřívější vývojové a beta buildy byly z aktuálního download kanálu odstraněny, protože neodpovídají cílové kvalitě a rozsahu verze 1.0.0.
+Aktuálně zde není žádný veřejný instalační balíček ke stažení. Dřívější vývojové a beta sestavení byla ze stahovacího kanálu odstraněna, protože neodpovídají cílové kvalitě a rozsahu verze 1.0.0.
 
-## Zpětná vazba / Feedback
+## Zpětná vazba
 
 Jarvis je veřejně sledovaný vývojový projekt. Pro zpětnou vazbu použij prosím jednu z těchto cest:
 
-- [🐞 Nahlásit chybu / Report a bug](https://github.com/jeniksoft/app-downloads/issues/new?template=bug_report.yml)
-- [💡 Navrhnout zlepšení / Suggest an improvement](https://github.com/jeniksoft/app-downloads/issues/new?template=feature_request.yml)
-- [💬 Otevřít diskuzi / Start a discussion](https://github.com/jeniksoft/app-downloads/discussions)
+- [🐞 Nahlásit chybu](https://github.com/jeniksoft/app-downloads/issues/new?template=bug_report.yml)
+- [💡 Navrhnout zlepšení](https://github.com/jeniksoft/app-downloads/issues/new?template=feature_request.yml)
+- [💬 Otevřít diskuzi](https://github.com/jeniksoft/app-downloads/discussions)
 
 Do veřejných příspěvků nevkládej hesla, tokeny, osobní údaje ani celé soukromé logy. Přikládej pouze očištěné a nezbytné informace.
 
-## Věkové omezení / Age restriction (18+)
+## Věkové omezení (18+)
 
-**CZ:** Jarvis je určen výhradně dospělým uživatelům od 18 let. Pokud ti ještě nebylo 18 let, Jarvis nepoužívej.
-
-**EN:** Jarvis is intended exclusively for adults aged 18 and over. If you are under 18, do not use Jarvis.
+Jarvis je určen výhradně dospělým uživatelům od 18 let. Pokud ti ještě nebylo 18 let, Jarvis nepoužívej.
 
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_BEGIN -->
 ## Jarvis Personal: stav implementace z roadmapy
 
 **796 / 951 = 83.70 % s implementační evidencí**
 
-Všechny vrcholové i vnořené řezy mají stejnou váhu. Implementační evidence počítá stavy verified, implemented-unverified a release-ready; implemented-unverified není ověření ani release acceptance. Staré vážené evidenční přehledy se nezobrazují.
+Všechny vrcholové i vnořené řezy mají stejnou váhu. Implementační evidence počítá stavy ověřeno, implementováno bez ověření a připraveno k vydání; implementováno bez ověření není ověření ani přijetí vydání. Staré vážené evidenční přehledy se nezobrazují.
 
 | Roadmapová skupina | S implementační evidencí / celkem |
 | --- | ---: |
 | Platformní základy | 55 / 55 |
-| Jádro runtime | 64 / 64 |
+| Běhové jádro | 64 / 64 |
 | Personal 1.0.0 | 144 / 149 |
 | Volitelné tratě | 138 / 166 |
-| Teams | 70 / 70 |
-| Enterprise | 63 / 63 |
-| Průřezové capability tratě | 262 / 384 |
+| Tým | 70 / 70 |
+| Podnik | 63 / 63 |
+| Průřezové tratě schopností | 262 / 384 |
 
-Stav: 499 verified, 297 implemented-unverified, 0 release-ready, 4 in-progress, 149 architecture-only, 2 deferred.
+Stav: 499 ověřeno, 297 implementováno bez ověření, 0 připraveno k vydání, 4 rozpracováno, 149 pouze architektura, 2 odloženo.
 
-Toto číslo NENÍ produkční připravenost, živé QA ani release akceptace. [Detailní snapshot](progress.json) může obsahovat historická QA pole s jinou metodikou.
+Toto číslo NENÍ produkční připravenost, živé QA ani přijetí vydání. [Podrobný snímek](progress.json) může obsahovat historická QA pole s jinou metodikou.
 
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_END -->
 
 <!-- JARVIS_CAPABILITY_MAP_BEGIN -->
-## Mapa schopností: sci-fi constellation
+## Sci-fi mapa schopností
 
-![Maunder Jarvis capability constellation](visuals/capability-map.svg)
+![Mapa schopností Maunder Jarvis](visuals/capability-map.svg)
 
 Mapa je graf schopností a závislostí, ne seznam intervalů scénářů. Každý uzel
 ukazuje implementační stav, QA stav a počet přidružených scénářů; šipky vedou od
 nutných předpokladů k navazující schopnosti.
 
-**Snapshot:** doloženého baseline · zdrojová revize `documented-basel` ·
-12 capability uzlů
+**Snímek:** doloženého výchozího stavu · zdrojová revize `dokumentovaný-výchozí-stav` ·
+12 uzlů schopností
 
 | Stav | Uzly |
 | --- | ---: |
 | Ověřeno | 1 |
-| Testuje Se | 4 |
+| Testuje se | 4 |
 | Neotestováno | 6 |
 | Neimplementováno | 1 |
 
-`TESTED` znamená evidence-bound PASS, nikoli release akceptaci. `TESTING` je
+`TESTED` znamená PASS podložený důkazy, nikoli přijetí vydání. `TESTING` je
 částečně doložená nebo právě ověřovaná schopnost. `NOT_TESTED` nemá aktuální
-QA důkaz a `NOT_IMPLEMENTED` zůstává architecture-only. Graf záměrně ukazuje
+důkaz QA a `NOT_IMPLEMENTED` zůstává pouze architekturou. Graf záměrně ukazuje
 i závislosti na schopnostech, které ještě nejsou implementované.
 
 ### Aktualizace bez GitHub Actions
 
-Mapa se aktualizuje lokálně ze scénářového runtime. Jedním příkazem se z kořene
-tohoto repozitáře načte sanitizované inventory z CPM (bez promptů, tajemství a
-raw výstupů) a přegeneruje se graf:
+Mapa se aktualizuje místně ze scénářového běhu. Jedním příkazem se z kořene
+tohoto repozitáře načte očištěný seznam stavů z CPM (bez zadání, tajemství a
+surových výstupů) a znovu se vytvoří graf:
 
 ```powershell
 python tools/update_jarvis_capability_map.py --cpm-root Z:\Codex\CPM --state Z:\Codex\CPM\qa\scenario-state.json
@@ -85,16 +83,16 @@ python tools/generate_jarvis_capability_map.py --check
 ```
 
 Generátor je deterministický a mění pouze `capability-status.json`, českou a
-anglickou SVG mapu a tuto označenou README sekci. Neexistuje workflow, placený
-runner ani síťové volání; změna se publikuje běžným chráněným PR.
+anglickou SVG mapu a tuto označenou část dokumentace. Neexistuje automatizace,
+placený spouštěč ani síťové volání; změna se publikuje běžným chráněným PR.
 <!-- JARVIS_CAPABILITY_MAP_END -->
 
 ## Co se připravuje
 
-Personal 1.0.0 má být local-first osobní agent pro Windows, který může používat lokální modely, modely v LAN i uživatelem zvoleného providera a nemá vyžadovat povinný Jeniksoft inference cloud ani Jeniksoft tokenové platby.
+Personal 1.0.0 má být osobní agent pro Windows s předností místního běhu. Může používat místní modely, modely v síti LAN i uživatelem zvoleného poskytovatele a nemá vyžadovat povinný Jeniksoftův cloud pro výpočty modelů ani Jeniksoftovy tokenové platby.
 
-Vývoj se nyní soustředí především na spolehlivost, recovery, bezpečnost akcí, práci s evidencí a zdroji, memory, support/reprodukci chyb, supervised self-development, instalaci/rollback a ověření na různých skutečných počítačích.
+Vývoj se nyní soustředí především na spolehlivost, obnovu, bezpečnost akcí, práci s důkazy a zdroji, paměť, podporu a reprodukci chyb, řízený samovývoj, instalaci a návrat k předchozí verzi a ověření na různých skutečných počítačích.
 
 ## Dostupnost
 
-Veřejné datum vydání zatím není stanoveno. Verze 1.0.0 bude zveřejněna až po splnění release gates; samotný počet implementovaných funkcí není důvodem označit build za hotový.
+Veřejné datum vydání zatím není stanoveno. Verze 1.0.0 bude zveřejněna až po splnění bran vydání; samotný počet implementovaných funkcí není důvodem označit sestavení za hotové.
