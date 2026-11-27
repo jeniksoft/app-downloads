@@ -46,6 +46,8 @@ STATUS_COLORS = {
 }
 NODE_WIDTH = 300
 NODE_HEIGHT = 118
+NODE_START_Y = 230
+NODE_STEP_Y = 145
 NODE_TEXT_X_OFFSET = 43
 NODE_TEXT_MAX_WIDTH = NODE_WIDTH - NODE_TEXT_X_OFFSET - 22
 SUBTITLE_LINE_HEIGHT = 14
@@ -53,6 +55,7 @@ STATUS_BADGE_HEIGHT = 22
 STATUS_BADGE_GAP = 12
 STATUS_BADGE_FONT_SIZE = 11
 STATUS_BADGE_LETTER_SPACING = 1
+LEGEND_Y = 960
 RANGE_RE = re.compile(r"^F(\d+)[-\u2013]F(\d+)$")
 ID_RE = re.compile(r"^F\d+$")
 
@@ -278,7 +281,7 @@ def render_svg(definition: dict[str, Any], snapshot: dict[str, Any], language: s
         per_layer.setdefault(node["layer"], []).append(node)
     for layer in layers:
         for index, node in enumerate(per_layer.get(layer["id"], [])):
-            positions[node["id"]] = (column_x[layer["id"]], 230 + index * 145)
+            positions[node["id"]] = (column_x[layer["id"]], NODE_START_Y + index * NODE_STEP_Y)
 
     edges: list[str] = []
     for node in nodes:
@@ -360,7 +363,7 @@ def render_svg(definition: dict[str, Any], snapshot: dict[str, Any], language: s
             f'<text x="{x + NODE_WIDTH - 22}" y="{y + 101}" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">{xml_text(coverage)} QA</text>',
             '</g>',
         ])
-    legend_y = 930
+    legend_y = LEGEND_Y
     legend_x = 80
     svg.append(f'<text x="{legend_x}" y="{legend_y - 24}" fill="#728ebd" font-family="Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="2">{"STATUS LEGEND" if english else "LEGENDA STAVŮ"}</text>')
     for index, status in enumerate(STATUS_ORDER):

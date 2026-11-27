@@ -97,6 +97,12 @@ class CapabilityMapGeneratorTests(unittest.TestCase):
                 status,
             )
 
+        nodes_per_layer = {}
+        for node in self.definition["nodes"]:
+            nodes_per_layer[node["layer"]] = nodes_per_layer.get(node["layer"], 0) + 1
+        max_card_bottom = generator.NODE_START_Y + (max(nodes_per_layer.values()) - 1) * generator.NODE_STEP_Y + generator.NODE_HEIGHT
+        self.assertLess(max_card_bottom + 6, generator.LEGEND_Y)
+
 
 if __name__ == "__main__":
     unittest.main()
