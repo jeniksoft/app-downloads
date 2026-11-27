@@ -282,6 +282,52 @@ volání; změna se publikuje běžným chráněným PR.
 <!-- JARVIS_CAPABILITY_MAP_END -->"""
 
 
+def render_readme_section_en(snapshot: dict[str, Any]) -> str:
+    counts = snapshot["status_counts"]
+    live = "live scenario inventory" if snapshot["live_inventory_used"] else "documented baseline"
+    rows = "\n".join(
+        f"| {status.replace('_', ' ').title()} | {counts[status]} |"
+        for status in STATUS_ORDER
+    )
+    return f"""<!-- JARVIS_CAPABILITY_MAP_BEGIN -->
+## Capability constellation
+
+![Maunder Jarvis capability constellation](visuals/capability-map.svg)
+
+This is a dependency graph of capabilities, not a list of scenario ranges.
+Each node shows implementation state, QA state and associated scenario
+coverage; arrows point from prerequisites to dependent capabilities.
+
+**Snapshot:** {live} · source revision `{snapshot["source_revision"][:16]}` ·
+{snapshot["node_count"]} capability nodes
+
+| State | Nodes |
+| --- | ---: |
+{rows}
+
+`TESTED` means evidence-bound PASS, not release acceptance. `TESTING` means
+that part of the capability is evidenced or currently being verified.
+`NOT_TESTED` has no current QA evidence. `NOT_IMPLEMENTED` remains
+architecture-only. The graph intentionally includes future dependencies.
+
+### Updating without GitHub Actions
+
+Refresh the map locally from the scenario runtime. From this repository, run
+one command with a local CPM checkout and its sanitised scenario ledger:
+
+```powershell
+python tools/update_jarvis_capability_map.py --cpm-root Z:\\Codex\\CPM --state Z:\\Codex\\CPM\\qa\\scenario-state.json
+python tools/generate_jarvis_capability_map.py --check
+```
+
+The bridge transfers only machine-readable inventory: no prompts, secrets or
+raw model output. The generator is deterministic and changes only
+`capability-status.json`, the SVG map and the marked README sections. There is
+no workflow, paid runner or network call; publish changes through a normal
+protected PR.
+<!-- JARVIS_CAPABILITY_MAP_END -->"""
+
+
 def update_readme(path: Path, section: str) -> None:
     original = path.read_text(encoding="utf-8") if path.exists() else ""
     pattern = re.compile(r"<!-- JARVIS_CAPABILITY_MAP_BEGIN -->.*?<!-- JARVIS_CAPABILITY_MAP_END -->", re.S)
@@ -314,22 +360,27 @@ def main(argv: list[str] | None = None) -> int:
     status_path = root / "apps/jarvis/capability-status.json"
     svg_path = root / "apps/jarvis/visuals/capability-map.svg"
     readme_path = root / "apps/jarvis/README.md"
+    readme_en_path = root / "apps/jarvis/README.en.md"
     status_text = json.dumps(snapshot, ensure_ascii=False, sort_keys=True, indent=2) + "\n"
     svg_text = render_svg(definition, snapshot)
     current_status = status_path.read_text(encoding="utf-8") if status_path.exists() else None
     current_svg = svg_path.read_text(encoding="utf-8") if svg_path.exists() else None
     current_readme = readme_path.read_text(encoding="utf-8") if readme_path.exists() else ""
+    current_readme_en = readme_en_path.read_text(encoding="utf-8") if readme_en_path.exists() else ""
     section = render_readme_section(snapshot)
+    section_en = render_readme_section_en(snapshot)
     pattern = re.compile(r"<!-- JARVIS_CAPABILITY_MAP_BEGIN -->.*?<!-- JARVIS_CAPABILITY_MAP_END -->", re.S)
     expected_readme = pattern.sub(lambda _match: section, current_readme) if pattern.search(current_readme) else current_readme
+    expected_readme_en = pattern.sub(lambda _match: section_en, current_readme_en) if pattern.search(current_readme_en) else current_readme_en
     if args.check:
-        if current_status != status_text or current_svg != svg_text or (pattern.search(current_readme) and expected_readme != current_readme):
+        if current_status != status_text or current_svg != svg_text or (pattern.search(current_readme) and expected_readme != current_readme) or (pattern.search(current_readme_en) and expected_readme_en != current_readme_en):
             return 1
         return 0
     write_json(status_path, snapshot)
     svg_path.parent.mkdir(parents=True, exist_ok=True)
     svg_path.write_text(svg_text, encoding="utf-8")
     update_readme(readme_path, section)
+    update_readme(readme_en_path, section_en)
     return 0
 
 
