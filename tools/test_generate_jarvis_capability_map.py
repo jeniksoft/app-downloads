@@ -57,6 +57,8 @@ class CapabilityMapGeneratorTests(unittest.TestCase):
         ET.fromstring(english)
         self.assertIn("MAPA SCHOPNOSTÍ", first)
         self.assertIn("Běhové jádro", first)
+        self.assertIn("Vytváření 3D a CAD", first)
+        self.assertIn("seznam schválených poskytovatelů", first)
         self.assertNotIn("Core runtime", first)
         self.assertNotIn("documented-basel", first)
         self.assertIn("CAPABILITY CONSTELLATION", english)
@@ -77,10 +79,23 @@ class CapabilityMapGeneratorTests(unittest.TestCase):
             "Instalace a migrace",
             "Důkazy a uzavření",
             "Doplňky a rozšíření",
-            "Tvořivé 3D a CAD",
+            "Vytváření 3D a CAD",
         }
         self.assertEqual({node["label_cs"] for node in self.definition["nodes"]}, expected_czech)
         self.assertTrue(all(node["label_en"] for node in self.definition["nodes"]))
+        for node in self.definition["nodes"]:
+            label = node["label_cs"]
+            size = generator.fit_svg_font_size(label, generator.NODE_TEXT_MAX_WIDTH, 19, 15)
+            self.assertLessEqual(generator.estimate_svg_text_width(label, size), generator.NODE_TEXT_MAX_WIDTH + 0.01)
+            subtitle_lines = generator.wrap_svg_text(node["subtitle_cs"], generator.NODE_TEXT_MAX_WIDTH, 12)
+            self.assertLessEqual(len(subtitle_lines), 2, node["id"])
+        for status in generator.STATUS_LABELS.values():
+            width, font_size, _ = generator.status_badge_layout(status, "0/160")
+            self.assertLessEqual(
+                generator.estimate_svg_text_width(status, font_size, generator.STATUS_BADGE_LETTER_SPACING),
+                width - 24 + 0.01,
+                status,
+            )
 
 
 if __name__ == "__main__":
