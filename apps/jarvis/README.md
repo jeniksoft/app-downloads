@@ -75,18 +75,18 @@ i závislosti na schopnostech, které ještě nejsou implementované.
 
 ### Aktualizace bez GitHub Actions
 
-Mapa se aktualizuje lokálně ze scénářového runtime. Z kořene CPM nejprve
-vyexportuj sanitizované inventory (bez promptů, tajemství a raw výstupů), potom
-spusť generátor v tomto repozitáři:
+Mapa se aktualizuje lokálně ze scénářového runtime. Jedním příkazem se z kořene
+tohoto repozitáře načte sanitizované inventory z CPM (bez promptů, tajemství a
+raw výstupů) a přegeneruje se graf:
 
 ```powershell
-python tools/jarvis/tools/scenario_pyramid_runtime.py --repo-root Z:\Codex\CPM --state Z:\Codex\CPM\qa\scenario-state.json inventory > E:\app-downloads\apps\jarvis\scenario-inventory.json
-python tools/generate_jarvis_capability_map.py --inventory apps/jarvis/scenario-inventory.json
+python tools/update_jarvis_capability_map.py --cpm-root Z:\Codex\CPM --state Z:\Codex\CPM\qa\scenario-state.json
+python tools/generate_jarvis_capability_map.py --check
 ```
 
-Generátor je deterministický a mění pouze `capability-status.json`, SVG mapu a
-tuto označenou README sekci. Neexistuje workflow, placený runner ani síťové
-volání; změna se publikuje běžným chráněným PR.
+Generátor je deterministický a mění pouze `capability-status.json`, českou a
+anglickou SVG mapu a tuto označenou README sekci. Neexistuje workflow, placený
+runner ani síťové volání; změna se publikuje běžným chráněným PR.
 <!-- JARVIS_CAPABILITY_MAP_END -->
 
 ## Co se připravuje

@@ -9,6 +9,7 @@
       "id": "core-runtime",
       "implementation": "implemented",
       "label_cs": "Core runtime",
+      "label_en": "Core runtime",
       "layer": "foundation",
       "observed_scenarios": 20,
       "order": 0,
@@ -21,7 +22,8 @@
       "status": "TESTED",
       "status_color": "#35f2b4",
       "status_label_cs": "OVĚŘENO",
-      "subtitle_cs": "chat · route · Worker · důkazy"
+      "subtitle_cs": "chat · route · Worker · důkazy",
+      "subtitle_en": "chat · route · Worker · evidence"
     },
     {
       "attention_scenarios": 0,
@@ -32,6 +34,7 @@
       "id": "policy-safety",
       "implementation": "implemented",
       "label_cs": "Policy & safety",
+      "label_en": "Policy & safety",
       "layer": "foundation",
       "observed_scenarios": 3,
       "order": 1,
@@ -45,7 +48,8 @@
       "status": "TESTING",
       "status_color": "#ffc857",
       "status_label_cs": "TESTUJE SE",
-      "subtitle_cs": "authority · deny · confirmation"
+      "subtitle_cs": "authority · deny · confirmation",
+      "subtitle_en": "authority · denial · confirmation"
     },
     {
       "attention_scenarios": 0,
@@ -57,6 +61,7 @@
       "id": "developer-agent",
       "implementation": "implemented",
       "label_cs": "Developer agent",
+      "label_en": "Developer agent",
       "layer": "agent",
       "observed_scenarios": 4,
       "order": 0,
@@ -70,7 +75,8 @@
       "status": "TESTING",
       "status_color": "#ffc857",
       "status_label_cs": "TESTUJE SE",
-      "subtitle_cs": "workspace · edit · build · read-back"
+      "subtitle_cs": "workspace · edit · build · read-back",
+      "subtitle_en": "workspace · edit · build · read-back"
     },
     {
       "attention_scenarios": 0,
@@ -82,6 +88,7 @@
       "id": "model-inference",
       "implementation": "implemented",
       "label_cs": "Model inference",
+      "label_en": "Model inference",
       "layer": "agent",
       "observed_scenarios": 10,
       "order": 1,
@@ -95,7 +102,8 @@
       "status": "TESTING",
       "status_color": "#ffc857",
       "status_label_cs": "TESTUJE SE",
-      "subtitle_cs": "role · catalog · local-first"
+      "subtitle_cs": "role · catalog · local-first",
+      "subtitle_en": "role · catalog · local-first"
     },
     {
       "attention_scenarios": 0,
@@ -107,6 +115,7 @@
       "id": "recovery-ops",
       "implementation": "implemented",
       "label_cs": "Recovery & operations",
+      "label_en": "Recovery & operations",
       "layer": "operations",
       "observed_scenarios": 14,
       "order": 0,
@@ -121,7 +130,8 @@
       "status": "TESTING",
       "status_color": "#ffc857",
       "status_label_cs": "TESTUJE SE",
-      "subtitle_cs": "pause · resume · restart · journal"
+      "subtitle_cs": "pause · resume · restart · journal",
+      "subtitle_en": "pause · resume · restart · journal"
     },
     {
       "attention_scenarios": 0,
@@ -132,6 +142,7 @@
       "id": "workspace-git",
       "implementation": "implemented",
       "label_cs": "Workspace & Git",
+      "label_en": "Workspace & Git",
       "layer": "agent",
       "observed_scenarios": 0,
       "order": 2,
@@ -144,7 +155,8 @@
       "status": "NOT_TESTED",
       "status_color": "#6ca8ff",
       "status_label_cs": "NEOTESTOVÁNO",
-      "subtitle_cs": "scope · worktree · commit · migration"
+      "subtitle_cs": "scope · worktree · commit · migration",
+      "subtitle_en": "scope · worktree · commit · migration"
     },
     {
       "attention_scenarios": 0,
@@ -156,6 +168,7 @@
       "id": "ui-desktop",
       "implementation": "implemented",
       "label_cs": "UI & desktop control",
+      "label_en": "UI & desktop control",
       "layer": "operations",
       "observed_scenarios": 0,
       "order": 1,
@@ -171,7 +184,8 @@
       "status": "NOT_TESTED",
       "status_color": "#6ca8ff",
       "status_label_cs": "NEOTESTOVÁNO",
-      "subtitle_cs": "WDUi · UIA · Tyr · target effect"
+      "subtitle_cs": "WDUi · UIA · Tyr · target effect",
+      "subtitle_en": "WDUi · UIA · Tyr · target effect"
     },
     {
       "attention_scenarios": 0,
@@ -183,6 +197,7 @@
       "id": "credentials-providers",
       "implementation": "implemented",
       "label_cs": "Credentials & providers",
+      "label_en": "Credentials & providers",
       "layer": "operations",
       "observed_scenarios": 0,
       "order": 2,
@@ -197,7 +212,8 @@
       "status": "NOT_TESTED",
       "status_color": "#6ca8ff",
       "status_label_cs": "NEOTESTOVÁNO",
-      "subtitle_cs": "allowlist · cost · privacy · fallback"
+      "subtitle_cs": "allowlist · cost · privacy · fallback",
+      "subtitle_en": "allowlist · cost · privacy · fallback"
     },
     {
       "attention_scenarios": 0,
@@ -209,6 +225,7 @@
       "id": "setup-migration",
       "implementation": "implemented",
       "label_cs": "Setup & migration",
+      "label_en": "Setup & migration",
       "layer": "operations",
       "observed_scenarios": 0,
       "order": 3,
@@ -224,7 +241,8 @@
       "status": "NOT_TESTED",
       "status_color": "#6ca8ff",
       "status_label_cs": "NEOTESTOVÁNO",
-      "subtitle_cs": "pairing · rollback · service hand-off"
+      "subtitle_cs": "pairing · rollback · service hand-off",
+      "subtitle_en": "pairing · rollback · service hand-off"
     },
     {
       "attention_scenarios": 0,
@@ -237,6 +255,7 @@
       "id": "evidence-closeout",
       "implementation": "implemented",
       "label_cs": "Evidence & closeout",
+      "label_en": "Evidence & closeout",
       "layer": "operations",
       "observed_scenarios": 0,
       "order": 4,
@@ -250,7 +269,8 @@
       "status": "NOT_TESTED",
       "status_color": "#6ca8ff",
       "status_label_cs": "NEOTESTOVÁNO",
-      "subtitle_cs": "receipt · semantic oracle · publication"
+      "subtitle_cs": "receipt · semantic oracle · publication",
+      "subtitle_en": "receipt · semantic oracle · publication"
     },
     {
       "attention_scenarios": 0,
@@ -262,6 +282,7 @@
       "id": "plugin-extensions",
       "implementation": "implemented",
       "label_cs": "Plugins & extensions",
+      "label_en": "Plugins & extensions",
       "layer": "frontier",
       "observed_scenarios": 0,
       "order": 0,
@@ -273,7 +294,8 @@
       "status": "NOT_TESTED",
       "status_color": "#6ca8ff",
       "status_label_cs": "NEOTESTOVÁNO",
-      "subtitle_cs": "admission · MCP · isolation"
+      "subtitle_cs": "admission · MCP · isolation",
+      "subtitle_en": "admission · MCP · isolation"
     },
     {
       "attention_scenarios": 0,
@@ -286,6 +308,7 @@
       "id": "cad-3d",
       "implementation": "architecture-only",
       "label_cs": "Creative 3D & CAD",
+      "label_en": "Creative 3D & CAD",
       "layer": "frontier",
       "observed_scenarios": 0,
       "order": 1,
@@ -295,7 +318,8 @@
       "status": "NOT_IMPLEMENTED",
       "status_color": "#ff5f8f",
       "status_label_cs": "NEIMPLEMENTOVÁNO",
-      "subtitle_cs": "G3D0–G3D14 · architecture-only"
+      "subtitle_cs": "G3D0–G3D14 · architecture-only",
+      "subtitle_en": "G3D0–G3D14 · architecture-only"
     }
   ],
   "note_cs": "Výchozí mapa používá pouze sanitizovaný baseline z dokumentované evidence; pro živý stav předejte inventory ze scénářového runtime.",

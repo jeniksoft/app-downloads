@@ -49,12 +49,17 @@ class CapabilityMapGeneratorTests(unittest.TestCase):
 
     def test_svg_is_well_formed_and_deterministic(self) -> None:
         snapshot = generator.build_snapshot(self.definition, None)
-        first = generator.render_svg(self.definition, snapshot)
-        second = generator.render_svg(self.definition, snapshot)
+        first = generator.render_svg(self.definition, snapshot, "cs")
+        second = generator.render_svg(self.definition, snapshot, "cs")
+        english = generator.render_svg(self.definition, snapshot, "en")
         self.assertEqual(first, second)
         ET.fromstring(first)
-        self.assertIn("CAPABILITY CONSTELLATION", first)
-        self.assertIn("TESTED", first)
+        ET.fromstring(english)
+        self.assertIn("MAPA SCHOPNOSTÍ", first)
+        self.assertIn("CAPABILITY CONSTELLATION", english)
+        self.assertIn("core and authority", english)
+        self.assertNotIn("jádro a autorita", english)
+        self.assertIn("TESTED", english)
 
 
 if __name__ == "__main__":

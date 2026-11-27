@@ -26,6 +26,12 @@ STATUS_LABELS = {
     "NOT_TESTED": "NEOTESTOVÁNO",
     "NOT_IMPLEMENTED": "NEIMPLEMENTOVÁNO",
 }
+STATUS_LABELS_EN = {
+    "TESTED": "TESTED",
+    "TESTING": "TESTING",
+    "NOT_TESTED": "NOT TESTED",
+    "NOT_IMPLEMENTED": "NOT IMPLEMENTED",
+}
 STATUS_COLORS = {
     "TESTED": "#35f2b4",
     "TESTING": "#ffc857",
@@ -107,7 +113,9 @@ def summarise_node(node: dict[str, Any], inventory: dict[str, dict[str, Any]], l
         "layer": node["layer"],
         "order": int(node.get("order", 0)),
         "label_cs": node["label_cs"],
+        "label_en": node.get("label_en", node["label_cs"]),
         "subtitle_cs": node.get("subtitle_cs", ""),
+        "subtitle_en": node.get("subtitle_en", node.get("subtitle_cs", "")),
         "dependencies": list(node.get("dependencies", [])),
         "scenario_blocks": blocks,
         "implementation": implementation,
@@ -146,7 +154,8 @@ def xml_text(value: Any) -> str:
     return html.escape(str(value), quote=True)
 
 
-def render_svg(definition: dict[str, Any], snapshot: dict[str, Any]) -> str:
+def render_svg(definition: dict[str, Any], snapshot: dict[str, Any], language: str = "cs") -> str:
+    english = language.lower() == "en"
     layers = sorted(definition["layers"], key=lambda item: int(item.get("order", 0)))
     layer_lookup = {layer["id"]: layer for layer in layers}
     nodes = sorted(snapshot["nodes"], key=lambda item: (int(layer_lookup[item["layer"]].get("order", 0)), item["order"]))
@@ -175,11 +184,21 @@ def render_svg(definition: dict[str, Any], snapshot: dict[str, Any]) -> str:
 
     summary = snapshot["status_counts"]
     total = snapshot["node_count"]
-    live = "LIVE INVENTORY" if snapshot["live_inventory_used"] else "DOCUMENTED BASELINE"
+    live = ("LIVE INVENTORY" if snapshot["live_inventory_used"] else "DOCUMENTED BASELINE") if english else ("ŽIVÉ INVENTORY" if snapshot["live_inventory_used"] else "DOKUMENTOVANÝ BASELINE")
+    title = "Maunder Jarvis capability constellation" if english else "Maunder Jarvis mapa schopností"
+    description = (
+        "Sci-fi dependency map of Jarvis capabilities with tested, testing, not tested and not implemented states."
+        if english
+        else "Sci-fi mapa závislostí schopností Jarvise se stavy ověřeno, testuje se, neotestováno a neimplementováno."
+    )
+    heading = "CAPABILITY CONSTELLATION" if english else "MAPA SCHOPNOSTÍ"
+    node_caption = "CAPABILITY NODES" if english else "UZLŮ SCHOPNOSTÍ"
+    tested_caption = "TESTED" if english else "OVĚŘENO"
+    testing_caption = "TESTING" if english else "TESTUJE SE"
     svg: list[str] = [
         '<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 1580 1000" width="1580" height="1000">',
-        '<title id="title">Maunder Jarvis capability constellation</title>',
-        '<desc id="desc">Sci-fi dependency map of Jarvis capabilities with tested, testing, not tested and not implemented states.</desc>',
+        f'<title id="title">{xml_text(title)}</title>',
+        f'<desc id="desc">{xml_text(description)}</desc>',
         """<defs>
           <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#050b1e"/><stop offset="0.5" stop-color="#101a38"/><stop offset="1" stop-color="#070b18"/></linearGradient>
           <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#172955" stop-opacity=".95"/><stop offset="1" stop-color="#0b1430" stop-opacity=".96"/></linearGradient>
@@ -191,26 +210,26 @@ def render_svg(definition: dict[str, Any], snapshot: dict[str, Any]) -> str:
         '<rect x="20" y="20" width="1540" height="960" rx="24" fill="url(#grid)" stroke="#31568f" stroke-opacity=".7"/>',
         '<circle cx="1470" cy="80" r="240" fill="#1d62a8" opacity=".08" filter="url(#glow)"/>',
         '<text x="70" y="78" fill="#8fbaff" font-family="Segoe UI,Arial,sans-serif" font-size="18" letter-spacing="4">MAUNDER / JARVIS</text>',
-        '<text x="70" y="125" fill="#f4f8ff" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="700" letter-spacing="2">CAPABILITY CONSTELLATION</text>',
+        f'<text x="70" y="125" fill="#f4f8ff" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="700" letter-spacing="2">{heading}</text>',
         f'<text x="70" y="157" fill="#93a9ce" font-family="Segoe UI,Arial,sans-serif" font-size="16">DEPENDENCY GRAPH · {xml_text(live)} · {xml_text(snapshot["source_revision"][:16])}</text>',
-        f'<text x="1390" y="90" fill="#d9e7ff" font-family="Segoe UI,Arial,sans-serif" font-size="18" text-anchor="end">{total} CAPABILITY NODES</text>',
-        f'<text x="1390" y="120" fill="#35f2b4" font-family="Segoe UI,Arial,sans-serif" font-size="17" text-anchor="end">{summary["TESTED"]} TESTED</text>',
-        f'<text x="1390" y="148" fill="#ffc857" font-family="Segoe UI,Arial,sans-serif" font-size="17" text-anchor="end">{summary["TESTING"]} TESTING</text>',
+        f'<text x="1390" y="90" fill="#d9e7ff" font-family="Segoe UI,Arial,sans-serif" font-size="18" text-anchor="end">{total} {node_caption}</text>',
+        f'<text x="1390" y="120" fill="#35f2b4" font-family="Segoe UI,Arial,sans-serif" font-size="17" text-anchor="end">{summary["TESTED"]} {tested_caption}</text>',
+        f'<text x="1390" y="148" fill="#ffc857" font-family="Segoe UI,Arial,sans-serif" font-size="17" text-anchor="end">{summary["TESTING"]} {testing_caption}</text>',
         '<line x1="70" y1="180" x2="1510" y2="180" stroke="#4676bd" stroke-opacity=".5"/>',
     ]
     for layer in layers:
         x = column_x[layer["id"]]
         svg.extend([
-            f'<text x="{x}" y="210" fill="#a9c8ff" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="2">{xml_text(layer["label"])}</text>',
-            f'<text x="{x}" y="232" fill="#617aa5" font-family="Segoe UI,Arial,sans-serif" font-size="12">{xml_text(layer["subtitle"])}</text>',
+            f'<text x="{x}" y="210" fill="#a9c8ff" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="2">{xml_text(layer.get("label_en", layer["label"]) if english else layer["label"])}</text>',
+            f'<text x="{x}" y="232" fill="#617aa5" font-family="Segoe UI,Arial,sans-serif" font-size="12">{xml_text(layer.get("subtitle_en", layer["subtitle"]) if english else layer["subtitle"])}</text>',
         ])
     svg.extend(edges)
     for node in nodes:
         x, y = positions[node["id"]]
         color = node["status_color"]
-        label = xml_text(node["label_cs"])
-        subtitle = xml_text(node["subtitle_cs"])
-        status = xml_text(node["status_label_cs"])
+        label = xml_text(node["label_en"] if english else node["label_cs"])
+        subtitle = xml_text(node["subtitle_en"] if english else node["subtitle_cs"])
+        status = xml_text(STATUS_LABELS_EN[node["status"]] if english else node["status_label_cs"])
         coverage = f'{node["passed_scenarios"]}/{node["planned_scenarios"]}'
         svg.extend([
             f'<g class="node" id="node-{xml_text(node["id"])}">',
@@ -225,13 +244,13 @@ def render_svg(definition: dict[str, Any], snapshot: dict[str, Any]) -> str:
         ])
     legend_y = 930
     legend_x = 80
-    svg.append(f'<text x="{legend_x}" y="{legend_y - 24}" fill="#728ebd" font-family="Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="2">STATUS LEGEND</text>')
+    svg.append(f'<text x="{legend_x}" y="{legend_y - 24}" fill="#728ebd" font-family="Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="2">{"STATUS LEGEND" if english else "LEGENDA STAVŮ"}</text>')
     for index, status in enumerate(STATUS_ORDER):
         x = legend_x + index * 260
         color = STATUS_COLORS[status]
         svg.extend([
             f'<circle cx="{x + 7}" cy="{legend_y}" r="6" fill="{color}" filter="url(#glow)"/>',
-            f'<text x="{x + 23}" y="{legend_y + 5}" fill="#cfe0ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">{xml_text(STATUS_LABELS[status])}</text>',
+            f'<text x="{x + 23}" y="{legend_y + 5}" fill="#cfe0ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">{xml_text(STATUS_LABELS_EN[status] if english else STATUS_LABELS[status])}</text>',
         ])
     svg.append('</svg>')
     return "\n".join(svg) + "\n"
@@ -267,18 +286,18 @@ i závislosti na schopnostech, které ještě nejsou implementované.
 
 ### Aktualizace bez GitHub Actions
 
-Mapa se aktualizuje lokálně ze scénářového runtime. Z kořene CPM nejprve
-vyexportuj sanitizované inventory (bez promptů, tajemství a raw výstupů), potom
-spusť generátor v tomto repozitáři:
+Mapa se aktualizuje lokálně ze scénářového runtime. Jedním příkazem se z kořene
+tohoto repozitáře načte sanitizované inventory z CPM (bez promptů, tajemství a
+raw výstupů) a přegeneruje se graf:
 
 ```powershell
-python tools/jarvis/tools/scenario_pyramid_runtime.py --repo-root Z:\\Codex\\CPM --state Z:\\Codex\\CPM\\qa\\scenario-state.json inventory > E:\\app-downloads\\apps\\jarvis\\scenario-inventory.json
-python tools/generate_jarvis_capability_map.py --inventory apps/jarvis/scenario-inventory.json
+python tools/update_jarvis_capability_map.py --cpm-root Z:\\Codex\\CPM --state Z:\\Codex\\CPM\\qa\\scenario-state.json
+python tools/generate_jarvis_capability_map.py --check
 ```
 
-Generátor je deterministický a mění pouze `capability-status.json`, SVG mapu a
-tuto označenou README sekci. Neexistuje workflow, placený runner ani síťové
-volání; změna se publikuje běžným chráněným PR.
+Generátor je deterministický a mění pouze `capability-status.json`, českou a
+anglickou SVG mapu a tuto označenou README sekci. Neexistuje workflow, placený
+runner ani síťové volání; změna se publikuje běžným chráněným PR.
 <!-- JARVIS_CAPABILITY_MAP_END -->"""
 
 
@@ -292,7 +311,7 @@ def render_readme_section_en(snapshot: dict[str, Any]) -> str:
     return f"""<!-- JARVIS_CAPABILITY_MAP_BEGIN -->
 ## Capability constellation
 
-![Maunder Jarvis capability constellation](visuals/capability-map.svg)
+![Maunder Jarvis capability constellation](visuals/capability-map.en.svg)
 
 This is a dependency graph of capabilities, not a list of scenario ranges.
 Each node shows implementation state, QA state and associated scenario
@@ -322,9 +341,9 @@ python tools/generate_jarvis_capability_map.py --check
 
 The bridge transfers only machine-readable inventory: no prompts, secrets or
 raw model output. The generator is deterministic and changes only
-`capability-status.json`, the SVG map and the marked README sections. There is
-no workflow, paid runner or network call; publish changes through a normal
-protected PR.
+`capability-status.json`, both language SVG maps and the marked README
+sections. There is no workflow, paid runner or network call; publish changes
+through a normal protected PR.
 <!-- JARVIS_CAPABILITY_MAP_END -->"""
 
 
@@ -359,12 +378,15 @@ def main(argv: list[str] | None = None) -> int:
     snapshot = build_snapshot(definition, inventory_path)
     status_path = root / "apps/jarvis/capability-status.json"
     svg_path = root / "apps/jarvis/visuals/capability-map.svg"
+    svg_en_path = root / "apps/jarvis/visuals/capability-map.en.svg"
     readme_path = root / "apps/jarvis/README.md"
     readme_en_path = root / "apps/jarvis/README.en.md"
     status_text = json.dumps(snapshot, ensure_ascii=False, sort_keys=True, indent=2) + "\n"
-    svg_text = render_svg(definition, snapshot)
+    svg_text = render_svg(definition, snapshot, "cs")
+    svg_en_text = render_svg(definition, snapshot, "en")
     current_status = status_path.read_text(encoding="utf-8") if status_path.exists() else None
     current_svg = svg_path.read_text(encoding="utf-8") if svg_path.exists() else None
+    current_svg_en = svg_en_path.read_text(encoding="utf-8") if svg_en_path.exists() else None
     current_readme = readme_path.read_text(encoding="utf-8") if readme_path.exists() else ""
     current_readme_en = readme_en_path.read_text(encoding="utf-8") if readme_en_path.exists() else ""
     section = render_readme_section(snapshot)
@@ -373,12 +395,13 @@ def main(argv: list[str] | None = None) -> int:
     expected_readme = pattern.sub(lambda _match: section, current_readme) if pattern.search(current_readme) else current_readme
     expected_readme_en = pattern.sub(lambda _match: section_en, current_readme_en) if pattern.search(current_readme_en) else current_readme_en
     if args.check:
-        if current_status != status_text or current_svg != svg_text or (pattern.search(current_readme) and expected_readme != current_readme) or (pattern.search(current_readme_en) and expected_readme_en != current_readme_en):
+        if current_status != status_text or current_svg != svg_text or current_svg_en != svg_en_text or (pattern.search(current_readme) and expected_readme != current_readme) or (pattern.search(current_readme_en) and expected_readme_en != current_readme_en):
             return 1
         return 0
     write_json(status_path, snapshot)
     svg_path.parent.mkdir(parents=True, exist_ok=True)
     svg_path.write_text(svg_text, encoding="utf-8")
+    svg_en_path.write_text(svg_en_text, encoding="utf-8")
     update_readme(readme_path, section)
     update_readme(readme_en_path, section_en)
     return 0
