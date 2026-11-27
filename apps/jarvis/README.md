@@ -45,6 +45,46 @@ Toto číslo NENÍ produkční připravenost, živé QA ani release akceptace. [
 
 <!-- JARVIS_IMPLEMENTATION_PROGRESS_END -->
 
+<!-- JARVIS_CAPABILITY_MAP_BEGIN -->
+## Mapa schopností: sci-fi constellation
+
+![Maunder Jarvis capability constellation](visuals/capability-map.svg)
+
+Mapa je graf schopností a závislostí, ne seznam intervalů scénářů. Každý uzel
+ukazuje implementační stav, QA stav a počet přidružených scénářů; šipky vedou od
+nutných předpokladů k navazující schopnosti.
+
+**Snapshot:** doloženého baseline · zdrojová revize `documented-basel` ·
+12 capability uzlů
+
+| Stav | Uzly |
+| --- | ---: |
+| Ověřeno | 1 |
+| Testuje Se | 4 |
+| Neotestováno | 6 |
+| Neimplementováno | 1 |
+
+`TESTED` znamená evidence-bound PASS, nikoli release akceptaci. `TESTING` je
+částečně doložená nebo právě ověřovaná schopnost. `NOT_TESTED` nemá aktuální
+QA důkaz a `NOT_IMPLEMENTED` zůstává architecture-only. Graf záměrně ukazuje
+i závislosti na schopnostech, které ještě nejsou implementované.
+
+### Aktualizace bez GitHub Actions
+
+Mapa se aktualizuje lokálně ze scénářového runtime. Z kořene CPM nejprve
+vyexportuj sanitizované inventory (bez promptů, tajemství a raw výstupů), potom
+spusť generátor v tomto repozitáři:
+
+```powershell
+python tools/jarvis/tools/scenario_pyramid_runtime.py --repo-root Z:\Codex\CPM --state Z:\Codex\CPM\qa\scenario-state.json inventory > E:\app-downloads\apps\jarvis\scenario-inventory.json
+python tools/generate_jarvis_capability_map.py --inventory apps/jarvis/scenario-inventory.json
+```
+
+Generátor je deterministický a mění pouze `capability-status.json`, SVG mapu a
+tuto označenou README sekci. Neexistuje workflow, placený runner ani síťové
+volání; změna se publikuje běžným chráněným PR.
+<!-- JARVIS_CAPABILITY_MAP_END -->
+
 ## Co se připravuje
 
 Personal 1.0.0 má být local-first osobní agent pro Windows, který může používat lokální modely, modely v LAN i uživatelem zvoleného providera a nemá vyžadovat povinný Jeniksoft inference cloud ani Jeniksoft tokenové platby.

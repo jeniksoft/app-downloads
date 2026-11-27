@@ -1,0 +1,311 @@
+{
+  "live_inventory_used": false,
+  "node_count": 12,
+  "nodes": [
+    {
+      "attention_scenarios": 0,
+      "baseline_note_cs": "Historicky doložené F00–F19; nový host musí receipt znovu vytvořit.",
+      "dependencies": [],
+      "id": "core-runtime",
+      "implementation": "implemented",
+      "label_cs": "Core runtime",
+      "layer": "foundation",
+      "observed_scenarios": 20,
+      "order": 0,
+      "passed_scenarios": 20,
+      "planned_scenarios": 20,
+      "scenario_blocks": [
+        "F00-F09",
+        "F10-F19"
+      ],
+      "status": "TESTED",
+      "status_color": "#35f2b4",
+      "status_label_cs": "OVĚŘENO",
+      "subtitle_cs": "chat · route · Worker · důkazy"
+    },
+    {
+      "attention_scenarios": 0,
+      "baseline_note_cs": "Evidence je rozprostřená přes starší dogfood a čeká na blokové sjednocení.",
+      "dependencies": [
+        "core-runtime"
+      ],
+      "id": "policy-safety",
+      "implementation": "implemented",
+      "label_cs": "Policy & safety",
+      "layer": "foundation",
+      "observed_scenarios": 3,
+      "order": 1,
+      "passed_scenarios": 3,
+      "planned_scenarios": 40,
+      "scenario_blocks": [
+        "F30-F39",
+        "F76-F85",
+        "F120-F139"
+      ],
+      "status": "TESTING",
+      "status_color": "#ffc857",
+      "status_label_cs": "TESTUJE SE",
+      "subtitle_cs": "authority · deny · confirmation"
+    },
+    {
+      "attention_scenarios": 0,
+      "baseline_note_cs": "Základní read/search/write/build scénáře doložené, rozšířený blok se doplňuje.",
+      "dependencies": [
+        "core-runtime",
+        "policy-safety"
+      ],
+      "id": "developer-agent",
+      "implementation": "implemented",
+      "label_cs": "Developer agent",
+      "layer": "agent",
+      "observed_scenarios": 4,
+      "order": 0,
+      "passed_scenarios": 4,
+      "planned_scenarios": 30,
+      "scenario_blocks": [
+        "F20-F29",
+        "F30-F39",
+        "F40-F49"
+      ],
+      "status": "TESTING",
+      "status_color": "#ffc857",
+      "status_label_cs": "TESTUJE SE",
+      "subtitle_cs": "workspace · edit · build · read-back"
+    },
+    {
+      "attention_scenarios": 0,
+      "baseline_note_cs": "F57–F64 mají čerstvý evidence-bound PASS na aktuálním QA kandidátu.",
+      "dependencies": [
+        "core-runtime",
+        "policy-safety"
+      ],
+      "id": "model-inference",
+      "implementation": "implemented",
+      "label_cs": "Model inference",
+      "layer": "agent",
+      "observed_scenarios": 10,
+      "order": 1,
+      "passed_scenarios": 10,
+      "planned_scenarios": 40,
+      "scenario_blocks": [
+        "F55-F64",
+        "F170-F179",
+        "F560-F579"
+      ],
+      "status": "TESTING",
+      "status_color": "#ffc857",
+      "status_label_cs": "TESTUJE SE",
+      "subtitle_cs": "role · catalog · local-first"
+    },
+    {
+      "attention_scenarios": 0,
+      "baseline_note_cs": "Část recovery a provider hranic je ověřená; celý capability gate ještě ne.",
+      "dependencies": [
+        "core-runtime",
+        "developer-agent"
+      ],
+      "id": "recovery-ops",
+      "implementation": "implemented",
+      "label_cs": "Recovery & operations",
+      "layer": "operations",
+      "observed_scenarios": 14,
+      "order": 0,
+      "passed_scenarios": 14,
+      "planned_scenarios": 36,
+      "scenario_blocks": [
+        "F44-F54",
+        "F50-F59",
+        "F60-F69",
+        "F150-F159"
+      ],
+      "status": "TESTING",
+      "status_color": "#ffc857",
+      "status_label_cs": "TESTUJE SE",
+      "subtitle_cs": "pause · resume · restart · journal"
+    },
+    {
+      "attention_scenarios": 0,
+      "baseline_note_cs": "Čeká na explicitní blokový QA ledger, ne na odhad ze zdrojové přítomnosti.",
+      "dependencies": [
+        "developer-agent"
+      ],
+      "id": "workspace-git",
+      "implementation": "implemented",
+      "label_cs": "Workspace & Git",
+      "layer": "agent",
+      "observed_scenarios": 0,
+      "order": 2,
+      "passed_scenarios": 0,
+      "planned_scenarios": 20,
+      "scenario_blocks": [
+        "F190-F199",
+        "F470-F479"
+      ],
+      "status": "NOT_TESTED",
+      "status_color": "#6ca8ff",
+      "status_label_cs": "NEOTESTOVÁNO",
+      "subtitle_cs": "scope · worktree · commit · migration"
+    },
+    {
+      "attention_scenarios": 0,
+      "baseline_note_cs": "UI lane je oddělená acceptance brána; bez vizuálního read-backu není TESTED.",
+      "dependencies": [
+        "core-runtime",
+        "policy-safety"
+      ],
+      "id": "ui-desktop",
+      "implementation": "implemented",
+      "label_cs": "UI & desktop control",
+      "layer": "operations",
+      "observed_scenarios": 0,
+      "order": 1,
+      "passed_scenarios": 0,
+      "planned_scenarios": 160,
+      "scenario_blocks": [
+        "F70-F79",
+        "F230-F239",
+        "F300-F329",
+        "F400-F459",
+        "F590-F639"
+      ],
+      "status": "NOT_TESTED",
+      "status_color": "#6ca8ff",
+      "status_label_cs": "NEOTESTOVÁNO",
+      "subtitle_cs": "WDUi · UIA · Tyr · target effect"
+    },
+    {
+      "attention_scenarios": 0,
+      "baseline_note_cs": "Cloud i local-only hranice se ověřují odděleně; klíče a tajemství se nezobrazují.",
+      "dependencies": [
+        "model-inference",
+        "policy-safety"
+      ],
+      "id": "credentials-providers",
+      "implementation": "implemented",
+      "label_cs": "Credentials & providers",
+      "layer": "operations",
+      "observed_scenarios": 0,
+      "order": 2,
+      "passed_scenarios": 0,
+      "planned_scenarios": 40,
+      "scenario_blocks": [
+        "F80-F89",
+        "F110-F119",
+        "F170-F179",
+        "F580-F589"
+      ],
+      "status": "NOT_TESTED",
+      "status_color": "#6ca8ff",
+      "status_label_cs": "NEOTESTOVÁNO",
+      "subtitle_cs": "allowlist · cost · privacy · fallback"
+    },
+    {
+      "attention_scenarios": 0,
+      "baseline_note_cs": "Instalační a CoreReady identity jsou samostatné od runtime PASS.",
+      "dependencies": [
+        "core-runtime",
+        "recovery-ops"
+      ],
+      "id": "setup-migration",
+      "implementation": "implemented",
+      "label_cs": "Setup & migration",
+      "layer": "operations",
+      "observed_scenarios": 0,
+      "order": 3,
+      "passed_scenarios": 0,
+      "planned_scenarios": 62,
+      "scenario_blocks": [
+        "F98-F99",
+        "F240-F249",
+        "F380-F389",
+        "F500-F529",
+        "F620-F629"
+      ],
+      "status": "NOT_TESTED",
+      "status_color": "#6ca8ff",
+      "status_label_cs": "NEOTESTOVÁNO",
+      "subtitle_cs": "pairing · rollback · service hand-off"
+    },
+    {
+      "attention_scenarios": 0,
+      "baseline_note_cs": "Bez route/result/durable/read-back/sémantiky je stav Unknown.",
+      "dependencies": [
+        "core-runtime",
+        "developer-agent",
+        "recovery-ops"
+      ],
+      "id": "evidence-closeout",
+      "implementation": "implemented",
+      "label_cs": "Evidence & closeout",
+      "layer": "operations",
+      "observed_scenarios": 0,
+      "order": 4,
+      "passed_scenarios": 0,
+      "planned_scenarios": 30,
+      "scenario_blocks": [
+        "F260-F269",
+        "F390-F399",
+        "F640-F649"
+      ],
+      "status": "NOT_TESTED",
+      "status_color": "#6ca8ff",
+      "status_label_cs": "NEOTESTOVÁNO",
+      "subtitle_cs": "receipt · semantic oracle · publication"
+    },
+    {
+      "attention_scenarios": 0,
+      "baseline_note_cs": "Rozšíření nesmí získat capability jen registrací nebo zaplacením licence.",
+      "dependencies": [
+        "policy-safety",
+        "workspace-git"
+      ],
+      "id": "plugin-extensions",
+      "implementation": "implemented",
+      "label_cs": "Plugins & extensions",
+      "layer": "frontier",
+      "observed_scenarios": 0,
+      "order": 0,
+      "passed_scenarios": 0,
+      "planned_scenarios": 10,
+      "scenario_blocks": [
+        "F200-F209"
+      ],
+      "status": "NOT_TESTED",
+      "status_color": "#6ca8ff",
+      "status_label_cs": "NEOTESTOVÁNO",
+      "subtitle_cs": "admission · MCP · isolation"
+    },
+    {
+      "attention_scenarios": 0,
+      "baseline_note_cs": "Roadmapová specializace; bez implementace se nesmí vydávat za TESTED.",
+      "dependencies": [
+        "developer-agent",
+        "ui-desktop",
+        "plugin-extensions"
+      ],
+      "id": "cad-3d",
+      "implementation": "architecture-only",
+      "label_cs": "Creative 3D & CAD",
+      "layer": "frontier",
+      "observed_scenarios": 0,
+      "order": 1,
+      "passed_scenarios": 0,
+      "planned_scenarios": 0,
+      "scenario_blocks": [],
+      "status": "NOT_IMPLEMENTED",
+      "status_color": "#ff5f8f",
+      "status_label_cs": "NEIMPLEMENTOVÁNO",
+      "subtitle_cs": "G3D0–G3D14 · architecture-only"
+    }
+  ],
+  "note_cs": "Výchozí mapa používá pouze sanitizovaný baseline z dokumentované evidence; pro živý stav předejte inventory ze scénářového runtime.",
+  "schema": "maunder.jarvis.capability-status.v1",
+  "source_definition": "apps/jarvis/capability-map.json",
+  "source_revision": "documented-baseline",
+  "status_counts": {
+    "NOT_IMPLEMENTED": 1,
+    "NOT_TESTED": 6,
+    "TESTED": 1,
+    "TESTING": 4
+  }
+}

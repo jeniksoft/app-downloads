@@ -10,6 +10,8 @@
 dist/
 build/
 out/
+__pycache__/
+.pytest_cache/
 
 # Keep public setup EXEs trackable in this repository.
 !*.exe
