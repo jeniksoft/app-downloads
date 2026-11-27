@@ -44,6 +44,15 @@ STATUS_COLORS = {
     "NOT_TESTED": "#6ca8ff",
     "NOT_IMPLEMENTED": "#ff5f8f",
 }
+NODE_WIDTH = 300
+NODE_HEIGHT = 118
+NODE_TEXT_X_OFFSET = 43
+NODE_TEXT_MAX_WIDTH = NODE_WIDTH - NODE_TEXT_X_OFFSET - 22
+SUBTITLE_LINE_HEIGHT = 14
+STATUS_BADGE_HEIGHT = 22
+STATUS_BADGE_GAP = 12
+STATUS_BADGE_FONT_SIZE = 11
+STATUS_BADGE_LETTER_SPACING = 1
 RANGE_RE = re.compile(r"^F(\d+)[-\u2013]F(\d+)$")
 ID_RE = re.compile(r"^F\d+$")
 
@@ -160,6 +169,102 @@ def xml_text(value: Any) -> str:
     return html.escape(str(value), quote=True)
 
 
+def estimate_svg_text_width(text: str, font_size: float, letter_spacing: float = 0.0) -> float:
+    """Estimate a conservative SVG text width for deterministic layout decisions.
+
+    The map is rendered by the browser, whose exact font metrics are not
+    available to this provider-free generator.  A deliberately conservative
+    estimate prevents localized labels from colliding with the card border or
+    the coverage counter while keeping the SVG portable.
+    """
+
+    narrow = set(" ilI.,:;|'·")
+    wide = set("MW@#%&")
+    width = 0.0
+    for character in text:
+        factor = 0.34 if character in narrow else 0.86 if character in wide else 0.64
+        width += font_size * factor
+    return width + max(0, len(text) - 1) * letter_spacing
+
+
+def wrap_svg_text(text: str, max_width: float, font_size: float) -> list[str]:
+    """Wrap a short UI label at word boundaries for an SVG text block."""
+
+    words = text.split()
+    if not words:
+        return [""]
+    lines: list[str] = []
+    current = ""
+    for word in words:
+        candidate = word if not current else f"{current} {word}"
+        if current and estimate_svg_text_width(candidate, font_size) > max_width:
+            lines.append(current)
+            current = word
+        else:
+            current = candidate
+    if current:
+        lines.append(current)
+    return lines
+
+
+def fit_svg_font_size(text: str, max_width: float, preferred: float, minimum: float) -> float:
+    """Shrink a single-line label only as much as needed to fit its card."""
+
+    measured = estimate_svg_text_width(text, preferred)
+    if measured <= max_width:
+        return preferred
+    fitted = max(minimum, preferred * max_width / measured)
+    if estimate_svg_text_width(text, fitted) > max_width + 0.01:
+        raise ValueError(f"SVG label se nevejde do karty: {text}")
+    return fitted
+
+
+def status_badge_layout(status: str, coverage: str) -> tuple[float, float, float]:
+    """Return badge width, text font size and coverage estimate for one card."""
+
+    coverage_width = estimate_svg_text_width(f"{coverage} QA", 13)
+    available_width = NODE_WIDTH - NODE_TEXT_X_OFFSET - 22 - coverage_width - STATUS_BADGE_GAP
+    status_width = estimate_svg_text_width(
+        status,
+        STATUS_BADGE_FONT_SIZE,
+        STATUS_BADGE_LETTER_SPACING,
+    )
+    badge_width = min(max(120.0, status_width + 24.0), available_width)
+    text_font_size = STATUS_BADGE_FONT_SIZE
+    required_width = status_width + 24.0
+    if required_width > available_width:
+        text_font_size = max(8.0, STATUS_BADGE_FONT_SIZE * (available_width - 24.0) / max(status_width, 1.0))
+        badge_width = available_width
+    return badge_width, text_font_size, coverage_width
+
+
+def subtitle_svg(text: str, x: int, y: int) -> str:
+    """Render a subtitle as one or two bounded SVG text lines."""
+
+    font_size = 12.0
+    lines: list[str] = []
+    while font_size >= 9.0:
+        lines = wrap_svg_text(text, NODE_TEXT_MAX_WIDTH, font_size)
+        if len(lines) <= 2:
+            break
+        font_size -= 0.5
+    if len(lines) > 2:
+        raise ValueError(f"SVG podnadpis se nevejde do dvou řádků: {text}")
+    if len(lines) == 1:
+        return (
+            f'<text x="{x}" y="{y}" fill="#9fb5d8" font-family="Segoe UI,Arial,sans-serif" '
+            f'font-size="{font_size:g}">{xml_text(lines[0])}</text>'
+        )
+    spans = "".join(
+        f'<tspan x="{x}" dy="{0 if index == 0 else SUBTITLE_LINE_HEIGHT}">{xml_text(line)}</tspan>'
+        for index, line in enumerate(lines[:2])
+    )
+    return (
+        f'<text x="{x}" y="{y}" fill="#9fb5d8" font-family="Segoe UI,Arial,sans-serif" '
+        f'font-size="{font_size:g}">{spans}</text>'
+    )
+
+
 def render_svg(definition: dict[str, Any], snapshot: dict[str, Any], language: str = "cs") -> str:
     english = language.lower() == "en"
     layers = sorted(definition["layers"], key=lambda item: int(item.get("order", 0)))
@@ -236,19 +341,23 @@ def render_svg(definition: dict[str, Any], snapshot: dict[str, Any], language: s
     for node in nodes:
         x, y = positions[node["id"]]
         color = node["status_color"]
-        label = xml_text(node["label_en"] if english else node["label_cs"])
-        subtitle = xml_text(node["subtitle_en"] if english else node["subtitle_cs"])
-        status = xml_text(STATUS_LABELS_EN[node["status"]] if english else node["status_label_cs"])
+        label_text = node["label_en"] if english else node["label_cs"]
+        label = xml_text(label_text)
+        label_font_size = fit_svg_font_size(label_text, NODE_TEXT_MAX_WIDTH, 19, 15)
+        subtitle = node["subtitle_en"] if english else node["subtitle_cs"]
+        status_label = STATUS_LABELS_EN[node["status"]] if english else node["status_label_cs"]
+        status = xml_text(status_label)
         coverage = f'{node["passed_scenarios"]}/{node["planned_scenarios"]}'
+        badge_width, badge_font_size, _coverage_width = status_badge_layout(status_label, coverage)
         svg.extend([
             f'<g class="node" id="node-{xml_text(node["id"])}">',
-            f'<rect x="{x}" y="{y}" width="300" height="104" rx="14" fill="url(#panel)" stroke="{color}" stroke-width="2" stroke-opacity=".9"/>',
+            f'<rect x="{x}" y="{y}" width="{NODE_WIDTH}" height="{NODE_HEIGHT}" rx="14" fill="url(#panel)" stroke="{color}" stroke-width="2" stroke-opacity=".9"/>',
             f'<rect x="{x + 18}" y="{y + 17}" width="8" height="70" rx="4" fill="{color}" filter="url(#glow)"/>',
-            f'<text x="{x + 43}" y="{y + 33}" fill="#f4f8ff" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700">{label}</text>',
-            f'<text x="{x + 43}" y="{y + 56}" fill="#9fb5d8" font-family="Segoe UI,Arial,sans-serif" font-size="12">{subtitle}</text>',
-            f'<rect x="{x + 43}" y="{y + 69}" width="120" height="22" rx="11" fill="{color}" fill-opacity=".14" stroke="{color}" stroke-opacity=".55"/>',
-            f'<text x="{x + 103}" y="{y + 84}" fill="{color}" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">{status}</text>',
-            f'<text x="{x + 278}" y="{y + 84}" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">{xml_text(coverage)} QA</text>',
+            f'<text x="{x + NODE_TEXT_X_OFFSET}" y="{y + 33}" fill="#f4f8ff" font-family="Segoe UI,Arial,sans-serif" font-size="{label_font_size:g}" font-weight="700">{label}</text>',
+            subtitle_svg(subtitle, x + NODE_TEXT_X_OFFSET, y + 56),
+            f'<rect x="{x + NODE_TEXT_X_OFFSET}" y="{y + 86}" width="{badge_width:g}" height="{STATUS_BADGE_HEIGHT}" rx="11" fill="{color}" fill-opacity=".14" stroke="{color}" stroke-opacity=".55"/>',
+            f'<text x="{x + NODE_TEXT_X_OFFSET + badge_width / 2:g}" y="{y + 101}" fill="{color}" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="{badge_font_size:g}" font-weight="700" letter-spacing="{STATUS_BADGE_LETTER_SPACING}">{status}</text>',
+            f'<text x="{x + NODE_WIDTH - 22}" y="{y + 101}" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">{xml_text(coverage)} QA</text>',
             '</g>',
         ])
     legend_y = 930

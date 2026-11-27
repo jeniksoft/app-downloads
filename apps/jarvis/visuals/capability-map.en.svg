@@ -49,112 +49,112 @@
 <path class="edge" d="M 1140 425 C 1180 425, 1180 425, 1220 425" marker-end="url(#arrow)" />
 <path class="edge" d="M 1520 280 C 1370 280, 1370 425, 1220 425" marker-end="url(#arrow)" />
 <g class="node" id="node-core-runtime">
-<rect x="80" y="230" width="300" height="104" rx="14" fill="url(#panel)" stroke="#35f2b4" stroke-width="2" stroke-opacity=".9"/>
+<rect x="80" y="230" width="300" height="118" rx="14" fill="url(#panel)" stroke="#35f2b4" stroke-width="2" stroke-opacity=".9"/>
 <rect x="98" y="247" width="8" height="70" rx="4" fill="#35f2b4" filter="url(#glow)"/>
 <text x="123" y="263" fill="#f4f8ff" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700">Core runtime</text>
 <text x="123" y="286" fill="#9fb5d8" font-family="Segoe UI,Arial,sans-serif" font-size="12">chat · route · Worker · evidence</text>
-<rect x="123" y="299" width="120" height="22" rx="11" fill="#35f2b4" fill-opacity=".14" stroke="#35f2b4" stroke-opacity=".55"/>
-<text x="183" y="314" fill="#35f2b4" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">TESTED</text>
-<text x="358" y="314" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">20/20 QA</text>
+<rect x="123" y="316" width="120" height="22" rx="11" fill="#35f2b4" fill-opacity=".14" stroke="#35f2b4" stroke-opacity=".55"/>
+<text x="183" y="331" fill="#35f2b4" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">TESTED</text>
+<text x="358" y="331" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">20/20 QA</text>
 </g>
 <g class="node" id="node-policy-safety">
-<rect x="80" y="375" width="300" height="104" rx="14" fill="url(#panel)" stroke="#ffc857" stroke-width="2" stroke-opacity=".9"/>
+<rect x="80" y="375" width="300" height="118" rx="14" fill="url(#panel)" stroke="#ffc857" stroke-width="2" stroke-opacity=".9"/>
 <rect x="98" y="392" width="8" height="70" rx="4" fill="#ffc857" filter="url(#glow)"/>
 <text x="123" y="408" fill="#f4f8ff" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700">Policy &amp; safety</text>
 <text x="123" y="431" fill="#9fb5d8" font-family="Segoe UI,Arial,sans-serif" font-size="12">authority · denial · confirmation</text>
-<rect x="123" y="444" width="120" height="22" rx="11" fill="#ffc857" fill-opacity=".14" stroke="#ffc857" stroke-opacity=".55"/>
-<text x="183" y="459" fill="#ffc857" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">TESTING</text>
-<text x="358" y="459" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">3/40 QA</text>
+<rect x="123" y="461" width="120" height="22" rx="11" fill="#ffc857" fill-opacity=".14" stroke="#ffc857" stroke-opacity=".55"/>
+<text x="183" y="476" fill="#ffc857" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">TESTING</text>
+<text x="358" y="476" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">3/40 QA</text>
 </g>
 <g class="node" id="node-developer-agent">
-<rect x="460" y="230" width="300" height="104" rx="14" fill="url(#panel)" stroke="#ffc857" stroke-width="2" stroke-opacity=".9"/>
+<rect x="460" y="230" width="300" height="118" rx="14" fill="url(#panel)" stroke="#ffc857" stroke-width="2" stroke-opacity=".9"/>
 <rect x="478" y="247" width="8" height="70" rx="4" fill="#ffc857" filter="url(#glow)"/>
 <text x="503" y="263" fill="#f4f8ff" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700">Developer agent</text>
 <text x="503" y="286" fill="#9fb5d8" font-family="Segoe UI,Arial,sans-serif" font-size="12">workspace · edit · build · read-back</text>
-<rect x="503" y="299" width="120" height="22" rx="11" fill="#ffc857" fill-opacity=".14" stroke="#ffc857" stroke-opacity=".55"/>
-<text x="563" y="314" fill="#ffc857" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">TESTING</text>
-<text x="738" y="314" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">4/30 QA</text>
+<rect x="503" y="316" width="120" height="22" rx="11" fill="#ffc857" fill-opacity=".14" stroke="#ffc857" stroke-opacity=".55"/>
+<text x="563" y="331" fill="#ffc857" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">TESTING</text>
+<text x="738" y="331" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">4/30 QA</text>
 </g>
 <g class="node" id="node-model-inference">
-<rect x="460" y="375" width="300" height="104" rx="14" fill="url(#panel)" stroke="#ffc857" stroke-width="2" stroke-opacity=".9"/>
+<rect x="460" y="375" width="300" height="118" rx="14" fill="url(#panel)" stroke="#ffc857" stroke-width="2" stroke-opacity=".9"/>
 <rect x="478" y="392" width="8" height="70" rx="4" fill="#ffc857" filter="url(#glow)"/>
 <text x="503" y="408" fill="#f4f8ff" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700">Model inference</text>
 <text x="503" y="431" fill="#9fb5d8" font-family="Segoe UI,Arial,sans-serif" font-size="12">role · catalog · local-first</text>
-<rect x="503" y="444" width="120" height="22" rx="11" fill="#ffc857" fill-opacity=".14" stroke="#ffc857" stroke-opacity=".55"/>
-<text x="563" y="459" fill="#ffc857" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">TESTING</text>
-<text x="738" y="459" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">10/40 QA</text>
+<rect x="503" y="461" width="120" height="22" rx="11" fill="#ffc857" fill-opacity=".14" stroke="#ffc857" stroke-opacity=".55"/>
+<text x="563" y="476" fill="#ffc857" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">TESTING</text>
+<text x="738" y="476" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">10/40 QA</text>
 </g>
 <g class="node" id="node-workspace-git">
-<rect x="460" y="520" width="300" height="104" rx="14" fill="url(#panel)" stroke="#6ca8ff" stroke-width="2" stroke-opacity=".9"/>
+<rect x="460" y="520" width="300" height="118" rx="14" fill="url(#panel)" stroke="#6ca8ff" stroke-width="2" stroke-opacity=".9"/>
 <rect x="478" y="537" width="8" height="70" rx="4" fill="#6ca8ff" filter="url(#glow)"/>
 <text x="503" y="553" fill="#f4f8ff" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700">Workspace &amp; Git</text>
-<text x="503" y="576" fill="#9fb5d8" font-family="Segoe UI,Arial,sans-serif" font-size="12">scope · worktree · commit · migration</text>
-<rect x="503" y="589" width="120" height="22" rx="11" fill="#6ca8ff" fill-opacity=".14" stroke="#6ca8ff" stroke-opacity=".55"/>
-<text x="563" y="604" fill="#6ca8ff" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">NOT TESTED</text>
-<text x="738" y="604" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">0/20 QA</text>
+<text x="503" y="576" fill="#9fb5d8" font-family="Segoe UI,Arial,sans-serif" font-size="12"><tspan x="503" dy="0">scope · worktree · commit ·</tspan><tspan x="503" dy="14">migration</tspan></text>
+<rect x="503" y="606" width="120" height="22" rx="11" fill="#6ca8ff" fill-opacity=".14" stroke="#6ca8ff" stroke-opacity=".55"/>
+<text x="563" y="621" fill="#6ca8ff" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">NOT TESTED</text>
+<text x="738" y="621" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">0/20 QA</text>
 </g>
 <g class="node" id="node-recovery-ops">
-<rect x="840" y="230" width="300" height="104" rx="14" fill="url(#panel)" stroke="#ffc857" stroke-width="2" stroke-opacity=".9"/>
+<rect x="840" y="230" width="300" height="118" rx="14" fill="url(#panel)" stroke="#ffc857" stroke-width="2" stroke-opacity=".9"/>
 <rect x="858" y="247" width="8" height="70" rx="4" fill="#ffc857" filter="url(#glow)"/>
-<text x="883" y="263" fill="#f4f8ff" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700">Recovery &amp; operations</text>
+<text x="883" y="263" fill="#f4f8ff" font-family="Segoe UI,Arial,sans-serif" font-size="18.4169" font-weight="700">Recovery &amp; operations</text>
 <text x="883" y="286" fill="#9fb5d8" font-family="Segoe UI,Arial,sans-serif" font-size="12">pause · resume · restart · journal</text>
-<rect x="883" y="299" width="120" height="22" rx="11" fill="#ffc857" fill-opacity=".14" stroke="#ffc857" stroke-opacity=".55"/>
-<text x="943" y="314" fill="#ffc857" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">TESTING</text>
-<text x="1118" y="314" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">14/36 QA</text>
+<rect x="883" y="316" width="120" height="22" rx="11" fill="#ffc857" fill-opacity=".14" stroke="#ffc857" stroke-opacity=".55"/>
+<text x="943" y="331" fill="#ffc857" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">TESTING</text>
+<text x="1118" y="331" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">14/36 QA</text>
 </g>
 <g class="node" id="node-ui-desktop">
-<rect x="840" y="375" width="300" height="104" rx="14" fill="url(#panel)" stroke="#6ca8ff" stroke-width="2" stroke-opacity=".9"/>
+<rect x="840" y="375" width="300" height="118" rx="14" fill="url(#panel)" stroke="#6ca8ff" stroke-width="2" stroke-opacity=".9"/>
 <rect x="858" y="392" width="8" height="70" rx="4" fill="#6ca8ff" filter="url(#glow)"/>
 <text x="883" y="408" fill="#f4f8ff" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700">UI &amp; desktop control</text>
 <text x="883" y="431" fill="#9fb5d8" font-family="Segoe UI,Arial,sans-serif" font-size="12">WDUi · UIA · Tyr · target effect</text>
-<rect x="883" y="444" width="120" height="22" rx="11" fill="#6ca8ff" fill-opacity=".14" stroke="#6ca8ff" stroke-opacity=".55"/>
-<text x="943" y="459" fill="#6ca8ff" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">NOT TESTED</text>
-<text x="1118" y="459" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">0/160 QA</text>
+<rect x="883" y="461" width="120" height="22" rx="11" fill="#6ca8ff" fill-opacity=".14" stroke="#6ca8ff" stroke-opacity=".55"/>
+<text x="943" y="476" fill="#6ca8ff" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">NOT TESTED</text>
+<text x="1118" y="476" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">0/160 QA</text>
 </g>
 <g class="node" id="node-credentials-providers">
-<rect x="840" y="520" width="300" height="104" rx="14" fill="url(#panel)" stroke="#6ca8ff" stroke-width="2" stroke-opacity=".9"/>
+<rect x="840" y="520" width="300" height="118" rx="14" fill="url(#panel)" stroke="#6ca8ff" stroke-width="2" stroke-opacity=".9"/>
 <rect x="858" y="537" width="8" height="70" rx="4" fill="#6ca8ff" filter="url(#glow)"/>
-<text x="883" y="553" fill="#f4f8ff" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700">Credentials &amp; providers</text>
+<text x="883" y="553" fill="#f4f8ff" font-family="Segoe UI,Arial,sans-serif" font-size="17.4851" font-weight="700">Credentials &amp; providers</text>
 <text x="883" y="576" fill="#9fb5d8" font-family="Segoe UI,Arial,sans-serif" font-size="12">allowlist · cost · privacy · fallback</text>
-<rect x="883" y="589" width="120" height="22" rx="11" fill="#6ca8ff" fill-opacity=".14" stroke="#6ca8ff" stroke-opacity=".55"/>
-<text x="943" y="604" fill="#6ca8ff" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">NOT TESTED</text>
-<text x="1118" y="604" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">0/40 QA</text>
+<rect x="883" y="606" width="120" height="22" rx="11" fill="#6ca8ff" fill-opacity=".14" stroke="#6ca8ff" stroke-opacity=".55"/>
+<text x="943" y="621" fill="#6ca8ff" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">NOT TESTED</text>
+<text x="1118" y="621" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">0/40 QA</text>
 </g>
 <g class="node" id="node-setup-migration">
-<rect x="840" y="665" width="300" height="104" rx="14" fill="url(#panel)" stroke="#6ca8ff" stroke-width="2" stroke-opacity=".9"/>
+<rect x="840" y="665" width="300" height="118" rx="14" fill="url(#panel)" stroke="#6ca8ff" stroke-width="2" stroke-opacity=".9"/>
 <rect x="858" y="682" width="8" height="70" rx="4" fill="#6ca8ff" filter="url(#glow)"/>
 <text x="883" y="698" fill="#f4f8ff" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700">Setup &amp; migration</text>
-<text x="883" y="721" fill="#9fb5d8" font-family="Segoe UI,Arial,sans-serif" font-size="12">pairing · rollback · service hand-off</text>
-<rect x="883" y="734" width="120" height="22" rx="11" fill="#6ca8ff" fill-opacity=".14" stroke="#6ca8ff" stroke-opacity=".55"/>
-<text x="943" y="749" fill="#6ca8ff" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">NOT TESTED</text>
-<text x="1118" y="749" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">0/62 QA</text>
+<text x="883" y="721" fill="#9fb5d8" font-family="Segoe UI,Arial,sans-serif" font-size="12"><tspan x="883" dy="0">pairing · rollback · service</tspan><tspan x="883" dy="14">hand-off</tspan></text>
+<rect x="883" y="751" width="120" height="22" rx="11" fill="#6ca8ff" fill-opacity=".14" stroke="#6ca8ff" stroke-opacity=".55"/>
+<text x="943" y="766" fill="#6ca8ff" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">NOT TESTED</text>
+<text x="1118" y="766" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">0/62 QA</text>
 </g>
 <g class="node" id="node-evidence-closeout">
-<rect x="840" y="810" width="300" height="104" rx="14" fill="url(#panel)" stroke="#6ca8ff" stroke-width="2" stroke-opacity=".9"/>
+<rect x="840" y="810" width="300" height="118" rx="14" fill="url(#panel)" stroke="#6ca8ff" stroke-width="2" stroke-opacity=".9"/>
 <rect x="858" y="827" width="8" height="70" rx="4" fill="#6ca8ff" filter="url(#glow)"/>
 <text x="883" y="843" fill="#f4f8ff" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700">Evidence &amp; closeout</text>
-<text x="883" y="866" fill="#9fb5d8" font-family="Segoe UI,Arial,sans-serif" font-size="12">receipt · semantic oracle · publication</text>
-<rect x="883" y="879" width="120" height="22" rx="11" fill="#6ca8ff" fill-opacity=".14" stroke="#6ca8ff" stroke-opacity=".55"/>
-<text x="943" y="894" fill="#6ca8ff" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">NOT TESTED</text>
-<text x="1118" y="894" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">0/30 QA</text>
+<text x="883" y="866" fill="#9fb5d8" font-family="Segoe UI,Arial,sans-serif" font-size="12"><tspan x="883" dy="0">receipt · semantic oracle ·</tspan><tspan x="883" dy="14">publication</tspan></text>
+<rect x="883" y="896" width="120" height="22" rx="11" fill="#6ca8ff" fill-opacity=".14" stroke="#6ca8ff" stroke-opacity=".55"/>
+<text x="943" y="911" fill="#6ca8ff" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">NOT TESTED</text>
+<text x="1118" y="911" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">0/30 QA</text>
 </g>
 <g class="node" id="node-plugin-extensions">
-<rect x="1220" y="230" width="300" height="104" rx="14" fill="url(#panel)" stroke="#6ca8ff" stroke-width="2" stroke-opacity=".9"/>
+<rect x="1220" y="230" width="300" height="118" rx="14" fill="url(#panel)" stroke="#6ca8ff" stroke-width="2" stroke-opacity=".9"/>
 <rect x="1238" y="247" width="8" height="70" rx="4" fill="#6ca8ff" filter="url(#glow)"/>
 <text x="1263" y="263" fill="#f4f8ff" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700">Plugins &amp; extensions</text>
 <text x="1263" y="286" fill="#9fb5d8" font-family="Segoe UI,Arial,sans-serif" font-size="12">admission · MCP · isolation</text>
-<rect x="1263" y="299" width="120" height="22" rx="11" fill="#6ca8ff" fill-opacity=".14" stroke="#6ca8ff" stroke-opacity=".55"/>
-<text x="1323" y="314" fill="#6ca8ff" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">NOT TESTED</text>
-<text x="1498" y="314" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">0/10 QA</text>
+<rect x="1263" y="316" width="120" height="22" rx="11" fill="#6ca8ff" fill-opacity=".14" stroke="#6ca8ff" stroke-opacity=".55"/>
+<text x="1323" y="331" fill="#6ca8ff" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">NOT TESTED</text>
+<text x="1498" y="331" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">0/10 QA</text>
 </g>
 <g class="node" id="node-cad-3d">
-<rect x="1220" y="375" width="300" height="104" rx="14" fill="url(#panel)" stroke="#ff5f8f" stroke-width="2" stroke-opacity=".9"/>
+<rect x="1220" y="375" width="300" height="118" rx="14" fill="url(#panel)" stroke="#ff5f8f" stroke-width="2" stroke-opacity=".9"/>
 <rect x="1238" y="392" width="8" height="70" rx="4" fill="#ff5f8f" filter="url(#glow)"/>
 <text x="1263" y="408" fill="#f4f8ff" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700">Creative 3D &amp; CAD</text>
 <text x="1263" y="431" fill="#9fb5d8" font-family="Segoe UI,Arial,sans-serif" font-size="12">G3D0–G3D14 · architecture-only</text>
-<rect x="1263" y="444" width="120" height="22" rx="11" fill="#ff5f8f" fill-opacity=".14" stroke="#ff5f8f" stroke-opacity=".55"/>
-<text x="1323" y="459" fill="#ff5f8f" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">NOT IMPLEMENTED</text>
-<text x="1498" y="459" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">0/0 QA</text>
+<rect x="1263" y="461" width="141.84" height="22" rx="11" fill="#ff5f8f" fill-opacity=".14" stroke="#ff5f8f" stroke-opacity=".55"/>
+<text x="1333.92" y="476" fill="#ff5f8f" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">NOT IMPLEMENTED</text>
+<text x="1498" y="476" fill="#d9e7ff" text-anchor="end" font-family="Consolas,monospace" font-size="13">0/0 QA</text>
 </g>
 <text x="80" y="906" fill="#728ebd" font-family="Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="2">STATUS LEGEND</text>
 <circle cx="87" cy="930" r="6" fill="#35f2b4" filter="url(#glow)"/>

@@ -212,7 +212,7 @@
       "status": "NOT_TESTED",
       "status_color": "#6ca8ff",
       "status_label_cs": "NEOTESTOVÁNO",
-      "subtitle_cs": "seznam povolených · cena · soukromí · záložní trasa",
+      "subtitle_cs": "seznam schválených poskytovatelů · cena · soukromí · záložní trasa",
       "subtitle_en": "allowlist · cost · privacy · fallback"
     },
     {
@@ -307,7 +307,7 @@
       ],
       "id": "cad-3d",
       "implementation": "architecture-only",
-      "label_cs": "Tvořivé 3D a CAD",
+      "label_cs": "Vytváření 3D a CAD",
       "label_en": "Creative 3D & CAD",
       "layer": "frontier",
       "observed_scenarios": 0,
