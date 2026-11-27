@@ -59,7 +59,7 @@ different methodology.
 <!-- JARVIS_CAPABILITY_MAP_BEGIN -->
 ## Capability constellation
 
-![Maunder Jarvis capability constellation](visuals/capability-map.svg)
+![Maunder Jarvis capability constellation](visuals/capability-map.en.svg)
 
 This is a dependency graph of capabilities, not a list of scenario ranges.
 Each node shows implementation state, QA state and associated scenario
@@ -92,9 +92,9 @@ python tools/generate_jarvis_capability_map.py --check
 
 The bridge transfers only machine-readable inventory: no prompts, secrets or
 raw model output. The generator is deterministic and changes only
-`capability-status.json`, the SVG map and the marked README sections. There is
-no workflow, paid runner or network call; publish changes through a normal
-protected PR.
+`capability-status.json`, both language SVG maps and the marked README
+sections. There is no workflow, paid runner or network call; publish changes
+through a normal protected PR.
 <!-- JARVIS_CAPABILITY_MAP_END -->
 
 ## What is being prepared
