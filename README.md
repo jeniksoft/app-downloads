@@ -4,6 +4,25 @@ Veřejné místo ke stažení vybraných Windows aplikací a utilit od Jeniksoft
 
 Toto repo je určené pro hotové instalační balíčky, SDK balíky, popis aplikací, uživatelskou dokumentaci a kontrolní součty. Neobsahuje produktové zdrojové kódy ani LLM/model weights; výjimkou mohou být explicitně označené ukázkové zdroje uvnitř SDK balíku.
 
+## Jazyk / Language
+
+GitHub Markdown neumí serverově vybrat soubor podle jazyka operačního systému
+nebo prohlížeče. Výchozí dokumentace je proto česky a každý report má úplný
+anglický fallback:
+
+| Aplikace | Čeština | English fallback |
+| --- | --- | --- |
+| Jarvis | [README.md](apps/jarvis/README.md) | [README.en.md](apps/jarvis/README.en.md) |
+
+<p>
+<a href="apps/jarvis/README.md">🇨🇿 <strong>Otevřít český README</strong></a>
+&nbsp;&nbsp;
+<a href="apps/jarvis/README.en.md">🇬🇧 <strong>Open English fallback</strong></a>
+</p>
+
+Při otevření z mobilu, bez JavaScriptu nebo z neznámého locale zůstává tato
+volba funkční a anglická verze je vždy dostupná jedním kliknutím.
+
 ## Ke Stažení
 
 | Aplikace | Verze | Setup / Balík | Dokumentace | SHA-256 |
@@ -22,7 +41,7 @@ Tabulky zkracují SHA-256 kvůli čitelnosti. Plný hash je vždy v `update.json
 
 **Project codename: Jarvis** je interní označení připravovaného produktu. Codename není finální produktový název. Cílem je bezplatná edice **Personal 1.0.0**, která bude po dokončení zveřejněna pod jiným názvem.
 
-Dřívější veřejné vývojové a beta buildy byly z aktuálního download kanálu odstraněny. Aktuální veřejný progress report je na stránce [Project codename: Jarvis](apps/jarvis/README.md).
+Dřívější veřejné vývojové a beta buildy byly z aktuálního download kanálu odstraněny. Aktuální veřejný progress report je na stránce [Project codename: Jarvis – čeština](apps/jarvis/README.md); k dispozici je také [English fallback](apps/jarvis/README.en.md).
 
 **Planetopia** je interní označení nové verze pluginu ve vývoji pro Unreal Engine 5.8. Aktuální veřejný, česky vedený report s anglickým fallbackem je na stránce [Planetopia – vývojový report](apps/planetopia/README.md). Nejde o instalační balíček ani o hotové vydání.
 

@@ -1,5 +1,9 @@
 # Project codename: Jarvis
 
+**Jazyk / Language:** **Čeština (výchozí)** · [English fallback](README.en.md)
+
+<p><a href="README.en.md">🇬🇧 <strong>Open English fallback</strong></a></p>
+
 **Jarvis je interní codename projektu ve vývoji, nikoli finální produktový název.**
 
 Cílem je bezplatná edice **Personal 1.0.0**. Až bude připravená k veřejnému vydání, bude zde zveřejněna pod jiným produktovým názvem.
